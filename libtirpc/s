@@ -4,7 +4,8 @@
   "about": "Transport-independent RPC library",
   "maintainer": "Tox",
   "licenses": [
-    "LICENSE"
+    "BSD-3-Clause",
+    "SISSL"
   ],
   "upstream": "git://linux-nfs.org/~steved/libtirpc.git",
   "version_fetch": null,

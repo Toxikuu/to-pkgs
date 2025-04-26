@@ -4,7 +4,7 @@ n="libtirpc"
 v="1.3.6"
 a="Transport-independent RPC library"
 m="Tox"
-l="LICENSE"
+l="BSD-3-Clause SISSL"
 t="lib"
 u="git://linux-nfs.org/~steved/$n.git" # upstream
 
