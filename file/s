@@ -1,0 +1,52 @@
+{
+  "name": "file",
+  "version": "5.46",
+  "about": "File type identification utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "custom"
+  ],
+  "upstream": "https://github.com/file/file.git",
+  "version_fetch": "gr | sort -V | tail -n2 | head -n1 | sed 's/FILE//' | sed 's/_/./g'",
+  "tags": [
+    "utils",
+    "cli",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/file/file/archive/refs/tags/FILE5_46.tar.gz",
+      "dest": "FILE5_46.tar.gz"
+    },
+    {
+      "kind": "Tar",
+      "url": "https://gitlab.archlinux.org/archlinux/packaging/packages/file/-/raw/main/0001-PR-579-net147-Fix-stack-overrun.patch",
+      "dest": "0001-PR-579-net147-Fix-stack-overrun.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "libseccomp",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,53 @@
+#!/to
+
+n="file"
+v="5.46"
+a="File type identification utility"
+m="Tox"
+l="custom"
+t="utils cli lib core"
+u="https://github.com/$n/$n.git"
+vf="gr | sort -V | tail -n2 | head -n1 | sed 's/FILE//' | sed 's/_/./g'"
+
+s=(
+    "${u%.git}/archive/refs/tags/FILE${v//./_}.tar.gz"
+    "https://gitlab.archlinux.org/archlinux/packaging/packages/$n/-/raw/main/0001-PR-579-net147-Fix-stack-overrun.patch"
+)
+
+d=(
+    "bzip2"
+    "xz"
+    "zlib"
+    "zstd"
+    "libseccomp"
+)
+
+b() {
+
+pat ../*.patch
+autoreconf -fiv
+
+CFLAGS+=" -pthread"
+
+_cfg=(
+    --datadir=/usr/share/file
+    --enable-fsect-man5
+    --enable-libseccomp
+)
+
+cfg
+
+sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+mk
+mi
+
+install -Dm644 COPYING "$D/usr/share/licenses/$n/COPYING"
+
+}
+
+t() {
+
+mk check
+
+}
