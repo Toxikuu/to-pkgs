@@ -1,6 +1,6 @@
 {
   "name": "gperf",
-  "version": "3.2.1",
+  "version": "3.3",
   "about": "Perfect hash function generator",
   "maintainer": "Tox",
   "licenses": [
@@ -14,8 +14,8 @@
   "sources": [
     {
       "kind": "Tar",
-      "url": "https://ftp.gnu.org/gnu/gperf/gperf-3.2.1.tar.gz",
-      "dest": "gperf-3.2.1.tar.gz"
+      "url": "https://ftp.gnu.org/gnu/gperf/gperf-3.3.tar.gz",
+      "dest": "gperf-3.3.tar.gz"
     }
   ],
   "dependencies": [],

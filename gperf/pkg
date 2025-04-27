@@ -1,7 +1,7 @@
 #!/to
 
 n="gperf"
-v="3.2.1"
+v="3.3"
 a="Perfect hash function generator"
 m="Tox"
 l="GPL-3.0-or-later"
