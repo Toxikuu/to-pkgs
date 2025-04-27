@@ -1,0 +1,32 @@
+{
+  "name": "libseccomp",
+  "version": "2.5.6",
+  "about": "Syscall API",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-only"
+  ],
+  "upstream": "https://github.com/seccomp/libseccomp.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/seccomp/libseccomp/releases/download/v2.5.6/libseccomp-2.5.6.tar.gz",
+      "dest": "libseccomp-2.5.6.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "which",
+      "kind": "Test"
+    },
+    {
+      "name": "gperf",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

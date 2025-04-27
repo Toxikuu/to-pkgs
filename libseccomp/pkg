@@ -1,0 +1,35 @@
+#!/to
+
+n="libseccomp"
+v="2.5.6"
+a="Syscall API"
+m="Tox"
+l="LGPL-2.1-only"
+t="lib"
+u="https://github.com/seccomp/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "t,which"
+    "b,gperf"
+)
+
+b() {
+
+# NOTE: If Python bindings are build with --enable-python and cython, static
+# libraries must be enabled per BLFS
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
