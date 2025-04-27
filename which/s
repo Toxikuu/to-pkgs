@@ -1,0 +1,24 @@
+{
+  "name": "which",
+  "version": "2.23",
+  "about": "A utility to show the full path of commands",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://ftp.gnu.org/gnu/which/?C=M;O=D",
+  "version_fetch": "curl -s 'https://ftp.gnu.org/gnu/which/?C=M;O=D' | grep which- | head -n1 | cut -d- -f2 | cut -d. -f1-2",
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/which/which-2.23.tar.gz",
+      "dest": "which-2.23.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
