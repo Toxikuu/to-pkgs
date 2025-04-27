@@ -1,0 +1,21 @@
+#!/to
+
+n="gperf"
+v="3.2.1"
+a="Perfect hash function generator"
+m="Tox"
+l="GPL-3.0-or-later"
+t="lib"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}
