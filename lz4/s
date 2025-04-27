@@ -4,7 +4,7 @@
   "about": "The lz4 compression algorithm",
   "maintainer": "Tox",
   "licenses": [
-    "LICENSE"
+    "GPL-2.0-or-later"
   ],
   "upstream": "https://github.com/lz4/lz4.git",
   "version_fetch": null,
