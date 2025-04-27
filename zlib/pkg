@@ -1,0 +1,23 @@
+#!/to
+
+n="zlib"
+v="1.3.1"
+a="Compression library used by many packages"
+m="Tox"
+l="Zlib"
+t="core critical lib z"
+u="https://github.com/madler/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+)
+
+b() {
+
+./configure --prefix=/usr
+mk
+mi
+
+rm -vf "$D"/usr/lib/libz.a
+
+}
