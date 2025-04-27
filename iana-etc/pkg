@@ -1,0 +1,19 @@
+#!/to
+
+n="iana-etc"
+v="20250407"
+a="The Internet Assigned Numbers Authority's services and protocols"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://github.com/Mic92/$n.git" # upstream
+
+s=(
+    "${u%.git}/releases/download/$v/$n-$v.tar.gz"
+)
+
+b() {
+
+install -vDm644 -t "$D"/etc services protocols
+
+}
