@@ -13,7 +13,7 @@ s=(
 )
 
 d=(
-    "t,which"
+    "b,which"
     "b,gperf"
 )
 
