@@ -1,0 +1,23 @@
+{
+  "name": "efivar",
+  "version": "39",
+  "about": "Tools and libraries for EFI variable manipulation",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1"
+  ],
+  "upstream": "https://github.com/rhboot/efivar.git",
+  "version_fetch": "gr | grep -Ev '[a-Z]|\\.' | sort -V",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz",
+      "dest": "efivar-39.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

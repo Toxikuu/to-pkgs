@@ -1,0 +1,18 @@
+n="efivar"
+v="39"
+a="Tools and libraries for EFI variable manipulation"
+m="Tox"
+l="LGPL-2.1"
+t="lib"
+
+u="https://github.com/rhboot/$n.git"
+vf="gr | grep -Ev '[a-Z]|\.' | sort -V"
+
+s="${u%.git}/archive/$v/$n-$v.tar.gz"
+
+b() {
+
+mk ENABLE_DOCS=0
+mi LIBDIR=/usr/lib ENABLE_DOCS=0
+
+}
