@@ -7,7 +7,7 @@
     "MIT"
   ],
   "upstream": "https://github.com/rpm-software-management/popt.git",
-  "version_fetch": "gr | grep 'popt-[0-9]+\\.[0-9]+-release | cut -d- -f2",
+  "version_fetch": "gr | grep 'popt-[0-9]+\\.[0-9]+-release' | cut -d- -f2",
   "tags": [
     "lib"
   ],
