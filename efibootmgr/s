@@ -1,0 +1,33 @@
+{
+  "name": "efibootmgr",
+  "version": "18",
+  "about": "User-space application to modify the EFI Boot Manager",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0"
+  ],
+  "upstream": "https://github.com/rhboot/efibootmgr.git",
+  "version_fetch": "gr | grep -E '^[0-9]+$'",
+  "tags": [
+    "cli",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz",
+      "dest": "efibootmgr-18.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "efivar",
+      "kind": "Required"
+    },
+    {
+      "name": "popt",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
