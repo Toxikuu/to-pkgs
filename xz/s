@@ -1,0 +1,29 @@
+{
+  "name": "xz",
+  "version": "5.8.1",
+  "about": "The XZ and LZMA compression algorithms",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL",
+    "LGPL",
+    "custom"
+  ],
+  "upstream": "https://github.com/tukaani-project/xz.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils",
+    "cli",
+    "lib",
+    "z"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz",
+      "dest": "xz-5.8.1.tar.xz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

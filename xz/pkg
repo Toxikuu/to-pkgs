@@ -1,0 +1,21 @@
+#!/to
+
+n="xz"
+v="5.8.1"
+a="The XZ and LZMA compression algorithms"
+m="Tox"
+l="GPL LGPL custom"
+t="core utils cli lib z"
+u="https://github.com/tukaani-project/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}
