@@ -1,0 +1,31 @@
+#!/to
+
+n="lsof"
+v="4.99.4"
+a="Lists open files for running processes"
+m="Tox"
+l="custom"
+t="utils cli"
+u="https://github.com/lsof-org/lsof.git" # upstream
+
+s=(
+    "${u%.git}/releases/download/$v/$n-$v.tar.gz"
+)
+
+d=(
+    "libtirpc"
+    "b,groff"
+)
+
+b() {
+
+_cfg=(
+    --with-libtirpc
+    --without-selinux
+)
+
+cfg
+mk
+mi
+
+}

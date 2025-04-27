@@ -1,0 +1,33 @@
+{
+  "name": "lsof",
+  "version": "4.99.4",
+  "about": "Lists open files for running processes",
+  "maintainer": "Tox",
+  "licenses": [
+    "custom"
+  ],
+  "upstream": "https://github.com/lsof-org/lsof.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/lsof-org/lsof/releases/download/4.99.4/lsof-4.99.4.tar.gz",
+      "dest": "lsof-4.99.4.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libtirpc",
+      "kind": "Required"
+    },
+    {
+      "name": "groff",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
