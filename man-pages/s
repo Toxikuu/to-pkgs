@@ -1,0 +1,41 @@
+{
+  "name": "man-pages",
+  "version": "6.13",
+  "about": "Linux man pages",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "BSD-4-Clause-UC",
+    "BSD-4.3TAHOE",
+    "GPL-1.0-or-later",
+    "GPL-2.0-only",
+    "GPL-2.0-or-later",
+    "GPL-3.0-or-later",
+    "LGPL-3.0-linking-exception",
+    "LGPL-3.0-or-later",
+    "LicenseRef-Public-Domain",
+    "LicenseRef-UltraPermissive",
+    "Linux-man-pages-1-para",
+    "Linux-man-pages-copyleft",
+    "Linux-man-pages-copyleft-2-para",
+    "Linux-man-pages-copyleft-var",
+    "MIT",
+    "Spencer-94"
+  ],
+  "upstream": "https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git",
+  "version_fetch": null,
+  "tags": [
+    "doc",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.13.tar.xz",
+      "dest": "man-pages-6.13.tar.xz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

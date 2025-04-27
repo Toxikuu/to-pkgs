@@ -1,0 +1,46 @@
+#!/to
+
+n="man-pages"
+v="6.13"
+a="Linux man pages"
+m="Tox"
+l=(
+    "BSD-2-Clause"
+    "BSD-3-Clause"
+    "BSD-4-Clause-UC" 
+    "BSD-4.3TAHOE" 
+    "GPL-1.0-or-later"
+    "GPL-2.0-only"
+    "GPL-2.0-or-later"
+    "GPL-3.0-or-later"
+    "LGPL-3.0-linking-exception"
+    "LGPL-3.0-or-later"
+    "LicenseRef-Public-Domain"
+    "LicenseRef-UltraPermissive"
+    "Linux-man-pages-1-para"
+    "Linux-man-pages-copyleft"
+    "Linux-man-pages-copyleft-2-para"
+    "Linux-man-pages-copyleft-var"
+    "MIT"
+    "Spencer-94"
+)
+t="doc lib"
+u="https://git.kernel.org/pub/scm/docs/$n/$n.git"
+
+s=(
+    "https://www.kernel.org/pub/linux/docs/$n/$n-$v.tar.xz"
+)
+
+d=(
+)
+
+b() {
+
+rm -vf man3/crypt*.3 # libxcrypt provides better ones
+rm -vf man5/nscd.conf.5 man8/nscd.8 # ncsd is dead
+
+# make -R is required until make 4.5 according to
+# https://gitlab.archlinux.org/archlinux/packaging/packages/man-pages/-/blob/d39465cf81398e23036c2bdc8472e6a1006eddc2/PKGBUILD
+mi GIT=false prefix=/usr -R
+
+}
