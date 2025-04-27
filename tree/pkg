@@ -1,0 +1,22 @@
+#!/to
+
+n="tree"
+v="2.2.1"
+a="A cli utility for viewing file trees"
+m="Tox"
+l="GPL-2.0-or-later"
+t="cli utils"
+u="https://gitlab.com/OldManProgrammer/unix-$n.git" # upstream
+
+s=(
+    "${u%.git}/-/archive/$v/unix-$n-$v.tar.bz2"
+)
+
+b() {
+
+mk
+
+# Tree's makefile does not respect DESTDIR
+mk PREFIX="$D"/usr MANDIR="$D"/usr/share/man install
+
+}

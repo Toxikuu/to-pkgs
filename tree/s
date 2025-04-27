@@ -1,0 +1,24 @@
+{
+  "name": "tree",
+  "version": "2.2.1",
+  "about": "A cli utility for viewing file trees",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://gitlab.com/OldManProgrammer/unix-tree.git",
+  "version_fetch": null,
+  "tags": [
+    "cli",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://gitlab.com/OldManProgrammer/unix-tree/-/archive/2.2.1/unix-tree-2.2.1.tar.bz2",
+      "dest": "unix-tree-2.2.1.tar.bz2"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
