@@ -1,0 +1,55 @@
+#!/to
+
+n="glibc"
+v="2.41"
+a="GNU C Library"
+m="Tox"
+l=(
+    "GPL-2.0-or-later"
+    "LGPL-2.1-or-later"
+)
+t="critical core lib"
+u="https://sourceware.org/git/$n.git" # upstream
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+    "https://www.linuxfromscratch.org/patches/lfs/development/$n-$v-fhs-1.patch"
+)
+
+b() {
+
+pat ../$n-$v-fhs-1.patch
+
+mkdir -pv build
+cd        build
+
+# TODO: Bump enable-kernel higher at some point in the future
+_cfg=(
+    --disable-werror
+    --disable-nscd
+    --enable-kernel=6.11
+    --enable-stack-protector=strong
+    libc_cv_slibdir=/usr/lib
+)
+
+echo "rootsbindir=/usr/sbin" > configparms
+cfg
+
+mk
+sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
+
+mi
+sed '/RTLDLIST=/s@/usr@@g' -i "$D"/usr/bin/ldd
+
+pushd ..
+mk -C "$PWD/localedata" objdir="$PWD/build" \
+  DESTDIR="$D" install-locale-files
+popd
+
+# NOTE: ld.so.conf is not copied, since there's nothing I wanna add to ld's path
+mkdir -pv "$D"/etc/ld.so.conf.d
+for FILE in nsswitch.conf; do
+  cp -vf "$A/$FILE" "$D/etc/$FILE"
+done
+
+}

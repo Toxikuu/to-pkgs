@@ -1,0 +1,31 @@
+{
+  "name": "glibc",
+  "version": "2.41",
+  "about": "GNU C Library",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later",
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://sourceware.org/git/glibc.git",
+  "version_fetch": null,
+  "tags": [
+    "critical",
+    "core",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/glibc/glibc-2.41.tar.xz",
+      "dest": "glibc-2.41.tar.xz"
+    },
+    {
+      "kind": "Tar",
+      "url": "https://www.linuxfromscratch.org/patches/lfs/development/glibc-2.41-fhs-1.patch",
+      "dest": "glibc-2.41-fhs-1.patch"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
