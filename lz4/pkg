@@ -1,0 +1,26 @@
+#!/to
+
+n="lz4"
+v="1.10.0"
+a="The lz4 compression algorithm"
+m="Tox"
+l="LICENSE"
+t="lib z"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
+)
+
+b() {
+
+mk BUILD_STATIC=no PREFIX=/usr
+mi BUILD_STATIC=no PREFIX=/usr
+
+}
+
+t() {
+
+mk -j1 check
+
+}

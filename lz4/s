@@ -1,0 +1,24 @@
+{
+  "name": "lz4",
+  "version": "1.10.0",
+  "about": "The lz4 compression algorithm",
+  "maintainer": "Tox",
+  "licenses": [
+    "LICENSE"
+  ],
+  "upstream": "https://github.com/lz4/lz4.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "z"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/lz4/lz4/releases/download/v1.10.0/lz4-1.10.0.tar.gz",
+      "dest": "lz4-1.10.0.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
