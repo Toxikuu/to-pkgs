@@ -10,6 +10,7 @@ l=(
 )
 t="critical core lib"
 u="https://sourceware.org/git/$n.git"
+vf="gr | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"

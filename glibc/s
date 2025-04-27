@@ -8,7 +8,7 @@
     "LGPL-2.1-or-later"
   ],
   "upstream": "https://sourceware.org/git/glibc.git",
-  "version_fetch": null,
+  "version_fetch": "gr | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V",
   "tags": [
     "critical",
     "core",
