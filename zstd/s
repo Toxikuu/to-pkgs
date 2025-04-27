@@ -1,0 +1,42 @@
+{
+  "name": "zstd",
+  "version": "1.5.7",
+  "about": "The Zstandard compression algorithm",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause",
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://github.com/facebook/zstd.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "critical",
+    "utils",
+    "cli",
+    "lib",
+    "z"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
+      "dest": "zstd-1.5.7.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "lz4",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
