@@ -9,7 +9,7 @@ l=(
     "LGPL-2.1-or-later"
 )
 t="critical core lib"
-u="https://sourceware.org/git/$n.git" # upstream
+u="https://sourceware.org/git/$n.git"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
@@ -23,33 +23,47 @@ pat ../$n-$v-fhs-1.patch
 mkdir -pv build
 cd        build
 
-# TODO: Bump enable-kernel higher at some point in the future
 _cfg=(
+    --with-headers=/usr/include
+    # TODO: Maybe add --with-bugurl linking to the github repo for this
+
     --disable-werror
     --disable-nscd
+    --disable-profile
+
+    # TODO: Bump enable-kernel version higher at some point in the future
     --enable-kernel=6.11
     --enable-stack-protector=strong
-    libc_cv_slibdir=/usr/lib
 )
 
-echo "rootsbindir=/usr/sbin" > configparms
+{
+    echo "slibdir=/usr/lib"
+    echo "rtlddir=/usr/lib"
+    echo "sbindir=/usr/bin"
+    echo "rootsbindir=/usr/bin"
+} >> configparms
+
 cfg
 
 mk
+# Skip an outdated sanity check
 sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 
 mi
+# Fix a hardcoded path in `ldd`
 sed '/RTLDLIST=/s@/usr@@g' -i "$D"/usr/bin/ldd
 
+# Install locales
 pushd ..
 mk -C "$PWD/localedata" objdir="$PWD/build" \
   DESTDIR="$D" install-locale-files
 popd
 
-# NOTE: ld.so.conf is not copied, since there's nothing I wanna add to ld's path
-mkdir -pv "$D"/etc/ld.so.conf.d
-for FILE in nsswitch.conf; do
-  cp -vf "$A/$FILE" "$D/etc/$FILE"
-done
+# Install nsswitch.conf and ld.so.conf.d
+install -vDm644 "$A/nsswitch.conf" -t "$D/etc/"
+install -vdm755 "$D"/etc/ld.so.conf.d
+
+# Avoid overwriting the linker cache
+rm -vf "$D"/etc/ld.so.cache
 
 }
