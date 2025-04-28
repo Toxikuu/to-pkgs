@@ -1,0 +1,77 @@
+#!/to
+
+n="binutils"
+v="2.44"
+a="Programs for working with binary and object files"
+m="Tox"
+l=(
+    "GPL-2.0-or-later"
+    "GPL-3.0-or-later"
+    "LGPL-2.0-or-later"
+    "LGPL-3.0-or-later"
+    "GFDL-1.3"
+    "FSFAP"
+)
+t="critical core"
+u="https://github.com/bminor/$n-gdb.git"
+vf="gr | grep -E '^$n-[0-9]+_+' | grep -Ev 'release|branchpoint' | sed 's@_@.@g'"
+
+s=(
+    "https://sourceware.org/pub/$n/releases/$n-$v.tar.xz"
+)
+
+d=(
+    "zlib"
+    "zstd"
+)
+
+b() {
+
+mkdir -pv build
+cd        build
+
+_cfg=(
+    --enable-ld=default
+    --enable-plugins
+    --enable-shared
+    --enable-threads
+    --enable-new-dtags
+    --enable-64-bit-bfd
+    --enable-default-hash-style=gnu
+
+    --disable-werror
+    --disable-gdb{,server}
+    --disable-libdecnumber
+    --disable-readline
+    --disable-sim
+
+    # TODO: Consider adding --with-bugurl=github repo issues
+    --with-lib-path=/usr/lib
+    --with-system-zlib
+)
+
+cfg
+mk tooldir=/usr
+mi tooldir=/usr
+
+# Remove junk
+rm -vf "$D"/usr/lib/lib{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a
+rm -vf "$D"/usr/share/man/man1/{dlltool,windres,windmc}*
+
+}
+
+# Tests are skipped as they require dejagnu, expect, and tcl which I don't feel
+# like packaging rn lol
+#
+# t() {
+#     echo "Running tests..." >&2
+#     pwd >&2
+#
+#     make -k check || true
+#
+#     NUMFAILED=$(grep -c '^FAIL:' "$(find . -name '*.log')")
+#
+#     if [ "$NUMFAILED" -gt 12 ]; then
+#         die "$NUMFAILED tests failed (<= 12 is acceptable)"
+#     fi
+# }

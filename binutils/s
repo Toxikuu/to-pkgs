@@ -1,0 +1,38 @@
+{
+  "name": "binutils",
+  "version": "2.44",
+  "about": "Programs for working with binary and object files",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later",
+    "GPL-3.0-or-later",
+    "LGPL-2.0-or-later",
+    "LGPL-3.0-or-later",
+    "GFDL-1.3",
+    "FSFAP"
+  ],
+  "upstream": "https://github.com/bminor/binutils-gdb.git",
+  "version_fetch": "gr | grep -E '^binutils-[0-9]+_+' | grep -Ev 'release|branchpoint' | sed 's@_@.@g'",
+  "tags": [
+    "critical",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://sourceware.org/pub/binutils/releases/binutils-2.44.tar.xz",
+      "dest": "binutils-2.44.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
