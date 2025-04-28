@@ -15,9 +15,9 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
-      "url": "https://github.com/gavinhoward/bc/archive/3d8ae3efb1d0aeea6a1b2d7c33dcb061175be681.tar.gz",
-      "dest": "3d8ae3efb1d0aeea6a1b2d7c33dcb061175be681.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/gavinhoward/bc.git",
+      "dest": "bc.git"
     }
   ],
   "dependencies": [
