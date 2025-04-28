@@ -1,0 +1,30 @@
+{
+  "name": "bc",
+  "version": "3d8ae3efb1d0aeea6a1b2d7c33dcb061175be681",
+  "about": "Arbitrary precision numeric processing language",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD",
+    "2-Clause"
+  ],
+  "upstream": "https://github.com/gavinhoward/bc.git",
+  "version_fetch": "gr | grep -Ev '[a-z]+' | tail -n1",
+  "tags": [
+    "core",
+    "math"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/gavinhoward/bc/archive/3d8ae3efb1d0aeea6a1b2d7c33dcb061175be681.tar.gz",
+      "dest": "3d8ae3efb1d0aeea6a1b2d7c33dcb061175be681.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "readline",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

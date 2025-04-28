@@ -1,0 +1,26 @@
+#!/to
+
+n="bc"
+v="3d8ae3efb1d0aeea6a1b2d7c33dcb061175be681" # 7.0.3 is the latest stable
+a="Arbitrary precision numeric processing language"
+m="Tox"
+l="BSD 2-Clause"
+t="core math"
+u="https://github.com/gavinhoward/$n.git"
+vf="gr | grep -Ev '[a-z]+' | tail -n1"
+
+s=(
+    "${u%.git}/archive/$v.tar.gz"
+)
+
+d=(
+    "readline"
+)
+
+b() {
+
+CC=gcc cfg -G -O3 -r
+mk
+mi
+
+}
