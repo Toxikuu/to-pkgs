@@ -1,0 +1,31 @@
+{
+  "name": "mpfr",
+  "version": "4.2.2",
+  "about": "Multiple-precision floating-point math library",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later",
+    "LGPL-3.0-or-later"
+  ],
+  "upstream": "https://gitlab.inria.fr/mpfr/mpfr.git",
+  "version_fetch": "gr | grep -Ev 'emptycommit|deleted|-rc|-root'",
+  "tags": [
+    "core",
+    "lib",
+    "math"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz",
+      "dest": "mpfr-4.2.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gmp",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

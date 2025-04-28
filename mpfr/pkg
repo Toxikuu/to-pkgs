@@ -1,0 +1,41 @@
+#!/to
+
+n="mpfr"
+v="4.2.2"
+a="Multiple-precision floating-point math library"
+m="Tox"
+l=(
+    "GPL-3.0-or-later"
+    "LGPL-3.0-or-later"
+)
+t="core lib math"
+u="https://gitlab.inria.fr/$n/$n.git"
+vf="gr | grep -Ev 'emptycommit|deleted|-rc|-root'"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "gmp"
+)
+
+b() {
+
+_cfg=(
+    --enable-shared
+    --enable-thread-safe
+)
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+mk check-exported-symbols
+
+}
