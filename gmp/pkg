@@ -1,0 +1,40 @@
+#!/to
+
+n="gmp"
+v="6.3.0"
+a="Arbitrary precision math libraries"
+m="Tox"
+l=(
+    "GPL-2.0-or-later"
+    "LGPL-3.0-or-later"
+)
+t="core math"
+u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
+vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d\" -f8 | cut -d- -f2 | cut -d. -f1-3"
+
+s=(
+    "${u%\?*}/$n-$v.tar.xz"
+)
+
+b() {
+
+_cfg=(
+    --enable-cxx
+    --enable-fat
+)
+
+cfg
+
+# Avoid overlinking
+sed 's/ -shared / -Wl,-O1,--as-needed\0/g' -i libtool
+
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
