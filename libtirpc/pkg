@@ -4,9 +4,13 @@ n="libtirpc"
 v="1.3.6"
 a="Transport-independent RPC library"
 m="Tox"
-l="BSD-3-Clause SISSL"
+l=(
+    "BSD-3-Clause"
+    "SISSL"
+)
 t="lib"
 u="git://linux-nfs.org/~steved/$n.git" # upstream
+vf="gr | sed 's,-,.,g' | grep -v 'rc' | cut -d. -f2-"
 
 s=(
     "https://downloads.sourceforge.net/$n/$n-$v.tar.bz2"
