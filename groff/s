@@ -7,7 +7,7 @@
     "GPL-3.0-or-later"
   ],
   "upstream": "https://git.savannah.gnu.org/git/groff.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep -E '^[0-9]+' | grep -Ev '[a-z]+'",
   "tags": [
     "lib"
   ],
