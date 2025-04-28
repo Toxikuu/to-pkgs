@@ -1,7 +1,7 @@
 {
   "name": "readline",
   "version": "8.2.13",
-  "about": "GNU readline library",
+  "about": "Libraries for command-line editing and history",
   "maintainer": "Tox",
   "licenses": [
     "GPL-3.0-only"

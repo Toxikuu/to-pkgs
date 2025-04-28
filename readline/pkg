@@ -2,7 +2,7 @@
 
 n="readline"
 v="8.2.13"
-a="GNU readline library"
+a="Libraries for command-line editing and history"
 m="Tox"
 l="GPL-3.0-only"
 t="lib critical core"
