@@ -6,7 +6,8 @@ a="The Internet Assigned Numbers Authority's services and protocols"
 m="Tox"
 l="MIT"
 t="lib"
-u="https://github.com/Mic92/$n.git" # upstream
+u="https://github.com/Mic92/$n.git"
+vf="gr | sort -V | grep -B1 untagged | head -n1"
 
 s=(
     "${u%.git}/releases/download/$v/$n-$v.tar.gz"

@@ -7,7 +7,7 @@
     "MIT"
   ],
   "upstream": "https://github.com/Mic92/iana-etc.git",
-  "version_fetch": null,
+  "version_fetch": "gr | sort -V | grep -B1 untagged | head -n1",
   "tags": [
     "lib"
   ],
