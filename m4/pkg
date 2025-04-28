@@ -1,0 +1,28 @@
+#!/to
+
+n="m4"
+v="1.4.19"
+a="Macro processor"
+m="Tox"
+l="GPL-3.0"
+t="core"
+u="https://git.savannah.gnu.org/git/$n.git"
+vf="gr | sort -V | grep -B1 v1.5.89a | head -n1"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
