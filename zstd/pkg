@@ -10,6 +10,7 @@ l=(
 )
 t="core critical utils cli lib z"
 u="https://github.com/facebook/$n.git"
+vf="gr | grep -E '^v[0-9]+' | grep -v -- -kernel | tail -n1"
 
 s=(
     "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
@@ -32,6 +33,6 @@ rm -vf "$D"/usr/lib/libzstd.a
 
 t() {
 
-    mk check
+mk check
 
 }
