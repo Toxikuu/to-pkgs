@@ -1,0 +1,45 @@
+#!/to
+
+n="ncurses"
+v="6.5"
+a="Libraries for terminal-independent character screen handling"
+m="Tox"
+l="MIT-open-group"
+t="core critical lib"
+u="https://invisible-mirror.net/archives/$n/?C=M;O=D"
+
+s=(
+    "${u%\?*}$n-$v.tar.gz"
+)
+
+b() {
+
+_cfg=(
+    --with-shared
+    --with-cxx-shared
+    --with-manpage-format=normal
+    --with-pkg-config-libdir=/usr/lib/pkgconfig
+
+    --without-ada
+    --without-debug
+    --without-normal
+
+    --enable-pc-files
+)
+
+cfg
+mk
+mi
+
+# Fool packages attempting to link to non-wide ncurses
+sed -e 's/^#if.*XOPEN.*$/#if 1/' \
+    -i "$D"/usr/include/curses.h
+
+for lib in ncurses{,++} form panel menu ; do
+    ln -sfv lib${lib}w.so "$D"/usr/lib/lib${lib}.so
+    ln -sfv ${lib}w.pc    "$D"/usr/lib/pkgconfig/${lib}.pc
+done
+
+ln -sfv libncursesw.so "$D"/usr/lib/libcurses.so
+
+}

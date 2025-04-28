@@ -1,0 +1,25 @@
+{
+  "name": "ncurses",
+  "version": "6.5",
+  "about": "Libraries for terminal-independent character screen handling",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT-open-group"
+  ],
+  "upstream": "https://invisible-mirror.net/archives/ncurses/?C=M;O=D",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "critical",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz",
+      "dest": "ncurses-6.5.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
