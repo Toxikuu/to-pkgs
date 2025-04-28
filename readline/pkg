@@ -1,0 +1,36 @@
+#!/to
+
+n="readline"
+v="8.2.13"
+a="GNU readline library"
+m="Tox"
+l="GPL-3.0-only"
+t="lib critical core"
+u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
+vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|sig|patches' | head -n1 | cut -d- -f2"
+
+s=(
+    "${u%\?*}$n-$v.tar.gz"
+)
+
+d=(
+    "ncurses"
+)
+
+b() {
+
+# avoid moving old libraries
+sed -i '/MV.*old/d' Makefile.in
+sed -i '/{OLDSUFF}/c:' support/shlib-install
+
+# remove rpath
+sed -i 's/-Wl,-rpath,[^ ]*//' support/shobj-conf
+
+CFLAGS+=" -fPIC"
+
+# play nice with ncurses
+cfg --with-curses
+mk SHLIB_LIBS="-lncursesw"
+mi
+
+}
