@@ -23,7 +23,6 @@ d=(
 b() {
 
 _cfg=(
-    --enable-shared
     --enable-thread-safe
 )
 
