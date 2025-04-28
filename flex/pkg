@@ -1,0 +1,39 @@
+#!/to
+
+n="flex"
+v="2.6.4"
+a="Fast lexical analyzer generator"
+m="Tox"
+l="custom"
+t="core"
+u="https://github.com/westes/flex.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "m4"
+)
+
+b() {
+
+./autogen.sh
+
+cfg
+mk
+mi
+
+# Make packages that want lex use flex
+ln -sv flex   "$D"/usr/bin/lex
+ln -sv flex.1 "$D"/usr/share/man/man1/lex.1
+
+install -Dm644 COPYING -t "$D/usr/share/licenses/$n/"
+
+}
+
+t() {
+
+make check
+
+}
