@@ -7,7 +7,7 @@ u="https://github.com/rpm-software-management/$n.git"
 
 t="lib"
 s="https://ftp.osuosl.org/pub/rpm/$n/releases/$n-${v%.*}.x/$n-$v.tar.gz"
-vf="gr | grep '$n-[0-9]+\\.[0-9]+-release' | cut -d- -f2"
+vf="gr | grep -E '$n-[0-9]+\\.[0-9]+-release' | cut -d- -f2"
 
 b() {
 
