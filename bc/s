@@ -9,8 +9,7 @@
   "upstream": "https://github.com/gavinhoward/bc.git",
   "version_fetch": "gr | grep -Ev '[a-z]+' | tail -n1",
   "tags": [
-    "core",
-    "math"
+    "core math"
   ],
   "sources": [
     {
