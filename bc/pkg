@@ -10,7 +10,7 @@ u="https://github.com/gavinhoward/$n.git"
 vf="gr | grep -Ev '[a-z]+' | tail -n1"
 
 s=(
-    "$u"
+    "$u->$n"
 )
 
 d=(

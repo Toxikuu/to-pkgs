@@ -17,7 +17,7 @@
     {
       "kind": "Git",
       "url": "https://github.com/gavinhoward/bc.git",
-      "dest": "bc.git"
+      "dest": "bc"
     }
   ],
   "dependencies": [
