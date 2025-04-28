@@ -1,0 +1,25 @@
+#!/to
+
+n="pkgconf"
+v="2.4.3"
+a="Package compiler and linker metadata toolkit"
+m="Tox"
+l="ISC"
+t="core lib utils"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "https://distfiles.ariadne.space/$n/$n-$v.tar.xz"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+# Maintain compatibility with the original pkg-config
+ln -sv pkgconf   "$D"/usr/bin/pkg-config
+ln -sv pkgconf.1 "$D"/usr/share/man/man1/pkg-config.1
+
+}

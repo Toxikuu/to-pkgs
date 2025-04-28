@@ -1,0 +1,25 @@
+{
+  "name": "pkgconf",
+  "version": "2.4.3",
+  "about": "Package compiler and linker metadata toolkit",
+  "maintainer": "Tox",
+  "licenses": [
+    "ISC"
+  ],
+  "upstream": "https://github.com/pkgconf/pkgconf.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://distfiles.ariadne.space/pkgconf/pkgconf-2.4.3.tar.xz",
+      "dest": "pkgconf-2.4.3.tar.xz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
