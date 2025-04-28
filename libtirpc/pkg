@@ -9,7 +9,7 @@ l=(
     "SISSL"
 )
 t="lib"
-u="git://linux-nfs.org/~steved/$n.git" # upstream
+u="git://linux-nfs.org/~steved/$n.git"
 vf="gr | sed 's,-,.,g' | grep -v 'rc' | cut -d. -f2-"
 
 s=(

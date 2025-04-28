@@ -8,7 +8,7 @@
     "SISSL"
   ],
   "upstream": "git://linux-nfs.org/~steved/libtirpc.git",
-  "version_fetch": null,
+  "version_fetch": "gr | sed 's,-,.,g' | grep -v 'rc' | cut -d. -f2-",
   "tags": [
     "lib"
   ],
