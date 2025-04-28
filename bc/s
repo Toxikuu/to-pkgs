@@ -4,8 +4,7 @@
   "about": "Arbitrary precision numeric processing language",
   "maintainer": "Tox",
   "licenses": [
-    "BSD",
-    "2-Clause"
+    "BSD-2-Clause"
   ],
   "upstream": "https://github.com/gavinhoward/bc.git",
   "version_fetch": "gr | grep -Ev '[a-z]+' | tail -n1",

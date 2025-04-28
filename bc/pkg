@@ -24,3 +24,9 @@ mk
 mi
 
 }
+
+t() {
+
+make test
+
+}
