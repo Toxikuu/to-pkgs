@@ -1,0 +1,32 @@
+#!/to
+
+# TODO: Add libexpat as an alias
+n="expat"
+v="2.7.1"
+a="XML parser library"
+m="Tox"
+l="MIT"
+t="lib core"
+u="https://github.com/lib$n/lib$n.git"
+
+s=(
+    "${u%.git}/releases/download/R_${v//./_}/expat-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
