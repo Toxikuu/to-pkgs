@@ -1,0 +1,25 @@
+{
+  "name": "psmisc",
+  "version": "f51a83c7419d902c3801ad2ad67fceec120374a0",
+  "about": "Process monitoring programs",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://gitlab.com/psmisc/psmisc.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.com/psmisc/psmisc.git",
+      "dest": "psmisc"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

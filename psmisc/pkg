@@ -1,0 +1,32 @@
+#!/to
+
+n="psmisc"
+v="f51a83c7419d902c3801ad2ad67fceec120374a0"
+a="Process monitoring programs"
+m="Tox"
+l="GPL"
+t="core utils cli"
+u="https://gitlab.com/$n/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+)
+
+b() {
+
+./autogen.sh
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
