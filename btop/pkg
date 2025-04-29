@@ -1,0 +1,24 @@
+#!/to
+
+n="btop"
+v="1.4.1"
+a="Resource monitor"
+m="Tox"
+l="Apache-2.0"
+t="utils tui"
+u="https://github.com/aristocratos/$n.git"
+
+s=(
+    "${u%.git}/archive/refs/tags/v$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+mk
+mi PREFIX=/usr
+
+}
