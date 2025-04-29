@@ -29,13 +29,6 @@ mi
 
 t() {
 
-# Check existing locales because I'm curious
-locale -a > /LOCALES
-
-# Generate locales needed for tests
-localedef -i ja_JP -f UTF-8 ja_JP.UTF-8
-localedef -i fr_FR -f UTF-8 fr_FR.UTF-8
-
 mk check
 
 }
