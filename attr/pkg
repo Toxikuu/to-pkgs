@@ -1,0 +1,32 @@
+#!/to
+
+n="attr"
+v="2.5.2"
+a="Utilities to administer filesystem object attributes"
+m="Tox"
+l="LGPL"
+t="core"
+u="https://git.savannah.nongnu.org/git/$n.git"
+
+s=(
+    "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.gz"
+)
+
+d=(
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+# fs must support extended attributes
+# ext{2..4} do
+make check
+
+}

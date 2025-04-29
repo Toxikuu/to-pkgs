@@ -1,0 +1,23 @@
+{
+  "name": "attr",
+  "version": "2.5.2",
+  "about": "Utilities to administer filesystem object attributes",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL"
+  ],
+  "upstream": "https://git.savannah.nongnu.org/git/attr.git",
+  "version_fetch": null,
+  "tags": [
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://download.savannah.gnu.org/releases/attr/attr-2.5.2.tar.gz",
+      "dest": "attr-2.5.2.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
