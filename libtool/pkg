@@ -1,0 +1,33 @@
+#!/to
+
+n="libtool"
+v="2.5.4"
+a="Generic library support script"
+m="Tox"
+l="LGPL-2.0-or-later WITH Libtool-exception"
+t="core lib"
+u="git://git.savannah.gnu.org/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+rm -vf "$D"/usr/lib/libltdl.a
+
+}
+
+t() {
+
+mk check
+
+}
