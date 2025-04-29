@@ -1,0 +1,33 @@
+#!/to
+
+n="bison"
+v="3.8.2"
+a="Parser generator"
+m="Tox"
+l="GPL-3.0-or-later"
+t="core"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "m4"
+    "glibc"
+)
+
+b() {
+
+CFLAGS+=' -ffat-lto-objects'
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
