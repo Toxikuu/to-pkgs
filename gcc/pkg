@@ -1,0 +1,102 @@
+#!/to
+
+n="gcc"
+v="14.2.0"
+a="The GNU compiler collection"
+m="Tox"
+l=(
+    "GFDL-1.3-or-later"
+    "GPL-3.0-with-GCC-exception"
+)
+t="critical core utils lib"
+u="https://$n.gnu.org/git/$n.git"
+vf="no"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v/$n-$v.tar.xz"
+)
+
+d=(
+    "binutils"
+    "mpc"
+    "zstd"
+    "isl"
+)
+
+b() {
+
+# Change the default directory name for 64-bit libraries to lib
+case $(uname -m) in
+  x86_64)
+    sed -e '/m64=/s/lib64/lib/' \
+        -i.orig $n/config/i386/t-linux64
+  ;;
+esac
+
+_cfg=(
+    LD=ld
+    --enable-languages=c,c++
+    --enable-default-pie
+    --enable-default-ssp
+    --enable-host-pie
+    --disable-multilib
+    --disable-bootstrap
+    --disable-fixincludes
+    --with-system-zlib
+)
+
+mkdir -v build
+cd       build
+
+cfg
+mk
+mi
+
+# Add compatibility symlinks, except a random historical one that puts an
+# executable binary in lib (lol??)
+# ln -svr /usr/bin/cpp /usr/lib
+ln -sfv $n "$D"/usr/bin/cc
+ln -sfv $n.1 "$D"/usr/share/man/man1/cc.1
+
+# LTO compatibility symlink
+mkdir -pv "$D"/usr/lib/bfd-plugins
+ln -sfv ../../libexec/$n/$($n -dumpmachine)/$v/liblto_plugin.so \
+        "$D"/usr/lib/bfd-plugins/
+
+# Move a misplaced file
+mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
+mv -vf "$D"/usr/lib/*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
+
+# Run some sanity checks
+(
+    # Do NOT install not to DESTDIR
+    mk install
+
+    # Compatibility symlinks
+    ln -sfv $n /usr/bin/cc
+    ln -sfv $n.1 /usr/share/man/man1/cc.1
+
+    # LTO compatibility symlink
+    mkdir -pv /usr/lib/bfd-plugins
+    ln -sfv ../../libexec/$n/$($n -dumpmachine)/$v/liblto_plugin.so \
+            /usr/lib/bfd-plugins/
+
+    # Move a misplaced file
+    mkdir -pv /usr/share/gdb/auto-load/usr/lib
+    mv -vf /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
+
+    # Run the sanity checks
+    echo "Running some sanity checks..." >&2
+    echo 'int main(){}' | cc -x c - -v -Wl,--verbose &> dummy.log
+    readelf -l a.out | grep ': /lib'
+
+    grep -E -o '/usr/lib.*/S?crt[1in].*succeeded' dummy.log | grep succeeded || die "GCC sanity check failure!"
+
+    grep -B4 '^ /usr/include' dummy.log
+    grep 'SEARCH.*/usr/lib' dummy.log | sed 's|; |\n|g'
+
+    grep "/lib.*/libc.so.6 " dummy.log | grep succeeded || die "GCC sanity check failure!"
+    grep found dummy.log | grep found || die "GCC sanity check failure!"
+)
+
+}

@@ -1,0 +1,44 @@
+{
+  "name": "gcc",
+  "version": "14.2.0",
+  "about": "The GNU compiler collection",
+  "maintainer": "Tox",
+  "licenses": [
+    "GFDL-1.3-or-later",
+    "GPL-3.0-with-GCC-exception"
+  ],
+  "upstream": "https://gcc.gnu.org/git/gcc.git",
+  "version_fetch": "no",
+  "tags": [
+    "critical",
+    "core",
+    "utils",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz",
+      "dest": "gcc-14.2.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "binutils",
+      "kind": "Required"
+    },
+    {
+      "name": "mpc",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "isl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
