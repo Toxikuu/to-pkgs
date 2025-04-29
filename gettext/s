@@ -1,0 +1,42 @@
+{
+  "name": "gettext",
+  "version": "0.24",
+  "about": "i18n and l10n toolkit",
+  "maintainer": "Tox",
+  "licenses": [
+    "GFDL-1.2-only",
+    "GPL-2.0-only",
+    "GPL-2.0-or-later",
+    "LGPL-2.0-only"
+  ],
+  "upstream": "https://git.savannah.gnu.org/git/gettext.git",
+  "version_fetch": null,
+  "tags": [
+    "i18n",
+    "utils",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/gettext/gettext-0.24.tar.xz",
+      "dest": "gettext-0.24.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "acl",
+      "kind": "Runtime"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "libunistring",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

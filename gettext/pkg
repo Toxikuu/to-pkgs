@@ -1,0 +1,57 @@
+#!/to
+
+n="gettext"
+v="0.24"
+a="i18n and l10n toolkit"
+m="Tox"
+l=(
+    "GFDL-1.2-only"
+    "GPL-2.0-only"
+    "GPL-2.0-or-later"
+    "LGPL-2.0-only"
+)
+t="i18n utils lib core"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "r,acl"
+    "ncurses"
+    "libunistring"
+)
+
+b() {
+
+_cfg=(
+    --disable-c++
+    --disable-csharp
+    --disable-dependency-tracking
+    --disable-java
+    --disable-native-java
+    --disable-nls
+    --disable-rpath
+    --enable-curses
+    --enable-shared
+    --enable-threads=posix
+    --with-xz
+    --without-bzip2
+    --without-cvs
+    --without-emacs
+    --without-git
+    --without-included-gettext
+    --without-included-libunistring
+)
+
+cfg
+
+sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' \
+    gettext-{tools,runtime,runtime/libasprintf}/libtool
+
+mk
+mi
+chmod -v 755 "$D"/usr/lib/preloadable_libintl.so
+
+}
