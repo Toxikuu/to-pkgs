@@ -1,0 +1,25 @@
+#!/to
+
+n="acl"
+v="2.3.2"
+a="Access Control Lists"
+m="Tox"
+l="LGPL"
+t="core lib"
+u="https://git.savannah.nongnu.org/git/$n.git"
+
+s=(
+    "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "attr"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}
