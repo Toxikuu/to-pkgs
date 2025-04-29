@@ -7,7 +7,7 @@ m="Tox"
 l="GPL-3.0-only"
 t="lib critical core"
 u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
-vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|sig|patches' | head -n1 | cut -d- -f2"
+vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|sig|patches' | head -n1 | cut -d- -f2 | sed 's,.tar.*,,'"
 
 s=(
     "${u%\?*}$n-$v.tar.gz"

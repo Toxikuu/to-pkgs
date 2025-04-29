@@ -7,7 +7,7 @@
     "GPL-3.0-only"
   ],
   "upstream": "https://ftp.gnu.org/gnu/readline/?C=M;O=D",
-  "version_fetch": "curl -s 'https://ftp.gnu.org/gnu/readline/?C=M;O=D' | grep 'readline-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|sig|patches' | head -n1 | cut -d- -f2",
+  "version_fetch": "curl -s 'https://ftp.gnu.org/gnu/readline/?C=M;O=D' | grep 'readline-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|sig|patches' | head -n1 | cut -d- -f2 | sed 's,.tar.*,,'",
   "tags": [
     "lib",
     "critical",
