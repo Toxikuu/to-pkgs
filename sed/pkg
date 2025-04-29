@@ -1,0 +1,25 @@
+#!/to
+
+n="sed"
+v="4.9"
+a="Stream editor"
+m="Tox"
+l="GPL-3.0"
+t="core utils"
+u="git://git.savannah.gnu.org/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "acl"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}

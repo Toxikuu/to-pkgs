@@ -1,0 +1,29 @@
+{
+  "name": "sed",
+  "version": "4.9",
+  "about": "Stream editor",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0"
+  ],
+  "upstream": "git://git.savannah.gnu.org/sed.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz",
+      "dest": "sed-4.9.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "acl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
