@@ -1,0 +1,36 @@
+#!/to
+
+n="gdbm"
+v="1.25"
+a="The GNU Database Manager"
+m="Tox"
+l="GPL-3.0-or-later"
+t="core lib"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+# Compatibility library wanted by some packages
+_cfg=(
+    --enable-libgdbm-compat
+)
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
