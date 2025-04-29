@@ -1,0 +1,32 @@
+#!/to
+
+n="bash"
+v="5.2.37"
+a="The Bourne-Again Shell"
+m="Tox"
+l="GPL-3.0-or-later"
+t="shell core"
+u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "ncurses"
+    "readline"
+)
+
+b() {
+
+_cfg=(
+    --without-bash-malloc
+    --with-installed-readline
+)
+
+cfg
+mk
+mi
+
+}

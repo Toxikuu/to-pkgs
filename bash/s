@@ -1,0 +1,37 @@
+{
+  "name": "bash",
+  "version": "5.2.37",
+  "about": "The Bourne-Again Shell",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://ftp.gnu.org/gnu/bash/?C=M;O=D",
+  "version_fetch": null,
+  "tags": [
+    "shell",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz",
+      "dest": "bash-5.2.37.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
