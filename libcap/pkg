@@ -1,0 +1,29 @@
+#!/to
+
+n="libcap"
+v="2.76"
+a="POSIX 1003.1e capabilities"
+m="Tox"
+l="BSD-3-Clause OR GPL-2.0-only"
+t="core sec"
+u="https://git.kernel.org/pub/scm/libs/$n/$n.git"
+
+s=(
+    "https://www.kernel.org/pub/linux/libs/security/linux-privs/${n}2/$n-$v.tar.xz"
+)
+
+b() {
+
+# Prevent the installation of static libraries
+sed -i '/install -m.*STA/d' libcap/Makefile
+
+mk prefix=/usr lib=lib
+mi prefix=/usr lib=lib
+
+}
+
+t() {
+
+mk test
+
+}
