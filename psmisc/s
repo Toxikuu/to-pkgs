@@ -20,6 +20,11 @@
       "dest": "psmisc"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "ncurses",
+      "kind": "Runtime"
+    }
+  ],
   "kcfg": []
 }
