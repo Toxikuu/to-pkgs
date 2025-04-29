@@ -1,0 +1,42 @@
+{
+  "name": "pcre2",
+  "version": "10.45",
+  "about": "Perl-Compatible Regular Expressions",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause",
+    "BSD-3-Clause WITH PCRE2-exception"
+  ],
+  "upstream": "https://github.com/PCRE2Project/pcre2.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2",
+      "dest": "pcre2-10.45.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

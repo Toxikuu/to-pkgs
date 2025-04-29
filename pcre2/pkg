@@ -1,0 +1,41 @@
+#!/to
+
+n="pcre2"
+v="10.45"
+a="Perl-Compatible Regular Expressions"
+m="Tox"
+l=(
+    "BSD-2-Clause"
+    "BSD-3-Clause WITH PCRE2-exception"
+)
+t="core lib"
+u="https://github.com/PCRE2Project/$n.git"
+
+s=(
+    "${u%.git}/releases/download/$n-$v/$n-$v.tar.bz2"
+)
+
+d=(
+    "bzip2"
+    "glibc"
+    "readline"
+    "zlib"
+)
+
+b() {
+
+_cfg=(
+    --enable-unicode
+    --enable-jit
+    --enable-pcre2-16
+    --enable-pcre2-32
+    --enable-pcre2grep-libz
+    --enable-pcre2grep-libbz2
+    --enable-pcre2test-libreadline
+)
+
+cfg
+mk
+mi
+
+}
