@@ -12,6 +12,10 @@ s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
 )
 
+d=(
+    "glibc"
+)
+
 b() {
 
 cfg
