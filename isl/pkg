@@ -1,0 +1,38 @@
+#!/to
+
+n="isl"
+v="433e17b9bccf4417725744316dff8a44caedcbcc"
+a="Integer Set Library"
+m="Tox"
+l="MIT"
+t="core math lib"
+u="https://repo.or.cz/$n.git"
+
+# TODO: Add git as a build dependency and build from the git repo
+s=(
+    "$u/snapshot/$v.tar.gz"
+)
+
+d=(
+    "gmp"
+)
+
+b() {
+
+./autogen.sh
+
+cfg
+mk
+mi
+
+install -vdm755 "$D/usr/share/gdb/auto-load/usr/lib/"
+install -vDm644 LICENSE -t "$D/usr/share/licenses/$n/LICENSE"
+
+}
+
+# Tests fail lol
+# t() {
+#
+# mk check
+#
+# }

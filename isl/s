@@ -1,0 +1,30 @@
+{
+  "name": "isl",
+  "version": "433e17b9bccf4417725744316dff8a44caedcbcc",
+  "about": "Integer Set Library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://repo.or.cz/isl.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "math",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://repo.or.cz/isl.git/snapshot/433e17b9bccf4417725744316dff8a44caedcbcc.tar.gz",
+      "dest": "433e17b9bccf4417725744316dff8a44caedcbcc.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gmp",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
