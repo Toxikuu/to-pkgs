@@ -7,10 +7,9 @@ m="Tox"
 l="BSD-2-Clause"
 t="core math"
 u="https://github.com/gavinhoward/$n.git"
-vf="gr | grep -Ev '[a-z]+' | tail -n1"
 
 s=(
-    "$u -> $n"
+    "$u"
 )
 
 d=(
