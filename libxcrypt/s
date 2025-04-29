@@ -1,0 +1,25 @@
+{
+  "name": "libxcrypt",
+  "version": "4.4.38",
+  "about": "Modern library for password hashing",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL"
+  ],
+  "upstream": "https://github.com/besser82/libxcrypt.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "sec",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz",
+      "dest": "libxcrypt-4.4.38.tar.xz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

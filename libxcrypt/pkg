@@ -1,0 +1,33 @@
+#!/to
+
+n="libxcrypt"
+v="4.4.38"
+a="Modern library for password hashing"
+m="Tox"
+l="LGPL"
+t="lib sec core"
+u="https://github.com/besser82/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+)
+
+b() {
+
+_cfg=(
+    --enable-hashes=strong,glibc
+    --enable-obsolete-api=no
+    --disable-failure-tokens
+)
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
