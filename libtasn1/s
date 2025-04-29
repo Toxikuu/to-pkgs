@@ -1,0 +1,31 @@
+{
+  "name": "libtasn1",
+  "version": "4.20.0",
+  "about": "Highly portable ASN.1 library",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later",
+    "LGPL-2.1-or-later",
+    "GFDL-1.3-or-later"
+  ],
+  "upstream": "https://gitlab.com/gnutls/libtasn1.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "sec"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz",
+      "dest": "libtasn1-4.20.0.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

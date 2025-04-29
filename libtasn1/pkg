@@ -1,0 +1,31 @@
+#!/to
+
+n="libtasn1"
+v="4.20.0"
+a="Highly portable ASN.1 library"
+m="Tox"
+l=(
+    "GPL-3.0-or-later"
+    "LGPL-2.1-or-later"
+    "GFDL-1.3-or-later"
+)
+t="lib sec"
+u="https://gitlab.com/gnutls/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
+
+}
