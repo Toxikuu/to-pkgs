@@ -1,0 +1,46 @@
+#!/to
+
+n="openssl"
+v="3.5.0"
+a="Cryptography tools and libraries"
+m="Tox"
+l="Apache-2.0"
+t="lib core sec utils cli"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/releases/download/$n-$v/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "b,perl"
+)
+
+b() {
+
+_cfg=(
+    --prefix=/usr
+    --openssldir=/etc/ssl
+    --libdir=lib
+    shared
+    zlib-dynamic
+)
+
+./config ${_cfg[@]}
+mk
+mi
+
+sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
+make MANSUFFIX=ssl install
+
+cp -av doc/* "$D/usr/share/doc/$n"
+
+}
+
+t() {
+
+# 30-test_afalg.t may fail depending on kernel configuration
+HARNESS_JOBS=$(nproc) mk test
+
+}
