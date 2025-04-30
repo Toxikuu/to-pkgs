@@ -1,0 +1,28 @@
+{
+  "name": "intltool",
+  "version": "0.51.0",
+  "about": "i18n tool for extracting translatable strings from source files",
+  "maintainer": "Tox",
+  "licenses": [
+    "LICENSE"
+  ],
+  "upstream": "https://salsa.debian.org/gnome-team/intltool.git",
+  "version_fetch": "gr | cut -d- -f1 | uniq",
+  "tags": [
+    "i18n"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+      "dest": "intltool-0.51.0.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "xml-parser",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

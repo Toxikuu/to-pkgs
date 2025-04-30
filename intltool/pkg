@@ -1,0 +1,35 @@
+#!/to
+
+n="intltool"
+v="0.51.0"
+a="i18n tool for extracting translatable strings from source files"
+m="Tox"
+l="LICENSE"
+t="i18n"
+u="https://salsa.debian.org/gnome-team/$n.git"
+vf="gr | cut -d- -f1 | uniq"
+
+s=(
+    "https://launchpad.net/$n/trunk/$v/+download/$n-$v.tar.gz"
+)
+
+d=(
+    "xml-parser"
+)
+
+b() {
+
+# Avoid a warning caused by perl 5.22+
+sed -i 's:\\\${:\\\$\\{:' intltool-update.in
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
