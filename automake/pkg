@@ -1,0 +1,25 @@
+#!/to
+
+n="automake"
+v="1.17"
+a="Automatic Makefile generator"
+m="Tox"
+l="GPL"
+t=""
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "b,autoconf"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}
