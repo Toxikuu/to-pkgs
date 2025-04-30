@@ -1,0 +1,43 @@
+{
+  "name": "setuptools",
+  "version": "80.0.1",
+  "about": "Tool for managing Python packages",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/pypa/setuptools.git",
+  "version_fetch": null,
+  "tags": [
+    "py",
+    "utils",
+    "core",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://pypi.org/packages/source/s/setuptools/setuptools-80.0.1.tar.gz",
+      "dest": "setuptools-80.0.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "packaging",
+      "kind": "Required"
+    },
+    {
+      "name": "wheel",
+      "kind": "Required"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

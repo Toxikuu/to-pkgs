@@ -1,0 +1,29 @@
+#!/to
+
+n="setuptools"
+v="80.0.1"
+a="Tool for managing Python packages"
+m="Tox"
+l="MIT"
+t="py utils core lib"
+u="https://github.com/pypa/$n.git"
+
+s=(
+    "https://pypi.org/packages/source/s/$n/$n-$v.tar.gz"
+)
+
+d=(
+    "python"
+    "packaging"
+    "wheel"
+    "setuptools"
+)
+
+b() {
+
+with pip
+
+pipb
+pipi
+
+}
