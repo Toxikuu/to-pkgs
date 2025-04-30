@@ -61,6 +61,7 @@ install -vDm644 "$A/pip.conf" -t "$D"/etc/
 # Create symlinks that really should be default
 ln -sv python3               "$D"/usr/bin/python
 ln -sv python3-config        "$D"/usr/bin/python-config
+ln -sv pip3                  "$D"/usr/bin/pip
 ln -sv pydoc3                "$D"/usr/bin/pydoc
 ln -sv python${v%.*}.1       "$D"/usr/share/man/man1/python.1
 
