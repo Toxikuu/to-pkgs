@@ -1,0 +1,78 @@
+#!/to
+
+n="python"
+v="3.13.3"
+a="The Python programming language"
+m="Tox"
+l="PSF-2.0"
+t="core lang lib utils cli"
+u="https://github.com/$n/c$n.git"
+
+s=(
+    "https://www.$n.org/ftp/$n/$v/${n^}-$v.tar.xz"
+)
+
+d=(
+    "libnsl"
+    "mpdecimal"
+    "expat"
+    "libffi"
+    "gdbm"
+    "libxcrypt"
+    "openssl"
+    "zlib"
+    "bzip2"
+    "r,glibc"
+)
+
+b() {
+
+# Ensure system libraries are used
+rm -rf Modules/expat
+rm -rf Modules/_decimal/libmpdec
+
+_cfg=(
+    --enable-shared
+
+    # Use system libraries
+    --with-system-expat
+    --with-system-libmpdec
+
+    # Optimizations
+    --with-computed-gotos
+    --with-lto=full
+    --enable-optimizations
+
+    # Explicitly disable stuff
+    --without-dtrace
+    --without-valgrind
+    --disable-test-modules
+)
+
+
+# Use -O3 and fat LTO
+CFLAGS="${CFLAGS/-O2/-O3} -ffat-lto-objects"
+cfg
+mk
+mi
+
+install -vDm644 "$A/pip.conf" -t "$D"/etc/
+
+# Create symlinks that really should be default
+ln -sv python3               "$D"/usr/bin/python
+ln -sv python3-config        "$D"/usr/bin/python-config
+ln -sv pydoc3                "$D"/usr/bin/pydoc
+ln -sv python${v%.*}.1       "$D"/usr/share/man/man1/python.1
+
+# Remove idle shit (should be a configure option ngl)
+rm -rvf "$D"/usr/lib/python[0-9]*/idlelib
+rm -vf "$D"/usr/bin/idle[0-9]*
+
+}
+
+t() {
+
+# Several tests may fail
+make test TESTOPTS="--timeout 60" || true
+
+}

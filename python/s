@@ -1,0 +1,68 @@
+{
+  "name": "python",
+  "version": "3.13.3",
+  "about": "The Python programming language",
+  "maintainer": "Tox",
+  "licenses": [
+    "PSF-2.0"
+  ],
+  "upstream": "https://github.com/python/cpython.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "lang",
+    "lib",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz",
+      "dest": "Python-3.13.3.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libnsl",
+      "kind": "Required"
+    },
+    {
+      "name": "mpdecimal",
+      "kind": "Required"
+    },
+    {
+      "name": "expat",
+      "kind": "Required"
+    },
+    {
+      "name": "libffi",
+      "kind": "Required"
+    },
+    {
+      "name": "gdbm",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcrypt",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Runtime"
+    }
+  ],
+  "kcfg": []
+}
