@@ -1,0 +1,35 @@
+#!/to
+
+n="ninja"
+v="1.12.1"
+a="Small, fast build system"
+m="Tox"
+l="Apache-2.0"
+t="py core utils"
+u="https://github.com/$n-build/$n.git"
+
+s=(
+    "${u%.git}/archive/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "python"
+)
+
+b() {
+
+# Make ninja recognize $NINJAJOBS
+sed -i '/int Guess/a \
+  int   j = 0;\
+  char* jobs = getenv( "NINJAJOBS" );\
+  if ( jobs != NULL ) j = atoi( jobs );\
+  if ( j > 0 ) return j;\
+' src/ninja.cc
+
+python configure.py --bootstrap --verbose
+
+install -vDm755 ninja -t "$D"/usr/bin/
+install -vDm644 misc/bash-completion "$D"/usr/share/bash-completion/completions/ninja
+install -vDm644 misc/zsh-completion  "$D"/usr/share/zsh/site-functions/_ninja
+
+}
