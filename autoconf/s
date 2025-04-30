@@ -1,0 +1,36 @@
+{
+  "name": "autoconf",
+  "version": "2.72",
+  "about": "Automatic configure script builder",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL2",
+    "GPL3",
+    "custom"
+  ],
+  "upstream": "https://git.savannah.gnu.org/git/autoconf.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz",
+      "dest": "autoconf-2.72.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "m4",
+      "kind": "Required"
+    },
+    {
+      "name": "perl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

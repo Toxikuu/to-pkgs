@@ -1,0 +1,40 @@
+#!/to
+
+n="autoconf"
+v="2.72"
+a="Automatic configure script builder"
+m="Tox"
+l=(
+    "GPL2"
+    "GPL3"
+    "custom"
+)
+t="lib utils core"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "m4"
+    "perl"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+install -vDm644 COPYING.EXCEPTION "$D/usr/share/licenses/$n/COPYING.EXCEPTION"
+rm -vf "$D"/usr/share/info/standards.info
+
+}
+
+t() {
+
+# Disable broken test 227
+mk check TESTSUITEFLAGS="1-226 228-"
+
+}
