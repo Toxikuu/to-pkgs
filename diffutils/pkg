@@ -30,6 +30,6 @@ mi
 
 t() {
 
-mk check
+mk check 2>&1 | tee /tmp/testlog
 
 }
