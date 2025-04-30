@@ -1,0 +1,30 @@
+#!/to
+
+n="libnsl"
+v="2.0.1"
+a="Public client interface for NIS(YP)"
+m="Tox"
+l="LGPL-2.1"
+t="lib net core"
+u="https://github.com/thkukuk/$n.git"
+
+s=(
+    "${u%.git}/archive/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "libtirpc"
+)
+
+b() {
+
+autoreconf -fiv
+
+cfg
+mk
+mi
+
+install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
+
+}

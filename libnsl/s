@@ -1,0 +1,34 @@
+{
+  "name": "libnsl",
+  "version": "2.0.1",
+  "about": "Public client interface for NIS(YP)",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1"
+  ],
+  "upstream": "https://github.com/thkukuk/libnsl.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "net",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/thkukuk/libnsl/archive/v2.0.1/libnsl-2.0.1.tar.gz",
+      "dest": "libnsl-2.0.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libtirpc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
