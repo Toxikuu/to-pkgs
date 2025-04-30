@@ -1,0 +1,29 @@
+{
+  "name": "libffi",
+  "version": "3.4.8",
+  "about": "Foreign Function Interface library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/libffi/libffi.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/libffi/libffi/releases/download/v3.4.8/libffi-3.4.8.tar.gz",
+      "dest": "libffi-3.4.8.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
