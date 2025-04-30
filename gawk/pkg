@@ -1,0 +1,36 @@
+#!/to
+
+n="gawk"
+v="5.3.2"
+a="Programs for manipulating text"
+m="Tox"
+l="GPL-3.0-or-later"
+t="core utils lib cli"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "mpfr"
+)
+
+b() {
+
+# Avoid installing unneeded files
+sed -i 's/extras//' Makefile.in
+
+_cfg=(
+    --without-libsigsegv
+)
+
+cfg
+mk
+mi
+
+# Compatibility sylink
+ln -sv gawk.1 "$D"/usr/share/man/man1/awk.1
+
+}
