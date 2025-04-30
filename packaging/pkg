@@ -1,0 +1,27 @@
+#!/to
+
+n="packaging"
+v="25.0"
+a="Core utilities for Python packages"
+m="Tox"
+l="Apache-2.0"
+t="py lib core"
+u="https://github.com/pypa/$n.git"
+
+s=(
+    "https://files.pythonhosted.org/packages/source/p/$n/$n-$v.tar.gz"
+)
+
+d=(
+    "python"
+    "flit-core"
+)
+
+b() {
+
+with pip
+
+pipb
+pipi
+
+}
