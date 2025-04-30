@@ -1,0 +1,30 @@
+{
+  "name": "flit-core",
+  "version": "3.12.0",
+  "about": "Tool for building distributable Python modules",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/pypa/flit.git",
+  "version_fetch": null,
+  "tags": [
+    "py",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://pypi.org/packages/source/f/flit-core/flit_core-3.12.0.tar.gz",
+      "dest": "flit_core-3.12.0.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "python",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
