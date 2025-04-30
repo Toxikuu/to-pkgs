@@ -1,0 +1,37 @@
+#!/to
+
+n="less"
+v="676"
+a="Text pager"
+m="Tox"
+l="GPL-3.0-or-later OR custom"
+t="tui utils"
+u="https://github.com/gwsw/$n.git"
+
+s=(
+    "${u%.git}/archive/refs/tags/v$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "ncurses"
+    "pcre2"
+    "b,groff"
+)
+
+b() {
+
+make -f Makefile.aut distfiles
+autoreconf -fiv
+
+_cfg=(
+    --with-regex=pcre2
+)
+
+cfg
+mk
+mi
+
+install -vDm644 LICENSE -t "$D/usr/share/licenses/$n"
+
+}

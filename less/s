@@ -1,0 +1,41 @@
+{
+  "name": "less",
+  "version": "676",
+  "about": "Text pager",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later OR custom"
+  ],
+  "upstream": "https://github.com/gwsw/less.git",
+  "version_fetch": null,
+  "tags": [
+    "tui",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/gwsw/less/archive/refs/tags/v676.tar.gz",
+      "dest": "v676.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Required"
+    },
+    {
+      "name": "groff",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
