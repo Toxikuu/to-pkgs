@@ -1,0 +1,60 @@
+{
+  "name": "kmod",
+  "version": "34.2",
+  "about": "Kernel module loader",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later",
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils",
+    "cli",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-34.2.tar.xz",
+      "dest": "kmod-34.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,51 @@
+#!/to
+
+n="kmod"
+v="34.2"
+a="Kernel module loader"
+m="Tox"
+l=(
+    "LGPL-2.1-or-later"
+    "GPL-2.0-or-later"
+)
+t="core utils cli lib"
+u="https://git.kernel.org/pub/scm/utils/kernel/$n/$n.git"
+
+s=(
+    "https://www.kernel.org/pub/linux/utils/kernel/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "b,meson"
+    "b,ninja"
+    "b,scdoc"
+    "zstd"
+    "zlib"
+    "xz"
+    "openssl"
+    "glibc"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D manpages=true
+    -D docs=false
+    -D build-tests=false
+    -D debug-messages=false
+    -D tools=true
+    -D openssl=enabled
+    -D zlib=enabled
+    -D xz=enabled
+    -D zstd=enabled
+    -D moduledir=/lib/modules
+)
+
+def
+
+# Install some extra directories
+install -vdm755 "$D"/{etc,usr/lib}/{depmod,modprobe}.d
+
+}
