@@ -1,0 +1,37 @@
+{
+  "name": "perl",
+  "version": "5.40.2",
+  "about": "The Practical Extrarction and Report Language",
+  "maintainer": "Tox",
+  "licenses": [
+    "Artistic-1.0-Perl OR GPL-1.0-or-later"
+  ],
+  "upstream": "https://github.com/Perl/perl5.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "lang"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/Perl/perl5/archive/refs/tags/v5.40.2.tar.gz",
+      "dest": "v5.40.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gdbm",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcrypt",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

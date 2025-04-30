@@ -1,0 +1,48 @@
+#!/to
+
+n="perl"
+v="5.40.2"
+
+MINOR="${v%.*}"
+MAJOR="${MINOR%.*}"
+
+a="The Practical Extrarction and Report Language"
+m="Tox"
+l="Artistic-1.0-Perl OR GPL-1.0-or-later"
+t="core lang"
+u="https://github.com/Perl/${n}${MAJOR}.git"
+
+s=(
+    "${u%.git}/archive/refs/tags/v$v.tar.gz"
+)
+
+d=(
+    "gdbm"
+    "glibc"
+    "libxcrypt"
+)
+
+b() {
+
+export BUILD_ZLIB=False
+export BUILD_BZIP2=0
+
+sh Configure -des                                                 \
+             -D prefix=/usr                                       \
+             -D vendorprefix=/usr                                 \
+             -D privlib=/usr/lib/perl$MAJOR/$MINOR/core_perl      \
+             -D archlib=/usr/lib/perl$MAJOR/$MINOR/core_perl      \
+             -D sitelib=/usr/lib/perl$MAJOR/$MINOR/site_perl      \
+             -D sitearch=/usr/lib/perl$MAJOR/$MINOR/site_perl     \
+             -D vendorlib=/usr/lib/perl$MAJOR/$MINOR/vendor_perl  \
+             -D vendorarch=/usr/lib/perl$MAJOR/$MINOR/vendor_perl \
+             -D man1dir=/usr/share/man/man1                       \
+             -D man3dir=/usr/share/man/man3                       \
+             -D pager="/usr/bin/less -isR"                        \
+             -D useshrplib                                        \
+             -D usethreads
+
+mk
+mi
+
+}
