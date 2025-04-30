@@ -1,0 +1,45 @@
+{
+  "name": "libelf",
+  "version": "0.193",
+  "about": "Library for handling ELF files",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later OR LGPL-3.0-or-later"
+  ],
+  "upstream": "https://sourceware.org/git/elfutils.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://sourceware.org/ftp/elfutils/0.193/elfutils-0.193.tar.bz2",
+      "dest": "elfutils-0.193.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
