@@ -1,0 +1,28 @@
+#!/to
+
+n="scdoc"
+v="1.11.3"
+a="Tiny man page generator"
+m="Tox"
+l="MIT"
+t="doc utils cli"
+u="https://git.sr.ht/~sircmpwn/$n"
+
+s=(
+    "$u/archive/$v.tar.gz"
+)
+
+b() {
+
+mk PREFIX=/usr LDFLAGS="$LDFLAGS"
+mi PREFIX=/usr
+
+install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
+
+}
+
+t() {
+
+mk check
+
+}

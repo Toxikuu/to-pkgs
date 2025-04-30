@@ -1,0 +1,25 @@
+{
+  "name": "scdoc",
+  "version": "1.11.3",
+  "about": "Tiny man page generator",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://git.sr.ht/~sircmpwn/scdoc",
+  "version_fetch": null,
+  "tags": [
+    "doc",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.3.tar.gz",
+      "dest": "1.11.3.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
