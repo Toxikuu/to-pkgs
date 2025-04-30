@@ -24,10 +24,6 @@
     {
       "name": "glibc",
       "kind": "Required"
-    },
-    {
-      "name": "perl",
-      "kind": "Required"
     }
   ],
   "kcfg": []
