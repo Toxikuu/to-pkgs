@@ -1,0 +1,30 @@
+{
+  "name": "diffutils",
+  "version": "3.12",
+  "about": "File comparison utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://git.savannah.gnu.org/git/diffutils.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.12.tar.xz",
+      "dest": "diffutils-3.12.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

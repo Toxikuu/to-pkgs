@@ -1,0 +1,35 @@
+#!/to
+
+n="diffutils"
+v="3.12"
+a="File comparison utilities"
+m="Tox"
+l="GPL-3.0-or-later"
+t="core utils cli"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+_cfg=(
+    --disable-gcc-warnings
+)
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
