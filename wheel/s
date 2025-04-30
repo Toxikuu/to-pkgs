@@ -1,0 +1,38 @@
+{
+  "name": "wheel",
+  "version": "0.46.1",
+  "about": "Python's wheel packaging standard",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/pypa/wheel.git",
+  "version_fetch": null,
+  "tags": [
+    "py",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://pypi.org/packages/source/w/wheel/wheel-0.46.1.tar.gz",
+      "dest": "wheel-0.46.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "flit-core",
+      "kind": "Required"
+    },
+    {
+      "name": "packaging",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

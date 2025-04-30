@@ -1,0 +1,28 @@
+#!/to
+
+n="wheel"
+v="0.46.1"
+a="Python's wheel packaging standard"
+m="Tox"
+l="MIT"
+t="py lib core"
+u="https://github.com/pypa/$n.git"
+
+s=(
+    "https://pypi.org/packages/source/w/$n/$n-$v.tar.gz"
+)
+
+d=(
+    "python"
+    "flit-core"
+    "packaging"
+)
+
+b() {
+
+with pip
+
+pipb
+pipi
+
+}
