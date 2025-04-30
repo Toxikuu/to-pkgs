@@ -21,7 +21,7 @@
       "dest": "FILE5_46.tar.gz"
     },
     {
-      "kind": "Tar",
+      "kind": "Git",
       "url": "https://gitlab.archlinux.org/archlinux/packaging/packages/file/-/raw/main/0001-PR-579-net147-Fix-stack-overrun.patch",
       "dest": "0001-PR-579-net147-Fix-stack-overrun.patch"
     }

@@ -4,9 +4,7 @@
   "about": "The XZ and LZMA compression algorithms",
   "maintainer": "Tox",
   "licenses": [
-    "GPL",
-    "LGPL",
-    "custom"
+    "GPL LGPL custom"
   ],
   "upstream": "https://github.com/tukaani-project/xz.git",
   "version_fetch": null,
