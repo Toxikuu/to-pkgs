@@ -1,0 +1,58 @@
+{
+  "name": "coreutils",
+  "version": "9.7",
+  "about": "Basic utilities needed by every OS",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0"
+  ],
+  "upstream": "https://github.com/coreutils/coreutils.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.7.tar.xz",
+      "dest": "coreutils-9.7.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "acl",
+      "kind": "Required"
+    },
+    {
+      "name": "attr",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gmp",
+      "kind": "Required"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    },
+    {
+      "name": "gperf",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

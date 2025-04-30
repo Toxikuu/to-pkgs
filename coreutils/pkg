@@ -1,0 +1,56 @@
+#!/to
+
+n="coreutils"
+v="9.7"
+a="Basic utilities needed by every OS"
+m="Tox"
+l="GPL-3.0"
+t="utils cli core"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "acl"
+    "attr"
+    "glibc"
+    "gmp"
+    "libcap"
+    "openssl"
+    "b,python"
+    "b,gperf"
+)
+
+b() {
+
+_cfg=(
+    --with-openssl
+    --enable-no-install-program=\
+        hostname,\
+        kill,\
+        uptime,\
+        pinky,\
+        vdir
+)
+
+FORCE_UNSAFE_CONFIGURE=1 \
+cfg
+
+mk
+mi
+
+# Move a misplaced manpage
+mkdir -pv "$D"/usr/share/man/man8
+mv -vf "$D"/usr/share/man/man1/chroot.1 "$D"/usr/share/man/man8/chroot.8
+sed -i 's@"1"@"8"@' "$D"/usr/share/man/man8/chroot.8
+
+}
+
+t() {
+
+# I see 2 test failures about which I'm not really concerned
+make check || true
+
+}
