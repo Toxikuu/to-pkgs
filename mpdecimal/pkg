@@ -1,0 +1,26 @@
+#!/to
+
+n="mpdecimal"
+v="4.0.0"
+a="Multiple-precision decimal floating point arithmetic library"
+m="Tox"
+l="BSD"
+t="lib math core"
+u="https://www.bytereef.org/$n/download.html"
+vf="curl -s '$u' | grep '$n-[0-9]' | head -n1 | cut -d- -f2 | cut -d. -f1-3"
+
+s=(
+    "https://www.bytereef.org/software/$n/releases/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}

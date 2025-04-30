@@ -1,0 +1,30 @@
+{
+  "name": "mpdecimal",
+  "version": "4.0.0",
+  "about": "Multiple-precision decimal floating point arithmetic library",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://www.bytereef.org/mpdecimal/download.html",
+  "version_fetch": "curl -s 'https://www.bytereef.org/mpdecimal/download.html' | grep 'mpdecimal-[0-9]' | head -n1 | cut -d- -f2 | cut -d. -f1-3",
+  "tags": [
+    "lib",
+    "math",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.0.tar.gz",
+      "dest": "mpdecimal-4.0.0.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
