@@ -1,0 +1,31 @@
+{
+  "name": "findutils",
+  "version": "4.10.0",
+  "about": "Programs to find and execute commands on files",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://git.savannah.gnu.org/git/findutils.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "core",
+    "lib",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
+      "dest": "findutils-4.10.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

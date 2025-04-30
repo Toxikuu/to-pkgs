@@ -1,0 +1,35 @@
+#!/to
+
+n="findutils"
+v="4.10.0"
+a="Programs to find and execute commands on files"
+m="Tox"
+l="GPL-3.0-or-later"
+t="utils core lib cli"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+_cfg=(
+    --localstatedir=/var/lib/locate
+)
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}
