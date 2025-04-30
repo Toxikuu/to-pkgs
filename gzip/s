@@ -1,0 +1,51 @@
+{
+  "name": "gzip",
+  "version": "1.14",
+  "about": "GNU compression utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://git.savannah.gnu.org/git/gzip.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz",
+      "dest": "gzip-1.14.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "sed",
+      "kind": "Required"
+    },
+    {
+      "name": "grep",
+      "kind": "Required"
+    },
+    {
+      "name": "coreutils",
+      "kind": "Required"
+    },
+    {
+      "name": "diffutils",
+      "kind": "Runtime"
+    },
+    {
+      "name": "less",
+      "kind": "Runtime"
+    }
+  ],
+  "kcfg": []
+}

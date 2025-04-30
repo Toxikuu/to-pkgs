@@ -1,0 +1,38 @@
+#!/to
+
+n="gzip"
+v="1.14"
+a="GNU compression utility"
+m="Tox"
+l="GPL-3.0-or-later"
+t="utils cli lib core"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "sed"
+    "grep"
+    "coreutils"
+    "r,diffutils"
+    "r,less"
+)
+
+b() {
+
+_cfg=(
+    --disable-gcc-warnings
+)
+
+def
+
+}
+
+t() {
+
+mk check
+
+}
