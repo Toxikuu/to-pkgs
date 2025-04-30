@@ -1,0 +1,44 @@
+{
+  "name": "meson",
+  "version": "1.7.2",
+  "about": "High productivity build system",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "upstream": "https://github.com/mesonbuild/meson.git",
+  "version_fetch": null,
+  "tags": [
+    "py",
+    "core",
+    "lib",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/mesonbuild/meson/releases/download/1.7.2/meson-1.7.2.tar.gz",
+      "dest": "meson-1.7.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "ninja",
+      "kind": "Required"
+    },
+    {
+      "name": "wheel",
+      "kind": "Required"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

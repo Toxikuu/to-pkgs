@@ -1,0 +1,32 @@
+#!/to
+
+n="meson"
+v="1.7.2"
+a="High productivity build system"
+m="Tox"
+l="Apache-2.0"
+t="py core lib utils cli"
+u="https://github.com/${n}build/$n.git"
+
+s=(
+    "${u%.git}/releases/download/$v/$n-$v.tar.gz"
+)
+
+d=(
+    "python"
+    "ninja"
+    "wheel"
+    "setuptools"
+)
+
+b() {
+
+with pip
+
+pipb
+pipi
+
+install -vDm644 data/shell-completions/bash/$n "$D"/usr/share/bash-completion/completions/$n
+install -vDm644 data/shell-completions/zsh/_$n "$D"/usr/share/zsh/site-functions/_$n
+
+}
