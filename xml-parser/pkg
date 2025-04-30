@@ -1,0 +1,36 @@
+#!/to
+
+n="xml-parser"
+v="2.47"
+a="Perl interface to Expat"
+m="Tox"
+l=(
+    "Artistic-2.0"
+)
+t="lib"
+u="https://github.com/cpan-authors/XML-Parser.git"
+
+s=(
+    "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-$v.tar.gz"
+)
+
+d=(
+    "expat"
+    "perl"
+)
+
+b() {
+
+perl Makefile.PL
+mk
+mi
+
+install -vDm644 LICENSE -t "$D/usr/share/licenses/$n"
+
+}
+
+t() {
+
+mk test
+
+}
