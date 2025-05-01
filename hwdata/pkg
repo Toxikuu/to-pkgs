@@ -1,0 +1,24 @@
+#!/to
+
+n="hwdata"
+v="0.394"
+a="Hardware identification databases"
+m="Tox"
+l="GPL-2-or-later OR XFree86-1.0"
+t="lib core"
+u="https://github.com/vcrhonek/$n.git"
+
+s=(
+    "${u%.git}/archive/v$v/$n-$v.tar.gz"
+)
+
+b() {
+
+_cfg=(
+    --disable-blacklist
+)
+
+cfg
+mi
+
+}
