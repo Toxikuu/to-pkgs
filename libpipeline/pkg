@@ -1,0 +1,26 @@
+#!/to
+
+n="libpipeline"
+v="1.5.8"
+a="Library for manipulating subprocess pipelines"
+m="Tox"
+l="GPL-3.0-or-later"
+t="lib core"
+u="https://gitlab.com/$n/$n.git"
+vf="gr | grep -Ev '^2.+'"
+
+s=(
+    "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}
