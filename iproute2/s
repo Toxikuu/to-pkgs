@@ -1,0 +1,39 @@
+{
+  "name": "iproute2",
+  "version": "6.14.0",
+  "about": "IP routing utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/iproute2/iproute2.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "net",
+    "cli",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.14.0.tar.xz",
+      "dest": "iproute2-6.14.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "libelf",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

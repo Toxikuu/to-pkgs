@@ -1,0 +1,31 @@
+#!/to
+
+n="iproute2"
+v="6.14.0"
+a="IP routing utilities"
+m="Tox"
+l="GPL-2.0-or-later"
+t="utils net cli core"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "https://www.kernel.org/pub/linux/utils/net/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "libcap"
+    "libelf"
+)
+
+b() {
+
+sed -i '/ARPD/d' Makefile
+rm -vf man/man8/arpd.8
+
+mk NETNS_RUN_DIR=/run/netns
+mi SBINDIR=/usr/bin
+
+install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
+
+}
