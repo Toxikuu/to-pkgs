@@ -1,0 +1,33 @@
+{
+  "name": "patch",
+  "version": "2.8",
+  "about": "Utility to patch sources",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://git.savannah.gnu.org/git/patch.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz",
+      "dest": "patch-2.8.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "attr",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
