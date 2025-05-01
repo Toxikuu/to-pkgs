@@ -1,0 +1,29 @@
+#!/to
+
+n="markupsafe"
+v="3.0.2"
+a="String safety for XML/HTML markup"
+m="Tox"
+l="BSD-3-Clause"
+t="lib core"
+u="https://github.com/pallets/$n.git"
+
+s=(
+    "${u%.git}/archive/refs/tags/$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "python"
+    "setuptools"
+    "wheel"
+)
+
+b() {
+
+with pip
+
+pipb
+pipi
+
+}

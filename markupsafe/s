@@ -1,0 +1,41 @@
+{
+  "name": "markupsafe",
+  "version": "3.0.2",
+  "about": "String safety for XML/HTML markup",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/pallets/markupsafe.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/pallets/markupsafe/archive/refs/tags/3.0.2.tar.gz",
+      "dest": "3.0.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Required"
+    },
+    {
+      "name": "wheel",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
