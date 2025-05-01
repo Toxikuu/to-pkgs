@@ -1,0 +1,31 @@
+{
+  "name": "libidn2",
+  "version": "2.3.8",
+  "about": "International domain name library (IDNA2008, Punycode and TR46)",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL2",
+    "LGPL3"
+  ],
+  "upstream": "https://gitlab.com/libidn/libidn2.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "net",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.8.tar.gz",
+      "dest": "libidn2-2.3.8.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libunistring",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

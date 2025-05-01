@@ -1,0 +1,26 @@
+#!/to
+
+n="libidn2"
+v="2.3.8"
+a="International domain name library (IDNA2008, Punycode and TR46)"
+m="Tox"
+l=(
+    "GPL2"
+    "LGPL3"
+)
+t="lib net core"
+u="https://gitlab.com/${n%2}/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/${n%2}/$n-$v.tar.gz"
+)
+
+d=(
+    "libunistring"
+)
+
+b() {
+
+def
+
+}
