@@ -1,0 +1,58 @@
+#!/to
+
+n="dbus"
+v="1.16.2"
+a="Message bus system"
+m="Tox"
+l=(
+    "AFL-2.1 OR GPL-2.0-or-later"
+    "MIT"
+    "GPL"
+)
+t="core utils lib"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+
+s=(
+    "https://$n.freedesktop.org/releases/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "meson"
+    "ninja"
+    "expat"
+    "glibc"
+    "systemd"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D doxygen_docs=disabled
+    -D valgrind=disabled
+    -D xml_docs=disabled
+    -D qt_help=disabled
+    -D selinux=disabled
+    -D tools=true
+)
+
+def
+
+}
+
+posti() {
+
+# TODO: This should be done in `b()`, but I lowkey suck at symlinking
+
+# Make dbus and systemd share the same machine-id file
+ln -sfv /etc/machine-id /var/lib/dbus
+
+}
+
+t() {
+
+# Many tests are disabled because of missing packages
+nj test
+
+}

@@ -1,0 +1,48 @@
+{
+  "name": "dbus",
+  "version": "1.16.2",
+  "about": "Message bus system",
+  "maintainer": "Tox",
+  "licenses": [
+    "AFL-2.1 OR GPL-2.0-or-later",
+    "MIT",
+    "GPL"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/dbus/dbus.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz",
+      "dest": "dbus-1.16.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "meson",
+      "kind": "Required"
+    },
+    {
+      "name": "ninja",
+      "kind": "Required"
+    },
+    {
+      "name": "expat",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "systemd",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
