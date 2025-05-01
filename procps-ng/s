@@ -1,0 +1,37 @@
+{
+  "name": "procps-ng",
+  "version": "4.0.5",
+  "about": "Programs for monitoring processes",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL2"
+  ],
+  "upstream": "https://gitlab.com/procps-ng/procps.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.5.tar.xz",
+      "dest": "procps-ng-4.0.5.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "systemd",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

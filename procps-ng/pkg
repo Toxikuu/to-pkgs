@@ -1,0 +1,36 @@
+#!/to
+
+n="procps-ng"
+v="4.0.5"
+a="Programs for monitoring processes"
+m="Tox"
+l="GPL2"
+t="core utils"
+u="https://gitlab.com/$n/${n%-*}.git"
+
+s=(
+    "https://sourceforge.net/projects/$n/files/Production/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "ncurses"
+    "systemd"
+)
+
+b() {
+
+# Kill and its man pages are provided by util-linux
+_cfg=(
+    --enable-watch8bit
+    --disable-kill
+    --with-systemd
+)
+
+cfg
+mk
+mi
+
+rm -vf "$D"/usr/share/man/{de,ro,uk}/man1/kill.1
+
+}
