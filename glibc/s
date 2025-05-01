@@ -16,12 +16,12 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/glibc/glibc-2.41.tar.xz",
       "dest": "glibc-2.41.tar.xz"
     },
     {
-      "kind": "Git",
+      "kind": "Download",
       "url": "https://www.linuxfromscratch.org/patches/lfs/development/glibc-2.41-fhs-1.patch",
       "dest": "glibc-2.41-fhs-1.patch"
     }

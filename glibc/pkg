@@ -25,6 +25,7 @@ mkdir -pv build
 cd        build
 
 _cfg=(
+    libc_cv_slibdir=/usr/lib
     --with-headers=/usr/include
     # TODO: Maybe add --with-bugurl linking to the github repo for this
 
