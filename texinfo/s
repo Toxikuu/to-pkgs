@@ -1,0 +1,38 @@
+{
+  "name": "texinfo",
+  "version": "7.2",
+  "about": "Info page utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://git.savannah.gnu.org/git/texinfo.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "doc",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz",
+      "dest": "texinfo-7.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "gzip",
+      "kind": "Required"
+    },
+    {
+      "name": "perl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

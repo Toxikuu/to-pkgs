@@ -1,0 +1,31 @@
+#!/to
+
+n="texinfo"
+v="7.2"
+a="Info page utility"
+m="Tox"
+l="GPL3"
+t="core doc utils"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "ncurses"
+    "gzip"
+    "perl"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+mk check
+
+}
