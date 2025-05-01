@@ -1,0 +1,38 @@
+{
+  "name": "tar",
+  "version": "1.35",
+  "about": "Archive utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://git.savannah.gnu.org/git/tar.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz",
+      "dest": "tar-1.35.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "acl",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "attr",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
