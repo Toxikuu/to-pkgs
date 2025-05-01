@@ -1,0 +1,31 @@
+#!/to
+
+# TODO: Alias to jinja
+n="jinja2"
+v="3.1.6"
+a="Simple, pythonic template language"
+m="Tox"
+l="BSD-3-Clause"
+t="core lib lang"
+u="https://github.com/pallets/${n%2}.git"
+
+s=(
+    "${u%.git}/archive/refs/tags/$v.tar.gz"
+)
+
+d=(
+    "python"
+    "markupsafe"
+    "flit-core"
+    "setuptools"
+    "wheel"
+)
+
+b() {
+
+with pip
+
+pipb
+pipi
+
+}

@@ -1,0 +1,46 @@
+{
+  "name": "jinja2",
+  "version": "3.1.6",
+  "about": "Simple, pythonic template language",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/pallets/jinja.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "lib",
+    "lang"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://github.com/pallets/jinja/archive/refs/tags/3.1.6.tar.gz",
+      "dest": "3.1.6.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "markupsafe",
+      "kind": "Required"
+    },
+    {
+      "name": "flit-core",
+      "kind": "Required"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Required"
+    },
+    {
+      "name": "wheel",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
