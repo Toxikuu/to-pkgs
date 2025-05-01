@@ -1,0 +1,55 @@
+{
+  "name": "man-db",
+  "version": "2.13.0",
+  "about": "Utility for reading man pages",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later AND GPL-3.0-or-later"
+  ],
+  "upstream": "https://gitlab.com/man-db/man-db.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "tui",
+    "core",
+    "doc"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://download.savannah.gnu.org/releases/man-db/man-db-2.13.0.tar.xz",
+      "dest": "man-db-2.13.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gdbm",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "groff",
+      "kind": "Required"
+    },
+    {
+      "name": "libpipeline",
+      "kind": "Required"
+    },
+    {
+      "name": "less",
+      "kind": "Required"
+    },
+    {
+      "name": "libseccomp",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

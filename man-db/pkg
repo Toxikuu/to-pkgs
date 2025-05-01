@@ -1,0 +1,38 @@
+#!/to
+
+n="man-db"
+v="2.13.0"
+a="Utility for reading man pages"
+m="Tox"
+l="GPL-2.0-or-later AND GPL-3.0-or-later"
+t="utils tui core doc"
+u="https://gitlab.com/$n/$n.git"
+
+s=(
+    "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "gdbm"
+    "zlib"
+    "groff"
+    "libpipeline"
+    "less"
+    "libseccomp"
+    "glibc"
+)
+
+b() {
+
+_cfg=(
+    --with-db=gdbm
+    --disable-setuid
+    --enable-cache-owner=bin
+    --with-browser=/usr/bin/lynx
+    --with-vgrind=/usr/bin/vgrind
+    --with-grap=/usr/bin/grap
+)
+
+def
+
+}
