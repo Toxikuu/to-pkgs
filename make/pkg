@@ -1,0 +1,25 @@
+#!/to
+
+n="make"
+v="4.4.1"
+a="Utility for directing compilation"
+m="Tox"
+l="GPL3"
+t="core utils"
+u="https://git.savannah.gnu.org/git/$n.git"
+
+s=(
+    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+cfg
+mk
+mi
+
+}

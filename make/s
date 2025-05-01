@@ -1,0 +1,29 @@
+{
+  "name": "make",
+  "version": "4.4.1",
+  "about": "Utility for directing compilation",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://git.savannah.gnu.org/git/make.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Tar",
+      "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz",
+      "dest": "make-4.4.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
