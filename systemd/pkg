@@ -55,6 +55,7 @@ sed -e 's/GROUP="render"/GROUP="video"/' \
     -i rules.d/50-udev-default.rules.in
 
 _cfg=(
+    --libdir=lib
     -D default-dnssec=no
     -D firstboot=false
     -D install-tests=false
@@ -72,7 +73,9 @@ _cfg=(
     -D ukify=disabled
 )
 
-def
+ms
+nj
+ni
 
 }
 
