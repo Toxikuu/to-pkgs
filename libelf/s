@@ -7,14 +7,14 @@
     "GPL-2.0-or-later OR LGPL-3.0-or-later"
   ],
   "upstream": "https://sourceware.org/git/elfutils.git",
-  "version_fetch": null,
+  "version_fetch": "gr | vfs | sort -V | cut -d- -f2",
   "tags": [
     "core",
     "lib"
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://sourceware.org/ftp/elfutils/0.193/elfutils-0.193.tar.bz2",
       "dest": "elfutils-0.193.tar.bz2"
     }

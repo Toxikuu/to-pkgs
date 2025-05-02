@@ -8,6 +8,7 @@ m="Tox"
 l="GPL-2.0-or-later OR LGPL-3.0-or-later"
 t="core lib"
 u="https://sourceware.org/git/$bn.git"
+vf="gr | vfs | sort -V | cut -d- -f2"
 
 s=(
     "https://sourceware.org/ftp/$bn/$v/$bn-$v.tar.bz2"
