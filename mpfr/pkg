@@ -10,7 +10,7 @@ l=(
 )
 t="core lib math"
 u="https://gitlab.inria.fr/$n/$n.git"
-vf="gr | grep -Ev 'emptycommit|deleted|-rc|-root'"
+vf="gr | grep -v '[a-Z]' | sort -V"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"

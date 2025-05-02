@@ -8,7 +8,7 @@
     "LGPL-3.0-or-later"
   ],
   "upstream": "https://gitlab.inria.fr/mpfr/mpfr.git",
-  "version_fetch": "gr | grep -Ev 'emptycommit|deleted|-rc|-root'",
+  "version_fetch": "gr | grep -v '[a-Z]' | sort -V",
   "tags": [
     "core",
     "lib",
@@ -16,7 +16,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz",
       "dest": "mpfr-4.2.2.tar.xz"
     }
