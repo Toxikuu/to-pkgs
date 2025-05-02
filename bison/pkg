@@ -7,6 +7,7 @@ m="Tox"
 l="GPL-3.0-or-later"
 t="core"
 u="https://git.savannah.gnu.org/git/$n.git"
+vf="gr | vfs | sed 's,^v,,' | grep -v '[a-Z]'"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
