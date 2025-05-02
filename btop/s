@@ -1,6 +1,6 @@
 {
   "name": "btop",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "about": "Resource monitor",
   "maintainer": "Tox",
   "licenses": [
@@ -14,9 +14,9 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
-      "url": "https://github.com/aristocratos/btop/archive/refs/tags/v1.4.1.tar.gz",
-      "dest": "v1.4.1.tar.gz"
+      "kind": "Download",
+      "url": "https://github.com/aristocratos/btop/archive/refs/tags/v1.4.2.tar.gz",
+      "dest": "v1.4.2.tar.gz"
     }
   ],
   "dependencies": [
