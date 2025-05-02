@@ -1,7 +1,7 @@
 #!/to
 
 n="setuptools"
-v="80.0.1"
+v="80.1.0"
 a="Tool for managing Python packages"
 m="Tox"
 l="MIT"
