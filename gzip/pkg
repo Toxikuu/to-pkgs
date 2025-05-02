@@ -6,7 +6,8 @@ a="GNU compression utility"
 m="Tox"
 l="GPL-3.0-or-later"
 t="utils cli lib core"
-u="https://git.savannah.gnu.org/git/$n.git"
+u="https://github.com/sailfishos-mirror/$n.git" # mirror because savannah is fucking always down
+vf="gr | vfs | sort -V"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"

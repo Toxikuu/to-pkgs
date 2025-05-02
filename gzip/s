@@ -6,8 +6,8 @@
   "licenses": [
     "GPL-3.0-or-later"
   ],
-  "upstream": "https://git.savannah.gnu.org/git/gzip.git",
-  "version_fetch": null,
+  "upstream": "https://github.com/sailfishos-mirror/gzip.git",
+  "version_fetch": "gr | vfs | sort -V",
   "tags": [
     "utils",
     "cli",
@@ -16,7 +16,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz",
       "dest": "gzip-1.14.tar.xz"
     }
