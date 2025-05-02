@@ -7,7 +7,7 @@
     "Apache-2.0"
   ],
   "upstream": "https://github.com/openssl/openssl.git",
-  "version_fetch": null,
+  "version_fetch": "gr | vfs | grep '^openssl-'",
   "tags": [
     "lib",
     "core",
@@ -17,7 +17,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.0/openssl-3.5.0.tar.gz",
       "dest": "openssl-3.5.0.tar.gz"
     }

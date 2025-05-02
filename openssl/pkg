@@ -7,6 +7,7 @@ m="Tox"
 l="Apache-2.0"
 t="lib core sec utils cli"
 u="https://github.com/$n/$n.git"
+vf="gr | vfs | grep '^$n-'"
 
 s=(
     "${u%.git}/releases/download/$n-$v/$n-$v.tar.gz"
