@@ -7,11 +7,14 @@
     "GPL"
   ],
   "upstream": "https://git.savannah.gnu.org/git/automake.git",
-  "version_fetch": null,
-  "tags": [],
+  "version_fetch": "gr | vfs | sed 's,^v,,' | grep -v '[a-Z]'",
+  "tags": [
+    "utils",
+    "core"
+  ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz",
       "dest": "automake-1.17.tar.xz"
     }
