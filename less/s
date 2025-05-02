@@ -1,6 +1,6 @@
 {
   "name": "less",
-  "version": "676",
+  "version": "678",
   "about": "Text pager",
   "maintainer": "Tox",
   "licenses": [
@@ -14,9 +14,9 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
-      "url": "https://github.com/gwsw/less/archive/refs/tags/v676.tar.gz",
-      "dest": "v676.tar.gz"
+      "kind": "Download",
+      "url": "https://github.com/gwsw/less/archive/refs/tags/v678.tar.gz",
+      "dest": "v678.tar.gz"
     }
   ],
   "dependencies": [
