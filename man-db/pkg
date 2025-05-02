@@ -1,7 +1,7 @@
 #!/to
 
 n="man-db"
-v="2.13.0"
+v="2.13.1"
 a="Utility for reading man pages"
 m="Tox"
 l="GPL-2.0-or-later AND GPL-3.0-or-later"
@@ -9,7 +9,7 @@ t="utils tui core doc"
 u="https://gitlab.com/$n/$n.git"
 
 s=(
-    "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.xz"
+    "https://download.savannah.nongnu.org/releases/$n/$n-$v.tar.xz"
 )
 
 d=(
@@ -34,5 +34,7 @@ _cfg=(
 )
 
 def
+
+install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
 
 }

@@ -1,6 +1,6 @@
 {
   "name": "man-db",
-  "version": "2.13.0",
+  "version": "2.13.1",
   "about": "Utility for reading man pages",
   "maintainer": "Tox",
   "licenses": [
@@ -16,9 +16,9 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
-      "url": "https://download.savannah.gnu.org/releases/man-db/man-db-2.13.0.tar.xz",
-      "dest": "man-db-2.13.0.tar.xz"
+      "kind": "Download",
+      "url": "https://download.savannah.nongnu.org/releases/man-db/man-db-2.13.1.tar.xz",
+      "dest": "man-db-2.13.1.tar.xz"
     }
   ],
   "dependencies": [
