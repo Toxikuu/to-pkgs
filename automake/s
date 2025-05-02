@@ -6,7 +6,7 @@
   "licenses": [
     "GPL"
   ],
-  "upstream": "https://git.savannah.gnu.org/git/automake.git",
+  "upstream": "https://github.com/sailfishos-mirror/automake.git",
   "version_fetch": "gr | vfs | sed 's,^v,,' | grep -v '[a-Z]'",
   "tags": [
     "utils",
