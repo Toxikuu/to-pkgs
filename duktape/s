@@ -1,0 +1,29 @@
+{
+  "name": "duktape",
+  "version": "2.7.0",
+  "about": "Embeddable Javascript engine",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/svaarala/duktape.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "sec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://duktape.org/duktape-2.7.0.tar.xz",
+      "dest": "duktape-2.7.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
