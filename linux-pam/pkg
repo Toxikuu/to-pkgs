@@ -17,7 +17,6 @@ d=(
     "libnsl"
     "libtirpc"
     "libxcrypt"
-    "systemd"
     "b,meson"
     "b,ninja"
 )
