@@ -1,0 +1,43 @@
+#!/to
+
+n="make-ca"
+v="1.16"
+a="PKI setup script for LFS"
+m="Tox"
+l=(
+    "GPL-3.0"
+    "MIT"
+)
+t="net lib sec core utils"
+u="https://github.com/lfs-book/$n.git"
+
+s=(
+    "${u%.git}/archive/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "p11-kit"
+    "libtasn1"
+    "nss"
+)
+
+b() {
+
+cat >> make-ca << "EOF"
+ln -sfv /etc/pki/tls/certs/ca-bundle.crt /etc/ssl/certs/ca-certificates.crt
+EOF
+
+mi
+install -vdm755 "$D"/etc/ssl/local
+
+mkdir -pv "$D"/usr/bin
+mv    -vf "$D"/usr/{s,}bin/make-ca
+rm    -rf "$D"/usr/bin
+
+}
+
+posti() {
+
+/usr/bin/make-ca -g
+
+}

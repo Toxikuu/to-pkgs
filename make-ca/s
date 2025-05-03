@@ -1,0 +1,41 @@
+{
+  "name": "make-ca",
+  "version": "1.16",
+  "about": "PKI setup script for LFS",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0",
+    "MIT"
+  ],
+  "upstream": "https://github.com/lfs-book/make-ca.git",
+  "version_fetch": null,
+  "tags": [
+    "net",
+    "lib",
+    "sec",
+    "core",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/lfs-book/make-ca/archive/v1.16/make-ca-1.16.tar.gz",
+      "dest": "make-ca-1.16.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "p11-kit",
+      "kind": "Required"
+    },
+    {
+      "name": "libtasn1",
+      "kind": "Required"
+    },
+    {
+      "name": "nss",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
