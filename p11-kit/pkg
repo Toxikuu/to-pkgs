@@ -1,0 +1,58 @@
+#!/to
+
+n="p11-kit"
+v="0.25.5"
+a="Loads and enumerates PKCS#11 modules"
+m="Tox"
+l="BSD-3-Clause"
+t="sec lib net core"
+u="https://github.com/p11-glue/$n.git"
+
+s=(
+    "${u%.git}/releases/download/$v/$n-$v.tar.xz"
+)
+
+d=(
+    "coreutils"
+    "glibc"
+    "libtasn1"
+    "systemd"
+    "b,libffi"
+    "b,meson"
+    # gnutls for tests
+)
+
+b() {
+
+with mn
+
+sed '20,$ d' -i trust/trust-extract-compat
+
+cat >> trust/trust-extract-compat << "EOF"
+# Copy existing anchor modifications to /etc/ssl/local
+/usr/libexec/make-ca/copy-trust-modifications
+
+# Update trust stores
+/usr/sbin/make-ca -r
+EOF
+
+_cfg=(
+    -D gtk_doc=false
+    -D man=false
+    -D trust_paths=/etc/pki/anchors
+)
+
+ms
+nj
+ni
+
+ln -sfv ./pkcs11/p11-kit-trust.so "$D"/usr/lib/libnssckbi.so
+
+}
+
+posti() {
+
+ln -sfv /usr/libexec/p11-kit/trust-extract-compat \
+        /usr/bin/update-ca-certificates
+
+}

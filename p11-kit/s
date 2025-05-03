@@ -1,0 +1,51 @@
+{
+  "name": "p11-kit",
+  "version": "0.25.5",
+  "about": "Loads and enumerates PKCS#11 modules",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/p11-glue/p11-kit.git",
+  "version_fetch": null,
+  "tags": [
+    "sec",
+    "lib",
+    "net",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz",
+      "dest": "p11-kit-0.25.5.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "coreutils",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libtasn1",
+      "kind": "Required"
+    },
+    {
+      "name": "systemd",
+      "kind": "Required"
+    },
+    {
+      "name": "libffi",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
