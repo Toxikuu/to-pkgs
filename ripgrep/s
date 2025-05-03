@@ -1,0 +1,33 @@
+{
+  "name": "ripgrep",
+  "version": "14.1.1",
+  "about": "Oxidized, recursive grep",
+  "maintainer": "Tox",
+  "licenses": [
+    "Unlicense OR MIT"
+  ],
+  "upstream": "https://github.com/BurntSushi/ripgrep.git",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/BurntSushi/ripgrep/archive/refs/tags/14.1.1.tar.gz",
+      "dest": "14.1.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "rust",
+      "kind": "Required"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
