@@ -1,0 +1,54 @@
+#!/to
+
+n="git"
+v="2.49.0"
+a="The fast distributed version control system"
+m="Tox"
+l="GPL-2.0-only"
+t="net utils core cli"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "https://www.kernel.org/pub/software/scm/$n/$n-$v.tar.xz"
+    "https://www.kernel.org/pub/software/scm/$n/$n-manpages-$v.tar.xz"
+)
+
+d=(
+    "curl"
+    "expat"
+    "grep"
+    "openssl"
+    "pcre2"
+    "perl"
+    "zlib"
+    # "r,openssh"
+)
+
+xt() {
+
+    # Only extract the git sources for now. The manpages will be extracted
+    # later.
+    tar xf "$S/$n-$v.tar.xz"
+
+}
+
+b() {
+
+# TODO: Add a utility for this
+PV="5.40.2"
+
+_cfg=(
+    --with-python=python3
+    --with-gitconfig=/etc/gitconfig
+)
+
+cfg
+mk
+mi perllibdir="/usr/lib/perl${PV%.*.*}/${PV%.*}/site_perl"
+
+# Install the manpages from a separate tarball
+mkdir -pv "$D/usr/share/man"
+tar xvf "$S/$n-manpages-$v.tar.xz" \
+    -C "$D/usr/share/man" --no-same-owner --no-overwrite-dir
+
+}

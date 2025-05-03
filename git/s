@@ -1,0 +1,60 @@
+{
+  "name": "git",
+  "version": "2.49.0",
+  "about": "The fast distributed version control system",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://github.com/git/git.git",
+  "version_fetch": null,
+  "tags": [
+    "net",
+    "utils",
+    "core",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz",
+      "dest": "git-2.49.0.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://www.kernel.org/pub/software/scm/git/git-manpages-2.49.0.tar.xz",
+      "dest": "git-manpages-2.49.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "expat",
+      "kind": "Required"
+    },
+    {
+      "name": "grep",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Required"
+    },
+    {
+      "name": "perl",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
