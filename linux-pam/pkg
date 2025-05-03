@@ -1,0 +1,63 @@
+#!/to
+
+n="linux-pam"
+v="1.7.0"
+a="Pluggable Authentication Modules"
+m="Tox"
+l="GPL-2.0-only"
+t="sec lib core"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/Linux-PAM-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "libnsl"
+    "libtirpc"
+    "libxcrypt"
+    "systemd"
+    "b,meson"
+    "b,ninja"
+)
+
+kcfg=(
+    "AUDIT=y"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D docs=disabled
+)
+
+ms
+nj
+ni
+
+chmod -v 4755 "$D"/usr/bin/unix_chkpwd
+
+# Install pam configuration files
+install -vDm644 "$A/"* -t "$D"/etc/pam.d/
+
+}
+
+t() {
+
+# NOTE: Tests are run in the chroot, and should thus not be prefixed with "$D"
+nj install
+install -vdm755 /etc/pam.d
+
+cat > /etc/pam.d/other << "EOF"
+auth     required       pam_deny.so
+account  required       pam_deny.so
+password required       pam_deny.so
+session  required       pam_deny.so
+EOF
+
+nj test
+
+}

@@ -1,0 +1,3 @@
+# /etc/pam.d/system-auth
+
+auth      required    pam_unix.so

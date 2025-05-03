@@ -1,0 +1,56 @@
+{
+  "name": "linux-pam",
+  "version": "1.7.0",
+  "about": "Pluggable Authentication Modules",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://github.com/linux-pam/linux-pam.git",
+  "version_fetch": null,
+  "tags": [
+    "sec",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/linux-pam/linux-pam/releases/download/v1.7.0/Linux-PAM-1.7.0.tar.xz",
+      "dest": "Linux-PAM-1.7.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libnsl",
+      "kind": "Required"
+    },
+    {
+      "name": "libtirpc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcrypt",
+      "kind": "Required"
+    },
+    {
+      "name": "systemd",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": [
+    "AUDIT=y"
+  ]
+}
