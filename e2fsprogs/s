@@ -1,0 +1,41 @@
+{
+  "name": "e2fsprogs",
+  "version": "1.47.2",
+  "about": "Programs for the ext4 filesystem",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL",
+    "LGPL",
+    "MIT"
+  ],
+  "upstream": "https://github.com/tytso/e2fsprogs.git",
+  "version_fetch": null,
+  "tags": [
+    "fs",
+    "utils",
+    "cli",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.2.tar.gz",
+      "dest": "v1.47.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "systemd",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-linux",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

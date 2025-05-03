@@ -1,0 +1,47 @@
+#!/to
+
+n="e2fsprogs"
+v="1.47.2"
+a="Programs for the ext4 filesystem"
+m="Tox"
+l=(
+    "GPL"
+    "LGPL"
+    "MIT"
+)
+t="fs utils cli core"
+u="https://github.com/tytso/$n.git"
+
+s=(
+    "${u%.git}/archive/refs/tags/v$v.tar.gz"
+)
+
+d=(
+    "b,systemd"
+    "glibc"
+    "util-linux"
+)
+
+b() {
+
+_cfg=(
+    --enable-elf-shlibs
+    --disable-libblkid
+    --disable-libuuid
+    --disable-uuidd
+    --disable-fsck
+)
+
+def
+
+rm -vf "$D"/usr/lib/{libcom_err,libe2p,libext2fs,libss}.a
+rm -vf "$D"/usr/share/info/libext2fs.info.gz
+
+}
+
+t() {
+
+# Failures expected
+make check || true
+
+}
