@@ -32,7 +32,7 @@ install -vdm755 "$D"/etc/ssl/local
 
 mkdir -pv "$D"/usr/bin
 mv    -vf "$D"/usr/{s,}bin/make-ca
-rm    -rf "$D"/usr/bin
+rm    -rf "$D"/usr/sbin
 
 }
 
