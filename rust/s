@@ -1,0 +1,43 @@
+{
+  "name": "rust",
+  "version": "1.86.0",
+  "about": "The Rust programming language",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0",
+    "MIT"
+  ],
+  "upstream": "https://github.com/rust-lang/rust.git",
+  "version_fetch": "gr | vfs | grep -v 'release-' | sort -V",
+  "tags": [
+    "lang",
+    "utils",
+    "cli",
+    "lib",
+    "core"
+  ],
+  "sources": [],
+  "dependencies": [
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "make-ca",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

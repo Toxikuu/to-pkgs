@@ -1,0 +1,44 @@
+#!/to
+
+n="rust"
+v="1.86.0"
+a="The Rust programming language"
+m="Tox"
+l=(
+    "Apache-2.0"
+    "MIT"
+)
+t="lang utils cli lib core"
+u="https://github.com/$n-lang/$n.git"
+vf="gr | vfs | grep -v 'release-' | sort -V"
+
+d=(
+    "curl"
+    "make-ca"
+    "glibc"
+    "openssl"
+    "zlib"
+)
+
+b() {
+
+export CARGO_HOME="$D"/opt/cargo
+export RUSTUP_HOME="$D"/opt/rustup
+
+mkdir -pv "$CARGO_HOME" "$RUSTUP_HOME"
+
+curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path
+. "$CARGO_HOME"/env
+
+rustup toolchain install "$v"
+rustup default "$v"
+rustup component add cargo clippy rustfmt
+
+rm -vf "$CARGO_HOME"/env
+
+chmod 777 "$CARGO_HOME"
+chmod 755 "$RUSTUP_HOME"
+
+install -vDm644 "$A/rust-profile" "$D/etc/profile.d/rust.sh"
+
+}
