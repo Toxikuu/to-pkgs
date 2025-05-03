@@ -1,0 +1,44 @@
+{
+  "name": "nss",
+  "version": "3.110",
+  "about": "Network Security Services",
+  "maintainer": "Tox",
+  "licenses": [
+    "MPL-2.0"
+  ],
+  "upstream": "https://github.com/nss-dev/nss.git",
+  "version_fetch": "gr | grep -E '^NSS.+RTM$' | sed -e 's,NSS_,,' -e 's,_RTM,,' -e 's,_,.,g' | grep -Ev '[a-Z]+' | sort -V",
+  "tags": [
+    "net",
+    "lib",
+    "sec",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_110_RTM/src/nss-3.110.tar.gz",
+      "dest": "nss-3.110.tar.gz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://glfs-book.github.io/glfs/patches/nss/nss-standalone-1.patch",
+      "dest": "nss-standalone-1.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "nspr",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
