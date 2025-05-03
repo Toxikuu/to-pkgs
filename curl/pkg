@@ -1,0 +1,37 @@
+#!/to
+
+n="curl"
+v="8.13.0"
+a="Tool and library for transferring data with URLs"
+m="Tox"
+l="MIT"
+t="lib net core utils"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "https://$n.se/download/$n-$v.tar.xz"
+)
+
+# TODO: Add libssh2 to this build
+d=(
+    "libidn2"
+    "openssl"
+    "libpsl"
+    "zlib"
+    "zstd"
+)
+
+b() {
+
+_cfg=(
+    --with-openssl
+    # --with-libssh2
+    --with-ca-path=/etc/ssl/certs
+)
+
+mkdir -pv build
+cd        build
+
+def
+
+}
