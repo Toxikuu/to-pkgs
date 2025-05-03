@@ -1,0 +1,46 @@
+{
+  "name": "shadow",
+  "version": "4.17.4",
+  "about": "Secure password handling",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/shadow-maint/shadow.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "sec",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/shadow-maint/shadow/releases/download/4.17.4/shadow-4.17.4.tar.xz",
+      "dest": "shadow-4.17.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxcrypt",
+      "kind": "Required"
+    },
+    {
+      "name": "linux-pam",
+      "kind": "Required"
+    },
+    {
+      "name": "acl",
+      "kind": "Required"
+    },
+    {
+      "name": "attr",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
