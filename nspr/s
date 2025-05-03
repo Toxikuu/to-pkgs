@@ -1,0 +1,30 @@
+{
+  "name": "nspr",
+  "version": "4.36",
+  "about": "Netscape Portable Runtime",
+  "maintainer": "Tox",
+  "licenses": [
+    "MPL-2.0"
+  ],
+  "upstream": "https://gitlab.archlinux.org/archlinux/packaging/packages/nspr.git",
+  "version_fetch": "gr | vfs | sort -V | cut -d- -f1",
+  "tags": [
+    "net",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz",
+      "dest": "nspr-4.36.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

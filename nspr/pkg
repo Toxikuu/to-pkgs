@@ -1,0 +1,35 @@
+#!/to
+
+n="nspr"
+v="4.36"
+a="Netscape Portable Runtime"
+m="Tox"
+l="MPL-2.0"
+t="net lib core"
+u="https://gitlab.archlinux.org/archlinux/packaging/packages/$n.git"
+vf="gr | vfs | sort -V | cut -d- -f1"
+
+s=(
+    "https://archive.mozilla.org/pub/$n/releases/v$v/src/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+cd nspr
+
+sed -i '/^RELEASE/s|^|#|' pr/src/misc/Makefile.in
+sed -i 's|$(LIBRARY) ||'  config/rules.mk
+
+_cfg=(
+    --with-mozilla
+    --with-pthreads
+    --enable-64bit
+)
+
+def
+
+}
