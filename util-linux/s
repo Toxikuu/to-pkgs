@@ -1,0 +1,70 @@
+{
+  "name": "util-linux",
+  "version": "2.41",
+  "about": "Miscellaneous utility prorgrams",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "BSD-4-Clause-UC",
+    "GPL-2.0-only",
+    "GPL-2.0-or-later",
+    "GPL-3.0-or-later",
+    "ISC",
+    "LGPL-2.1-or-later",
+    "PublicDomain"
+  ],
+  "upstream": "https://github.com/util-linux/util-linux.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/util-linux/util-linux/archive/refs/tags/v2.41.tar.gz",
+      "dest": "v2.41.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "coreutils",
+      "kind": "Required"
+    },
+    {
+      "name": "file",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcrypt",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "systemd",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

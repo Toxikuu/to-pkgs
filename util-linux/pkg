@@ -1,0 +1,73 @@
+#!/to
+
+n="util-linux"
+v="2.41"
+a="Miscellaneous utility prorgrams"
+m="Tox"
+l=(
+    "BSD-2-Clause"
+    "BSD-3-Clause"
+    "BSD-4-Clause-UC"
+    "GPL-2.0-only"
+    "GPL-2.0-or-later"
+    "GPL-3.0-or-later"
+    "ISC"
+    "LGPL-2.1-or-later"
+    "PublicDomain"
+)
+t="utils cli core"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/archive/refs/tags/v$v.tar.gz"
+)
+
+d=(
+    "coreutils"
+    "file"
+    "glibc"
+    "libcap"
+    "libxcrypt"
+    "ncurses"
+    "readline"
+    "systemd"
+    "zlib"
+)
+
+b() {
+
+_cfg=(
+    --bindir=/usr/bin
+    --libdir=/usr/lib
+    --runstatedir=/run
+    --disable-chfn-chsh
+    --disable-login
+    --disable-nologin
+    --disable-su
+    --disable-setpriv
+    --disable-runuser
+    --disable-pylibmount
+    --disable-liblastlog2
+    --disable-static
+    --without-python
+    ADJTIME_PATH=/var/lib/hwclock/adjtime
+
+    --disable-assert
+    --disable-cramfs
+    --disable-bfs
+    --disable-rename
+    --disable-minix
+    --disable-more
+    --without-econf
+)
+
+./autogen.sh
+
+def
+
+install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
+
+}
+
+# Tests are harmful to run as the root user, and I'm lazy. Maybe I'll add a
+# tester user in the future.
