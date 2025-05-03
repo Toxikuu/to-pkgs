@@ -19,7 +19,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://github.com/systemd/systemd/archive/v257.5/systemd-257.5.tar.gz",
       "dest": "systemd-257.5.tar.gz"
     }
@@ -95,6 +95,10 @@
     },
     {
       "name": "libxcrypt",
+      "kind": "Required"
+    },
+    {
+      "name": "linux-pam",
       "kind": "Required"
     },
     {
