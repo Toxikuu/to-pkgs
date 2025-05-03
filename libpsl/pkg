@@ -1,0 +1,36 @@
+#!/to
+
+n="libpsl"
+v="0.21.5"
+a="Public Suffix List library"
+m="Tox"
+l="MIT"
+t="lib net sec core"
+u="https://github.com/rockdaboot/$n.git"
+
+s=(
+    "${u%.git}/releases/download/$v/$n-$v.tar.gz"
+)
+
+d=(
+    "b,meson"
+    "b,ninja"
+    "libidn2"
+    "libunistring"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D tests=false
+    -D docs=false
+    -D runtime=libidn2
+)
+
+def
+
+install -vDm644 ../COPYING -t "$D/usr/share/licenses/$n"
+
+}
