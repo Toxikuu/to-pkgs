@@ -13,7 +13,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz",
       "dest": "m4-1.4.19.tar.xz"
     }
