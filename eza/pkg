@@ -1,0 +1,56 @@
+#!/to
+
+n="eza"
+v="0.21.3"
+a="Modern ls alternative"
+m="Tox"
+l="EUPL-1.2"
+t="cli utils qol"
+u="https://github.com/$n-community/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,curl"
+    "rust"
+    "glibc"
+)
+
+b() {
+
+with rust
+
+git checkout "v$v"
+
+CFLAGS+=' -ffat-lto-objects'
+cbr
+install -vDm755 target/release/eza "$D/usr/bin/eza"
+
+# install completions
+install -vDm644 "completions/bash/$n"      -t "$D/usr/share/bash-completion/completions"
+install -vDm644 "completions/zsh/_$n"      -t "$D/usr/share/zsh/site-functions/"
+install -vDm644 "completions/fish/$n.fish" -t "$D/usr/share/fish/vendor_completions.d"
+
+# install license
+install -vDm644 LICENSE.txt -t "$D/usr/share/licenses/$n/"
+
+# install manpages
+curl -L "${u%.git}/releases/download/v$v/man-$v.tar.gz" \
+    -o $n-man-$v.tar.gz
+tar xf $n-man-$v.tar.gz
+for i in {1,5}; do
+    cp -v target/man-$v/*.$i /usr/share/man/man$i
+done
+
+
+}
+
+t() {
+
+cargo test
+target/release/eza -al
+
+}

@@ -1,0 +1,42 @@
+{
+  "name": "eza",
+  "version": "0.21.3",
+  "about": "Modern ls alternative",
+  "maintainer": "Tox",
+  "licenses": [
+    "EUPL-1.2"
+  ],
+  "upstream": "https://github.com/eza-community/eza.git",
+  "version_fetch": null,
+  "tags": [
+    "cli",
+    "utils",
+    "qol"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/eza-community/eza.git",
+      "dest": "eza"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "curl",
+      "kind": "Build"
+    },
+    {
+      "name": "rust",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
