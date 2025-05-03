@@ -1,0 +1,45 @@
+#!/to
+
+n="wget"
+v="2.2.0"
+a="Network utility to retrieve files from the web"
+m="Tox"
+l="GPL-3.0-or-later"
+t="net lib utils"
+u="https://gitlab.com/gnuwget/wget2.git"
+
+s=(
+    "https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz"
+)
+
+d=(
+    "glibc"
+    "zlib"
+    "libidn2"
+    "libpsl"
+    "pcre2"
+    "r,make-ca"
+    "b,gperf"
+)
+
+b() {
+
+_cfg=(
+    --with-lzma
+    --with-bzip2
+    --without-lzip
+    --without-brotlidec
+    --disable-doc
+    --disable-fuzzing
+    --enable-threads=posix
+    --enable-year2038
+    --with-gnu-ld
+    --without-plugin-support
+)
+
+def
+
+ln -sfv wget2 "$D"/usr/bin/wget
+rm -vf "$D"/usr/bin/wget2_noinstall # delete a useless testing binary
+
+}

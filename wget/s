@@ -1,0 +1,54 @@
+{
+  "name": "wget",
+  "version": "2.2.0",
+  "about": "Network utility to retrieve files from the web",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://gitlab.com/gnuwget/wget2.git",
+  "version_fetch": null,
+  "tags": [
+    "net",
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz",
+      "dest": "wget2-latest.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "libidn2",
+      "kind": "Required"
+    },
+    {
+      "name": "libpsl",
+      "kind": "Required"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Required"
+    },
+    {
+      "name": "make-ca",
+      "kind": "Runtime"
+    },
+    {
+      "name": "gperf",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
