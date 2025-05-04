@@ -12,6 +12,7 @@ l=(
 )
 t="i18n lib core"
 u="https://github.com/unicode-org/$n.git"
+vf="gr | grep 'release-' | grep -Ev 'tools-|-rc|alpha|preview' | tail -n1 | cut -d- -f2- | sed 's,-,.,'"
 
 s=(
     "${u%.git}/releases/download/release-${v//./-}/${n}4c-${v//./_}-src.tgz"
