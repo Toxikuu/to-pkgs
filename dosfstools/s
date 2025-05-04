@@ -1,0 +1,30 @@
+{
+  "name": "dosfstools",
+  "version": "4.2",
+  "about": "DOS filesystem utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0"
+  ],
+  "upstream": "https://github.com/dosfstools/dosfstools.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "fs",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz",
+      "dest": "dosfstools-4.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

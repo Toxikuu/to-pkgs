@@ -1,0 +1,28 @@
+#!/to
+
+n="dosfstools"
+v="4.2"
+a="DOS filesystem utilities"
+m="Tox"
+l="GPL-3.0"
+t="utils fs cli"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+_cfg=(
+    --enable-compat-symlinks
+    --mandir=/usr/share/man
+)
+
+def
+
+}
