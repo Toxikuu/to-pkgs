@@ -80,6 +80,7 @@ ni
 posti() {
 
 # Install runtime dependencies
-to install shared-mime-info desktop-file-utils
+# TODO: Write `msg()`
+echo "You probably want to also install shared-mime-info and desktop-file-utils"
 
 }
