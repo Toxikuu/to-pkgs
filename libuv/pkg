@@ -1,0 +1,28 @@
+#!/to
+
+n="libuv"
+v="1.51.0"
+a="Multi-platform support library focusing on asyncio"
+m="Tox"
+l="custom"
+t="lib core"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "glibc"
+    "libnsl"
+    "b,git"
+)
+
+b() {
+
+git checkout v$v
+
+./autogen.sh
+def
+
+}
