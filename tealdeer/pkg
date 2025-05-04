@@ -1,0 +1,53 @@
+#!/to
+
+n="tealdeer"
+v="1.7.2"
+a="Very fast oxidized tldr implementation"
+m="Tox"
+l=(
+    "Apache-2.0"
+    "MIT"
+)
+t="doc core utils cli"
+u="https://github.com/$n-rs/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,rust"
+    "b,git"
+)
+
+b() {
+
+with rust
+git checkout v$v
+
+cbr
+install -vDm755 target/release/tldr "$D/usr/bin/tldr"
+
+# Install completions
+install -vDm644 completion/bash_tealdeer "$D/usr/share/bash-completion/completions/tldr"
+install -vDm644 completion/fish_tealdeer "$D/usr/share/fish/vendor_completions.d/tldr.fish"
+install -vDm644 completion/zsh_tealdeer  "$D/usr/share/zsh/site-functions/_tldr"
+
+# Set up global configuration and cache dirs
+install -vDm644 "$A/95-tldr.sh"  -t "$D/etc/profile.d/"
+install -vDm644 "$A/config.toml" -t "$D/etc/tldr/"
+
+}
+
+posti() {
+
+tldr --show-paths
+tldr --update
+
+}
+
+t() {
+
+cargo test
+
+}

@@ -1,0 +1,36 @@
+{
+  "name": "tealdeer",
+  "version": "1.7.2",
+  "about": "Very fast oxidized tldr implementation",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0",
+    "MIT"
+  ],
+  "upstream": "https://github.com/tealdeer-rs/tealdeer.git",
+  "version_fetch": null,
+  "tags": [
+    "doc",
+    "core",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/tealdeer-rs/tealdeer.git",
+      "dest": "tealdeer"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
