@@ -1,0 +1,29 @@
+{
+  "name": "fftw",
+  "version": "3.3.10",
+  "about": "The Fastest Fourier Transform in the West",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/FFTW/fftw3.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "math"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "http://fftw.org/fftw-3.3.10.tar.gz",
+      "dest": "fftw-3.3.10.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

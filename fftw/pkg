@@ -1,0 +1,64 @@
+#!/to
+
+n="fftw"
+v="3.3.10"
+a="The Fastest Fourier Transform in the West"
+m="Tox"
+l="GPL-2.0-or-later"
+t="lib math"
+u="https://github.com/FFTW/$n${v%.*.*}.git"
+
+s=(
+    "http://$n.org/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+# NOTE: FFTW is built thrice for different optimizations
+
+# Use some of upstream's CFLAGS
+CFLAGS+=" -O3 -fomit-frame-pointer -malign-double -fstrict-aliasing -ffast-math"
+
+# Avoid repetition with a wrapper; def is missing the sed
+# TODO: Consider adding an argument OVERLINKAGE_FIX for def
+bld() {
+
+cfg
+sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+mk
+mi
+
+}
+
+# double precision
+_cfg=(
+    --enable-shared
+    --enable-threads
+    --enable-sse2
+    --enable-avx
+    --enable-avx2
+)
+
+bld
+
+# single precision
+mk clean
+_cfg+=(--enable-float)
+
+bld
+
+# long double precision
+mk clean
+_cfg=(
+    --enable-shared
+    --enable-threads
+    --enable-long-double
+)
+
+bld
+
+}
