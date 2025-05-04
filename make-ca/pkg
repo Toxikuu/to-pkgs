@@ -40,4 +40,10 @@ posti() {
 
 /usr/bin/make-ca -g
 
+# This is done to not make make-ca explicitly depend on systemd. Subject to
+# change in the future.
+if command -v systemctl &>/dev/null; then
+    systemctl enable update-pki.timer
+fi
+
 }
