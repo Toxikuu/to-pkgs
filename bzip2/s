@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://gitlab.com/bzip2/bzip2/-/archive/bzip2-1.0.8/bzip2-bzip2-1.0.8.tar.gz",
       "dest": "bzip2-bzip2-1.0.8.tar.gz"
     }

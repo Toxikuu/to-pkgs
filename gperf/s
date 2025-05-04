@@ -13,7 +13,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/gperf/gperf-3.3.tar.gz",
       "dest": "gperf-3.3.tar.gz"
     }

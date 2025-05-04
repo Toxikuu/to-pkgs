@@ -15,7 +15,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/inetutils/inetutils-2.6.tar.xz",
       "dest": "inetutils-2.6.tar.xz"
     }

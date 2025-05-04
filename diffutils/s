@@ -15,7 +15,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.12.tar.xz",
       "dest": "diffutils-3.12.tar.xz"
     }

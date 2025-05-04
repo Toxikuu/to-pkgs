@@ -17,7 +17,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz",
       "dest": "dbus-1.16.2.tar.xz"
     }

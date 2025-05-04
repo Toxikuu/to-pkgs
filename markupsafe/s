@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://github.com/pallets/markupsafe/archive/refs/tags/3.0.2.tar.gz",
       "dest": "3.0.2.tar.gz"
     }

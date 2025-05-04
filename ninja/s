@@ -15,7 +15,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://github.com/ninja-build/ninja/archive/v1.12.1/ninja-1.12.1.tar.gz",
       "dest": "ninja-1.12.1.tar.gz"
     }

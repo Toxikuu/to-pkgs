@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz",
       "dest": "libunistring-1.3.tar.xz"
     }

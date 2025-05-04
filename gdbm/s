@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/gdbm/gdbm-1.25.tar.gz",
       "dest": "gdbm-1.25.tar.gz"
     }

@@ -17,7 +17,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz",
       "dest": "autoconf-2.72.tar.xz"
     }

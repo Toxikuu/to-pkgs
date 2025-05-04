@@ -31,7 +31,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.13.tar.xz",
       "dest": "man-pages-6.13.tar.xz"
     }

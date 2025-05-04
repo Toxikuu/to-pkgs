@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz",
       "dest": "libpipeline-1.5.8.tar.gz"
     }

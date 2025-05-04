@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://download.savannah.gnu.org/releases/acl/acl-2.3.2.tar.xz",
       "dest": "acl-2.3.2.tar.xz"
     }

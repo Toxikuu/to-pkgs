@@ -15,7 +15,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://github.com/thkukuk/libnsl/archive/v2.0.1/libnsl-2.0.1.tar.gz",
       "dest": "libnsl-2.0.1.tar.gz"
     }

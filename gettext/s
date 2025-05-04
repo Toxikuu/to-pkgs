@@ -19,7 +19,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/gettext/gettext-0.24.tar.xz",
       "dest": "gettext-0.24.tar.xz"
     }

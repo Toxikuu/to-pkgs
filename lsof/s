@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://github.com/lsof-org/lsof/releases/download/4.99.4/lsof-4.99.4.tar.gz",
       "dest": "lsof-4.99.4.tar.gz"
     }

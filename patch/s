@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz",
       "dest": "patch-2.8.tar.xz"
     }

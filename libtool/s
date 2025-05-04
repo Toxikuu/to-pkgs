@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/libtool/libtool-2.5.4.tar.xz",
       "dest": "libtool-2.5.4.tar.xz"
     }

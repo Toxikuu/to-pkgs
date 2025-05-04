@@ -16,7 +16,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.8.tar.gz",
       "dest": "libidn2-2.3.8.tar.gz"
     }

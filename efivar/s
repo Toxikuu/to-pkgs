@@ -13,7 +13,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz",
       "dest": "efivar-39.tar.gz"
     }

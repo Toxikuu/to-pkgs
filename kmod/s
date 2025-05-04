@@ -17,7 +17,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-34.2.tar.xz",
       "dest": "kmod-34.2.tar.xz"
     }

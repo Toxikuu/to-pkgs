@@ -17,7 +17,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz",
       "dest": "Python-3.13.3.tar.xz"
     }

@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz",
       "dest": "bash-5.2.37.tar.gz"
     }

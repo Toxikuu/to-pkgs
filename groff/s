@@ -13,7 +13,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz",
       "dest": "groff-1.23.0.tar.gz"
     }

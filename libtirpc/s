@@ -14,7 +14,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2",
       "dest": "libtirpc-1.3.6.tar.bz2"
     }

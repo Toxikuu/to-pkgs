@@ -15,7 +15,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/readline/readline-8.2.13.tar.gz",
       "dest": "readline-8.2.13.tar.gz"
     }

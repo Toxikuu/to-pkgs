@@ -19,7 +19,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://sourceware.org/pub/binutils/releases/binutils-2.44.tar.xz",
       "dest": "binutils-2.44.tar.xz"
     }

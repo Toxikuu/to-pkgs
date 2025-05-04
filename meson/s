@@ -17,7 +17,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://github.com/mesonbuild/meson/releases/download/1.7.2/meson-1.7.2.tar.gz",
       "dest": "meson-1.7.2.tar.gz"
     }

@@ -16,7 +16,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/gawk/gawk-5.3.2.tar.xz",
       "dest": "gawk-5.3.2.tar.xz"
     }

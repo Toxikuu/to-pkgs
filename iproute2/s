@@ -16,7 +16,7 @@
   ],
   "sources": [
     {
-      "kind": "Tar",
+      "kind": "Download",
       "url": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.14.0.tar.xz",
       "dest": "iproute2-6.14.0.tar.xz"
     }
