@@ -29,15 +29,15 @@ CFLAGS+=' -ffat-lto-objects'
 cbr
 install -vDm755 target/release/eza "$D/usr/bin/eza"
 
-# install completions
+# Install completions
 install -vDm644 "completions/bash/$n"      -t "$D/usr/share/bash-completion/completions"
 install -vDm644 "completions/zsh/_$n"      -t "$D/usr/share/zsh/site-functions/"
 install -vDm644 "completions/fish/$n.fish" -t "$D/usr/share/fish/vendor_completions.d"
 
-# install license
+# Install license
 install -vDm644 LICENSE.txt -t "$D/usr/share/licenses/$n/"
 
-# install manpages
+# Install manpages
 curl -L "${u%.git}/releases/download/v$v/man-$v.tar.gz" \
     -o $n-man-$v.tar.gz
 tar xf $n-man-$v.tar.gz
@@ -45,6 +45,8 @@ for i in {1,5}; do
     cp -v target/man-$v/*.$i /usr/share/man/man$i
 done
 
+# Install some aliases for eza
+install -vDm644 "$A/22-eza.sh" -t "$D/etc/profile.d/"
 
 }
 
