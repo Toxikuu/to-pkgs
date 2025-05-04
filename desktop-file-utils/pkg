@@ -1,0 +1,35 @@
+#!/to
+
+n="desktop-file-utils"
+v="0.28"
+a="Desktop entry utilities"
+m="Tox"
+l="GPL-2.0-or-later"
+t="utils cli"
+u="https://gitlab.freedesktop.org/xdg/$n.git"
+
+s=(
+    "https://www.freedesktop.org/software/$n/releases/$n-$v.tar.xz"
+)
+
+d=(
+    "glib"
+    "glibc"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+def
+
+}
+
+posti() {
+
+install -vdm755         /usr/share/applications
+update-desktop-database /usr/share/applications
+
+}
