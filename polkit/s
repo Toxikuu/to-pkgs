@@ -1,0 +1,58 @@
+{
+  "name": "polkit",
+  "version": "126",
+  "about": "Policy Toolkit",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/polkit-org/polkit.git",
+  "version_fetch": null,
+  "tags": [
+    "sec",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/polkit-org/polkit/archive/126/polkit-126.tar.gz",
+      "dest": "polkit-126.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "linux-pam",
+      "kind": "Required"
+    },
+    {
+      "name": "expat",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "duktape",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "systemd",
+      "kind": "Runtime"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

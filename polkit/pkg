@@ -1,0 +1,53 @@
+#!/to
+
+n="polkit"
+v="126"
+a="Policy Toolkit"
+m="Tox"
+l="LGPL-2.0-or-later"
+t="sec lib core"
+u="https://github.com/$n-org/$n.git"
+
+s=(
+    "${u%.git}/archive/$v/$n-$v.tar.gz"
+)
+
+d=(
+    "linux-pam"
+    "expat"
+    "glibc"
+    "duktape"
+    "glib"
+    "r,systemd"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+sed -i '/systemd_sysusers_dir/s/^/#/' meson.build
+
+_cfg=(
+    -D man=false
+    -D tests=false
+    -D session_tracking=logind
+    -D introspection=false
+    -D os_type=lfs
+)
+
+ms
+nj
+ni
+
+}
+
+posti() {
+
+groupadd -fg 27 polkitd
+id polkitd || useradd -c "PolicyKit Daemon Owner" \
+    -d /etc/polkit-1 -u 27 \
+    -g polkitd -s /bin/false polkitd
+
+}
