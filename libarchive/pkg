@@ -1,0 +1,41 @@
+#!/to
+
+n="libarchive"
+v="3.7.9"
+a="Multi-format archive and compression library"
+m="Tox"
+l="BSD-2-Clause"
+t="lib utils core"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+)
+
+d=(
+    "acl"
+    "bzip2"
+    "glibc"
+    "lz4"
+    "xz"
+    "zlib"
+    "zstd"
+    "libxml2" # used instead of expat (no particular reason)
+    "nettle" # used instead of openssl (no particular reason)
+    "pcre2"
+)
+
+b() {
+
+def
+
+# Avoid relying on the unmaintained Unzip package
+ln -sfv bsdunzip /usr/bin/unzip
+
+}
+
+t() {
+
+mk check
+
+}
