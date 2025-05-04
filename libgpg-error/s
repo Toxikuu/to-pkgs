@@ -1,0 +1,30 @@
+{
+  "name": "libgpg-error",
+  "version": "1.55",
+  "about": "GPG error library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/gpg/libgpg-error.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "sec",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.55.tar.gz",
+      "dest": "libgpg-error-1.55.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

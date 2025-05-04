@@ -1,0 +1,23 @@
+#!/to
+
+n="libgpg-error"
+v="1.55"
+a="GPG error library"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib sec core"
+u="https://github.com/gpg/$n.git"
+
+s=(
+    "https://www.gnupg.org/ftp/gcrypt/$n/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+def
+
+}
