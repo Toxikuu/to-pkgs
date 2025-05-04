@@ -1,0 +1,31 @@
+#!/to
+
+# TODO: Add libutempter in the future
+n="tmux"
+v="3d2b26dcfe1a14b5ff6e04121e933a30652c2fe9"
+a="Terminal multiplexer"
+m="Tox"
+l="BSD"
+t="utils tui core"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "libevent"
+    "ncurses"
+)
+
+b() {
+
+_cfg=(
+    --disable-systemd # wtf does tmux even want from systemd
+    --disable-sixel # my terminal emulators don't support it anyway
+)
+
+./autogen.sh
+def
+
+}

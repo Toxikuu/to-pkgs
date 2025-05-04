@@ -1,0 +1,34 @@
+{
+  "name": "tmux",
+  "version": "3d2b26dcfe1a14b5ff6e04121e933a30652c2fe9",
+  "about": "Terminal multiplexer",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://github.com/tmux/tmux.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "tui",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/tmux/tmux.git",
+      "dest": "tmux"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libevent",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
