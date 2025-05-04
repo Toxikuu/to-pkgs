@@ -1,0 +1,37 @@
+#!/to
+
+n="libssh2"
+v="1.11.1"
+a="Client-side SSH2 library"
+m="Tox"
+l="BSD-3-Clause"
+t="lib sec net core"
+u="https://github.com/$n/$n.git"
+vf="gr | grep '^$n' | sort -V"
+
+s=(
+    "${u%.git}/releases/download/$n-$v/$n-$v.tar.xz"
+)
+
+d=(
+    "openssl"
+    "zlib"
+)
+
+b() {
+
+_cfg=(
+    --disable-docker-tests
+)
+
+cfg
+mk
+mi
+
+}
+
+t() {
+
+mk check
+
+}

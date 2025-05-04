@@ -1,0 +1,35 @@
+{
+  "name": "libssh2",
+  "version": "1.11.1",
+  "about": "Client-side SSH2 library",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/libssh2/libssh2.git",
+  "version_fetch": "gr | grep '^libssh2' | sort -V",
+  "tags": [
+    "lib",
+    "sec",
+    "net",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/libssh2/libssh2/releases/download/libssh2-1.11.1/libssh2-1.11.1.tar.xz",
+      "dest": "libssh2-1.11.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
