@@ -1,0 +1,33 @@
+{
+  "name": "icu",
+  "version": "77.1",
+  "about": "International Components for Unicode",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "Unicode-3.0",
+    "NAIST-2003"
+  ],
+  "upstream": "https://github.com/unicode-org/icu.git",
+  "version_fetch": null,
+  "tags": [
+    "i18n",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/unicode-org/icu/releases/download/release-77-1/icu4c-77_1-src.tgz",
+      "dest": "icu4c-77_1-src.tgz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

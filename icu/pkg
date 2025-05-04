@@ -1,0 +1,40 @@
+#!/to
+
+n="icu"
+v="77.1"
+a="International Components for Unicode"
+m="Tox"
+l=(
+    "BSD-2-Clause"
+    "BSD-3-Clause"
+    "Unicode-3.0"
+    "NAIST-2003"
+)
+t="i18n lib core"
+u="https://github.com/unicode-org/$n.git"
+
+s=(
+    "${u%.git}/releases/download/release-${v//./-}/${n}4c-${v//./_}-src.tgz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+cd source
+
+cfg
+mk
+mi
+
+install -vDm644 "../LICENSE" -t "$D/usr/share/licenses/$n/"
+
+}
+
+t() {
+
+mk check
+
+}
