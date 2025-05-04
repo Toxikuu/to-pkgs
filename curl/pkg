@@ -7,6 +7,7 @@ m="Tox"
 l="MIT"
 t="lib net core utils"
 u="https://github.com/$n/$n.git"
+vf="gr | grep -E '^curl-[0-9]+' | vfs | sed 's@_@.@g' | cut -d- -f2 | sort -V"
 
 s=(
     "https://$n.se/download/$n-$v.tar.xz"
@@ -19,6 +20,7 @@ d=(
     "libpsl"
     "zlib"
     "zstd"
+    "r,make-ca"
 )
 
 b() {
