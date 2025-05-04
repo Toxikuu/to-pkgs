@@ -16,9 +16,12 @@ s=(
 d=(
     "libevent"
     "ncurses"
+    "b,git"
 )
 
 b() {
+
+git checkout $v
 
 _cfg=(
     --disable-systemd # wtf does tmux even want from systemd

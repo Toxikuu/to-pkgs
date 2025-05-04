@@ -28,6 +28,10 @@
     {
       "name": "ncurses",
       "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
     }
   ],
   "kcfg": []
