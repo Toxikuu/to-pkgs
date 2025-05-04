@@ -1,0 +1,77 @@
+#!/to
+
+n="glib"
+v="2.84.1"
+a="Low level core library"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="core lib"
+u="https://github.com/GNOME/$n.git"
+
+gobjn="gobject-introspection"
+gobjv="1.84.0"
+
+s=(
+    "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
+    "https://download.gnome.org/sources/$gobjn/${gobjv%.*}/$gobjn-$gobjv.tar.xz"
+    "https://glfs-book.github.io/glfs/patches/$n/$n-skip_warnings-1.patch"
+)
+
+d=(
+    "glibc"
+    "libffi"
+    "pcre2"
+    "util-linux"
+    "zlib"
+    "b,dbus"
+    "b,libelf"
+    "b,meson"
+    "b,ninja"
+
+    # runtime depends on shared-mime-info, desktop-file-utils (circular)
+    # this is resolved by a post-install hook
+)
+
+xt() {
+
+# Extract the GLib tarball only
+tar xf "$S/$n-$v.tar.xz"
+
+}
+
+b() {
+
+with mn
+
+pat "$S/$n-skip_warnings-1.patch"
+
+# NOTE: Headers should not need to be moved, and no conflicts should occur
+# because of build isolation.
+
+# **First pass**
+# GLib is installed regularly in the chroot
+_cfg=(
+      -D introspection=disabled
+      -D glib_debug=disabled
+      -D man-pages=disabled
+      -D tests=false
+      -D sysprof=disabled
+)
+
+ms
+nj
+nj install
+
+# Build GObject Introspection
+tar xf "$S/$gobjn-$gobjv.tar.xz"
+meson setup "$gobjn-$gobjv" gi-build \
+            --prefix=/usr --buildtype=release
+ninja -C gi-build
+ninja -C gi-build install
+
+# Generate the introspection data for GLib and finally DESTDIR install it
+meson configure -D introspection=enabled
+nj
+ni
+
+}

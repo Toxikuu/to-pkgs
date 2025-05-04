@@ -1,0 +1,71 @@
+{
+  "name": "glib",
+  "version": "2.84.1",
+  "about": "Low level core library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/GNOME/glib.git",
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/glib/2.84/glib-2.84.1.tar.xz",
+      "dest": "glib-2.84.1.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/gobject-introspection/1.84/gobject-introspection-1.84.0.tar.xz",
+      "dest": "gobject-introspection-1.84.0.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://glfs-book.github.io/glfs/patches/glib/glib-skip_warnings-1.patch",
+      "dest": "glib-skip_warnings-1.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libffi",
+      "kind": "Required"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Required"
+    },
+    {
+      "name": "util-linux",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Build"
+    },
+    {
+      "name": "libelf",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
