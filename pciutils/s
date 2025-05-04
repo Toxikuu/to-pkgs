@@ -25,16 +25,16 @@
       "kind": "Required"
     },
     {
-      "name": "hwdata",
-      "kind": "Required"
-    },
-    {
       "name": "kmod",
       "kind": "Required"
     },
     {
       "name": "glibc",
       "kind": "Required"
+    },
+    {
+      "name": "hwdata",
+      "kind": "Runtime"
     },
     {
       "name": "git",

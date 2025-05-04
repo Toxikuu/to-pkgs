@@ -14,9 +14,9 @@ s=(
 
 d=(
     "zlib"
-    "hwdata"
     "kmod"
     "glibc"
+    "r,hwdata"
     "b,git"
 )
 
