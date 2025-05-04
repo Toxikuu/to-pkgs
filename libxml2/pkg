@@ -1,0 +1,39 @@
+#!/to
+
+n="libxml2"
+v="2.14.2"
+a="XML parsing libraries"
+m="Tox"
+l="MIT"
+t="lib core"
+u="https://github.com/GNOME/$n.git"
+
+s=(
+    "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "icu"
+    "readline"
+    "xz"
+    "zlib"
+    "b,python"
+)
+
+b() {
+
+_cfg=(
+    --with-history
+    --with-icu
+)
+
+cfg
+mk
+mi
+
+# Prevent some packages from unnecessary linking to ICU
+rm -vf "$D"/usr/lib/libxml2.la
+sed '/libs=/s/xml2.*/xml2"/' -i "$D"/usr/bin/xml2-config
+
+}

@@ -1,0 +1,49 @@
+{
+  "name": "libxml2",
+  "version": "2.14.2",
+  "about": "XML parsing libraries",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/GNOME/libxml2.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.2.tar.xz",
+      "dest": "libxml2-2.14.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "icu",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
