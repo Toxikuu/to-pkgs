@@ -1,2 +1,2 @@
 shell=bash
-disable=SC2034,2164,2016
+disable=2034,2164,2016
