@@ -1,0 +1,35 @@
+#!/to
+
+n="nghttp2"
+v="1.65.0"
+a="HTTP/2 implementation"
+m="Tox"
+l="MIT"
+t="lib net core"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "libxml2"
+)
+
+b() {
+
+_cfg=(
+    --disable-examples
+    --enable-lib-only
+)
+
+def
+
+}
+
+t() {
+
+mk check
+
+}

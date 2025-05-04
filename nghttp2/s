@@ -1,0 +1,34 @@
+{
+  "name": "nghttp2",
+  "version": "1.65.0",
+  "about": "HTTP/2 implementation",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/nghttp2/nghttp2.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "net",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.65.0/nghttp2-1.65.0.tar.xz",
+      "dest": "nghttp2-1.65.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
