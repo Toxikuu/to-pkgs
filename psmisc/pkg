@@ -14,9 +14,12 @@ s=(
 
 d=(
     "r,ncurses"
+    "b,git"
 )
 
 b() {
+
+git checkout $v
 
 ./autogen.sh
 
