@@ -1,0 +1,29 @@
+{
+  "name": "libevent",
+  "version": "2.1.12",
+  "about": "Asynchronous event library",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://github.com/libevent/libevent.git",
+  "version_fetch": "gr | vfs | cut -d- -f2 | sort -V",
+  "tags": [
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz",
+      "dest": "libevent-2.1.12-stable.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "openssl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
