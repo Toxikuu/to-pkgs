@@ -32,6 +32,6 @@ ni
 
 posti() {
 
-update-mime-database
+update-mime-database /usr/share/mime
 
 }
