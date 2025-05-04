@@ -1,0 +1,40 @@
+#!/to
+
+n="cmake"
+v="4.0.1"
+a="Build system succeeding configure scripts"
+m="Tox"
+l="BSD-3-Clause"
+t="lang lib core utils cli tui"
+u="https://gitlab.kitware.com/$n/$n.git"
+
+s=(
+    "https://$n.org/files/v${v%.*}/$n-$v.tar.gz"
+)
+
+d=(
+    "curl"
+    "libarchive"
+    "libuv"
+    "nghttp2"
+)
+
+b() {
+
+# Disallow cmake installing files to /usr/lib64
+sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
+
+_cfg=(
+    --prefix=/usr
+    --mandir=/share/man
+    --system-libs
+    --no-system-jsoncpp
+    --no-system-cppdap
+    --no-system-librhash
+)
+
+./bootstrap "${_cfg[@]}"
+mk
+mi
+
+}

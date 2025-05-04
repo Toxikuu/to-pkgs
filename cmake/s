@@ -1,0 +1,45 @@
+{
+  "name": "cmake",
+  "version": "4.0.1",
+  "about": "Build system succeeding configure scripts",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://gitlab.kitware.com/cmake/cmake.git",
+  "version_fetch": null,
+  "tags": [
+    "lang",
+    "lib",
+    "core",
+    "utils",
+    "cli",
+    "tui"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://cmake.org/files/v4.0/cmake-4.0.1.tar.gz",
+      "dest": "cmake-4.0.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "libarchive",
+      "kind": "Required"
+    },
+    {
+      "name": "libuv",
+      "kind": "Required"
+    },
+    {
+      "name": "nghttp2",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
