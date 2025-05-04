@@ -13,8 +13,8 @@ s=(
     "https://$n.se/download/$n-$v.tar.xz"
 )
 
-# TODO: Add libssh2 to this build
 d=(
+    "libssh2"
     "libidn2"
     "openssl"
     "libpsl"
@@ -27,12 +27,23 @@ b() {
 
 _cfg=(
     --with-openssl
-    # --with-libssh2
+    --with-libpsl
+    --with-libssh2
     --with-ca-path=/etc/ssl/certs
-)
 
-mkdir -pv build
-cd        build
+    # windows specific stuff
+    --disable-windows-unicode
+    --disable-ca-search
+
+    # disable things
+    --disable-docs
+    --disable-gopher
+    --disable-mqtt
+    --disable-manual
+    --disable-server-debug
+    --disable-curldebug
+    --disable-debug
+)
 
 def
 

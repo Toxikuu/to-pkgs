@@ -23,6 +23,10 @@
   ],
   "dependencies": [
     {
+      "name": "libssh2",
+      "kind": "Required"
+    },
+    {
       "name": "libidn2",
       "kind": "Required"
     },
