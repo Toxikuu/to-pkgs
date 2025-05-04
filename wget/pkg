@@ -7,6 +7,7 @@ m="Tox"
 l="GPL-3.0-or-later"
 t="net lib utils"
 u="https://gitlab.com/gnuwget/wget2.git"
+vf="gr | grep v | tail -n1 | cut -d/ -f3"
 
 s=(
     "https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz"

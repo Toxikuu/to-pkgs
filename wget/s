@@ -7,7 +7,7 @@
     "GPL-3.0-or-later"
   ],
   "upstream": "https://gitlab.com/gnuwget/wget2.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep v | tail -n1 | cut -d/ -f3",
   "tags": [
     "net",
     "lib",
