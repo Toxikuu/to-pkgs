@@ -1,0 +1,45 @@
+{
+  "name": "pciutils",
+  "version": "4f2abadf015dd730d9c42a10ca5db6ed3bd6b9d2",
+  "about": "PCI utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/pciutils/pciutils.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/pciutils/pciutils.git",
+      "dest": "pciutils"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "hwdata",
+      "kind": "Required"
+    },
+    {
+      "name": "kmod",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
