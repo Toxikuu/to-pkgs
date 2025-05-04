@@ -39,6 +39,6 @@ rm -vf "$CARGO_HOME"/env
 chmod 777 "$CARGO_HOME"
 chmod 755 "$RUSTUP_HOME"
 
-install -vDm644 "$A/rust-profile" "$D/etc/profile.d/rust.sh"
+install -vDm644 "$A/rust-profile" "$D/etc/profile.d/15-rust.sh"
 
 }
