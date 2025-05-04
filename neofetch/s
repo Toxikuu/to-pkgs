@@ -1,0 +1,30 @@
+{
+  "name": "neofetch",
+  "version": "ccd5d9f52609bbdcd5d8fa78c4fdb0f12954125f",
+  "about": "Famous (and unmaintained) fetch script",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/dylanaraps/neofetch.git",
+  "version_fetch": null,
+  "tags": [
+    "cli",
+    "utils",
+    "fetch"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/dylanaraps/neofetch.git",
+      "dest": "neofetch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bash",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

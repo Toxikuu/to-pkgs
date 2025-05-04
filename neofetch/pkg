@@ -1,0 +1,25 @@
+#!/to
+
+n="neofetch"
+v="ccd5d9f52609bbdcd5d8fa78c4fdb0f12954125f"
+a="Famous (and unmaintained) fetch script"
+m="Tox"
+l="MIT"
+t="cli utils fetch"
+u="https://github.com/dylanaraps/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "bash"
+    # Also random stuuff like xrandr, xdpyinfo, feh, nitrogen at runtime for
+    # more specific information
+)
+
+b() {
+
+mi
+
+}
