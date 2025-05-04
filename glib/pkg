@@ -68,10 +68,18 @@ meson setup "$gobjn-$gobjv" gi-build \
             --prefix=/usr --buildtype=release
 ninja -C gi-build
 ninja -C gi-build install
+ni -C gi-build # Also install GObject Introspection to DESTDIR
 
 # Generate the introspection data for GLib and finally DESTDIR install it
 meson configure -D introspection=enabled
 nj
 ni
+
+}
+
+posti() {
+
+# Install runtime dependencies
+to install shared-mime-info desktop-file-utils
 
 }
