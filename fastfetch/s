@@ -1,0 +1,42 @@
+{
+  "name": "fastfetch",
+  "version": "2.42.0",
+  "about": "Well-maintained, feature-rich, fast fetch script",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/fastfetch-cli/fastfetch.git",
+  "version_fetch": null,
+  "tags": [
+    "fetch",
+    "cli",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/fastfetch-cli/fastfetch.git",
+      "dest": "fastfetch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "libelf",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,83 @@
+#!/to
+
+n="fastfetch"
+v="2.42.0"
+a="Well-maintained, feature-rich, fast fetch script"
+m="Tox"
+l="MIT"
+t="fetch cli utils"
+u="https://github.com/$n-cli/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,cmake"
+    "b,git"
+    "libelf"
+    # "libdrm"
+    "zlib"
+)
+
+b() {
+
+git checkout $v
+
+with cmake
+
+_cfg=(
+    -D BUILD_FLASHFETCH=OFF
+    -D BUILD_TESTS=OFF
+
+    -D ENABLE_ZFS=OFF
+    -D ENABLE_CHAFA=OFF
+    -D ENABLE_SQLITE3=OFF
+    -D ENABLE_RPM=OFF
+    -D ENABLE_IMAGEMAGICK6=OFF
+    -D ENABLE_SYSTEM_YYJSON=OFF
+    -D ENABLE_ZLIB=ON
+    -D ENABLE_LTO=ON
+
+    # Disable package managers
+    # TODO: Write a patch for fastfetch to check to
+    # Also write an easy way to check the number of installed packages in to
+    -D PACKAGES_DISABLE_AM=ON
+    -D PACKAGES_DISABLE_APK=ON
+    -D PACKAGES_DISABLE_CHOCO=ON
+    -D PACKAGES_DISABLE_DPKG=ON
+    -D PACKAGES_DISABLE_EMERGE=ON
+    -D PACKAGES_DISABLE_EOPKG=ON
+    -D PACKAGES_DISABLE_GUIX=ON
+    -D PACKAGES_DISABLE_LINGLONG=ON
+    -D PACKAGES_DISABLE_LPKG=ON
+    -D PACKAGES_DISABLE_LPKGBUILD=ON
+    -D PACKAGES_DISABLE_MACPORTS=ON
+    -D PACKAGES_DISABLE_NIX=ON
+    -D PACKAGES_DISABLE_OPKG=ON
+    -D PACKAGES_DISABLE_PACMAN=ON
+    -D PACKAGES_DISABLE_PACSTALL=ON
+    -D PACKAGES_DISABLE_PALUDIS=ON
+    -D PACKAGES_DISABLE_PISI=ON
+    -D PACKAGES_DISABLE_PKG=ON
+    -D PACKAGES_DISABLE_PKGTOOL=ON
+    -D PACKAGES_DISABLE_RPM=ON
+    -D PACKAGES_DISABLE_SCOOP=ON
+    -D PACKAGES_DISABLE_SOAR=ON
+    -D PACKAGES_DISABLE_SORCERY=ON
+    -D PACKAGES_DISABLE_WINGET=ON
+    -D PACKAGES_DISABLE_XBPS=ON
+
+    -D CPACK_SOURCE_RPM=OFF
+    -D CPACK_SOURCE_TBZ2=OFF
+    -D CPACK_SOURCE_TGZ=OFF
+    -D CPACK_SOURCE_TXZ=OFF
+    -D CPACK_SOURCE_TZ=OFF
+    -D CPACK_SOURCE_ZIP=OFF
+)
+
+cm
+mk
+mi
+
+}
