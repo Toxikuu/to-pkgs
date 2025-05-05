@@ -1,0 +1,7 @@
+,hook install
+You may want to add any non-root users to the audio group:
+ # usermod -a -G audio <user>
+
+,hook remove
+You may want to remove any non-root users from the audio group:
+ # usermod -r -G audio <user>

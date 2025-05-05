@@ -1,0 +1,68 @@
+{
+  "name": "pulseaudio",
+  "version": "17.0",
+  "about": "General-purpose sound server",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/pulseaudio/pulseaudio.git",
+  "version_fetch": null,
+  "tags": [
+    "audio",
+    "lib",
+    "core",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz",
+      "dest": "pulseaudio-17.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "fftw",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "libsndfile",
+      "kind": "Required"
+    },
+    {
+      "name": "systemd",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

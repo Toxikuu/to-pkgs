@@ -1,0 +1,60 @@
+#!/to
+
+n="pulseaudio"
+v="17.0"
+a="General-purpose sound server"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="audio lib core utils cli"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "https://www.freedesktop.org/software/$n/releases/$n-$v.tar.xz"
+)
+
+d=(
+    "b,ninja"
+    "b,meson"
+    "alsa-lib"
+    "glibc"
+    "dbus"
+    "fftw"
+    "glib"
+    "libcap"
+    "libsndfile"
+    "systemd"
+    # The following are recommended, but avoided here:
+    # libx11
+    # libxcb
+    # libxtst
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D doxygen=false
+    -D gcov=false
+    -D man=false
+    -D tests=false # the tests require check
+    -D database=gdbm
+    -D legacy-database-entry-format=false
+    -D stream-restore-clear-old-devices=false # true is recommended for gnome
+    -D running-from-build-tree=false
+    -D atomic-arm-linux-helpers=true
+    -D atomic-arm-memory-barrier=false
+    -D bluez5=disabled
+    -D jack=disabled
+    -D lirc=disabled
+    -D openssl=disabled # used for apple support
+    -D systemd=enabled
+    -D valgrind=disabled
+)
+
+def
+
+# Avoid creating unnecessary system users and groups
+rm -vf /usr/share/dbus-1/system.d/$n-system.conf
+
+}
