@@ -1,0 +1,45 @@
+{
+  "name": "libsndfile",
+  "version": "1.2.2",
+  "about": "Library for files containing sampled sound",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1"
+  ],
+  "upstream": "https://github.com/libsndfile/libsndfile.git",
+  "version_fetch": "gr | grep -B1 'v1.0.28pre1' | head -n1",
+  "tags": [
+    "lib",
+    "audio"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz",
+      "dest": "libsndfile-1.2.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "flac",
+      "kind": "Required"
+    },
+    {
+      "name": "ogg",
+      "kind": "Required"
+    },
+    {
+      "name": "vorbis",
+      "kind": "Required"
+    },
+    {
+      "name": "opus",
+      "kind": "Required"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

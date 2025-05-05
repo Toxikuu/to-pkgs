@@ -1,0 +1,39 @@
+#!/to
+
+n="libsndfile"
+v="1.2.2"
+a="Library for files containing sampled sound"
+m="Tox"
+l="LGPL-2.1"
+t="lib audio"
+u="https://github.com/$n/$n.git"
+vf="gr | grep -B1 'v1.0.28pre1' | head -n1"
+
+s=(
+    "${u%.git}/releases/download/$v/$n-$v.tar.xz"
+)
+
+d=(
+    # NOTE: Aliases must not be used in dependencies because of limitations with
+    # symlinks and dependency installation to the chroot. This may be fixed
+    # eventually.
+    # TODO: Look into the above.
+    "flac"
+    "ogg"
+    "vorbis"
+    "opus"
+    "alsa-lib"
+    # Optionally lame too
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+mk check
+
+}
