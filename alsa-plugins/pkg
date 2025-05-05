@@ -1,0 +1,28 @@
+#!/to
+
+n="alsa-plugins"
+v="1.2.12"
+a="ALSA plugins"
+m="Tox"
+l=("LGPL-2.1" "GPL-2.0")
+t="audio lib"
+u="https://github.com/alsa-project/$n.git"
+
+s=(
+    "https://www.alsa-project.org/files/pub/plugins/$n-$v.tar.bz2"
+)
+
+d=(
+    "alsa-lib"
+    "glibc"
+)
+
+b() {
+
+_cfg=(
+    --disable-libav
+)
+
+def
+
+}
