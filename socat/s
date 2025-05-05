@@ -1,0 +1,37 @@
+{
+  "name": "socat",
+  "version": "1.8.0.3",
+  "about": "Multipurpose relay",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://repo.or.cz/socat.git",
+  "version_fetch": "gr | cut -d- -f2- | grep -v '[a-Z]'",
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "http://www.dest-unreach.org/socat/download/socat-1.8.0.3.tar.gz",
+      "dest": "socat-1.8.0.3.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
