@@ -1,0 +1,31 @@
+#!/to
+
+n="flac"
+v="1.5.0"
+a="Free Lossless Audio Codec"
+m="Tox"
+l="GFDL-1.3"
+t="audio lib utils cli"
+u="https://github.com/xiph/$n.git"
+
+s=(
+    "https://downloads.xiph.org/releases/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "libogg"
+    "glibc"
+)
+
+b() {
+
+_cfg=(
+    --disable-thorough-tests
+    --disable-valgrind-testing
+)
+
+def
+
+}
+
+# Tests demand a non-root user which is currently not supported
