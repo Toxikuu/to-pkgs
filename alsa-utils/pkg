@@ -1,0 +1,33 @@
+#!/to
+
+n="alsa-utils"
+v="1.2.14"
+a="ALSA utilities"
+m="Tox"
+l="GPL-2.0"
+t="audio utils cli"
+u="https://github.com/alsa-project/$n.git"
+
+s=(
+    "https://www.alsa-project.org/files/pub/utils/$n-$v.tar.bz2"
+)
+
+d=(
+    "alsa-lib"
+    "glibc"
+    "pciutils"
+    "psmisc"
+    "fftw"
+    "ncurses"
+)
+
+b() {
+
+_cfg=(
+    --disable-xmlto
+    --with-curses=ncursesw
+)
+
+def
+
+}

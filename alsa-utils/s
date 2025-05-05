@@ -1,0 +1,50 @@
+{
+  "name": "alsa-utils",
+  "version": "1.2.14",
+  "about": "ALSA utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0"
+  ],
+  "upstream": "https://github.com/alsa-project/alsa-utils.git",
+  "version_fetch": null,
+  "tags": [
+    "audio",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.14.tar.bz2",
+      "dest": "alsa-utils-1.2.14.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "pciutils",
+      "kind": "Required"
+    },
+    {
+      "name": "psmisc",
+      "kind": "Required"
+    },
+    {
+      "name": "fftw",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
