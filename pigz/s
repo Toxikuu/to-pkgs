@@ -1,0 +1,31 @@
+{
+  "name": "pigz",
+  "version": "2.8",
+  "about": "Parallel implementation of gzip",
+  "maintainer": "Tox",
+  "licenses": [
+    "custom"
+  ],
+  "upstream": "https://github.com/madler/pigz.git",
+  "version_fetch": null,
+  "tags": [
+    "z",
+    "lib",
+    "cli",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/madler/pigz/archive/refs/tags/v2.8.tar.gz",
+      "dest": "v2.8.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

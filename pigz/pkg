@@ -1,0 +1,39 @@
+#!/to
+
+n="pigz"
+v="2.8"
+a="Parallel implementation of gzip"
+m="Tox"
+l="custom"
+t="z lib cli utils"
+u="https://github.com/madler/$n.git"
+
+s=(
+    "${u%.git}/archive/refs/tags/v$v.tar.gz"
+)
+
+d=(
+    "zlib"
+)
+
+b() {
+
+mk
+install -vDm755 $n -t "$D/usr/bin/"
+
+# Create a convenience symlink
+pushd "$D/usr/bin"
+    ln -sv $n un$n 
+popd
+
+# Extract the license from the readme
+tail -n +30 README > LICENSE
+head -n26   README | sed 's/ below//' > README
+
+install -vDm644 README  -t "$D/usr/share/doc/$n/"
+install -vDm644 LICENSE -t "$D/usr/share/licenses/$n/"
+
+install -vDm644 $n.1 -t "$D/usr/share/man/man1/"
+install -vDm644 $n.pdf  "$D/usr/share/doc/$n/manual.pdf"
+
+}
