@@ -1,0 +1,38 @@
+{
+  "name": "opus",
+  "version": "1.5.2",
+  "about": "Lossy audio compression format well suited to transmission",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/xiph/opus.git",
+  "version_fetch": null,
+  "tags": [
+    "audio",
+    "lib",
+    "codec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/xiph/opus/releases/download/v1.5.2/opus-1.5.2.tar.gz",
+      "dest": "opus-1.5.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

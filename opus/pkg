@@ -1,0 +1,32 @@
+#!/to
+
+n="opus"
+v="1.5.2"
+a="Lossy audio compression format well suited to transmission"
+m="Tox"
+l="BSD-3-Clause"
+t="audio lib codec"
+u="https://github.com/xiph/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "b,ninja"
+    "b,meson"
+)
+
+b() {
+
+with mn
+def
+
+}
+
+t() {
+
+nj test
+
+}
