@@ -1,0 +1,33 @@
+{
+  "name": "alsa-lib",
+  "version": "1.2.14",
+  "about": "ALSA library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/alsa-project/alsa-lib.git",
+  "version_fetch": null,
+  "tags": [
+    "audio",
+    "lib",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.14.tar.bz2",
+      "dest": "alsa-lib-1.2.14.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": [
+    "SOUND=y/m",
+    "SND=y/m"
+  ]
+}

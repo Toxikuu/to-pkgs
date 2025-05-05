@@ -1,0 +1,29 @@
+#!/to
+
+n="alsa-lib"
+v="1.2.14"
+a="ALSA library"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="audio lib core"
+u="https://github.com/alsa-project/$n.git"
+
+s=(
+    "https://www.alsa-project.org/files/pub/lib/$n-$v.tar.bz2"
+)
+
+d=(
+    "glibc"
+)
+
+# Among other hardware-specific drivers and settings
+kcfg=(
+    "SOUND=y/m"
+    "SND=y/m"
+)
+
+b() {
+
+def
+
+}
