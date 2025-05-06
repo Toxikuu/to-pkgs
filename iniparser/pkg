@@ -1,0 +1,35 @@
+#!/to
+
+n="iniparser"
+v="4.2.6"
+a="Standalone ini file parser"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://github.com/ndevilla/$n.git"
+
+s=(
+    "${u%.git}/archive/refs/tags/v$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "b,cmake"
+    "b,ninja"
+)
+
+b() {
+
+with cn
+
+_cfg=(
+    -D BUILD_DOCS=OFF
+    -D BUILD_EXAMPLES=OFF
+    -D BUILD_STATIC_LIBS=OFF
+)
+
+def
+
+install -vDm644 ../LICENSE -t "$D/usr/share/licenses/$n/"
+
+}
