@@ -1,0 +1,24 @@
+#!/to
+
+n="nasm"
+v="2.16.03"
+a="Netwide Assembler for x86"
+m="Tox"
+l="BSD-2-Clause"
+t="lang"
+u="https://github.com/netwide-assembler/$n.git"
+vf="gr | grep '^$n-' | grep -v 'rc'"
+
+s=(
+    "https://www.$n.us/pub/$n/releasebuilds/$v/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+def
+
+}
