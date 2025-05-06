@@ -1,0 +1,28 @@
+{
+  "name": "patchelf",
+  "version": "0.18.0",
+  "about": "A small utility to modify the dynamic linker and RPATH of ELF executables",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://github.com/NixOS/patchelf.git",
+  "version_fetch": null,
+  "tags": [
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/NixOS/patchelf.git",
+      "dest": "patchelf"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

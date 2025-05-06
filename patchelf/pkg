@@ -1,0 +1,30 @@
+#!/to
+
+n="patchelf"
+v="0.18.0"
+a="A small utility to modify the dynamic linker and RPATH of ELF executables"
+m="Tox"
+l="GPL-3.0-or-later"
+t="utils"
+u="https://github.com/NixOS/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+)
+
+b() {
+
+autoreconf -fiv
+def
+
+}
+
+t() {
+
+mk check
+
+}
