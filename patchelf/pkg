@@ -18,7 +18,9 @@ d=(
 
 b() {
 
+git checkout $v
 autoreconf -fiv
+
 def
 
 }
