@@ -1,0 +1,31 @@
+{
+  "name": "yasm",
+  "version": "121ab150b3577b666c79a79f4a511798d7ad2432",
+  "about": "Rewrite of the Netwide Assembler",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD",
+    "GPL2",
+    "LGPL2.1",
+    "Artistic"
+  ],
+  "upstream": "https://github.com/yasm/yasm.git",
+  "version_fetch": null,
+  "tags": [
+    "lang"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/yasm/yasm.git",
+      "dest": "yasm"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,43 @@
+#!/to
+
+n="yasm"
+v="121ab150b3577b666c79a79f4a511798d7ad2432" # last stable was 1.3.0
+a="Rewrite of the Netwide Assembler"
+m="Tox"
+l=(
+    "BSD"
+    "GPL2"
+    "LGPL2.1"
+    "Artistic"
+)
+t="lang"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+)
+
+b() {
+
+git checkout "$v"
+./autogen.sh
+
+# Don't compile Windows-only programs
+sed -i 's#) ytasm.*#)#' Makefile.in
+
+CFLAGS+=' -ffat-lto-objects' \
+def
+
+install -vDm644 COPYING BSD.txt -t "$D/usr/share/licenses/$n/"
+
+}
+
+t() {
+
+mk check
+
+}
