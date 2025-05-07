@@ -7,6 +7,7 @@ m="Tox"
 l="MIT"
 t="lib net sec core"
 u="https://github.com/rockdaboot/$n.git"
+vf="gr | sed 's,$n-,,' | grep -v -- - | sort -V"
 
 s=(
     "${u%.git}/releases/download/$v/$n-$v.tar.gz"

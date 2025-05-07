@@ -7,7 +7,7 @@
     "MIT"
   ],
   "upstream": "https://github.com/rockdaboot/libpsl.git",
-  "version_fetch": null,
+  "version_fetch": "gr | sed 's,libpsl-,,' | grep -v -- - | sort -V",
   "tags": [
     "lib",
     "net",
