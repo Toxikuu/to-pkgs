@@ -7,7 +7,7 @@
     "MIT"
   ],
   "upstream": "https://github.com/libexpat/libexpat.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep '^R_' | cut -d_ -f 2- | sed 's,_,.,g'",
   "tags": [
     "lib",
     "core"
