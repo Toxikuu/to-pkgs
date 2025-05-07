@@ -7,6 +7,7 @@ m="Tox"
 l="GPL-2.0-or-later"
 t="utils cli"
 u="https://gitlab.freedesktop.org/xdg/$n.git"
+vf="gr | grep -E '^[0-9]+'"
 
 s=(
     "https://www.freedesktop.org/software/$n/releases/$n-$v.tar.xz"
