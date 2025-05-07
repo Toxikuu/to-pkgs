@@ -1,6 +1,6 @@
 {
   "name": "meson",
-  "version": "1.7.2",
+  "version": "1.8.0",
   "about": "High productivity build system",
   "maintainer": "Tox",
   "licenses": [
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/mesonbuild/meson/releases/download/1.7.2/meson-1.7.2.tar.gz",
-      "dest": "meson-1.7.2.tar.gz"
+      "url": "https://github.com/mesonbuild/meson/releases/download/1.8.0/meson-1.8.0.tar.gz",
+      "dest": "meson-1.8.0.tar.gz"
     }
   ],
   "dependencies": [
