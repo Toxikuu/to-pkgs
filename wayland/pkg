@@ -1,0 +1,40 @@
+#!/to
+
+n="wayland"
+v="1.23.1"
+a="Display server protocol"
+m="Tox"
+l="MIT"
+t="gfx lib"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,meson"
+    "b,ninja"
+    "libxml2"
+    "glibc"
+    "libffi"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D documentation=false
+)
+
+def
+
+}
+
+t() {
+
+env -u XDG_RUNTIME_DIR ninja test
+
+}

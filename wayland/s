@@ -1,0 +1,49 @@
+{
+  "name": "wayland",
+  "version": "1.23.1",
+  "about": "Display server protocol",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/wayland/wayland.git",
+  "version_fetch": null,
+  "tags": [
+    "gfx",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/wayland/wayland.git",
+      "dest": "wayland"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libffi",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
