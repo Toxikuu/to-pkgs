@@ -1,6 +1,6 @@
 {
   "name": "mpdecimal",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "about": "Multiple-precision decimal floating point arithmetic library",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.0.tar.gz",
-      "dest": "mpdecimal-4.0.0.tar.gz"
+      "url": "https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.1.tar.gz",
+      "dest": "mpdecimal-4.0.1.tar.gz"
     }
   ],
   "dependencies": [
