@@ -11,6 +11,7 @@ l=(
 )
 t="lib utils core"
 u="https://git.savannah.gnu.org/git/$n.git"
+vf="gr | grep '^v[0-9]\\.[0-9]' | grep -v '[a-z]$'"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
