@@ -11,6 +11,8 @@ m="Tox"
 l="Artistic-1.0-Perl OR GPL-1.0-or-later"
 t="core lang"
 u="https://github.com/Perl/${n}${MAJOR}.git"
+# The below vf filters for even minor parts, then official releases
+vf="gr | vfem | vfs"
 
 s=(
     "${u%.git}/archive/refs/tags/v$v.tar.gz"

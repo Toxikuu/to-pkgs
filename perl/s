@@ -7,7 +7,7 @@
     "Artistic-1.0-Perl OR GPL-1.0-or-later"
   ],
   "upstream": "https://github.com/Perl/perl5.git",
-  "version_fetch": null,
+  "version_fetch": "gr | vfem | vfs",
   "tags": [
     "core",
     "lang"
