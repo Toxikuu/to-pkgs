@@ -11,6 +11,7 @@ l=(
 )
 t="core utils lib"
 u="https://gitlab.freedesktop.org/$n/$n.git"
+vf="gr | grep -E '$n-[0-9]' | sort -V"
 
 s=(
     "https://$n.freedesktop.org/releases/$n/$n-$v.tar.xz"

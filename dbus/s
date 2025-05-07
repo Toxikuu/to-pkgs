@@ -9,7 +9,7 @@
     "GPL"
   ],
   "upstream": "https://gitlab.freedesktop.org/dbus/dbus.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep -E 'dbus-[0-9]' | sort -V",
   "tags": [
     "core",
     "utils",
