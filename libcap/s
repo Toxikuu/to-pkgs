@@ -7,7 +7,7 @@
     "BSD-3-Clause OR GPL-2.0-only"
   ],
   "upstream": "https://git.kernel.org/pub/scm/libs/libcap/libcap.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep 'libcap-korg-' | tail -n1 | cut -d- -f3",
   "tags": [
     "core",
     "sec"
