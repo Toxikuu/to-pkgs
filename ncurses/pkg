@@ -7,6 +7,7 @@ m="Tox"
 l="MIT-open-group"
 t="core critical lib"
 u="https://invisible-mirror.net/archives/$n/?C=M;O=D"
+vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d- -f2 | cut -d. -f1-2"
 
 s=(
     "${u%\?*}$n-$v.tar.gz"
