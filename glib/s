@@ -7,7 +7,7 @@
     "LGPL-2.1-or-later"
   ],
   "upstream": "https://github.com/GNOME/glib.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep '^[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+$'",
   "tags": [
     "core",
     "lib"

@@ -7,6 +7,7 @@ m="Tox"
 l="LGPL-2.1-or-later"
 t="core lib"
 u="https://github.com/GNOME/$n.git"
+vf="gr | grep '^[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+$'"
 
 gobjn="gobject-introspection"
 gobjv="1.84.0"
