@@ -1,0 +1,34 @@
+{
+  "name": "catfetch",
+  "version": "ca7785c3d678fe2cefac3df60bf32a6a5069d8ea",
+  "about": "Cute fetch script featuring a cat",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://github.com/Toxikuu/catfetch.git",
+  "version_fetch": null,
+  "tags": [
+    "fetch",
+    "cli",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Toxikuu/catfetch.git",
+      "dest": "catfetch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

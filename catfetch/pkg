@@ -1,0 +1,26 @@
+#!/to
+
+n="catfetch"
+v="ca7785c3d678fe2cefac3df60bf32a6a5069d8ea"
+a="Cute fetch script featuring a cat"
+m="Tox"
+l="GPL3"
+t="fetch cli utils"
+u="https://github.com/Toxikuu/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,rust"
+)
+
+b() {
+
+with rust
+
+def
+
+}
