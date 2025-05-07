@@ -7,6 +7,7 @@ m="Tox"
 l="BSD-3-Clause"
 t="core sec lib"
 u="https://github.com/$n-maint/$n.git"
+vf="gr | grep '^[0-9]\+\\.[0-9]' | sort -V"
 
 s=(
     "${u%.git}/releases/download/$v/$n-$v.tar.xz"

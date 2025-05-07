@@ -7,7 +7,7 @@
     "BSD-3-Clause"
   ],
   "upstream": "https://github.com/shadow-maint/shadow.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep '^[0-9]\\+\\.[0-9]' | sort -V",
   "tags": [
     "core",
     "sec",
