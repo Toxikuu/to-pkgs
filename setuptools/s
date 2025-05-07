@@ -1,6 +1,6 @@
 {
   "name": "setuptools",
-  "version": "80.3.0",
+  "version": "80.3.1",
   "about": "Tool for managing Python packages",
   "maintainer": "Tox",
   "licenses": [
@@ -17,8 +17,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://pypi.org/packages/source/s/setuptools/setuptools-80.3.0.tar.gz",
-      "dest": "setuptools-80.3.0.tar.gz"
+      "url": "https://pypi.org/packages/source/s/setuptools/setuptools-80.3.1.tar.gz",
+      "dest": "setuptools-80.3.1.tar.gz"
     }
   ],
   "dependencies": [
