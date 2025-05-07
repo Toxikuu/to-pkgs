@@ -15,7 +15,7 @@
     "PublicDomain"
   ],
   "upstream": "https://github.com/util-linux/util-linux.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep -Eiv 'start|rc|pre|real' | sort -V",
   "tags": [
     "utils",
     "cli",

@@ -17,6 +17,7 @@ l=(
 )
 t="utils cli core"
 u="https://github.com/$n/$n.git"
+vf="gr | grep -Eiv 'start|rc|pre|real' | sort -V"
 
 s=(
     "${u%.git}/archive/refs/tags/v$v.tar.gz"
