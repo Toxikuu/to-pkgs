@@ -7,7 +7,7 @@
     "Artistic-2.0"
   ],
   "upstream": "https://github.com/cpan-authors/XML-Parser.git",
-  "version_fetch": null,
+  "version_fetch": "gr | sed -e 's,^v,,' -e 's,_,.,g' | sort -V",
   "tags": [
     "lib"
   ],

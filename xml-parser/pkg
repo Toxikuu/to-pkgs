@@ -9,6 +9,7 @@ l=(
 )
 t="lib"
 u="https://github.com/cpan-authors/XML-Parser.git"
+vf="gr | sed -e 's,^v,,' -e 's,_,.,g' | sort -V"
 
 s=(
     "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-$v.tar.gz"
