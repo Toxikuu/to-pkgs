@@ -1,0 +1,53 @@
+#!/to
+
+n="sudo"
+v="82ebb1eaa92368952ae92ee0819b573f24e304cd"
+a="Privilege escalation utility"
+m="Tox"
+l="custom"
+t="utils cli"
+u="https://github.com/$n-project/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "glibc"
+    "openssl"
+    "zlib"
+    "linux-pam" # optional but i want it
+    "b,git"
+)
+
+b() {
+
+gco
+
+NORMAL=$(tput sgr0)
+BOLD=$(tput bold)
+RED=$(tput setaf 1)
+ITALIC=$(tput sitm)
+PINK=$(tput setaf 5)
+WHITE=$(tput setaf 7)
+
+SUDO_PROMPT=" ${BOLD}[${RED}#${NORMAL}${BOLD}]${NORMAL} "
+BADPASS_PROMPT="${BOLD}${ITALIC}${PINK}♡★  ✿ ,.♡${WHITE} ~ try again! ${PINK}՞ ${RED}⸝⸝${PINK}>  ̫ <${RED}⸝⸝${PINK} ՞⸜ ★ ♡⸝ ✿ ${NORMAL}"
+
+_cfg=(
+    --with-secure-path
+    --with-env-editor
+    --without-lecture
+    --with-passwd-tries=9
+    --with-timeout=30
+    --with-password-timeout=1
+    --with-passprompt="${SUDO_PROMPT}"
+    --with-badpass-message="${BADPASS_PROMPT}"
+)
+
+def
+
+install -vDm644 "$A/sudoers" "$D/etc/sudoers.d/00-sudo"
+install -vDm644 "$A/pamsudo" "$D/etc/pam.d/sudo"
+
+}

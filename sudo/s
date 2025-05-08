@@ -1,0 +1,45 @@
+{
+  "name": "sudo",
+  "version": "82ebb1eaa92368952ae92ee0819b573f24e304cd",
+  "about": "Privilege escalation utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "custom"
+  ],
+  "upstream": "https://github.com/sudo-project/sudo.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/sudo-project/sudo.git",
+      "dest": "sudo"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "linux-pam",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
