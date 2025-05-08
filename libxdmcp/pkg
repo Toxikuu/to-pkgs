@@ -1,0 +1,26 @@
+#!/to
+
+n="libxdmcp"
+v="1.1.5"
+a="The X Display Manager Control Protocol"
+m="Tox"
+l="MIT"
+t="lib xorg"
+u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
+vf="gr | grep -i '$n-' | sed 's,_,.,g' | sort -V"
+
+s=(
+    "https://www.x.org/pub/individual/lib/${n//x/X}-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "xorgproto"
+    "b,util-macros"
+)
+
+b() {
+
+def
+
+}

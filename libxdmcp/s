@@ -1,0 +1,37 @@
+{
+  "name": "libxdmcp",
+  "version": "1.1.5",
+  "about": "The X Display Manager Control Protocol",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxdmcp.git",
+  "version_fetch": "gr | grep -i 'libxdmcp-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXdmcp-1.1.5.tar.xz",
+      "dest": "libXdmcp-1.1.5.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
