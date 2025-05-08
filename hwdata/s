@@ -1,6 +1,6 @@
 {
   "name": "hwdata",
-  "version": "0.394",
+  "version": "0.395",
   "about": "Hardware identification databases",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/vcrhonek/hwdata/archive/v0.394/hwdata-0.394.tar.gz",
-      "dest": "hwdata-0.394.tar.gz"
+      "url": "https://github.com/vcrhonek/hwdata/archive/v0.395/hwdata-0.395.tar.gz",
+      "dest": "hwdata-0.395.tar.gz"
     }
   ],
   "dependencies": [],

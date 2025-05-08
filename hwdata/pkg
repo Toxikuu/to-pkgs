@@ -1,7 +1,7 @@
 #!/to
 
 n="hwdata"
-v="0.394"
+v="0.395"
 a="Hardware identification databases"
 m="Tox"
 l="GPL-2-or-later OR XFree86-1.0"
