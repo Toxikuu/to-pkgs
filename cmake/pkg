@@ -1,7 +1,7 @@
 #!/to
 
 n="cmake"
-v="4.0.1"
+v="4.0.2"
 a="Build system succeeding configure scripts"
 m="Tox"
 l="BSD-3-Clause"

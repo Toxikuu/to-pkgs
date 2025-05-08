@@ -1,6 +1,6 @@
 {
   "name": "cmake",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "about": "Build system succeeding configure scripts",
   "maintainer": "Tox",
   "licenses": [
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://cmake.org/files/v4.0/cmake-4.0.1.tar.gz",
-      "dest": "cmake-4.0.1.tar.gz"
+      "url": "https://cmake.org/files/v4.0/cmake-4.0.2.tar.gz",
+      "dest": "cmake-4.0.2.tar.gz"
     }
   ],
   "dependencies": [
