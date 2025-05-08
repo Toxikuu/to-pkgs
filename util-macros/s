@@ -7,7 +7,7 @@
     "HPND-sell-variant AND MIT"
   ],
   "upstream": "https://gitlab.freedesktop.org/xorg/util/macros.git",
-  "version_fetch": "gr | grep 'util-macros-' | sed 's,_,.,g | sort -V",
+  "version_fetch": "gr | grep 'util-macros-' | sed 's,_,.,g' | sort -V",
   "tags": [
     "lib",
     "xorg"

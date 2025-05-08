@@ -7,7 +7,7 @@ m="Tox"
 l="HPND-sell-variant AND MIT"
 t="lib xorg"
 u="https://gitlab.freedesktop.org/xorg/${n//-/\/}.git"
-vf="gr | grep '$n-' | sed 's,_,.,g | sort -V"
+vf="gr | grep '$n-' | sed 's,_,.,g' | sort -V"
 
 s=(
     "https://www.x.org/pub/individual/util/$n-$v.tar.xz"
