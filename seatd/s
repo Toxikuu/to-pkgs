@@ -1,0 +1,41 @@
+{
+  "name": "seatd",
+  "version": "900e359f99818df434389eb3a39ee767f1d84f2c",
+  "about": "Universal seat management library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://git.sr.ht/~kennylevinsen/seatd",
+  "version_fetch": null,
+  "tags": [
+    "gfx",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.sr.ht/~kennylevinsen/seatd",
+      "dest": "seatd"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "systemd",
+      "kind": "Required"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

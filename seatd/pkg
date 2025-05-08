@@ -1,0 +1,35 @@
+#!/to
+
+n="seatd"
+v="900e359f99818df434389eb3a39ee767f1d84f2c"
+a="Universal seat management library"
+m="Tox"
+l="MIT"
+t="gfx lib"
+u="https://git.sr.ht/~kennylevinsen/$n"
+
+s=(
+    "$u"
+)
+
+d=(
+    "systemd"
+    "b,ninja"
+    "b,meson"
+    "b,git"
+)
+
+b() {
+
+with mn
+
+gco
+
+_cfg=(
+    -D server=disabled
+    -D libseat-$n=disabled
+)
+
+def
+
+}
