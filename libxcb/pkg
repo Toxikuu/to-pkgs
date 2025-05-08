@@ -26,8 +26,18 @@ b() {
 
 _cfg=(
     --without-doxygen
+    --enable-xinput
+    --enable-xkb
 )
 
 def
+
+install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
+
+}
+
+t() {
+
+mk check
 
 }
