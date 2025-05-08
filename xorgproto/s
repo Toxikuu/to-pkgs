@@ -1,0 +1,37 @@
+{
+  "name": "xorgproto",
+  "version": "2024.1",
+  "about": "Xorg protocol headers",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/proto/xorgproto.git",
+  "version_fetch": "gr | grep 'xorgproto-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "xorg",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz",
+      "dest": "xorgproto-2024.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "util-macros",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
