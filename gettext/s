@@ -1,6 +1,6 @@
 {
   "name": "gettext",
-  "version": "0.24.1",
+  "version": "0.25",
   "about": "i18n and l10n toolkit",
   "maintainer": "Tox",
   "licenses": [
@@ -20,8 +20,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/gettext/gettext-0.24.1.tar.xz",
-      "dest": "gettext-0.24.1.tar.xz"
+      "url": "https://ftp.gnu.org/gnu/gettext/gettext-0.25.tar.xz",
+      "dest": "gettext-0.25.tar.xz"
     }
   ],
   "dependencies": [
