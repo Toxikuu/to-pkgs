@@ -1,0 +1,26 @@
+#!/to
+
+n="xcb-proto"
+v="1.17.0"
+a="XML-XCB protocol descriptions"
+m="Tox"
+l="LICENSE"
+t="lib xorg"
+u="https://gitlab.freedesktop.org/xorg/proto/${n//-/}.git"
+vf="gr | grep -i '$n-' | sed 's,_,.,g' | sort -V"
+
+s=(
+    "https://xorg.freedesktop.org/archive/individual/proto/$n-$v.tar.xz"
+)
+
+d=(
+    "b,libxml2"
+    "b,python"
+)
+
+b() {
+
+cfg
+mi
+
+}

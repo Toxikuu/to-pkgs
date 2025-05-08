@@ -1,0 +1,33 @@
+{
+  "name": "xcb-proto",
+  "version": "1.17.0",
+  "about": "XML-XCB protocol descriptions",
+  "maintainer": "Tox",
+  "licenses": [
+    "LICENSE"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/proto/xcbproto.git",
+  "version_fetch": "gr | grep -i 'xcb-proto-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz",
+      "dest": "xcb-proto-1.17.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxml2",
+      "kind": "Build"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
