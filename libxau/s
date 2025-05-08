@@ -1,0 +1,33 @@
+{
+  "name": "libxau",
+  "version": "1.0.12",
+  "about": "The X Authorization Protocol",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxau.git",
+  "version_fetch": "gr | grep -i 'libxau-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz",
+      "dest": "libXau-1.0.12.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
