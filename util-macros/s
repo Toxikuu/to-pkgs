@@ -1,0 +1,24 @@
+{
+  "name": "util-macros",
+  "version": "1.20.2",
+  "about": "Xorg autotools macros",
+  "maintainer": "Tox",
+  "licenses": [
+    "HPND-sell-variant AND MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/util/macros.git",
+  "version_fetch": "gr | grep 'util-macros-' | sed 's,_,.,g | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz",
+      "dest": "util-macros-1.20.2.tar.xz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
