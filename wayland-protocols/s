@@ -1,0 +1,41 @@
+{
+  "name": "wayland-protocols",
+  "version": "1.44",
+  "about": "Additional protocols for Wayland",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/wayland/wayland-protocols.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols.git",
+      "dest": "wayland-protocols"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
