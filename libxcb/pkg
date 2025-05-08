@@ -1,0 +1,33 @@
+#!/to
+
+n="libxcb"
+v="1.17.0"
+a="X11 client-side library"
+m="Tox"
+l="X11"
+t="lib xorg"
+u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
+vf="gr | grep -i '$n-' | sed 's,_,.,g' | sort -V"
+
+s=(
+    "https://xorg.freedesktop.org/archive/individual/lib/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "libxau"
+    "libxdmcp"
+    "xcb-proto"
+    "b,util-macros"
+    "b,xorgproto"
+)
+
+b() {
+
+_cfg=(
+    --without-doxygen
+)
+
+def
+
+}

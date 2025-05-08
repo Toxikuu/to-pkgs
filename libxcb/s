@@ -1,0 +1,49 @@
+{
+  "name": "libxcb",
+  "version": "1.17.0",
+  "about": "X11 client-side library",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcb.git",
+  "version_fetch": "gr | grep -i 'libxcb-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz",
+      "dest": "libxcb-1.17.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxau",
+      "kind": "Required"
+    },
+    {
+      "name": "libxdmcp",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-proto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
