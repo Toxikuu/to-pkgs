@@ -7,7 +7,7 @@
     "PSF-2.0"
   ],
   "upstream": "https://github.com/python/cpython.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep -Ev 'a|b|rc' | sort -V",
   "tags": [
     "core",
     "lang",
