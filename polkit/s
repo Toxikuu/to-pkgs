@@ -7,7 +7,7 @@
     "LGPL-2.0-or-later"
   ],
   "upstream": "https://github.com/polkit-org/polkit.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep -E '^[0-9]+$'",
   "tags": [
     "sec",
     "lib",

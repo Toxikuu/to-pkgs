@@ -7,6 +7,7 @@ m="Tox"
 l="LGPL-2.0-or-later"
 t="sec lib core"
 u="https://github.com/$n-org/$n.git"
+vf="gr | grep -E '^[0-9]+$'"
 
 s=(
     "${u%.git}/archive/$v/$n-$v.tar.gz"
