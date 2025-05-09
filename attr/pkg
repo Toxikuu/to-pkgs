@@ -6,7 +6,7 @@ a="Utilities to administer filesystem object attributes"
 m="Tox"
 l="LGPL"
 t="core"
-u="https://git.savannah.nongnu.org/git/$n.git"
+u="https://https.git.savannah.gnu.org/git/$n.git"
 
 s=(
     "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.gz"
