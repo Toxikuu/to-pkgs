@@ -1,0 +1,29 @@
+{
+  "name": "luajit",
+  "version": "eec7a8016c3381b949b5d84583800d05897fa960",
+  "about": "Just-in-time Lua compiler",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://luajit.org/git/luajit.git",
+  "version_fetch": null,
+  "tags": [
+    "lang",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://luajit.org/git/luajit.git",
+      "dest": "luajit"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

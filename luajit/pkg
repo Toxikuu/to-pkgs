@@ -1,0 +1,32 @@
+#!/to
+
+n="luajit"
+v="eec7a8016c3381b949b5d84583800d05897fa960"
+a="Just-in-time Lua compiler"
+m="Tox"
+l="MIT"
+t="lang lib"
+u="https://$n.org/git/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+)
+
+b() {
+
+# Create an amalgamated build (one huge optimized c file)
+mk PREFIX=/usr BUILDMODE=dynamic amalg
+mi PREFIX=/usr
+
+# This check is for debugging purposes
+# TODO: Remove this check
+[ -e "$D/usr/lib/lib$n-5.1.a" ] || die "Static library does not exist"
+rm -vf "$D"/usr/lib/lib$n-5.1.a
+
+install -vDm644 COPYRIGHT -t "$D/usr/share/licenses/$n/"
+
+}
