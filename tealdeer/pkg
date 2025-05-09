@@ -41,6 +41,7 @@ install -vDm644 "$A/config.toml" -t "$D/etc/tldr/"
 
 posti() {
 
+. /etc/profile.d/95-tldr.sh
 tldr --show-paths
 tldr --update
 
