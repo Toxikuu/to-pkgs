@@ -1,7 +1,7 @@
 #!/to
 
 n="catfetch"
-v="ca7785c3d678fe2cefac3df60bf32a6a5069d8ea"
+v="551522d5582201b7fa151082ec325040fd7f3379"
 a="Cute fetch script featuring a cat"
 m="Tox"
 l="GPL3"
@@ -21,6 +21,7 @@ b() {
 
 with rust
 
+gco
 def
 
 }
