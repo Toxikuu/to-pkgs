@@ -6,7 +6,7 @@
   "licenses": [
     "GPL-3.0-or-later"
   ],
-  "upstream": "https://git.savannah.gnu.org/git/findutils.git",
+  "upstream": "https://https.git.savannah.gnu.org/git/findutils.git",
   "version_fetch": null,
   "tags": [
     "utils",
