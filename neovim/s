@@ -1,0 +1,47 @@
+{
+  "name": "neovim",
+  "version": "db702782e0168d45256a975c4bc1809b5785d952",
+  "about": "Continuation and extension of Vim",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0",
+    "Custom"
+  ],
+  "upstream": "https://github.com/neovim/neovim.git",
+  "version_fetch": null,
+  "tags": [
+    "editor",
+    "utils",
+    "tui"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/neovim/neovim.git",
+      "dest": "neovim"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "libuv",
+      "kind": "Required"
+    },
+    {
+      "name": "luajit",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

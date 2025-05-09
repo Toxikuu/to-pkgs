@@ -1,0 +1,38 @@
+#!/to
+
+n="neovim"
+v="db702782e0168d45256a975c4bc1809b5785d952"
+a="Continuation and extension of Vim"
+m="Tox"
+l=(
+    "Apache-2.0"
+    "Custom"
+)
+t="editor utils tui"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,ninja"
+    "b,cmake"
+    "libuv"
+    "luajit"
+)
+
+b() {
+
+with cn
+
+gco
+
+# build bundled dependencies
+cmake -S cmake.deps -B .deps -G Ninja -D CMAKE_BUILD_TYPE=Release
+cmake --build .deps
+
+def
+
+}
