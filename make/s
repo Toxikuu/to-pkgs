@@ -6,7 +6,7 @@
   "licenses": [
     "GPL3"
   ],
-  "upstream": "https://git.savannah.gnu.org/git/make.git",
+  "upstream": "https://https.git.savannah.gnu.org/git/make.git",
   "version_fetch": "gr | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$'",
   "tags": [
     "core",

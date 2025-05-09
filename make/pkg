@@ -6,7 +6,7 @@ a="Utility for directing compilation"
 m="Tox"
 l="GPL3"
 t="core utils"
-u="https://git.savannah.gnu.org/git/$n.git"
+u="https://https.git.savannah.gnu.org/git/$n.git"
 vf="gr | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$'"
 
 s=(
