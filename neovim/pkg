@@ -29,10 +29,18 @@ with cn
 
 gco
 
-# build bundled dependencies
+# Build bundled dependencies
 cmake -S cmake.deps -B .deps -G Ninja -D CMAKE_BUILD_TYPE=Release
 cmake --build .deps
 
 def
+
+}
+
+t() {
+
+# Sanity checks
+bin/nvim --version
+bin/nvim --headless -u NONE -i NONE +q
 
 }
