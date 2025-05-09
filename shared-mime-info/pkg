@@ -7,6 +7,7 @@ m="Tox"
 l="GPL2"
 t="db lib utils"
 u="https://gitlab.freedesktop.org/xdg/$n.git"
+vf="gr | grep -v Release-"
 
 s=(
     "${u%.git}/-/archive/$v/$n-$v.tar.gz"
