@@ -6,7 +6,7 @@
   "licenses": [
     "GPL3"
   ],
-  "upstream": "https://git.savannah.gnu.org/git/texinfo.git",
+  "upstream": "https://https.git.savannah.gnu.org/git/texinfo.git",
   "version_fetch": null,
   "tags": [
     "core",
