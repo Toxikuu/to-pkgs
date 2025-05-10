@@ -1,0 +1,42 @@
+{
+  "name": "libxxf86vm",
+  "version": "1.1.6",
+  "about": "XFree86 video mode extension library",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxxf86vm.git",
+  "version_fetch": "gr | grep -i libxxf86vm- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXxf86vm-1.1.6.tar.xz",
+      "dest": "libXxf86vm-1.1.6.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
