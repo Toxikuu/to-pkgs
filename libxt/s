@@ -1,0 +1,50 @@
+{
+  "name": "libxt",
+  "version": "1.3.1",
+  "about": "X11 toolkit intrinsics library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT",
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxt.git",
+  "version_fetch": "gr | grep -i libxt- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXt-1.3.1.tar.xz",
+      "dest": "libXt-1.3.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libsm",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libice",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
