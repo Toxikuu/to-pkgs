@@ -1,7 +1,7 @@
 {
   "name": "libxtst",
   "version": "1.2.5",
-  "about": "library for XTEST & RECORD extensions",
+  "about": "Library for XTEST & RECORD extensions",
   "maintainer": "Tox",
   "licenses": [
     "MIT",

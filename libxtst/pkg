@@ -2,7 +2,7 @@
 
 n="libxtst"
 v="1.2.5"
-a="library for XTEST & RECORD extensions"
+a="Library for XTEST & RECORD extensions"
 m="Tox"
 l=(
     "MIT"
