@@ -1,0 +1,33 @@
+#!/to
+
+n="libxcvt"
+v="0.1.3"
+a="VESA CVT standard timing modelines generator"
+m="Tox"
+l="MIT"
+t="lib xorg"
+u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
+vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/lib/$n-$v.tar.xz"
+
+d=(
+    "glibc"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+il
+def
+
+}
+
+t() {
+
+nj test
+
+}
