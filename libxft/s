@@ -1,0 +1,50 @@
+{
+  "name": "libxft",
+  "version": "2.3.9",
+  "about": "FreeType-based font drawing library for X",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxft.git",
+  "version_fetch": "gr | grep -i libxft- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "xorg",
+    "lib",
+    "font"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXft-2.3.9.tar.xz",
+      "dest": "libXft-2.3.9.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "fontconfig",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
