@@ -1,0 +1,54 @@
+{
+  "name": "libxfont2",
+  "version": "2.0.7",
+  "about": "X11 font rasterisation library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxfont.git",
+  "version_fetch": "gr | grep -i libxfont2- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "font"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXfont2-2.0.7.tar.xz",
+      "dest": "libXfont2-2.0.7.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "libfontenc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xtrans",
+      "kind": "Build"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
