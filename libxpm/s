@@ -1,0 +1,46 @@
+{
+  "name": "libxpm",
+  "version": "3.5.17",
+  "about": "X11 pixmap library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxpm.git",
+  "version_fetch": "gr | grep -i libxpm- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "img"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXpm-3.5.17.tar.xz",
+      "dest": "libXpm-3.5.17.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxt",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
