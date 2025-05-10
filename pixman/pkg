@@ -1,0 +1,49 @@
+#!/to
+
+n="pixman"
+v="0.46.0"
+a="Pixel manipulation library"
+m="Tox"
+l="MIT"
+t="lib xorg gfx"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+
+s="https://www.x.org/releases/individual/lib/$n-$v.tar.xz"
+
+d=(
+    "glibc"
+    "b,libpng"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D loongson-mmi=disabled
+    -D vmx=disabled
+    -D arm-simd=disabled
+    -D neon=disabled
+    -D a64-neon=disabled
+    -D rvv=disabled
+    -D mips-dspr2=disabled
+    -D gtk=disabled
+    -D demos=disabled
+
+    # Tests
+    -D libpng=enabled
+    -D tests=enabled
+)
+
+def
+il
+
+}
+
+t() {
+
+nj test
+
+}

@@ -1,0 +1,42 @@
+{
+  "name": "pixman",
+  "version": "0.46.0",
+  "about": "Pixel manipulation library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/pixman/pixman.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "xorg",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/releases/individual/lib/pixman-0.46.0.tar.xz",
+      "dest": "pixman-0.46.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
