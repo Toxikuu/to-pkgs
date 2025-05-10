@@ -1,0 +1,21 @@
+#!/to
+
+n="libxcursor"
+v="1.2.3"
+a="X cursor management library"
+m="Tox"
+l="MIT"
+t="lib xorg"
+u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
+vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/lib/${n/x/X}-$v.tar.xz"
+
+d=( "libxfixes" "libxrender" "libx11" "glibc" "xorgproto" "b,util-macros" )
+
+b() {
+
+def
+il
+
+}

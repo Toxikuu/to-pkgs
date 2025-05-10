@@ -1,0 +1,49 @@
+{
+  "name": "libxcursor",
+  "version": "1.2.3",
+  "about": "X cursor management library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcursor.git",
+  "version_fetch": "gr | grep -i libxcursor- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXcursor-1.2.3.tar.xz",
+      "dest": "libXcursor-1.2.3.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxfixes",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
