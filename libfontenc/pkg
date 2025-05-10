@@ -1,0 +1,21 @@
+#!/to
+
+n="libfontenc"
+v="1.1.8"
+a="X11 font encoding library"
+m="Tox"
+l="MIT"
+t="font lib xorg"
+u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
+vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/lib/$n-$v.tar.xz"
+
+d=( "glibc" "zlib" "b,xorgproto" "b,util-macros" )
+
+b() {
+
+def
+il
+
+}
