@@ -1,0 +1,50 @@
+{
+  "name": "libxtst",
+  "version": "1.2.5",
+  "about": "library for XTEST & RECORD extensions",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT",
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxtst.git",
+  "version_fetch": "gr | grep -i libxtst- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "xorg",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXtst-1.2.5.tar.xz",
+      "dest": "libXtst-1.2.5.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxi",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

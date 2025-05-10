@@ -1,0 +1,24 @@
+#!/to
+
+n="libxtst"
+v="1.2.5"
+a="library for XTEST & RECORD extensions"
+m="Tox"
+l=(
+    "MIT"
+    "X11"
+)
+t="xorg lib"
+u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
+vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/lib/${n/x/X}-$v.tar.xz"
+
+d=( "libxext" "libxi" "libx11" "glibc" "xorgproto" "b,util-macros" )
+
+b() {
+
+def
+il
+
+}
