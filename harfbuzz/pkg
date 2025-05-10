@@ -1,0 +1,78 @@
+#!/to
+
+n="harfbuzz"
+v="604056056c8af086a4fd33855b03400bef02d48d"
+a="OpenType text shaping engine"
+m="Tox"
+l="MIT"
+t="lib font"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "$u"
+    "p,freetype"
+)
+
+d=(
+    "b,git"
+    "b,meson"
+    "b,ninja"
+    "glib"
+    "glibc"
+    "icu"
+
+    # "freetype", used in the build via sources
+    # freetype's dependencies:
+    "b,libpng"
+    "b,zlib"
+    "b,bzip2"
+)
+
+# Build a minimal freetype without harfbuzz for harfbuzz to build against.
+# The full freetype is built in its own pkg file.
+_build_freetype() {
+    cd freetype
+
+    tar xf "freetype-"*.tar.xz
+    cd "freetype-"*/
+
+    sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
+    sed -ri "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" include/freetype/config/ftoption.h
+
+    _cfg=(
+        --with-brotli=no
+        --with-harfbuzz=no
+        --disable-freetype-config
+    )
+
+    cfg
+    mk
+    mk install # install without destdir for harfbuzz
+
+    echo "Completed the minimal freetype build"
+}
+
+b() {
+
+( _build_freetype )
+cd harfbuzz
+
+with mn
+gco
+
+_cfg=(
+    -D cairo=disabled
+    -D graphite2=disabled
+    -D tests=disabled # drags in more dependencies
+)
+
+ms
+
+# Recommended by Arch. I figure it can't hurt.
+CFLAGS="${CFLAGS//-fexceptions/}"
+CXXFLAGS="${CXXFLAGS//-fexceptions/}"
+
+nj
+ni
+
+}

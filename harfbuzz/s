@@ -1,0 +1,66 @@
+{
+  "name": "harfbuzz",
+  "version": "604056056c8af086a4fd33855b03400bef02d48d",
+  "about": "OpenType text shaping engine",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/harfbuzz/harfbuzz.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "font"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/harfbuzz/harfbuzz.git",
+      "dest": "harfbuzz"
+    },
+    {
+      "kind": "Pkg",
+      "url": "freetype",
+      "dest": "freetype"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "icu",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Build"
+    },
+    {
+      "name": "zlib",
+      "kind": "Build"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
