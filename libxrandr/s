@@ -1,0 +1,50 @@
+{
+  "name": "libxrandr",
+  "version": "1.5.4",
+  "about": "X11 RandR extension library",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxrandr.git",
+  "version_fetch": "gr | grep -i libxrandr- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXrandr-1.5.4.tar.xz",
+      "dest": "libXrandr-1.5.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
