@@ -1,0 +1,24 @@
+#!/to
+
+n="libxinerama"
+v="1.1.5"
+a="X11 Xinerama extension library"
+m="Tox"
+l=(
+    "MIT"
+    "X11"
+)
+t="lib xorg"
+u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
+vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/lib/${n/x/X}-$v.tar.xz"
+
+d=( "libxext" "libx11" "glibc" "xorgproto" "b,util-macros" )
+
+b() {
+
+def
+il
+
+}

@@ -1,0 +1,46 @@
+{
+  "name": "libxinerama",
+  "version": "1.1.5",
+  "about": "X11 Xinerama extension library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT",
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxinerama.git",
+  "version_fetch": "gr | grep -i libxinerama- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXinerama-1.1.5.tar.xz",
+      "dest": "libXinerama-1.1.5.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
