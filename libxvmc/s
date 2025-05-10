@@ -1,0 +1,45 @@
+{
+  "name": "libxvmc",
+  "version": "1.0.14",
+  "about": "X Video Motion Compensation extension library",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxvmc.git",
+  "version_fetch": "gr | grep -i libxvmc- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXvMC-1.0.14.tar.xz",
+      "dest": "libXvMC-1.0.14.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxv",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
