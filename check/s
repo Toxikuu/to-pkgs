@@ -1,0 +1,33 @@
+{
+  "name": "check",
+  "version": "455005dc29dc6727de7ee36fee4b49a13b39f73f",
+  "about": "A unit testing framework for C",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL"
+  ],
+  "upstream": "https://github.com/libcheck/check.git",
+  "version_fetch": null,
+  "tags": [
+    "test",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/libcheck/check.git",
+      "dest": "check"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "gawk",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
