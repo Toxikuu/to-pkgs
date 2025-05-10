@@ -1,0 +1,33 @@
+{
+  "name": "libpng",
+  "version": "1.6.48",
+  "about": "PNG libraries",
+  "maintainer": "Tox",
+  "licenses": [
+    "custom"
+  ],
+  "upstream": "https://github.com/pnggroup/libpng.git",
+  "version_fetch": null,
+  "tags": [
+    "img",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/pnggroup/libpng.git",
+      "dest": "libpng"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

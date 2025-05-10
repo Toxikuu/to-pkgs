@@ -1,0 +1,32 @@
+#!/to
+
+# NOTE: The apng patch is not applied, at least for now.
+n="libpng"
+v="1.6.48"
+a="PNG libraries"
+m="Tox"
+l="custom"
+t="img lib"
+u="https://github.com/pnggroup/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "zlib"
+)
+
+b() {
+
+gco v$v
+def
+
+}
+
+t() {
+
+mk check
+
+}
