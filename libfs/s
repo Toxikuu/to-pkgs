@@ -1,0 +1,39 @@
+{
+  "name": "libfs",
+  "version": "1.0.10",
+  "about": "X Font Service client library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT",
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libfs.git",
+  "version_fetch": "gr | grep -i libfs- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "font"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libFS-1.0.10.tar.xz",
+      "dest": "libFS-1.0.10.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "xtrans",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
