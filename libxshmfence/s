@@ -1,0 +1,37 @@
+{
+  "name": "libxshmfence",
+  "version": "1.3.3",
+  "about": "X shared memory 'SyncFence' primitive",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxshmfence.git",
+  "version_fetch": "gr | grep -i libxshmfence- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libxshmfence-1.3.3.tar.xz",
+      "dest": "libxshmfence-1.3.3.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
