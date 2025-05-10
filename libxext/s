@@ -1,0 +1,41 @@
+{
+  "name": "libxext",
+  "version": "1.3.6",
+  "about": "X11 miscellaneous extensions library",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxext.git",
+  "version_fetch": "gr | grep -i libxext- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXext-1.3.6.tar.xz",
+      "dest": "libXext-1.3.6.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
