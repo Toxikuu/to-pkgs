@@ -26,10 +26,7 @@ b() {
 
 cd source
 
-cfg
-mk
-mi
-
+def
 install -vDm644 "../LICENSE" -t "$D/usr/share/licenses/$n/"
 
 }
