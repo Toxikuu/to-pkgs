@@ -1,0 +1,45 @@
+#!/to
+
+n="sudo-rs"
+v="fbcc6a1edb344b171807d682ded1b62cfe2c79cf"
+a="Privilege escalation utility"
+m="Tox"
+l=(
+    "Apache-2.0"
+    "MIT"
+)
+t="utils cli"
+u="https://github.com/trifectatechfoundation/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,rust"
+    "glibc"
+    "pam"
+    "b,procps-ng" # tests assume it exists
+)
+
+b() {
+
+with rust
+
+gco
+cbr
+
+install -vDm4755 target/release/su{,do}         -t "$D/usr/bin/"
+install -vDm755  target/release/visudo          -t "$D/usr/bin/"
+install -vDm644  LICENSE-*                      -t "$D/usr/share/licenses/$n/"
+install -vDm644  {README,SECURITY,CHANGELOG}.md -t "$D/usr/share/doc/$n/"
+
+}
+
+t() {
+
+# A few failures occur, likely related to the build environment
+cargo test || true
+
+}

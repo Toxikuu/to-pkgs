@@ -1,0 +1,46 @@
+{
+  "name": "sudo-rs",
+  "version": "fbcc6a1edb344b171807d682ded1b62cfe2c79cf",
+  "about": "Privilege escalation utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0",
+    "MIT"
+  ],
+  "upstream": "https://github.com/trifectatechfoundation/sudo-rs.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/trifectatechfoundation/sudo-rs.git",
+      "dest": "sudo-rs"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "pam",
+      "kind": "Required"
+    },
+    {
+      "name": "procps-ng",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
