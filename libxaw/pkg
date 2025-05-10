@@ -1,0 +1,21 @@
+#!/to
+
+n="libxaw"
+v="1.0.16"
+a="X11 Athena Widget library"
+m="Tox"
+l="MIT"
+t="lib xorg"
+u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
+vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/lib/${n/x/X}-$v.tar.xz"
+
+d=( "libxmu" "libxpm" "libx11" "libxt" "libxext" "xorgproto" "glibc" "b,util-macros" )
+
+b() {
+
+def
+il
+
+}

@@ -1,0 +1,57 @@
+{
+  "name": "libxaw",
+  "version": "1.0.16",
+  "about": "X11 Athena Widget library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxaw.git",
+  "version_fetch": "gr | grep -i libxaw- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXaw-1.0.16.tar.xz",
+      "dest": "libXaw-1.0.16.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxmu",
+      "kind": "Required"
+    },
+    {
+      "name": "libxpm",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxt",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
