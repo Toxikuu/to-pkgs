@@ -1,0 +1,42 @@
+{
+  "name": "libx11",
+  "version": "1.8.12",
+  "about": "X11 client-side library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT AND X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libx11.git",
+  "version_fetch": "gr | grep -i libx11- | sed 's@_@.@g' | sort -V",
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libX11-1.8.12.tar.xz",
+      "dest": "libX11-1.8.12.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Runtime"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xtrans",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

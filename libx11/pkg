@@ -1,0 +1,30 @@
+#!/to
+
+n="libx11"
+v="1.8.12"
+a="X11 client-side library"
+m="Tox"
+l="MIT AND X11"
+u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
+vf="gr | grep -i $n- | sed 's@_@.@g' | sort -V"
+
+s="https://www.x.org/pub/individual/lib/${n/x/X}-$v.tar.xz"
+
+d=(
+    "libxcb"
+    "glibc"
+    "r,xorgproto"
+    "b,util-macros"
+    "b,xtrans"
+)
+
+b() {
+
+_cfg=(
+    --disable-xf86bigfont
+)
+
+def
+il COPYING
+
+}
