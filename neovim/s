@@ -1,6 +1,6 @@
 {
   "name": "neovim",
-  "version": "db702782e0168d45256a975c4bc1809b5785d952",
+  "version": "1d9990daac37810ebfd20b49fa57e39e6806f4f6",
   "about": "Continuation and extension of Vim",
   "maintainer": "Tox",
   "licenses": [
