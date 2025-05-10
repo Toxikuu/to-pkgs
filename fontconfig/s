@@ -1,0 +1,54 @@
+{
+  "name": "fontconfig",
+  "version": "3454d29ef0761978897de5f28e388e5b0a3489f4",
+  "about": "Library and utilities for configuring fonts",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "font",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
+      "dest": "fontconfig"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "expat",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "gperf",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

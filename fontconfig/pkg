@@ -1,0 +1,45 @@
+#!/to
+
+n="fontconfig"
+v="3454d29ef0761978897de5f28e388e5b0a3489f4"
+a="Library and utilities for configuring fonts"
+m="Tox"
+l="MIT"
+t="lib font utils"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "freetype"
+    "glibc"
+    "expat"
+    "b,git"
+    "b,gperf"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+gco
+
+_cfg=(
+    -D default-hinting=slight
+    -D default-sub-pixel-rendering=rgb # none is safest, but rgb is best for most monitors
+
+    -D doc=disabled
+    -D nls=disabled
+    -D tests=disabled # pulls in dependencies I don't package
+
+    -D xml-backend=expat # more minimal than libxml2
+    -D default-fonts-dirs=/usr/share/fonts # I only use the systemwide dir
+)
+
+def
+rm -vf "$D/usr/lib/lib$n.a"
+
+}
