@@ -64,6 +64,13 @@ _cfg=(
     -D cairo=disabled
     -D graphite2=disabled
     -D tests=disabled # drags in more dependencies
+    -D docs=disabled # drags in more dependencies
+
+    -D freetype=enabled
+    -D icu=enabled
+    -D glib=enabled
+    -D gobject=enabled
+    -D introspection=enabled
 )
 
 ms
