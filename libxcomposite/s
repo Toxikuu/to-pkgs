@@ -1,0 +1,45 @@
+{
+  "name": "libxcomposite",
+  "version": "0.4.6",
+  "about": "X11 Composite extension library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcomposite.git",
+  "version_fetch": "gr | grep -i libxcomposite- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "xorg",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXcomposite-0.4.6.tar.xz",
+      "dest": "libXcomposite-0.4.6.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxfixes",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
