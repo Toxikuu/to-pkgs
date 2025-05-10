@@ -1,0 +1,24 @@
+{
+  "name": "xtrans",
+  "version": "1.6.0",
+  "about": "X transport library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxtrans.git",
+  "version_fetch": "gr | grep xtrans- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/releases/individual/lib/xtrans-1.6.0.tar.xz",
+      "dest": "xtrans-1.6.0.tar.xz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
