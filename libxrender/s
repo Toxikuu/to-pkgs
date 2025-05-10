@@ -1,0 +1,38 @@
+{
+  "name": "libxrender",
+  "version": "0.9.12",
+  "about": "X Rendering Extension client library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxrender.git",
+  "version_fetch": "gr | grep -i libxrender- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXrender-0.9.12.tar.xz",
+      "dest": "libXrender-0.9.12.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
