@@ -1,0 +1,45 @@
+{
+  "name": "libxres",
+  "version": "1.2.2",
+  "about": "X11 Resource extension library",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxres.git",
+  "version_fetch": "gr | grep -i libxres- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXres-1.2.2.tar.xz",
+      "dest": "libXres-1.2.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
