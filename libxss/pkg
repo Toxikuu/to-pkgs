@@ -1,0 +1,21 @@
+#!/to
+
+n="libxss" # or libxscrnsaver but xss is much easier
+v="1.2.4"
+a="X11 Screen Saver extension library"
+m="Tox"
+l="X11"
+t="lib xorg"
+u="https://gitlab.freedesktop.org/xorg/lib/libxscrnsaver.git"
+vf="gr | grep -i libxscrnsaver- | sed 's,_,.,g' | cut -d- -f2- | sort -V"
+
+s="https://www.x.org/pub/individual/lib/libXScrnSaver-$v.tar.xz"
+
+d=("libxext" "libx11" "glibc" "xorgproto" "b,util-macros")
+
+b() {
+
+def
+il
+
+}

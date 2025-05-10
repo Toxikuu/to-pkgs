@@ -1,0 +1,45 @@
+{
+  "name": "libxss",
+  "version": "1.2.4",
+  "about": "X11 Screen Saver extension library",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxscrnsaver.git",
+  "version_fetch": "gr | grep -i libxscrnsaver- | sed 's,_,.,g' | cut -d- -f2- | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXScrnSaver-1.2.4.tar.xz",
+      "dest": "libXScrnSaver-1.2.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
