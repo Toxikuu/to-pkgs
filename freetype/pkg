@@ -1,0 +1,46 @@
+#!/to
+
+n="freetype"
+v="2.13.3"
+a="TTF rendering library"
+m="Tox"
+l="FTL OR GPL-2.0-or-later"
+t="lib font"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+vf="gr | grep '^VER-' | cut -d- -f2- | sed 's,-,.,g' | grep -v '[a-Z]' | sort -V"
+
+s=(
+    "https://download-mirror.savannah.gnu.org/releases/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "bzip2"
+    "glibc"
+    "libpng"
+    "zlib"
+    "harfbuzz" # circular, resolved by building a minimal freetype in the harfbuzz build
+)
+
+b() {
+
+# Enable opentype table validation and subpixel rendering
+sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
+sed -ri "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" include/freetype/config/ftoption.h
+
+# First pass of freetype without harfbuzz to satisfy harfbuzz wanting
+# libfreetype.so
+_cfg=(
+    --with-brotli=no
+    --with-harfbuzz=no
+)
+
+cfg
+mk
+mk install
+
+# Second pass, building with harfbuzz
+mk distclean
+_cfg+=(--with-harfbuzz=yes)
+def
+
+}

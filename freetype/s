@@ -1,0 +1,45 @@
+{
+  "name": "freetype",
+  "version": "2.13.3",
+  "about": "TTF rendering library",
+  "maintainer": "Tox",
+  "licenses": [
+    "FTL OR GPL-2.0-or-later"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/freetype/freetype.git",
+  "version_fetch": "gr | grep '^VER-' | cut -d- -f2- | sed 's,-,.,g' | grep -v '[a-Z]' | sort -V",
+  "tags": [
+    "lib",
+    "font"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download-mirror.savannah.gnu.org/releases/freetype/freetype-2.13.3.tar.xz",
+      "dest": "freetype-2.13.3.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "harfbuzz",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
