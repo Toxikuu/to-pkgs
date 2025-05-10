@@ -1,0 +1,62 @@
+{
+  "name": "gnutls",
+  "version": "3.8.9",
+  "about": "Library providing a secure layer over a reliable transport layer",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later AND LGPL-2.1-or-later"
+  ],
+  "upstream": "https://gitlab.com/gnutls/gnutls.git",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz",
+      "dest": "gnutls-3.8.9.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gmp",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libidn2",
+      "kind": "Required"
+    },
+    {
+      "name": "libtasn1",
+      "kind": "Required"
+    },
+    {
+      "name": "p11-kit",
+      "kind": "Required"
+    },
+    {
+      "name": "libunistring",
+      "kind": "Required"
+    },
+    {
+      "name": "nettle",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "make-ca",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

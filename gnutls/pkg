@@ -1,0 +1,43 @@
+#!/to
+
+n="gnutls"
+v="3.8.9"
+a="Library providing a secure layer over a reliable transport layer"
+m="Tox"
+l="GPL-3.0-or-later AND LGPL-2.1-or-later"
+u="https://gitlab.com/$n/$n.git"
+vf="gr | grep -v '[a-Z]'"
+
+s="https://www.gnupg.org/ftp/gcrypt/$n/v${v%.*}/$n-$v.tar.xz"
+
+d=(
+    "gmp"
+    "glibc"
+    "libidn2"
+    "libtasn1"
+    "p11-kit"
+    "libunistring"
+    "nettle"
+    "zlib"
+    "zstd"
+    "make-ca"
+)
+
+b() {
+
+_cfg=(
+    --with-idn
+    --with-zstd
+    --enable-openssl-compatibility
+    --with-default-trust-store-pkcs11="pkcs11:"
+)
+
+cfg
+sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+mk
+mi
+
+il
+
+}
