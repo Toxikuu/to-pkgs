@@ -1,0 +1,49 @@
+{
+  "name": "libxi",
+  "version": "1.8.2",
+  "about": "X11 Input extension library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxi.git",
+  "version_fetch": "gr | grep -i libxi- | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/lib/libXi-1.8.2.tar.xz",
+      "dest": "libXi-1.8.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
