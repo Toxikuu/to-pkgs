@@ -24,9 +24,10 @@ il
 
 }
 
-t() {
-
-# Several failures expected
-mk check || true
-
-}
+# The test suite exists but has 0 tests :clueless:
+# t() {
+#
+# # Several failures expected
+# mk check || true
+#
+# }
