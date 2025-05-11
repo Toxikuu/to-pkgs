@@ -28,8 +28,9 @@ gco v$v
 with mn
 
 _cfg=(
+    -D hgl=false   # I don't run haiku
     -D gles1=false # deprecated
-    -D gles2=true  # 2 and 3
+    -D gles2=true  # OpenGL ES 2 and 3
     -D x11=enabled
     -D glx=enabled
 )
