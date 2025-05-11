@@ -1,7 +1,7 @@
 #!/to
 
 n="btop"
-v="1.4.2"
+v="ffcd064a36cf1b1d02bd04c494f340cda21f074f"
 a="Resource monitor"
 m="Tox"
 l="Apache-2.0"
@@ -9,16 +9,20 @@ t="utils tui"
 u="https://github.com/aristocratos/$n.git"
 
 s=(
-    "${u%.git}/archive/refs/tags/v$v.tar.gz"
+    "$u"
 )
 
 d=(
     "glibc"
+    "b,git"
 )
 
 b() {
 
+gco
+
 mk
 mi PREFIX=/usr
+il
 
 }

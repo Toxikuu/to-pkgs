@@ -1,6 +1,6 @@
 {
   "name": "btop",
-  "version": "1.4.2",
+  "version": "ffcd064a36cf1b1d02bd04c494f340cda21f074f",
   "about": "Resource monitor",
   "maintainer": "Tox",
   "licenses": [
@@ -14,15 +14,19 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/aristocratos/btop/archive/refs/tags/v1.4.2.tar.gz",
-      "dest": "v1.4.2.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/aristocratos/btop.git",
+      "dest": "btop"
     }
   ],
   "dependencies": [
     {
       "name": "glibc",
       "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
     }
   ],
   "kcfg": []
