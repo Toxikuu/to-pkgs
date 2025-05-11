@@ -1,0 +1,40 @@
+#!/to
+
+n="libglvnd"
+v="1.7.0"
+a="The GL Vendor-Neutral Dispatch library"
+m="Tox"
+l="Custom"
+t="lib gfx"
+u="https://gitlab.freedesktop.org/${n#lib*}/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "libxext"
+    "b,libx11"
+    "b,python"
+    "b,meson"
+    "b,xorgproto"
+    "b,git"
+    # potentially also mesa
+)
+
+b() {
+
+gco v$v
+with mn
+
+_cfg=(
+    -D gles1=false # deprecated
+    -D gles2=true  # 2 and 3
+    -D x11=enabled
+    -D glx=enabled
+)
+
+def
+il "$A/LICENSE"
+
+}
