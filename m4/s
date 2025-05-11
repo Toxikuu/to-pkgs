@@ -1,12 +1,12 @@
 {
   "name": "m4",
-  "version": "1.4.19",
+  "version": "1.4.20",
   "about": "Macro processor",
   "maintainer": "Tox",
   "licenses": [
     "GPL-3.0"
   ],
-  "upstream": "https://git.savannah.gnu.org/git/m4.git",
+  "upstream": "https://https.git.savannah.gnu.org/git/m4.git",
   "version_fetch": "gr | sort -V | grep -B1 v1.5.89a | head -n1",
   "tags": [
     "core"
@@ -14,8 +14,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz",
-      "dest": "m4-1.4.19.tar.xz"
+      "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.20.tar.xz",
+      "dest": "m4-1.4.20.tar.xz"
     }
   ],
   "dependencies": [],
