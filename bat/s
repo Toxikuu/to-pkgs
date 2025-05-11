@@ -1,0 +1,41 @@
+{
+  "name": "bat",
+  "version": "b7f9662097d7e1476d68cd4035f8ce4602dd57e0",
+  "about": "Cat clone with wings",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT OR Apache-2.0"
+  ],
+  "upstream": "https://github.com/sharkdp/bat.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/sharkdp/bat.git",
+      "dest": "bat"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

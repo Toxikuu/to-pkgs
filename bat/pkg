@@ -1,0 +1,42 @@
+#!/to
+
+n="bat"
+v="b7f9662097d7e1476d68cd4035f8ce4602dd57e0"
+a="Cat clone with wings"
+m="Tox"
+l="MIT OR Apache-2.0"
+t="utils cli"
+u="https://github.com/sharkdp/$n.git"
+d=(
+    "b,rust"
+    "b,git"
+    "zlib"
+    "glibc"
+)
+
+s="$u"
+
+b() {
+
+with rust
+gco
+
+cbr
+install -vDm755 "target/release/bat" -t "$D/usr/bin/"
+
+# Find and package the man page
+find . -name bat.1 -type f -exec install -vDm644 {} \
+    "$D/usr/share/man/man1/bat.1" \;
+# Find and package the bash completion file
+find . -name bat.bash -type f -exec install -vDm644 {} \
+    "$D/usr/share/bash-completion/completions/bat" \;
+# Find and package the zsh completion file
+find . -name bat.zsh -type f -exec install -vDm644 {} \
+    "$D/usr/share/zsh/site-functions/_bat" \;
+# Find and package the fish completion file
+find . -name bat.fish -type f -exec install -vDm644 {} \
+    "$D/usr/share/fish/vendor_completions.d/bat.fish" \;
+
+il
+
+}
