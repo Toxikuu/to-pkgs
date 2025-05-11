@@ -1,7 +1,7 @@
 #!/to
 
 n="neovim"
-v="1d9990daac37810ebfd20b49fa57e39e6806f4f6"
+v="bee45fc0e7801396951cd156c82953cbadc256b9"
 a="Continuation and extension of Vim"
 m="Tox"
 l=(
