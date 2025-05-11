@@ -1,7 +1,7 @@
 #!/to
 
 n="harfbuzz"
-v="adf11168d6c2708fbcbbd543fcbb7219a6272b4a"
+v="0d696d955abb73a59dca9c011d7dba10579a615b"
 a="OpenType text shaping engine"
 m="Tox"
 l="MIT"
