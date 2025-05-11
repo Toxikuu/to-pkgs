@@ -1,6 +1,6 @@
 {
   "name": "iana-etc",
-  "version": "20250502",
+  "version": "20250505",
   "about": "The Internet Assigned Numbers Authority's services and protocols",
   "maintainer": "Tox",
   "licenses": [
@@ -14,8 +14,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/Mic92/iana-etc/releases/download/20250502/iana-etc-20250502.tar.gz",
-      "dest": "iana-etc-20250502.tar.gz"
+      "url": "https://github.com/Mic92/iana-etc/releases/download/20250505/iana-etc-20250505.tar.gz",
+      "dest": "iana-etc-20250505.tar.gz"
     }
   ],
   "dependencies": [],
