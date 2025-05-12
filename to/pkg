@@ -1,0 +1,45 @@
+#!/to
+
+# TODO: Improve stuff later. For now I just want this to be semi-functional.
+n="to"
+v="6e3a8bb284d0fc40b639ff4ef0c3c4efda2bab53"
+a="Stupid-simple, (EVENTUALLY) rock-solid package manager for LFS"
+m="Tox"
+l="GPL-3.0"
+t="pm core utils cli"
+u="https://github.com/toxikuu/$n.git"
+
+s=(
+    "$u"
+)
+
+# TODO: Resolve missing dependencies
+d=(
+    "b,git"
+    "b,rust"
+    "bash"
+    "tar"
+    "zstd"
+    "glibc"
+    "bzip2"
+    "xz"
+    "zlib"
+    # "curl" runtime, if devtools are to be used
+)
+
+b() {
+
+with rust
+
+_cfg=(
+    --disable-docs
+    --disable-comp
+    --disable-conf
+    --disable-git
+    --disable-tools
+)
+
+def
+il
+
+}
