@@ -1,0 +1,51 @@
+{
+  "name": "openssh",
+  "version": "10.0p2",
+  "about": "Secure shell",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://github.com/openssh/openssh-portable.git",
+  "version_fetch": "gr | grep '^V_' | grep -Ev 'PRE|TEST' | cut -d_ -f2- | sed -e 's,_,.,' -e 's,_,,' | tr P p | sort -V",
+  "tags": [
+    "sec",
+    "cli",
+    "utils",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/openssh/openssh-portable/archive/refs/tags/V_10_0_P2.tar.gz",
+      "dest": "V_10_0_P2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "pam",
+      "kind": "Required"
+    },
+    {
+      "name": "shadow",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcrypt",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,53 @@
+#!/to
+
+n="openssh"
+v="10.0p2"
+a="Secure shell"
+m="Tox"
+l="BSD" # or more free
+t="sec cli utils net"
+u="https://github.com/openssh/openssh-portable.git"
+vf="gr | grep '^V_' | grep -Ev 'PRE|TEST' | cut -d_ -f2- | sed -e 's,_,.,' -e 's,_,,' | tr P p | sort -V"
+
+tag="${v//./_}"
+tag="V_${tag//p/_P}"
+
+s=(
+    "${u%.git}/archive/refs/tags/$tag.tar.gz"
+)
+
+d=(
+    "pam"
+    "shadow"
+    "glibc"
+    "libxcrypt"
+    "openssl"
+    "zlib"
+
+    # Entropy: (might include later)
+    # "net-tools"
+    # "sysstat"
+)
+
+b() {
+
+install -vdm700 -g sys "$D"/var/lib/sshd
+
+_cfg=(
+    --sysconfdir=/etc/ssh
+    --with-privsep-path=/var/lib/sshd
+    --with-default-path=/usr/bin
+    --with-superuser-path=/usr/sbin:/usr/bin
+    --with-pid-dir=/run
+)
+
+cfg
+mk
+mi
+
+install -vDm755 "contrib/ssh-copy-id" -t "$D/usr/bin/"
+install -vDm755 "contrib/ssh-copy-id.1" -t "$D/usr/share/man/man1/"
+install -vDm644 OVERVIEW README* -t "$D/usr/share/doc/$n/"
+il
+
+}
