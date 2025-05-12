@@ -1,0 +1,28 @@
+#!/to
+
+n="catgirl"
+v="6842cc755ed186793c3b2fd2736e6efb497e52e7"
+a="Terminal IRC client"
+m="Tox"
+l="GPL3"
+t="tui irc"
+u="https://git.causal.agency/$n"
+
+s=(
+    "$u"
+)
+
+d=(
+    "libretls"
+    "ncurses"
+    "b,git"
+)
+
+b() {
+
+gco
+sed -i '/dev:/d' Makefile
+
+def
+
+}

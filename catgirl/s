@@ -1,0 +1,37 @@
+{
+  "name": "catgirl",
+  "version": "6842cc755ed186793c3b2fd2736e6efb497e52e7",
+  "about": "Terminal IRC client",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://git.causal.agency/catgirl",
+  "version_fetch": null,
+  "tags": [
+    "tui",
+    "irc"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.causal.agency/catgirl",
+      "dest": "catgirl"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libretls",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
