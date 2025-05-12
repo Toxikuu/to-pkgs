@@ -1,0 +1,35 @@
+{
+  "name": "libretls",
+  "version": "3.8.1",
+  "about": "Port of libtls from LibreSSL to OpenSSL",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD",
+    "ISC",
+    "MIT"
+  ],
+  "upstream": "https://git.causal.agency/libretls",
+  "version_fetch": null,
+  "tags": [
+    "sec",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.causal.agency/libretls",
+      "dest": "libretls"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
