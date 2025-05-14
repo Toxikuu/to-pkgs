@@ -1,0 +1,30 @@
+#!/to
+
+n="mako"
+v="1.3.10"
+a="Fast, lightweight templating library"
+m="Tox"
+l="MIT"
+t="lib utils"
+u="https://github.com/sqlalchemy/$n.git"
+vf="gr | sed -e 's,^rel_,,' -e 's,_,.,g' | sort -V"
+
+s=(
+    "${u%.git}/archive/refs/tags/rel_${v//./_}.tar.gz"
+)
+
+d=(
+    "python"
+    "markupsafe"
+    "b,setuptools"
+    "b,wheel"
+)
+
+b() {
+
+with pip
+
+pipb
+pipi
+
+}
