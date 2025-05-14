@@ -1,0 +1,33 @@
+#!/to
+
+n="cython"
+v="3.1.0"
+a="C extensions for Python"
+m="Tox"
+l="Apache-2.0"
+t="lib lang"
+u="https://github.com/$n/$n.git"
+vf="gr | grep -Ev '[a-z]|-' | sort -V"
+
+s=(
+    "$u"
+)
+
+d=(
+    "python"
+    "glibc"
+    "b,git"
+    "b,setuptools"
+    "b,wheel"
+)
+
+b() {
+
+gco
+with pip
+
+pipb
+pipi
+il
+
+}

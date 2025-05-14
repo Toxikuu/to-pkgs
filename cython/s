@@ -1,0 +1,45 @@
+{
+  "name": "cython",
+  "version": "3.1.0",
+  "about": "C extensions for Python",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "upstream": "https://github.com/cython/cython.git",
+  "version_fetch": "gr | grep -Ev '[a-z]|-' | sort -V",
+  "tags": [
+    "lib",
+    "lang"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/cython/cython.git",
+      "dest": "cython"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Build"
+    },
+    {
+      "name": "wheel",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
