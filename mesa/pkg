@@ -1,0 +1,73 @@
+#!/to
+
+n="mesa"
+v="25.1.0"
+a="Graphics libraries"
+m="Tox"
+l="MIT AND BSD-3-Clause AND SGI-B-2.0"
+t="lib gfx"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+vf="gr | grep '^$n-' | vfs | sort -V"
+
+s=(
+    "https://$n.freedesktop.org/archive/$n-$v.tar.xz"
+)
+
+# TODO: There may be extraneous or missing dependencies
+d=(
+    "libdrm"
+    "libglvnd"
+    "expat"
+    "glibc"
+    "libelf"
+    "libx11"
+    "libxcb"
+    "libxext"
+    "libxshmfence"
+    "libxxf86vm"
+    "wayland"
+    "wayland-protocols"
+    "zlib"
+    "zstd"
+    "b,mako"
+    "b,pyyaml"
+    "b,meson"
+    "b,ninja"
+    "b,libpng"
+    "libxfixes"
+    "b,libxrandr"
+    "b,libxrender"
+    "b,libyaml"
+    "b,xorgproto"
+)
+
+b() {
+
+with mn
+
+# tspmo
+install -vdm755   "$D/usr/share/licenses/$n"
+cp -av licenses/* "$D/usr/share/licenses/$n"
+
+_cfg=(
+    -D gbm=enabled
+    -D osmesa=false
+    -D platforms=x11,wayland
+    -D gallium-drivers=
+    -D vulkan-drivers=
+    -D video-codecs=
+    -D valgrind=disabled
+    -D llvm=disabled
+    -D glx=disabled
+    -D libunwind=disabled
+    -D shader-cache-max-size="4G"
+    -D enable-glcpp-tests=false
+    -D gles1=disabled
+    -D zstd=enabled
+    -D intel-elk=false
+)
+
+def
+install -vDm644 ../include/GL/internal/dri_interface.h -t "$D"/usr/include/GL/internal/
+
+}
