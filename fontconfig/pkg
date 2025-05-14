@@ -1,7 +1,7 @@
 #!/to
 
 n="fontconfig"
-v="3454d29ef0761978897de5f28e388e5b0a3489f4"
+v="c0118a3bea1d3857d5be13b4ae575c638decb9a3"
 a="Library and utilities for configuring fonts"
 m="Tox"
 l="MIT"
