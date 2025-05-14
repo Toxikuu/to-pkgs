@@ -1,7 +1,7 @@
 #!/to
 
 n="fastfetch"
-v="2.42.0"
+v="2.43.0"
 a="Well-maintained, feature-rich, fast fetch script"
 m="Tox"
 l="MIT"
