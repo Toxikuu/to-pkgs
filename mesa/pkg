@@ -1,5 +1,6 @@
 #!/to
 
+# NOTE: This pkg only installs GBM from Mesa.
 n="mesa"
 v="25.1.0"
 a="Graphics libraries"
