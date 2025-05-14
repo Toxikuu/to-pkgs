@@ -1,0 +1,74 @@
+{
+  "name": "pango",
+  "version": "1.56.3",
+  "about": "Library for text layout and rendering",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/GNOME/pango.git",
+  "version_fetch": "gr | grep -Ev '[a-Z]|1.90|-'",
+  "tags": [
+    "lib",
+    "font",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/pango/1.56/pango-1.56.3.tar.xz",
+      "dest": "pango-1.56.3.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "fribidi",
+      "kind": "Required"
+    },
+    {
+      "name": "fontconfig",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "harfbuzz",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "libxft",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
