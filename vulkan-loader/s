@@ -1,0 +1,53 @@
+{
+  "name": "vulkan-loader",
+  "version": "1.4.315",
+  "about": "Vulkan Installable Client Driver Loader",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "upstream": "https://github.com/KhronosGroup/vulkan-loader.git",
+  "version_fetch": "gr | grep -E '^v[0-9]'",
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/KhronosGroup/vulkan-loader/archive/v1.4.315/vulkan-loader-1.4.315.tar.gz",
+      "dest": "vulkan-loader-1.4.315.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "vulkan-headers",
+      "kind": "Build"
+    },
+    {
+      "name": "libx11",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland",
+      "kind": "Build"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
