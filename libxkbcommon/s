@@ -1,0 +1,61 @@
+{
+  "name": "libxkbcommon",
+  "version": "1.9.2",
+  "about": "Keymap handling library for toolkits and window systems",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/xkbcommon/libxkbcommon.git",
+  "version_fetch": "gr | sed 's,xkbcommon,,'",
+  "tags": [
+    "lib",
+    "kb"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.9.2.tar.gz",
+      "dest": "xkbcommon-1.9.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "xkeyboard-config",
+      "kind": "Runtime"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
