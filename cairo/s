@@ -1,0 +1,73 @@
+{
+  "name": "cairo",
+  "version": "1.18.4",
+  "about": "2D graphics library supporting multiple output devices",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-only OR MPL-1.1"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/cairo/cairo.git",
+  "version_fetch": "gr | grep -v '[a-Z]' | sort -V",
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.cairographics.org/releases/cairo-1.18.4.tar.xz",
+      "dest": "cairo-1.18.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "pixman",
+      "kind": "Required"
+    },
+    {
+      "name": "fontconfig",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

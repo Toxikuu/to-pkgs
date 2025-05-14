@@ -1,0 +1,45 @@
+#!/to
+
+n="cairo"
+v="1.18.4"
+a="2D graphics library supporting multiple output devices"
+m="Tox"
+l="LGPL-2.1-only OR MPL-1.1"
+t="lib gfx"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+vf="gr | grep -v '[a-Z]' | sort -V"
+
+s="https://www.${n}graphics.org/releases/$n-$v.tar.xz"
+
+d=(
+    "libpng"
+    "pixman"
+    "fontconfig"
+    "glib"
+    "glibc"
+    "libx11"
+    "libxcb"
+    "libxext"
+    "libxrender"
+    "zlib"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D xlib-xcb=enabled
+    -D spectre=disabled
+    -D dwrite=disabled
+    -D tests=disabled
+    -D symbol-lookup=disabled
+    -D gtk_doc=false
+)
+
+def
+il
+
+}
