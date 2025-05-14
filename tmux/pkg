@@ -2,7 +2,7 @@
 
 # TODO: Add libutempter in the future
 n="tmux"
-v="3d2b26dcfe1a14b5ff6e04121e933a30652c2fe9"
+v="faf2a448904f4865386319fa11a30ff54d5843f8"
 a="Terminal multiplexer"
 m="Tox"
 l="BSD"
