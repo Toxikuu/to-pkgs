@@ -1,0 +1,38 @@
+#!/to
+
+n="cargo-c"
+v="0.10.12"
+a="Cargo subcommand to create C-ABI compatible libraries"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://github.com/lu-zero/$n.git"
+
+s=(
+    "${u%.git}/archive/v$v/$n-$v.tar.gz"
+    "${u%.git}/releases/download/v$v/Cargo.lock -> Cargo.lock-$v"
+)
+
+d=(
+    "b,rust"
+    "glibc"
+    "openssl"
+    "zlib"
+)
+
+b() {
+
+with rust
+
+# Handle version-ambiguous Cargo.lock
+mv -vf ../Cargo.lock-$v Cargo.lock
+
+export CFLAGS+=' -ffat-lto-objects'
+export RUSTUP_TOOLCHAIN='stable'
+
+cbr
+find target/release -maxdepth 1 -type f \
+    -executable -exec install -vDm755 -t "$D/usr/bin/" {} +
+il
+
+}
