@@ -1,0 +1,25 @@
+#!/to
+
+n="xkeyboard-config"
+v="2.44"
+a="X keyboard configuration database"
+m="Tox"
+l="Custom"
+t="db kb"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+
+s=(
+    "https://www.x.org/pub/individual/data/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+def
+
+}
