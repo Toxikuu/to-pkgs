@@ -1,0 +1,32 @@
+#!/to
+
+n="libva"
+v="2.22.0"
+a="Video Acceleration API"
+m="Tox"
+l="MIT"
+t="gfx lib"
+u="https://github.com/intel/$n.git"
+vf="gr | grep '^[0-9]\\.' | grep -v '[a-z]' | sort -V"
+
+s=(
+    "${u%.git}/archive/$v/$n-$v.tar.gz"
+)
+
+d=(
+    "libdrm"
+    "libx11"
+    "libxext"
+    "libglvnd"
+    "libxfixes"
+    "wayland"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+def
+
+}

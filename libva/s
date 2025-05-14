@@ -1,0 +1,57 @@
+{
+  "name": "libva",
+  "version": "2.22.0",
+  "about": "Video Acceleration API",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/intel/libva.git",
+  "version_fetch": "gr | grep '^[0-9]\\.' | grep -v '[a-z]' | sort -V",
+  "tags": [
+    "gfx",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/intel/libva/archive/2.22.0/libva-2.22.0.tar.gz",
+      "dest": "libva-2.22.0.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
