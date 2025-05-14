@@ -1,0 +1,34 @@
+#!/to
+
+n="libvdpau"
+v="1.5"
+a="NVIDIA's VDPAU library"
+m="Tox"
+l="MIT"
+t="gfx lib"
+u="https://gitlab.freedesktop.org/${n#lib*}/$n.git"
+vf="gr | cut -d- -f2- | sort -V"
+
+s=(
+    "${u%.git}/-/archive/$v/$n-$v.tar.bz2"
+)
+
+d=(
+    "libxext"
+    "b,meson"
+    "b,xorgproto"
+)
+
+b() {
+
+with mn
+def
+il
+
+}
+
+t() {
+
+nj test
+
+}
