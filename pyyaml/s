@@ -1,0 +1,49 @@
+{
+  "name": "pyyaml",
+  "version": "69c141adcf805c5ebdc9ba519927642ee5c7f639",
+  "about": "Python bindings for YAML",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/yaml/pyyaml.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "lang"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/yaml/pyyaml.git",
+      "dest": "pyyaml"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "libyaml",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "cython",
+      "kind": "Build"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Build"
+    },
+    {
+      "name": "wheel",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

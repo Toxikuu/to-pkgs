@@ -1,0 +1,33 @@
+#!/to
+
+n="pyyaml"
+v="69c141adcf805c5ebdc9ba519927642ee5c7f639"
+a="Python bindings for YAML"
+m="Tox"
+l="MIT"
+t="lib lang"
+u="https://github.com/${n#py*}/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "python"
+    "libyaml"
+    "glibc"
+    "b,cython"
+    "b,setuptools"
+    "b,wheel"
+)
+
+b() {
+
+gco
+with pip
+
+nm="${n^^}"
+pipb
+pipi "${nm/Y/y}" # PyYAML
+
+}
