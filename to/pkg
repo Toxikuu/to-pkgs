@@ -2,7 +2,7 @@
 
 # TODO: Improve stuff later. For now I just want this to be semi-functional.
 n="to"
-v="6e3a8bb284d0fc40b639ff4ef0c3c4efda2bab53"
+v="795ad389590e612818ec1d99bbe05a88c1ed9d5b"
 a="Stupid-simple, (EVENTUALLY) rock-solid package manager for LFS"
 m="Tox"
 l="GPL-3.0"
