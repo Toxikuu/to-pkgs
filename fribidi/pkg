@@ -1,0 +1,26 @@
+#!/to
+
+n="fribidi"
+v="1.0.16"
+a="Unicode Bidirectional Algorithm"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="font lib"
+u="https://github.com/$n/$n.git"
+
+s="${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+
+d=(
+    "glibc"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with meson ninja
+
+def
+il
+
+}
