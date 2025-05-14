@@ -1,0 +1,34 @@
+#!/to
+
+n="libdrm"
+v="2.4.124"
+a="Userspace interface to kernel DRM services"
+m="Tox"
+l="MIT"
+t="lib gfx"
+u="https://gitlab.freedesktop.org/mesa/${n#lib*}.git"
+vf="gr | grep '^$n-' | grep -v _ | sort -V"
+
+s=(
+    "https://dri.freedesktop.org/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D tests=false
+    -D udev=true
+    -D valgrind=disabled
+)
+
+def
+
+}
