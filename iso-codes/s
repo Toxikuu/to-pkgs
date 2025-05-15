@@ -1,7 +1,7 @@
 {
   "name": "iso-codes",
   "version": "4.18.0",
-  "about": "Database of the country, language, and currency names",
+  "about": "Database of country, language, and currency names",
   "maintainer": "Tox",
   "licenses": [
     "LGPL-2.1-only"
