@@ -1,0 +1,41 @@
+#!/to
+
+n="freeglut"
+v="07a3e80780c289b51bc723415ef41cef6b026aed"
+a="OpenGL Utility Toolkit"
+m="Tox"
+l="X11"
+t="lib gfx"
+u="https://github.com/$n/$n.git"
+
+s="$u"
+
+d=(
+    "b,git"
+    "b,cmake"
+    "b,mesa"
+    "b,glu"
+    "glibc"
+    "libx11"
+    "libglvnd"
+    "libxi"
+    "libxrandr"
+    "libxxf86vm"
+)
+
+b() {
+
+gco
+il
+
+with cmake
+
+_cfg=(
+    -D CMAKE_POLICY_VERSION_MINIMUM=3.5
+    -D FREEGLUT_BUILD_DEMOS=OFF
+    -D FREEGLUT_BUILD_STATIC_LIBS=OFF
+)
+
+def
+
+}

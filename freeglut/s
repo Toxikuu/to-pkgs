@@ -1,0 +1,65 @@
+{
+  "name": "freeglut",
+  "version": "07a3e80780c289b51bc723415ef41cef6b026aed",
+  "about": "OpenGL Utility Toolkit",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://github.com/freeglut/freeglut.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/freeglut/freeglut.git",
+      "dest": "freeglut"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "mesa",
+      "kind": "Build"
+    },
+    {
+      "name": "glu",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libxi",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "libxxf86vm",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
