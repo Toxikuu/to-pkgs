@@ -60,6 +60,10 @@
     {
       "name": "libxinerama",
       "kind": "Required"
+    },
+    {
+      "name": "iso-codes",
+      "kind": "Required"
     }
   ],
   "kcfg": []

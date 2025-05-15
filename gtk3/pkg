@@ -26,6 +26,7 @@ d=(
     "wayland-protocols"
     "libxkbcommon"
     "libxinerama"
+    "iso-codes"
 )
 
 
