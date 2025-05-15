@@ -25,6 +25,7 @@ d=(
     "wayland"
     "wayland-protocols"
     "libxkbcommon"
+    "libxinerama"
 )
 
 
@@ -37,6 +38,11 @@ pat "../$an-$v-upstream_fix-1.patch"
 _cfg=(
     -D man=false
     -D broadway_backend=true
+    -D xinerama=yes
+
+    -D tests=false # tests want a graphical environment
+    -D demos=false
+    -D examples=false
 )
 
 def
