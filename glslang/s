@@ -1,0 +1,41 @@
+{
+  "name": "glslang",
+  "version": "1.4.313.0",
+  "about": "Frontend and validator for OpenGL and Vulkan shaders",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/KhronosGroup/glslang.git",
+  "version_fetch": "gr | grep '^vulkan-sdk-' | cut -d- -f3",
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/KhronosGroup/glslang/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz",
+      "dest": "vulkan-sdk-1.4.313.0.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "spirv-tools",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "spirv-headers",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
