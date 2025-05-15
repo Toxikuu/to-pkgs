@@ -1,0 +1,46 @@
+{
+  "name": "glu",
+  "version": "a2b96c7bba8db8fec3e02fb4227a7f7b02cabad1",
+  "about": "Mesa OpenGL Utility library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT",
+    "SGI-B-2.0"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/mesa/glu.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/mesa/glu.git",
+      "dest": "glu"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

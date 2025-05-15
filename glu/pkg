@@ -1,0 +1,40 @@
+#!/to
+
+n="glu"
+v="a2b96c7bba8db8fec3e02fb4227a7f7b02cabad1"
+a="Mesa OpenGL Utility library"
+m="Tox"
+l=("MIT" "SGI-B-2.0")
+t="lib gfx"
+u="https://gitlab.freedesktop.org/mesa/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,meson"
+    "b,ninja"
+    "libglvnd"
+    "glibc"
+)
+
+b() {
+
+gco
+
+# Extract license and uncomment it
+head -n28 include/GL/glu.h | sed 's,.*\*,,' > LICENSE
+il
+
+with mn
+
+_cfg=(
+    -D gl_provider=glvnd
+)
+
+def
+rm -vf "$D"/usr/lib/libGLU.a
+
+}
