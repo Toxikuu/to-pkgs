@@ -1,0 +1,57 @@
+#!/to
+
+n="mesa-utils"
+v="02eae079cb0b8186064d5b194ca4cc2995f099ee"
+a="Essential Mesa utilities"
+m="Tox"
+l="MIT"
+t="gfx utils lib gui cli"
+u="https://gitlab.freedesktop.org/mesa/demos.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "libdrm"
+    "libx11"
+    "libxcb"
+    "libxkbcommon"
+    "vulkan-loader"
+    "wayland"
+    "wayland-protocols"
+    "libglvnd"
+    "libdecor"
+    "b,glu"
+    "b,glslang"
+    "b,freeglut"
+    "b,meson"
+    "b,ninja"
+    "b,git"
+)
+
+b() {
+
+gco
+with mn
+
+_cfg=(
+    -D gles1=disabled
+    -D osmesa=disabled
+    -D glvnd=enabled
+    -D libdrm=enabled
+    -D x11=enabled
+    -D wayland=enabled
+    -D vulkan=enabled
+    -D with-system-data-files=true
+    --wrap-mode=nofallback
+)
+
+def
+
+install -vDm755 \
+    src/xdemos/{glxinfo,glxgears}   \
+    src/vulkan/vkgears              \
+    -t "$D/usr/bin/"
+
+}

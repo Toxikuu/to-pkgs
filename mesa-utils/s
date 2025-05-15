@@ -1,0 +1,88 @@
+{
+  "name": "mesa-utils",
+  "version": "02eae079cb0b8186064d5b194ca4cc2995f099ee",
+  "about": "Essential Mesa utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/mesa/demos.git",
+  "version_fetch": null,
+  "tags": [
+    "gfx",
+    "utils",
+    "lib",
+    "gui",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/mesa/demos.git",
+      "dest": "demos"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "vulkan-loader",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libdecor",
+      "kind": "Required"
+    },
+    {
+      "name": "glu",
+      "kind": "Build"
+    },
+    {
+      "name": "glslang",
+      "kind": "Build"
+    },
+    {
+      "name": "freeglut",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
