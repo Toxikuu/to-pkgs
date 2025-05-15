@@ -1,0 +1,43 @@
+#!/to
+
+n="libtiff"
+v="4.7.0"
+a="ABOUT"
+m="Tox"
+l="LICENSE"
+t=""
+u="https://gitlab.com/$n/$n.git"
+
+s=(
+    "https://download.osgeo.org/$n/${n#lib*}-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "xz"
+    "zlib"
+    "zstd"
+    "b,cmake"
+    "b,ninja"
+)
+
+b() {
+
+export BD="$n-build"
+with cn
+
+# Workaround for cmake@4.x.x
+_cfg=(
+    -D CMAKE_POLICY_VERSION_MINIMUM=3.5
+)
+
+def
+il
+
+}
+
+t() {
+
+nj test
+
+}
