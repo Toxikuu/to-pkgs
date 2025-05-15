@@ -1,0 +1,40 @@
+{
+  "name": "vala",
+  "version": "0.56.18",
+  "about": "Compiler for the GObject type system",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/GNOME/vala.git",
+  "version_fetch": "gr | sed 's,_,.,g' | cut -d. -f1- | grep -Ev '[a-Z]|0.57.0' | sort -V",
+  "tags": [
+    "lang"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz",
+      "dest": "vala-0.56.18.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Build"
+    },
+    {
+      "name": "libx11",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
