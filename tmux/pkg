@@ -9,22 +9,23 @@ l="BSD"
 t="utils tui core"
 u="https://github.com/$n/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "libevent"
     "ncurses"
+    "libutempter"
+    "systemd"
     "b,git"
 )
 
 b() {
 
-git checkout $v
+gco
 
 _cfg=(
-    --disable-systemd # wtf does tmux even want from systemd
+    --enable-utempter
+    --enable-systemd
     --disable-sixel # my terminal emulators don't support it anyway
 )
 
