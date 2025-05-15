@@ -1,0 +1,33 @@
+{
+  "name": "graphviz",
+  "version": "12.2.1",
+  "about": "Graph visualization software",
+  "maintainer": "Tox",
+  "licenses": [
+    "EPL"
+  ],
+  "upstream": "https://gitlab.com/graphviz/graphviz.git",
+  "version_fetch": "gr | grep -Ev '[a-Z]' | sort -V",
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://gitlab.com/graphviz/graphviz/-/archive/12.2.1/graphviz-12.2.1.tar.bz2",
+      "dest": "graphviz-12.2.1.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libtool",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

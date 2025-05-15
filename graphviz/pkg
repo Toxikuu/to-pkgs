@@ -1,0 +1,36 @@
+#!/to
+
+n="graphviz"
+v="12.2.1"
+a="Graph visualization software"
+m="Tox"
+l="EPL"
+t="lib gfx"
+u="https://gitlab.com/$n/$n.git"
+vf="gr | grep -Ev '[a-Z]' | sort -V"
+
+s=(
+    "${u%.git}/-/archive/$v/$n-$v.tar.bz2"
+)
+
+d=(
+    "glibc"
+    "libtool"
+)
+
+b() {
+
+# Avoid installing to lib64
+sed -i '/LIBPOSTFIX="64"/s/64//' configure.ac
+
+./autogen.sh
+cfg
+
+# Set a meaningful build date
+sed -i "s/0/$(date +%Y%m%d)/" builddate.h
+
+mk
+mi
+il
+
+}
