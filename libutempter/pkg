@@ -1,0 +1,34 @@
+#!/to
+
+n="libutempter"
+an="${n#lib*}"
+v="4caa8ab94ff8b207228fa723a89214bf5e929321"
+a="Library allowing non-privileged utmp writing"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib"
+u="https://github.com/altlinux/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "glibc"
+    "systemd" # for tmpfiles.d
+    "b,git"
+)
+
+b() {
+
+gco
+cd "$n"
+
+mk
+mi
+rm -vf "$D/usr/lib/$n.a"
+
+install -vDm644 "$A/tmpfile" "$D/usr/lib/tmpfiles.d/$n.conf"
+il
+
+}
