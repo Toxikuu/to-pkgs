@@ -1,0 +1,40 @@
+#!/to
+
+n="librsvg"
+v="2.60.0"
+a="Rust SVG library"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib img gfx"
+u="https://github.com/GNOME/$n.git"
+vf="gr | grep -v '[a-Z]'"
+
+s="https://download.gnome.org/sources/librsvg/${v%.*}/librsvg-$v.tar.xz"
+
+d=(
+    "cairo"
+    "b,cargo-c"
+    "gdk-pixbuf"
+    "pango"
+    "harfbuzz"
+    "freetype"
+    "b,rust"
+    "b,meson"
+    "b,ninja"
+    "glib"
+    "glibc"
+    "b,vala"
+    "libxml2"
+)
+
+b() {
+
+with rust mn
+
+# LTO
+export CARGO_PROFILE_RELEASE_LTO=true CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1
+def
+
+}
+
+# Tests are slow and report a few failures

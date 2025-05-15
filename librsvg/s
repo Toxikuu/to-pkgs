@@ -1,0 +1,78 @@
+{
+  "name": "librsvg",
+  "version": "2.60.0",
+  "about": "Rust SVG library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/GNOME/librsvg.git",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [
+    "lib",
+    "img",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz",
+      "dest": "librsvg-2.60.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "cargo-c",
+      "kind": "Build"
+    },
+    {
+      "name": "gdk-pixbuf",
+      "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "harfbuzz",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "vala",
+      "kind": "Build"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
