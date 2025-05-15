@@ -1,0 +1,32 @@
+#!/to
+
+n="xxhash"
+v="50f42268c6c96a3390e5832689906922f357a9b7"
+a="Extremely fast non-cryptographic hash algorithm"
+m="Tox"
+l=(
+    "BSD"
+    "GPL2"
+)
+t="lib"
+u="https://github.com/Cyan4973/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "glibc"
+)
+
+b() {
+
+gco
+
+mk PREFIX=/usr DISPATCH=1
+mi PREFIX=/usr DISPATCH=1
+
+il
+
+}

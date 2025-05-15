@@ -1,0 +1,33 @@
+{
+  "name": "xxhash",
+  "version": "50f42268c6c96a3390e5832689906922f357a9b7",
+  "about": "Extremely fast non-cryptographic hash algorithm",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD",
+    "GPL2"
+  ],
+  "upstream": "https://github.com/Cyan4973/xxhash.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Cyan4973/xxhash.git",
+      "dest": "xxhash"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
