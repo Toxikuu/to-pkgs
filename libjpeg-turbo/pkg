@@ -1,0 +1,39 @@
+#!/to
+
+n="libjpeg-turbo"
+v="3.1.0"
+a="Fast JPEG library"
+m="Tox"
+l=(
+    "BSD-3-Clause"
+    "IJG"
+)
+t="lib img"
+u="https://github.com/$n/$n.git"
+vf="gr | grep -v '[a-Z]'"
+
+s=(
+    "${u%.git}/releases/download/$v/$n-$v.tar.gz"
+)
+
+d=(
+    "b,cmake"
+    "b,yasm"
+    "glibc"
+)
+
+b() {
+
+with cmake
+
+_cfg=(
+    -D ENABLE_STATIC=FALSE
+    -D CMAKE_INSTALL_DEFAULT_LIBDIR=lib
+    -D CMAKE_POLICY_VERSION_MINIMUM=3.5
+)
+
+def
+
+}
+
+# Tests aren't run because they're slow af and I cba to wait
