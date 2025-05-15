@@ -2,10 +2,10 @@
 
 n="libtiff"
 v="4.7.0"
-a="ABOUT"
+a="TIFF image library"
 m="Tox"
-l="LICENSE"
-t=""
+l="Custom"
+t="lib img"
 u="https://gitlab.com/$n/$n.git"
 
 s=(

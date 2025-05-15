@@ -1,14 +1,17 @@
 {
   "name": "libtiff",
   "version": "4.7.0",
-  "about": "ABOUT",
+  "about": "TIFF image library",
   "maintainer": "Tox",
   "licenses": [
-    "LICENSE"
+    "Custom"
   ],
   "upstream": "https://gitlab.com/libtiff/libtiff.git",
   "version_fetch": null,
-  "tags": [],
+  "tags": [
+    "lib",
+    "img"
+  ],
   "sources": [
     {
       "kind": "Download",
