@@ -1,0 +1,42 @@
+#!/to
+
+n="spirv-tools"
+v="1.4.313.0"
+a="Libraries and utilities for processing SPIR-V modules"
+m="Tox"
+l="Apache-2.0"
+t="gfx utils lib"
+u="https://github.com/KhronosGroup/$n.git"
+vf="gr | grep 'vulkan-sdk-' | cut -d- -f3"
+
+s=(
+    "${u%.git}/archive/refs/tags/vulkan-sdk-$v.tar.gz"
+)
+
+d=(
+    "b,ninja"
+    "b,cmake"
+    "b,spirv-headers"
+    "glibc"
+)
+
+b() {
+
+with cn
+
+_cfg=(
+    -D SPIRV_WERROR=OFF
+    -D SPIRV_TOOLS_BUILD_STATIC=OFF
+    -D SPIRV-Headers_SOURCE_DIR=/usr
+)
+
+def
+il
+
+}
+
+t() {
+
+nj test
+
+}
