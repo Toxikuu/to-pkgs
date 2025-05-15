@@ -25,6 +25,7 @@ sed -i '/LIBPOSTFIX="64"/s/64//' configure.ac
 
 ./autogen.sh
 cfg
+sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
 # Set a meaningful build date
 sed -i "s/0/$(date +%Y%m%d)/" builddate.h
