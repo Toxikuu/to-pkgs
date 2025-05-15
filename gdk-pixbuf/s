@@ -1,0 +1,57 @@
+{
+  "name": "gdk-pixbuf",
+  "version": "2.42.12",
+  "about": "Pixel buffer manipulation library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/GNOME/gdk-pixbuf.git",
+  "version_fetch": "gr | grep -v '[a-Z]' | grep -v '[0-9]\\.9' | sort -V",
+  "tags": [
+    "img",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.12.tar.xz",
+      "dest": "gdk-pixbuf-2.42.12.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "libtiff",
+      "kind": "Required"
+    },
+    {
+      "name": "shared-mime-info",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

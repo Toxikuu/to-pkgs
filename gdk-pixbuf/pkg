@@ -1,0 +1,56 @@
+#!/to
+
+n="gdk-pixbuf"
+v="2.42.12"
+a="Pixel buffer manipulation library"
+m="Tox"
+l="LGPL-2.0-or-later"
+t="img lib"
+u="https://github.com/GNOME/$n.git"
+vf="gr | grep -v '[a-Z]' | grep -v '[0-9]\\.9' | sort -V"
+
+s=(
+    "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
+)
+
+d=(
+    "glib"
+    "glibc"
+    "libjpeg-turbo"
+    "libpng"
+    "libtiff"
+    "shared-mime-info"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    --wrap-mode=nofallback
+    -D man=false
+    -D gtk_doc=false
+    -D installed_tests=false
+    -D introspection=enabled
+    -D builtin_loaders=all
+    -D others=enabled
+)
+
+def
+il
+
+}
+
+t() {
+
+nj test
+
+}
+
+i() {
+
+gdk-pixbuf-query-loaders --update-cache
+
+}
