@@ -1,0 +1,40 @@
+#!/to
+
+n="at-spi2-core"
+v="2.56.2"
+a="Comprehensive accessibility framework for GNOME's Assistive Technologies"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib"
+u="https://github.com/GNOME/$n.git"
+vf="gr | grep -v '[a-Z]'"
+
+s=(
+    "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
+)
+
+d=(
+    "dbus"
+    "glib"
+    "libx11"
+    "libxi"
+    "libxtst"
+    "systemd"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D gtk2_atk_adaptor=false
+)
+
+def
+il
+
+}
+
+# Tests want a graphical environment

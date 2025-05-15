@@ -1,0 +1,56 @@
+{
+  "name": "at-spi2-core",
+  "version": "2.56.2",
+  "about": "Comprehensive accessibility framework for GNOME's Assistive Technologies",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/GNOME/at-spi2-core.git",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz",
+      "dest": "at-spi2-core-2.56.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxi",
+      "kind": "Required"
+    },
+    {
+      "name": "libxtst",
+      "kind": "Required"
+    },
+    {
+      "name": "systemd",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
