@@ -1,0 +1,61 @@
+{
+  "name": "rsync",
+  "version": "9994933c8ccf7ead27c81fe4ce2eb4e08af20c7f",
+  "about": "Fast, versatile file copying tool",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://github.com/RsyncProject/rsync.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/RsyncProject/rsync.git",
+      "dest": "rsync"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "acl",
+      "kind": "Required"
+    },
+    {
+      "name": "lz4",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "popt",
+      "kind": "Required"
+    },
+    {
+      "name": "xxhash",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
