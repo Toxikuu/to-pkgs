@@ -1,0 +1,39 @@
+#!/to
+
+n="libepoxy"
+v="1.5.10"
+a="OpenGL function pointer management library"
+m="Tox"
+l="MIT"
+t="lib gfx"
+u="https://github.com/anholt/$n.git"
+vf="gr | sed 's,^v,,' | sort -V"
+
+s=(
+    "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
+)
+
+d=(
+    "b,meson"
+    "b,ninja"
+    "b,systemd"
+    "mesa"
+    "libx11"
+    "libglvnd"
+    "glibc"
+)
+
+b() {
+
+with mn
+
+def
+il
+
+}
+
+t() {
+
+nj test
+
+}

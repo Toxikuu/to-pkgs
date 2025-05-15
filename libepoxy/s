@@ -1,0 +1,53 @@
+{
+  "name": "libepoxy",
+  "version": "1.5.10",
+  "about": "OpenGL function pointer management library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/anholt/libepoxy.git",
+  "version_fetch": "gr | sed 's,^v,,' | sort -V",
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/libepoxy/1.5/libepoxy-1.5.10.tar.xz",
+      "dest": "libepoxy-1.5.10.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "systemd",
+      "kind": "Build"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
