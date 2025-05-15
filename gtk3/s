@@ -1,0 +1,62 @@
+{
+  "name": "gtk3",
+  "version": "3.24.49",
+  "about": "Multi-platform GUI toolkit",
+  "maintainer": "Tox",
+  "licenses": [
+    "LICENSE"
+  ],
+  "upstream": "https://gitlab.gnome.org/GNOME/gtk.git",
+  "version_fetch": "gr | grep -Ev '[a-Z]|\\.[8-9][0-9]\\.' | grep '^3' | sort -V",
+  "tags": [
+    "gui",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/gtk/3.24/gtk-3.24.49.tar.xz",
+      "dest": "gtk-3.24.49.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/patches/blfs/svn/gtk-3.24.49-upstream_fix-1.patch",
+      "dest": "gtk-3.24.49-upstream_fix-1.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "at-spi2-core",
+      "kind": "Required"
+    },
+    {
+      "name": "gdk-pixbuf",
+      "kind": "Required"
+    },
+    {
+      "name": "libepoxy",
+      "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
