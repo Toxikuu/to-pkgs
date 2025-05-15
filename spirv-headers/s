@@ -1,0 +1,33 @@
+{
+  "name": "spirv-headers",
+  "version": "1.4.313.0",
+  "about": "SPIR-V headers",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/KhronosGroup/spirv-headers.git",
+  "version_fetch": "gr | sort -V | tail -n1 | cut -d- -f3",
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/KhronosGroup/spirv-headers/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz",
+      "dest": "vulkan-sdk-1.4.313.0.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
