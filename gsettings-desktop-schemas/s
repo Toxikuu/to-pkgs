@@ -1,0 +1,36 @@
+{
+  "name": "gsettings-desktop-schemas",
+  "version": "48.0",
+  "about": "Collection of GSettings schemas",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/gsettings-desktop-schemas/48/gsettings-desktop-schemas-48.0.tar.xz",
+      "dest": "gsettings-desktop-schemas-48.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

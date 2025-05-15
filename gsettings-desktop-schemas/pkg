@@ -1,0 +1,41 @@
+#!/to
+
+n="gsettings-desktop-schemas"
+v="48.0"
+a="Collection of GSettings schemas"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib"
+u="https://gitlab.gnome.org/GNOME/$n.git"
+
+s=(
+    "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
+)
+
+d=(
+    "glib"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+# Fix deprecated entries in schema templates
+sed -i -r 's:"(/system):"/org/gnome\1:g' schemas/*.in
+
+_cfg=(
+    -D introspection=true
+)
+
+def
+il
+
+}
+
+t() {
+
+nj test
+
+}
