@@ -1,0 +1,25 @@
+#!/to
+
+n="iso-codes"
+v="4.18.0"
+a="Database of the country, language, and currency names"
+m="Tox"
+l="LGPL-2.1-only"
+t="db i18n"
+u="https://salsa.debian.org/$n-team/$n.git"
+
+s=(
+    "https://salsa.debian.org/$n-team/$n/-/archive/v$v/$n-v$v.tar.bz2"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+mk check
+
+}
