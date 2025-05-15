@@ -26,8 +26,6 @@ d=(
 b() {
 
 gco
-il
-
 with cmake
 
 _cfg=(
@@ -37,5 +35,8 @@ _cfg=(
 )
 
 def
+
+il
+ln -sv glut.pc "$D/usr/lib/pkgconfig/$n.pc"
 
 }
