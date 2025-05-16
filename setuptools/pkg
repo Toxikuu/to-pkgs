@@ -1,7 +1,7 @@
 #!/to
 
 n="setuptools"
-v="80.7.0"
+v="80.7.1"
 a="Tool for managing Python packages"
 m="Tox"
 l="MIT"
@@ -14,16 +14,16 @@ s=(
 
 d=(
     "python"
+    "flit-core"
+    "packaging"
     "wheel"
-    "setuptools"
 )
 
 b() {
 
 with pip
 
-# Hotfix for `dist_info` build failure
-pip install setuptools wheel
+pip3 install setuptools
 
 pipb
 pipi
