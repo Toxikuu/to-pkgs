@@ -1,0 +1,31 @@
+#!/to
+
+n="xdpyinfo"
+v="1.3.4"
+a="Display information utility for X"
+m="Tox"
+l="Custom"
+t="utils cli xorg fetch"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+vf="gr | grep -i '^$n-' | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+
+d=(
+    "libx11"
+    "libxcomposite"
+    "libxext"
+    "libxinerama"
+    "libxrender"
+    "libxtst"
+    "libxxf86vm"
+    "b,util-macros"
+    "b,xorgproto"
+)
+
+b() {
+
+def
+il
+
+}

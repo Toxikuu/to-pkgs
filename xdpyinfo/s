@@ -1,0 +1,63 @@
+{
+  "name": "xdpyinfo",
+  "version": "1.3.4",
+  "about": "Display information utility for X",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xdpyinfo.git",
+  "version_fetch": "gr | grep -i '^xdpyinfo-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "utils",
+    "cli",
+    "xorg",
+    "fetch"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xdpyinfo-1.3.4.tar.xz",
+      "dest": "xdpyinfo-1.3.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcomposite",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxinerama",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "libxtst",
+      "kind": "Required"
+    },
+    {
+      "name": "libxxf86vm",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
