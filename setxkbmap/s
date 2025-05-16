@@ -1,0 +1,38 @@
+{
+  "name": "setxkbmap",
+  "version": "1.3.4",
+  "about": "Set the keyboard using the X Keyboard Extension",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/setxkbmap.git",
+  "version_fetch": "gr | grep -i '^setxkbmap-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "xorg",
+    "utils",
+    "kb"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/setxkbmap-1.3.4.tar.xz",
+      "dest": "setxkbmap-1.3.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxkbfile",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
