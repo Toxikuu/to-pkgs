@@ -1,0 +1,50 @@
+{
+  "name": "inxi",
+  "version": "edfe5a62e16b8e36f40bb9a5e37af2bccdc3d001",
+  "about": "Full featured CLI system information tool",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://codeberg.org/smxi/inxi.git",
+  "version_fetch": null,
+  "tags": [
+    "cli",
+    "fetch",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://codeberg.org/smxi/inxi.git",
+      "dest": "inxi"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "coreutils",
+      "kind": "Required"
+    },
+    {
+      "name": "pciutils",
+      "kind": "Required"
+    },
+    {
+      "name": "procps-ng",
+      "kind": "Required"
+    },
+    {
+      "name": "util-linux",
+      "kind": "Required"
+    },
+    {
+      "name": "perl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

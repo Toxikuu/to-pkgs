@@ -1,0 +1,30 @@
+#!/to
+
+n="inxi"
+v="edfe5a62e16b8e36f40bb9a5e37af2bccdc3d001"
+a="Full featured CLI system information tool"
+m="Tox"
+l="GPL-3.0-or-later"
+t="cli fetch utils"
+u="https://codeberg.org/smxi/$n.git"
+
+s="$u"
+
+d=(
+    "b,git"
+    "coreutils"
+    "pciutils"
+    "procps-ng"
+    "util-linux"
+    "perl"
+    # Also a whole bunch of optional (runtime?) dependencies
+)
+
+b() {
+
+gco
+il
+install -vDm755 "$n" "$D/usr/bin/$n"
+install -vDm644 "$n.1" "$D/usr/share/man/man1/$n.1"
+
+}
