@@ -1,0 +1,28 @@
+#!/to
+
+n="mkfontscale"
+v="1.2.3"
+a="Create an index of scalable font files for X"
+m="Tox"
+l="X11"
+t="utils font xorg"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+vf="gr | grep -i '^$n-' | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+
+d=(
+    "freetype"
+    "zlib"
+    "libfontenc"
+    "glibc"
+    "b,util-macros"
+    "b,xorgproto"
+)
+
+b() {
+
+def
+il
+
+}

@@ -1,0 +1,50 @@
+{
+  "name": "mkfontscale",
+  "version": "1.2.3",
+  "about": "Create an index of scalable font files for X",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/mkfontscale.git",
+  "version_fetch": "gr | grep -i '^mkfontscale-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "utils",
+    "font",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/mkfontscale-1.2.3.tar.xz",
+      "dest": "mkfontscale-1.2.3.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "libfontenc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
