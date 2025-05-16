@@ -1,0 +1,28 @@
+#!/to
+
+n="xauth"
+v="1.1.4"
+a="X authorization settings program"
+m="Tox"
+l="MIT"
+t="sec xorg utils"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+vf="gr | grep -i '^$n-' | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+
+d=(
+    "glibc"
+    "libx11"
+    "libxau"
+    "libxext"
+    "libxmu"
+    "b,util-macros"
+)
+
+b() {
+
+def
+il
+
+}
