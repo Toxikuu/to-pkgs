@@ -19,12 +19,10 @@ d=(
 
 b() {
 
+il
 with pip
 
 pipb
 pipi $an
-
-# Remove tests
-rm -rf "$D/$(get_site_packages)/$an/"tests
 
 }
