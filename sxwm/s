@@ -1,0 +1,40 @@
+{
+  "name": "sxwm",
+  "version": "1.5",
+  "about": "Superior X Window Manager",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/uint23/sxwm.git",
+  "version_fetch": null,
+  "tags": [
+    "wm"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/uint23/sxwm.git",
+      "dest": "sxwm"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcursor",
+      "kind": "Required"
+    },
+    {
+      "name": "libxinerama",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

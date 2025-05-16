@@ -1,0 +1,31 @@
+#!/to
+
+n="sxwm"
+v="1.5"
+a="Superior X Window Manager"
+m="Tox"
+l="MIT"
+t="wm"
+u="https://github.com/uint23/$n.git"
+
+s="$u"
+
+d=(
+    "libx11"
+    "libxcursor"
+    "libxinerama"
+    "b,git"
+)
+
+b() {
+
+gco v$v
+LDFLAGS+=" -lX11 -lXinerama -lXcursor"
+
+il
+mk
+mi
+
+install -vDm644 default_sxrc "$D/$HOME/.config/${n}rc"
+
+}
