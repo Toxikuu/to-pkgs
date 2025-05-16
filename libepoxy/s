@@ -33,10 +33,6 @@
       "kind": "Build"
     },
     {
-      "name": "mesa",
-      "kind": "Required"
-    },
-    {
       "name": "libx11",
       "kind": "Required"
     },
