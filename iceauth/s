@@ -1,0 +1,41 @@
+{
+  "name": "iceauth",
+  "version": "1.0.10",
+  "about": "ICE authority file utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/iceauth.git",
+  "version_fetch": "gr | grep -i '^iceauth-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "xorg",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/iceauth-1.0.10.tar.xz",
+      "dest": "iceauth-1.0.10.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libice",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,26 @@
+#!/to
+
+n="iceauth"
+v="1.0.10"
+a="ICE authority file utility"
+m="Tox"
+l="MIT"
+t="xorg utils"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+vf="gr | grep -i '^$n-' | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+
+d=(
+    "glibc"
+    "libice"
+    "b,util-macros"
+    "b,xorgproto"
+)
+
+b() {
+
+def
+il
+
+}
