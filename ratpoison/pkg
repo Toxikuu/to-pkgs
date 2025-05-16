@@ -1,0 +1,50 @@
+#!/to
+
+n="ratpoison"
+v="db94d4971d8dcae736cf5246ef7d0454aa345ac0"
+a="Simple keystroke-driven window manager"
+m="Tox"
+l="GPL"
+t="wm kb"
+u="https://git.savannah.nongnu.org/git/$n.git"
+
+s="$u"
+
+d=(
+    "libxinerama"
+    "readline"
+    "bash"
+    "perl"
+    "libxtst"
+    "libxft"
+    "libxrandr"
+    "b,git"
+)
+
+b() {
+
+gco
+./autogen.sh
+
+cfg
+export CFLAGS+=" -DHAVE_GETLINE"
+mk
+mi
+
+# Fix permissions
+chmod -v 755 "$D/usr/share/$n/"{allwindows.sh,clickframe.pl,rpshowall.sh,rpws,split.sh}
+
+# Useless outside the source tree
+rm -vf "$D/usr/share/$n/genrpbindings"
+
+# Generate bindings
+(
+    cd contrib
+    ./genrpbindings
+    install -vDm644 {${n/r/R}.pm,$n-cmd.el,$n.rb,$n.lisp,$n.py} \
+        -t "$D/usr/share/$n/bindings/"
+)
+
+il
+
+}

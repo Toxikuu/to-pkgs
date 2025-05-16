@@ -1,0 +1,57 @@
+{
+  "name": "ratpoison",
+  "version": "db94d4971d8dcae736cf5246ef7d0454aa345ac0",
+  "about": "Simple keystroke-driven window manager",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://git.savannah.nongnu.org/git/ratpoison.git",
+  "version_fetch": null,
+  "tags": [
+    "wm",
+    "kb"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.savannah.nongnu.org/git/ratpoison.git",
+      "dest": "ratpoison"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxinerama",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "bash",
+      "kind": "Required"
+    },
+    {
+      "name": "perl",
+      "kind": "Required"
+    },
+    {
+      "name": "libxtst",
+      "kind": "Required"
+    },
+    {
+      "name": "libxft",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
