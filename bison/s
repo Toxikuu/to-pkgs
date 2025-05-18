@@ -6,7 +6,7 @@
   "licenses": [
     "GPL-3.0-or-later"
   ],
-  "upstream": "https://git.savannah.gnu.org/git/bison.git",
+  "upstream": "https://https.git.savannah.gnu.org/git/bison.git",
   "version_fetch": "gr | vfs | sed 's,^v,,' | grep -v '[a-Z]'",
   "tags": [
     "core"
