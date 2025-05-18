@@ -1,6 +1,6 @@
 {
   "name": "cargo-c",
-  "version": "0.10.12",
+  "version": "0.10.13",
   "about": "Cargo subcommand to create C-ABI compatible libraries",
   "maintainer": "Tox",
   "licenses": [
@@ -14,13 +14,13 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/lu-zero/cargo-c/archive/v0.10.12/cargo-c-0.10.12.tar.gz",
-      "dest": "cargo-c-0.10.12.tar.gz"
+      "url": "https://github.com/lu-zero/cargo-c/archive/v0.10.13/cargo-c-0.10.13.tar.gz",
+      "dest": "cargo-c-0.10.13.tar.gz"
     },
     {
       "kind": "Download",
-      "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.12/Cargo.lock",
-      "dest": "Cargo.lock-0.10.12"
+      "url": "https://github.com/lu-zero/cargo-c/releases/download/v0.10.13/Cargo.lock",
+      "dest": "Cargo.lock-0.10.13"
     }
   ],
   "dependencies": [
