@@ -1,7 +1,7 @@
 #!/to
 
 n="rust"
-v="1.86.0"
+v="1.87.0"
 a="The Rust programming language"
 m="Tox"
 l=(
