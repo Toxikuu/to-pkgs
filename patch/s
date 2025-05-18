@@ -6,7 +6,7 @@
   "licenses": [
     "GPL"
   ],
-  "upstream": "https://git.savannah.gnu.org/git/patch.git",
+  "upstream": "https://https.git.savannah.gnu.org/git/patch.git",
   "version_fetch": null,
   "tags": [
     "core",
