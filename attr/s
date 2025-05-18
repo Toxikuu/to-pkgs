@@ -6,7 +6,7 @@
   "licenses": [
     "LGPL"
   ],
-  "upstream": "https://git.savannah.nongnu.org/git/attr.git",
+  "upstream": "https://https.git.savannah.gnu.org/git/attr.git",
   "version_fetch": null,
   "tags": [
     "core"

@@ -17,9 +17,7 @@ d=(
 
 b() {
 
-cfg
-mk
-mi
+def
 
 }
 
