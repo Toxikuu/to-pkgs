@@ -3,4 +3,4 @@
 
 export CARGO_HOME="/opt/cargo"
 export RUSTUP_HOME="/opt/rustup"
-pathprepend "\$CARGO_HOME/bin"
+pathprepend "$CARGO_HOME/bin"

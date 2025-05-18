@@ -1,0 +1,44 @@
+#!/to
+
+n="kbd"
+v="2.7.1"
+a="Key-table files, console fonts, and keyboard utilities"
+m="Tox"
+l="GPL-2.0-or-later"
+t="db utils font core"
+u="https://git.kernel.org/pub/scm/linux/kernel/git/legion/$n.git"
+
+s=(
+    "https://www.kernel.org/pub/linux/utils/$n/$n-$v.tar.xz"
+    "https://www.linuxfromscratch.org/patches/lfs/development/$n-$v-backspace-1.patch"
+)
+
+d=(
+    "glibc"
+    "gzip"
+    "pam"
+    "b,check"
+)
+
+b() {
+
+mv -v data/keymaps/i386/qwertz/cz{,-qwertz}.map
+mv -v data/keymaps/i386/olpc/es{,-olpc}.map
+mv -v data/keymaps/i386/olpc/pt{,-olpc}.map
+mv -v data/keymaps/i386/fgGIod/trf{,-fgGIod}.map
+mv -v data/keymaps/i386/colemak/{en-latin9,colemak}.map
+autoreconf -fiv
+
+pat "$S/$n-$v-backspace-1.patch"
+
+sed -i '/RESIZECONS_PROGS=/s/yes/no/' configure
+sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in
+
+_cfg=(
+    --disable-vlock
+)
+
+def
+il
+
+}

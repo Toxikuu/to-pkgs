@@ -1,0 +1,48 @@
+{
+  "name": "kbd",
+  "version": "2.7.1",
+  "about": "Key-table files, console fonts, and keyboard utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://git.kernel.org/pub/scm/linux/kernel/git/legion/kbd.git",
+  "version_fetch": null,
+  "tags": [
+    "db",
+    "utils",
+    "font",
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.kernel.org/pub/linux/utils/kbd/kbd-2.7.1.tar.xz",
+      "dest": "kbd-2.7.1.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/patches/lfs/development/kbd-2.7.1-backspace-1.patch",
+      "dest": "kbd-2.7.1-backspace-1.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gzip",
+      "kind": "Required"
+    },
+    {
+      "name": "pam",
+      "kind": "Required"
+    },
+    {
+      "name": "check",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
