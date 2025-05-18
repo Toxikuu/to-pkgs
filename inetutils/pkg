@@ -22,6 +22,8 @@ d=(
 
 b() {
 
+il
+
 # Avoid a gcc 14.1+ build issue
 sed -i 's/def HAVE_TERMCAP_TGETENT/ 1/' telnet/telnet.c
 
@@ -58,12 +60,10 @@ _cfg=(
     --without-idn
 
     # Add my signature
-    --with-packager Tox
+    # --with-packager Tox
     # TODO: Add --with-packages-bug-reports
 )
 
-cfg
-mk
-mi
+def
 
 }
