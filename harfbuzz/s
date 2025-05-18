@@ -1,22 +1,22 @@
 {
   "name": "harfbuzz",
-  "version": "08b52ae2e44931eef163dbad71697f911fadc323",
+  "version": "11.2.1",
   "about": "OpenType text shaping engine",
   "maintainer": "Tox",
   "licenses": [
     "MIT"
   ],
   "upstream": "https://github.com/harfbuzz/harfbuzz.git",
-  "version_fetch": null,
+  "version_fetch": "gr | sort -V | grep '[0-9]'",
   "tags": [
     "lib",
     "font"
   ],
   "sources": [
     {
-      "kind": "Git",
-      "url": "https://github.com/harfbuzz/harfbuzz.git",
-      "dest": "harfbuzz"
+      "kind": "Download",
+      "url": "https://github.com/harfbuzz/harfbuzz/releases/download/11.2.1/harfbuzz-11.2.1.tar.xz",
+      "dest": "harfbuzz-11.2.1.tar.xz"
     },
     {
       "kind": "Pkg",
@@ -25,10 +25,6 @@
     }
   ],
   "dependencies": [
-    {
-      "name": "git",
-      "kind": "Build"
-    },
     {
       "name": "meson",
       "kind": "Build"
