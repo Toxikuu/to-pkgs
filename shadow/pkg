@@ -36,14 +36,14 @@ sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
 _cfg=(
     --exec-prefix=/usr
 
-    --without-libbsd
+    --without-libbsd    # beyond scope
     --without-audit
-    --without-selinux
+    --without-selinux   # beyond scope
     --without-nscd      # nscd is dead
-    --without-su        # provided by util-linux
     --without-tcb
 
     --with-{b,yes}crypt
+    --with-su
     --with-libpam
     --with-group-name-max-length=32
 )
