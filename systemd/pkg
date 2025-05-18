@@ -76,15 +76,14 @@ _cfg=(
     -D ukify=disabled
 )
 
-ms
-nj
-ni
+il
+def
 
 install -vDm644 "$A/systemd-user" -t "$D/etc/pam.d/"
 
 }
 
-posti() {
+i() {
 
 # Some post-install setup
 systemd-machine-id-setup
