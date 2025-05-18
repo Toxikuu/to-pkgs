@@ -6,7 +6,7 @@ a="Archive utility"
 m="Tox"
 l="GPL3"
 t="utils cli core"
-u="https://git.savannah.gnu.org/git/$n.git"
+u="https://https.git.savannah.gnu.org/git/$n.git"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
@@ -20,9 +20,8 @@ d=(
 
 b() {
 
+il
 FORCE_UNSAFE_CONFIGURE=1 \
-cfg
-mk
-mi
+def
 
 }

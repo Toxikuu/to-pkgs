@@ -6,7 +6,7 @@
   "licenses": [
     "GPL3"
   ],
-  "upstream": "https://git.savannah.gnu.org/git/tar.git",
+  "upstream": "https://https.git.savannah.gnu.org/git/tar.git",
   "version_fetch": null,
   "tags": [
     "utils",
