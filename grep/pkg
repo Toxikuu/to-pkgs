@@ -23,10 +23,8 @@ b() {
 # Remove a warning about deprecated grep symlinks that cause some test failures
 # for other packages
 sed "s/echo/#echo/" -i src/egrep.sh
-
-cfg
-mk
-mi
+def
+il
 
 }
 
