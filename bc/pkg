@@ -18,7 +18,8 @@ d=(
 
 b() {
 
-CC=gcc cfg -G -O3 -r
+# --prefix=/usr is needed because the configure script is weird
+CC=gcc cfg --prefix=/usr -G -O3 -r
 mk
 mi
 
