@@ -15,8 +15,8 @@ s=(
 
 b() {
 
-PAGE=letter cfg
-mk
-mi
+export PAGE=letter
+def
+il
 
 }
