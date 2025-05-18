@@ -12,6 +12,8 @@ t="lang utils cli lib core"
 u="https://github.com/$n-lang/$n.git"
 vf="gr | vfs | grep -v 'release-' | sort -V"
 
+s="https://raw.githubusercontent.com/rust-lang/rustup/refs/heads/master/rustup-init.sh"
+
 d=(
     "curl"
     "make-ca"
@@ -24,16 +26,21 @@ b() {
 
 export CARGO_HOME="$D"/opt/cargo
 export RUSTUP_HOME="$D"/opt/rustup
+export RUSTUP_LOG="info"
 
 mkdir -pv "$CARGO_HOME" "$RUSTUP_HOME"
 
-curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path
-. "$CARGO_HOME"/env
+_cfg=(
+    -y
+    --no-modify-path
+    --default-toolchain="$v"
+    --default-host="x86_64-unknown-linux-gnu"
+    --component cargo,clippy,rustfmt
+)
 
-rustup toolchain install "$v"
-rustup default "$v"
-rustup component add cargo clippy rustfmt
+sh rustup-init.sh "${_cfg[@]}"
 
+source "$CARGO_HOME"/env
 rm -vf "$CARGO_HOME"/env
 
 chmod 777 "$CARGO_HOME"

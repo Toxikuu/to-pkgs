@@ -16,7 +16,13 @@
     "lib",
     "core"
   ],
-  "sources": [],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://raw.githubusercontent.com/rust-lang/rustup/refs/heads/master/rustup-init.sh",
+      "dest": "rustup-init.sh"
+    }
+  ],
   "dependencies": [
     {
       "name": "curl",
