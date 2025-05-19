@@ -29,10 +29,6 @@
       "kind": "Build"
     },
     {
-      "name": "systemd",
-      "kind": "Build"
-    },
-    {
       "name": "libx11",
       "kind": "Required"
     },

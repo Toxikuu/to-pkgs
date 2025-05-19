@@ -16,7 +16,6 @@ s=(
 d=(
     "b,meson"
     "b,ninja"
-    "b,systemd"
     "libx11"
     "libglvnd"
     "glibc"
