@@ -27,10 +27,6 @@
     {
       "name": "ncurses",
       "kind": "Required"
-    },
-    {
-      "name": "systemd",
-      "kind": "Required"
     }
   ],
   "kcfg": []

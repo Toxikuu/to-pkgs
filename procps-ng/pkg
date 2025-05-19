@@ -15,7 +15,6 @@ s=(
 d=(
     "glibc"
     "ncurses"
-    "systemd"
 )
 
 b() {
@@ -24,13 +23,12 @@ b() {
 _cfg=(
     --enable-watch8bit
     --disable-kill
-    --with-systemd
 )
 
-cfg
-mk
-mi
+il
+def
 
+# Don't install man pages for kill since kill wasn't installed
 rm -vf "$D"/usr/share/man/{de,ro,uk}/man1/kill.1
 
 }
