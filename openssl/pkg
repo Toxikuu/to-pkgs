@@ -30,12 +30,14 @@ _cfg=(
 
 ./config ${_cfg[@]}
 mk
-mi
 
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
-make MANSUFFIX=ssl install
+mi MANSUFFIX=ssl
 
-cp -av doc/* "$D/usr/share/doc/$n"
+pushd "$D"/usr/lib
+    ln -sfv libssl.so{.3,}
+    ln -sfv libcrypto.so{.3,}
+popd
 
 }
 
