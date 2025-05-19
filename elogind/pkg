@@ -1,0 +1,68 @@
+#!/to
+
+n="elogind"
+v="255.17"
+a="Track logged-in users"
+m="Tox"
+l="LICENSE"
+t=""
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/archive/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "pam"
+    "shadow"
+    "udev"
+    "b,gperf"
+    "b,acl"
+    "b,coreutils"
+    "b,dbus"
+    "b,libseccomp"
+    "b,meson"
+    "b,ninja"
+    "b,pcre2"
+    "b,jinja2"
+    "b,libcap"
+)
+
+kcfg=(
+    "inotify_user=y"
+    "tmpfs=y"
+    "tmpfs_posix_acl=y"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D cgroup-controller=$n
+    -D dev-kvm-mode=0660
+    -D dbuspolicydir=/etc/dbus-1/system.d
+)
+
+def
+ln -sfv  libelogind.pc  "$D"/usr/lib/pkgconfig/libsystemd.pc
+ln -sfvn elogind        "$D"/usr/include/systemd
+
+install -vDm644 "$A/elogind-user" -t "$D/etc/pam.d/"
+
+}
+
+i() {
+
+if ! grep "elogind addition" /etc/pam.d/system-session; then
+cat >> /etc/pam.d/system-session << "EOF"
+# Begin elogind addition
+
+session  required    pam_loginuid.so
+session  optional    pam_elogind.so
+
+# End elogind addition
+EOF
+fi
+
+}

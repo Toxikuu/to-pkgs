@@ -1,0 +1,78 @@
+{
+  "name": "elogind",
+  "version": "255.17",
+  "about": "Track logged-in users",
+  "maintainer": "Tox",
+  "licenses": [
+    "LICENSE"
+  ],
+  "upstream": "https://github.com/elogind/elogind.git",
+  "version_fetch": null,
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/elogind/elogind/archive/v255.17/elogind-255.17.tar.gz",
+      "dest": "elogind-255.17.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "pam",
+      "kind": "Required"
+    },
+    {
+      "name": "shadow",
+      "kind": "Required"
+    },
+    {
+      "name": "udev",
+      "kind": "Required"
+    },
+    {
+      "name": "gperf",
+      "kind": "Build"
+    },
+    {
+      "name": "acl",
+      "kind": "Build"
+    },
+    {
+      "name": "coreutils",
+      "kind": "Build"
+    },
+    {
+      "name": "dbus",
+      "kind": "Build"
+    },
+    {
+      "name": "libseccomp",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Build"
+    },
+    {
+      "name": "jinja2",
+      "kind": "Build"
+    },
+    {
+      "name": "libcap",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": [
+    "inotify_user=y",
+    "tmpfs=y",
+    "tmpfs_posix_acl=y"
+  ]
+}
