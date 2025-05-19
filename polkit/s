@@ -42,8 +42,8 @@
       "kind": "Required"
     },
     {
-      "name": "systemd",
-      "kind": "Runtime"
+      "name": "elogind",
+      "kind": "Required"
     },
     {
       "name": "meson",

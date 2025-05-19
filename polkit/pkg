@@ -19,7 +19,7 @@ d=(
     "glibc"
     "duktape"
     "glib"
-    "r,systemd"
+    "elogind"
     "b,meson"
     "b,ninja"
 )
@@ -33,14 +33,17 @@ sed -i '/systemd_sysusers_dir/s/^/#/' meson.build
 _cfg=(
     -D man=false
     -D tests=false
-    -D session_tracking=logind
-    -D introspection=false
+    -D session_tracking=elogind
+    -D systemdsystemunitdir=/tmp
+    -D introspection=true # TODO: Check if I need introspection in polkit
     -D os_type=lfs
 )
 
-ms
-nj
-ni
+def
+
+# Remove files useless on a systemd-less system
+rm -v   "$D"/tmp/*.service || true
+rm -rf  "$D"/usr/lib/{sysusers,tmpfiles}.d
 
 }
 
