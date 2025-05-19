@@ -23,10 +23,11 @@ d=(
 
 b() {
 
-find man -name Makefile.in -exec sed -i \
-    -e 's/groups\. / /'    \
-    -e 's/passwd\.5 / /'   \
-    -e 's/getspnam\.3 / /' {} +
+sed -i 's/groups$(EXEEXT) //' src/Makefile.in
+
+find man -name Makefile.in -exec sed -i 's/groups\.1 / /'   {} \;
+find man -name Makefile.in -exec sed -i 's/getspnam\.3 / /' {} \;
+find man -name Makefile.in -exec sed -i 's/passwd\.5 / /'   {} \;
 
 sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
     -e 's@/var/spool/mail@/var/mail@'                   \
@@ -38,10 +39,8 @@ _cfg=(
     --{s,}bindir=/usr/bin
 
     --without-libbsd    # beyond scope
-    --without-audit
     --without-selinux   # beyond scope
     --without-nscd      # nscd is dead
-    --without-tcb
 
     --with-{b,yes}crypt
     --with-su
@@ -53,13 +52,13 @@ cfg
 sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
 mk
-mi
+mi exec_prefix=/usr pamdir=
 
 # Install man pages
 mk DESTDIR="$D" -C man install-man
 
 # Don't use shadow's /etc/pam.d files since we create our own
-rm -vf "$D/etc/pam.d/"*
+rm -vf "$D/etc/pam.d/"* || true
 
 # Install configuration files
 install -vDm644 "$D"/etc/login.defs "$D"/etc/login.defs.orig
