@@ -18,8 +18,8 @@ b() {
 # Prevent the installation of static libraries
 sed -i '/install -m.*STA/d' libcap/Makefile
 
-mk prefix=/usr lib=lib
-mi prefix=/usr lib=lib
+mk prefix=/usr sbindir=bin lib=lib
+mi prefix=/usr sbindir=bin lib=lib
 
 }
 
