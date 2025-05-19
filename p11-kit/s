@@ -35,10 +35,6 @@
       "kind": "Required"
     },
     {
-      "name": "systemd",
-      "kind": "Required"
-    },
-    {
       "name": "libffi",
       "kind": "Build"
     },

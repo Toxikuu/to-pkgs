@@ -16,7 +16,6 @@ d=(
     "coreutils"
     "glibc"
     "libtasn1"
-    "systemd"
     "b,libffi"
     "b,meson"
     # gnutls for tests
@@ -42,15 +41,18 @@ _cfg=(
     -D trust_paths=/etc/pki/anchors
 )
 
-ms
-nj
-ni
-
+def
 ln -sfv ./pkcs11/p11-kit-trust.so "$D"/usr/lib/libnssckbi.so
 
 }
 
-posti() {
+t() {
+
+LC_ALL=C nj test
+
+}
+
+i() {
 
 ln -sfv /usr/libexec/p11-kit/trust-extract-compat \
         /usr/bin/update-ca-certificates
