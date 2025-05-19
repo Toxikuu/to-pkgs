@@ -1,0 +1,108 @@
+#!/to
+
+n="udev"
+v="257.5"
+a="Programs for dynamic device node creation"
+m="Tox"
+l=("CC0-1.0" "GPL-2.0-or-later" "LGPL-2.1-or-later" "MIT-0")
+t="core lib utils"
+u="https://github.com/systemd/systemd.git"
+
+s=(
+    "https://github.com/systemd/systemd/archive/v$v/systemd-$v.tar.gz"
+    "https://anduin.linuxfromscratch.org/LFS/$n-lfs-20230818.tar.xz"
+)
+
+d=(
+    "b,ninja"
+    "b,meson"
+    "acl"
+    "binutils"
+    "coreutils"
+    "diffutils"
+    "gawk"
+    "glibc"
+    "gperf"
+    "grep"
+    "hwdata"
+    "jinja2"
+    "kmod"
+    "libcap"
+    "libelf"
+    "libseccomp"
+    "libidn2"
+    "libxcrypt"
+    "linux-pam"
+    "openssl"
+    "pcre2"
+    "sed"
+    "xz"
+    "zlib"
+    "zstd"
+)
+
+b() {
+
+cd systemd-$v
+
+with mn
+
+# Remove unneeded groups from default udev rules
+sed -e 's/GROUP="render"/GROUP="video"/' \
+    -e 's/GROUP="sgx", //'               \
+    -i rules.d/50-udev-default.rules.in
+
+# Remove a udev rule requiring a full systemd install
+sed -i '/systemd-sysctl/s/^/#/' rules.d/99-systemd.rules.in
+
+# Adjust hardcoded paths for standalone udev
+sed -e '/NETWORK_DIRS/s/systemd/udev/' \
+    -i src/libsystemd/sd-network/network-util.h
+
+_cfg=(
+    -D mode=release
+    -D dev-kvm-mode=0660
+    -D link-$n-shared=false
+    -D logind=false
+    -D vconsole=false
+)
+
+ms
+
+export udev_helpers=$(grep "'name' :" ../src/udev/meson.build | \
+                      awk '{print $3}' | tr -d ",'" | grep -v 'udevadm')
+
+nj udevadm systemd-hwdb                                           \
+      $(nj -n | grep -Eo '(src/(lib)?udev|rules.d|hwdb.d)/[^ ]*') \
+      $(realpath libudev.so --relative-to .)                      \
+      $udev_helpers
+
+install -vm755 -d {"$D"/usr/lib,"$D"/etc}/udev/{hwdb.d,rules.d,network}
+install -vm755 -d "$D"/usr/bin
+install -vm755 -d "$D"/usr/include
+install -vm755 -d "$D"/usr/{lib,share}/pkgconfig
+install -vm755 udevadm                             "$D"/usr/bin/
+install -vm755 systemd-hwdb                        "$D"/usr/bin/udev-hwdb
+# ln      -svfn  ../bin/udevadm                      "$D"/usr/sbin/udevd
+cp      -av    libudev.so{,*[0-9]}                 "$D"/usr/lib/
+install -vm644 ../src/libudev/libudev.h            "$D"/usr/include/
+install -vm644 src/libudev/*.pc                    "$D"/usr/lib/pkgconfig/
+install -vm644 src/udev/*.pc                       "$D"/usr/share/pkgconfig/
+install -vm644 ../src/udev/udev.conf               "$D"/etc/udev/
+install -vm644 rules.d/* ../rules.d/README         "$D"/usr/lib/udev/rules.d/
+install -vm644 $(find ../rules.d/*.rules \
+                      -not -name '*power-switch*') "$D"/usr/lib/udev/rules.d/
+install -vm644 hwdb.d/*  ../hwdb.d/{*.hwdb,README} "$D"/usr/lib/udev/hwdb.d/
+install -vm755 $udev_helpers                       "$D"/usr/lib/udev
+install -vm644 ../network/99-default.link          "$D"/usr/lib/udev/network
+
+cd "$B"
+mk -f "$n-lfs-20230818/Makefile.lfs" DESTDIR="$D" install
+
+}
+
+i() {
+
+udev-hwdb update
+
+}
