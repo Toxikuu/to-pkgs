@@ -65,7 +65,10 @@ _cfg=(
 ./autogen.sh
 
 def
-il
+il Documentation/licenses/COPYING.{BSD*,ISC}
+
+mv -vf "$D/usr/sbin/"* "$D/usr/bin/"
+rm -rf "$D/usr/sbin"
 
 }
 
