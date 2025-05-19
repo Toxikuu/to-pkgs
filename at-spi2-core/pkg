@@ -19,7 +19,6 @@ d=(
     "libx11"
     "libxi"
     "libxtst"
-    "systemd"
     "b,meson"
     "b,ninja"
 )

@@ -40,10 +40,6 @@
       "kind": "Required"
     },
     {
-      "name": "systemd",
-      "kind": "Required"
-    },
-    {
       "name": "meson",
       "kind": "Build"
     },
