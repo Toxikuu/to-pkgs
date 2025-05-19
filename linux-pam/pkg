@@ -31,11 +31,12 @@ with mn
 
 _cfg=(
     -D docs=disabled
+    -D econf=disabled
+    -D selinux=disabled
 )
 
-ms
-nj
-ni
+il
+def
 
 chmod -v 4755 "$D"/usr/bin/unix_chkpwd
 
