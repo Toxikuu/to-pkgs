@@ -1,0 +1,33 @@
+{
+  "name": "strace",
+  "version": "6.14",
+  "about": "A diagnostic, debugging, and instructional userspace tracer",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/strace/strace.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/strace/strace/releases/download/v6.14/strace-6.14.tar.xz",
+      "dest": "strace-6.14.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libunwind",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

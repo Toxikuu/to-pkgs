@@ -1,0 +1,36 @@
+#!/to
+
+n="strace"
+v="6.14"
+a="A diagnostic, debugging, and instructional userspace tracer"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="utils cli"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "libunwind"
+)
+
+b() {
+
+_cfg=(
+    --enable-mpers=no
+    --with-libunwind
+)
+
+def
+il
+
+}
+
+t() {
+
+mk check
+
+}
