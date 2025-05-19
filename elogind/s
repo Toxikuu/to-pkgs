@@ -4,11 +4,16 @@
   "about": "Track logged-in users",
   "maintainer": "Tox",
   "licenses": [
-    "LICENSE"
+    "GPL-2.0-or-later",
+    "LGPL-2.1-or-later"
   ],
   "upstream": "https://github.com/elogind/elogind.git",
   "version_fetch": null,
-  "tags": [],
+  "tags": [
+    "core",
+    "lib",
+    "sec"
+  ],
   "sources": [
     {
       "kind": "Download",

@@ -4,8 +4,8 @@ n="elogind"
 v="255.17"
 a="Track logged-in users"
 m="Tox"
-l="LICENSE"
-t=""
+l=("GPL-2.0-or-later" "LGPL-2.1-or-later")
+t="core lib sec"
 u="https://github.com/$n/$n.git"
 
 s=(
