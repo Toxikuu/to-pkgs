@@ -34,7 +34,8 @@ sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
     -i etc/login.defs
 
 _cfg=(
-    --exec-prefix=/usr
+    --{exec-,}prefix=/usr
+    --{s,}bindir=/usr/bin
 
     --without-libbsd    # beyond scope
     --without-audit
