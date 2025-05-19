@@ -18,9 +18,8 @@ d=(
 
 b() {
 
-cfg
-mk
-mi
+def
+il
 
 rm -vf "$D"/usr/lib/libltdl.a
 
