@@ -28,9 +28,13 @@ sed -i 's/-Wl,-rpath,[^ ]*//' support/shobj-conf
 
 CFLAGS+=" -fPIC"
 
-# play nice with ncurses
-cfg --with-curses
+_cfg=(
+    --with-curses # play nice with ncurses
+)
+
+il
+cfg
 mk SHLIB_LIBS="-lncursesw"
-mi
+mi SHLIB_LIBS="-lncursesw"
 
 }
