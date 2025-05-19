@@ -27,8 +27,7 @@ _cfg=(
     --with-installed-readline
 )
 
-cfg
-mk
-mi
+il
+def
 
 }
