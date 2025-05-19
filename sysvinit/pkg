@@ -1,0 +1,30 @@
+#!/to
+
+n="sysvinit"
+v="3.14"
+a="Classic init system"
+m="Tox"
+l="GPL-2.0"
+t="init core"
+u="https://github.com/slicer69/$n.git"
+
+s=(
+    "${u%.git}/releases/download/$v/$n-$v.tar.xz"
+    "https://www.linuxfromscratch.org/patches/lfs/development/$n-$v-consolidated-1.patch"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+pat "$S/$n-$v-consolidated-1.patch"
+
+il
+mk
+mk ROOT="$D" install
+
+cp -av "$A/etc" "$D"
+
+}
