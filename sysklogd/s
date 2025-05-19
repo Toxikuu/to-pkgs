@@ -1,0 +1,30 @@
+{
+  "name": "sysklogd",
+  "version": "2.7.2",
+  "about": "Programs for logging system messages",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/troglobit/sysklogd.git",
+  "version_fetch": null,
+  "tags": [
+    "log",
+    "core",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/troglobit/sysklogd/releases/download/v2.7.2/sysklogd-2.7.2.tar.gz",
+      "dest": "sysklogd-2.7.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
