@@ -8,12 +8,10 @@ l="MIT"
 t="gfx lib"
 u="https://git.sr.ht/~kennylevinsen/$n"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "systemd"
+    "elogind"
     "b,ninja"
     "b,meson"
     "b,git"
