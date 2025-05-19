@@ -13,7 +13,7 @@ s=(
 )
 
 d=(
-    "pam"
+    "linux-pam"
     "shadow"
     "udev"
     "b,gperf"
