@@ -59,7 +59,7 @@ mi
 mk DESTDIR="$D" -C man install-man
 
 # Don't use shadow's /etc/pam.d files since we create our own
-rm -vf "$D"/etc/pam.d/*
+rm -vf "$D/etc/pam.d/"*
 
 # Install configuration files
 install -vDm644 "$D"/etc/login.defs "$D"/etc/login.defs.orig
@@ -91,6 +91,10 @@ do
     install -vDm644 "$D/etc/pam.d/chage" "$D/etc/pam.d/$PROGRAM"
     sed -i "s/chage/$PROGRAM/" "$D/etc/pam.d/$PROGRAM"
 done
+
+# Shadow fucking ignores --sbindir ???
+mv -vf "$D/usr/sbin"/* "$D/usr/bin/"
+rmdir -v "$D/usr/sbin"
 
 }
 
