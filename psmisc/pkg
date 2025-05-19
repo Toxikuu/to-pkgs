@@ -23,9 +23,8 @@ git checkout $v
 
 ./autogen.sh
 
-cfg
-mk
-mi
+il
+def
 
 }
 
