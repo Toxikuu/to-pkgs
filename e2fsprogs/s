@@ -25,10 +25,6 @@
   ],
   "dependencies": [
     {
-      "name": "systemd",
-      "kind": "Build"
-    },
-    {
       "name": "glibc",
       "kind": "Required"
     },

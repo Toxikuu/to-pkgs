@@ -17,7 +17,6 @@ s=(
 )
 
 d=(
-    "b,systemd"
     "glibc"
     "util-linux"
 )
@@ -26,6 +25,7 @@ b() {
 
 _cfg=(
     --enable-elf-shlibs
+    --disable-systemd
     --disable-libblkid
     --disable-libuuid
     --disable-uuidd
