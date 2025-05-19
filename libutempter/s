@@ -24,10 +24,6 @@
       "kind": "Required"
     },
     {
-      "name": "systemd",
-      "kind": "Required"
-    },
-    {
       "name": "git",
       "kind": "Build"
     }

@@ -9,13 +9,10 @@ l="LGPL-2.1-or-later"
 t="lib"
 u="https://github.com/altlinux/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "glibc"
-    "systemd" # for tmpfiles.d
     "b,git"
 )
 
@@ -28,7 +25,6 @@ mk
 mi
 rm -vf "$D/usr/lib/$n.a"
 
-install -vDm644 "$A/tmpfile" "$D/usr/lib/tmpfiles.d/$n.conf"
 il
 
 }
