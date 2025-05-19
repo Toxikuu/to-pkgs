@@ -39,6 +39,7 @@ il
 def
 
 chmod -v 4755 "$D"/usr/bin/unix_chkpwd
+rm -rf "$D"/usr/lib/systemd
 
 # Install pam configuration files
 install -vDm644 "$A/"* -t "$D"/etc/pam.d/
