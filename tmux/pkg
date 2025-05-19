@@ -15,7 +15,6 @@ d=(
     "libevent"
     "ncurses"
     "libutempter"
-    "systemd"
     "b,git"
 )
 
@@ -25,7 +24,7 @@ gco
 
 _cfg=(
     --enable-utempter
-    --enable-systemd
+    --disable-systemd
     --disable-sixel # my terminal emulators don't support it anyway
 )
 
