@@ -15,6 +15,7 @@ s=(
 d=(
     "b,ninja"
     "b,meson"
+
     "alsa-lib"
     "glibc"
     "dbus"
@@ -22,11 +23,13 @@ d=(
     "glib"
     "libcap"
     "libsndfile"
-    "systemd"
-    # The following are recommended, but avoided here:
-    # libx11
-    # libxcb
-    # libxtst
+    "elogind"
+
+    "libx11"
+    "libxcb"
+    "libxtst"
+    "libice"
+    "libsm"
 )
 
 b() {
@@ -48,7 +51,6 @@ _cfg=(
     -D jack=disabled
     -D lirc=disabled
     -D openssl=disabled # used for apple support
-    -D systemd=enabled
     -D valgrind=disabled
 )
 

@@ -60,7 +60,27 @@
       "kind": "Required"
     },
     {
-      "name": "systemd",
+      "name": "elogind",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "libxtst",
+      "kind": "Required"
+    },
+    {
+      "name": "libice",
+      "kind": "Required"
+    },
+    {
+      "name": "libsm",
       "kind": "Required"
     }
   ],
