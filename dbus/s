@@ -38,10 +38,6 @@
     {
       "name": "glibc",
       "kind": "Required"
-    },
-    {
-      "name": "systemd",
-      "kind": "Required"
     }
   ],
   "kcfg": []

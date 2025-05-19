@@ -22,7 +22,6 @@ d=(
     "ninja"
     "expat"
     "glibc"
-    "systemd"
 )
 
 b() {
@@ -35,19 +34,22 @@ _cfg=(
     -D xml_docs=disabled
     -D qt_help=disabled
     -D selinux=disabled
+    -D systemd=disabled
     -D tools=true
 )
 
 def
 
+# Install bootscript
+install -vDm754 "$A/dbus-bootscript" "$D/etc/init.d/dbus"
+
 }
 
 posti() {
 
-# TODO: This should be done in `b()`, but I lowkey suck at symlinking
-
-# Make dbus and systemd share the same machine-id file
-ln -sfv /etc/machine-id /var/lib/dbus
+# Fix permissions
+chown -v root:messagebus /usr/libexec/dbus-daemon-launch-helper
+chmod -v      4750       /usr/libexec/dbus-daemon-launch-helper
 
 }
 
