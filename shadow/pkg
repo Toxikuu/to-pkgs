@@ -94,7 +94,7 @@ done
 
 }
 
-posti() {
+i() {
 
 for f in login.access limits; do
     if [ -f "/etc/$f" ]; then
