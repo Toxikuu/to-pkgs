@@ -20,9 +20,8 @@ _cfg=(
     --disable-failure-tokens
 )
 
-cfg
-mk
-mi
+il
+def
 
 }
 
