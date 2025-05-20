@@ -16,21 +16,19 @@ s=(
 b() {
 
 _cfg=(
-    --with-shared
-    --with-cxx-shared
+    --with-{,cxx-}shared
     --with-manpage-format=normal
     --with-pkg-config-libdir=/usr/lib/pkgconfig
 
-    --without-ada
+    # --without-ada # commented out for testing (likely) lfs divergence-related breakage
     --without-debug
     --without-normal
 
     --enable-pc-files
 )
 
-cfg
-mk
-mi
+il
+def
 
 # Fool packages attempting to link to non-wide ncurses
 sed -e 's/^#if.*XOPEN.*$/#if 1/' \
