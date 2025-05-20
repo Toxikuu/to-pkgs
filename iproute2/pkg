@@ -24,8 +24,7 @@ sed -i '/ARPD/d' Makefile
 rm -vf man/man8/arpd.8
 
 mk NETNS_RUN_DIR=/run/netns
-mi SBINDIR=/usr/bin
-
-install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
+mi SBINDIR=/usr/sbin
+il
 
 }
