@@ -53,6 +53,8 @@ nj install
 install -vdm755 /etc/pam.d
 
 cat > /etc/pam.d/other << "EOF"
+# /etc/pam.d/other
+
 auth     required       pam_deny.so
 account  required       pam_deny.so
 password required       pam_deny.so
