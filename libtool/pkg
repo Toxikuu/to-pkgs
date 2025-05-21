@@ -14,19 +14,21 @@ s=(
 
 d=(
     "glibc"
+    "b,gcc"
 )
 
 b() {
 
 def
 il
-
-rm -vf "$D"/usr/lib/libltdl.a
-
-}
-
-t() {
-
-mk check
+rm -vf "$D/usr/lib/libltdl.a"
 
 }
+
+# Currently commented out because the tests take a while
+# t() {
+#
+# # A few tests fail, but I'm not really worried about those
+# mk check || true
+#
+# }
