@@ -26,17 +26,12 @@ b() {
 mi
 install -vdm755 "$D"/etc/ssl/local
 
-mkdir -pv "$D"/usr/bin
-mv    -vf "$D"/usr/{s,}bin/make-ca
-rm    -rf "$D"/usr/sbin
-
 }
 
-posti() {
+i() {
 
 # Create a compatibility symlink wanted by Steam
 ln -sfv /etc/pki/tls/certs/ca-bundle.crt /etc/ssl/certs/ca-certificates.crt
-
-/usr/bin/make-ca -g
+/usr/sbin/make-ca -g
 
 }
