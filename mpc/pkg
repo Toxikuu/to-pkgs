@@ -14,15 +14,15 @@ s=(
 )
 
 d=(
+    "glibc"
     "gmp"
     "mpfr"
 )
 
 b() {
 
-cfg
-mk
-mi
+il
+def
 
 }
 

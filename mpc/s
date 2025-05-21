@@ -21,6 +21,10 @@
   ],
   "dependencies": [
     {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
       "name": "gmp",
       "kind": "Required"
     },
