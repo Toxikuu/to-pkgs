@@ -18,6 +18,11 @@
       "dest": "attr-2.5.2.tar.gz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }
