@@ -20,6 +20,11 @@
       "dest": "pkgconf-2.4.3.tar.xz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }

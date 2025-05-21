@@ -12,6 +12,8 @@ s=(
     "https://distfiles.ariadne.space/$n/$n-$v.tar.xz"
 )
 
+d="glibc"
+
 b() {
 
 il
