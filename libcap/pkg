@@ -13,6 +13,10 @@ s=(
     "https://www.kernel.org/pub/linux/libs/security/linux-privs/${n}2/$n-$v.tar.xz"
 )
 
+d=(
+    "glibc"
+)
+
 b() {
 
 # Prevent the installation of static libraries
