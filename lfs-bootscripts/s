@@ -1,0 +1,29 @@
+{
+  "name": "lfs-bootscripts",
+  "version": "20240825",
+  "about": "SysVinit bootscripts for LFS",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": null,
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/lfs/downloads/development/lfs-bootscripts-20240825.tar.xz",
+      "dest": "lfs-bootscripts-20240825.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "sysvinit",
+      "kind": "Runtime"
+    }
+  ],
+  "kcfg": []
+}
