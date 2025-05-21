@@ -16,7 +16,7 @@ d=(
     "coreutils"
     "glibc"
     "libtasn1"
-    "b,libffi"
+    "libffi"
     "b,meson"
     # gnutls for tests
 )

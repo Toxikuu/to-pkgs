@@ -36,7 +36,7 @@
     },
     {
       "name": "libffi",
-      "kind": "Build"
+      "kind": "Required"
     },
     {
       "name": "meson",
