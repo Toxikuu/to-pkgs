@@ -14,11 +14,11 @@ s=(
 )
 
 d=(
-    "b,libxcrypt"
-    "b,linux-pam"
+    "libxcrypt"
+    "linux-pam"
     "b,libcap"
-    "b,acl"
-    "b,attr"
+    "acl"
+    "attr"
     "glibc"
 )
 
