@@ -38,7 +38,7 @@ _cfg=(
 il
 def
 
-chmod -v 4755 "$D"/usr/bin/unix_chkpwd
+chmod -v 4755 "$D"/usr/sbin/unix_chkpwd
 rm -rf "$D"/usr/lib/systemd
 
 # Install pam configuration files
