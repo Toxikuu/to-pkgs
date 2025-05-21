@@ -21,9 +21,7 @@ d=(
 b() {
 
 CFLAGS+=' -ffat-lto-objects' \
-cfg
-mk
-mi
+def
 
 }
 
