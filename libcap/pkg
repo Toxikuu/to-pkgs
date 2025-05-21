@@ -22,7 +22,7 @@ _cfg=(
     -C libcap
     DYNAMIC=yes
     prefix=/usr
-    sbindir=bin
+    sbindir=sbin
     lib=lib
 )
 
