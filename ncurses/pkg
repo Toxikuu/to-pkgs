@@ -13,6 +13,11 @@ s=(
     "${u%\?*}$n-$v.tar.gz"
 )
 
+d=(
+    "glibc"
+    "gcc"
+)
+
 b() {
 
 _cfg=(
