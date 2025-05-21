@@ -32,11 +32,15 @@
       "kind": "Required"
     },
     {
+      "name": "isl",
+      "kind": "Required"
+    },
+    {
       "name": "zstd",
       "kind": "Required"
     },
     {
-      "name": "isl",
+      "name": "glibc",
       "kind": "Required"
     }
   ],

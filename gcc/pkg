@@ -19,11 +19,14 @@ s=(
 d=(
     "binutils"
     "mpc"
-    "zstd"
     "isl"
+    "zstd"
+    "glibc"
 )
 
 b() {
+
+il
 
 # Change the default directory name for 64-bit libraries to lib
 case $(uname -m) in
@@ -48,9 +51,7 @@ _cfg=(
 mkdir -v build
 cd       build
 
-cfg
-mk
-mi
+def
 
 # Add compatibility symlinks, except a random historical one that puts an
 # executable binary in lib (lol??)
