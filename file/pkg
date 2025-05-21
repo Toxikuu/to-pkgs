@@ -14,6 +14,7 @@ s=(
 )
 
 d=(
+    "glibc"
     "bzip2"
     "xz"
     "zlib"

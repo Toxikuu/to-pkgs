@@ -23,6 +23,10 @@
   ],
   "dependencies": [
     {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
       "name": "bzip2",
       "kind": "Required"
     },
