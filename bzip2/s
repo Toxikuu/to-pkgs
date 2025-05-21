@@ -19,6 +19,11 @@
       "dest": "bzip2-bzip2-1.0.8.tar.gz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }

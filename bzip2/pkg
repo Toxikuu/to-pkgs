@@ -12,6 +12,8 @@ s=(
     "${u%.git}/-/archive/$n-$v/$n-$n-$v.tar.gz"
 )
 
+d="glibc"
+
 b() {
 
 # Fix symlinks and man page destinations
