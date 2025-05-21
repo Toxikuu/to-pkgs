@@ -20,6 +20,11 @@
       "dest": "gmp-6.3.0.tar.xz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }
