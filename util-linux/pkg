@@ -37,7 +37,8 @@ d=(
 b() {
 
 _cfg=(
-    --{s,}bindir=/usr/bin
+    --bindir=/usr/bin
+    --sbindir=/usr/sbin
     --libdir=/usr/lib
     --runstatedir=/run
     --disable-chfn-chsh
@@ -67,9 +68,6 @@ _cfg=(
 
 def
 il Documentation/licenses/COPYING.{BSD*,ISC}
-
-mv -vf "$D/usr/sbin/"* "$D/usr/bin/"
-rm -rf "$D/usr/sbin"
 
 }
 
