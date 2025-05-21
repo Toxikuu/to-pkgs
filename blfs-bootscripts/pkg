@@ -14,7 +14,7 @@ s=(
 b() {
 
 # Just install sources to /usr/src/blfs-bootscripts
-mkdir -pv    "$D/usr/src/$n"
-cp -af {,.}* "$D/usr/src/$n"
+mkdir -pv       "$D/usr/src/$n"
+cp -avf {,.}*   "$D/usr/src/$n"
 
 }
