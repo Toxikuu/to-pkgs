@@ -41,9 +41,7 @@ _cfg=(
     --with-pid-dir=/run
 )
 
-cfg
-mk
-mi
+def
 
 install -vDm755 "contrib/ssh-copy-id" -t "$D/usr/bin/"
 install -vDm755 "contrib/ssh-copy-id.1" -t "$D/usr/share/man/man1/"
