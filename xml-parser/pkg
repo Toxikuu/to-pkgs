@@ -22,11 +22,10 @@ d=(
 
 b() {
 
+il
 perl Makefile.PL
 mk
 mi
-
-install -vDm644 LICENSE -t "$D/usr/share/licenses/$n"
 
 }
 
