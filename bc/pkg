@@ -13,7 +13,7 @@ s=(
 )
 
 d=(
-    "readline"
+    "glibc"
 )
 
 b() {

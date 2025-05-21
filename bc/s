@@ -21,7 +21,7 @@
   ],
   "dependencies": [
     {
-      "name": "readline",
+      "name": "glibc",
       "kind": "Required"
     }
   ],
