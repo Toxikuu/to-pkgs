@@ -22,6 +22,10 @@
   "dependencies": [
     {
       "name": "attr",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
       "kind": "Required"
     }
   ],
