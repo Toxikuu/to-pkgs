@@ -16,6 +16,12 @@ d="glibc"
 
 b() {
 
+_cfg=(
+    --prefix=/usr
+)
+
+export NO_DEFAULT=1 
+
 il
 def
 rm -vf "$D/usr/lib/libz.a"
