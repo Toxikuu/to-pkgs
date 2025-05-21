@@ -1,0 +1,20 @@
+#!/to
+
+n="blfs-bootscripts"
+v="20250225"
+a="Bootscripts for BLFS"
+m="Tox"
+l="MIT"
+t="core utils"
+
+s=(
+    "https://anduin.linuxfromscratch.org/BLFS/$n/$n-$v.tar.xz"
+)
+
+b() {
+
+# Just install sources to /usr/src/blfs-bootscripts
+mkdir -pv    "$D/usr/src/$n"
+cp -af {,.}* "$D/usr/src/$n"
+
+}

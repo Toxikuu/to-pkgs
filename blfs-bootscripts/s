@@ -1,0 +1,24 @@
+{
+  "name": "blfs-bootscripts",
+  "version": "20250225",
+  "about": "Bootscripts for BLFS",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": null,
+  "version_fetch": null,
+  "tags": [
+    "core",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20250225.tar.xz",
+      "dest": "blfs-bootscripts-20250225.tar.xz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
