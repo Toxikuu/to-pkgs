@@ -19,7 +19,7 @@ d=(
 
 b() {
 
-# avoid moving old libraries
+# avoid moving old libraries (kinda pointless but doesn't hurt)
 sed -i '/MV.*old/d' Makefile.in
 sed -i '/{OLDSUFF}/c:' support/shlib-install
 
@@ -35,6 +35,6 @@ _cfg=(
 il
 cfg
 mk SHLIB_LIBS="-lncursesw"
-mi SHLIB_LIBS="-lncursesw"
+mi
 
 }
