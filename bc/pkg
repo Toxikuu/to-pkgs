@@ -18,8 +18,9 @@ d=(
 
 b() {
 
-# --prefix=/usr is needed because the configure script is weird
-CC=gcc cfg --prefix=/usr -G -O3 -r
+il
+# No abstractions because the configure script weird af
+CC=gcc ./configure --prefix=/usr -G -O3 -r
 mk
 mi
 
