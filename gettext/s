@@ -27,7 +27,15 @@
   "dependencies": [
     {
       "name": "acl",
-      "kind": "Runtime"
+      "kind": "Required"
+    },
+    {
+      "name": "attr",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
     },
     {
       "name": "ncurses",

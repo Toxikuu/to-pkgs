@@ -18,7 +18,9 @@ s=(
 )
 
 d=(
-    "r,acl"
+    "acl"
+    "attr"
+    "gcc"
     "ncurses"
     "libunistring"
 )
@@ -26,23 +28,22 @@ d=(
 b() {
 
 _cfg=(
-    --disable-c++
-    --disable-csharp
-    --disable-dependency-tracking
-    --disable-java
-    --disable-native-java
-    --disable-nls
-    --disable-rpath
-    --enable-curses
-    --enable-shared
-    --enable-threads=posix
-    --with-xz
-    --without-bzip2
-    --without-cvs
-    --without-emacs
-    --without-git
-    --without-included-gettext
-    --without-included-libunistring
+    # --disable-c++
+    # --disable-csharp
+    # --disable-dependency-tracking
+    # --disable-java
+    # --disable-native-java
+    # --enable-nls
+    # --enable-curses
+    # --enable-shared
+    # --enable-threads=posix
+    # --with-xz
+    # --without-bzip2
+    # --without-cvs
+    # --without-emacs
+    # --without-git
+    # --without-included-gettext
+    # --without-included-libunistring
 )
 
 cfg
@@ -53,5 +54,11 @@ sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' \
 mk
 mi
 chmod -v 755 "$D"/usr/lib/preloadable_libintl.so
+
+}
+
+t() {
+
+mk check
 
 }
