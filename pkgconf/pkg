@@ -14,9 +14,8 @@ s=(
 
 b() {
 
-cfg
-mk
-mi
+il
+def
 
 # Maintain compatibility with the original pkg-config
 ln -sv pkgconf   "$D"/usr/bin/pkg-config
