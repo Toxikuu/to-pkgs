@@ -40,7 +40,7 @@ _cfg=(
 
 def
 
-# Install bootscript
+# Install the bootscript
 install -vDm754 "$A/dbus-bootscript" "$D/etc/init.d/dbus"
 
 }
@@ -50,6 +50,11 @@ posti() {
 # Fix permissions
 chown -v root:messagebus /usr/libexec/dbus-daemon-launch-helper
 chmod -v      4750       /usr/libexec/dbus-daemon-launch-helper
+
+dbus-uuidgen --ensure
+
+# Make a symlink for elogind
+ln -sfv /var/lib/dbus/machine-id /etc
 
 }
 
