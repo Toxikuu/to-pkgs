@@ -23,19 +23,23 @@
   "dependencies": [
     {
       "name": "libxcrypt",
-      "kind": "Required"
+      "kind": "Build"
     },
     {
       "name": "linux-pam",
-      "kind": "Required"
+      "kind": "Build"
+    },
+    {
+      "name": "libcap",
+      "kind": "Build"
     },
     {
       "name": "acl",
-      "kind": "Required"
+      "kind": "Build"
     },
     {
       "name": "attr",
-      "kind": "Required"
+      "kind": "Build"
     },
     {
       "name": "glibc",
