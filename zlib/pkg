@@ -12,10 +12,18 @@ s=(
     "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
 )
 
+d="glibc"
+
 b() {
 
 il
 def
-rm -vf "$D"/usr/lib/libz.a
+rm -vf "$D/usr/lib/libz.a"
+
+}
+
+t() {
+
+make check
 
 }
