@@ -23,6 +23,7 @@ s=(
 d=(
     "zlib"
     "zstd"
+    "glibc"
 )
 
 b() {
@@ -34,19 +35,13 @@ _cfg=(
     --enable-ld=default
     --enable-plugins
     --enable-shared
-    --enable-threads
     --enable-new-dtags
     --enable-64-bit-bfd
     --enable-default-hash-style=gnu
 
     --disable-werror
-    --disable-gdb{,server}
-    --disable-libdecnumber
-    --disable-readline
-    --disable-sim
 
     # TODO: Consider adding --with-bugurl=github repo issues
-    --with-lib-path=/usr/lib
     --with-system-zlib
 )
 

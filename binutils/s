@@ -32,6 +32,10 @@
     {
       "name": "zstd",
       "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
     }
   ],
   "kcfg": []
