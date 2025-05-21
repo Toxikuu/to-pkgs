@@ -13,6 +13,10 @@ s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
 )
 
+d=(
+    "glibc"
+)
+
 b() {
 
 il
@@ -22,7 +26,7 @@ def
 
 t() {
 
-# m4 likes to exit as if something failed despite all tests succeeding
+# m4 runs a single windows test and fails
 make check || true
 
 }

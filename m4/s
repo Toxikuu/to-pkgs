@@ -18,6 +18,11 @@
       "dest": "m4-1.4.20.tar.xz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }
