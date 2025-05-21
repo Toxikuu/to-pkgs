@@ -50,6 +50,7 @@ _cfg=(
     --disable-traceroute
     --disable-dnsdomainname
 
+    # Enable the things I actually want
     --enable-hostname
     --enable-year2038
     --enable-threads=posix
