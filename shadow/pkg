@@ -37,32 +37,27 @@ sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
     -i etc/login.defs
 
 _cfg=(
-    --{exec-,}prefix=/usr
-    --bindir=/usr/bin
-    --sbindir=/usr/sbin
-
-    --without-libbsd    # beyond scope
-    --without-selinux   # beyond scope
-    --without-nscd      # nscd is dead
-
+    --sysconfdir=/etc
+    --disable-static
+    --without-libbsd
     --with-{b,yes}crypt
-    --with-su
     --with-libpam
-    --with-group-name-max-length=32 # match max user length
+    --with-group-name-max-length=32
+
+    --without-selinux
+    --without-nscd
+    --with-su
 )
 
 touch /usr/bin/passwd # precaution
 cfg
-sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+sed 's/ -shared / -Wl,-O1,--as-needed\0/g' -i libtool
 
 mk
 mi exec_prefix=/usr pamdir=
 
 # Install man pages
 mk DESTDIR="$D" -C man install-man
-
-# Don't use shadow's /etc/pam.d files since we create our own
-rm -vf "$D/etc/pam.d/"* || true
 
 # Install configuration files
 install -vDm644 "$D"/etc/login.defs "$D"/etc/login.defs.orig
