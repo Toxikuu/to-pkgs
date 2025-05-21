@@ -23,6 +23,7 @@ _cfg=(
     --enable-fat
 )
 
+il
 cfg
 
 # Avoid overlinking
