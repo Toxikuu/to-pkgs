@@ -13,6 +13,7 @@ s=(
 )
 
 d=(
+    "glibc"
     "b,which"
     "b,gperf"
 )
@@ -22,9 +23,8 @@ b() {
 # NOTE: If Python bindings are build with --enable-python and cython, static
 # libraries must be enabled per BLFS
 
-cfg
-mk
-mi
+il
+def
 
 }
 
