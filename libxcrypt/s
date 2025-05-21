@@ -20,6 +20,11 @@
       "dest": "libxcrypt-4.4.38.tar.xz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }

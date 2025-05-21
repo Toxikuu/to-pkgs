@@ -12,6 +12,8 @@ s=(
     "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
 )
 
+d="glibc"
+
 b() {
 
 _cfg=(
