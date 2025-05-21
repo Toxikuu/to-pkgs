@@ -24,9 +24,9 @@ d=(
 
 b() {
 
+il
 mk prefix=/usr
 mi prefix=/usr
-
 rm -vf "$D"/usr/lib/libzstd.a
 
 }
