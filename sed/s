@@ -23,6 +23,10 @@
     {
       "name": "acl",
       "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
     }
   ],
   "kcfg": []

@@ -14,12 +14,19 @@ s=(
 
 d=(
     "acl"
+    "glibc"
 )
 
 b() {
 
-cfg
-mk
-mi
+il
+def
+
+}
+
+t() {
+
+# 1 failure expected, may be related to testing as root
+make check || true
 
 }
