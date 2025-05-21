@@ -22,6 +22,10 @@
   ],
   "dependencies": [
     {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
       "name": "ncurses",
       "kind": "Required"
     }
