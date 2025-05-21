@@ -28,10 +28,7 @@ _cfg=(
     --with-regex=pcre2
 )
 
-cfg
-mk
-mi
-
-install -vDm644 LICENSE -t "$D/usr/share/licenses/$n"
+def
+il
 
 }
