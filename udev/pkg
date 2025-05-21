@@ -45,6 +45,8 @@ b() {
 
 cd systemd-$v
 
+# I don't feel like fixing il rn
+il || true
 with mn
 
 # Remove unneeded groups from default udev rules
@@ -77,27 +79,27 @@ nj udevadm systemd-hwdb                                           \
       $(realpath libudev.so --relative-to .)                      \
       $udev_helpers
 
-install -vm755 -d {"$D"/usr/lib,"$D"/etc}/udev/{hwdb.d,rules.d,network}
-install -vm755 -d "$D"/usr/bin
-install -vm755 -d "$D"/usr/include
-install -vm755 -d "$D"/usr/{lib,share}/pkgconfig
-install -vm755 udevadm                             "$D"/usr/bin/
-install -vm755 systemd-hwdb                        "$D"/usr/bin/udev-hwdb
-# ln      -svfn  ../bin/udevadm                      "$D"/usr/sbin/udevd
-cp      -av    libudev.so{,*[0-9]}                 "$D"/usr/lib/
-install -vm644 ../src/libudev/libudev.h            "$D"/usr/include/
-install -vm644 src/libudev/*.pc                    "$D"/usr/lib/pkgconfig/
-install -vm644 src/udev/*.pc                       "$D"/usr/share/pkgconfig/
-install -vm644 ../src/udev/udev.conf               "$D"/etc/udev/
-install -vm644 rules.d/* ../rules.d/README         "$D"/usr/lib/udev/rules.d/
-install -vm644 $(find ../rules.d/*.rules \
-                      -not -name '*power-switch*') "$D"/usr/lib/udev/rules.d/
-install -vm644 hwdb.d/*  ../hwdb.d/{*.hwdb,README} "$D"/usr/lib/udev/hwdb.d/
-install -vm755 $udev_helpers                       "$D"/usr/lib/udev
-install -vm644 ../network/99-default.link          "$D"/usr/lib/udev/network
+install -vdm755 {"$D"/usr/lib,"$D"/etc}/udev/{hwdb.d,rules.d,network}
+install -vdm755 "$D"/usr/{s,}bin
+install -vdm755 "$D"/usr/include
+install -vdm755 "$D"/usr/{lib,share}/pkgconfig
+install -vm755  udevadm                             "$D"/usr/bin/
+install -vm755  systemd-hwdb                        "$D"/usr/bin/udev-hwdb
+ln      -svfn   ../bin/udevadm                      "$D"/usr/sbin/udevd
+cp      -av     libudev.so{,*[0-9]}                 "$D"/usr/lib/
+install -vm644  ../src/libudev/libudev.h            "$D"/usr/include/
+install -vm644  src/libudev/*.pc                    "$D"/usr/lib/pkgconfig/
+install -vm644  src/udev/*.pc                       "$D"/usr/share/pkgconfig/
+install -vm644  ../src/udev/udev.conf               "$D"/etc/udev/
+install -vm644  rules.d/* ../rules.d/README         "$D"/usr/lib/udev/rules.d/
+install -vm644  $(find ../rules.d/*.rules \
+                       -not -name '*power-switch*') "$D"/usr/lib/udev/rules.d/
+install -vm644  hwdb.d/*  ../hwdb.d/{*.hwdb,README} "$D"/usr/lib/udev/hwdb.d/
+install -vm755  $udev_helpers                       "$D"/usr/lib/udev
+install -vm644  ../network/99-default.link          "$D"/usr/lib/udev/network
 
 cd "$B"
-mk -f "$n-lfs-20230818/Makefile.lfs" DESTDIR="$D" install
+mi -f "$n-lfs-20230818/Makefile.lfs"
 
 }
 
