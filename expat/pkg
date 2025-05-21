@@ -11,7 +11,7 @@ u="https://github.com/lib$n/lib$n.git"
 vf="gr | grep '^R_' | cut -d_ -f 2- | sed 's,_,.,g'"
 
 s=(
-    "${u%.git}/releases/download/R_${v//./_}/expat-$v.tar.xz"
+    "${u%.git}/releases/download/R_${v//./_}/$n-$v.tar.xz"
 )
 
 d=(
@@ -20,9 +20,8 @@ d=(
 
 b() {
 
-cfg
-mk
-mi
+il
+def
 
 }
 
