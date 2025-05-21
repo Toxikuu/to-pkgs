@@ -25,6 +25,10 @@
     {
       "name": "gmp",
       "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
     }
   ],
   "kcfg": []

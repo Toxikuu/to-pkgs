@@ -18,6 +18,7 @@ s=(
 
 d=(
     "gmp"
+    "glibc"
 )
 
 b() {
@@ -26,9 +27,7 @@ _cfg=(
     --enable-thread-safe
 )
 
-cfg
-mk
-mi
+def
 
 }
 
