@@ -23,7 +23,7 @@
   "dependencies": [
     {
       "name": "ncurses",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "git",

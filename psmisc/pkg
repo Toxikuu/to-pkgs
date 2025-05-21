@@ -8,12 +8,10 @@ l="GPL"
 t="core utils cli"
 u="https://gitlab.com/$n/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "r,ncurses"
+    "ncurses"
     "b,git"
 )
 
