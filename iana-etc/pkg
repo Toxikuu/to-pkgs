@@ -15,6 +15,6 @@ s=(
 
 b() {
 
-install -vDm644 -t "$D"/etc services protocols
+install -vDm644 services protocols -t "$D/etc/"
 
 }
