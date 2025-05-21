@@ -22,6 +22,7 @@ d=(
     "ninja"
     "expat"
     "glibc"
+    "blfs-bootscripts"
 )
 
 b() {
@@ -41,11 +42,14 @@ _cfg=(
 def
 
 # Install the bootscript
-install -vDm754 "$A/dbus-bootscript" "$D/etc/init.d/dbus"
+(
+    cd /usr/src/blfs-bootscripts
+    make DESTDIR="$D" install-dbus
+)
 
 }
 
-posti() {
+i() {
 
 # Fix permissions
 chown -v root:messagebus /usr/libexec/dbus-daemon-launch-helper
