@@ -19,6 +19,7 @@ s=(
 
 b() {
 
+il
 pat ../$n-$v-fhs-1.patch
 
 mkdir -pv build
@@ -41,8 +42,8 @@ _cfg=(
 {
     echo "slibdir=/usr/lib"
     echo "rtlddir=/usr/lib"
-    echo "sbindir=/usr/bin"
-    echo "rootsbindir=/usr/bin"
+    echo "sbindir=/usr/sbin"
+    echo "rootsbindir=/usr/sbin"
 } >> configparms
 
 cfg
@@ -65,7 +66,7 @@ popd
 install -vDm644 "$A/nsswitch.conf" -t "$D/etc/"
 install -vdm755 "$D"/etc/ld.so.conf.d
 
-# Avoid overwriting the linker cache
+# Don't package the linker cache
 rm -vf "$D"/etc/ld.so.cache
 
 }
