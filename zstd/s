@@ -26,6 +26,10 @@
   ],
   "dependencies": [
     {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
       "name": "lz4",
       "kind": "Required"
     },

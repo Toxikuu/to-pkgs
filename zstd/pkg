@@ -17,6 +17,7 @@ s=(
 )
 
 d=(
+    "glibc"
     "lz4"
     "xz"
     "zlib"
