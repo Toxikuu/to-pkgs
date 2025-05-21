@@ -12,6 +12,10 @@ s=(
     "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
 )
 
+d=(
+    "glibc"
+)
+
 b() {
 
 mk BUILD_STATIC=no PREFIX=/usr
