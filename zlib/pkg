@@ -14,10 +14,8 @@ s=(
 
 b() {
 
-./configure --prefix=/usr
-mk
-mi
-
+il
+def
 rm -vf "$D"/usr/lib/libz.a
 
 }
