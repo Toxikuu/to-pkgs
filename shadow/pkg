@@ -36,7 +36,8 @@ sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
 
 _cfg=(
     --{exec-,}prefix=/usr
-    --{s,}bindir=/usr/bin
+    --bindir=/usr/bin
+    --sbindir=/usr/sbin
 
     --without-libbsd    # beyond scope
     --without-selinux   # beyond scope
@@ -90,10 +91,6 @@ do
     install -vDm644 "$D/etc/pam.d/chage" "$D/etc/pam.d/$PROGRAM"
     sed -i "s/chage/$PROGRAM/" "$D/etc/pam.d/$PROGRAM"
 done
-
-# Shadow fucking ignores --sbindir ???
-mv -vf "$D/usr/sbin"/* "$D/usr/bin/"
-rmdir -v "$D/usr/sbin"
 
 }
 
