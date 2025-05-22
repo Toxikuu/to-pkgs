@@ -10,6 +10,7 @@ u="https://gitlab.com/$n/$n.git"
 vf="gr | grep -v '[a-Z]'"
 
 s=(
+    # Used instead of $u because I don't have asciidoctor
     "https://$n-project.org/releases/$n-$v.tar.gz"
 )
 
