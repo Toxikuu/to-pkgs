@@ -1,0 +1,30 @@
+{
+  "name": "traceroute",
+  "version": "2.1.6",
+  "about": "Tool to trace the routes packets take over a network",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://sourceforge.net/projects/traceroute/files/",
+  "version_fetch": "curl -s 'https://sourceforge.net/projects/traceroute/files/' | grep '/latest/download' | grep -o 'traceroute-.\\+/' | cut -d- -f2 | cut -d/ -f1",
+  "tags": [
+    "net",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://sourceforge.net/projects/traceroute/files/traceroute/traceroute-2.1.6/traceroute-2.1.6.tar.gz/download",
+      "dest": "traceroute-2.1.6.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

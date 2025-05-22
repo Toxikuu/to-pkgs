@@ -1,0 +1,39 @@
+#!/to
+
+n="traceroute"
+v="2.1.6"
+a="Tool to trace the routes packets take over a network"
+m="Tox"
+l="GPL-2.0-only"
+t="net utils cli"
+# The trailing / is needed because sourceforge
+u="https://sourceforge.net/projects/$n/files/"
+vf="curl -s '$u' | grep '/latest/download' | grep -o '$n-.\+/' | cut -d- -f2 | cut -d/ -f1"
+
+s=(
+    "$u$n/$n-$v/$n-$v.tar.gz/download -> $n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+pat "$A/reproducible-build.patch"
+
+mk
+mi prefix=/usr
+
+ln -sfv $n "$D/usr/bin/${n}6"
+ln -sfv $n.8 "$D/usr/share/man/man8/${n}6.8"
+
+}
+
+i() {
+
+# Remove the man page from inetutils's traceroute. That traceroute is no longer
+# installed, but this command doesn't really hurt, so I'm keeping it for now.
+rm -vf /usr/share/man/man1/$n.1
+
+}
