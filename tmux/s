@@ -1,6 +1,6 @@
 {
   "name": "tmux",
-  "version": "faf2a448904f4865386319fa11a30ff54d5843f8",
+  "version": "ff73c9554774817783bd09663e82c5c12a30c188",
   "about": "Terminal multiplexer",
   "maintainer": "Tox",
   "licenses": [
