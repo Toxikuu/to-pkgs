@@ -21,7 +21,6 @@ d=(
 b() {
 
 gco
-with pip
 
 # Prefer /usr/lib to /lib
 sed 's|/lib|/usr/lib|' -i setup.py
@@ -29,8 +28,7 @@ sed 's|/lib|/usr/lib|' -i setup.py
 # Don't force-enable tcp selective acknowledgments
 sed -i -e '/net\/ipv4\/tcp_sack/s/^/#/g' conf/sysctl.conf
 
-pipb
-pipi
+python setup.py install --root="$D"
 
 rm -rvf "$D/usr/share/$n/messages"
 install -vDm644 shell-completion/bash "$D/usr/share/bash-completion/completions/$n"
