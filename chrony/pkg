@@ -1,0 +1,48 @@
+#!/to
+
+n="chrony"
+v="4.6.1"
+a="Advanced NTP client and server"
+m="Tox"
+l="GPL-2.0-or-later"
+t="utils cli"
+u="https://gitlab.com/$n/$n.git"
+vf="gr | grep -v '[a-Z]'"
+
+s=(
+    "https://$n-project.org/releases/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+_cfg=(
+    --without-editline
+    --without-nettle
+    --without-gnutls
+    --without-nss
+    --without-tomcrypt
+    --without-libcap
+    --disable-nts
+    --disable-readline
+    --disable-sechash
+    --disable-cmdmon
+    --disable-refclock
+    --disable-phc
+    --disable-pps
+    --disable-rtc
+    --disable-privdrop
+    --disable-asyncdns
+    --disable-timestamping
+
+    --enable-ipv6
+)
+
+il
+def
+install -vDm644 "$A"/chrony.conf "$D"/etc/chrony.conf
+
+}

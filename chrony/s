@@ -1,0 +1,29 @@
+{
+  "name": "chrony",
+  "version": "4.6.1",
+  "about": "Advanced NTP client and server",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://gitlab.com/chrony/chrony.git",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://chrony-project.org/releases/chrony-4.6.1.tar.gz",
+      "dest": "chrony-4.6.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
