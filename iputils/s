@@ -1,7 +1,7 @@
 {
   "name": "iputils",
   "version": "3e53eef5bff5e87804ba2f27f8d82d8f55b68d16",
-  "about": "The ping networking utility",
+  "about": "The 'ping' networking utility",
   "maintainer": "Tox",
   "licenses": [
     "BSD-3-Clause",
