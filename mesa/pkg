@@ -47,6 +47,8 @@ b() {
 with mn
 
 # tspmo
+# TODO: Write ild (install licenses directory, or maybe make il a proper script
+# that takes arguments :shrug:)
 install -vdm755   "$D/usr/share/licenses/$n"
 cp -av licenses/* "$D/usr/share/licenses/$n"
 
