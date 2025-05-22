@@ -1,7 +1,7 @@
 #!/to
 
 n="libdecor"
-v="32ac12abeb3c03a984b2124454e34e852c81fe1a"
+v="42f7a53aaaa4a06dddb0c1109d6c582bab60bfb0"
 a="Wayland client-side decorations library"
 m="Tox"
 l="MIT"
@@ -15,6 +15,7 @@ d=(
     "b,meson"
     "b,ninja"
     "b,wayland-protocols"
+    "libxrandr"
     "gtk3"
     "wayland"
     "dbus"

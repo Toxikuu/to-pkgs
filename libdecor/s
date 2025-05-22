@@ -1,6 +1,6 @@
 {
   "name": "libdecor",
-  "version": "32ac12abeb3c03a984b2124454e34e852c81fe1a",
+  "version": "42f7a53aaaa4a06dddb0c1109d6c582bab60bfb0",
   "about": "Wayland client-side decorations library",
   "maintainer": "Tox",
   "licenses": [
@@ -34,6 +34,10 @@
     {
       "name": "wayland-protocols",
       "kind": "Build"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
     },
     {
       "name": "gtk3",
