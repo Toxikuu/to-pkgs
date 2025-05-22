@@ -1,5 +1,8 @@
 #!/to
 
+# WARN: The only program from this I actually use is ifconfig, and that's
+# deprecated in favor of iputils's ip anyway. This package may soon be dropped.
+
 n="inetutils"
 v="2.6"
 a="Basic networking programs"
@@ -22,8 +25,6 @@ d=(
 
 b() {
 
-il
-
 # Avoid a gcc 14.1+ build issue
 sed -i 's/def HAVE_TERMCAP_TGETENT/ 1/' telnet/telnet.c
 
@@ -32,7 +33,9 @@ _cfg=(
 
     --disable-servers
     --disable-logger
-    --disable-whois # a better one is provided by whois
+    --disable-whois      # a better one is provided by whois
+    --disable-traceroute # a better one is provided by traceroute
+    --disable-hostname   # just use the coreutils one
 
     # Disable dated and unused protocols
     --disable-r{cp,exec,login,sh}
@@ -47,24 +50,32 @@ _cfg=(
     --disable-libls
 
     # Disable commands I don't need
-    --disable-traceroute
     --disable-dnsdomainname
 
     # Enable the things I actually want
-    --enable-hostname
     --enable-year2038
     --enable-threads=posix
 
     # Explicitly omit support for stuff
     --without-wrap
     --without-pam
-    --without-idn
+    --without-idn # TODO: Consider supporting idn
 
     # Add my signature
     # --with-packager Tox
     # TODO: Add --with-packages-bug-reports
 )
 
+il
 def
+
+mkdir -pv "$D/usr/sbin"
+mv -vf "$D"/usr/{,s}bin/ifconfig
+
+}
+
+t() {
+
+mk check
 
 }
