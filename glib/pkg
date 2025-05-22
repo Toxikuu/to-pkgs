@@ -1,7 +1,7 @@
 #!/to
 
 n="glib"
-v="2.84.1"
+v="2.85.0" # Even minor parts mean stable
 a="Low level core library"
 m="Tox"
 l="LGPL-2.1-or-later"
@@ -9,7 +9,7 @@ t="core lib"
 u="https://github.com/GNOME/$n.git"
 vf="gr | grep '^[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+$'"
 
-gobjn="gobject-introspection"
+gobjn="gobject-introspection" # TODO: See if I can split gobject-introspection into its own package potentially
 gobjv="1.84.0"
 
 s=(
@@ -47,7 +47,7 @@ with mn
 pat "$S/$n-skip_warnings-1.patch"
 
 # NOTE: Headers should not need to be moved, and no conflicts should occur
-# because of build isolation.
+# because we are building in a chroot.
 
 # **First pass**
 # GLib is installed regularly in the chroot
@@ -78,10 +78,11 @@ ni
 
 }
 
-posti() {
+# TODO: Write a proper hook system to allow me to actually install runtime
+# dependencies. I'm not gonna bother writing the below as a message.
+i() {
 
 # Install runtime dependencies
-# TODO: Write `msg()`
-echo "You probably want to also install shared-mime-info and desktop-file-utils"
+echo "You probably want to also install shared-mime-info and desktop-file-utils" >&2
 
 }
