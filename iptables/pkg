@@ -1,0 +1,45 @@
+#!/to
+
+n="iptables"
+v="1.8.11"
+a="Utility to configure the Linux kernel's packet filtering ruleset"
+m="Tox"
+l="LICENSE"
+t="net utils cli sec"
+u="https://git.netfilter.org/$n"
+
+s=(
+    "https://www.netfilter.org/projects/$n/files/$n-$v.tar.xz"
+)
+
+d=(
+    "bash" # full version of bash out of an abundance of caution*
+)
+
+kcfg=(
+    "net = y"
+    "netfilter = y"
+    "netfilter_advanced = y"
+    "nf_conntrack = y/m"
+    "netfilter_xtables = y/m"
+    "netfilter_xt_target_log = y/m"
+    "ip_nf_iptables = y/m"
+)
+
+b() {
+
+_cfg=(
+    --disable-libipq
+    --disable-devel
+    --disable-nftables
+    --disable-nfsynproxy
+    --disable-bpf-compiler
+)
+
+il
+def
+
+}
+
+# *The build environment uses a stage 2 stage file where bash is in a weird
+# cross-copmiled state and doesn't quite conform to expected functionality.

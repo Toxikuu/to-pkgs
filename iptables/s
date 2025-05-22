@@ -1,0 +1,39 @@
+{
+  "name": "iptables",
+  "version": "1.8.11",
+  "about": "Utility to configure the Linux kernel's packet filtering ruleset",
+  "maintainer": "Tox",
+  "licenses": [
+    "LICENSE"
+  ],
+  "upstream": "https://git.netfilter.org/iptables",
+  "version_fetch": null,
+  "tags": [
+    "net",
+    "utils",
+    "cli",
+    "sec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.netfilter.org/projects/iptables/files/iptables-1.8.11.tar.xz",
+      "dest": "iptables-1.8.11.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bash",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": [
+    "net = y",
+    "netfilter = y",
+    "netfilter_advanced = y",
+    "nf_conntrack = y/m",
+    "netfilter_xtables = y/m",
+    "netfilter_xt_target_log = y/m",
+    "ip_nf_iptables = y/m"
+  ]
+}
