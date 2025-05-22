@@ -1,0 +1,39 @@
+{
+  "name": "ufw",
+  "version": "bdb71dc636c918421d50cac647353b2be08202a0",
+  "about": "Uncomplicated Firewall",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://git.launchpad.net/ufw",
+  "version_fetch": null,
+  "tags": [
+    "net",
+    "sec",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.launchpad.net/ufw",
+      "dest": "ufw"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    },
+    {
+      "name": "iptables",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
