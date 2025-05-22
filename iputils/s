@@ -1,0 +1,47 @@
+{
+  "name": "iputils",
+  "version": "3e53eef5bff5e87804ba2f27f8d82d8f55b68d16",
+  "about": "Networking utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause",
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/iputils/iputils.git",
+  "version_fetch": null,
+  "tags": [
+    "net",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/iputils/iputils.git",
+      "dest": "iputils"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "libidn2",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

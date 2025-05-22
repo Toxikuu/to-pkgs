@@ -1,0 +1,49 @@
+#!/to
+
+n="iputils"
+v="3e53eef5bff5e87804ba2f27f8d82d8f55b68d16"
+a="Networking utilities"
+m="Tox"
+l=("BSD-3-Clause" "GPL-2.0-or-later")
+t="net utils cli"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,meson"
+    "b,ninja"
+    # "b,iproute2"
+    "libcap"
+    "libidn2"
+)
+
+b() {
+
+gco
+with mn
+
+_cfg=(
+    -D USE_CAP=true
+    -D USE_IDN=true
+
+    -D BUILD_PING=true
+
+    -D BUILD_ARPING=false
+    -D BUILD_CLOCKDIFF=false
+    -D BUILD_TRACEPATH=false
+    -D BUILD_MANS=false
+    -D BUILD_HTML_MANS=false
+
+    -D INSTALL_SYSTEMD_UNITS=false
+    -D USE_GETTEXT=false
+    -D SKIP_TESTS=true
+)
+
+il
+def
+
+}
