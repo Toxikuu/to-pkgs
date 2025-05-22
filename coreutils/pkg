@@ -27,14 +27,12 @@ b() {
 
 _cfg=(
     --with-openssl
-    --enable-no-install-program=hostname,kill,uptime,pinky,vdir
+    --enable-no-install-program=kill,uptime,pinky,vdir
+    --enable-install-program=hostname
 )
 
-FORCE_UNSAFE_CONFIGURE=1 \
-cfg
-
-mk
-mi
+export FORCE_UNSAFE_CONFIGURE=1
+def
 
 # Move a misplaced manpage
 mkdir -pv "$D"/usr/share/man/man8
