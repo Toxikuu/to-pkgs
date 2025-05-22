@@ -1,7 +1,7 @@
 #!/to
 
 n="setuptools"
-v="80.7.1"
+v="80.8.0"
 a="Tool for managing Python packages"
 m="Tox"
 l="MIT"
@@ -25,6 +25,7 @@ with pip
 
 pip3 install setuptools
 
+il
 pipb
 pipi
 

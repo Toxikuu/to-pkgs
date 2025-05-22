@@ -1,6 +1,6 @@
 {
   "name": "setuptools",
-  "version": "80.7.1",
+  "version": "80.8.0",
   "about": "Tool for managing Python packages",
   "maintainer": "Tox",
   "licenses": [
@@ -17,8 +17,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/pypa/setuptools/archive/refs/tags/v80.7.1.tar.gz",
-      "dest": "v80.7.1.tar.gz"
+      "url": "https://github.com/pypa/setuptools/archive/refs/tags/v80.8.0.tar.gz",
+      "dest": "v80.8.0.tar.gz"
     }
   ],
   "dependencies": [
