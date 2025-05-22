@@ -1,0 +1,34 @@
+{
+  "name": "whois",
+  "version": "5.6.1",
+  "about": "Intelligent tool to query domain name information",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0"
+  ],
+  "upstream": "https://github.com/rfc1036/whois.git",
+  "version_fetch": null,
+  "tags": [
+    "net",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/rfc1036/whois/archive/refs/tags/v5.6.1.tar.gz",
+      "dest": "v5.6.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libidn2",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcrypt",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
