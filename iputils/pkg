@@ -2,7 +2,7 @@
 
 n="iputils"
 v="3e53eef5bff5e87804ba2f27f8d82d8f55b68d16"
-a="Networking utilities"
+a="The ping networking utility"
 m="Tox"
 l=("BSD-3-Clause" "GPL-2.0-or-later")
 t="net utils cli"
