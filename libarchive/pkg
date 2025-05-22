@@ -1,7 +1,7 @@
 #!/to
 
 n="libarchive"
-v="3.7.9"
+v="3.8.0"
 a="Multi-format archive and compression library"
 m="Tox"
 l="BSD-2-Clause"
