@@ -1,0 +1,30 @@
+#!/to
+
+n="libnl"
+v="f278e5921498fc635bd9534a3f24979bb1b2849d"
+a="Netlink Library Suite"
+m="Tox"
+l="LGPL-2.1"
+t="lib net"
+u="https://github.com/thom311/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "glibc"
+    "b,git"
+)
+
+b() {
+
+gco
+./autogen.sh
+
+il
+def
+
+}
+
+# Running tests requires a lot of kernel options

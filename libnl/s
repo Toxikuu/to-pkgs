@@ -1,0 +1,33 @@
+{
+  "name": "libnl",
+  "version": "f278e5921498fc635bd9534a3f24979bb1b2849d",
+  "about": "Netlink Library Suite",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1"
+  ],
+  "upstream": "https://github.com/thom311/libnl.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/thom311/libnl.git",
+      "dest": "libnl"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
