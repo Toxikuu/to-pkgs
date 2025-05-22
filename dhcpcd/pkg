@@ -1,0 +1,42 @@
+#!/to
+
+n="dhcpcd"
+v="10.2.3"
+a="Fully featured lightweight DHCP client"
+m="Tox"
+l="BSD-2-Clause"
+t="utils net cli"
+u="https://github.com/NetworkConfiguration/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "openssl"
+)
+
+b() {
+
+install -vdm700 "$D/var/db/$n"
+
+_cfg=(
+    --libexecdir="/usr/lib/$n"
+    --dbdir="/var/db/$n"
+    --runstatedir=/run
+    --disable-privsep
+)
+
+il
+def
+
+# NOTE: While there is a BLFS service for dhcpcd, I don't use it.
+
+}
+
+t() {
+
+mk test
+
+}

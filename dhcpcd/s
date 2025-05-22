@@ -1,0 +1,34 @@
+{
+  "name": "dhcpcd",
+  "version": "10.2.3",
+  "about": "Fully featured lightweight DHCP client",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause"
+  ],
+  "upstream": "https://github.com/NetworkConfiguration/dhcpcd.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "net",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.3/dhcpcd-10.2.3.tar.xz",
+      "dest": "dhcpcd-10.2.3.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
