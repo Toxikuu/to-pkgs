@@ -1,7 +1,7 @@
 #!/to
 
 n="libunwind"
-v="1.8.1"
+v="1.8.2"
 a="Library to determine and manipulate a program's call-chain"
 m="Tox"
 l="MIT"
@@ -10,7 +10,6 @@ u="https://github.com/$n/$n.git"
 
 s=(
     "$u"
-    "https://glfs-book.github.io/glfs/patches/$n/$n-$v-fix_malloc.patch"
 )
 
 d=(
@@ -22,15 +21,18 @@ d=(
 
 b() {
 
-# The v1.8.1 tag isn't included in the shallow clone, so it must be fetched
-git fetch origin tag v1.8.1
+# The version tag isn't included in the shallow clone, so it must be fetched
+# TODO: Decide on a better way to handle this
+git fetch origin tag v$v
 gco v$v
 
-pat "../$n-$v-fix_malloc.patch"
-autoreconf -fiv
-
-def
 il
+autoreconf -fiv
+cfg
+sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+mk
+mi
 
 }
 

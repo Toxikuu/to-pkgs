@@ -1,6 +1,6 @@
 {
   "name": "libunwind",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "about": "Library to determine and manipulate a program's call-chain",
   "maintainer": "Tox",
   "licenses": [
@@ -16,11 +16,6 @@
       "kind": "Git",
       "url": "https://github.com/libunwind/libunwind.git",
       "dest": "libunwind"
-    },
-    {
-      "kind": "Download",
-      "url": "https://glfs-book.github.io/glfs/patches/libunwind/libunwind-1.8.1-fix_malloc.patch",
-      "dest": "libunwind-1.8.1-fix_malloc.patch"
     }
   ],
   "dependencies": [
