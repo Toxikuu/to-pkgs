@@ -7,8 +7,7 @@ m="Tox"
 l="GPL-3.0-or-later"
 t="shell core"
 u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
-# TODO: Make a more stable / less fragile vf
-vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|\.sig|patches' | head -n1 | cut -d- -f2 | cut -dt -f1 | sed 's,.$,,'"
+vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|\.sig|patches' | head -n1 | grep -Eo '$n-[0-9]+\.[0-9]+.*\.tar\..z\"' | sed 's,.tar,-,' | cut -d- -f2"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"

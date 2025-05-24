@@ -7,7 +7,7 @@
     "GPL-3.0-or-later"
   ],
   "upstream": "https://ftp.gnu.org/gnu/bash/?C=M;O=D",
-  "version_fetch": "curl -s 'https://ftp.gnu.org/gnu/bash/?C=M;O=D' | grep 'bash-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|\\.sig|patches' | head -n1 | cut -d- -f2 | cut -dt -f1 | sed 's,.$,,'",
+  "version_fetch": "curl -s 'https://ftp.gnu.org/gnu/bash/?C=M;O=D' | grep 'bash-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|\\.sig|patches' | head -n1 | grep -Eo 'bash-[0-9]+\\.[0-9]+.*\\.tar\\..z\"' | sed 's,.tar,-,' | cut -d- -f2",
   "tags": [
     "shell",
     "core"
