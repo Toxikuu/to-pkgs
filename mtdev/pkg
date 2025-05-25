@@ -1,0 +1,23 @@
+#!/to
+
+n="mtdev"
+v="1.1.7"
+a="Multitouch Protocol Translation Library"
+m="Tox"
+l="MIT"
+t="lib input xorg"
+u="http://bitmath.org/git/$n.git"
+
+s=(
+    "https://bitmath.org/code/$n/$n-$v.tar.bz2"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+def
+
+}
