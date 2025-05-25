@@ -1,0 +1,27 @@
+#!/to
+
+n="xcb-util-cursor"
+v="0.1.5"
+a="XCB cursor library"
+m="Tox"
+l="MIT"
+t="lib xorg utils"
+u="https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor.git"
+vf="gr | grep -Ei '^$n-.+[0-9]$' | sort -V"
+
+d=(
+    "glibc"
+    "libxcb"
+    "xcb-util-image"
+    "xcb-util-renderutil"
+    "b,xorgproto"
+)
+
+s="https://xcb.freedesktop.org/dist/$n-$v.tar.xz"
+
+b() {
+
+il
+def
+
+}

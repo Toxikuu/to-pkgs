@@ -1,0 +1,46 @@
+{
+  "name": "xcb-util-cursor",
+  "version": "0.1.5",
+  "about": "XCB cursor library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor.git",
+  "version_fetch": "gr | grep -Ei '^xcb-util-cursor-.+[0-9]$' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.5.tar.xz",
+      "dest": "xcb-util-cursor-0.1.5.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-image",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-renderutil",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
