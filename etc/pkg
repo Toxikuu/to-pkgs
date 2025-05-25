@@ -21,6 +21,8 @@ b() {
 gco
 
 il
+rm -rf .git*
+
 cd ..
 mkdir -pv "$D/usr/src/"
 cp -avf {,"$D/usr/src/"}etc
