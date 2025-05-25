@@ -1,0 +1,29 @@
+#!/to
+
+n="xcb-util-image"
+v="0.4.1"
+a="XCB port of Xlib's XImage and XShmImage"
+m="Tox"
+l="X11"
+t="lib img xorg utils"
+u="https://gitlab.freedesktop.org/xorg/lib/libxcb-image.git"
+vf="gr | grep -Ei '^$n-.+[0-9]$' | sort -V"
+
+s=(
+    "https://xcb.freedesktop.org/dist/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "libxcb"
+    "xcb-util"
+    "b,util-macros"
+    "b,xorgproto"
+)
+
+b() {
+
+il
+def
+
+}

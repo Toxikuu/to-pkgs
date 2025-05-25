@@ -1,0 +1,47 @@
+{
+  "name": "xcb-util-image",
+  "version": "0.4.1",
+  "about": "XCB port of Xlib's XImage and XShmImage",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcb-image.git",
+  "version_fetch": "gr | grep -Ei '^xcb-util-image-.+[0-9]$' | sort -V",
+  "tags": [
+    "lib",
+    "img",
+    "xorg",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xcb.freedesktop.org/dist/xcb-util-image-0.4.1.tar.xz",
+      "dest": "xcb-util-image-0.4.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
