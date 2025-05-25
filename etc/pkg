@@ -38,7 +38,7 @@ i() {
 HOSTNAME="$(</etc/hostname)"
 ESP_PARTUUID=$(lsblk -o PARTUUID,MOUNTPOINTS  | grep '/efi$' | cut -d' ' -f1)   \
 ROOT_PARTUUID=$(lsblk -o PARTUUID,MOUNTPOINTS | grep ' /$'   | cut -d' ' -f1)   \
-DESTDIR="/" HOSTNAME="${HOSTNAME:-to}" "/usr/src/etc/install.sh"
+D="/" HOSTNAME="${HOSTNAME:-to}" "/usr/src/etc/install.sh"
 rm -rf "/usr/src/etc"
 
 }
