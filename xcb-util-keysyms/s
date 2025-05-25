@@ -1,0 +1,43 @@
+{
+  "name": "xcb-util-keysyms",
+  "version": "0.4.1",
+  "about": "Standard X constants and conversion to/from keycodes",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcb-keysyms.git",
+  "version_fetch": "gr | grep -Ei '^xcb-util-keysyms-.+[0-9]$' | sort -V",
+  "tags": [
+    "utils",
+    "lib",
+    "xorg",
+    "kb"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz",
+      "dest": "xcb-util-keysyms-0.4.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

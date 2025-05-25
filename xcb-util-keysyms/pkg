@@ -1,0 +1,28 @@
+#!/to
+
+n="xcb-util-keysyms"
+v="0.4.1"
+a="Standard X constants and conversion to/from keycodes"
+m="Tox"
+l="X11"
+t="utils lib xorg kb"
+u="https://gitlab.freedesktop.org/xorg/lib/libxcb-keysyms.git"
+vf="gr | grep -Ei '^$n-.+[0-9]$' | sort -V"
+
+s=(
+    "https://xcb.freedesktop.org/dist/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "libxcb"
+    "b,xorgproto"
+    "b,util-macros"
+)
+
+b() {
+
+il
+def
+
+}
