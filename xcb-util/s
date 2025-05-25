@@ -1,0 +1,46 @@
+{
+  "name": "xcb-util",
+  "version": "0.4.1",
+  "about": "Utility libraries for the X protocol C-language Binding",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcb-util",
+  "version_fetch": "gr | grep -Ei '^xcb-util-.+[0-9]$' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz",
+      "dest": "xcb-util-0.4.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "gperf",
+      "kind": "Build"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

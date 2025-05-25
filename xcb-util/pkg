@@ -1,0 +1,29 @@
+#!/to
+
+n="xcb-util"
+v="0.4.1"
+a="Utility libraries for the X protocol C-language Binding"
+m="Tox"
+l="X11"
+t="lib xorg utils"
+u="https://gitlab.freedesktop.org/xorg/lib/lib$n"
+vf="gr | grep -Ei '^$n-.+[0-9]$' | sort -V"
+
+s=(
+    "https://${n%-*}.freedesktop.org/dist/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "libxcb"
+    "b,gperf"
+    "b,util-macros"
+    "b,xorgproto"
+)
+
+b() {
+
+il
+def
+
+}
