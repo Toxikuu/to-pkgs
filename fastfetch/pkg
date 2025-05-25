@@ -1,7 +1,7 @@
 #!/to
 
 n="fastfetch"
-v="2.43.0"
+v="2.44.0"
 a="Well-maintained, feature-rich, fast fetch script"
 m="Tox"
 l="MIT"
@@ -22,8 +22,7 @@ d=(
 
 b() {
 
-git checkout $v
-
+gco
 with cmake
 
 _cfg=(
@@ -40,8 +39,8 @@ _cfg=(
     -D ENABLE_LTO=ON
 
     # Disable package managers
-    # TODO: Write a patch for fastfetch to check to
-    # Also write an easy way to check the number of installed packages in to
+    # TODO: Write a patch for fastfetch to check `to`
+    # Also write an easy way to check the number of installed packages in `to`
     -D PACKAGES_DISABLE_AM=ON
     -D PACKAGES_DISABLE_APK=ON
     -D PACKAGES_DISABLE_CHOCO=ON
@@ -76,8 +75,7 @@ _cfg=(
     -D CPACK_SOURCE_ZIP=OFF
 )
 
-cm
-mk
-mi
+# Fastfetch installs its license on its own
+def
 
 }
