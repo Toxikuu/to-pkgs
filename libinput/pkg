@@ -16,7 +16,7 @@ d=(
     "glibc"
     "libevdev"
     "mtdev"
-    "b,udev"
+    "udev"
     "b,meson"
     "b,ninja"
 

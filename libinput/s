@@ -35,7 +35,7 @@
     },
     {
       "name": "udev",
-      "kind": "Build"
+      "kind": "Required"
     },
     {
       "name": "meson",
