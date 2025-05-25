@@ -1,0 +1,26 @@
+#!/to
+
+n="font-util"
+v="1.4.1"
+a="X font utilities"
+m="Tox"
+l="Custom"
+t="lib xorg font utils"
+u="https://gitlab.freedesktop.org/xorg/${n/-//}.git"
+vf="gr | grep '$n-[0-9]\.' | sort -V"
+
+s=(
+    "https://www.x.org/pub/individual/font/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "b,util-macros"
+)
+
+b() {
+
+il
+def
+
+}

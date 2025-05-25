@@ -1,0 +1,35 @@
+{
+  "name": "font-util",
+  "version": "1.4.1",
+  "about": "X font utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/font/util.git",
+  "version_fetch": "gr | grep 'font-util-[0-9]\\.' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "font",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/font/font-util-1.4.1.tar.xz",
+      "dest": "font-util-1.4.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
