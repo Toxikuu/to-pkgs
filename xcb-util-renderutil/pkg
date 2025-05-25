@@ -1,0 +1,24 @@
+#!/to
+
+n="xcb-util-renderutil"
+v="0.3.10"
+a="Convenience functions for the X Render extension"
+m="Tox"
+l="X11 AND HPND-sell-variant"
+t="lib xorg utils gfx"
+u="https://gitlab.freedesktop.org/xorg/lib/libxcb-render-util.git"
+vf="gr | grep -Ei '^$n-.+[0-9]$' | sort -V"
+
+d=(
+    "libxcb"
+    "xcb-proto"
+)
+
+s="https://xcb.freedesktop.org/dist/$n-$v.tar.xz"
+
+b() {
+
+il
+def
+
+}

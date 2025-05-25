@@ -1,0 +1,35 @@
+{
+  "name": "xcb-util-renderutil",
+  "version": "0.3.10",
+  "about": "Convenience functions for the X Render extension",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11 AND HPND-sell-variant"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcb-render-util.git",
+  "version_fetch": "gr | grep -Ei '^xcb-util-renderutil-.+[0-9]$' | sort -V",
+  "tags": [
+    "lib",
+    "xorg",
+    "utils",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz",
+      "dest": "xcb-util-renderutil-0.3.10.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-proto",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
