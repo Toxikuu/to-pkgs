@@ -1,0 +1,34 @@
+{
+  "name": "xcb-util-errors",
+  "version": "1.0.1",
+  "about": "XCB errors library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcb-errors.git",
+  "version_fetch": "gr | grep -Ei '^xcb-util-errors-.+[0-9]$' | sort -V",
+  "tags": [
+    "utils",
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xcb.freedesktop.org/dist/xcb-util-errors-1.0.1.tar.xz",
+      "dest": "xcb-util-errors-1.0.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

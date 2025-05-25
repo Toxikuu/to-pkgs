@@ -1,0 +1,24 @@
+#!/to
+
+n="xcb-util-errors"
+v="1.0.1"
+a="XCB errors library"
+m="Tox"
+l="MIT"
+t="utils lib xorg"
+u="https://gitlab.freedesktop.org/xorg/lib/libxcb-errors.git"
+vf="gr | grep -Ei '^$n-.+[0-9]$' | sort -V"
+
+d=(
+    "libxcb"
+    "b,xorgproto"
+)
+
+s="https://xcb.freedesktop.org/dist/$n-$v.tar.xz"
+
+b() {
+
+il
+def
+
+}
