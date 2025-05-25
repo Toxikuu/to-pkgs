@@ -1,0 +1,38 @@
+{
+  "name": "libevdev",
+  "version": "1.13.4",
+  "about": "Wrapper library for evdev devices",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/libevdev/libevdev.git",
+  "version_fetch": "gr | grep 'libevdev-[0-9]\\.' | sort -V",
+  "tags": [
+    "lib",
+    "input",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.freedesktop.org/software/libevdev/libevdev-1.13.4.tar.xz",
+      "dest": "libevdev-1.13.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,33 @@
+#!/to
+
+n="libevdev"
+v="1.13.4"
+a="Wrapper library for evdev devices"
+m="Tox"
+l="MIT"
+t="lib input xorg"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+vf="gr | grep '$n-[0-9]\.' | sort -V"
+
+s=(
+    "https://www.freedesktop.org/software/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D documentation=disabled
+    -D tests=disabled
+)
+
+def
+
+}
