@@ -1,0 +1,40 @@
+#!/to
+
+n="etc"
+v="72261f86db866e7c6efdba3964568501da2466a2"
+a="/etc files"
+m="Tox"
+l="0BSD"
+t="utils"
+u="https://github.com/Toxikuu/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+)
+
+b() {
+
+gco
+
+il
+cd ..
+mkdir -pv "$D/usr/src/"
+cp -avf {,"$D/usr/src/"}etc
+
+}
+
+i() {
+
+# This must be done outside of the chroot as it's specific to the system it's
+# installed on.
+HOSTNAME="$(</etc/hostname)"
+ESP_PARTUUID=$(lsblk -o PARTUUID,MOUNTPOINTS  | grep '/efi$' | cut -d' ' -f1)   \
+ROOT_PARTUUID=$(lsblk -o PARTUUID,MOUNTPOINTS | grep ' /$'   | cut -d' ' -f1)   \
+HOSTNAME="${HOSTNAME:-to}" "/usr/src/etc/install.sh"
+rm -rf "/usr/src/etc"
+
+}

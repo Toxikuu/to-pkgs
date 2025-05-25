@@ -1,0 +1,28 @@
+{
+  "name": "etc",
+  "version": "72261f86db866e7c6efdba3964568501da2466a2",
+  "about": "/etc files",
+  "maintainer": "Tox",
+  "licenses": [
+    "0BSD"
+  ],
+  "upstream": "https://github.com/Toxikuu/etc.git",
+  "version_fetch": null,
+  "tags": [
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Toxikuu/etc.git",
+      "dest": "etc"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
