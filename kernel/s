@@ -1,0 +1,60 @@
+{
+  "name": "kernel",
+  "version": "6.14.8",
+  "about": "The Linux kernel",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://kernel.org",
+  "version_fetch": "curl -s 'https://kernel.org' | grep 'linux-' | head -n1 | cut -d'>' -f2 | cut -d'<' -f1",
+  "tags": [
+    "core"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.8.tar.gz",
+      "dest": "linux-6.14.8.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "coreutils",
+      "kind": "Required"
+    },
+    {
+      "name": "kmod",
+      "kind": "Required"
+    },
+    {
+      "name": "file",
+      "kind": "Build"
+    },
+    {
+      "name": "bc",
+      "kind": "Build"
+    },
+    {
+      "name": "libelf",
+      "kind": "Build"
+    },
+    {
+      "name": "perl",
+      "kind": "Build"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    },
+    {
+      "name": "tar",
+      "kind": "Build"
+    },
+    {
+      "name": "xz",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

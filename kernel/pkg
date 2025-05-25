@@ -1,0 +1,85 @@
+#!/to
+
+n="kernel"
+an="linux"
+v="6.14.8"
+a="The ${an^} $n"
+m="Tox"
+l="GPL-2.0-only"
+t="core"
+u="https://$n.org"
+vf="curl -s '$u' | grep '$an-' | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
+
+s=(
+    "https://cdn.$n.org/pub/$an/$n/v${v:0:1}.x/$an-$v.tar.gz"
+)
+
+# NOTE: This list may be incomplete
+d=(
+    "coreutils"
+    "kmod"
+    "b,file"
+    "b,bc"
+    "b,libelf"
+    "b,perl"
+    "b,python"
+    "b,tar"
+    "b,xz"
+    # "r,nvidia"
+)
+
+xt() {
+
+pwd | grep "^$B$" || die "Wrong cwd"
+
+# Reuse host system's sources if extant
+if [ -d "$S/sys-$an" ]; then
+    cp -af "$S/sys-$an" "sys-$an"
+    cd "sys-$an"
+else
+    tar xf "$S/$an-$v.tar.gz"
+    cd "$an-$v"
+    cp -vf "$A/default-config" ".config"
+fi
+
+}
+
+p() {
+
+# Reuse sources
+if [ -d /usr/src/$an-$v ]; then
+    mkdir -pv "/var/lib/to/chroot/upper/$S/sys-$an"
+    cp -af "/usr/src/$an-$v" "/var/lib/to/chroot/upper/$S/sys-$an"
+fi
+
+}
+
+b() {
+
+# Sign
+sed -i '/EXTRAVERSION = /s/.*/EXTRAVERSION = -to/' Makefile
+
+# Avoid -dirty for uncommitted changes
+sed -i '138,153d' scripts/setlocalversion
+
+# Reuse the old config
+mk olddefconfig
+mk
+
+# Grab the kernel name
+kname="$(file arch/x86/boot/bzImage  | grep -o 'version\s.*\s' | cut -d' ' -f2)"
+[ -z "$kname" ] && die "Failed to parse kernel name"
+
+# Install targets
+mk modules_install INSTALL_MOD_PATH="$D"
+mkdir -pv "$D"/{efi,boot}
+
+cp -vf arch/x86/boot/bzImage "$D/boot/vmlinuz-$kname"
+cp -vf .config "$D/boot/config-$kname"
+cp -vf "$D/boot/vmlinuz-$kname" "$D/efi/tox64.efi"
+
+# Install sources
+mkdir -pv       "$D/usr/src/$an-$v"
+cp -af ./{,.}*  "$D/usr/src/$an-$v"
+
+}
