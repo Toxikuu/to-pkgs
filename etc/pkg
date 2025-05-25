@@ -20,9 +20,11 @@ b() {
 
 gco
 
+# Install license and remove git data
 il
 rm -rf .git*
 
+# Copy sources for use in i()
 cd ..
 mkdir -pv  "$D/usr/src/"
 cp -avf $n "$D/usr/src/"
@@ -36,7 +38,7 @@ i() {
 HOSTNAME="$(</etc/hostname)"
 ESP_PARTUUID=$(lsblk -o PARTUUID,MOUNTPOINTS  | grep '/efi$' | cut -d' ' -f1)   \
 ROOT_PARTUUID=$(lsblk -o PARTUUID,MOUNTPOINTS | grep ' /$'   | cut -d' ' -f1)   \
-HOSTNAME="${HOSTNAME:-to}" "/usr/src/etc/install.sh"
+DESTDIR="/" HOSTNAME="${HOSTNAME:-to}" "/usr/src/etc/install.sh"
 rm -rf "/usr/src/etc"
 
 }
