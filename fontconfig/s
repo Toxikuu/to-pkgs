@@ -1,13 +1,13 @@
 {
   "name": "fontconfig",
-  "version": "c0118a3bea1d3857d5be13b4ae575c638decb9a3",
+  "version": "2.16.2",
   "about": "Library and utilities for configuring fonts",
   "maintainer": "Tox",
   "licenses": [
     "MIT"
   ],
   "upstream": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep -v '[a-Z]' | sort -V",
   "tags": [
     "lib",
     "font",
@@ -15,9 +15,9 @@
   ],
   "sources": [
     {
-      "kind": "Git",
-      "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
-      "dest": "fontconfig"
+      "kind": "Download",
+      "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.16.2/fontconfig-2.16.2.tar.bz2",
+      "dest": "fontconfig-2.16.2.tar.bz2"
     }
   ],
   "dependencies": [
@@ -32,10 +32,6 @@
     {
       "name": "expat",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     },
     {
       "name": "gperf",

@@ -1,22 +1,22 @@
 #!/to
 
 n="fontconfig"
-v="c0118a3bea1d3857d5be13b4ae575c638decb9a3"
+v="2.16.2"
 a="Library and utilities for configuring fonts"
 m="Tox"
 l="MIT"
 t="lib font utils"
 u="https://gitlab.freedesktop.org/$n/$n.git"
+vf="gr | grep -v '[a-Z]' | sort -V"
 
 s=(
-    "$u"
+    "${u%.git}/-/archive/$v/$n-$v.tar.bz2"
 )
 
 d=(
     "freetype"
     "glibc"
     "expat"
-    "b,git"
     "b,gperf"
     "b,meson"
     "b,ninja"
@@ -25,7 +25,6 @@ d=(
 b() {
 
 with mn
-gco
 
 _cfg=(
     -D default-hinting=slight
