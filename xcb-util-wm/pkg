@@ -1,0 +1,25 @@
+#!/to
+
+n="xcb-util-wm"
+v="0.4.2"
+a="Client and window-manager helpers for EWMH and ICCCM"
+m="Tox"
+l="X11"
+t="lib xorg wm utils"
+u="https://gitlab.freedesktop.org/xorg/lib/libxcb-wm.git"
+
+d=(
+    "glibc"
+    "libxcb"
+    "b,util-macros"
+    "b,xorgproto"
+)
+
+s="https://xcb.freedesktop.org/dist/$n-$v.tar.xz"
+
+b() {
+
+il
+def
+
+}

@@ -1,0 +1,43 @@
+{
+  "name": "xcb-util-wm",
+  "version": "0.4.2",
+  "about": "Client and window-manager helpers for EWMH and ICCCM",
+  "maintainer": "Tox",
+  "licenses": [
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/lib/libxcb-wm.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "xorg",
+    "wm",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz",
+      "dest": "xcb-util-wm-0.4.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
