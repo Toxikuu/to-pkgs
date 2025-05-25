@@ -1,0 +1,39 @@
+#!/to
+
+n="libinput"
+v="1.28.1"
+a="Input device management and event handling library"
+m="Tox"
+l="MIT"
+t="input lib xorg"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+
+s=(
+    "https://gitlab.freedesktop.org/$n/$n/-/archive/$v/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "libevdev"
+    "mtdev"
+    "b,udev"
+    "b,meson"
+    "b,ninja"
+
+# Possibly also "b,wayland-protocols"
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D debug-gui=false
+    -D tests=false
+    -D libwacom=false
+)
+
+il
+def
+
+}

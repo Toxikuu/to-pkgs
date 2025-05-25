@@ -1,0 +1,50 @@
+{
+  "name": "libinput",
+  "version": "1.28.1",
+  "about": "Input device management and event handling library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/libinput/libinput.git",
+  "version_fetch": null,
+  "tags": [
+    "input",
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.28.1/libinput-1.28.1.tar.gz",
+      "dest": "libinput-1.28.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libevdev",
+      "kind": "Required"
+    },
+    {
+      "name": "mtdev",
+      "kind": "Required"
+    },
+    {
+      "name": "udev",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
