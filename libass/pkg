@@ -1,0 +1,31 @@
+#!/to
+
+n="libass"
+v="695509365f152bd28720a0c0e036d46836ee9345"
+a="Portable library for ASS subtitle rendering"
+m="Tox"
+l="BSD"
+t="lib"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,nasm"
+    "fontconfig"
+    "fribidi"
+    "harfbuzz"
+    "glibc"
+)
+
+b() {
+
+gco
+
+autoreconf -fiv
+def
+
+}
