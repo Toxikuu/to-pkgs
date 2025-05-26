@@ -1,0 +1,166 @@
+{
+  "name": "xorg-server",
+  "version": "21.1.16",
+  "about": "X Window system server",
+  "maintainer": "Tox",
+  "licenses": [
+    "SGI"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/xserver.git",
+  "version_fetch": "gr | grep '^xorg-server-' | sort -V",
+  "tags": [
+    "gfx",
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/xserver/xorg-server-21.1.16.tar.xz",
+      "dest": "xorg-server-21.1.16.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxcvt",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "elogind",
+      "kind": "Required"
+    },
+    {
+      "name": "pixman",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libpciaccess",
+      "kind": "Required"
+    },
+    {
+      "name": "libtirpc",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "nvidia",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    },
+    {
+      "name": "font-util",
+      "kind": "Build"
+    },
+    {
+      "name": "xtrans",
+      "kind": "Build"
+    },
+    {
+      "name": "libx11",
+      "kind": "Build"
+    },
+    {
+      "name": "libxi",
+      "kind": "Build"
+    },
+    {
+      "name": "libxaw",
+      "kind": "Build"
+    },
+    {
+      "name": "libxcvt",
+      "kind": "Build"
+    },
+    {
+      "name": "libxfont2",
+      "kind": "Build"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Build"
+    },
+    {
+      "name": "libxi",
+      "kind": "Build"
+    },
+    {
+      "name": "libxkbfile",
+      "kind": "Build"
+    },
+    {
+      "name": "libxmu",
+      "kind": "Build"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Build"
+    },
+    {
+      "name": "libxshmfence",
+      "kind": "Build"
+    },
+    {
+      "name": "libxtst",
+      "kind": "Build"
+    },
+    {
+      "name": "libxv",
+      "kind": "Build"
+    },
+    {
+      "name": "xcb-util",
+      "kind": "Build"
+    },
+    {
+      "name": "xcb-util-image",
+      "kind": "Build"
+    },
+    {
+      "name": "xcb-util-keysyms",
+      "kind": "Build"
+    },
+    {
+      "name": "xcb-util-renderutil",
+      "kind": "Build"
+    },
+    {
+      "name": "xcb-util-wm",
+      "kind": "Build"
+    },
+    {
+      "name": "xkeyboard-config",
+      "kind": "Runtime"
+    }
+  ],
+  "kcfg": []
+}

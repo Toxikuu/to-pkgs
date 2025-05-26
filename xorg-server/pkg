@@ -1,0 +1,91 @@
+#!/to
+
+n="xorg-server"
+v="21.1.16"
+a="X Window system server"
+m="Tox"
+l="SGI"
+t="gfx lib utils"
+u="https://gitlab.freedesktop.org/xorg/xserver.git"
+vf="gr | grep '^$n-' | sort -V"
+
+s=(
+    "https://www.x.org/pub/individual/xserver/$n-$v.tar.xz"
+)
+
+d=(
+    "libxcvt"
+    "dbus"
+    "elogind"
+    "pixman"
+    "glibc"
+    "libpciaccess"
+    "libtirpc"
+    "libdrm"
+    "nvidia"
+    "mesa"
+
+    "b,meson"
+    "b,ninja"
+
+    "b,util-macros"
+    "b,xorgproto"
+    "b,font-util"
+    "b,xtrans"
+    "b,libx11"
+    "b,libxi"
+    "b,libxaw"
+    "b,libxcvt"
+    "b,libxfont2"
+    "b,libxfixes"
+    "b,libxi"
+    "b,libxkbfile"
+    "b,libxmu"
+    "b,libxrender"
+    "b,libxshmfence"
+    "b,libxtst"
+    "b,libxv"
+    "b,xcb-util"
+    "b,xcb-util-image"
+    "b,xcb-util-keysyms"
+    "b,xcb-util-renderutil"
+    "b,xcb-util-wm"
+
+    "r,xkeyboard-config"
+    # "r,x86-input-libinput" TODO: Add back
+)
+
+b() {
+
+with mn
+
+_cfg=(
+    -D glamor=false
+    -D secure-rpc=true
+    -D xkb_output_dir=/var/lib/xkb
+)
+
+il
+def
+
+mkdir   -pv      "$D"/etc/X11/xorg.conf.d
+install -vdm1777 "$D"/tmp/.{ICE,X11}-unix
+
+}
+
+i() {
+
+# TODO: Avoid overwriting user-made modifications
+if ! grep -q 'ICE-unix' "$D/etc/sysconfig/createfiles"; then
+cat >> "$D/etc/sysconfig/createfiles" << EOF
+/tmp/.ICE-unix dir 1777 root root
+EOF
+fi
+
+if ! grep -q 'X11-unix' "$D/etc/sysconfig/createfiles"; then
+cat >> "$D/etc/sysconfig/createfiles" << EOF
+/tmp/.X11-unix dir 1777 root root
+EOF
+fi
+
+}
