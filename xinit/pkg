@@ -1,0 +1,31 @@
+#!/to
+
+n="xinit"
+v="1.4.4"
+a="X initialization program"
+m="Tox"
+l=("MIT" "X11")
+t="utils xorg gfx"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+vf="gr | grep -E '$n-[0-9]+\.' | sort -V"
+
+s=(
+    "https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+)
+
+d=(
+    "libx11"
+    "glibc"
+    "b,util-macros"
+)
+
+b() {
+
+_cfg=(
+    --with-xinitdir=/etc/X11/app-defaults
+)
+
+il
+def
+
+}

@@ -1,0 +1,39 @@
+{
+  "name": "xinit",
+  "version": "1.4.4",
+  "about": "X initialization program",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT",
+    "X11"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xinit.git",
+  "version_fetch": "gr | grep -E 'xinit-[0-9]+\\.' | sort -V",
+  "tags": [
+    "utils",
+    "xorg",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz",
+      "dest": "xinit-1.4.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
