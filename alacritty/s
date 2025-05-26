@@ -1,0 +1,67 @@
+{
+  "name": "alacritty",
+  "version": "0.15.1",
+  "about": "Minimal modern terminal emulator",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0",
+    "MIT"
+  ],
+  "upstream": "https://github.com/alacritty/alacritty.git",
+  "version_fetch": null,
+  "tags": [
+    "term",
+    "utils",
+    "gui"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/alacritty/alacritty/archive/refs/tags/v0.15.1.tar.gz",
+      "dest": "v0.15.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "fontconfig",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "libxi",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "desktop-file-utils",
+      "kind": "Build"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Build"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
