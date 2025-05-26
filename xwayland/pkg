@@ -1,0 +1,62 @@
+#!/to
+
+n="xwayland"
+v="24.1.6"
+a="Allows running X clients on Wayland"
+m="Tox"
+l="SGI"
+t="utils lib xorg"
+u="https://gitlab.freedesktop.org/xorg/xserver"
+vf="gr | grep -E '$n-[0-9]+\.' | sort -V"
+
+s=(
+    "https://www.x.org/pub/individual/xserver/$n-$v.tar.xz"
+)
+
+d=(
+    "libxcvt"
+    "pixman"
+    "libepoxy"
+    "libglvnd"
+    "libdrm"
+    "libtirpc"
+    "libxau"
+    "libxfont2"
+    "libxshmfence"
+    "nvidia"
+    "b,libxkbfile"
+    "b,xorgproto"
+    "b,xtrans"
+    "b,font-util"
+    "b,wayland-protocols"
+    "b,dbus"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+# Don't install a manpage installed by xorg-server
+sed -i '/install_man/,$d' meson.build
+
+_cfg=(
+    -D xkb_output_dir=/var/lib/xkb
+    -D secure-rpc=true
+)
+
+il
+def
+
+}
+
+i() {
+
+if ! grep -qF '/tmp/.X11-unix' "/etc/sysconfig/createfiles"; then
+cat >> "/etc/sysconfig/createfiles" << "EOF"
+/tmp/.X11-unix dir 1777 root root
+EOF
+fi
+
+}

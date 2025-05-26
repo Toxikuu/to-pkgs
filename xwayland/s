@@ -1,0 +1,98 @@
+{
+  "name": "xwayland",
+  "version": "24.1.6",
+  "about": "Allows running X clients on Wayland",
+  "maintainer": "Tox",
+  "licenses": [
+    "SGI"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/xserver",
+  "version_fetch": "gr | grep -E 'xwayland-[0-9]+\\.' | sort -V",
+  "tags": [
+    "utils",
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/xserver/xwayland-24.1.6.tar.xz",
+      "dest": "xwayland-24.1.6.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxcvt",
+      "kind": "Required"
+    },
+    {
+      "name": "pixman",
+      "kind": "Required"
+    },
+    {
+      "name": "libepoxy",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libtirpc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxau",
+      "kind": "Required"
+    },
+    {
+      "name": "libxfont2",
+      "kind": "Required"
+    },
+    {
+      "name": "libxshmfence",
+      "kind": "Required"
+    },
+    {
+      "name": "nvidia",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbfile",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    },
+    {
+      "name": "xtrans",
+      "kind": "Build"
+    },
+    {
+      "name": "font-util",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "dbus",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
