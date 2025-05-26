@@ -17,7 +17,7 @@ d=(
     "b,git"
     "b,cmake"
     "b,ninja"
-    "b,yasm"
+    "b,nasm"
 )
 
 b() {
