@@ -1,6 +1,6 @@
 {
   "name": "to",
-  "version": "795ad389590e612818ec1d99bbe05a88c1ed9d5b",
+  "version": "8df86dea2f0cc149d6d46aea841a04ab7143c2d7",
   "about": "Stupid-simple, (EVENTUALLY) rock-solid package manager for LFS",
   "maintainer": "Tox",
   "licenses": [
@@ -23,6 +23,10 @@
   ],
   "dependencies": [
     {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
       "name": "git",
       "kind": "Build"
     },
@@ -32,31 +36,15 @@
     },
     {
       "name": "bash",
-      "kind": "Required"
+      "kind": "Runtime"
     },
     {
       "name": "tar",
-      "kind": "Required"
+      "kind": "Runtime"
     },
     {
       "name": "zstd",
-      "kind": "Required"
-    },
-    {
-      "name": "glibc",
-      "kind": "Required"
-    },
-    {
-      "name": "bzip2",
-      "kind": "Required"
-    },
-    {
-      "name": "xz",
-      "kind": "Required"
-    },
-    {
-      "name": "zlib",
-      "kind": "Required"
+      "kind": "Runtime"
     }
   ],
   "kcfg": []
