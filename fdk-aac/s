@@ -1,0 +1,34 @@
+{
+  "name": "fdk-aac",
+  "version": "2ef9a141c40bf254bde7d22c197c615db5b265ed",
+  "about": "A standalone library of Android's Fraunhofer FDK AAC code",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://github.com/mstorsjo/fdk-aac.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "audio",
+    "codec"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/mstorsjo/fdk-aac.git",
+      "dest": "fdk-aac"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

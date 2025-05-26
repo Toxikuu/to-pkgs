@@ -1,0 +1,28 @@
+#!/to
+
+n="fdk-aac"
+v="2ef9a141c40bf254bde7d22c197c615db5b265ed"
+a="A standalone library of Android's Fraunhofer FDK AAC code"
+m="Tox"
+l="Custom"
+t="lib audio codec"
+u="https://github.com/mstorsjo/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "glibc"
+)
+
+b() {
+
+gco
+il NOTICE
+
+./autogen.sh
+def
+
+}
