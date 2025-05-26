@@ -21,11 +21,11 @@ d=(
 b() {
 
 pat "$S/$n-$v-upstream_fixes-1.patch"
-cp -vf pic/gifgrid.gif doc/giflib-logo.gif
+cp -vf "pic/gifgrid.gif" "doc/$n-logo.gif"
 
 mk
 mi PREFIX=/usr
-rm -vf /usr/lib/libgif.a
+rm -vf "$D/usr/lib/$n.a"
 
 }
 
