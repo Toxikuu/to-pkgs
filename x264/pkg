@@ -1,0 +1,30 @@
+#!/to
+
+n="x264"
+v="85b5ccea1fab98841d79455e344c797c5ffc3212"
+a="The best H.264 encoder"
+m="Tox"
+l="GPL-2.0-or-later"
+t="lib codec video"
+u="https://code.videolan.org/videolan/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,nasm"
+    "glibc"
+)
+
+b() {
+
+_cfg=(
+    --enable-shared
+    --disable-cli
+)
+
+def
+
+}

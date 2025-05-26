@@ -1,0 +1,38 @@
+{
+  "name": "x264",
+  "version": "85b5ccea1fab98841d79455e344c797c5ffc3212",
+  "about": "The best H.264 encoder",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://code.videolan.org/videolan/x264.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "codec",
+    "video"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://code.videolan.org/videolan/x264.git",
+      "dest": "x264"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "nasm",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
