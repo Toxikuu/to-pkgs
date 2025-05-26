@@ -1,0 +1,28 @@
+name: Add
+description: Add a package
+labels: [add]
+assignees:
+  - Toxikuu
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The name of the package
+      placeholder: curl
+    validations:
+      required: true
+
+  - type: input
+    id: upstream
+    attributes:
+      label: Upstream
+      description: A link to the project's upstream
+      placeholder: https://github.com/curl/curl
+    validations:
+      required: true
