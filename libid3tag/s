@@ -1,0 +1,45 @@
+{
+  "name": "libid3tag",
+  "version": "eee94b22508a066f7b9bc1ae05d2d85982e73959",
+  "about": "ID3 tag manipulation library",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://codeberg.org/tenacityteam/libid3tag.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "audio"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://codeberg.org/tenacityteam/libid3tag.git",
+      "dest": "libid3tag"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

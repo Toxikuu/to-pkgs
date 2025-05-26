@@ -1,0 +1,29 @@
+#!/to
+
+n="libid3tag"
+v="eee94b22508a066f7b9bc1ae05d2d85982e73959"
+a="ID3 tag manipulation library"
+m="Tox"
+l="GPL-2.0-or-later"
+t="lib audio"
+u="https://codeberg.org/tenacityteam/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "glibc"
+    "zlib"
+    "b,cmake"
+    "b,ninja"
+    "b,git"
+)
+
+b() {
+
+with cn
+gco
+def
+
+}
