@@ -1,0 +1,41 @@
+{
+  "name": "xf86-input-evdev",
+  "version": "2.11.0",
+  "about": "X evdev input driver",
+  "maintainer": "Tox",
+  "licenses": [
+    "HPND-sell-variant AND MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/driver/xf86-input-evdev.git",
+  "version_fetch": "gr | grep 'xf86-input-evdev-[0-9]\\.' | sort -V",
+  "tags": [
+    "input",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/driver/xf86-input-evdev-2.11.0.tar.gz",
+      "dest": "xf86-input-evdev-2.11.0.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libevdev",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "mtdev",
+      "kind": "Required"
+    },
+    {
+      "name": "xorg-server",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
