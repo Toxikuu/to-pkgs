@@ -86,7 +86,7 @@ mkdir -pv       "$D/usr/src/$an-$v"
 cp -af ./{,.}*  "$D/usr/src/$an-$v"
 
 # Compatibility
-ln -sfv "$D/usr/src/$an-$v" "$an"
+ln -sfv "$an-$v"   "$D/usr/src/$an"
 mk kernelversion > "$D/usr/src/$an-$v/version"
 
 }
