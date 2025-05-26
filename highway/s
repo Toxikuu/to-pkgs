@@ -4,8 +4,7 @@
   "about": "Performance-portable, length-agnostic SIMD with runtime dispatch",
   "maintainer": "Tox",
   "licenses": [
-    "Apache-2.0",
-    "BSD-3-Clause"
+    "Apache-2.0"
   ],
   "upstream": "https://github.com/google/highway.git",
   "version_fetch": "gr | tr -d v | sort -V",
