@@ -11,8 +11,10 @@ vf="gr | grep '^$n-' | sort -V"
 
 s=(
     "https://www.x.org/pub/individual/xserver/$n-$v.tar.xz"
+    "https://glfs-book.github.io/glfs/patches/$n/$n-tearfree_backport-3.patch"
 )
 
+# TODO: Consider adding udev support
 d=(
     "libxcvt"
     "dbus"
@@ -52,12 +54,14 @@ d=(
     "b,xcb-util-wm"
 
     "r,xkeyboard-config"
-    # "r,x86-input-libinput" TODO: Add back
+    "r,xf86-input-libinput"
 )
 
 b() {
 
 with mn
+
+pat "$S/$n-tearfree_backport-3.patch"
 
 _cfg=(
     -D glamor=false

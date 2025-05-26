@@ -18,6 +18,11 @@
       "kind": "Download",
       "url": "https://www.x.org/pub/individual/xserver/xorg-server-21.1.16.tar.xz",
       "dest": "xorg-server-21.1.16.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://glfs-book.github.io/glfs/patches/xorg-server/xorg-server-tearfree_backport-3.patch",
+      "dest": "xorg-server-tearfree_backport-3.patch"
     }
   ],
   "dependencies": [
@@ -159,6 +164,10 @@
     },
     {
       "name": "xkeyboard-config",
+      "kind": "Runtime"
+    },
+    {
+      "name": "xf86-input-libinput",
       "kind": "Runtime"
     }
   ],
