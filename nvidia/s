@@ -35,6 +35,10 @@
     {
       "name": "kernel",
       "kind": "Required"
+    },
+    {
+      "name": "xorg-server",
+      "kind": "Runtime"
     }
   ],
   "kcfg": []
