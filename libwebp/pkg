@@ -1,0 +1,44 @@
+#!/to
+
+n="libwebp"
+v="1.5.0"
+a="WebP library"
+m="Tox"
+l="BSD-3-Clause"
+t="lib img"
+u="https://chromium.googlesource.com/webm/$n"
+vf="gr | tr -d v | grep -v [a-Z]"
+
+s=(
+    "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/$n-$v.tar.gz"
+)
+
+d=(
+    "libpng"
+    "libjpeg-turbo"
+    "glibc"
+)
+
+b() {
+
+_cfg=(
+    --enable-${n}{de,}mux
+    --enable-libwebpdecoder
+    --enable-swap-16bit-csp
+
+    --disable-libwebpextras
+    --disable-asserts
+    --disable-tiff
+    --disable-gif
+    --disable-wic
+)
+
+def
+
+}
+
+t() {
+
+mk check
+
+}
