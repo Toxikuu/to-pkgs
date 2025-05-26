@@ -25,5 +25,12 @@ cp -vf pic/gifgrid.gif doc/giflib-logo.gif
 
 mk
 mi PREFIX=/usr
+rm -vf /usr/lib/libgif.a
+
+}
+
+t() {
+
+mk check
 
 }
