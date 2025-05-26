@@ -1,0 +1,34 @@
+{
+  "name": "giflib",
+  "version": "5.2.2",
+  "about": "GIF library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://git.code.sf.net/p/giflib/code",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [
+    "lib",
+    "img"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://sourceforge.net/projects/giflib/files/giflib-5.2.2.tar.gz",
+      "dest": "giflib-5.2.2.tar.gz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.patch",
+      "dest": "giflib-5.2.2-upstream_fixes-1.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

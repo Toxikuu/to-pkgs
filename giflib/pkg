@@ -1,0 +1,29 @@
+#!/to
+
+n="giflib"
+v="5.2.2"
+a="GIF library"
+m="Tox"
+l="MIT"
+t="lib img"
+u="https://git.code.sf.net/p/$n/code"
+vf="gr | grep -v '[a-Z]'"
+
+s=(
+    "https://sourceforge.net/projects/$n/files/$n-$v.tar.gz"
+    "https://www.linuxfromscratch.org/patches/blfs/svn/$n-$v-upstream_fixes-1.patch"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+pat "$S/$n-$v-upstream_fixes-1.patch"
+cp -vf pic/gifgrid.gif doc/giflib-logo.gif
+
+mk
+mi PREFIX=/usr
+
+}
