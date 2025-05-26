@@ -1,0 +1,38 @@
+name: Update
+description: Update a package
+title: "Update: "
+labels: [update]
+assignees:
+  - Toxikuu
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Update
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The name of the package
+      placeholder: curl
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The package version
+      placeholder: 8.13.0
+    validations:
+      required: true
+
+  - type: input
+    id: release
+    attributes:
+      label: Release
+      description: A link to the release notes for the package version
+      placeholder: https://daniel.haxx.se/blog/2025/04/02/curl-8-13-0/
+    validations:
+      required: false

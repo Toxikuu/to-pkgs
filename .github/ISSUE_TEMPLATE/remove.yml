@@ -1,0 +1,29 @@
+name: Remove
+description: Remove a package
+title: "Remove: "
+labels: [remove]
+assignees:
+  - Toxikuu
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Remove
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The name of the package
+      placeholder: curl
+    validations:
+      required: true
+
+  - type: input
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why should the package be removed?
+      placeholder: Buggy mess, constant CVEs, unmaintained, and I personally have been with Daniel. (For legal reasons, I'm joking.)
+    validations:
+      required: true
