@@ -6,7 +6,7 @@ v="6.14.8"
 a="The ${an^} $n"
 m="Tox"
 l="GPL-2.0-only"
-t="core"
+t="core lib"
 u="https://$n.org"
 vf="curl -s '$u' | grep '$an-' | head -n1 | cut -d'>' -f2 | cut -d'<' -f1"
 
@@ -64,6 +64,9 @@ sed -i '138,153d' scripts/setlocalversion
 
 # Reuse the old config
 mk olddefconfig
+_ensure_required_kopts
+
+# Make the kernel
 mk
 
 # Grab the kernel name
@@ -81,5 +84,27 @@ cp -vf "$D/boot/vmlinuz-$kname" "$D/efi/tox64.efi"
 # Install sources
 mkdir -pv       "$D/usr/src/$an-$v"
 cp -af ./{,.}*  "$D/usr/src/$an-$v"
+
+# Compatibility
+ln -sfv "$D/usr/src/$an-$v" "$an"
+mk kernelversion > "$D/usr/src/$an-$v/version"
+
+}
+
+
+# Ensure the presence of kernel options wanted by `to`
+_ensure_required_kopts() {
+
+local kopts kopt
+
+kopts=(
+    # These are used to check kcfg's
+    "ikconfig=y"
+    "ikconfig_proc=y"
+)
+
+for kopt in "${kopts[@]}"; do
+    grep -i "$kopt" ".config" || die "Missing required $n option: CONFIG_${kopt^^}"
+done
 
 }

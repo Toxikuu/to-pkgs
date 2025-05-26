@@ -9,7 +9,8 @@
   "upstream": "https://kernel.org",
   "version_fetch": "curl -s 'https://kernel.org' | grep 'linux-' | head -n1 | cut -d'>' -f2 | cut -d'<' -f1",
   "tags": [
-    "core"
+    "core",
+    "lib"
   ],
   "sources": [
     {
