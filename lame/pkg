@@ -13,9 +13,6 @@ s=(
     "https://downloads.sourceforge.net/$n/$n-$v.tar.gz"
 )
 
-d=(
-)
-
 b() {
 
 # Don't embed build artifacts
@@ -29,5 +26,11 @@ _cfg=(
 )
 
 def
+
+}
+
+t() {
+
+mk test
 
 }
