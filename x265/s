@@ -1,0 +1,44 @@
+{
+  "name": "x265",
+  "version": "5130ab3ef90658526c26b51c265992d2088b5360",
+  "about": "H.265/HEVC encoder",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://bitbucket.org/multicoreware/x265_git.git",
+  "version_fetch": null,
+  "tags": [
+    "codec"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://bitbucket.org/multicoreware/x265_git.git",
+      "dest": "x265_git"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "yasm",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
