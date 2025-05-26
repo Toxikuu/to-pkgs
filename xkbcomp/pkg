@@ -1,0 +1,28 @@
+#!/to
+
+n="xkbcomp"
+v="1.4.7"
+a="X Keyboard description compiler"
+m="Tox"
+l="Custom"
+t="kb xorg"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+vf="gr | grep '$n-[0-9]\.' | sort -V"
+
+s=(
+    "https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+)
+
+d=(
+    "libx11"
+    "libxkbfile"
+    "glibc"
+    "b,util-macros"
+)
+
+b() {
+
+il
+def
+
+}

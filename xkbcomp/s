@@ -1,0 +1,41 @@
+{
+  "name": "xkbcomp",
+  "version": "1.4.7",
+  "about": "X Keyboard description compiler",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xkbcomp.git",
+  "version_fetch": "gr | grep 'xkbcomp-[0-9]\\.' | sort -V",
+  "tags": [
+    "kb",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xkbcomp-1.4.7.tar.xz",
+      "dest": "xkbcomp-1.4.7.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbfile",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
