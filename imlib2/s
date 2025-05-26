@@ -1,0 +1,81 @@
+{
+  "name": "imlib2",
+  "version": "2c2a13b2a7b2176224dce640376ef460ac0cd0a3",
+  "about": "Image loading and rendering library",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://git.enlightenment.org/old/legacy-imlib2.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "img"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.enlightenment.org/old/legacy-imlib2.git",
+      "dest": "legacy-imlib2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "giflib",
+      "kind": "Required"
+    },
+    {
+      "name": "librsvg",
+      "kind": "Required"
+    },
+    {
+      "name": "libid3tag",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "highway",
+      "kind": "Required"
+    },
+    {
+      "name": "libwebp",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

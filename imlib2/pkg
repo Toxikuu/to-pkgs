@@ -1,0 +1,84 @@
+#!/to
+
+n="imlib2"
+v="2c2a13b2a7b2176224dce640376ef460ac0cd0a3"
+a="Image loading and rendering library"
+m="Tox"
+l="BSD"
+t="lib img"
+u="https://git.enlightenment.org/old/legacy-$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "freetype"
+    "giflib"
+    "librsvg"
+    "libid3tag" # to display embedded cover art in mp3s
+    "libjpeg-turbo" # might be runtime(?)
+    "libpng"
+    "highway" # perf
+    "libwebp"
+    # TODO: Consider supporting libheif
+    "libx11"
+    "libxcb"
+    "libxext"
+    "bzip2"
+    "xz"
+    "b,git"
+)
+
+b() {
+
+gco
+autoreconf -fiv
+
+_cfg=(
+    --disable-debug
+    --disable-doc-build
+    --disable-progs
+    --disable-werror
+    --enable-amd64
+    --sysconfdir="/etc/$n"
+
+    # Loaders
+    --without-avif # needs libheif
+    --without-heif # needs libheif
+    --without-j2k
+    --without-jxl
+    --without-ps
+    --without-raw
+    --without-tiff
+    --without-y4m
+
+    --with-bz2
+    --with-gif
+    --with-id3
+    --with-jpeg
+    --with-lzma
+    --with-png
+    --with-svg
+    --with-webp
+    --with-x
+    --with-zlib
+)
+
+cfg
+sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+mk
+mi
+
+# Remove test programs
+for test_prog in bumpmap colorspace poly show test; do
+    rm -vf "$D/usr/bin/${n}_${test_prog}"
+done
+
+}
+
+t() {
+
+mk check
+
+}
