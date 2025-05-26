@@ -1,0 +1,33 @@
+{
+  "name": "libexif",
+  "version": "f8b0e2e0520ffd33416c38f107d9e55170f9285b",
+  "about": "EXIF data library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1"
+  ],
+  "upstream": "https://github.com/libexif/libexif.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "img"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/libexif/libexif.git",
+      "dest": "libexif"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
