@@ -1,5 +1,6 @@
 name: Add
 description: Add a package
+title: "Add: "
 labels: [add]
 assignees:
   - Toxikuu
