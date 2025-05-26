@@ -23,10 +23,10 @@ b() {
 
 _cfg=(
     --enable-${n}{de,}mux
-    --enable-libwebpdecoder
+    --enable-${n}decoder
     --enable-swap-16bit-csp
 
-    --disable-libwebpextras
+    --disable-${n}extras
     --disable-asserts
     --disable-tiff
     --disable-gif
@@ -34,11 +34,5 @@ _cfg=(
 )
 
 def
-
-}
-
-t() {
-
-mk check
 
 }
