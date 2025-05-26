@@ -1,0 +1,33 @@
+#!/to
+
+n="lame"
+v="3.100"
+a="High quality mp3 encoder"
+m="Tox"
+l="LGPL"
+t="audio codec lib"
+u="https://sourceforge.net/projects/$n/files/"
+vf="curl -s '$u' | grep '$n-' | cut -d- -f6 | cut -d. -f1-2"
+
+s=(
+    "https://downloads.sourceforge.net/$n/$n-$v.tar.gz"
+)
+
+d=(
+)
+
+b() {
+
+# Don't embed build artifacts
+sed -i 's/^\(\s*hardcode_libdir_flag_spec\s*=\).*/\1/' configure
+
+# --enable-nasm is only useful on m32
+_cfg=(
+    --disable-nasm
+    --enable-mp3rtp
+    --enable-shared
+)
+
+def
+
+}

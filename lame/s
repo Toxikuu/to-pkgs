@@ -1,0 +1,25 @@
+{
+  "name": "lame",
+  "version": "3.100",
+  "about": "High quality mp3 encoder",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL"
+  ],
+  "upstream": "https://sourceforge.net/projects/lame/files/",
+  "version_fetch": "curl -s 'https://sourceforge.net/projects/lame/files/' | grep 'lame-' | cut -d- -f6 | cut -d. -f1-2",
+  "tags": [
+    "audio",
+    "codec",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://downloads.sourceforge.net/lame/lame-3.100.tar.gz",
+      "dest": "lame-3.100.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
