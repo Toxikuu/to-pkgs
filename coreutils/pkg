@@ -44,7 +44,8 @@ sed -i 's@"1"@"8"@'                     "$D"/usr/share/man/man8/chroot.8
 
 t() {
 
-# I see 2 test failures about which I'm not really concerned
-make check || true
+# Use /dev/null for stdin to fix two tests that break on PTYs
+# I see one failure about which I'm not pressed
+make check </dev/null || true
 
 }
