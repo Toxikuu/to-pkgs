@@ -93,6 +93,8 @@ EOF
 
 i() {
 
-nvidia-xconfig
+if [ -d /etc/X11 ]; then 
+    nvidia-xconfig
+fi
 
 }
