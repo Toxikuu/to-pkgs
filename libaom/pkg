@@ -1,0 +1,38 @@
+#!/to
+
+n="libaom"
+v="3.12.1"
+a="Alliance for Open Media video codec"
+m="Tox"
+l="BSD-3-Clause"
+t="video codec lib"
+u="https://aomedia.googlesource.com/aom.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,cmake"
+    "b,ninja"
+    "b,nasm"
+    "glibc"
+    "gcc"
+)
+
+b() {
+
+gco v$v
+with cmake
+export BD="aom-build"
+
+_cfg=(
+    -D BUILD_SHARED_LIBS=1
+    -D ENABLE_DOCS=no
+    -D ENABLE_NASM=yes
+)
+
+def
+rm -vf "$D/usr/lib/$n.a"
+
+}

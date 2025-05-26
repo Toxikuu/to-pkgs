@@ -1,0 +1,46 @@
+{
+  "name": "libaom",
+  "version": "3.12.1",
+  "about": "Alliance for Open Media video codec",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://aomedia.googlesource.com/aom.git",
+  "version_fetch": null,
+  "tags": [
+    "video",
+    "codec",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://aomedia.googlesource.com/aom.git",
+      "dest": "aom"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "nasm",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
