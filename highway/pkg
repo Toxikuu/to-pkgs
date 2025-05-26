@@ -1,0 +1,33 @@
+#!/to
+
+n="highway"
+v="1.2.0"
+a="Performance-portable, length-agnostic SIMD with runtime dispatch"
+m="Tox"
+l=("Apache-2.0" "BSD-3-Clause")
+t="lib"
+u="https://github.com/google/$n.git"
+vf="gr | tr -d v | sort -V"
+
+s=(
+    "${u%.git}/archive/$v/$n-$v.tar.gz"
+)
+
+d=(
+    "b,cmake"
+    "b,ninja"
+    "gcc"
+    # TODO: Consider adding gtest
+)
+
+b() {
+
+with cn
+
+_cfg=(
+    -D BUILD_TESTING=OFF # TODO: Consider depending on "b,gtest"
+)
+
+def
+
+}

@@ -1,0 +1,37 @@
+{
+  "name": "highway",
+  "version": "1.2.0",
+  "about": "Performance-portable, length-agnostic SIMD with runtime dispatch",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0",
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/google/highway.git",
+  "version_fetch": "gr | tr -d v | sort -V",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/google/highway/archive/1.2.0/highway-1.2.0.tar.gz",
+      "dest": "highway-1.2.0.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
