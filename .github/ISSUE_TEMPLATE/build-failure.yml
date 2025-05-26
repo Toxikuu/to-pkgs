@@ -1,0 +1,46 @@
+name: Build failure
+description: A package's build is failing
+title: "Build failure: "
+labels: ["build failure"]
+assignees:
+  - Toxikuu
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Build failure
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The name of the package
+      placeholder: curl
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      description: Confirm stuff (preferred)
+      options:
+        - label: I'm running the latest version of `to`
+        - label: I've run `to sync` before building
+        - label: I'm using the default stage file
+
+  # TODO: Improve this in the future. Record per-package build logs ideally.
+  # On build failure, prompt the user to report the error. If they agree,
+  # automatically upload the logs to a file host like 0x0.st. Show the user the
+  # link. Tell them to paste the logs here.
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failure
+      description: Information about the failure, with a link to the logs
+      placeholder: |
+        So I was building curl and all of a sudden everything went to shit!
+
+        https://0x0.st/logs
+    validations:
+      required: true
