@@ -34,7 +34,6 @@ body:
     attributes:
       label: Edits
       description: The edits that should be made, preferably with rationale
-      render: markdown
       placeholder: |
         Completely rewrite the awful build instructions. This should be done because they are awful.
     validations:
