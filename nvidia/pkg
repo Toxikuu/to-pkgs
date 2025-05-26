@@ -1,0 +1,91 @@
+#!/to
+
+n="nvidia"
+v="575.51.02"
+a="${n^^} drivers"
+m="Tox"
+l="Custom"
+t="lib utils cli gfx drivers"
+u="https://github.com/${n^^}/open-gpu-kernel-modules.git"
+vf="curl -s https://api.github.com/repos/${n^^}/open-gpu-kernel-modules/releases/latest | grep tag_name | cut -d'\"' -f4"
+
+s=(
+    "https://us.download.$n.com/XFree86/Linux-x86_64/$v/${n^^}-Linux-x86_64-$v.run"
+    "https://glfs-book.github.io/glfs/patches/$n/$n-$v-gcc15.patch"
+)
+
+d=(
+    "libglvnd"
+    "kernel"
+)
+
+b() {
+
+chmod +x "$S/NVIDIA-Linux-x86_64-$v.run"
+"$S/${n^^}-Linux-x86_64-$v.run" -x
+cd "${n^^}-Linux-x86_64-$v"
+
+pat "$S/$n-$v-gcc15.patch" -d kernel
+pat "$S/$n-$v-gcc15.patch" -d kernel-open
+
+kver=$(</usr/src/linux/version)
+
+_cfg=(
+    --silent
+    --ui=none
+    --no-rpms
+    --no-x-check
+    --no-peermem
+    --no-systemd
+    --no-abi-note
+    --no-questions
+    --x-prefix=/usr
+    --disable-nouveau
+    --skip-module-load
+    --no-nouveau-check
+    --no-ncurses-color
+    --force-selinux=no
+    --kernel-name=$kver
+    --run-nvidia-xconfig
+    --no-install-libglvnd
+    --no-rebuild-initramfs
+    --no-install-compat32-libs
+    --kernel-module-type=proprietary
+    --no-check-for-alternate-installs
+    --kernel-source-path=/usr/src/linux
+    --allow-installation-with-running-driver
+    --kernel-install-path="$D"/usr/lib/modules/$kver/kernel/drivers/video
+)
+
+./nvidia-installer "${_cfg[@]}"
+
+# Remove GLES1 from /usr/lib*
+for libdir in "$D/usr/lib"*; do
+  rm -vf "$libdir/libGLESv1_CM_$n"*
+done
+
+# Create a DRI pkgconfig file for packages expecting one
+mkdir -pv "$D"/usr/lib/pkgconfig
+cat > "$D"/usr/lib/pkgconfig/dri.pc << EOF
+prefix=/usr
+includedir=\${prefix}/include
+
+dridriverdir=/usr/lib/dri
+
+Name: dri
+Description: Direct Rendering Infrastructure
+Version: $v
+Requires.private: libdrm >= 2.4.109
+Cflags: -I\${includedir}
+EOF
+
+# Blacklist Nouveau
+mkdir -pv "$D"/etc/modprobe.d
+cat >> "$D"/etc/modprobe.d/nvfb.conf << "EOF"
+# /etc/modprobe.d/nvfb.conf
+
+blacklist nvidiafb
+blacklist nouveau
+EOF
+
+}

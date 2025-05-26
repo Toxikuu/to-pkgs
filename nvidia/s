@@ -1,0 +1,41 @@
+{
+  "name": "nvidia",
+  "version": "575.51.02",
+  "about": "NVIDIA drivers",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://github.com/NVIDIA/open-gpu-kernel-modules.git",
+  "version_fetch": "curl -s https://api.github.com/repos/NVIDIA/open-gpu-kernel-modules/releases/latest | grep tag_name | cut -d'\"' -f4",
+  "tags": [
+    "lib",
+    "utils",
+    "cli",
+    "gfx",
+    "drivers"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://us.download.nvidia.com/XFree86/Linux-x86_64/575.51.02/NVIDIA-Linux-x86_64-575.51.02.run",
+      "dest": "NVIDIA-Linux-x86_64-575.51.02.run"
+    },
+    {
+      "kind": "Download",
+      "url": "https://glfs-book.github.io/glfs/patches/nvidia/nvidia-575.51.02-gcc15.patch",
+      "dest": "nvidia-575.51.02-gcc15.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "kernel",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
