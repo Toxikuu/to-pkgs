@@ -35,6 +35,10 @@
       "kind": "Build"
     },
     {
+      "name": "iproute2",
+      "kind": "Build"
+    },
+    {
       "name": "libcap",
       "kind": "Required"
     },

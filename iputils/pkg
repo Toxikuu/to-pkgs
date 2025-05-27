@@ -16,6 +16,7 @@ d=(
     "b,git"
     "b,meson"
     "b,ninja"
+    "b,iproute2"
     "libcap"
     "libidn2"
 )
