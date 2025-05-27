@@ -1,0 +1,25 @@
+#!/to
+
+n="xprop"
+v="1.2.8"
+a="X property viewer"
+m="Tox"
+l="MIT"
+t="utils cli xorg"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+
+s=(
+    "https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+)
+
+d=(
+    "libx11"
+    "glibc"
+    "b,util-macros"
+)
+
+b() {
+
+def
+
+}

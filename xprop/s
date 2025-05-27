@@ -1,0 +1,38 @@
+{
+  "name": "xprop",
+  "version": "1.2.8",
+  "about": "X property viewer",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xprop.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xprop-1.2.8.tar.xz",
+      "dest": "xprop-1.2.8.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
