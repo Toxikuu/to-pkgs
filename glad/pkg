@@ -1,0 +1,29 @@
+#!/to
+
+n="glad"
+v="2.0.8"
+a="Multi-lanaguage loader generator"
+m="Tox"
+l="MIT"
+t="lib gfx"
+u="https://github.com/Dav1dde/$n.git"
+
+s="$u"
+
+d=(
+    "b,git"
+    "python"
+    "jinja2"
+    "b,setuptools"
+    "b,wheel"
+)
+
+b() {
+
+gco v$v
+with pip
+
+pipb
+pipi ${n}2
+
+}

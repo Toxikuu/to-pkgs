@@ -1,0 +1,45 @@
+{
+  "name": "glad",
+  "version": "2.0.8",
+  "about": "Multi-lanaguage loader generator",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/Dav1dde/glad.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Dav1dde/glad.git",
+      "dest": "glad"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "jinja2",
+      "kind": "Required"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Build"
+    },
+    {
+      "name": "wheel",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
