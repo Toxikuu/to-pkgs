@@ -1,0 +1,43 @@
+{
+  "name": "xrdb",
+  "version": "1.2.2",
+  "about": "X resource database utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xrdb.git",
+  "version_fetch": "gr | grep 'xrdb-[0-9]\\.' | sort -V",
+  "tags": [
+    "db",
+    "utils",
+    "cli",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xrdb-1.2.2.tar.xz",
+      "dest": "xrdb-1.2.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxmu",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

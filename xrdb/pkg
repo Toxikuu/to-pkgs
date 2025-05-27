@@ -1,0 +1,28 @@
+#!/to
+
+n="xrdb"
+v="1.2.2"
+a="X resource database utility"
+m="Tox"
+l="Custom"
+t="db utils cli xorg"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+vf="gr | grep '$n-[0-9]\.' | sort -V"
+
+s=(
+    "https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+)
+
+d=(
+    "libx11"
+    "libxmu"
+    "glibc"
+    "b,util-macros"
+)
+
+b() {
+
+il
+def
+
+}
