@@ -15,6 +15,7 @@ s=(
 d=(
     "fontconfig"
     "freetype"
+    "libxcursor"
     "libxi"
     "libxkbcommon"
     "libxrandr"

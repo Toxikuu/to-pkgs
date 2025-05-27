@@ -31,6 +31,10 @@
       "kind": "Required"
     },
     {
+      "name": "libxcursor",
+      "kind": "Required"
+    },
+    {
       "name": "libxi",
       "kind": "Required"
     },
