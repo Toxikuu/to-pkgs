@@ -1,0 +1,37 @@
+{
+  "name": "mandoc",
+  "version": "1.14.6",
+  "about": "Toolkit for compiling BSD-style man pages",
+  "maintainer": "Tox",
+  "licenses": [
+    "ISC"
+  ],
+  "upstream": "https://mandoc.bsd.lv/",
+  "version_fetch": "curl -s 'https://mandoc.bsd.lv/' | grep -Eo 'current version .+\\(' | cut -d' ' -f3",
+  "tags": [
+    "doc",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz",
+      "dest": "mandoc-1.14.6.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "less",
+      "kind": "Build"
+    },
+    {
+      "name": "tree",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

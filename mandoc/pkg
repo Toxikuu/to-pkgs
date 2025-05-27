@@ -1,0 +1,27 @@
+#!/to
+
+n="mandoc"
+v="1.14.6"
+a="Toolkit for compiling BSD-style man pages"
+m="Tox"
+l="ISC"
+t="doc lib"
+u="https://mandoc.bsd.lv/"
+vf="curl -s '$u' | grep -Eo 'current version .+\(' | cut -d' ' -f3"
+
+s=(
+    "${u}snapshots/$n-$v.tar.gz"
+)
+
+d=(
+    "zlib"
+    "b,less"
+    "b,tree"
+)
+
+b() {
+
+def
+tree "$D" >&2
+
+}
