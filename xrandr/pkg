@@ -24,4 +24,7 @@ b() {
 
 def
 
+# Remove an undocumented, broken script
+rm -vf "$D/usr/bin/xkeystone"
+
 }
