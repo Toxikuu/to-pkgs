@@ -1,0 +1,28 @@
+#!/to
+
+n="xsetroot"
+v="1.1.3"
+a="Minimal wallpaper utility"
+m="Tox"
+l="Custom"
+t="utils cli xorg"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+
+s=(
+    "https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+)
+
+d=(
+    "libx11"
+    "libxcursor"
+    "libxmu"
+    "b,util-macros"
+    "b,xbitmaps"
+)
+
+b() {
+
+il
+def
+
+}
