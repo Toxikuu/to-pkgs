@@ -1,0 +1,95 @@
+{
+  "name": "libplacebo",
+  "version": "7.351.0",
+  "about": "Image and video primitives and shaders library, featuring a high-quality rendering pipeline",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/haasn/libplacebo.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx",
+    "video",
+    "img"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/haasn/libplacebo.git",
+      "dest": "libplacebo"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "glslang",
+      "kind": "Required"
+    },
+    {
+      "name": "shaderc",
+      "kind": "Required"
+    },
+    {
+      "name": "xxhash",
+      "kind": "Required"
+    },
+    {
+      "name": "vulkan-loader",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    },
+    {
+      "name": "glad",
+      "kind": "Build"
+    },
+    {
+      "name": "jinja2",
+      "kind": "Build"
+    },
+    {
+      "name": "mako",
+      "kind": "Build"
+    },
+    {
+      "name": "markupsafe",
+      "kind": "Build"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Build"
+    },
+    {
+      "name": "vulkan-headers",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
