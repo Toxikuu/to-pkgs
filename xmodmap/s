@@ -1,0 +1,35 @@
+{
+  "name": "xmodmap",
+  "version": "1.0.11",
+  "about": "X keymap modification utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xmodmap.git",
+  "version_fetch": "gr | grep 'xmodmap-[0-9]\\.' | sort -V",
+  "tags": [
+    "xorg",
+    "utils",
+    "kb",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xmodmap-1.0.11.tar.xz",
+      "dest": "xmodmap-1.0.11.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
