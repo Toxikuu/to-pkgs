@@ -19,7 +19,7 @@ d=(
 b() {
 
 gco lcms$v
-./autogen.sh
+NOCONFIGURE=1 ./autogen.sh
 def
 
 }
