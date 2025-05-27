@@ -26,6 +26,7 @@ b() {
 gco
 
 _cfg=(
+    VERSION="${v:8}"
     exif=1
     inotify=1
     xinerama=1
