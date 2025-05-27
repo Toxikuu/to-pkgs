@@ -1,0 +1,37 @@
+#!/to
+
+n="libvpx"
+v="1.15.1"
+a="VP8 and VP9 codecs"
+m="Tox"
+l="BSD"
+t="lib video codec"
+u="https://github.com/webmproject/$n.git"
+
+s=(
+    "${u%.git}/archive/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "b,nasm"
+    "b,which"
+    "glibc"
+    "gcc"
+)
+
+b() {
+
+sed -i 's/cp -p/cp/' build/make/Makefile
+
+export NO_DEFAULT=1
+_cfg=(
+    --prefix=/usr
+    --disable-static
+    --enable-shared
+)
+
+mkdir -v "$n-build"
+cd       "$n-build"
+def
+
+}

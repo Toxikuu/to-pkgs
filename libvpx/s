@@ -1,0 +1,42 @@
+{
+  "name": "libvpx",
+  "version": "1.15.1",
+  "about": "VP8 and VP9 codecs",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://github.com/webmproject/libvpx.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "video",
+    "codec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/webmproject/libvpx/archive/v1.15.1/libvpx-1.15.1.tar.gz",
+      "dest": "libvpx-1.15.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "nasm",
+      "kind": "Build"
+    },
+    {
+      "name": "which",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
