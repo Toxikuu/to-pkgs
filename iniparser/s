@@ -1,6 +1,6 @@
 {
   "name": "iniparser",
-  "version": "4.2.6",
+  "version": "4bef811283e0ec1658c60e09950bd5a1ddc92e4b",
   "about": "Standalone ini file parser",
   "maintainer": "Tox",
   "licenses": [
@@ -13,15 +13,19 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.6.tar.gz",
-      "dest": "v4.2.6.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/ndevilla/iniparser.git",
+      "dest": "iniparser"
     }
   ],
   "dependencies": [
     {
       "name": "glibc",
       "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
     },
     {
       "name": "cmake",

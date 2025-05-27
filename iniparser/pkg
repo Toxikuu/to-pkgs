@@ -1,19 +1,18 @@
 #!/to
 
 n="iniparser"
-v="4.2.6"
+v="4bef811283e0ec1658c60e09950bd5a1ddc92e4b"
 a="Standalone ini file parser"
 m="Tox"
 l="MIT"
 t="lib"
 u="https://github.com/ndevilla/$n.git"
 
-s=(
-    "${u%.git}/archive/refs/tags/v$v.tar.gz"
-)
+s="$u"
 
 d=(
     "glibc"
+    "b,git"
     "b,cmake"
     "b,ninja"
 )
@@ -21,6 +20,7 @@ d=(
 b() {
 
 with cn
+gco
 
 _cfg=(
     -D BUILD_DOCS=OFF
@@ -29,7 +29,5 @@ _cfg=(
 )
 
 def
-
-install -vDm644 ../LICENSE -t "$D/usr/share/licenses/$n/"
 
 }

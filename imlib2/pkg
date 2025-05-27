@@ -71,9 +71,9 @@ mk
 mi
 
 # Remove test programs
-for test_prog in bumpmap colorspace poly show test; do
-    rm -vf "$D/usr/bin/${n}_${test_prog}"
-done
+# for test_prog in bumpmap colorspace poly show test; do
+#     rm -vf "$D/usr/bin/${n}_${test_prog}"
+# done
 
 }
 
