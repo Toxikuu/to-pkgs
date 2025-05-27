@@ -17,7 +17,6 @@ s=(
 d=(
     "libglvnd"
     "kernel"
-    # "r,xorg-server"
 )
 
 b() {
@@ -58,16 +57,75 @@ _cfg=(
 )
 
 echo "Building $n@$v for kernel@$kver..." >&2
+# TODO: DKMS that shit
 ./nvidia-installer "${_cfg[@]}"
 
-# Remove GLES1 from /usr/lib*
-for libdir in "$D/usr/lib"*; do
-  rm -vf "$libdir/libGLESv1_CM_$n"*
-done
+# Install NVIDIA components
+
+## Libraries
+
+### X driver
+install -vDm755 "${n}_drv.so"                   -t "$D/usr/lib/xorg/modules/drivers/"
+
+### Firmware (Turing)
+install -vDm644 "firmware/gsp_tu10x.bin"        -t "$D/usr/lib/firmware/$n/$v/"
+
+### GLX stuff
+install -vDm755 "libglxserver_$n.so.$v"         -t "$D/usr/lib/$n/xorg/"
+ln -sv "libglxserver_$n.so.$v"                     "$D/usr/lib/$n/xorg/libglxserver_$n.so.1"
+ln -sv "libglxserver_$n.so.$v"                     "$D/usr/lib/$n/xorg/libglxserver_$n.so"
+
+### OpenGL
+install -vDm755 "libEGL_$n.so.$v"               -t "$D/usr/lib/"
+install -vDm755 "libGLESv2_$n.so.$v"            -t "$D/usr/lib/"
+install -vDm755 "lib$n-glcore.so.$v"            -t "$D/usr/lib/"
+install -vDm755 "lib$n-eglcore.so.$v"           -t "$D/usr/lib/"
+install -vDm755 "lib$n-glsi.so.$v"              -t "$D/usr/lib/"
+install -vDm644 "10_$n.json"                    -t "$D/usr/share/glvnd/egl_vendor.d/"
+
+### Vulkan
+install -vDm644 "${n}_icd.json"                 -t "$D/usr/share/vulkan/icd.d/"
+install -vDm644 "${n}_layers.json"              -t "$D/usr/share/vulkan/implicit_layer.d/"
+
+### VDPAU
+install -vDm755 "libvdpau_$n.so.$v"             -t "$D/usr/lib/vdpau/"
+
+### CUDA
+install -vDm755 "libcuda.so.$v"                 -t "$D/usr/lib/"
+install -vDm755 "libnvcuvid.so.$v"              -t "$D/usr/lib/"
+
+### CUDA compiler infrastructure
+install -vDm644 "lib$n-nvvm.so.$v"              -t "$D/usr/lib/"
+install -vDm755 "lib$n-ptxjitcompiler.so.$v"    -t "$D/usr/lib/"
+
+### Raytracing
+install -vDm755 "nvoptix.bin"                   -t "$D/usr/share/$n/"
+install -vDm755 "libnvoptix.so.$v"              -t "$D/usr/lib/"
+install -vDm755 "lib$n-rtcore.so.$v"            -t "$D/usr/lib/"
+
+### Optical flow
+install -vDm755 "lib$n-opticalflow.so.$v"       -t "$D/usr/lib/"
+
+### Application profiles
+install -vDm644 "$n-application-profiles-$v-rc" -t "$D/usr/share/$n/"
+
+## Programs
+
+### nvidia-xconfig
+install -vDm755 "$n-xconfig"                    -t "$D/usr/bin/"
+
+### nvidia-smi
+install -vDm755 "$n-smi"                        -t "$D/usr/bin/"
+
+### nvidia-modprobe
+# FIX: Remove setuid whenever NVIDIA gets their shit together
+install -vDm4755 "$n-modprobe"                  -t "$D/usr/bin"
+
+il
+install -vDm644 "README.txt"                       "$D/usr/share/doc/$n/README"
 
 # Create a DRI pkgconfig file for packages expecting one
-mkdir -pv "$D"/usr/lib/pkgconfig
-cat > "$D"/usr/lib/pkgconfig/dri.pc << EOF
+install -vDm644 /dev/stdin "$D"/usr/lib/pkgconfig/dri.pc << "EOF"
 prefix=/usr
 includedir=\${prefix}/include
 
@@ -81,9 +139,8 @@ Cflags: -I\${includedir}
 EOF
 
 # Blacklist Nouveau
-mkdir -pv "$D"/etc/modprobe.d
-cat >> "$D"/etc/modprobe.d/nvfb.conf << "EOF"
-# /etc/modprobe.d/nvfb.conf
+install -vDm644 /dev/stdin "$D/usr/lib/modprobe.d/nvfb.conf" << "EOF"
+# /usr/lib/modprobe.d/nvfb.conf
 
 blacklist nvidiafb
 blacklist nouveau
