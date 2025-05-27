@@ -1,0 +1,118 @@
+#!/to
+
+n="ffmpeg"
+v="7.1.1"
+a="Play, record, convert, and stream audio and video"
+m="Tox"
+l="GPL-3.0-only"
+t="lib cli utils video audio codec"
+u="https://git.$n.org/$n.git"
+vf="gr | tr -d nv | grep -v '[a-Z]' | sort -V"
+
+s=(
+    "https://$n.org/releases/$n-$v.tar.xz"
+    "https://glfs-book.github.io/glfs/patches/$n/$n-$v-chromium_method-1.patch"
+)
+
+d=(
+    "alsa-lib"
+    "libaom"
+    "bzip2"
+    "cairo"
+    "fontconfig"
+    "freetype"
+    "fribidi"
+    "glib"
+    "glibc"
+    "gmp"
+    "harfbuzz"
+    "lame"
+    "libass"
+    "libdrm"
+    "libglvnd"
+    # "libplacebo" TODO: Add
+    "librsvg"
+    "libva"
+    "libvorbis"
+    "libvpx"
+    "libwebp"
+    "libx11"
+    "libxcb"
+    "libxext"
+    "libxml2"
+    "libxv"
+    "fdk-aac"
+    "openssl"
+    "opus"
+    "sdl2-compat"
+    "vulkan-loader"
+    "xz"
+    "zlib"
+    "x264"
+    "x265"
+
+    "b,nasm"
+    "b,vulkan-headers"
+)
+
+b() {
+
+pat "$S/$n-$v-chromium_method-1.patch"
+
+# Fix an x265 issue
+sed -e 's/X265_BUILD >= 210/(&) \&\& (X265_BUILD < 213)/' \
+    -i libavcodec/libx265.c
+
+export NO_DEFAULT=1
+_cfg=(
+    --prefix=/usr
+
+    --enable-lto
+    --enable-shared
+
+    --enable-gpl
+    --enable-version3
+    --enable-nonfree
+
+    --disable-rpath
+    --disable-debug
+    --disable-static
+    --disable-stripping # handled by to
+
+    --enable-libaom
+    --enable-libass
+    --enable-fontconfig
+    --enable-gmp
+    --enable-libfreetype
+    --enable-libharfbuzz
+    # --enable-libpulse TODO: Probably support pulse
+    # TODO: Consider adding --enable-nv{enc,dec}
+    --enable-libfdk-aac
+    --enable-libfreetype
+    --enable-libmp3lame
+    --enable-libopus
+    # --enable-libplacebo TODO: Support this
+    --enable-libvorbis
+    --enable-libvpx
+    --enable-libx26{4,5}
+    --enable-openssl
+    --enable-opengl
+    --enable-vulkan
+    --enable-libdrm
+
+    --disable-doc
+    --disable-large-tests
+    --ignore-tests=enhanced-flv-av1
+)
+
+def
+
+# Build a quicktime utility
+gcc             "tools/qt-faststart.c"  -o "tools/qt-faststart"
+install -vDm755 "tools/qt-faststart"    -t "$D/usr/bin/"
+
+# Man pages
+mk doc/ff{mpeg,play,probe}.1
+mk DESTDIR="$D" install-man
+
+}

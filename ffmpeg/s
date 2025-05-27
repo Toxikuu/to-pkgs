@@ -1,0 +1,178 @@
+{
+  "name": "ffmpeg",
+  "version": "7.1.1",
+  "about": "Play, record, convert, and stream audio and video",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-only"
+  ],
+  "upstream": "https://git.ffmpeg.org/ffmpeg.git",
+  "version_fetch": "gr | tr -d nv | grep -v '[a-Z]' | sort -V",
+  "tags": [
+    "lib",
+    "cli",
+    "utils",
+    "video",
+    "audio",
+    "codec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz",
+      "dest": "ffmpeg-7.1.1.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://glfs-book.github.io/glfs/patches/ffmpeg/ffmpeg-7.1.1-chromium_method-1.patch",
+      "dest": "ffmpeg-7.1.1-chromium_method-1.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "libaom",
+      "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "fontconfig",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "fribidi",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gmp",
+      "kind": "Required"
+    },
+    {
+      "name": "harfbuzz",
+      "kind": "Required"
+    },
+    {
+      "name": "lame",
+      "kind": "Required"
+    },
+    {
+      "name": "libass",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "librsvg",
+      "kind": "Required"
+    },
+    {
+      "name": "libva",
+      "kind": "Required"
+    },
+    {
+      "name": "libvorbis",
+      "kind": "Required"
+    },
+    {
+      "name": "libvpx",
+      "kind": "Required"
+    },
+    {
+      "name": "libwebp",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "libxv",
+      "kind": "Required"
+    },
+    {
+      "name": "fdk-aac",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "opus",
+      "kind": "Required"
+    },
+    {
+      "name": "sdl2-compat",
+      "kind": "Required"
+    },
+    {
+      "name": "vulkan-loader",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "x264",
+      "kind": "Required"
+    },
+    {
+      "name": "x265",
+      "kind": "Required"
+    },
+    {
+      "name": "nasm",
+      "kind": "Build"
+    },
+    {
+      "name": "vulkan-headers",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
