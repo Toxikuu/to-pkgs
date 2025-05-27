@@ -1,0 +1,31 @@
+#!/to
+
+n="little-cms"
+v="2.17"
+a="Little Color Management System"
+m="Tox"
+l="MIT"
+t="lib gfx"
+u="https://github.com/mm2/$n.git"
+vf="gr | sed -e 's,^lcms,,' -e 's,2-,,' | vfs | sort -V"
+
+s="$u"
+
+d=(
+    "b,git"
+    "libjpeg-turbo"
+)
+
+b() {
+
+gco lcms$v
+./autogen.sh
+def
+
+}
+
+t() {
+
+mk check
+
+}
