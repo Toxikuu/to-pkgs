@@ -1,0 +1,31 @@
+#!/to
+
+n="sdl2-compat"
+v="2.32.56"
+a="SDL2 compatibility layer using SDL3"
+m="Tox"
+l="Zlib"
+t="lib gfx video audio"
+u="https://github.com/libsdl-org/$n.git"
+vf="gr | grep '^release-' | cut -d- -f2 | sort -V"
+
+s=(
+    "${u%.git}/releases/download/release-$v/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "sdl3"
+    "b,cmake"
+    "b,ninja"
+)
+
+b() {
+
+with cn
+
+il
+def
+ln -sv "$n.pc" "$D/usr/lib/pkgconfig/${n%-*}.pc"
+
+}

@@ -1,0 +1,43 @@
+{
+  "name": "sdl2-compat",
+  "version": "2.32.56",
+  "about": "SDL2 compatibility layer using SDL3",
+  "maintainer": "Tox",
+  "licenses": [
+    "Zlib"
+  ],
+  "upstream": "https://github.com/libsdl-org/sdl2-compat.git",
+  "version_fetch": "gr | grep '^release-' | cut -d- -f2 | sort -V",
+  "tags": [
+    "lib",
+    "gfx",
+    "video",
+    "audio"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/libsdl-org/sdl2-compat/releases/download/release-2.32.56/sdl2-compat-2.32.56.tar.gz",
+      "dest": "sdl2-compat-2.32.56.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "sdl3",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
