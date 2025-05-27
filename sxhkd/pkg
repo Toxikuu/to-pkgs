@@ -1,0 +1,27 @@
+#!/to
+
+n="sxhkd"
+v="b0923b6b3d5d85b1ff80a5bb286934b8721a7c08"
+a="Simple X hotkey daemon"
+m="Tox"
+l="BSD-2-Clause"
+t="utils cli"
+u="https://github.com/baskerville/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "b,xcb-util"
+    "xcb-util-keysyms"
+)
+
+b() {
+
+gco
+mk PREFIX=/usr
+mi PREFIX=/usr
+
+}

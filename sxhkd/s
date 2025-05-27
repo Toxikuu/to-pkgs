@@ -1,0 +1,37 @@
+{
+  "name": "sxhkd",
+  "version": "b0923b6b3d5d85b1ff80a5bb286934b8721a7c08",
+  "about": "Simple X hotkey daemon",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause"
+  ],
+  "upstream": "https://github.com/baskerville/sxhkd.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/baskerville/sxhkd.git",
+      "dest": "sxhkd"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "xcb-util",
+      "kind": "Build"
+    },
+    {
+      "name": "xcb-util-keysyms",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
