@@ -47,6 +47,10 @@
       "kind": "Required"
     },
     {
+      "name": "little-cms",
+      "kind": "Required"
+    },
+    {
       "name": "libglvnd",
       "kind": "Build"
     },

@@ -8,9 +8,7 @@ l="LGPL-2.1-or-later"
 t="lib gfx video img"
 u="https://github.com/haasn/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "gcc"
@@ -19,7 +17,7 @@ d=(
     "shaderc"
     "xxhash"
     "vulkan-loader"
-    # TODO: Maybe add lcms support
+    "little-cms"
     "b,libglvnd"
     "b,meson"
     "b,ninja"
@@ -46,7 +44,7 @@ _cfg=(
     -D glslang=enabled
     -D shaderc=enabled
 
-    -D lcms=disabled # TODO: consider supporting lcms
+    -D lcms=enabled
     -D d3d11=disabled
     -D libdovi=disabled # dolby vision
 )
