@@ -1,0 +1,50 @@
+{
+  "name": "cava",
+  "version": "963e9a9c3e41d7221657750086e763c1fbd8b98d",
+  "about": "Terminal audio visualizer",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/karlstav/cava.git",
+  "version_fetch": null,
+  "tags": [
+    "tui",
+    "audio",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/karlstav/cava.git",
+      "dest": "cava"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "fftw",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "iniparser",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

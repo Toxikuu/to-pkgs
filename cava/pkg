@@ -1,0 +1,29 @@
+#!/to
+
+n="cava"
+v="963e9a9c3e41d7221657750086e763c1fbd8b98d"
+a="Terminal audio visualizer"
+m="Tox"
+l="MIT"
+t="tui audio utils"
+u="https://github.com/karlstav/$n.git"
+
+s="$u"
+
+d=(
+    "b,git"
+    "alsa-lib"
+    "fftw"
+    "glibc"
+    "iniparser"
+    "ncurses"
+    # TODO: Maybe include libpulse/libpipewire when I get that set up
+)
+
+b() {
+
+gco
+./autogen.sh
+def
+
+}
