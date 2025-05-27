@@ -1,0 +1,34 @@
+{
+  "name": "xset",
+  "version": "1.2.5",
+  "about": "X settings utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xset.git",
+  "version_fetch": "gr | grep 'xset-[0-9]\\.' | sort -V",
+  "tags": [
+    "utils",
+    "xorg",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xset-1.2.5.tar.xz",
+      "dest": "xset-1.2.5.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxmu",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
