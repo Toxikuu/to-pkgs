@@ -1,0 +1,27 @@
+#!/to
+
+n="xrandr"
+v="1.5.3"
+a="RandR CLI"
+m="Tox"
+l="HPND"
+t="utils cli xorg"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+vf="gr | grep '$n-[0-9]\.' | sort -V"
+
+s=(
+    "https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+)
+
+d=(
+    "libx11"
+    "libxrandr"
+    "glibc"
+    "b,util-macros"
+)
+
+b() {
+
+def
+
+}

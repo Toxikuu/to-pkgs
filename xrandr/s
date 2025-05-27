@@ -1,0 +1,42 @@
+{
+  "name": "xrandr",
+  "version": "1.5.3",
+  "about": "RandR CLI",
+  "maintainer": "Tox",
+  "licenses": [
+    "HPND"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xrandr.git",
+  "version_fetch": "gr | grep 'xrandr-[0-9]\\.' | sort -V",
+  "tags": [
+    "utils",
+    "cli",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xrandr-1.5.3.tar.xz",
+      "dest": "xrandr-1.5.3.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
