@@ -1,0 +1,37 @@
+{
+  "name": "uchardet",
+  "version": "0.0.8",
+  "about": "Unknown character encoding detector",
+  "maintainer": "Tox",
+  "licenses": [
+    "MPL"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/uchardet/uchardet.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/uchardet/uchardet.git",
+      "dest": "uchardet"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
