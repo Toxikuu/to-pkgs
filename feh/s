@@ -1,0 +1,54 @@
+{
+  "name": "feh",
+  "version": "565bc67087513d0c2bdf7256b2ad53dc69812f66",
+  "about": "Fast, light image viewer",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/derf/feh.git",
+  "version_fetch": null,
+  "tags": [
+    "img",
+    "gui",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/derf/feh.git",
+      "dest": "feh"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "file",
+      "kind": "Required"
+    },
+    {
+      "name": "imlib2",
+      "kind": "Required"
+    },
+    {
+      "name": "libexif",
+      "kind": "Required"
+    },
+    {
+      "name": "libxinerama",
+      "kind": "Required"
+    },
+    {
+      "name": "libxt",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

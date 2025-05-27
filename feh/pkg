@@ -1,0 +1,42 @@
+#!/to
+
+n="feh"
+v="565bc67087513d0c2bdf7256b2ad53dc69812f66"
+a="Fast, light image viewer"
+m="Tox"
+l="MIT"
+t="img gui utils"
+u="https://github.com/derf/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "b,git"
+    "curl"
+    "file"
+    "imlib2"
+    "libexif"
+    "libxinerama"
+    "b,libxt"
+    # TODO: Consider supporting imagemagick
+)
+
+b() {
+
+_cfg=(
+    # exif=1 # TODO: Test whether exif is detected
+    inotify=1
+    xinerama=1
+    magic=1
+    help=1
+    stat64=1 # perf
+    curl=1
+    debug=0
+)
+
+mk PREFIX=/usr "${_cfg[@]}"
+mi PREFIX=/usr
+
+}
