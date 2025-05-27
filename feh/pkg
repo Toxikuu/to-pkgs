@@ -8,9 +8,7 @@ l="MIT"
 t="img gui utils"
 u="https://github.com/derf/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "b,git"
@@ -25,8 +23,10 @@ d=(
 
 b() {
 
+gco
+
 _cfg=(
-    # exif=1 # TODO: Test whether exif is detected
+    exif=1
     inotify=1
     xinerama=1
     magic=1
