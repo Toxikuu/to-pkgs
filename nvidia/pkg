@@ -17,7 +17,7 @@ s=(
 d=(
     "libglvnd"
     "kernel"
-    "r,xorg-server"
+    # "r,xorg-server"
 )
 
 b() {
