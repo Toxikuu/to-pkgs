@@ -1,0 +1,50 @@
+#!/to
+
+n="sdl3"
+v="3.2.14"
+a="Simple Directmedia Layer"
+m="Tox"
+l="Zlib"
+t="gfx audio video libs"
+u="https://github.com/libsdl-org/SDL.git"
+vf="gr | grep '^release-' | cut -d- -f2 | sort -V"
+
+s=(
+    "${u%.git}/releases/download/release-$v/${n^^}-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "libglvnd"
+    "libusb"
+    "libx11"
+    "libxcursor"
+    "libxext"
+    "libxrender"
+
+    "b,cmake"
+    "b,ninja"
+
+    "b,alsa-lib"
+    "b,libxinerama"
+    "b,libxkbcommon"
+    "b,libxrandr"
+    "b,libxss"
+    "b,wayland"
+    "b,wayland-protocols"
+)
+
+b() {
+
+with cn
+
+CFLAGS+=" -ffat-lto-objects"
+_cfg=(
+    -D SDL_STATIC=OFF
+    -D SDL_RPATH=OFF
+)
+
+il
+def
+
+}

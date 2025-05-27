@@ -1,0 +1,91 @@
+{
+  "name": "sdl3",
+  "version": "3.2.14",
+  "about": "Simple Directmedia Layer",
+  "maintainer": "Tox",
+  "licenses": [
+    "Zlib"
+  ],
+  "upstream": "https://github.com/libsdl-org/SDL.git",
+  "version_fetch": "gr | grep '^release-' | cut -d- -f2 | sort -V",
+  "tags": [
+    "gfx",
+    "audio",
+    "video",
+    "libs"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.14/SDL3-3.2.14.tar.gz",
+      "dest": "SDL3-3.2.14.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libusb",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcursor",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Build"
+    },
+    {
+      "name": "libxinerama",
+      "kind": "Build"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Build"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Build"
+    },
+    {
+      "name": "libxss",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
