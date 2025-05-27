@@ -1,6 +1,6 @@
 {
   "name": "x265",
-  "version": "5130ab3ef90658526c26b51c265992d2088b5360",
+  "version": "4.1",
   "about": "H.265/HEVC encoder",
   "maintainer": "Tox",
   "licenses": [
@@ -13,19 +13,15 @@
   ],
   "sources": [
     {
-      "kind": "Git",
-      "url": "https://bitbucket.org/multicoreware/x265_git.git",
-      "dest": "x265_git"
+      "kind": "Download",
+      "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz",
+      "dest": "x265_4.1.tar.gz"
     }
   ],
   "dependencies": [
     {
       "name": "gcc",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     },
     {
       "name": "cmake",

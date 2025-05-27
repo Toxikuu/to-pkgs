@@ -1,7 +1,7 @@
 #!/to
 
 n="x265"
-v="5130ab3ef90658526c26b51c265992d2088b5360"
+v="4.1"
 a="H.265/HEVC encoder"
 m="Tox"
 l="GPL"
@@ -9,12 +9,11 @@ t="codec"
 u="https://bitbucket.org/multicoreware/${n}_git.git"
 
 s=(
-    "$u"
+    "${u%.git}/downloads/${n}_$v.tar.gz"
 )
 
 d=(
     "gcc"
-    "b,git"
     "b,cmake"
     "b,ninja"
     "b,nasm"
@@ -22,15 +21,18 @@ d=(
 
 b() {
 
-gco
-with cmake
+with cn
 cd source
 
+sed -r '/cmake_policy.*(0025|0054)/d' -i CMakeLists.txt
 _cfg=(
+    -D GIT_ARCHETYPE=1
     -D ENABLE_SHARED=TRUE
+    -D CMAKE_POLICY_VERSION_MINIMUM=3.5
 )
 
 def
+[ -e "$D/usr/lib/pkgconfig/x265.pc" ] || die "Missing pc file :("
 rm -vf "$D/usr/lib/lib$n.a"
 
 }
