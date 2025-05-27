@@ -1,0 +1,31 @@
+{
+  "name": "mpg123",
+  "version": "1.32.10",
+  "about": "Fast CLI MP3 player",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1"
+  ],
+  "upstream": "https://www.mpg123.de/index.shtml",
+  "version_fetch": "curl -s 'https://www.mpg123.de/index.shtml' | grep -Eo 'Releasing mpg123 version.+:' | head -n1 | awk '{{print $4}}' | tr -d :",
+  "tags": [
+    "lib",
+    "cli",
+    "utils",
+    "audio"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://downloads.sourceforge.net/mpg123/mpg123-1.32.10.tar.bz2",
+      "dest": "mpg123-1.32.10.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
