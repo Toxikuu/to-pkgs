@@ -1,0 +1,29 @@
+#!/to
+
+n="st"
+v="0.9.2"
+a="Suckless terminal"
+m="Tox"
+l="MIT"
+t="suckless term"
+u="https://git.suckless.org/$n"
+
+s=(
+    "${u/git/dl}/$n-$v.tar.gz"
+)
+
+d=(
+    "libxft"
+)
+
+b() {
+
+il
+mkdir -pv       "$D/usr/src/$n"
+cp -avf {,.}*   "$D/usr/src/$n"
+
+ln -sv gcc /usr/bin/c99
+mk X11INCDIR=/usr/include/X11 X11LIB=/usr/lib/X11
+mi PREFIX=/usr
+
+}

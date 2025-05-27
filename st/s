@@ -1,0 +1,29 @@
+{
+  "name": "st",
+  "version": "0.9.2",
+  "about": "Suckless terminal",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://git.suckless.org/st",
+  "version_fetch": null,
+  "tags": [
+    "suckless",
+    "term"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://dl.suckless.org/st/st-0.9.2.tar.gz",
+      "dest": "st-0.9.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxft",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
