@@ -1,0 +1,31 @@
+#!/to
+
+n="libusb"
+v="1.0.28"
+a="USB access library"
+m="Tox"
+l="LGPL-2.1"
+t="lib"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.bz2"
+)
+
+d=(
+    "glibc"
+    "udev"
+)
+
+kcfg=(
+    "usb_support=y"
+    "usb=y/m"
+    "usb_pci=y"
+    "usb_xhci_hcd=y/m"
+)
+
+b() {
+
+def
+
+}
