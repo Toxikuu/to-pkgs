@@ -1,7 +1,8 @@
 #!/to
 
+# NOTE: Mirrors are used because upstream is unstable
 n="automake"
-v="1.17"
+v="1.18"
 a="Automatic Makefile generator"
 m="Tox"
 l="GPL"
@@ -9,9 +10,7 @@ t="utils core"
 u="https://github.com/sailfishos-mirror/$n.git"
 vf="gr | vfs | sed 's,^v,,' | grep -v '[a-Z]'"
 
-s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
-)
+s="https://mirrors.ocf.berkeley.edu/gnu/$n/$n-$v.tar.xz"
 
 d=(
     "b,autoconf"
@@ -19,8 +18,6 @@ d=(
 
 b() {
 
-cfg
-mk
-mi
+def
 
 }

@@ -1,6 +1,6 @@
 {
   "name": "automake",
-  "version": "1.17",
+  "version": "1.18",
   "about": "Automatic Makefile generator",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz",
-      "dest": "automake-1.17.tar.xz"
+      "url": "https://mirrors.ocf.berkeley.edu/gnu/automake/automake-1.18.tar.xz",
+      "dest": "automake-1.18.tar.xz"
     }
   ],
   "dependencies": [
