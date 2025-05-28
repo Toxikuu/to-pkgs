@@ -1,0 +1,48 @@
+{
+  "name": "libdisplay-info",
+  "version": "0.2.0",
+  "about": "EDID and DisplayID library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/emersion/libdisplay-info.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/emersion/libdisplay-info.git",
+      "dest": "libdisplay-info"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "hwdata",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

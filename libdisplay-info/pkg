@@ -1,0 +1,28 @@
+#!/to
+
+n="libdisplay-info"
+v="0.2.0"
+a="EDID and DisplayID library"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://gitlab.freedesktop.org/emersion/$n.git"
+
+s="$u"
+
+d=(
+    "glibc"
+    "b,git"
+    "b,hwdata"
+    "b,meson"
+    "b,ninja"
+    "b,python"
+)
+
+b() {
+
+gco
+with mn
+def
+
+}
