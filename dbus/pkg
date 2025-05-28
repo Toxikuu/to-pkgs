@@ -41,19 +41,18 @@ _cfg=(
 
 def
 
+# Fix permissions
+chown -v root:messagebus "$D/usr/libexec/$n-daemon-launch-helper"
+chmod -v      4750       "$D/usr/libexec/$n-daemon-launch-helper"
+
 # Install the bootscript
-(
-    cd /usr/src/blfs-bootscripts
-    make DESTDIR="$D" install-dbus
-)
+pushd /usr/src/blfs-bootscripts
+make DESTDIR="$D" "install-$n"
+popd
 
 }
 
 i() {
-
-# Fix permissions
-chown -v root:messagebus /usr/libexec/dbus-daemon-launch-helper
-chmod -v      4750       /usr/libexec/dbus-daemon-launch-helper
 
 dbus-uuidgen --ensure
 
