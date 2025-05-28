@@ -30,7 +30,7 @@ d=(
     "libass"
     "libdrm"
     "libglvnd"
-    # "libplacebo" TODO: Add
+    "libplacebo"
     "librsvg"
     "libva"
     "libvorbis"
@@ -44,6 +44,7 @@ d=(
     "fdk-aac"
     "openssl"
     "opus"
+    "pulseaudio"
     "sdl2-compat"
     "vulkan-loader"
     "xz"
@@ -85,13 +86,13 @@ _cfg=(
     --enable-gmp
     --enable-libfreetype
     --enable-libharfbuzz
-    # --enable-libpulse TODO: Probably support pulse
+    --enable-libpulse
     # TODO: Consider adding --enable-nv{enc,dec}
     --enable-libfdk-aac
     --enable-libfreetype
     --enable-libmp3lame
     --enable-libopus
-    # --enable-libplacebo TODO: Support this
+    --enable-libplacebo
     --enable-libvorbis
     --enable-libvpx
     --enable-libx26{4,5}

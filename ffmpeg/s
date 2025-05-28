@@ -90,6 +90,10 @@
       "kind": "Required"
     },
     {
+      "name": "libplacebo",
+      "kind": "Required"
+    },
+    {
       "name": "librsvg",
       "kind": "Required"
     },
@@ -139,6 +143,10 @@
     },
     {
       "name": "opus",
+      "kind": "Required"
+    },
+    {
+      "name": "pulseaudio",
       "kind": "Required"
     },
     {
