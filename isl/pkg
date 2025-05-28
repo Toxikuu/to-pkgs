@@ -21,18 +21,14 @@ b() {
 
 ./autogen.sh
 
-cfg
-mk
-mi
-
+def
 install -vdm755 "$D/usr/share/gdb/auto-load/usr/lib/"
-install -vDm644 LICENSE -t "$D/usr/share/licenses/$n/LICENSE"
 
 }
 
-# Tests fail lol
-# t() {
-#
-# mk check
-#
-# }
+t() {
+
+# One test wanting python fails
+make check || true
+
+}
