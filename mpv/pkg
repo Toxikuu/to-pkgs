@@ -1,0 +1,110 @@
+#!/to
+
+n="mpv"
+v="0.40.0"
+a="Media player"
+m="Tox"
+l="GPL-2.0-or-later AND LGPL-2.1-or-later"
+t="lib video utils gui cli"
+u="https://github.com/$n-player/$n.git"
+
+s="$u"
+
+d=(
+    "alsa-lib"
+    "desktop-file-utils"
+    "ffmpeg"
+    "glibc"
+    "little-cms"
+    "libarchive"
+    "libass"
+    "libdrm"
+    "libglvnd"
+    "libjpeg-turbo"
+    "libplacebo"
+    "libx11"
+    "libxext"
+    "libxkbcommon"
+    "libxpresent"
+    "libdisplay-info"
+    "libxrandr"
+    "libxss"
+    "libxv"
+    "luajit"
+    "mesa"
+    "uchardet"
+    "vulkan-loader"
+    "zlib"
+
+    "b,git"
+    "b,meson"
+    "b,ninja"
+    "b,vulkan-headers"
+)
+
+b() {
+
+with mn
+
+# Fix building with FFmpeg > 7.0
+sed -i 's/AV_OPT_TYPE_CHANNEL_LAYOUT/AV_OPT_TYPE_CHLAYOUT/' filters/f_lavfi.c
+
+_cfg=(
+    -D x11=enabled
+    -D wayland=disabled
+    -D gl-x11=enabled
+    -D drm=enabled
+
+    -D caca=disabled
+    -D dvbin=disabled
+    -D dvdnav=disabled
+    -D cdda=disabled
+    -D libbluray=disabled
+    -D javascript=disabled
+
+    -D libarchive=enabled
+    -D cplugins=enabled
+    -D lua=enabled
+    -D cplayer=true
+    -D libmpv=true
+
+    -D tests=false
+    -D build-date=false
+    -D fuzzers=false
+
+    # Explicitly disable options targetting inferior operating systems
+    -D win32-threads=disabled
+    -D win32-smtc=disabled
+    -D macos-10-15-4-features=disabled
+    -D macos-11-features=disabled
+    -D macos-11-3-features=disabled
+    -D macos-12-features=disabled
+    -D macos-cocoa-cb=disabled
+    -D macos-media-player=disabled
+    -D macos-touchbar=disabled
+    -D swift-build=disabled
+)
+
+def
+
+# Delete private static linking entries
+sed -i "$D/usr/lib/pkgconfig/mpv.pc"    \
+    -e '/Requires.private/d'            \
+    -e '/Libs.private/d'
+
+}
+
+t() {
+
+nj test
+
+}
+
+i() {
+
+if to data -i gtk3; then
+    gtk-update-icon-cache   -tf /usr/share/icons/hicolor
+    update-desktop-database -v
+fi
+
+}

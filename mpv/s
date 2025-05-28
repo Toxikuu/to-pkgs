@@ -1,0 +1,140 @@
+{
+  "name": "mpv",
+  "version": "0.40.0",
+  "about": "Media player",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later AND LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/mpv-player/mpv.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "video",
+    "utils",
+    "gui",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/mpv-player/mpv.git",
+      "dest": "mpv"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "desktop-file-utils",
+      "kind": "Required"
+    },
+    {
+      "name": "ffmpeg",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "little-cms",
+      "kind": "Required"
+    },
+    {
+      "name": "libarchive",
+      "kind": "Required"
+    },
+    {
+      "name": "libass",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "libplacebo",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "libxpresent",
+      "kind": "Required"
+    },
+    {
+      "name": "libdisplay-info",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "libxss",
+      "kind": "Required"
+    },
+    {
+      "name": "libxv",
+      "kind": "Required"
+    },
+    {
+      "name": "luajit",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "uchardet",
+      "kind": "Required"
+    },
+    {
+      "name": "vulkan-loader",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "vulkan-headers",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
