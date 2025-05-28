@@ -1,0 +1,75 @@
+{
+  "name": "tuun",
+  "version": "3.5.3",
+  "about": "Minimal music player using MPV as a backend",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0"
+  ],
+  "upstream": "https://github.com/Toxikuu/tuun.git",
+  "version_fetch": null,
+  "tags": [
+    "gui",
+    "audio",
+    "utils",
+    "me"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Toxikuu/tuun.git",
+      "dest": "tuun"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "mpv",
+      "kind": "Runtime"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxtst",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "libxau",
+      "kind": "Required"
+    },
+    {
+      "name": "libxdmcp",
+      "kind": "Required"
+    },
+    {
+      "name": "libxi",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

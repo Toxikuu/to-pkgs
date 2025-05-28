@@ -1,0 +1,36 @@
+#!/to
+
+n="tuun"
+v="3.5.3"
+a="Minimal music player using MPV as a backend"
+m="Tox"
+l="GPL-3.0"
+t="gui audio utils me"
+u="https://github.com/Toxikuu/$n.git"
+
+s="$u"
+
+d=(
+    "b,git"
+    "b,rust"
+    "r,mpv"
+    "gcc"
+    "libx11"
+    "libxtst"
+    "glibc"
+    "libxcb"
+    "libxau"
+    "libxdmcp"
+    "libxi"
+    "libxext"
+)
+
+b() {
+
+with rust
+gco v$v
+
+mk
+mi
+
+}
