@@ -30,6 +30,10 @@
     {
       "name": "ninja",
       "kind": "Build"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Runtime"
     }
   ],
   "kcfg": []
