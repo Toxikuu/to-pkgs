@@ -1,0 +1,54 @@
+#!/to
+
+n="fuse2"
+v="2.9.9"
+a="Filesystem in userspace"
+m="Tox"
+l="GPL2"
+t="fs lib utils"
+u="https://github.com/libfuse/libfuse.git"
+vf="gr | grep 'fuse-2\\.9\\.' | tail -n1 | cut -d- -f2-" # avoid fuse3
+
+s=(
+    "${u%.git}/releases/download/fuse-$v/fuse-$v.tar.gz"
+    "https://gitlab.archlinux.org/archlinux/packaging/packages/$n/-/raw/main/conditionally-define-closefrom.patch"
+)
+
+d=(
+    "glibc"
+    "udev"
+)
+
+kcfg=(
+    "fuse_fs=*/m"
+    "cuse=*/m"
+)
+
+b() {
+
+# Fix glibc >= 2.34 compatibility
+pat "$S/conditionally-define-closefrom.patch"
+autoreconf -fiv
+
+_cfg=(
+    INIT_D_PATH=/tmp/init.d
+)
+
+def
+rm -rf "$D"/tmp/init.d
+
+# Install a configuration file
+# TODO: Maybe package this as an asset instead
+install -vDm644 /dev/stdin /etc/fuse.conf << "EOF"
+# Set the maximum number of FUSE mounts allowed to non-root users.
+# The default is 1000.
+#
+#mount_max = 1000
+
+# Allow non-root users to specify the 'allow_other' or 'allow_root'
+# mount options.
+#
+#user_allow_other
+EOF
+
+}

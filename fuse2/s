@@ -1,0 +1,42 @@
+{
+  "name": "fuse2",
+  "version": "2.9.9",
+  "about": "Filesystem in userspace",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL2"
+  ],
+  "upstream": "https://github.com/libfuse/libfuse.git",
+  "version_fetch": "gr | grep 'fuse-2\\.9\\.' | tail -n1 | cut -d- -f2-",
+  "tags": [
+    "fs",
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/libfuse/libfuse/releases/download/fuse-2.9.9/fuse-2.9.9.tar.gz",
+      "dest": "fuse-2.9.9.tar.gz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://gitlab.archlinux.org/archlinux/packaging/packages/fuse2/-/raw/main/conditionally-define-closefrom.patch",
+      "dest": "conditionally-define-closefrom.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "udev",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": [
+    "fuse_fs=*/m",
+    "cuse=*/m"
+  ]
+}
