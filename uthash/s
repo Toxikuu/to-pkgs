@@ -1,0 +1,23 @@
+{
+  "name": "uthash",
+  "version": "2.3.0",
+  "about": "Hash table and linked list library",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://github.com/troydhanson/uthash.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/troydhanson/uthash/archive/v2.3.0/uthash-2.3.0.tar.gz",
+      "dest": "uthash-2.3.0.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

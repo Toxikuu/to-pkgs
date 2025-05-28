@@ -1,0 +1,19 @@
+#!/to
+
+n="uthash"
+v="2.3.0"
+a="Hash table and linked list library"
+m="Tox"
+l="BSD"
+t="lib"
+u="https://github.com/troydhanson/$n.git"
+
+s=(
+    "${u%.git}/archive/v$v/$n-$v.tar.gz"
+)
+
+b() {
+
+install -vDm644 src/*.h -t "$D/usr/include/"
+
+}
