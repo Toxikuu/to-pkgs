@@ -38,8 +38,8 @@ autoreconf -fiv
 _cfg=(
     --disable-debug
     --disable-doc-build
-    --disable-progs
     --disable-werror
+    --enable-progs
     --enable-amd64
     --sysconfdir="/etc/$n"
 
@@ -71,9 +71,9 @@ mk
 mi
 
 # Remove test programs
-# for test_prog in bumpmap colorspace poly show test; do
-#     rm -vf "$D/usr/bin/${n}_${test_prog}"
-# done
+for test_prog in bumpmap colorspace poly show test; do
+    rm -vf "$D/usr/bin/${n}_${test_prog}"
+done
 
 }
 
