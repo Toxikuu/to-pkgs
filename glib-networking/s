@@ -1,0 +1,57 @@
+{
+  "name": "glib-networking",
+  "version": "2.80.1",
+  "about": "Network extensions for GLib",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://gitlab.gnome.org/GNOME/glib-networking.git",
+  "version_fetch": "gr | sed 's,^glib-,,' | vfs | sort -V",
+  "tags": [
+    "lib",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz",
+      "dest": "glib-networking-2.80.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gnutls",
+      "kind": "Required"
+    },
+    {
+      "name": "make-ca",
+      "kind": "Required"
+    },
+    {
+      "name": "gsettings-desktop-schemas",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
