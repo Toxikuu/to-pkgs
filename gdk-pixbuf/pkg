@@ -22,6 +22,7 @@ d=(
     "shared-mime-info"
     "b,meson"
     "b,ninja"
+    "r,pcre2"
 )
 
 b() {
