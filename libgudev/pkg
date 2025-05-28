@@ -1,0 +1,29 @@
+#!/to
+
+n="libgudev"
+v="238"
+a="GObject bindings for libudev"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib"
+u="https://gitlab.gnome.org/GNOME/$n.git"
+
+s=(
+    "https://download.gnome.org/sources/$n/$v/$n-$v.tar.xz"
+)
+
+d=(
+    "glib"
+    "glibc"
+    "gcc"
+    "udev"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+def
+
+}
