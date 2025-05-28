@@ -1,0 +1,30 @@
+{
+  "name": "libassuan",
+  "version": "3.0.2",
+  "about": "IPC library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LICENSE"
+  ],
+  "upstream": "https://github.com/gpg/libassuan.git",
+  "version_fetch": null,
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2",
+      "dest": "libassuan-3.0.2.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libgpg-error",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,30 @@
+#!/to
+
+n="libassuan"
+v="3.0.2"
+a="IPC library"
+m="Tox"
+l="LICENSE"
+t=""
+u="https://github.com/gpg/$n.git"
+
+s=(
+    "https://www.gnupg.org/ftp/gcrypt/$n/$n-$v.tar.bz2"
+)
+
+d=(
+    "glibc"
+    "libgpg-error"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+mk check
+
+}
