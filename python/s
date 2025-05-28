@@ -60,6 +60,10 @@
       "kind": "Required"
     },
     {
+      "name": "sqlite",
+      "kind": "Required"
+    },
+    {
       "name": "glibc",
       "kind": "Runtime"
     }

@@ -23,6 +23,7 @@ d=(
     "openssl"
     "zlib"
     "bzip2"
+    "sqlite"
     "r,glibc"
 )
 
@@ -53,9 +54,7 @@ _cfg=(
 
 # Use -O3 and fat LTO
 CFLAGS="${CFLAGS/-O2/-O3} -ffat-lto-objects"
-cfg
-mk
-mi
+def
 
 install -vDm644 "$A/pip.conf" -t "$D"/etc/
 
@@ -69,12 +68,5 @@ ln -sv python${v%.*}.1       "$D"/usr/share/man/man1/python.1
 # Remove idle shit (should be a configure option ngl)
 rm -rvf "$D"/usr/lib/python[0-9]*/idlelib
 rm -vf "$D"/usr/bin/idle[0-9]*
-
-}
-
-t() {
-
-# Several tests may fail
-make test TESTOPTS="--timeout 60" || true
 
 }
