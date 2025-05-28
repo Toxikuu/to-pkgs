@@ -1,0 +1,45 @@
+{
+  "name": "fuse3",
+  "version": "3.17.2",
+  "about": "Filesystem in userspace",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL2"
+  ],
+  "upstream": "https://github.com/libfuse/libfuse.git",
+  "version_fetch": "gr | sed 's,^fuse[-_],,' | grep -v '[a-Z]' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "fs",
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/libfuse/libfuse/releases/download/fuse-3.17.2/fuse-3.17.2.tar.gz",
+      "dest": "fuse-3.17.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "udev",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": [
+    "fuse_fs=*/m",
+    "cuse=*/m"
+  ]
+}

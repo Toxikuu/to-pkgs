@@ -1,0 +1,43 @@
+#!/to
+
+n="fuse3"
+v="3.17.2"
+a="Filesystem in userspace"
+m="Tox"
+l="GPL2"
+t="fs lib utils"
+u="https://github.com/libfuse/libfuse.git"
+vf="gr | sed 's,^fuse[-_],,' | grep -v '[a-Z]' | sed 's,_,.,g' | sort -V"
+
+s=(
+    "${u%.git}/releases/download/fuse-$v/fuse-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "udev"
+    "b,meson"
+    "b,ninja"
+)
+
+kcfg=(
+    "fuse_fs=*/m"
+    "cuse=*/m"
+)
+
+b() {
+
+with mn
+
+# Don't install an unneeded bootscript and udev rule
+sed -i '/^udev/,$ s/^/#/' util/meson.build
+
+_cfg=(
+    -D tests=false
+    -D examples=false
+)
+
+def
+chmod u+s "$D/usr/bin/fusermount3"
+
+}
