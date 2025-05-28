@@ -1,6 +1,5 @@
 #!/to
 
-# TODO: Alias to jinja
 n="jinja2"
 v="3.1.6"
 a="Simple, pythonic template language"
@@ -27,6 +26,5 @@ with pip
 
 pipb
 pipi "${n^}"
-il
 
 }
