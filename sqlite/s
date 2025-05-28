@@ -1,0 +1,37 @@
+{
+  "name": "sqlite",
+  "version": "3.49.2",
+  "about": "SQL database engine",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://github.com/sqlite/sqlite.git",
+  "version_fetch": "gr | sed -e 's,^vesion-,,' -e 's,^version-,,' | grep -v '[a-Z]' | sort -V",
+  "tags": [
+    "lib",
+    "db"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/sqlite/sqlite/archive/refs/tags/version-3.49.2.tar.gz",
+      "dest": "version-3.49.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
