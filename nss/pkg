@@ -1,17 +1,16 @@
 #!/to
 
 n="nss"
-v="3.111"
+v="3.112"
 a="Network Security Services"
 m="Tox"
 l="MPL-2.0"
 t="net lib sec core"
 u="https://github.com/$n-dev/$n.git"
-vf="gr | grep -E '^NSS.+RTM$' | sed -e 's,NSS_,,' -e 's,_RTM,,' -e 's,_,.,g' | grep -Ev '[a-Z]+' | sort -V"
+vf="gr | grep -E '^${n^^}.+RTM$' | sed -e 's,${n^^}_,,' -e 's,_RTM,,' -e 's,_,.,g' | grep -Ev '[a-Z]+' | sort -V"
 
 s=(
-    # TODO: Look up how to capitalize all letters with bash variable tomfoolery
-    "https://archive.mozilla.org/pub/security/$n/releases/NSS_${v//./_}_RTM/src/$n-$v.tar.gz"
+    "https://archive.mozilla.org/pub/security/$n/releases/${n^^}_${v//./_}_RTM/src/$n-$v.tar.gz"
     "https://glfs-book.github.io/glfs/patches/$n/$n-standalone-1.patch"
 )
 
@@ -19,33 +18,37 @@ d=(
     "nspr"
     "glibc"
     "zlib"
+    "sqlite"
 )
 
 b() {
 
-pat ../$n-standalone-1.patch
+pat "$S/$n-standalone-1.patch"
 
 cd $n
 
-# TODO: Use system sqlite. And also build python with sqlite.
-mk BUILD_OPT=1                     \
-  NSPR_INCLUDE_DIR=/usr/include/nspr \
-  USE_SYSTEM_ZLIB=1                  \
-  ZLIB_LIBS=-lz                      \
-  NSS_ENABLE_WERROR=0                \
-  USE_64=1                           \
-  $([ -f /usr/lib/libsqlite3.so ] && echo NSS_USE_SYSTEM_SQLITE=1)
+_cfg=(
+    BUILD_OPT=1
+    NSPR_INCLUDE_DIR=/usr/include/nspr
+    USE_SYSTEM_ZLIB=1
+    ZLIB_LIBS=-lz
+    ${n^^}_ENABLE_WERROR=0
+    USE_64=1
+    ${n^^}_USE_SYSTEM_SQLITE=1
+)
+
+mk "${_cfg[@]}"
 
 cd ../dist
 
-install -vDm755 Linux*/lib/*.so               -t "$D"/usr/lib
-install -vDm644 Linux*/lib/{*.chk,libcrmf.a}  -t "$D"/usr/lib
+install -vDm755 Linux*/lib/*.so               -t "$D/usr/lib"
+install -vDm644 Linux*/lib/{*.chk,libcrmf.a}  -t "$D/usr/lib"
 
-install -vdm755                                  "$D"/usr/include/nss
-cp -vRL {public,private}/nss/*                   "$D"/usr/include/nss
+install -vdm755                                  "$D/usr/include/$n"
+cp -vRL {public,private}/$n/*                    "$D/usr/include/$n"
 
 install -vDm755 \
-    Linux*/bin/{certutil,nss-config,pk12util} -t "$D"/usr/bin
-install -vDm644 Linux*/lib/pkgconfig/nss.pc   -t "$D"/usr/lib/pkgconfig
+    Linux*/bin/{certutil,$n-config,pk12util}  -t "$D/usr/bin"
+install -vDm644 Linux*/lib/pkgconfig/nss.pc   -t "$D/usr/lib/pkgconfig"
 
 }
