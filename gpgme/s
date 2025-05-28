@@ -1,0 +1,40 @@
+{
+  "name": "gpgme",
+  "version": "1.24.3",
+  "about": "GPG Made Easy",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later",
+    "LGPL-2.0-or-later",
+    "LGPL-2.1-or-later",
+    "MIT"
+  ],
+  "upstream": "https://github.com/gpg/gpgme.git",
+  "version_fetch": "gr | cut -d- -f2- | grep -Ev '[a-Z]|-|@' | sort -V",
+  "tags": [
+    "lib",
+    "sec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.3.tar.bz2",
+      "dest": "gpgme-1.24.3.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libassuan",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
