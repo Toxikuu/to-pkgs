@@ -108,6 +108,10 @@
       "kind": "Required"
     },
     {
+      "name": "pulseaudio",
+      "kind": "Required"
+    },
+    {
       "name": "uchardet",
       "kind": "Required"
     },
