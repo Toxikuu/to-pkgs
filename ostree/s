@@ -1,0 +1,89 @@
+{
+  "name": "ostree",
+  "version": "2025.2",
+  "about": "OS and container deployment utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/ostreedev/ostree.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/ostreedev/ostree/releases/download/v2025.2/libostree-2025.2.tar.xz",
+      "dest": "libostree-2025.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "fuse3",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "libarchive",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "util-linux",
+      "kind": "Required"
+    },
+    {
+      "name": "udev",
+      "kind": "Required"
+    },
+    {
+      "name": "elogind",
+      "kind": "Required"
+    },
+    {
+      "name": "which",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "gpgme",
+      "kind": "Required"
+    },
+    {
+      "name": "e2fsprogs",
+      "kind": "Build"
+    },
+    {
+      "name": "libsoup",
+      "kind": "Build"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

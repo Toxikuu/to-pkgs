@@ -1,0 +1,39 @@
+#!/to
+
+n="ostree"
+v="2025.2"
+a="OS and container deployment utility"
+m="Tox"
+l="LGPL-2.0-or-later"
+t="lib utils"
+u="https://github.com/${n}dev/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/lib$n-$v.tar.xz"
+)
+
+d=(
+    "fuse3"
+    "glib"
+    "glibc"
+    "gcc"
+    "libarchive"
+    "openssl"
+    "util-linux"
+    "udev"
+    "elogind"
+    "which"
+    "xz"
+    "zlib"
+    "gpgme"
+
+    "b,e2fsprogs"
+    "b,libsoup"
+    "b,python"
+)
+
+b() {
+
+def
+
+}
