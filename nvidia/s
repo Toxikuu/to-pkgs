@@ -35,6 +35,10 @@
     {
       "name": "kernel",
       "kind": "Required"
+    },
+    {
+      "name": "libelf",
+      "kind": "Build"
     }
   ],
   "kcfg": []

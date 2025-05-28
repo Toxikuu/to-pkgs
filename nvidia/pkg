@@ -17,6 +17,7 @@ s=(
 d=(
     "libglvnd"
     "kernel"
+    "b,libelf"
 )
 
 b() {
@@ -70,18 +71,28 @@ install -vDm755 "${n}_drv.so"                   -t "$D/usr/lib/xorg/modules/driv
 ### Firmware (Turing)
 install -vDm644 "firmware/gsp_tu10x.bin"        -t "$D/usr/lib/firmware/$n/$v/"
 
+### Misc
+install -vDm755 "lib$n-allocator.so.$v"         -t "$D/usr/lib"
+install -vDm755 "lib$n-api.so.1"                -t "$D/usr/lib"
+install -vDm755 "lib$n-cfg.so.$v"               -t "$D/usr/lib"
+install -vDm755 "lib$n-encode.so.$v"            -t "$D/usr/lib"
+install -vDm755 "lib$n-fbc.so.$v"               -t "$D/usr/lib"
+install -vDm755 "lib$n-glvkspirv.so.$v"         -t "$D/usr/lib"
+install -vDm755 "lib$n-gpucomp.so.$v"           -t "$D/usr/lib"
+install -vDm755 "lib$n-ml.so.$v"                -t "$D/usr/lib"
+
 ### GLX stuff
 install -vDm755 "libglxserver_$n.so.$v"         -t "$D/usr/lib/$n/xorg/"
 ln -sv "libglxserver_$n.so.$v"                     "$D/usr/lib/$n/xorg/libglxserver_$n.so.1"
 ln -sv "libglxserver_$n.so.$v"                     "$D/usr/lib/$n/xorg/libglxserver_$n.so"
 
 ### OpenGL
+install -vDm644 "10_$n.json"                    -t "$D/usr/share/glvnd/egl_vendor.d/"
+install -vDm755 "lib$n-eglcore.so.$v"           -t "$D/usr/lib/"
+install -vDm755 "lib$n-glcore.so.$v"            -t "$D/usr/lib/"
+install -vDm755 "lib$n-glsi.so.$v"              -t "$D/usr/lib/"
 install -vDm755 "libEGL_$n.so.$v"               -t "$D/usr/lib/"
 install -vDm755 "libGLESv2_$n.so.$v"            -t "$D/usr/lib/"
-install -vDm755 "lib$n-glcore.so.$v"            -t "$D/usr/lib/"
-install -vDm755 "lib$n-eglcore.so.$v"           -t "$D/usr/lib/"
-install -vDm755 "lib$n-glsi.so.$v"              -t "$D/usr/lib/"
-install -vDm644 "10_$n.json"                    -t "$D/usr/share/glvnd/egl_vendor.d/"
 
 ### Vulkan
 install -vDm644 "${n}_icd.json"                 -t "$D/usr/share/vulkan/icd.d/"
@@ -99,9 +110,9 @@ install -vDm644 "lib$n-nvvm.so.$v"              -t "$D/usr/lib/"
 install -vDm755 "lib$n-ptxjitcompiler.so.$v"    -t "$D/usr/lib/"
 
 ### Raytracing
-install -vDm755 "nvoptix.bin"                   -t "$D/usr/share/$n/"
-install -vDm755 "libnvoptix.so.$v"              -t "$D/usr/lib/"
 install -vDm755 "lib$n-rtcore.so.$v"            -t "$D/usr/lib/"
+install -vDm755 "libnvoptix.so.$v"              -t "$D/usr/lib/"
+install -vDm755 "nvoptix.bin"                   -t "$D/usr/share/$n/"
 
 ### Optical flow
 install -vDm755 "lib$n-opticalflow.so.$v"       -t "$D/usr/lib/"
@@ -150,7 +161,7 @@ EOF
 
 i() {
 
-if [ -d /etc/X11 ]; then 
+if to data -i xorg-server; then
     nvidia-xconfig
 fi
 
