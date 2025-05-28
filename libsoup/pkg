@@ -1,0 +1,43 @@
+#!/to
+
+n="libsoup"
+v="3.6.5"
+a="HTTP client/server library for GNOME"
+m="Tox"
+l="LGPL-2.0-or-later"
+t="lib net"
+u="https://gitlab.gnome.org/GNOME/$n.git"
+vf="gr | grep -v '[a-Z]'"
+
+s=(
+    "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
+)
+
+d=(
+    "glib-networking"
+    "glibc"
+    "glib"
+    "zlib"
+    "libxml2"
+    "libpsl"
+    "nghttp2"
+    "sqlite"
+    "b,vala"
+    "b,meson"
+    "b,ninja"
+)
+
+b() {
+
+with mn
+
+# Fix the API documentation install path
+sed 's/apiversion/soup_version/' -i docs/reference/meson.build
+
+_cfg=(
+    -D docs=disabled
+)
+
+def
+
+}

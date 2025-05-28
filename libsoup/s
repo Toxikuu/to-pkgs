@@ -1,0 +1,69 @@
+{
+  "name": "libsoup",
+  "version": "3.6.5",
+  "about": "HTTP client/server library for GNOME",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.0-or-later"
+  ],
+  "upstream": "https://gitlab.gnome.org/GNOME/libsoup.git",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [
+    "lib",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz",
+      "dest": "libsoup-3.6.5.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib-networking",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "libpsl",
+      "kind": "Required"
+    },
+    {
+      "name": "nghttp2",
+      "kind": "Required"
+    },
+    {
+      "name": "sqlite",
+      "kind": "Required"
+    },
+    {
+      "name": "vala",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
