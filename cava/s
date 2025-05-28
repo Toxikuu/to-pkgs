@@ -44,6 +44,10 @@
     {
       "name": "ncurses",
       "kind": "Required"
+    },
+    {
+      "name": "pulseaudio",
+      "kind": "Required"
     }
   ],
   "kcfg": []

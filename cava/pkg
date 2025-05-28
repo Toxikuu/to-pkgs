@@ -17,7 +17,7 @@ d=(
     "glibc"
     "iniparser"
     "ncurses"
-    # TODO: Maybe include libpulse/libpipewire when I get that set up
+    "pulseaudio"
 )
 
 b() {
