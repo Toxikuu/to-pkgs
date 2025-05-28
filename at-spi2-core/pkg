@@ -15,12 +15,17 @@ s=(
 
 d=(
     "dbus"
+    "gcc"
+    "glibc"
     "glib"
     "libx11"
     "libxi"
     "libxtst"
+    "xprop"
+    "gsettings-desktop-schemas"
     "b,meson"
     "b,ninja"
+    "b,libxml2"
 )
 
 b() {
@@ -29,10 +34,11 @@ with mn
 
 _cfg=(
     -D gtk2_atk_adaptor=false
+    -D systemd_user_dir=/tmp # TODO: Consider exposing /trash or similar
 )
 
 def
-il
+rm -rf "$D"/tmp/at-spi-dbus-bus.service
 
 }
 

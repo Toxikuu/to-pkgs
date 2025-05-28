@@ -24,6 +24,14 @@
       "kind": "Required"
     },
     {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
       "name": "glib",
       "kind": "Required"
     },
@@ -40,11 +48,23 @@
       "kind": "Required"
     },
     {
+      "name": "xprop",
+      "kind": "Required"
+    },
+    {
+      "name": "gsettings-desktop-schemas",
+      "kind": "Required"
+    },
+    {
       "name": "meson",
       "kind": "Build"
     },
     {
       "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "libxml2",
       "kind": "Build"
     }
   ],
