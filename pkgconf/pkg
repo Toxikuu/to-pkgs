@@ -1,7 +1,7 @@
 #!/to
 
 n="pkgconf"
-v="2.4.3"
+v="c34379adafc8408a2b1e73cab9fe92bf026df5c3"
 a="Package compiler and linker metadata toolkit"
 m="Tox"
 l="ISC"
@@ -9,18 +9,19 @@ t="core lib utils"
 u="https://github.com/$n/$n.git"
 
 s=(
-    "https://distfiles.ariadne.space/$n/$n-$v.tar.xz"
+    "$u"
+    # "https://distfiles.ariadne.space/$n/$n-$v.tar.xz"
 )
 
 d="glibc"
 
 b() {
 
-il
+./autogen.sh
 def
 
 # Maintain compatibility with the original pkg-config
-ln -sv pkgconf   "$D"/usr/bin/pkg-config
-ln -sv pkgconf.1 "$D"/usr/share/man/man1/pkg-config.1
+ln -sv "$n"   "$D/usr/bin/pkg-config"
+ln -sv "$n.1" "$D/usr/share/man/man1/pkg-config.1"
 
 }

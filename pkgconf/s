@@ -1,6 +1,6 @@
 {
   "name": "pkgconf",
-  "version": "2.4.3",
+  "version": "c34379adafc8408a2b1e73cab9fe92bf026df5c3",
   "about": "Package compiler and linker metadata toolkit",
   "maintainer": "Tox",
   "licenses": [
@@ -15,9 +15,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://distfiles.ariadne.space/pkgconf/pkgconf-2.4.3.tar.xz",
-      "dest": "pkgconf-2.4.3.tar.xz"
+      "kind": "Git",
+      "url": "https://github.com/pkgconf/pkgconf.git",
+      "dest": "pkgconf"
     }
   ],
   "dependencies": [
