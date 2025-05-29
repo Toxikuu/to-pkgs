@@ -1,20 +1,15 @@
 #!/to
 
 n="gdbm"
-v="1.25"
+v="0d3d46cdee38c7b00a107c52875ffb36c2bc7170"
 a="The GNU Database Manager"
 m="Tox"
 l="GPL-3.0-or-later"
-t="core lib"
+t="core lib db"
 u="https://https.git.savannah.gnu.org/git/$n.git"
 
-s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
-)
-
-d=(
-    "glibc"
-)
+s="$u"
+d="glibc"
 
 b() {
 
@@ -23,7 +18,7 @@ _cfg=(
     --enable-libgdbm-compat
 )
 
-il
+autoreconf -fiv
 def
 
 }

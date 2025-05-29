@@ -1,6 +1,6 @@
 {
   "name": "gdbm",
-  "version": "1.25",
+  "version": "0d3d46cdee38c7b00a107c52875ffb36c2bc7170",
   "about": "The GNU Database Manager",
   "maintainer": "Tox",
   "licenses": [
@@ -10,13 +10,14 @@
   "version_fetch": null,
   "tags": [
     "core",
-    "lib"
+    "lib",
+    "db"
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/gdbm/gdbm-1.25.tar.gz",
-      "dest": "gdbm-1.25.tar.gz"
+      "kind": "Git",
+      "url": "https://https.git.savannah.gnu.org/git/gdbm.git",
+      "dest": "gdbm"
     }
   ],
   "dependencies": [
