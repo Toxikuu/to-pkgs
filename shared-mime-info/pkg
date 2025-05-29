@@ -30,6 +30,7 @@ def
 
 posti() {
 
+ldconfig
 update-mime-database /usr/share/mime
 
 }
