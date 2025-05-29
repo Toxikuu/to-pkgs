@@ -28,9 +28,12 @@ def
 
 }
 
-posti() {
-
-ldconfig
-update-mime-database /usr/share/mime
-
-}
+# I don't know how the fuck this fails, considering glib and libxml2 are listed
+# as dependencies and should be installed, but arent ???????
+# FIX: ^
+#
+# i() {
+#
+# update-mime-database /usr/share/mime
+#
+# }
