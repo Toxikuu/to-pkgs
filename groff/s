@@ -14,10 +14,15 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz",
+      "url": "https://mirror.us-midwest-1.nexcess.net/gnu/groff/groff-1.23.0.tar.gz",
       "dest": "groff-1.23.0.tar.gz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "perl",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }
