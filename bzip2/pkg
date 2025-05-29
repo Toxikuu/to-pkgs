@@ -2,7 +2,7 @@
 
 n="bzip2"
 v="1.0.8"
-a="The bzip2 compression algorithm"
+a="The $n compression algorithm"
 m="Tox"
 l="BSD"
 t="lib z"
@@ -21,21 +21,20 @@ sed -e 's@\(ln -s -f \)$(PREFIX)/bin/@\1@'   \
     -e 's@(PREFIX)/man@(PREFIX)/share/man@g' \
     -i Makefile
 
-il
-mk -f Makefile-libbz2_so
+mk -f Makefile-libbz2_so CC="gcc $CFLAGS $CXXFLAGS $LDFLAGS"
 mk clean
 
-mk
-mk PREFIX="$D"/usr install
+mk CC="gcc $CFLAGS $CXXFLAGS $LDFLAGS"
+mk PREFIX="$D/usr" install
 
-cp -av libbz2.so.*  "$D"/usr/lib
-ln -sv libbz2.so.$v "$D"/usr/lib/libbz2.so
+cp -av libbz2.so.*      "$D/usr/lib/"
+ln -sv "libbz2.so.$v"   "$D/usr/lib/libbz2.so"
 
-cp -vf $n-shared "$D"/usr/bin/$n
-for i in "$D"/usr/bin/{bzcat,bunzip2}; do
+cp -vf "$n-shared"      "$D/usr/bin/$n"
+for i in "$D/usr/bin/"{bzcat,bunzip2}; do
     ln -sfv $n $i
 done
 
-rm -vf "$D"/usr/lib/libbz2.a
+rm -vf "$D/usr/lib/libbz2.a"
 
 }
