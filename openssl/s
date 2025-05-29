@@ -29,7 +29,7 @@
     },
     {
       "name": "perl",
-      "kind": "Build"
+      "kind": "Required"
     }
   ],
   "kcfg": []

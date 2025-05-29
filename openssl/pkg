@@ -15,33 +15,38 @@ s=(
 
 d=(
     "glibc"
-    "b,perl"
+    "perl"
 )
 
 b() {
 
+NO_DEFAULT=1
 _cfg=(
     --prefix=/usr
-    --openssldir=/etc/ssl
+    --${n}dir=/etc/ssl
     --libdir=lib
     shared
     zlib-dynamic
 )
 
-./config ${_cfg[@]}
+# Abstraction workaround
+ln -sv {C,c}onfigure
+
+cfg
 mk
 
+# Don't install static libraries
 sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
 mi MANSUFFIX=ssl
-
-pushd "$D"/usr/lib
-    ln -sfv libssl.so{.3,}
-    ln -sfv libcrypto.so{.3,}
-popd
 
 }
 
 t() {
+
+# Ensure once-uncooperative libraries exist
+for f in libssl.so{.3,} libcrypto.so{.3,}; do
+    [ -e "$D/usr/lib/$f" ]
+done
 
 # 30-test_afalg.t may fail depending on kernel configuration
 HARNESS_JOBS=$(nproc) mk test
