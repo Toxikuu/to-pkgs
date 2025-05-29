@@ -13,9 +13,7 @@ s=(
     "https://www.bytereef.org/software/$n/releases/$n-$v.tar.gz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
