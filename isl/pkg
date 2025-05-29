@@ -8,14 +8,12 @@ l="MIT"
 t="core math lib"
 u="https://repo.or.cz/$n.git"
 
-# TODO: Add git as a build dependency and build from the git repo
+# TODO: Consider not commit versioning since git depends on isl
 s=(
     "$u/snapshot/$v.tar.gz"
 )
 
-d=(
-    "gmp"
-)
+d="gmp"
 
 b() {
 
