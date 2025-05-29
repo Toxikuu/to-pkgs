@@ -14,9 +14,9 @@ s=(
 
 d=(
     "glib"
+    "pcre2"
     "b,meson"
     "b,ninja"
-    "r,pcre2"
 )
 
 b() {

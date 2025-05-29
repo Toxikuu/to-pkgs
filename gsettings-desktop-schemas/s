@@ -24,16 +24,16 @@
       "kind": "Required"
     },
     {
+      "name": "pcre2",
+      "kind": "Required"
+    },
+    {
       "name": "meson",
       "kind": "Build"
     },
     {
       "name": "ninja",
       "kind": "Build"
-    },
-    {
-      "name": "pcre2",
-      "kind": "Runtime"
     }
   ],
   "kcfg": []
