@@ -1,24 +1,29 @@
 {
   "name": "libtirpc",
-  "version": "1.3.6",
-  "about": "Transport-independent RPC library",
+  "version": "240ee6c774729c9c24812aa8912f1fcf8996b162",
+  "about": "Transport-Independent RPC library",
   "maintainer": "Tox",
   "licenses": [
     "BSD-3-Clause",
     "SISSL"
   ],
   "upstream": "git://linux-nfs.org/~steved/libtirpc.git",
-  "version_fetch": "gr | sed 's,-,.,g' | grep -v 'rc' | cut -d. -f2-",
+  "version_fetch": null,
   "tags": [
     "lib"
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2",
-      "dest": "libtirpc-1.3.6.tar.bz2"
+      "kind": "Git",
+      "url": "git://linux-nfs.org/~steved/libtirpc.git",
+      "dest": "libtirpc"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }
