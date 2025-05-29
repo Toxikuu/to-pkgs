@@ -1,28 +1,29 @@
 #!/to
 
 n="bc"
-v="3d8ae3efb1d0aeea6a1b2d7c33dcb061175be681" # 7.0.3 is the latest stable
+v="3d8ae3efb1d0aeea6a1b2d7c33dcb061175be681"
 a="Arbitrary precision numeric processing language"
 m="Tox"
 l="BSD-2-Clause"
 t="core math"
 u="https://github.com/gavinhoward/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "glibc"
-)
+s="$u"
+d="glibc"
 
 b() {
 
-il
-# No abstractions because the configure script weird af
-CC=gcc ./configure --prefix=/usr -G -O3 -r
-mk
-mi
+with c99
+
+NO_DEFAULT=1
+_cfg=(
+    --prefix=/usr
+    -G
+    -O3
+    -r
+)
+
+def
 
 }
 
