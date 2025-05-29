@@ -1,6 +1,6 @@
 {
   "name": "attr",
-  "version": "2.5.2",
+  "version": "b90f0ae9288e6186b41df33eb5e08f906a790e9c",
   "about": "Utilities to administer filesystem object attributes",
   "maintainer": "Tox",
   "licenses": [
@@ -13,9 +13,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://download.savannah.gnu.org/releases/attr/attr-2.5.2.tar.gz",
-      "dest": "attr-2.5.2.tar.gz"
+      "kind": "Git",
+      "url": "https://https.git.savannah.gnu.org/git/attr.git",
+      "dest": "attr"
     }
   ],
   "dependencies": [

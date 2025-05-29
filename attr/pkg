@@ -1,7 +1,7 @@
 #!/to
 
 n="attr"
-v="2.5.2"
+v="b90f0ae9288e6186b41df33eb5e08f906a790e9c"
 a="Utilities to administer filesystem object attributes"
 m="Tox"
 l="LGPL"
@@ -9,15 +9,15 @@ t="core"
 u="https://https.git.savannah.gnu.org/git/$n.git"
 
 s=(
-    "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.gz"
+    "$u"
+    # "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.gz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
+./autogen.sh
 def
 
 }
@@ -26,6 +26,6 @@ t() {
 
 # fs must support extended attributes
 # ext{2..4} do
-make check
+mk check
 
 }
