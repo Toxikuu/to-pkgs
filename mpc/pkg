@@ -9,10 +9,7 @@ t="core math"
 u="https://gitlab.inria.fr/$n/$n.git"
 vf="gr | grep -E '^[0-9]+'"
 
-s=(
-    "$u"
-    # "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
-)
+s=( "https://mirror.team-cymru.com/gnu/$n/$n-$v.tar.gz" )
 
 d=(
     "glibc"
@@ -22,7 +19,7 @@ d=(
 
 b() {
 
-autoreconf -fiv
+# configure.ac wants git
 def
 
 }
