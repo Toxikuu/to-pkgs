@@ -9,7 +9,8 @@
   "upstream": "https://github.com/seccomp/libseccomp.git",
   "version_fetch": null,
   "tags": [
-    "lib"
+    "lib",
+    "core"
   ],
   "sources": [
     {

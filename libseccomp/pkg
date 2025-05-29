@@ -5,7 +5,7 @@ v="2.6.0"
 a="Syscall API"
 m="Tox"
 l="LGPL-2.1-only"
-t="lib"
+t="lib core"
 u="https://github.com/seccomp/$n.git"
 
 s=(
@@ -23,7 +23,6 @@ b() {
 # NOTE: If Python bindings are build with --enable-python and cython, static
 # libraries must be enabled per BLFS
 
-il
 def
 
 }
