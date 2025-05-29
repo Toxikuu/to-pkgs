@@ -33,7 +33,6 @@ _cfg=(
     --with-curses # play nice with ncurses
 )
 
-il
 cfg
 mk SHLIB_LIBS="-lncursesw"
 mi
