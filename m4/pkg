@@ -10,23 +10,20 @@ u="https://https.git.savannah.gnu.org/git/$n.git"
 vf="gr | sort -V | grep -B1 v1.5.89a | head -n1"
 
 s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+    "https://mirrors.ibiblio.org/gnu/$n/$n-$v.tar.xz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
-il
 def
 
 }
 
 t() {
 
-# m4 runs a single windows test and fails
+# m4 runs a single windows test and fails (lol)
 make check || true
 
 }
