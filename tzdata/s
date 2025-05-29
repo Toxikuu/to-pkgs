@@ -1,0 +1,30 @@
+{
+  "name": "tzdata",
+  "version": "2025b",
+  "about": "Timezone data",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://www.iana.org/time-zones",
+  "version_fetch": "curl -s 'https://www.iana.org/time-zones' | grep 'Released ' | grep -o '[2-9][0-9][0-9][0-9][a-z]'",
+  "tags": [
+    "lib",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.iana.org/time-zones/repository/releases/tzdata2025b.tar.gz",
+      "dest": "tzdata2025b.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

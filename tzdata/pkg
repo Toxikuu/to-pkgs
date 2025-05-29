@@ -1,0 +1,46 @@
+#!/to
+
+n="tzdata"
+v="2025b"
+a="Timezone data"
+m="Tox"
+l="Custom"
+t="lib utils cli"
+u="https://www.iana.org/time-zones"
+vf="curl -s 'https://www.iana.org/time-zones' | grep 'Released ' | grep -o '[2-9][0-9][0-9][0-9][a-z]'"
+
+s=(
+    "https://www.iana.org/time-zones/repository/releases/$n$v.tar.gz"
+)
+
+d=(
+    "glibc"
+)
+
+b() {
+
+ZONEINFO="$D/usr/share/zoneinfo"
+mkdir -pv "$ZONEINFO/"{posix,right}
+
+timezones=(
+    etcetera
+    southamerica
+    northamerica
+    europe
+    africa
+    antarctica
+    asia
+    australasia
+    backward
+)
+
+for tz in "${timezones[@]}"; do
+    zic -L /dev/null    -d "$ZONEINFO"          "$tz"
+    zic -L /dev/null    -d "$ZONEINFO/posix"    "$tz"
+    zic -L leapseconds  -d "$ZONEINFO/right"    "$tz"
+done
+
+cp -vf zone.tab zone1970.tab iso3166.tab "$ZONEINFO"
+zic -d "$ZONEINFO" -p America/Chicago
+
+}

@@ -1,0 +1,7 @@
+,hook install
+The default timezone is America/Chicago. You may want to change this by creating
+a symlink like so:
+ $ ln -sfv /usr/share/zoneinfo/<America/New_York> /etc/localtime
+
+If you don't know your timezone, run:
+ $ tzselect
