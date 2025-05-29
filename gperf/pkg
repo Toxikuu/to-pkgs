@@ -8,18 +8,12 @@ l="GPL-3.0-or-later"
 t="lib"
 u="https://https.git.savannah.gnu.org/git/$n.git"
 
-s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
-)
-
-d=(
-    "glibc"
-)
+s="https://gnu.mirror.constant.com/$n/$n-$v.tar.gz"
+d="glibc"
 
 b() {
 
 def
-il
 
 }
 
