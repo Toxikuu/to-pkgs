@@ -17,7 +17,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/glibc/glibc-2.41.tar.xz",
+      "url": "https://gnu.mirror.constant.com/glibc/glibc-2.41.tar.xz",
       "dest": "glibc-2.41.tar.xz"
     },
     {

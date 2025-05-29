@@ -13,19 +13,21 @@ u="https://sourceware.org/git/$n.git"
 vf="gr | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V"
 
 s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+    "https://gnu.mirror.constant.com/$n/$n-$v.tar.xz"
     "https://www.linuxfromscratch.org/patches/lfs/development/$n-$v-fhs-1.patch"
 )
 
 b() {
 
-il
-pat ../$n-$v-fhs-1.patch
+pat "$S/$n-$v-fhs-1.patch"
 
 mkdir -pv build
 cd        build
 
+export NO_DEFAULT=1
 _cfg=(
+    --prefix=/usr
+
     libc_cv_slibdir=/usr/lib
     --with-headers=/usr/include
     # TODO: Maybe add --with-bugurl linking to the github repo for this
@@ -34,8 +36,7 @@ _cfg=(
     --disable-nscd
     --disable-profile
 
-    # TODO: Bump enable-kernel version higher at some point in the future
-    --enable-kernel=6.11
+    --enable-kernel=6.14
     --enable-stack-protector=strong
 )
 
@@ -47,26 +48,29 @@ _cfg=(
 } >> configparms
 
 cfg
-
 mk
+
 # Skip an outdated sanity check
 sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 
+# Suppress a (harmless) warning
+touch /etc/ld.so.conf
+
 mi
 # Fix a hardcoded path in `ldd`
-sed '/RTLDLIST=/s@/usr@@g' -i "$D"/usr/bin/ldd
+sed '/RTLDLIST=/s@/usr@@g' -i "$D/usr/bin/ldd"
 
 # Install locales
 pushd ..
 mk -C "$PWD/localedata" objdir="$PWD/build" \
-  DESTDIR="$D" install-locale-files
+    DESTDIR="$D" install-locale-files
 popd
 
 # Install nsswitch.conf and ld.so.conf.d
 install -vDm644 "$A/nsswitch.conf" -t "$D/etc/"
-install -vdm755 "$D"/etc/ld.so.conf.d
+install -vdm755 "$D/etc/ld.so.conf.d"
 
 # Don't package the linker cache
-rm -vf "$D"/etc/ld.so.cache
+rm -vf "$D/etc/ld.so.cache"
 
 }
