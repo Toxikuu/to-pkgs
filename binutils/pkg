@@ -27,6 +27,10 @@ d=(
     "libelf"
 )
 
+qa=(
+    "!static"
+)
+
 b() {
 
 mkdir -pv build
@@ -58,6 +62,7 @@ mi tooldir=/usr
 rm -vf  "$D/usr/lib/lib"{bfd,ctf,ctf-nobfd,gprofng,opcodes,sframe}.a
 rm -vf  "$D/usr/share/man/man1/"{dlltool,windres,windmc}*
 rm -vfr "$D/usr/share/doc/gprofng"
+laway
 
 }
 
