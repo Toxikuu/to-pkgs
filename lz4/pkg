@@ -2,7 +2,7 @@
 
 n="lz4"
 v="1.10.0"
-a="The lz4 compression algorithm"
+a="The $n compression algorithm"
 m="Tox"
 l="GPL-2.0-or-later"
 t="lib z"
@@ -12,9 +12,7 @@ s=(
     "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
