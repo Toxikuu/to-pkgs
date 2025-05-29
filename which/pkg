@@ -9,9 +9,8 @@ t="utils cli"
 u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
 vf="curl -s '$u' | grep $n- | head -n1 | cut -d- -f2 | cut -d. -f1-2"
 
-s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
-)
+s="https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+d="glibc"
 
 b() {
 
