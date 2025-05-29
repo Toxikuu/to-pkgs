@@ -8,7 +8,7 @@
     "GPL-2.0-only"
   ],
   "upstream": "https://github.com/facebook/zstd.git",
-  "version_fetch": "gr | grep -E '^v[0-9]+' | grep -v -- -kernel | tail -n1",
+  "version_fetch": "gr | grep -E '^v[0-9]+' | grep -v kernel | tail -n1",
   "tags": [
     "core",
     "critical",
@@ -27,18 +27,6 @@
   "dependencies": [
     {
       "name": "glibc",
-      "kind": "Required"
-    },
-    {
-      "name": "lz4",
-      "kind": "Required"
-    },
-    {
-      "name": "xz",
-      "kind": "Required"
-    },
-    {
-      "name": "zlib",
       "kind": "Required"
     }
   ],

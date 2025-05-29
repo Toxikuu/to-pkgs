@@ -8,27 +8,21 @@ l=(
     "BSD-3-Clause"
     "GPL-2.0-only"
 )
-t="core critical utils cli lib z"
+t="core critical utils cli lib z" # critical because to needs it to install stuff
 u="https://github.com/facebook/$n.git"
-vf="gr | grep -E '^v[0-9]+' | grep -v -- -kernel | tail -n1"
+vf="gr | grep -E '^v[0-9]+' | grep -v kernel | tail -n1"
 
 s=(
     "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
 )
 
-d=(
-    "glibc"
-    "lz4"
-    "xz"
-    "zlib"
-)
+d="glibc"
 
 b() {
 
-il
 mk prefix=/usr
 mi prefix=/usr
-rm -vf "$D"/usr/lib/libzstd.a
+rm -vf "$D/usr/lib/lib$n.a"
 
 }
 
