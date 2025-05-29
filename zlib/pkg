@@ -4,7 +4,7 @@ n="zlib"
 v="1.3.1"
 a="Compression library used by many packages"
 m="Tox"
-l="Zlib"
+l="${n^}"
 t="core critical lib z"
 u="https://github.com/madler/$n.git"
 
@@ -16,13 +16,11 @@ d="glibc"
 
 b() {
 
+export NO_DEFAULT=1 
 _cfg=(
     --prefix=/usr
 )
 
-export NO_DEFAULT=1 
-
-il
 def
 rm -vf "$D/usr/lib/libz.a"
 
@@ -30,6 +28,6 @@ rm -vf "$D/usr/lib/libz.a"
 
 t() {
 
-make check
+mk check
 
 }
