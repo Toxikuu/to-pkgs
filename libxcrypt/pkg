@@ -1,7 +1,7 @@
 #!/to
 
 n="libxcrypt"
-v="4.4.38"
+v="e34e0634a7192383dbb4445b6d7568e36baef675"
 a="Modern library for password hashing"
 m="Tox"
 l="LGPL"
@@ -9,7 +9,8 @@ t="lib sec core"
 u="https://github.com/besser82/$n.git"
 
 s=(
-    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+    "$u"
+    # "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
 )
 
 d="glibc"
@@ -22,7 +23,7 @@ _cfg=(
     --disable-failure-tokens
 )
 
-il
+autoreconf -fiv
 def
 
 }
