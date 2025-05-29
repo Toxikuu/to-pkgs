@@ -1,26 +1,26 @@
 #!/to
 
 n="less"
-v="678"
+v="302187c0e9ecba9a57b612b82ec66d0ddaba75c6"
 a="Text pager"
 m="Tox"
-l="GPL-3.0-or-later OR custom"
+l="GPL-3.0-or-later OR Custom"
 t="tui utils"
 u="https://github.com/gwsw/$n.git"
 
-s=(
-    "${u%.git}/archive/refs/tags/v$v.tar.gz"
-)
+s="$u"
+# s="${u%.git}/archive/refs/tags/v$v.tar.gz"
 
 d=(
     "glibc"
     "ncurses"
     "pcre2"
-    "b,groff"
+    "b,groff" # to build manpages from git sources
 )
 
 b() {
 
+il # custom
 make -f Makefile.aut distfiles
 autoreconf -fiv
 
@@ -29,6 +29,5 @@ _cfg=(
 )
 
 def
-il
 
 }

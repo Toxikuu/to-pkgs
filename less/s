@@ -1,10 +1,10 @@
 {
   "name": "less",
-  "version": "678",
+  "version": "302187c0e9ecba9a57b612b82ec66d0ddaba75c6",
   "about": "Text pager",
   "maintainer": "Tox",
   "licenses": [
-    "GPL-3.0-or-later OR custom"
+    "GPL-3.0-or-later OR Custom"
   ],
   "upstream": "https://github.com/gwsw/less.git",
   "version_fetch": null,
@@ -14,9 +14,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/gwsw/less/archive/refs/tags/v678.tar.gz",
-      "dest": "v678.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/gwsw/less.git",
+      "dest": "less"
     }
   ],
   "dependencies": [
