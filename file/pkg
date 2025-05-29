@@ -2,15 +2,16 @@
 
 n="file"
 v="5.46"
-a="File type identification utility"
+a="${n^} type identification utility"
 m="Tox"
 l="custom"
 t="utils cli lib core"
 u="https://github.com/$n/$n.git"
-vf="gr | sort -V | tail -n2 | head -n1 | sed 's/FILE//' | sed 's/_/./g'"
+vf="gr | sort -V | tail -n2 | head -n1 | sed 's/${n^^}//' | sed 's/_/./g'"
 
 s=(
-    "${u%.git}/archive/refs/tags/FILE${v//./_}.tar.gz"
+    "https://astron.com/pub/$n/$n-$v.tar.gz"
+    # "${u%.git}/archive/refs/tags/${n^^}${v//./_}.tar.gz"
 )
 
 d=(
@@ -24,18 +25,17 @@ d=(
 
 b() {
 
-autoreconf -fiv
-
+# Avoid potential linking problems later
 CFLAGS+=" -pthread"
 
 _cfg=(
-    --datadir=/usr/share/file
+    --datadir=/usr/share/$n
     --enable-fsect-man5
     --enable-libseccomp
 )
 
 cfg
-sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 mk
 mi
 
