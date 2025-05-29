@@ -27,10 +27,6 @@
     {
       "name": "libnsl",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []

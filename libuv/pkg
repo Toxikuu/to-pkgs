@@ -8,23 +8,17 @@ l="custom"
 t="lib core"
 u="https://github.com/$n/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
+tag="v$v"
 
 d=(
     "glibc"
     "libnsl"
-    "b,git"
 )
 
 b() {
 
-git checkout v$v
-
 ./autogen.sh
 def
-
-install -vDm644 LICENSE -t "$D/usr/share/licenses/$n/"
 
 }
