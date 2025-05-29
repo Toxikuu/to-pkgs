@@ -4,7 +4,7 @@
   "about": "Fast lexical analyzer generator",
   "maintainer": "Tox",
   "licenses": [
-    "custom"
+    "Custom"
   ],
   "upstream": "https://github.com/westes/flex.git",
   "version_fetch": null,
