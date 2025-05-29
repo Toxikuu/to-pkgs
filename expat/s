@@ -1,22 +1,22 @@
 {
   "name": "expat",
-  "version": "2.7.1",
+  "version": "73a0d87d722f583e684dae754e1dc5dacd83db5c",
   "about": "XML parser library",
   "maintainer": "Tox",
   "licenses": [
     "MIT"
   ],
   "upstream": "https://github.com/libexpat/libexpat.git",
-  "version_fetch": "gr | grep '^R_' | cut -d_ -f 2- | sed 's,_,.,g'",
+  "version_fetch": null,
   "tags": [
     "lib",
     "core"
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/libexpat/libexpat/releases/download/R_2_7_1/expat-2.7.1.tar.xz",
-      "dest": "expat-2.7.1.tar.xz"
+      "kind": "Git",
+      "url": "https://github.com/libexpat/libexpat.git",
+      "dest": "libexpat"
     }
   ],
   "dependencies": [

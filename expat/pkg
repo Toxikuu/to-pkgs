@@ -1,26 +1,23 @@
 #!/to
 
-# TODO: Add libexpat as an alias
 n="expat"
-v="2.7.1"
+v="73a0d87d722f583e684dae754e1dc5dacd83db5c"
 a="XML parser library"
 m="Tox"
 l="MIT"
 t="lib core"
 u="https://github.com/lib$n/lib$n.git"
-vf="gr | grep '^R_' | cut -d_ -f 2- | sed 's,_,.,g'"
 
-s=(
-    "${u%.git}/releases/download/R_${v//./_}/$n-$v.tar.xz"
-)
+# vf="gr | grep '^R_' | cut -d_ -f 2- | sed 's,_,.,g'"
+# s="${u%.git}/releases/download/R_${v//./_}/$n-$v.tar.xz"
 
-d=(
-    "glibc"
-)
+s="$u"
+d="glibc"
 
 b() {
 
-il
+cd expat
+./buildconf.sh
 def
 
 }
