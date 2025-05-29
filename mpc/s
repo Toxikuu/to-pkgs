@@ -14,9 +14,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/mpc/mpc-1.3.1.tar.gz",
-      "dest": "mpc-1.3.1.tar.gz"
+      "kind": "Git",
+      "url": "https://gitlab.inria.fr/mpc/mpc.git",
+      "dest": "mpc"
     }
   ],
   "dependencies": [

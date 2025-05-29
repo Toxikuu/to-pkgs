@@ -10,7 +10,8 @@ u="https://gitlab.inria.fr/$n/$n.git"
 vf="gr | grep -E '^[0-9]+'"
 
 s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+    "$u"
+    # "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
 )
 
 d=(
@@ -21,7 +22,7 @@ d=(
 
 b() {
 
-il
+autoreconf -fiv
 def
 
 }
