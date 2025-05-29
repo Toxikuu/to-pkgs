@@ -6,10 +6,10 @@ a="Perl-Compatible Regular Expressions"
 m="Tox"
 l=(
     "BSD-2-Clause"
-    "BSD-3-Clause WITH PCRE2-exception"
+    "BSD-3-Clause WITH ${n^^}-exception"
 )
 t="core lib"
-u="https://github.com/PCRE2Project/$n.git"
+u="https://github.com/${n^^}Project/$n.git"
 
 s=(
     "${u%.git}/releases/download/$n-$v/$n-$v.tar.bz2"
@@ -18,7 +18,6 @@ s=(
 d=(
     "bzip2"
     "glibc"
-    "readline"
     "zlib"
 )
 
@@ -27,15 +26,12 @@ b() {
 _cfg=(
     --enable-unicode
     --enable-jit
-    --enable-pcre2-16
-    --enable-pcre2-32
-    --enable-pcre2grep-libz
-    --enable-pcre2grep-libbz2
-    --enable-pcre2test-libreadline
+    --enable-$n-16
+    --enable-$n-32
+    --enable-${n}grep-libz
+    --enable-${n}grep-libbz2
 )
 
-cfg
-mk
-mi
+def
 
 }
