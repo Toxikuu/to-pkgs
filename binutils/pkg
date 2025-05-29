@@ -24,6 +24,7 @@ d=(
     "zlib"
     "zstd"
     "glibc"
+    "libelf"
 )
 
 b() {
@@ -31,7 +32,11 @@ b() {
 mkdir -pv build
 cd        build
 
+NO_DEFAULT=1
 _cfg=(
+    --prefix=/usr
+    --sysconfdir=/etc
+
     --enable-ld=default
     --enable-plugins
     --enable-shared
