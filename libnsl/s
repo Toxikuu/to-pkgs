@@ -1,6 +1,6 @@
 {
   "name": "libnsl",
-  "version": "2.0.1",
+  "version": "3b06568b38f0d2ba12adcd029c0f31a632cbbde7",
   "about": "Public client interface for NIS(YP)",
   "maintainer": "Tox",
   "licenses": [
@@ -15,9 +15,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/thkukuk/libnsl/archive/v2.0.1/libnsl-2.0.1.tar.gz",
-      "dest": "libnsl-2.0.1.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/thkukuk/libnsl.git",
+      "dest": "libnsl"
     }
   ],
   "dependencies": [
