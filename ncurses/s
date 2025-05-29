@@ -4,7 +4,7 @@
   "about": "Libraries for terminal-independent character screen handling",
   "maintainer": "Tox",
   "licenses": [
-    "MIT-open-group"
+    "MIT"
   ],
   "upstream": "https://invisible-mirror.net/archives/ncurses/?C=M;O=D",
   "version_fetch": "curl -s 'https://invisible-mirror.net/archives/ncurses/?C=M;O=D' | grep 'ncurses-' | head -n1 | cut -d- -f2 | cut -d. -f1-2",
@@ -23,10 +23,6 @@
   "dependencies": [
     {
       "name": "glibc",
-      "kind": "Required"
-    },
-    {
-      "name": "gcc",
       "kind": "Required"
     }
   ],

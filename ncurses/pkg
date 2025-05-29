@@ -4,7 +4,7 @@ n="ncurses"
 v="6.5"
 a="Libraries for terminal-independent character screen handling"
 m="Tox"
-l="MIT-open-group"
+l="MIT"
 t="core critical lib"
 u="https://invisible-mirror.net/archives/$n/?C=M;O=D"
 vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d- -f2 | cut -d. -f1-2"
@@ -15,7 +15,6 @@ s=(
 
 d=(
     "glibc"
-    "gcc"
 )
 
 b() {
@@ -25,25 +24,27 @@ _cfg=(
     --with-manpage-format=normal
     --with-pkg-config-libdir=/usr/lib/pkgconfig
 
-    # --without-ada # commented out for testing (likely) lfs divergence-related breakage
+    --without-ada
     --without-debug
     --without-normal
 
     --enable-pc-files
 )
 
-il
+# gcc >= 15 fix
+CFLAGS+=' -std=gnu17'
+
 def
 
 # Fool packages attempting to link to non-wide ncurses
 sed -e 's/^#if.*XOPEN.*$/#if 1/' \
     -i "$D"/usr/include/curses.h
 
-for lib in ncurses{,++} form panel menu ; do
-    ln -sfv lib${lib}w.so "$D"/usr/lib/lib${lib}.so
-    ln -sfv ${lib}w.pc    "$D"/usr/lib/pkgconfig/${lib}.pc
+for lib in $n{,++} form panel menu ; do
+    ln -sfv "lib${lib}w.so" "$D/usr/lib/lib$lib.so"
+    ln -sfv "${lib}w.pc"    "$D/usr/lib/pkgconfig/$lib.pc"
 done
 
-ln -sfv libncursesw.so "$D"/usr/lib/libcurses.so
+ln -sfv "lib${n}w.so" "$D/usr/lib/libcurses.so"
 
 }
