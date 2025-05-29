@@ -95,12 +95,6 @@ sed -i "$D/usr/lib/pkgconfig/mpv.pc"    \
 
 }
 
-t() {
-
-nj test
-
-}
-
 i() {
 
 if to data -i gtk3; then
