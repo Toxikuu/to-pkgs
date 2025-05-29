@@ -22,11 +22,6 @@
       "dest": "samurai"
     }
   ],
-  "dependencies": [
-    {
-      "name": "git",
-      "kind": "Build"
-    }
-  ],
+  "dependencies": [],
   "kcfg": []
 }

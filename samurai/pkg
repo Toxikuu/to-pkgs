@@ -9,12 +9,10 @@ t="utils cli lang"
 u="https://github.com/michaelforney/$n.git"
 
 s="$u"
-d="b,git"
 
 b() {
 
 with c99
-gco
 
 mk samu
 mi PREFIX=/usr
