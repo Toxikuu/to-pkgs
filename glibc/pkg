@@ -40,16 +40,11 @@ _cfg=(
     --disable-nscd
     --disable-profile
 
-    --enable-kernel=6.14
+    --enable-kernel=6.12
     --enable-stack-protector=strong
 )
 
-{
-    echo "slibdir=/usr/lib"
-    echo "rtlddir=/usr/lib"
-    echo "sbindir=/usr/sbin"
-    echo "rootsbindir=/usr/sbin"
-} >> configparms
+echo "rootsbindir=/usr/sbin" > configparms
 
 cfg
 mk
