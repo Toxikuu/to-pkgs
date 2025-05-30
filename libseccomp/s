@@ -25,10 +25,6 @@
       "kind": "Required"
     },
     {
-      "name": "which",
-      "kind": "Build"
-    },
-    {
       "name": "gperf",
       "kind": "Build"
     }
