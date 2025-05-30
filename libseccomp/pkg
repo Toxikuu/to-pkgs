@@ -24,6 +24,7 @@ b() {
 # libraries must be enabled per BLFS
 
 def
+laway
 
 }
 
