@@ -17,6 +17,13 @@ d=(
     "glibc"
 )
 
+xt() {
+
+mkdir -pv "$n"
+tar xvf "$S/$n$v.tar.gz" -C "$n"
+
+}
+
 b() {
 
 ZONEINFO="$D/usr/share/zoneinfo"
