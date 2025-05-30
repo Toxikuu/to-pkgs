@@ -16,7 +16,7 @@ d="glibc"
 
 b() {
 
-export NO_DEFAULT=1 
+export NO_DEFAULT=1
 _cfg=(
     --prefix=/usr
 )
