@@ -12,8 +12,6 @@ s="$u"
 
 b() {
 
-with c99
-
 mk samu
 mi PREFIX=/usr
 
