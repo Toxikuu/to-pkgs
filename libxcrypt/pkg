@@ -8,11 +8,7 @@ l="LGPL"
 t="lib sec core"
 u="https://github.com/besser82/$n.git"
 
-s=(
-    "$u"
-    # "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
-)
-
+s="$u"
 d="glibc"
 
 b() {
@@ -25,6 +21,7 @@ _cfg=(
 
 autoreconf -fiv
 def
+laway
 
 }
 
