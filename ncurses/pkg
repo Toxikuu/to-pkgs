@@ -1,21 +1,19 @@
 #!/to
 
 n="ncurses"
-v="6.5"
+v="6.5-20250524"
 a="Libraries for terminal-independent character screen handling"
 m="Tox"
 l="MIT"
 t="core critical lib"
-u="https://invisible-mirror.net/archives/$n/?C=M;O=D"
-vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d- -f2 | cut -d. -f1-2"
+u="https://invisible-mirror.net/archives/$n/current/?C=M;O=D"
+vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d\" -f4 | grep -Eo '$n-[0-9]\.[0-9]-[0-9]{8}'"
 
 s=(
-    "${u%\?*}$n-$v.tar.gz"
+    "${u%\?*}$n-$v.tgz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
@@ -30,9 +28,6 @@ _cfg=(
 
     --enable-pc-files
 )
-
-# gcc >= 15 fix
-CFLAGS+=' -std=gnu17'
 
 def
 
