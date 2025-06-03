@@ -1,7 +1,7 @@
 #!/to
 
 n="pkgconf"
-v="2983d3118899c1167ad3a2ca4df4c340f357f87d"
+v="aa5813ac5ea6ee724f51d72447454f49b48e56cf"
 a="Package compiler and linker metadata toolkit"
 m="Tox"
 l="ISC"
@@ -23,7 +23,5 @@ def
 # Maintain compatibility with the original pkg-config
 ln -sv "$n"   "$D/usr/bin/pkg-config"
 ln -sv "$n.1" "$D/usr/share/man/man1/pkg-config.1"
-
-laway
 
 }
