@@ -1,7 +1,7 @@
 {
   "name": "xz",
   "version": "5.8.1",
-  "about": "The XZ and LZMA compression algorithms",
+  "about": "The LZMA and XZ compression formats",
   "maintainer": "Tox",
   "licenses": [
     "GPL LGPL custom"

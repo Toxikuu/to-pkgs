@@ -2,8 +2,7 @@
 
 n="xz"
 v="5.8.1"
-# TODO: Consider dropping lzma support eventually
-a="The XZ and LZMA compression algorithms"
+a="The LZMA and XZ compression formats"
 m="Tox"
 l="GPL LGPL custom"
 t="core utils cli lib z"
