@@ -18,11 +18,6 @@
       "kind": "Download",
       "url": "https://ftp.gnu.org/gnu/gmp//gmp-6.3.0.tar.xz",
       "dest": "gmp-6.3.0.tar.xz"
-    },
-    {
-      "kind": "Download",
-      "url": "https://gitlab.archlinux.org/archlinux/packaging/packages/gmp/-/raw/main/gmp-gcc-15.patch",
-      "dest": "gmp-gcc-15.patch"
     }
   ],
   "dependencies": [

@@ -14,13 +14,13 @@ vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d'\"' -f8 | cut -d- -f2 | cut -d
 
 s=(
     "${u%\?*}/$n-$v.tar.xz"
-    "https://gitlab.archlinux.org/archlinux/packaging/packages/$n/-/raw/main/$n-gcc-15.patch"
 )
+
 d="glibc"
 
 b() {
 
-pat "$S/$n-gcc-15.patch"
+sed -i '/long long t1;/,+1s/()/(...)/' configure
 
 _cfg=(
     --enable-cxx
@@ -34,8 +34,6 @@ sed 's/ -shared / -Wl,-O1,--as-needed\0/g' -i libtool
 
 mk
 mi
-
-laway
 
 }
 
