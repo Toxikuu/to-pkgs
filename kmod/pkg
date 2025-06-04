@@ -17,7 +17,7 @@ s=(
 
 d=(
     "b,meson"
-    "b,ninja"
+    "b,samurai"
     "b,scdoc"
     "zstd"
     "zlib"
@@ -28,7 +28,7 @@ d=(
 
 b() {
 
-with mn
+with meson
 
 _cfg=(
     -D manpages=true
