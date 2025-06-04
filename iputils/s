@@ -1,6 +1,6 @@
 {
   "name": "iputils",
-  "version": "3e53eef5bff5e87804ba2f27f8d82d8f55b68d16",
+  "version": "23b06385444fba29c898370ae6f297e41c11667b",
   "about": "The 'ping' networking utility",
   "maintainer": "Tox",
   "licenses": [
@@ -23,15 +23,11 @@
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
-    },
-    {
       "name": "meson",
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samurai",
       "kind": "Build"
     },
     {

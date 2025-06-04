@@ -1,21 +1,18 @@
 #!/to
 
 n="iputils"
-v="3e53eef5bff5e87804ba2f27f8d82d8f55b68d16"
+v="23b06385444fba29c898370ae6f297e41c11667b"
 a="The 'ping' networking utility"
 m="Tox"
 l=("BSD-3-Clause" "GPL-2.0-or-later")
 t="net utils cli"
 u="https://github.com/$n/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "b,git"
     "b,meson"
-    "b,ninja"
+    "b,samurai"
     "b,iproute2"
     "libcap"
     "libidn2"
@@ -23,8 +20,7 @@ d=(
 
 b() {
 
-gco
-with mn
+with meson
 
 _cfg=(
     -D USE_CAP=true
@@ -43,7 +39,6 @@ _cfg=(
     -D SKIP_TESTS=true
 )
 
-il
 def
 
 }
