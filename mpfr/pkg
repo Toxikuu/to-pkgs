@@ -1,7 +1,7 @@
 #!/to
 
 n="mpfr"
-v="1bbd6dfefc3ed11e1b28226f4396d6e6e5d3a08f"
+v="9cb4c167b614c596695c551dbcf29d9557016277"
 a="Multiple-precision floating-point math library"
 m="Tox"
 l=(
@@ -27,6 +27,7 @@ b() {
 _cfg=(
     --enable-thread-safe
     --enable-shared
+    # --enable-lto # experimental, might try in the future
 )
 
 ./autogen.sh
