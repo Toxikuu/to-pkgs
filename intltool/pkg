@@ -22,7 +22,6 @@ b() {
 # Avoid a warning caused by perl 5.22+
 sed -i 's:\\\${:\\\$\\{:' intltool-update.in
 
-il
 def
 
 }
