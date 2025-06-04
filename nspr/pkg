@@ -19,7 +19,7 @@ d=(
 
 b() {
 
-cd nspr
+cd $n
 
 sed -i '/^RELEASE/s|^|#|' pr/src/misc/Makefile.in
 sed -i 's|$(LIBRARY) ||'  config/rules.mk
