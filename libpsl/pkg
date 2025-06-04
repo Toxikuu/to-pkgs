@@ -15,14 +15,14 @@ s=(
 
 d=(
     "b,meson"
-    "b,ninja"
+    "b,samurai"
     "libidn2"
     "libunistring"
 )
 
 b() {
 
-with mn
+with meson
 
 _cfg=(
     -D tests=false
@@ -31,7 +31,5 @@ _cfg=(
 )
 
 def
-
-install -vDm644 ../COPYING -t "$D/usr/share/licenses/$n"
 
 }
