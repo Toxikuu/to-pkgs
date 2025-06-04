@@ -1,13 +1,13 @@
 #!/to
 
 n="bash"
-v="5.2.37"
+v="5.3-rc2"
 a="The Bourne-Again Shell"
 m="Tox"
 l="GPL-3.0-or-later"
 t="shell core"
 u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
-vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|\.sig|patches' | head -n1 | grep -Eo '$n-[0-9]+\.[0-9]+.*\.tar\..z\"' | sed 's,.tar,-,' | cut -d- -f2"
+vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|diff|doc|\.sig|patches' | head -n1 | cut -d \" -f8 | sed 's,.tar.gz,,'"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
