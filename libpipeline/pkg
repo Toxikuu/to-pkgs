@@ -13,14 +13,10 @@ s=(
     "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.gz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
-cfg
-mk
-mi
+def
 
 }
