@@ -1,8 +1,8 @@
 #!/to
 
 n="kbd"
-v="2.7.1"
-a="Key-table files, console fonts, and keyboard utilities"
+v="2.8.0"
+a="Keytable files, console fonts, and keyboard utilities"
 m="Tox"
 l="GPL-2.0-or-later"
 t="db utils font core"
@@ -16,12 +16,11 @@ s=(
 d=(
     "glibc"
     "gzip"
-    "pam"
-    "b,check"
 )
 
 b() {
 
+# Avoid name conflicts
 mv -v data/keymaps/i386/qwertz/cz{,-qwertz}.map
 mv -v data/keymaps/i386/olpc/es{,-olpc}.map
 mv -v data/keymaps/i386/olpc/pt{,-olpc}.map
@@ -36,9 +35,9 @@ sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in
 
 _cfg=(
     --disable-vlock
+    --disable-tests # pita to run
 )
 
 def
-il
 
 }
