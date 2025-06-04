@@ -2,15 +2,16 @@
 
 n="wget"
 v="2.2.0"
+an="$n${v:0:1}" # wget2
 a="Network utility to retrieve files from the web"
 m="Tox"
 l="GPL-3.0-or-later"
 t="net lib utils"
-u="https://gitlab.com/gnuwget/wget2.git"
+u="https://gitlab.com/gnu$n/$an.git"
 vf="gr | grep v | tail -n1 | cut -d/ -f3"
 
 s=(
-    "https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz"
+    "https://gnu$n.gitlab.io/$an/$an-latest.tar.gz"
 )
 
 d=(
@@ -28,19 +29,22 @@ b() {
 _cfg=(
     --with-lzma
     --with-bzip2
+    --with-gnu-ld
+
     --without-lzip
     --without-brotlidec
+    --without-plugin-support
+
     --disable-doc
     --disable-fuzzing
+
     --enable-threads=posix
     --enable-year2038
-    --with-gnu-ld
-    --without-plugin-support
 )
 
 def
 
-ln -sfv wget2 "$D"/usr/bin/wget
-rm -vf "$D"/usr/bin/wget2_noinstall # delete a useless testing binary
+ln -sfv "$an" "$D/usr/bin/$n"
+rm -vf "$D/usr/bin/${an}_noinstall" # delete a useless testing binary
 
 }
