@@ -11,20 +11,14 @@ u="https://github.com/altlinux/$n.git"
 
 s="$u"
 
-d=(
-    "glibc"
-    "b,git"
-)
+d="glibc"
 
 b() {
 
-gco
 cd "$n"
 
 mk
 mi
 rm -vf "$D/usr/lib/$n.a"
-
-il
 
 }

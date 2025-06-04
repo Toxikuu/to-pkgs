@@ -22,10 +22,6 @@
     {
       "name": "glibc",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []
