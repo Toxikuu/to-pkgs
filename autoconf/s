@@ -6,7 +6,7 @@
   "licenses": [
     "GPL2",
     "GPL3",
-    "custom"
+    "Custom"
   ],
   "upstream": "https://https.git.savannah.gnu.org/git/autoconf.git",
   "version_fetch": "gr | grep '^v[0-9]\\.[0-9]' | grep -v '[a-z]$'",
