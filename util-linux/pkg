@@ -65,9 +65,7 @@ _cfg=(
 )
 
 ./autogen.sh
-
 def
-il Documentation/licenses/COPYING.{BSD*,ISC}
 
 }
 
