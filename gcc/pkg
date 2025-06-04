@@ -24,6 +24,10 @@ d=(
     "glibc"
 )
 
+qa=(
+    "!static"
+)
+
 b() {
 
 il
