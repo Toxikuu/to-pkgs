@@ -1,7 +1,7 @@
 #!/to
 
 n="libarchive"
-v="3.8.0"
+v="3.8.1"
 a="Multi-format archive and compression library"
 m="Tox"
 l="BSD-2-Clause"
@@ -20,8 +20,8 @@ d=(
     "xz"
     "zlib"
     "zstd"
-    "libxml2" # used instead of expat (no particular reason)
-    "nettle" # used instead of openssl (no particular reason)
+    "expat"
+    "openssl"
     "pcre2"
 )
 
@@ -30,7 +30,7 @@ b() {
 def
 
 # Avoid relying on the unmaintained Unzip package
-ln -sfv bsdunzip /usr/bin/unzip
+ln -sv bsdunzip "$D/usr/bin/unzip"
 
 }
 
