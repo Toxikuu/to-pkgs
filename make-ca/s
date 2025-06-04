@@ -1,6 +1,6 @@
 {
   "name": "make-ca",
-  "version": "1.16",
+  "version": "1.16.1",
   "about": "PKI setup script for LFS",
   "maintainer": "Tox",
   "licenses": [
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/lfs-book/make-ca/archive/v1.16/make-ca-1.16.tar.gz",
-      "dest": "make-ca-1.16.tar.gz"
+      "url": "https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz",
+      "dest": "make-ca-1.16.1.tar.gz"
     }
   ],
   "dependencies": [

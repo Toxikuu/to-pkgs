@@ -1,7 +1,7 @@
 #!/to
 
 n="make-ca"
-v="1.16"
+v="1.16.1"
 a="PKI setup script for LFS"
 m="Tox"
 l=(
@@ -24,7 +24,7 @@ d=(
 b() {
 
 mi
-install -vdm755 "$D"/etc/ssl/local
+install -vdm755 "$D/etc/ssl/local"
 
 }
 
@@ -32,6 +32,6 @@ i() {
 
 # Create a compatibility symlink wanted by Steam
 ln -sfv /etc/pki/tls/certs/ca-bundle.crt /etc/ssl/certs/ca-certificates.crt
-/usr/sbin/make-ca -g
+/usr/sbin/$n -g
 
 }
