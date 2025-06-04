@@ -12,6 +12,10 @@ s=(
     "${u%.git}/-/archive/$v/unix-$n-$v.tar.bz2"
 )
 
+d=(
+    "bzip2" # needed to extract the tarball
+)
+
 b() {
 
 mk
