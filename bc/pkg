@@ -9,11 +9,13 @@ t="core math"
 u="https://github.com/gavinhoward/$n.git"
 
 s="$u"
-d="glibc"
+
+d=(
+    "glibc"
+    "readline"
+)
 
 b() {
-
-with c99
 
 NO_DEFAULT=1
 _cfg=(
