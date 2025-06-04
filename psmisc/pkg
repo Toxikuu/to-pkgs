@@ -12,16 +12,11 @@ s="$u"
 
 d=(
     "ncurses"
-    "b,git"
 )
 
 b() {
 
-git checkout $v
-
 ./autogen.sh
-
-il
 def
 
 }
