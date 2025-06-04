@@ -1,6 +1,6 @@
 {
   "name": "tmux",
-  "version": "7be0613657215b5d712d2375c14e660709428925",
+  "version": "1dbceaa790f584b09855005bcfd11297a820f88a",
   "about": "Terminal multiplexer",
   "maintainer": "Tox",
   "licenses": [
@@ -32,10 +32,6 @@
     {
       "name": "libutempter",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []
