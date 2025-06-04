@@ -23,9 +23,6 @@ b() {
 
 with pip
 
-# # TODO: Don't do this, I still have no idea why this happens
-# pip3 install setuptools
-
 pipb
 pipi
 
