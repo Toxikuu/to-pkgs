@@ -18,6 +18,10 @@ d=(
     "glibc"
 )
 
+qa=(
+    "!static" # liby.a wanted by posix
+)
+
 b() {
 
 CFLAGS+=' -ffat-lto-objects' \
