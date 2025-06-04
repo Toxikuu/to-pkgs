@@ -24,9 +24,7 @@ _cfg=(
     --disable-docker-tests
 )
 
-cfg
-mk
-mi
+def
 
 }
 
