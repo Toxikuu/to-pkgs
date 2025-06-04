@@ -21,11 +21,15 @@
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
+      "name": "gawk",
+      "kind": "Required"
     },
     {
-      "name": "gawk",
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
       "kind": "Required"
     }
   ],

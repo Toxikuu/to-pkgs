@@ -8,18 +8,16 @@ l="LGPL"
 t="test lib"
 u="https://github.com/lib$n/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "b,git"
     "gawk"
+    "glibc"
+    "gcc"
 )
 
 b() {
 
-gco
 autoreconf -fiv
 
 _cfg=(
