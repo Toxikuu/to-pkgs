@@ -10,6 +10,7 @@ u="https://github.com/$n/$n.git"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+    "https://www.linuxfromscratch.org/patches/lfs/development/$n-$v-upstream_fix-1.patch"
 )
 
 d=(
@@ -24,6 +25,12 @@ d=(
 )
 
 b() {
+
+pat "$S"/$n-$v-upstream_fix-1.patch
+
+# Required because coreutils uses old versions of shit
+autoreconf -fv
+automake -af
 
 _cfg=(
     --with-openssl
