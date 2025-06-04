@@ -19,10 +19,11 @@ d=(
 b() {
 
 _cfg=(
+    --runstatedir=/run
     --without-logger
 )
 
-il
 def
+install -vDm644 "$A/syslog.conf" -t "$D/etc/"
 
 }
