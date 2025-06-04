@@ -1,6 +1,6 @@
 {
   "name": "python",
-  "version": "3.13.3",
+  "version": "3.13.4",
   "about": "The Python programming language",
   "maintainer": "Tox",
   "licenses": [
@@ -18,17 +18,13 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz",
-      "dest": "Python-3.13.3.tar.xz"
+      "url": "https://www.python.org/ftp/python/3.13.4/Python-3.13.4.tar.xz",
+      "dest": "Python-3.13.4.tar.xz"
     }
   ],
   "dependencies": [
     {
-      "name": "libnsl",
-      "kind": "Required"
-    },
-    {
-      "name": "mpdecimal",
+      "name": "bzip2",
       "kind": "Required"
     },
     {
@@ -36,11 +32,15 @@
       "kind": "Required"
     },
     {
+      "name": "gdbm",
+      "kind": "Required"
+    },
+    {
       "name": "libffi",
       "kind": "Required"
     },
     {
-      "name": "gdbm",
+      "name": "libnsl",
       "kind": "Required"
     },
     {
@@ -48,15 +48,11 @@
       "kind": "Required"
     },
     {
+      "name": "mpdecimal",
+      "kind": "Required"
+    },
+    {
       "name": "openssl",
-      "kind": "Required"
-    },
-    {
-      "name": "zlib",
-      "kind": "Required"
-    },
-    {
-      "name": "bzip2",
       "kind": "Required"
     },
     {
@@ -64,8 +60,12 @@
       "kind": "Required"
     },
     {
-      "name": "glibc",
-      "kind": "Runtime"
+      "name": "tzdata",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
     }
   ],
   "kcfg": []

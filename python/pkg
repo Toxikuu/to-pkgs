@@ -1,7 +1,7 @@
 #!/to
 
 n="python"
-v="3.13.3"
+v="3.13.4"
 a="The Python programming language"
 m="Tox"
 l="PSF-2.0"
@@ -14,17 +14,17 @@ s=(
 )
 
 d=(
-    "libnsl"
-    "mpdecimal"
-    "expat"
-    "libffi"
-    "gdbm"
-    "libxcrypt"
-    "openssl"
-    "zlib"
     "bzip2"
+    "expat"
+    "gdbm"
+    "libffi"
+    "libnsl"
+    "libxcrypt"
+    "mpdecimal"
+    "openssl"
     "sqlite"
-    "r,glibc"
+    "tzdata"
+    "zlib"
 )
 
 b() {
@@ -35,6 +35,7 @@ rm -rf Modules/_decimal/libmpdec
 
 _cfg=(
     --enable-shared
+    --without-static-libpython
 
     # Use system libraries
     --with-system-expat
