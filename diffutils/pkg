@@ -22,9 +22,7 @@ _cfg=(
     --disable-gcc-warnings
 )
 
-cfg
-mk
-mi
+def
 
 }
 
