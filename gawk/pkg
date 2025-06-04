@@ -29,6 +29,6 @@ _cfg=(
 def
 
 # Compatibility sylink
-ln -sv gawk.1 "$D"/usr/share/man/man1/awk.1
+ln -sv $n.1 "$D"/usr/share/man/man1/awk.1
 
 }
