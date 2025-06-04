@@ -20,11 +20,6 @@
       "dest": "neofetch"
     }
   ],
-  "dependencies": [
-    {
-      "name": "bash",
-      "kind": "Required"
-    }
-  ],
+  "dependencies": [],
   "kcfg": []
 }

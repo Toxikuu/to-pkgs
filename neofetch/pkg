@@ -8,15 +8,8 @@ l="MIT"
 t="cli utils fetch"
 u="https://github.com/dylanaraps/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "bash"
-    # Also random stuuff like xrandr, xdpyinfo, feh, nitrogen at runtime for
-    # more specific information
-)
+s="$u"
+# Many optional runtime dependencies exist
 
 b() {
 
