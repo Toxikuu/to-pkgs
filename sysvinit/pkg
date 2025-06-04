@@ -21,7 +21,6 @@ b() {
 
 pat "$S/$n-$v-consolidated-1.patch"
 
-il
 mk
 mk ROOT="$D" install
 
