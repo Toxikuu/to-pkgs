@@ -9,12 +9,10 @@ t="utils core lib cli"
 u="https://https.git.savannah.gnu.org/git/$n.git"
 
 s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+    "https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.xz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
@@ -22,9 +20,7 @@ _cfg=(
     --localstatedir=/var/lib/locate
 )
 
-cfg
-mk
-mi
+def
 
 }
 

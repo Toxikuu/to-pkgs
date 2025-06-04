@@ -17,7 +17,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
+      "url": "https://ftpmirror.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
       "dest": "findutils-4.10.0.tar.xz"
     }
   ],
