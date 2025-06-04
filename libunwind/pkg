@@ -2,18 +2,16 @@
 
 n="libunwind"
 v="1.8.2"
+tag="v$v"
 a="Library to determine and manipulate a program's call-chain"
 m="Tox"
 l="MIT"
 t="lib"
 u="https://github.com/$n/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "b,git"
     "xz"
     "zlib"
     "glibc"
@@ -21,13 +19,11 @@ d=(
 
 b() {
 
-# The version tag isn't included in the shallow clone, so it must be fetched
-# TODO: Decide on a better way to handle this
-git fetch origin tag v$v
-gco v$v
-
-il
 autoreconf -fiv
+
+# Fix a gcc >= 15 build problem
+sed -i '/func.s/s/s//' tests/Gtest-nomalloc.c
+
 cfg
 sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
