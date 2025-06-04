@@ -41,6 +41,10 @@
     {
       "name": "meson",
       "kind": "Build"
+    },
+    {
+      "name": "samurai",
+      "kind": "Build"
     }
   ],
   "kcfg": []

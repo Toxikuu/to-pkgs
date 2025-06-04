@@ -18,21 +18,22 @@ d=(
     "libtasn1"
     "libffi"
     "b,meson"
+    "b,samurai"
     # gnutls for tests
 )
 
 b() {
 
-with mn
+with meson samu
 
 sed '20,$ d' -i trust/trust-extract-compat
 
-cat >> trust/trust-extract-compat << "EOF"
+cat >> trust/trust-extract-compat << EOF
 # Copy existing anchor modifications to /etc/ssl/local
 /usr/libexec/make-ca/copy-trust-modifications
 
 # Update trust stores
-/usr/sbin/make-ca -r
+/usr/sbin/$n -r
 EOF
 
 _cfg=(
@@ -42,19 +43,19 @@ _cfg=(
 )
 
 def
-ln -sfv ./pkcs11/p11-kit-trust.so "$D"/usr/lib/libnssckbi.so
+ln -sfv ./pkcs11/$n-trust.so "$D"/usr/lib/libnssckbi.so
 
 }
 
 t() {
 
-LC_ALL=C nj test
+LC_ALL=C sa test
 
 }
 
 i() {
 
-ln -sfv /usr/libexec/p11-kit/trust-extract-compat \
+ln -sfv /usr/libexec/$n/trust-extract-compat \
         /usr/bin/update-ca-certificates
 
 }
