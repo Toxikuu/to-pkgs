@@ -18,7 +18,7 @@ d=(
     "libtirpc"
     "libxcrypt"
     "b,meson"
-    "b,ninja"
+    "b,samurai"
 )
 
 kcfg=(
@@ -27,7 +27,7 @@ kcfg=(
 
 b() {
 
-with mn
+with meson samu
 
 _cfg=(
     -D docs=disabled
@@ -38,21 +38,20 @@ _cfg=(
 il
 def
 
-chmod -v 4755 "$D"/usr/sbin/unix_chkpwd
-rm -rf "$D"/usr/lib/systemd
+chmod -v 4755 "$D/usr/sbin/unix_chkpwd"
+rm -rf "$D/usr/lib/systemd"
 
 # Install pam configuration files
-install -vDm644 "$A/"* -t "$D"/etc/pam.d/
+install -vDm644 "$A/"* -t "$D/etc/pam.d/"
 
 }
 
 t() {
 
 # NOTE: Tests are run in the chroot, and should thus not be prefixed with "$D"
-nj install
-install -vdm755 /etc/pam.d
+sa install
 
-cat > /etc/pam.d/other << "EOF"
+install -vDm644 /dev/stdin /etc/pam.d/other << "EOF"
 # /etc/pam.d/other
 
 auth     required       pam_deny.so
@@ -61,6 +60,6 @@ password required       pam_deny.so
 session  required       pam_deny.so
 EOF
 
-nj test
+sa test
 
 }
