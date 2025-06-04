@@ -1,13 +1,13 @@
 #!/to
 
 n="readline"
-v="8.2.13"
+v="8.3-rc2"
 a="Libraries for command-line editing and history"
 m="Tox"
 l="GPL-3.0-only"
 t="lib critical core"
 u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
-vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|-rc|diff|doc|sig|patches' | head -n1 | cut -d- -f2 | sed 's,.tar.*,,'"
+vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|diff|doc|sig|patches' | head -n1 | cut -d- -f2- | sed 's,.tar.*,,'"
 
 s=(
     "${u%\?*}$n-$v.tar.gz"
