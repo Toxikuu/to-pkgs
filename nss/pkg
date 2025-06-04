@@ -21,6 +21,10 @@ d=(
     "sqlite"
 )
 
+qa=(
+    "!static"
+)
+
 b() {
 
 pat "$S/$n-standalone-1.patch"
@@ -49,6 +53,6 @@ cp -vRL {public,private}/$n/*                    "$D/usr/include/$n"
 
 install -vDm755 \
     Linux*/bin/{certutil,$n-config,pk12util}  -t "$D/usr/bin"
-install -vDm644 Linux*/lib/pkgconfig/nss.pc   -t "$D/usr/lib/pkgconfig"
+install -vDm644 Linux*/lib/pkgconfig/$n.pc    -t "$D/usr/lib/pkgconfig"
 
 }
