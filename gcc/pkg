@@ -1,7 +1,7 @@
 #!/to
 
 n="gcc"
-v="14.2.0"
+v="15.1.0"
 a="The GNU compiler collection"
 m="Tox"
 l=(
@@ -73,35 +73,34 @@ mkdir -pv "$D"/usr/share/gdb/auto-load/usr/lib
 mv -vf "$D"/usr/lib/*gdb.py "$D"/usr/share/gdb/auto-load/usr/lib
 
 # Run some sanity checks
-(
-    # Do NOT install not to DESTDIR
-    mk install
 
-    # Compatibility symlinks
-    ln -sfv $n /usr/bin/cc
-    ln -sfv $n.1 /usr/share/man/man1/cc.1
+# Do NOT install not to DESTDIR
+mk install
 
-    # LTO compatibility symlink
-    mkdir -pv /usr/lib/bfd-plugins
-    ln -sfv ../../libexec/$n/$($n -dumpmachine)/$v/liblto_plugin.so \
-            /usr/lib/bfd-plugins/
+# Compatibility symlinks
+ln -sfv $n /usr/bin/cc
+ln -sfv $n.1 /usr/share/man/man1/cc.1
 
-    # Move a misplaced file
-    mkdir -pv /usr/share/gdb/auto-load/usr/lib
-    mv -vf /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
+# LTO compatibility symlink
+mkdir -pv /usr/lib/bfd-plugins
+ln -sfv ../../libexec/$n/$($n -dumpmachine)/$v/liblto_plugin.so \
+        /usr/lib/bfd-plugins/
 
-    # Run the sanity checks
-    echo "Running some sanity checks..." >&2
-    echo 'int main(){}' | cc -x c - -v -Wl,--verbose &> dummy.log
-    readelf -l a.out | grep ': /lib'
+# Move a misplaced file
+mkdir -pv /usr/share/gdb/auto-load/usr/lib
+mv -vf /usr/lib/*gdb.py /usr/share/gdb/auto-load/usr/lib
 
-    grep -E -o '/usr/lib.*/S?crt[1in].*succeeded' dummy.log | grep succeeded || die "GCC sanity check failure!"
+# Run the sanity checks
+echo "Running some sanity checks..." >&2
+echo 'int main(){}' | cc -x c - -v -Wl,--verbose &> dummy.log
+readelf -l a.out | grep ': /lib'
 
-    grep -B4 '^ /usr/include' dummy.log
-    grep 'SEARCH.*/usr/lib' dummy.log | sed 's|; |\n|g'
+grep -E -o '/usr/lib.*/S?crt[1in].*succeeded' dummy.log | grep succeeded || die "GCC sanity check failure!"
 
-    grep "/lib.*/libc.so.6 " dummy.log | grep succeeded || die "GCC sanity check failure!"
-    grep found dummy.log | grep found || die "GCC sanity check failure!"
-)
+grep -B4 '^ /usr/include' dummy.log
+grep 'SEARCH.*/usr/lib' dummy.log | sed 's|; |\n|g'
+
+grep "/lib.*/libc.so.6 " dummy.log | grep succeeded || die "GCC sanity check failure!"
+grep found dummy.log | grep found || die "GCC sanity check failure!"
 
 }
