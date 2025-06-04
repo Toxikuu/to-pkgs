@@ -20,7 +20,6 @@ d=(
 b() {
 
 def
-il
 rm -vf "$D/usr/lib/libltdl.a"
 
 }
