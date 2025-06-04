@@ -1,13 +1,13 @@
 #!/to
 
 n="ncurses"
-v="6.5-20250524"
+v="6.5-20250531"
 a="Libraries for terminal-independent character screen handling"
 m="Tox"
 l="MIT"
 t="core critical lib"
 u="https://invisible-mirror.net/archives/$n/current/?C=M;O=D"
-vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d\" -f4 | grep -Eo '$n-[0-9]\.[0-9]-[0-9]{8}'"
+vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d'\"' -f4 | grep -Eo '$n-[0-9]\.[0-9]-[0-9]{8}'"
 
 s=(
     "${u%\?*}$n-$v.tgz"
