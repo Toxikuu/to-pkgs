@@ -1,13 +1,13 @@
 #!/to
 
 n="sqlite"
-v="3.49.2"
+v="3.50.0"
 a="SQL database engine"
 m="Tox"
 l="Custom"
 t="lib db"
 u="https://github.com/$n/$n.git"
-# The vesion tag is really funny
+# The 'vesion' and 'relase' tags are really funny
 vf="gr | sed -e 's,^vesion-,,' -e 's,^version-,,' | grep -v '[a-Z]' | sort -V"
 
 s=(
