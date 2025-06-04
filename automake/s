@@ -21,6 +21,10 @@
   ],
   "dependencies": [
     {
+      "name": "perl",
+      "kind": "Required"
+    },
+    {
       "name": "autoconf",
       "kind": "Build"
     }

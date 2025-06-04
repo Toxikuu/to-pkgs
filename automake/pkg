@@ -13,6 +13,7 @@ vf="gr | vfs | sed 's,^v,,' | grep -v '[a-Z]'"
 s="https://mirrors.ocf.berkeley.edu/gnu/$n/$n-$v.tar.xz"
 
 d=(
+    "perl"
     "b,autoconf"
 )
 
