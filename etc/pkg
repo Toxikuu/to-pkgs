@@ -8,20 +8,11 @@ l="0BSD"
 t="utils"
 u="https://github.com/Toxikuu/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "b,git"
-)
+s="$u"
 
 b() {
 
-gco
-
-# Install license and remove git data
-il
+# Don't install git data
 rm -rf .git*
 
 # Copy sources for use in i()
