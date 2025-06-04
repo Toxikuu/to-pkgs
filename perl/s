@@ -17,9 +17,26 @@
       "kind": "Download",
       "url": "https://github.com/Perl/perl5/archive/refs/tags/v5.40.2.tar.gz",
       "dest": "v5.40.2.tar.gz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/patches/lfs/development/perl-5.40.2-upstream_fix-1.patch",
+      "dest": "perl-5.40.2-upstream_fix-1.patch"
     }
   ],
   "dependencies": [
+    {
+      "name": "iana-etc",
+      "kind": "Build"
+    },
+    {
+      "name": "procps-ng",
+      "kind": "Build"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
     {
       "name": "gdbm",
       "kind": "Required"
