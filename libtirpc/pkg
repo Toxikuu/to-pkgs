@@ -10,11 +10,9 @@ l=(
 )
 t="lib"
 u="git://linux-nfs.org/~steved/$n.git"
-# vf="gr | sed 's,-,.,g' | grep -v 'rc' | cut -d. -f2-"
 
 s=(
     "$u"
-    # "https://downloads.sourceforge.net/$n/$n-$v.tar.bz2"
 )
 
 d="glibc"
