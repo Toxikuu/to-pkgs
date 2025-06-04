@@ -1,7 +1,7 @@
 #!/to
 
 n="udev"
-v="257.5"
+v="257.6"
 a="Programs for dynamic device node creation"
 m="Tox"
 l=("CC0-1.0" "GPL-2.0-or-later" "LGPL-2.1-or-later" "MIT-0")
@@ -14,7 +14,7 @@ s=(
 )
 
 d=(
-    "b,ninja"
+    "b,samurai"
     "b,meson"
     "acl"
     "binutils"
@@ -43,11 +43,11 @@ d=(
 
 b() {
 
+pwd >&2
+ls  >&2
 cd systemd-$v
 
-# I don't feel like fixing il rn
-il || true
-with mn
+with meson samu
 
 # Remove unneeded groups from default udev rules
 sed -e 's/GROUP="render"/GROUP="video"/' \
@@ -58,8 +58,7 @@ sed -e 's/GROUP="render"/GROUP="video"/' \
 sed -i '/systemd-sysctl/s/^/#/' rules.d/99-systemd.rules.in
 
 # Adjust hardcoded paths for standalone udev
-sed -e '/NETWORK_DIRS/s/systemd/udev/' \
-    -i src/libsystemd/sd-network/network-util.h
+sed -i '/NETWORK_DIRS/s/systemd/udev/' src/libsystemd/sd-network/network-util.h
 
 _cfg=(
     -D mode=release
@@ -74,8 +73,8 @@ ms
 export udev_helpers=$(grep "'name' :" ../src/udev/meson.build | \
                       awk '{print $3}' | tr -d ",'" | grep -v 'udevadm')
 
-nj udevadm systemd-hwdb                                           \
-      $(nj -n | grep -Eo '(src/(lib)?udev|rules.d|hwdb.d)/[^ ]*') \
+sa udevadm systemd-hwdb                                           \
+      $(sa -n | grep -Eo '(src/(lib)?udev|rules.d|hwdb.d)/[^ ]*') \
       $(realpath libudev.so --relative-to .)                      \
       $udev_helpers
 
