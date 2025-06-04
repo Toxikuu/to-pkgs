@@ -17,8 +17,6 @@ b() {
 mk PREFIX=/usr LDFLAGS="$LDFLAGS"
 mi PREFIX=/usr
 
-install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
-
 }
 
 t() {
