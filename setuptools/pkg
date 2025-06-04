@@ -1,7 +1,7 @@
 #!/to
 
 n="setuptools"
-v="80.8.0"
+v="80.9.0"
 a="Tool for managing Python packages"
 m="Tox"
 l="MIT"
@@ -9,7 +9,7 @@ t="py utils core lib"
 u="https://github.com/pypa/$n.git"
 
 s=(
-    "${u%.git}/archive/refs/tags/v$v.tar.gz"
+    "https://pypi.org/packages/source/s/$n/$n-$v.tar.gz"
 )
 
 d=(
@@ -23,9 +23,9 @@ b() {
 
 with pip
 
-pip3 install setuptools
+# # TODO: Don't do this, I still have no idea why this happens
+# pip3 install setuptools
 
-il
 pipb
 pipi
 
