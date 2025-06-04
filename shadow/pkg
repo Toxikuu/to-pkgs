@@ -27,26 +27,29 @@ b() {
 # Don't install `groups` as coreutils provides a better version, and avoid
 # installing man pages from man-pages
 sed -i 's/groups$(EXEEXT) //' src/Makefile.in
-find man -name Makefile.in -exec sed -i 's/groups\.1 / /'   {} \;
-find man -name Makefile.in -exec sed -i 's/getspnam\.3 / /' {} \;
-find man -name Makefile.in -exec sed -i 's/passwd\.5 / /'   {} \;
+find man -name Makefile.in -exec sed -i \
+    -e 's/groups\.1 / /'    \
+    -e 's/getspnam\.3 / /'  \
+    -e 's/passwd\.5 / /' {} +
 
+# Use yescrypt, move the obsolete /var/spool/mail, and remove /bin and /sbin
+# from PATH
 sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' \
     -e 's@/var/spool/mail@/var/mail@'                   \
     -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'                  \
     -i etc/login.defs
 
 _cfg=(
-    --sysconfdir=/etc
-    --disable-static
-    --without-libbsd
     --with-{b,yes}crypt
+    --with-su
     --with-libpam
-    --with-group-name-max-length=32
 
+    --without-audit
+    --without-libbsd
     --without-selinux
     --without-nscd
-    --with-su
+
+    --with-group-name-max-length=32
 )
 
 touch /usr/bin/passwd # precaution
@@ -60,7 +63,7 @@ mi exec_prefix=/usr pamdir=
 mk DESTDIR="$D" -C man install-man
 
 # Install configuration files
-install -vDm644 "$D"/etc/login.defs "$D"/etc/login.defs.orig
+install -vDm644 "$D/etc/login.defs" "$D/etc/login.defs.orig"
 
 for FUNCTION in FAIL_DELAY               \
                 FAILLOG_ENAB             \
@@ -81,8 +84,10 @@ do
     sed -i "s/^${FUNCTION}/# &/" "$D"/etc/login.defs
 done
 
-install -vDm644 "$A"/* -t "$D"/etc/pam.d/
+# WARN: If anything is added to $A, this must be changed
+install -vDm644 "$A"/* -t "$D/etc/pam.d/"
 
+# Use chage as a template to install pam config files for other programs
 for PROGRAM in chfn chgpasswd chsh groupadd groupdel \
                groupmems groupmod useradd userdel usermod
 do
@@ -97,15 +102,14 @@ i() {
 pwconv
 grpconv
 
-mkdir -p /etc/default
-useradd -D --gid 999
-
-sed -i '/MAIL/s/yes/no/' /etc/default/useradd
+if [ ! -e /etc/default/useradd ]; then
+    mkdir -pv /etc/default
+    useradd -D --gid 999
+    sed -i '/MAIL/s/yes/no/' /etc/default/useradd
+fi
 
 for f in login.access limits; do
-    if [ -f "/etc/$f" ]; then
-        rm -vf "/etc/$f"
-    fi
+    rm -vf "/etc/$f"
 done
 
 }
