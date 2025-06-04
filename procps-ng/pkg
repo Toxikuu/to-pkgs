@@ -25,7 +25,6 @@ _cfg=(
     --disable-kill
 )
 
-il
 def
 
 # Don't install man pages for kill since kill wasn't installed
