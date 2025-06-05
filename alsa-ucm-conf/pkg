@@ -1,0 +1,18 @@
+#!/to
+
+n="alsa-ucm-conf"
+v="421e37bae75efc1fc134fbc84bc301f041aaff3b"
+a="ALSA Use Case Manager configuration files"
+m="Tox"
+l="BSD-3-Clause"
+t="audio"
+u="https://github.com/alsa-project/$n.git"
+
+s="$u"
+
+b() {
+
+mkdir -pv   "$D/usr/share/alsa"
+cp -av ucm2 "$D/usr/share/alsa"
+
+}

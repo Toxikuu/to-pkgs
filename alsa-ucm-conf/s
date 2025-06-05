@@ -1,0 +1,23 @@
+{
+  "name": "alsa-ucm-conf",
+  "version": "421e37bae75efc1fc134fbc84bc301f041aaff3b",
+  "about": "ALSA Use Case Manager configuration files",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/alsa-project/alsa-ucm-conf.git",
+  "version_fetch": null,
+  "tags": [
+    "audio"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/alsa-project/alsa-ucm-conf.git",
+      "dest": "alsa-ucm-conf"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
