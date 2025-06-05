@@ -18,8 +18,8 @@ s=(
 )
 
 d=(
-    "meson"
-    "ninja"
+    "b,meson"
+    "b,samurai"
     "expat"
     "glibc"
     "blfs-bootscripts"
@@ -27,7 +27,7 @@ d=(
 
 b() {
 
-with mn
+with meson samu
 
 _cfg=(
     -D doxygen_docs=disabled
@@ -57,13 +57,13 @@ i() {
 dbus-uuidgen --ensure
 
 # Make a symlink for elogind
-ln -sfv /var/lib/dbus/machine-id /etc
+ln -sfv /var/lib/$n/machine-id /etc
 
 }
 
 t() {
 
 # Many tests are disabled because of missing packages
-nj test
+sa test
 
 }

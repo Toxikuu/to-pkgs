@@ -25,11 +25,11 @@
   "dependencies": [
     {
       "name": "meson",
-      "kind": "Required"
+      "kind": "Build"
     },
     {
-      "name": "ninja",
-      "kind": "Required"
+      "name": "samurai",
+      "kind": "Build"
     },
     {
       "name": "expat",
