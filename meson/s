@@ -29,7 +29,7 @@
     },
     {
       "name": "ninja",
-      "kind": "Required"
+      "kind": "Build"
     },
     {
       "name": "wheel",

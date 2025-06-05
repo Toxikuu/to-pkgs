@@ -23,6 +23,18 @@
   ],
   "dependencies": [
     {
+      "name": "gperf",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samurai",
+      "kind": "Build"
+    },
+    {
       "name": "linux-pam",
       "kind": "Required"
     },
@@ -35,44 +47,36 @@
       "kind": "Required"
     },
     {
-      "name": "gperf",
-      "kind": "Build"
-    },
-    {
       "name": "acl",
-      "kind": "Build"
+      "kind": "Required"
     },
     {
       "name": "coreutils",
-      "kind": "Build"
-    },
-    {
-      "name": "dbus",
-      "kind": "Build"
-    },
-    {
-      "name": "libseccomp",
-      "kind": "Build"
-    },
-    {
-      "name": "meson",
-      "kind": "Build"
-    },
-    {
-      "name": "ninja",
-      "kind": "Build"
-    },
-    {
-      "name": "pcre2",
-      "kind": "Build"
-    },
-    {
-      "name": "jinja2",
-      "kind": "Build"
+      "kind": "Required"
     },
     {
       "name": "libcap",
-      "kind": "Build"
+      "kind": "Required"
+    },
+    {
+      "name": "libseccomp",
+      "kind": "Required"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Required"
+    },
+    {
+      "name": "jinja2",
+      "kind": "Required"
+    },
+    {
+      "name": "util-linux",
+      "kind": "Runtime"
+    },
+    {
+      "name": "dbus",
+      "kind": "Runtime"
     }
   ],
   "kcfg": [

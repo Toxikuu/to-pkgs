@@ -13,19 +13,24 @@ s=(
 )
 
 d=(
+    "b,gperf"
+    "b,meson"
+    "b,samurai"
+
     "linux-pam"
     "shadow"
     "udev"
-    "b,gperf"
-    "b,acl"
-    "b,coreutils"
-    "b,dbus"
-    "b,libseccomp"
-    "b,meson"
-    "b,ninja"
-    "b,pcre2"
-    "b,jinja2"
-    "b,libcap"
+    "acl"
+    "coreutils"
+    "libcap"
+    "libseccomp"
+    "pcre2"
+    "jinja2"
+
+    "r,util-linux"
+    "r,dbus"
+    # "r,polkit" # TODO: Fix the shit where dependencies of runtime dependencies
+                 # are installed at build time
 )
 
 kcfg=(
@@ -36,7 +41,7 @@ kcfg=(
 
 b() {
 
-with mn
+with meson
 
 _cfg=(
     -D cgroup-controller=$n
@@ -45,23 +50,23 @@ _cfg=(
 )
 
 def
-ln -sfv  libelogind.pc  "$D"/usr/lib/pkgconfig/libsystemd.pc
-ln -sfvn elogind        "$D"/usr/include/systemd
+ln -sfv  lib$n.pc  "$D"/usr/lib/pkgconfig/libsystemd.pc
+ln -sfvn $n        "$D"/usr/include/systemd
 
-install -vDm644 "$A/elogind-user" -t "$D/etc/pam.d/"
+install -vDm644 "$A/$n-user" -t "$D/etc/pam.d/"
 
 }
 
 i() {
 
-if ! grep "elogind addition" /etc/pam.d/system-session; then
-cat >> /etc/pam.d/system-session << "EOF"
-# Begin elogind addition
+if ! grep "$n addition" /etc/pam.d/system-session; then
+cat >> /etc/pam.d/system-session << EOF
+# Begin $n addition
 
 session  required    pam_loginuid.so
-session  optional    pam_elogind.so
+session  optional    pam_$n.so
 
-# End elogind addition
+# End $n addition
 EOF
 fi
 

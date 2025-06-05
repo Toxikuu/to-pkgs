@@ -14,7 +14,7 @@ s=(
 
 d=(
     "python"
-    "ninja"
+    "b,ninja"
     "wheel"
     "setuptools"
 )
