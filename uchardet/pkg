@@ -2,6 +2,7 @@
 
 n="uchardet"
 v="0.0.8"
+tag="v$v"
 a="Unknown character encoding detector"
 m="Tox"
 l="MPL"
@@ -13,13 +14,9 @@ s="$u"
 d=(
     "gcc"
     "b,cmake"
-    "b,git"
 )
 
 b() {
-
-with cmake
-gco v$v
 
 _cfg=(
     -D BUILD_STATIC=OFF

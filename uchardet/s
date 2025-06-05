@@ -27,10 +27,6 @@
     {
       "name": "cmake",
       "kind": "Build"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []
