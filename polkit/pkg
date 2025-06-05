@@ -21,12 +21,10 @@ d=(
     "glib"
     "elogind"
     "b,meson"
-    "b,ninja"
+    "b,samurai"
 )
 
 b() {
-
-with mn
 
 sed -i '/systemd_sysusers_dir/s/^/#/' meson.build
 
