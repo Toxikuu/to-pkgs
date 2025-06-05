@@ -77,6 +77,10 @@
     {
       "name": "dbus",
       "kind": "Runtime"
+    },
+    {
+      "name": "polkit",
+      "kind": "Runtime"
     }
   ],
   "kcfg": [

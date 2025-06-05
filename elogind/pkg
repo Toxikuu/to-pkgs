@@ -29,8 +29,7 @@ d=(
 
     "r,util-linux"
     "r,dbus"
-    # "r,polkit" # TODO: Fix the shit where dependencies of runtime dependencies
-                 # are installed at build time
+    "r,polkit"
 )
 
 kcfg=(
