@@ -17,19 +17,18 @@ d=(
     "glib"
     "glibc"
     "b,meson"
-    "b,ninja"
+    "b,samurai"
 )
 
 b() {
 
-with mn
 def
+install -vdm755 "$D/usr/share/applications"
 
 }
 
 posti() {
 
-install -vdm755         /usr/share/applications
 update-desktop-database /usr/share/applications
 
 }
