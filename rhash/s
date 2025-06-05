@@ -1,0 +1,29 @@
+{
+  "name": "rhash",
+  "version": "cce6c628f93d9ed332921656aa5e1750d12b8d3e",
+  "about": "Utility for computing hash sums",
+  "maintainer": "Tox",
+  "licenses": [
+    "0BSD"
+  ],
+  "upstream": "https://github.com/rhash/rhash.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/rhash/rhash.git",
+      "dest": "rhash"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

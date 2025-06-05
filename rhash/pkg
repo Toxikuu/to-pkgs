@@ -1,0 +1,33 @@
+#!/to
+
+n="rhash"
+v="cce6c628f93d9ed332921656aa5e1750d12b8d3e"
+a="Utility for computing hash sums"
+m="Tox"
+l="0BSD"
+t="utils lib"
+u="https://github.com/$n/$n.git"
+
+s="$u"
+
+d="glibc"
+
+b() {
+
+NO_DEFAULT=1
+_cfg=(
+    --prefix=/usr
+    --sysconfdir=/etc
+    --extra-cflags="$CFLAGS"
+    --extra-ldflags="$LDFLAGS"
+)
+
+def
+
+}
+
+t() {
+
+mk test{,-lib}
+
+}
