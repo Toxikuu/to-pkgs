@@ -28,6 +28,10 @@
     {
       "name": "glibc",
       "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Build"
     }
   ],
   "kcfg": []

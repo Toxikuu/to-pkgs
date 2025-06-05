@@ -15,6 +15,7 @@ s=(
 d=(
     "alsa-lib"
     "glibc"
+    "b,bzip2"
 )
 
 b() {
