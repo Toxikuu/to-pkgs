@@ -1,0 +1,28 @@
+#!/to
+
+n="ell"
+v="0.77"
+a="Embedded Linux library"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib"
+u="https://git.kernel.org/pub/scm/libs/$n/$n.git/"
+
+s=(
+    "https://mirrors.edge.kernel.org/pub/linux/libs/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "glibc"
+    "gcc"
+
+    # tests
+    # "b,dbus"
+    # "b,procps-ng"
+)
+
+b() {
+
+def
+
+}

@@ -1,0 +1,32 @@
+{
+  "name": "ell",
+  "version": "0.77",
+  "about": "Embedded Linux library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://git.kernel.org/pub/scm/libs/ell/ell.git/",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.77.tar.xz",
+      "dest": "ell-0.77.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
