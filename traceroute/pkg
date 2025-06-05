@@ -14,9 +14,7 @@ s=(
     "$u$n/$n-$v/$n-$v.tar.gz/download -> $n-$v.tar.gz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
