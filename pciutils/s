@@ -35,10 +35,6 @@
     {
       "name": "hwdata",
       "kind": "Runtime"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []

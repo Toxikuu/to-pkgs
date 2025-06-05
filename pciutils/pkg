@@ -2,6 +2,7 @@
 
 n="pciutils"
 v="4f2abadf015dd730d9c42a10ca5db6ed3bd6b9d2" # Last release: 3.13.0
+_v="3.13.0"
 a="PCI utilities"
 m="Tox"
 l="GPL-2.0-or-later"
@@ -17,19 +18,15 @@ d=(
     "kmod"
     "glibc"
     "r,hwdata"
-    "b,git"
 )
 
 b() {
 
-git checkout "$v"
-
 # Prevent the installation of `pci.ids`, which conflicts with hwdata
-sed -E '/INSTALL.*(PCI_IDS|update-pciids)/d' \
-    -i Makefile
+sed -Ei '/INSTALL.*(PCI_IDS|update-pciids)/d' Makefile
 
-_mk_opts=(
-    VERSION="3.13.0+$v"
+_cfg=(
+    VERSION="$_v+${v:0:8}"
 
     PREFIX=/usr
     SBINDIR=/usr/bin
@@ -42,12 +39,12 @@ _mk_opts=(
     ZLIB=yes
 )
 
-mk ${_mk_opts[@]}
-mk ${_mk_opts[@]} install install-lib
+mk ${_cfg[@]}
+mk ${_cfg[@]} install install-lib
 
 chmod -v 755 "$D/usr/lib/libpci.so"
 
 # Don't package any hardware data from the build
-rm -rf "$D/usr/share/hwdata"
+rm -rvf "$D/usr/share/hwdata"
 
 }
