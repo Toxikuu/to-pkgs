@@ -1,0 +1,63 @@
+#!/to
+
+n="muon"
+v="6b9f972649b8051a6ee9655c274fe5e715209279"
+a="An implementation of the meson build system in c99"
+m="Tox"
+l="GPL-3.0"
+t="core utils lang"
+u="https://github.com/$n-build/$n.git"
+
+s="$u"
+
+d=(
+    "pkgconf"
+    "b,samurai"
+    # "b,scdoc" # docs
+)
+
+b() {
+
+_cfg=(
+    # Runtime dependencies
+    -D libcurl=disabled
+    -D libarchive=disabled
+    -D libpkgconf=enabled
+    -D samurai=disabled
+    -D tracy=disabled
+    -D ui=disabled
+    -D readline=builtin
+
+    # Build settings
+    -D static=false
+
+    # Docs and tests
+    -D man-pages=disabled
+    -D meson-docs=disabled
+    -D meson-tests=disabled
+    -D website=disabled
+)
+
+# Bootstrap
+CFLAGS+=" -D BOOTSTRAP_NO_SAMU"
+./bootstrap.sh build
+
+# Rebuild and install to build chroot
+build/$n-bootstrap setup    \
+    -D prefix=/usr          \
+    -D libdir=lib           \
+    -D bindir=bin           \
+    -D buildtype=release    \
+    -D wrap_mode=nofallback \
+    "${_cfg[@]}"            \
+    build
+samu -C build
+samu -C build install
+
+# Use muon instead of meson to rebuild itself for $D
+ln -sv muon /usr/bin/meson
+
+with meson
+def
+
+}
