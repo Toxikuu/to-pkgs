@@ -12,17 +12,16 @@ s=(
     "https://$n.org/$n-$v.tar.xz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
 # Link to libm.so and use -O2
-sed -i 's/-Os/-O2/' Makefile.sharedlibrary
-sed -i 's/duktape\.c/& -lm/' Makefile.sharedlibrary
+sed -e 's/-Os/-O2/'             \
+    -e 's/duktape\.c/& -lm/'    \
+    -i Makefile.sharedlibrary
 
-mk -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
-mi -f Makefile.sharedlibrary INSTALL_PREFIX=/usr
+mk  -f Makefile.sharedlibrary   INSTALL_PREFIX=/usr
+mi  -f Makefile.sharedlibrary   INSTALL_PREFIX=/usr
 
 }
