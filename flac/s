@@ -23,7 +23,7 @@
   ],
   "dependencies": [
     {
-      "name": "ogg",
+      "name": "libogg",
       "kind": "Required"
     },
     {
