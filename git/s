@@ -54,6 +54,10 @@
     {
       "name": "zlib",
       "kind": "Required"
+    },
+    {
+      "name": "openssh",
+      "kind": "Runtime"
     }
   ],
   "kcfg": []

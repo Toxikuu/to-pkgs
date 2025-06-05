@@ -21,7 +21,7 @@ d=(
     "pcre2"
     "perl"
     "zlib"
-    # "r,openssh"
+    "r,openssh"
 )
 
 xt() {
