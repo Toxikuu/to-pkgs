@@ -8,21 +8,16 @@ l="GPL3"
 t="tui irc"
 u="https://git.causal.agency/$n"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "libretls"
     "ncurses"
-    "b,git"
 )
 
 b() {
 
-gco
 sed -i '/dev:/d' Makefile
-
 def
 
 }
