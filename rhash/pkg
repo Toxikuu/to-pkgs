@@ -22,7 +22,16 @@ _cfg=(
     --extra-ldflags="$LDFLAGS"
 )
 
-def
+cfg
+mk
+
+# Only install libraries (I don't use the programs)
+mi install-lib-headers  \
+   install-lib-shared   \
+   install-lib-so-link  \
+   install-pkg-config
+
+mk print-info
 
 }
 
