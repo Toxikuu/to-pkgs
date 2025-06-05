@@ -40,24 +40,11 @@ _cfg=(
 
 # Bootstrap
 CFLAGS+=" -D BOOTSTRAP_NO_SAMU"
-./bootstrap.sh build
+./bootstrap.sh bootstrap
+install -vDm755 "bootstrap/$n-bootstrap" "/usr/bin/$n"
 
-# Rebuild and install to build chroot
-build/$n-bootstrap setup    \
-    -D prefix=/usr          \
-    -D libdir=lib           \
-    -D bindir=bin           \
-    -D buildtype=release    \
-    -D wrap_mode=nofallback \
-    "${_cfg[@]}"            \
-    build
-samu -C build
-samu -C build install
-
-# Use muon instead of meson to rebuild itself for $D
-ln -sv muon /usr/bin/meson
-
+# Rebuild and install
 with meson
-def
+MESON="bootstrap/$n-bootstrap" def
 
 }
