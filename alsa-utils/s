@@ -38,12 +38,12 @@
       "kind": "Required"
     },
     {
-      "name": "fftw",
+      "name": "ncurses",
       "kind": "Required"
     },
     {
-      "name": "ncurses",
-      "kind": "Required"
+      "name": "bzip2",
+      "kind": "Build"
     }
   ],
   "kcfg": []

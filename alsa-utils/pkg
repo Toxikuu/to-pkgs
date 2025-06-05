@@ -17,17 +17,32 @@ d=(
     "glibc"
     "pciutils"
     "psmisc"
-    "fftw"
     "ncurses"
+    "b,bzip2"
 )
 
 b() {
 
 _cfg=(
     --disable-xmlto
+    --disable-alsaconf
+    --disable-bat
     --with-curses=ncursesw
 )
 
 def
+
+}
+
+t() {
+
+mk check
+
+}
+
+i() {
+
+alsactl init || true
+alsactl -L store
 
 }
