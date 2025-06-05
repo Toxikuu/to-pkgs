@@ -18,6 +18,11 @@
       "dest": "popt-1.19.tar.gz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }
