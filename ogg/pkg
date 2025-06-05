@@ -12,9 +12,7 @@ s=(
     "https://downloads.xiph.org/releases/$n/lib$n-$v.tar.xz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
