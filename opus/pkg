@@ -14,19 +14,18 @@ s=(
 
 d=(
     "glibc"
-    "b,ninja"
     "b,meson"
+    "b,samurai"
 )
 
 b() {
 
-with mn
 def
 
 }
 
 t() {
 
-nj test
+sa test
 
 }
