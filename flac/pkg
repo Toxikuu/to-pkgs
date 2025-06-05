@@ -1,16 +1,14 @@
 #!/to
 
 n="flac"
-v="1.5.0"
+v="8d648456a2d7444d54a579e365bab4c815ac6873"
 a="Free Lossless Audio Codec"
 m="Tox"
 l="GFDL-1.3"
 t="audio lib utils cli"
 u="https://github.com/xiph/$n.git"
 
-s=(
-    "https://downloads.xiph.org/releases/$n/$n-$v.tar.xz"
-)
+s="$u"
 
 d=(
     "libogg"
@@ -24,6 +22,7 @@ _cfg=(
     --disable-valgrind-testing
 )
 
+./autogen.sh
 def
 
 }

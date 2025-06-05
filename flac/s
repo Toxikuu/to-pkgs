@@ -1,6 +1,6 @@
 {
   "name": "flac",
-  "version": "1.5.0",
+  "version": "8d648456a2d7444d54a579e365bab4c815ac6873",
   "about": "Free Lossless Audio Codec",
   "maintainer": "Tox",
   "licenses": [
@@ -16,9 +16,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://downloads.xiph.org/releases/flac/flac-1.5.0.tar.xz",
-      "dest": "flac-1.5.0.tar.xz"
+      "kind": "Git",
+      "url": "https://github.com/xiph/flac.git",
+      "dest": "flac"
     }
   ],
   "dependencies": [
