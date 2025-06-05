@@ -29,6 +29,10 @@
       "kind": "Required"
     },
     {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
       "name": "libarchive",
       "kind": "Required"
     },
@@ -37,7 +41,23 @@
       "kind": "Required"
     },
     {
+      "name": "expat",
+      "kind": "Required"
+    },
+    {
       "name": "nghttp2",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "rhash",
       "kind": "Required"
     }
   ],

@@ -14,9 +14,14 @@ s=(
 
 d=(
     "curl"
+    "ncurses"
     "libarchive"
     "libuv"
+    "expat"
     "nghttp2"
+    "glibc"
+    "gcc"
+    "rhash"
 )
 
 b() {
@@ -24,17 +29,17 @@ b() {
 # Disallow cmake installing files to /usr/lib64
 sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
 
+NO_DEFAULT=1
 _cfg=(
     --prefix=/usr
     --mandir=/share/man
+    --datadir=/share/cmake
+
     --system-libs
-    --no-system-jsoncpp
-    --no-system-cppdap
-    --no-system-librhash
+    --no-system-jsoncpp # causes a build failure if system jsoncpp is used, but system cppdap is not
+    --no-system-cppdap # circular, wants cmake and i cba to bootstrap
 )
 
-./bootstrap "${_cfg[@]}"
-mk
-mi
+def
 
 }
