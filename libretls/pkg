@@ -8,20 +8,13 @@ l=("BSD" "ISC" "MIT")
 t="sec lib"
 u="https://git.causal.agency/$n"
 
-s=(
-    "$u"
-)
+s="$u"
 
-d=(
-    "b,git"
-    "openssl"
-)
+d="openssl"
 
 b() {
 
-gco
 autoreconf -fiv
-
 def
 
 }
