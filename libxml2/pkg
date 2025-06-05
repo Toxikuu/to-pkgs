@@ -26,12 +26,12 @@ b() {
 _cfg=(
     --with-history
     --with-icu
+    --with-python # bindings
 )
 
 def
 
 # Prevent some packages from unnecessary linking to ICU
-rm -vf "$D"/usr/lib/libxml2.la
-sed '/libs=/s/xml2.*/xml2"/' -i "$D"/usr/bin/xml2-config
+sed -i '/libs=/s/xml2.*/xml2"/' "$D"/usr/bin/xml2-config
 
 }
