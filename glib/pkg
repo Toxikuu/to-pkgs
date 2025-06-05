@@ -27,10 +27,11 @@ d=(
     "b,dbus"
     "b,libelf"
     "b,meson"
-    "b,ninja"
+    "b,samurai"
 
     # runtime depends on shared-mime-info, desktop-file-utils (circular)
     # this is resolved by a post-install hook
+    # TODO: idt so? ^
 )
 
 xt() {
@@ -42,7 +43,7 @@ tar xf "$S/$n-$v.tar.xz"
 
 b() {
 
-with mn
+with meson samu
 
 pat "$S/$n-skip_warnings-1.patch"
 
@@ -60,21 +61,21 @@ _cfg=(
 )
 
 ms
-nj
-nj install
+sa
+sa install
 
 # Build GObject Introspection
 tar xf "$S/$gobjn-$gobjv.tar.xz"
 meson setup "$gobjn-$gobjv" gi-build \
             --prefix=/usr --buildtype=release
-ninja -C gi-build
-ninja -C gi-build install
-ni -C gi-build # Also install GObject Introspection to DESTDIR
+samu -C gi-build
+samu -C gi-build install
+si -C gi-build # Also install GObject Introspection to DESTDIR
 
 # Generate the introspection data for GLib and finally DESTDIR install it
 meson configure -D introspection=enabled
-nj
-ni
+sa
+si
 
 }
 
