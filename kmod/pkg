@@ -16,7 +16,7 @@ s=(
 )
 
 d=(
-    "b,meson"
+    "b,muon"
     "b,samurai"
     "b,scdoc"
     "zstd"
@@ -27,8 +27,6 @@ d=(
 )
 
 b() {
-
-with meson
 
 _cfg=(
     -D manpages=true

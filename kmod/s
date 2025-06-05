@@ -24,7 +24,7 @@
   ],
   "dependencies": [
     {
-      "name": "meson",
+      "name": "muon",
       "kind": "Build"
     },
     {
