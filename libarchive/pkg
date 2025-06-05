@@ -22,7 +22,6 @@ d=(
     "zstd"
     "expat"
     "openssl"
-    "pcre2"
 )
 
 b() {

@@ -56,10 +56,6 @@
     {
       "name": "openssl",
       "kind": "Required"
-    },
-    {
-      "name": "pcre2",
-      "kind": "Required"
     }
   ],
   "kcfg": []
