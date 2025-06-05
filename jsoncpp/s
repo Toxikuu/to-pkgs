@@ -1,0 +1,36 @@
+{
+  "name": "jsoncpp",
+  "version": "ca98c98457b1163cca1f7d8db62827c115fec6d1",
+  "about": "C++ library for interacting with JSON",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/open-source-parsers/jsoncpp.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/open-source-parsers/jsoncpp.git",
+      "dest": "jsoncpp"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samurai",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
