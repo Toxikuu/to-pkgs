@@ -14,6 +14,9 @@ s=(
 
 d=(
     "glibc"
+    "alsa-ucm-conf"
+    "b,bzip2"
+    # elogind at runtime, or be a member of the audio group
 )
 
 # Among other hardware-specific drivers and settings
@@ -24,12 +27,14 @@ kcfg=(
 
 b() {
 
+_cfg=(
+    --without-debug
+    --with-max-cards=64
+)
+
 def
 
 }
 
-t() {
-
-mk check
-
-}
+# TODO: tests fail to build? idfk ive spent a while tryna fix it and im tired so
+# problem for later

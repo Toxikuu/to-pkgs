@@ -24,6 +24,14 @@
     {
       "name": "glibc",
       "kind": "Required"
+    },
+    {
+      "name": "alsa-ucm-conf",
+      "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Build"
     }
   ],
   "kcfg": [
