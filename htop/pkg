@@ -1,0 +1,24 @@
+#!/to
+
+n="htop"
+v="3.4.1"
+a="Interactive process viewer"
+m="Tox"
+l="GPL-2.0"
+t="utils tui"
+u="https://github.com/$n-dev/$n.git"
+
+s="$u"
+
+d=(
+    "libcap"
+    "libnl"
+    "ncurses"
+)
+
+b() {
+
+autoreconf -fiv
+def
+
+}

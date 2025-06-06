@@ -1,0 +1,37 @@
+{
+  "name": "htop",
+  "version": "3.4.1",
+  "about": "Interactive process viewer",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0"
+  ],
+  "upstream": "https://github.com/htop-dev/htop.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "tui"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/htop-dev/htop.git",
+      "dest": "htop"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "libnl",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
