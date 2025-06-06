@@ -26,10 +26,6 @@
       "kind": "Build"
     },
     {
-      "name": "which",
-      "kind": "Build"
-    },
-    {
       "name": "glibc",
       "kind": "Required"
     },
