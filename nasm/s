@@ -1,21 +1,21 @@
 {
   "name": "nasm",
-  "version": "2.16.03",
+  "version": "2.17rc0-20241104",
   "about": "Netwide Assembler for x86",
   "maintainer": "Tox",
   "licenses": [
     "BSD-2-Clause"
   ],
-  "upstream": "https://github.com/netwide-assembler/nasm.git",
-  "version_fetch": "gr | grep '^nasm-' | grep -v 'rc'",
+  "upstream": "https://www.nasm.us/pub/nasm/snapshots/latest/",
+  "version_fetch": "curl -s 'https://www.nasm.us/pub/nasm/snapshots/latest/' | grep xdoc | grep -Eo 'nasm-.+-[0-9]{8}' | cut -d- -f-3",
   "tags": [
     "lang"
   ],
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.xz",
-      "dest": "nasm-2.16.03.tar.xz"
+      "url": "https://www.nasm.us/pub/nasm/snapshots/latest/nasm-2.17rc0-20241104.tar.xz",
+      "dest": "nasm-2.17rc0-20241104.tar.xz"
     }
   ],
   "dependencies": [
