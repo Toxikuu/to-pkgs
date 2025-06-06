@@ -11,11 +11,10 @@ vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
 
 s="https://www.x.org/pub/individual/lib/${n/x/X}-$v.tar.xz"
 
-d=( "b,xorgproto" "b,libxext" "b,libx11" "b,util-macros" )
+d=("b,xorgproto" "b,libxext" "b,libx11" "b,util-macros")
 
 b() {
 
 def
-il
 
 }
