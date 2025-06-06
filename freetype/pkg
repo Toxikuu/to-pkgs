@@ -24,8 +24,8 @@ d=(
 b() {
 
 # Enable opentype table validation and subpixel rendering
-sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
-sed -ri "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" include/freetype/config/ftoption.h
+sed -Ei "s:.*(AUX_MODULES.*valid):\1:"       modules.cfg
+sed -Ei "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" include/$n/config/ftoption.h
 
 # First pass of freetype without harfbuzz to satisfy harfbuzz wanting
 # libfreetype.so
@@ -34,9 +34,7 @@ _cfg=(
     --with-harfbuzz=no
 )
 
-cfg
-mk
-mk install
+D=/ def
 
 # Second pass, building with harfbuzz
 mk distclean
