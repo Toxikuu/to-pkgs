@@ -1,0 +1,42 @@
+{
+  "name": "wpa_supplicant",
+  "version": "2.11",
+  "about": "A utility providing key negotiation for WPA wireless networks",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "git://w1.fi/hostap.git",
+  "version_fetch": "gr | vfs | sed -e 's,^hostap_,,' -e 's,_,.,g' | grep -v '[a-Z]' | sort -V",
+  "tags": [
+    "net",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://w1.fi/releases/wpa_supplicant-2.11.tar.gz",
+      "dest": "wpa_supplicant-2.11.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libnl",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
