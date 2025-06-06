@@ -1,0 +1,30 @@
+#!/to
+
+n="pastel"
+v="4e1074b849c9c770719e6593424921bec57e2fd5"
+a="CLI color manipulation utility"
+m="Tox"
+l=("Apache-2.0" "MIT")
+t="utils cli"
+u="https://github.com/sharkdp/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "b,rust"
+)
+
+b() {
+
+SHELL_COMPLETIONS_DIR="$PWD/completions" cbr
+
+install -vDm755 "target/release/$n" -t "$D/usr/bin/"
+install -vDm644 "completions/$n.bash"  "$D/usr/share/bash-completion/completions/$n"
+
+}
+
+t() {
+
+cargo test
+
+}

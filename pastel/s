@@ -1,0 +1,34 @@
+{
+  "name": "pastel",
+  "version": "4e1074b849c9c770719e6593424921bec57e2fd5",
+  "about": "CLI color manipulation utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0",
+    "MIT"
+  ],
+  "upstream": "https://github.com/sharkdp/pastel.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/sharkdp/pastel.git",
+      "dest": "pastel"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
