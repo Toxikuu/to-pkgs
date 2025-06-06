@@ -1,31 +1,26 @@
 #!/to
 
 n="fastfetch"
-v="2.44.0"
+v="2.45.0"
 a="Well-maintained, feature-rich, fast fetch script"
 m="Tox"
 l="MIT"
 t="fetch cli utils"
 u="https://github.com/$n-cli/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "b,cmake"
-    "b,git"
     "libelf"
-    # "libdrm"
+    "libdrm"
     "zlib"
 )
 
 b() {
 
-gco
-with cmake
-
 _cfg=(
+    -D INSTALL_LICENSE=OFF
     -D BUILD_FLASHFETCH=OFF
     -D BUILD_TESTS=OFF
 
@@ -75,7 +70,6 @@ _cfg=(
     -D CPACK_SOURCE_ZIP=OFF
 )
 
-# Fastfetch installs its license on its own
 def
 
 }

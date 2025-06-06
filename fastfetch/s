@@ -1,6 +1,6 @@
 {
   "name": "fastfetch",
-  "version": "2.44.0",
+  "version": "2.45.0",
   "about": "Well-maintained, feature-rich, fast fetch script",
   "maintainer": "Tox",
   "licenses": [
@@ -26,11 +26,11 @@
       "kind": "Build"
     },
     {
-      "name": "git",
-      "kind": "Build"
+      "name": "libelf",
+      "kind": "Required"
     },
     {
-      "name": "libelf",
+      "name": "libdrm",
       "kind": "Required"
     },
     {
