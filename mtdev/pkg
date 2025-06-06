@@ -5,16 +5,12 @@ v="1.1.7"
 a="Multitouch Protocol Translation Library"
 m="Tox"
 l="MIT"
-t="lib input xorg"
+t="lib input"
 u="http://bitmath.org/git/$n.git"
 
-s=(
-    "https://bitmath.org/code/$n/$n-$v.tar.bz2"
-)
-
-d=(
-    "glibc"
-)
+# upstream doesn't support shallow clones
+s="https://bitmath.se/org/code/$n/$n-$v.tar.gz"
+d="glibc"
 
 b() {
 

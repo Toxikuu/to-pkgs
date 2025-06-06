@@ -10,14 +10,13 @@
   "version_fetch": null,
   "tags": [
     "lib",
-    "input",
-    "xorg"
+    "input"
   ],
   "sources": [
     {
       "kind": "Download",
-      "url": "https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2",
-      "dest": "mtdev-1.1.7.tar.bz2"
+      "url": "https://bitmath.se/org/code/mtdev/mtdev-1.1.7.tar.gz",
+      "dest": "mtdev-1.1.7.tar.gz"
     }
   ],
   "dependencies": [
