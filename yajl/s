@@ -1,0 +1,32 @@
+{
+  "name": "yajl",
+  "version": "5e3a7856e643b4d6410ddc3f84bc2f38174f2872",
+  "about": "Yet another JSON library",
+  "maintainer": "Tox",
+  "licenses": [
+    "ISC"
+  ],
+  "upstream": "https://github.com/lloyd/yajl.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/lloyd/yajl.git",
+      "dest": "yajl"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

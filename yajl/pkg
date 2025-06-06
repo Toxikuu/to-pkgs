@@ -1,0 +1,33 @@
+#!/to
+
+n="yajl"
+v="5e3a7856e643b4d6410ddc3f84bc2f38174f2872"
+a="Yet another JSON library"
+m="Tox"
+l="ISC"
+t="lib"
+u="https://github.com/lloyd/$n.git"
+
+s="$u"
+
+d=(
+    "glibc"
+    "b,cmake"
+)
+
+b() {
+
+for patch in "$A/"*.patch; do pat "$patch"; done
+
+export CFLAGS+=" -ffat-lto-objects"
+def
+
+rm -vf "$D"/usr/lib/lib${n}_s.a
+
+}
+
+t() {
+
+mk VERBOSE=1 test
+
+}
