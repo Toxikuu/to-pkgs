@@ -2,19 +2,18 @@
 
 n="libaom"
 v="3.12.1"
+tag="v$v"
 a="Alliance for Open Media video codec"
 m="Tox"
 l="BSD-3-Clause"
 t="video codec lib"
 u="https://aomedia.googlesource.com/aom.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "b,cmake"
-    "b,ninja"
+    "b,samu"
     "b,nasm"
     "glibc"
     "gcc"
@@ -22,8 +21,6 @@ d=(
 
 b() {
 
-gco v$v
-with cmake
 export BD="aom-build"
 
 _cfg=(

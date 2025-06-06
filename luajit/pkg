@@ -1,27 +1,19 @@
 #!/to
 
 n="luajit"
-v="eec7a8016c3381b949b5d84583800d05897fa960"
+v="f9140a622a0c44a99efb391cc1c2358bc8098ab7"
 a="Just-in-time Lua compiler"
 m="Tox"
 l="MIT"
 t="lang lib"
 u="https://github.com/$n/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "b,git"
-)
+s="$u"
 
 b() {
 
 # Create an amalgamated build (one huge optimized c file)
 mk PREFIX=/usr BUILDMODE=dynamic amalg
 mi PREFIX=/usr
-
-install -vDm644 COPYRIGHT -t "$D/usr/share/licenses/$n/"
 
 }

@@ -1,6 +1,6 @@
 {
   "name": "luajit",
-  "version": "eec7a8016c3381b949b5d84583800d05897fa960",
+  "version": "f9140a622a0c44a99efb391cc1c2358bc8098ab7",
   "about": "Just-in-time Lua compiler",
   "maintainer": "Tox",
   "licenses": [
@@ -19,11 +19,6 @@
       "dest": "luajit"
     }
   ],
-  "dependencies": [
-    {
-      "name": "git",
-      "kind": "Build"
-    }
-  ],
+  "dependencies": [],
   "kcfg": []
 }
