@@ -61,6 +61,7 @@ cd ..
 install -vDm644 "firmware/gsp_tu10x.bin"        -t "$D/usr/lib/firmware/$n/$v/"
 
 # Mandatory software
+install -vdm755 "$D/usr/lib/gbm"
 libs=(
   lib$n-cfg
   lib$n-eglcore
