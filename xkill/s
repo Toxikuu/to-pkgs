@@ -1,0 +1,37 @@
+{
+  "name": "xkill",
+  "version": "1.0.6",
+  "about": "Kill a client by its X resource",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xkill.git",
+  "version_fetch": "gr | grep -i '^xkill-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "utils",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xkill-1.0.6.tar.xz",
+      "dest": "xkill-1.0.6.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxmu",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
