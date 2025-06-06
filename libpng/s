@@ -21,10 +21,6 @@
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
-    },
-    {
       "name": "zlib",
       "kind": "Required"
     }
