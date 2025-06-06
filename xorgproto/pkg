@@ -13,7 +13,7 @@ s="$u"
 d=(
     "util-macros"
     "b,muon"
-    "b,samurai"
+    "b,samu"
 )
 
 b() {
