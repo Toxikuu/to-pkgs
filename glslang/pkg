@@ -2,27 +2,24 @@
 
 n="glslang"
 v="1.4.313.0"
+tag="vulkan-sdk-$v"
 a="Frontend and validator for OpenGL and Vulkan shaders"
 m="Tox"
 l="BSD-3-Clause" # among others
 t="lib gfx"
 u="https://github.com/KhronosGroup/$n.git"
-vf="gr | grep '^vulkan-sdk-' | cut -d- -f3"
+vf="gr | grep '^vulkan-sdk-' | cut -d- -f3-"
 
-s=(
-    "${u%.git}/archive/refs/tags/vulkan-sdk-$v.tar.gz"
-)
+s="$u"
 
 d=(
     "spirv-tools"
     "b,cmake"
-    "b,ninja"
+    "b,samu"
     "b,spirv-headers"
 )
 
 b() {
-
-with cn
 
 _cfg=(
     -D ALLOW_EXTERNAL_SPIRV_TOOLS=ON
@@ -30,12 +27,11 @@ _cfg=(
 )
 
 def
-il
 
 }
 
 t() {
 
-nj test
+sa test
 
 }

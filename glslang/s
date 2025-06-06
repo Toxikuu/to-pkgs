@@ -7,16 +7,16 @@
     "BSD-3-Clause"
   ],
   "upstream": "https://github.com/KhronosGroup/glslang.git",
-  "version_fetch": "gr | grep '^vulkan-sdk-' | cut -d- -f3",
+  "version_fetch": "gr | grep '^vulkan-sdk-' | cut -d- -f3-",
   "tags": [
     "lib",
     "gfx"
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/KhronosGroup/glslang/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz",
-      "dest": "vulkan-sdk-1.4.313.0.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/KhronosGroup/glslang.git",
+      "dest": "glslang"
     }
   ],
   "dependencies": [
@@ -29,7 +29,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {
