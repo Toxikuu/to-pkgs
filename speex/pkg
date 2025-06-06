@@ -1,0 +1,43 @@
+#!/to
+
+n="speex"
+v="1.2.1"
+a="Voice codec"
+m="Tox"
+l="BSD"
+t="audio codec lib"
+u="https://gitlab.xiph.org/xiph/$n.git"
+
+# TODO: If I find something that wants speexdsp alone, probably split these
+# packages
+s=(
+    "https://downloads.xiph.org/releases/$n/$n-$v.tar.gz"
+    "https://downloads.xiph.org/releases/$n/${n}dsp-$v.tar.gz"
+)
+
+d=(
+    "gcc"
+    "libogg"
+)
+
+b() {
+
+_cfg=(
+    --disable-binaries # TODO: Decide if I want them
+    --disable-static
+)
+
+cd "$B/$n-$v"
+def
+
+cd "$B/${n}dsp-$v"
+def
+
+}
+
+t() {
+
+cd "$B/$n-$v"
+mk -k check
+
+}

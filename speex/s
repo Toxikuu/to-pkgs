@@ -1,0 +1,39 @@
+{
+  "name": "speex",
+  "version": "1.2.1",
+  "about": "Voice codec",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://gitlab.xiph.org/xiph/speex.git",
+  "version_fetch": null,
+  "tags": [
+    "audio",
+    "codec",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://downloads.xiph.org/releases/speex/speex-1.2.1.tar.gz",
+      "dest": "speex-1.2.1.tar.gz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz",
+      "dest": "speexdsp-1.2.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "libogg",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
