@@ -24,11 +24,11 @@ d=(
     "libpciaccess"
     "libtirpc"
     "libdrm"
-    "nvidia"
     "mesa"
+    "nvidia" # Needed for dri.pc
 
     "b,meson"
-    "b,ninja"
+    "b,samu"
 
     "b,util-macros"
     "b,xorgproto"
@@ -59,8 +59,6 @@ d=(
 
 b() {
 
-with mn
-
 pat "$S/$n-tearfree_backport-3.patch"
 
 _cfg=(
@@ -69,7 +67,6 @@ _cfg=(
     -D xkb_output_dir=/var/lib/xkb
 )
 
-il
 def
 
 mkdir   -pv      "$D"/etc/X11/xorg.conf.d

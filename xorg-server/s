@@ -63,11 +63,11 @@
       "kind": "Required"
     },
     {
-      "name": "nvidia",
+      "name": "mesa",
       "kind": "Required"
     },
     {
-      "name": "mesa",
+      "name": "nvidia",
       "kind": "Required"
     },
     {
@@ -75,7 +75,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {
