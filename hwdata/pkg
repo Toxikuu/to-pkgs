@@ -1,16 +1,15 @@
 #!/to
 
 n="hwdata"
-v="0.395"
+v="0.396"
+tag="v$v"
 a="Hardware identification databases"
 m="Tox"
 l="GPL-2-or-later OR XFree86-1.0"
 t="lib core"
 u="https://github.com/vcrhonek/$n.git"
 
-s=(
-    "${u%.git}/archive/v$v/$n-$v.tar.gz"
-)
+s="$u"
 
 b() {
 
