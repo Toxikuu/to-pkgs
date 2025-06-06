@@ -1,0 +1,46 @@
+{
+  "name": "xev",
+  "version": "1.2.6",
+  "about": "Print contents of X events",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xev.git",
+  "version_fetch": "gr | grep -i '^xev-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "utils",
+    "gui",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xev-1.2.6.tar.xz",
+      "dest": "xev-1.2.6.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
