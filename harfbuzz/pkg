@@ -16,12 +16,11 @@ s=(
 
 d=(
     "b,meson"
-    "b,ninja"
+    "b,samu"
     "glib"
     "glibc"
     "icu"
 
-    # "freetype", used in the build via sources
     # freetype's dependencies:
     "b,libpng"
     "b,zlib"
@@ -36,8 +35,8 @@ _build_freetype() {
     tar xf "freetype-"*.tar.xz
     cd "freetype-"*/
 
-    sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg
-    sed -ri "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" include/freetype/config/ftoption.h
+    sed -Ei "s:.*(AUX_MODULES.*valid):\1:"       modules.cfg
+    sed -Ei "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" include/freetype/config/ftoption.h
 
     _cfg=(
         --with-brotli=no
@@ -45,19 +44,18 @@ _build_freetype() {
         --disable-freetype-config
     )
 
-    cfg
-    mk
-    mk install # install without destdir for harfbuzz
-
-    echo "Completed the minimal freetype build"
+    # Here, def wraps configure and make since with isn't specified until later,
+    # but is specified
+    D=/ def # install without destdir to break circular harfbuzz dependency
+    echo "Completed the minimal freetype build" >&2
 }
 
 b() {
 
-( _build_freetype )
-cd "harfbuzz-$v"
+( set -e && _build_freetype )
+cd "$n-$v"
 
-with mn
+with meson
 
 _cfg=(
     -D cairo=disabled
@@ -72,14 +70,9 @@ _cfg=(
     -D introspection=enabled
 )
 
-il
-ms
-
 # Recommended by Arch. I figure it can't hurt.
 CFLAGS="${CFLAGS//-fexceptions/}"
 CXXFLAGS="${CXXFLAGS//-fexceptions/}"
-
-nj
-ni
+def
 
 }
