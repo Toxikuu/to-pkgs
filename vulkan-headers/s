@@ -1,22 +1,22 @@
 {
   "name": "vulkan-headers",
-  "version": "1.4.315",
+  "version": "1.4.313.0",
   "about": "Vulkan API header files",
   "maintainer": "Tox",
   "licenses": [
     "Apache-2.0 OR MIT"
   ],
   "upstream": "https://github.com/KhronosGroup/vulkan-headers.git",
-  "version_fetch": "gr | grep -E '^v[0-9]'",
+  "version_fetch": "gr | grep '^vulkan-sdk-' | cut -d- -f3-",
   "tags": [
     "gfx",
     "lib"
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/KhronosGroup/vulkan-headers/archive/refs/tags/v1.4.315.tar.gz",
-      "dest": "v1.4.315.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/KhronosGroup/vulkan-headers.git",
+      "dest": "vulkan-headers"
     }
   ],
   "dependencies": [
@@ -25,11 +25,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
-      "kind": "Build"
-    },
-    {
-      "name": "python",
+      "name": "samu",
       "kind": "Build"
     }
   ],

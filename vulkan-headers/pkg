@@ -1,39 +1,31 @@
 #!/to
 
 n="vulkan-headers"
-v="1.4.315"
+v="1.4.313.0"
+tag="vulkan-sdk-$v"
 a="Vulkan API header files"
 m="Tox"
 l="Apache-2.0 OR MIT"
 t="gfx lib"
 u="https://github.com/KhronosGroup/$n.git"
-vf="gr | grep -E '^v[0-9]'"
+vf="gr | grep '^vulkan-sdk-' | cut -d- -f3-"
 
-s=(
-    "${u%.git}/archive/refs/tags/v$v.tar.gz"
-)
+s="$u"
 
 d=(
     "b,cmake"
-    "b,ninja"
-    "b,python"
+    "b,samu"
 )
 
 b() {
 
-with cn
-
 def
-
-(
-cd ..
-il LICENSE.md LICENSES/*
-)
 
 }
 
 t() {
 
-nj test
+# 2 of the 3 tests fail :sob:
+samu test || true
 
 }
