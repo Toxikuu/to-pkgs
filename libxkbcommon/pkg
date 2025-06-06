@@ -3,6 +3,7 @@
 n="libxkbcommon"
 an="${n#lib*}" # alt name
 v="1.9.2"
+tag="$an-$v"
 a="Keymap handling library for toolkits and window systems"
 m="Tox"
 l="MIT"
@@ -10,33 +11,26 @@ t="lib kb"
 u="https://github.com/$an/$n.git"
 vf="gr | sed 's,$an,,'"
 
-s=(
-    "${u%.git}/archive/refs/tags/$an-$v.tar.gz"
-)
+s="$u"
 
 d=(
     "glibc"
     "libxml2"
-    "r,xkeyboard-config"
     "wayland"
     "b,wayland-protocols"
     "b,xorgproto"
     "b,meson"
-    "b,ninja"
+    "b,samu"
     "b,libxcb"
+    "r,xkeyboard-config"
 )
 
 b() {
 
 # Fix a libxml2@2.14.x issue
 sed -i "s/sizeof(dtdstr)/ARRAY_SIZE(dtdstr) - 1/" src/registry.c
-with mn
 
-_cfg=(
-    -D enable-docs=false
-)
-
+_cfg=( -D enable-docs=false )
 def
-il
 
 }
