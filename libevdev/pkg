@@ -16,12 +16,10 @@ s=(
 d=(
     "glibc"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
-
-with mn
 
 _cfg=(
     -D documentation=disabled
