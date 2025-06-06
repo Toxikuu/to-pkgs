@@ -14,9 +14,10 @@ d=(
     "b,git"
     "b,meson"
     "b,samu"
+    "expat"
     "libxml2"
-    "glibc"
     "libffi"
+    "glibc"
 )
 
 b() {

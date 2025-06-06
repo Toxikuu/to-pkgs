@@ -33,15 +33,19 @@
       "kind": "Build"
     },
     {
+      "name": "expat",
+      "kind": "Required"
+    },
+    {
       "name": "libxml2",
       "kind": "Required"
     },
     {
-      "name": "glibc",
+      "name": "libffi",
       "kind": "Required"
     },
     {
-      "name": "libffi",
+      "name": "glibc",
       "kind": "Required"
     }
   ],
