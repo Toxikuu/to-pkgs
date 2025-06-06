@@ -15,13 +15,11 @@ s=(
 
 d=(
     "glibc"
-    "b,meson"
-    "b,ninja"
+    "b,muon"
+    "b,samu"
 )
 
 b() {
-
-with mn
 
 _cfg=(
     -D tests=false
