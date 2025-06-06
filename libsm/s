@@ -35,6 +35,10 @@
     {
       "name": "glibc",
       "kind": "Required"
+    },
+    {
+      "name": "xtrans",
+      "kind": "Build"
     }
   ],
   "kcfg": []
