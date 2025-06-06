@@ -21,7 +21,6 @@ s="https://xcb.freedesktop.org/dist/$n-$v.tar.xz"
 
 b() {
 
-il
 def
 
 }
