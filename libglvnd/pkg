@@ -2,30 +2,26 @@
 
 n="libglvnd"
 v="1.7.0"
+tag="v$v"
 a="The GL Vendor-Neutral Dispatch library"
 m="Tox"
 l="Custom"
 t="lib gfx"
 u="https://gitlab.freedesktop.org/${n#lib*}/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "libxext"
     "b,libx11"
     "b,python"
     "b,meson"
+    "b,samu"
     "b,xorgproto"
-    "b,git"
     # potentially also mesa
 )
 
 b() {
-
-gco v$v
-with mn
 
 _cfg=(
     -D hgl=false   # I don't run haiku

@@ -37,11 +37,11 @@
       "kind": "Build"
     },
     {
-      "name": "xorgproto",
+      "name": "samu",
       "kind": "Build"
     },
     {
-      "name": "git",
+      "name": "xorgproto",
       "kind": "Build"
     }
   ],
