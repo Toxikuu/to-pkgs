@@ -12,15 +12,11 @@ s="$u"
 
 d=(
     "glibc"
-    "b,git"
     "b,cmake"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
-
-with cn
-gco
 
 _cfg=(
     -D BUILD_DOCS=OFF
