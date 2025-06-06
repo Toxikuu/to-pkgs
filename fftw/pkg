@@ -6,7 +6,7 @@ a="The Fastest Fourier Transform in the West"
 m="Tox"
 l="GPL-2.0-or-later"
 t="lib math"
-u="https://github.com/FFTW/$n${v%.*.*}.git"
+u="https://github.com/${n^^}/$n${v%.*.*}.git"
 
 s=(
     "http://$n.org/$n-$v.tar.gz"
@@ -14,6 +14,7 @@ s=(
 
 d=(
     "glibc"
+    "gcc"
 )
 
 b() {
@@ -22,17 +23,6 @@ b() {
 
 # Use some of upstream's CFLAGS
 CFLAGS+=" -O3 -fomit-frame-pointer -malign-double -fstrict-aliasing -ffast-math"
-
-# Avoid repetition with a wrapper; def is missing the sed
-# TODO: Consider adding an argument OVERLINKAGE_FIX for def
-bld() {
-
-cfg
-sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-mk
-mi
-
-}
 
 # double precision
 _cfg=(
@@ -43,13 +33,13 @@ _cfg=(
     --enable-avx2
 )
 
-bld
+def
 
 # single precision
 mk clean
 _cfg+=(--enable-float)
 
-bld
+def
 
 # long double precision
 mk clean
@@ -59,6 +49,6 @@ _cfg=(
     --enable-long-double
 )
 
-bld
+def
 
 }
