@@ -8,28 +8,22 @@ l="MIT"
 t="lib gfx"
 u="https://gitlab.freedesktop.org/wayland/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "b,git"
     "b,wayland"
-    "b,ninja"
     "b,meson"
+    "b,samu"
 )
 
 b() {
 
-with mn
-
-gco
 def
 
 }
 
 t() {
 
-nj test
+sa test
 
 }
