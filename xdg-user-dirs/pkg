@@ -1,0 +1,19 @@
+#!/to
+
+n="xdg-user-dirs"
+v="0.18"
+a="User directory management tool"
+m="Tox"
+l="GPL"
+t="utils cli"
+u="https://gitlab.freedesktop.org/xdg/$n.git"
+vf="gr | grep -v '[a-Z]'"
+
+s="http://${n#*-}.freedesktop.org/releases/$n-$v.tar.gz"
+
+b() {
+
+_cfg=( --disable-documentation )
+def
+
+}

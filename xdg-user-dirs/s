@@ -1,0 +1,24 @@
+{
+  "name": "xdg-user-dirs",
+  "version": "0.18",
+  "about": "User directory management tool",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xdg/xdg-user-dirs.git",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "http://user-dirs.freedesktop.org/releases/xdg-user-dirs-0.18.tar.gz",
+      "dest": "xdg-user-dirs-0.18.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
