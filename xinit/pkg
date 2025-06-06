@@ -11,6 +11,7 @@ vf="gr | grep -E '$n-[0-9]+\.' | sort -V"
 
 s=(
     "https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+    "https://gitlab.archlinux.org/archlinux/packaging/packages/xorg-xinit/-/raw/main/06_move_serverauthfile_into_tmp.diff -> tmpauth.patch"
 )
 
 d=(
@@ -21,11 +22,12 @@ d=(
 
 b() {
 
+pat "$S/tmpauth.patch"
+
 _cfg=(
     --with-xinitdir=/etc/X11/app-defaults
 )
 
-il
 def
 
 }

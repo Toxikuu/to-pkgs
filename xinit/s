@@ -19,6 +19,11 @@
       "kind": "Download",
       "url": "https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz",
       "dest": "xinit-1.4.4.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://gitlab.archlinux.org/archlinux/packaging/packages/xorg-xinit/-/raw/main/06_move_serverauthfile_into_tmp.diff",
+      "dest": "tmpauth.patch"
     }
   ],
   "dependencies": [
