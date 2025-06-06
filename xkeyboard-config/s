@@ -10,7 +10,8 @@
   "version_fetch": null,
   "tags": [
     "db",
-    "kb"
+    "kb",
+    "xorg"
   ],
   "sources": [
     {
@@ -21,11 +22,11 @@
   ],
   "dependencies": [
     {
-      "name": "meson",
+      "name": "muon",
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     }
   ],

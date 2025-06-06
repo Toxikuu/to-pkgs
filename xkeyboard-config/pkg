@@ -5,7 +5,7 @@ v="2.44"
 a="X keyboard configuration database"
 m="Tox"
 l="Custom"
-t="db kb"
+t="db kb xorg"
 u="https://gitlab.freedesktop.org/$n/$n.git"
 
 s=(
@@ -13,19 +13,12 @@ s=(
 )
 
 d=(
-    "b,meson"
-    "b,ninja"
+    "b,muon"
+    "b,samu"
 )
 
 b() {
 
-with mn
 def
-
-}
-
-t() {
-
-nj test
 
 }
