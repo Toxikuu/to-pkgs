@@ -1,19 +1,17 @@
 #!/to
 
 n="nasm"
-v="2.17rc0-20241104"
+v="2.16.03"
+tag="$n-$v"
 a="Netwide Assembler for x86"
 m="Tox"
 l="BSD-2-Clause"
 t="lang"
-u="https://www.$n.us/pub/$n/snapshots/latest/"
-vf="curl -s '$u' | grep xdoc | grep -Eo '$n-.+-[0-9]{8}' | cut -d- -f-3"
-# u="https://github.com/netwide-assembler/$n.git"
-# vf="gr | grep '^$n-' | grep -v 'rc'"
+u="https://github.com/netwide-assembler/$n.git"
+vf="gr | vfs | grep '^$n-'"
 
 s=(
-    "$u$n-$v.tar.xz"
-    # "https://www.$n.us/pub/$n/releasebuilds/$v/$n-$v.tar.xz"
+    "https://www.$n.us/pub/$n/releasebuilds/$v/$n-$v.tar.xz"
 )
 
 d="glibc"
