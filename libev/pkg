@@ -21,9 +21,3 @@ def
 rm -vf "$D/usr/include/event.h" # provided by libevent
 
 }
-
-t() {
-
-mk check
-
-}
