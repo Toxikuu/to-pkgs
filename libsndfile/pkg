@@ -9,25 +9,21 @@ t="lib audio"
 u="https://github.com/$n/$n.git"
 vf="gr | grep -B1 'v1.0.28pre1' | head -n1"
 
-s=(
-    "${u%.git}/releases/download/$v/$n-$v.tar.xz"
-)
+s="${u%.git}/releases/download/$v/$n-$v.tar.xz"
 
 d=(
-    # NOTE: Aliases must not be used in dependencies because of limitations with
-    # symlinks and dependency installation to the chroot. This may be fixed
-    # eventually.
-    # TODO: Look into the above.
     "flac"
     "ogg"
     "vorbis"
     "opus"
     "alsa-lib"
-    # Optionally lame too
+    # "lame" # TODO: Should I include lame?
 )
 
 b() {
 
+# Fix a gcc >= 15 build failure
+sed '/typedef enum/,/bool ;/d' -i src/ALAC/alac_{en,de}coder.c
 def
 
 }
