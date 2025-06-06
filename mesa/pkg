@@ -2,7 +2,7 @@
 
 # NOTE: This pkg only installs GBM from Mesa.
 n="mesa"
-v="25.1.1"
+v="25.1.2"
 a="Graphics libraries"
 m="Tox"
 l="MIT AND BSD-3-Clause AND SGI-B-2.0"
@@ -16,41 +16,34 @@ s=(
 
 # TODO: There may be extraneous or missing dependencies
 d=(
-    "libdrm"
-    "libglvnd"
     "expat"
     "glibc"
+    "libdrm"
     "libelf"
+    "libglvnd"
     "libx11"
     "libxcb"
     "libxext"
+    "libxfixes"
     "libxshmfence"
     "libxxf86vm"
     "wayland"
     "wayland-protocols"
     "zlib"
     "zstd"
-    "b,mako"
-    "b,pyyaml"
-    "b,meson"
-    "b,ninja"
+
     "b,libpng"
-    "libxfixes"
     "b,libxrandr"
     "b,libxrender"
     "b,libyaml"
+    "b,mako"
+    "b,meson"
+    "b,pyyaml"
+    "b,samu"
     "b,xorgproto"
 )
 
 b() {
-
-with mn
-
-# tspmo
-# TODO: Write ild (install licenses directory, or maybe make il a proper script
-# that takes arguments :shrug:)
-install -vdm755   "$D/usr/share/licenses/$n"
-cp -av licenses/* "$D/usr/share/licenses/$n"
 
 _cfg=(
     -D gbm=enabled
@@ -71,6 +64,6 @@ _cfg=(
 )
 
 def
-install -vDm644 ../include/GL/internal/dri_interface.h -t "$D"/usr/include/GL/internal/
+install -vDm644 ../include/GL/internal/dri_interface.h -t "$D/usr/include/GL/internal/"
 
 }
