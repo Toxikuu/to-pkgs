@@ -1,6 +1,6 @@
 {
   "name": "libnl",
-  "version": "f278e5921498fc635bd9534a3f24979bb1b2849d",
+  "version": "44fab88f49e0a61ec5fdebc8f94d8230f35ac801",
   "about": "Netlink Library Suite",
   "maintainer": "Tox",
   "licenses": [
@@ -23,10 +23,6 @@
     {
       "name": "glibc",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []
