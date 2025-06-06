@@ -15,7 +15,7 @@ s=(
 
 d=(
     "b,meson"
-    "b,ninja"
+    "b,samu"
     "libx11"
     "libglvnd"
     "glibc"
@@ -23,15 +23,12 @@ d=(
 
 b() {
 
-with mn
-
 def
-il
 
 }
 
 t() {
 
-nj test
+sa test
 
 }
