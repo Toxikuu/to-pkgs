@@ -14,12 +14,10 @@ d=(
     "glibc"
     "b,libpng"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
-
-with mn
 
 _cfg=(
     -D loongson-mmi=disabled
@@ -38,12 +36,11 @@ _cfg=(
 )
 
 def
-il
 
 }
 
 t() {
 
-nj test
+sa test
 
 }
