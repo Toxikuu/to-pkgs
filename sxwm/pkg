@@ -1,8 +1,8 @@
 #!/to
 
 n="sxwm"
-v="1.5"
-a="Superior X Window Manager"
+v="443a8ca4581b3e93a2d4a96f4acf7a4f9c5afa18"
+a="Simple X Window Manager"
 m="Tox"
 l="MIT"
 t="wm"
@@ -14,18 +14,16 @@ d=(
     "libx11"
     "libxcursor"
     "libxinerama"
-    "b,git"
 )
 
 b() {
 
-gco v$v
 LDFLAGS+=" -lX11 -lXinerama -lXcursor"
 
-il
 mk
-mi
+mi PREFIX=/usr
 
-install -vDm644 default_sxrc "$D/$HOME/.config/${n}rc"
+# Install default config for reference
+install -vDm644 default_${n}rc -t "$D/usr/share/$n/"
 
 }

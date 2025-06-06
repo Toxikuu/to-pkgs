@@ -1,7 +1,7 @@
 {
   "name": "sxwm",
-  "version": "1.5",
-  "about": "Superior X Window Manager",
+  "version": "443a8ca4581b3e93a2d4a96f4acf7a4f9c5afa18",
+  "about": "Simple X Window Manager",
   "maintainer": "Tox",
   "licenses": [
     "MIT"
@@ -30,10 +30,6 @@
     {
       "name": "libxinerama",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []
