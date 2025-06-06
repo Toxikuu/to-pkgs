@@ -15,9 +15,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.16.2/fontconfig-2.16.2.tar.bz2",
-      "dest": "fontconfig-2.16.2.tar.bz2"
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
+      "dest": "fontconfig"
     }
   ],
   "dependencies": [
@@ -42,7 +42,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     }
   ],

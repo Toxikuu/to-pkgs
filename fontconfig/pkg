@@ -9,9 +9,7 @@ t="lib font utils"
 u="https://gitlab.freedesktop.org/$n/$n.git"
 vf="gr | grep -v '[a-Z]' | sort -V"
 
-s=(
-    "${u%.git}/-/archive/$v/$n-$v.tar.bz2"
-)
+s="$u"
 
 d=(
     "freetype"
@@ -19,12 +17,10 @@ d=(
     "expat"
     "b,gperf"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
-
-with mn
 
 _cfg=(
     -D default-hinting=slight
@@ -40,5 +36,11 @@ _cfg=(
 
 def
 rm -vf "$D/usr/lib/lib$n.a"
+
+}
+
+t() {
+
+sa test
 
 }
