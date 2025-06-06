@@ -13,21 +13,12 @@ s="https://www.x.org/pub/individual/lib/$n-$v.tar.xz"
 
 d=(
     "glibc"
-    "b,meson"
-    "b,ninja"
+    "b,muon"
+    "b,samu"
 )
 
 b() {
 
-with mn
-
 def
-il
-
-}
-
-t() {
-
-nj test
 
 }
