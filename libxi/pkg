@@ -10,8 +10,7 @@ u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
 vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
 
 s="https://www.x.org/pub/individual/lib/${n/x/X}-$v.tar.xz"
-
-d=( "libxext" "libxfixes" "libx11" "glibc" "xorgproto" "b,util-macros" )
+d=("libxext" "libxfixes" "libx11" "glibc" "xorgproto" "b,util-macros")
 
 b() {
 
