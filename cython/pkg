@@ -9,25 +9,20 @@ t="lib lang"
 u="https://github.com/$n/$n.git"
 vf="gr | grep -Ev '[a-z]|-' | sort -V"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "python"
     "glibc"
-    "b,git"
     "b,setuptools"
     "b,wheel"
 )
 
 b() {
 
-gco
 with pip
 
 pipb
 pipi
-il
 
 }
