@@ -22,6 +22,8 @@ d=(
     "zlib"
 )
 
+qa=("!static")
+
 b() {
 
 export CARGO_HOME="$D"/opt/cargo
@@ -43,8 +45,13 @@ sh rustup-init.sh "${_cfg[@]}"
 source "$CARGO_HOME"/env
 rm -vf "$CARGO_HOME"/env
 
-chmod 777 "$CARGO_HOME"
-chmod 755 "$RUSTUP_HOME"
+# Allow users in wheel to compile. The idea is we change the group that owns the
+# rust toolchain. Then we give read, write, execute, setgid permissions to the
+# group, but write and execute to everyone else. For files, the group gets read
+# and write permissions, and everyone else gets read.
+chgrp -R wheel      "$CARGO_HOME" "$RUSTUP_HOME"
+find "$CARGO_HOME" "$RUSTUP_HOME" -type d -exec chmod -v g+rwXs,o+rx {} +
+find "$CARGO_HOME" "$RUSTUP_HOME" -type f -exec chmod -v g+rw,o+r    {} +
 
 install -vDm644 "$A/rust-profile" "$D/etc/profile.d/15-rust.sh"
 
