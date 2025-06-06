@@ -1,6 +1,6 @@
 {
   "name": "wayland",
-  "version": "62cd0990e843095dc91811e2668131783df8f055",
+  "version": "6281ccbd3d98ef0a6503425e3e7d705e3075e265",
   "about": "Display server protocol",
   "maintainer": "Tox",
   "licenses": [
@@ -29,7 +29,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {
