@@ -29,6 +29,10 @@
       "kind": "Required"
     },
     {
+      "name": "gcc",
+      "kind": "Build"
+    },
+    {
       "name": "file",
       "kind": "Build"
     },
