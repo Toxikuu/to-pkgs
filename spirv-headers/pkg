@@ -2,26 +2,23 @@
 
 n="spirv-headers"
 v="1.4.313.0"
+tag="vulkan-sdk-$v"
 a="SPIR-V headers"
 m="Tox"
 l="MIT"
 t="lib gfx"
 u="https://github.com/KhronosGroup/$n.git"
-vf="gr | sort -V | tail -n1 | cut -d- -f3"
+vf="gr | grep '^vulkan-sdk-' | cut -d- -f3-"
 
-s=(
-    "${u%.git}/archive/refs/tags/vulkan-sdk-$v.tar.gz"
-)
+s="$u"
 
 d=(
     "b,cmake"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
 
-with cn
 def
-il
 
 }

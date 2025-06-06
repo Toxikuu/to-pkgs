@@ -7,16 +7,16 @@
     "MIT"
   ],
   "upstream": "https://github.com/KhronosGroup/spirv-headers.git",
-  "version_fetch": "gr | sort -V | tail -n1 | cut -d- -f3",
+  "version_fetch": "gr | grep '^vulkan-sdk-' | cut -d- -f3-",
   "tags": [
     "lib",
     "gfx"
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/KhronosGroup/spirv-headers/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz",
-      "dest": "vulkan-sdk-1.4.313.0.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/KhronosGroup/spirv-headers.git",
+      "dest": "spirv-headers"
     }
   ],
   "dependencies": [
@@ -25,7 +25,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     }
   ],
