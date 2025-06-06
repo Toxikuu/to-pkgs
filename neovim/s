@@ -1,6 +1,6 @@
 {
   "name": "neovim",
-  "version": "0.11.1",
+  "version": "0.11.2",
   "about": "Continuation and extension of Vim",
   "maintainer": "Tox",
   "licenses": [
@@ -23,11 +23,7 @@
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
-    },
-    {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {

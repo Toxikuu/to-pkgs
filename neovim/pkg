@@ -1,7 +1,8 @@
 #!/to
 
 n="neovim"
-v="0.11.1"
+v="0.11.2"
+tag="v$v"
 a="Continuation and extension of Vim"
 m="Tox"
 l=(
@@ -14,8 +15,7 @@ u="https://github.com/$n/$n.git"
 s="$u"
 
 d=(
-    "b,git"
-    "b,ninja"
+    "b,samu"
     "b,cmake"
     "libuv"
     "luajit"
@@ -23,14 +23,9 @@ d=(
 
 b() {
 
-with cn
-
-git fetch origin tag v$v
-gco v$v
-
 # Build bundled dependencies
 cmake -S cmake.deps -B .deps -G Ninja -D CMAKE_BUILD_TYPE=Release
-cmake --build .deps
+samu -C .deps
 
 def
 
