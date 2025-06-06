@@ -17,15 +17,13 @@ d=(
     "libevdev"
     "mtdev"
     "udev"
-    "b,meson"
-    "b,ninja"
+    "b,muon"
+    "b,samu"
 
 # Possibly also "b,wayland-protocols"
 )
 
 b() {
-
-with mn
 
 _cfg=(
     -D debug-gui=false
@@ -33,7 +31,6 @@ _cfg=(
     -D libwacom=false
 )
 
-il
 def
 
 }
