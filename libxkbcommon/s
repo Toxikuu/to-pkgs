@@ -1,13 +1,13 @@
 {
   "name": "libxkbcommon",
-  "version": "1.9.2",
+  "version": "1.10.0",
   "about": "Keymap handling library for toolkits and window systems",
   "maintainer": "Tox",
   "licenses": [
     "MIT"
   ],
   "upstream": "https://github.com/xkbcommon/libxkbcommon.git",
-  "version_fetch": "gr | sed 's,xkbcommon,,'",
+  "version_fetch": "gr | cut -d- -f2- | sort -V",
   "tags": [
     "lib",
     "kb"

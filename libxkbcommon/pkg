@@ -2,14 +2,14 @@
 
 n="libxkbcommon"
 an="${n#lib*}" # alt name
-v="1.9.2"
+v="1.10.0"
 tag="$an-$v"
 a="Keymap handling library for toolkits and window systems"
 m="Tox"
 l="MIT"
 t="lib kb"
 u="https://github.com/$an/$n.git"
-vf="gr | sed 's,$an,,'"
+vf="gr | cut -d- -f2- | sort -V"
 
 s="$u"
 
