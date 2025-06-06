@@ -2,42 +2,31 @@
 
 n="libtiff"
 v="4.7.0"
+tag="v$v"
 a="TIFF image library"
 m="Tox"
 l="Custom"
 t="lib img"
 u="https://gitlab.com/$n/$n.git"
 
-s=(
-    "https://download.osgeo.org/$n/${n#lib*}-$v.tar.gz"
-)
+s="$u"
 
 d=(
     "glibc"
     "xz"
     "zlib"
     "zstd"
-    "b,cmake"
-    "b,ninja"
 )
 
 b() {
 
-export BD="$n-build"
-with cn
-
-# Workaround for cmake@4.x.x
-_cfg=(
-    -D CMAKE_POLICY_VERSION_MINIMUM=3.5
-)
-
+autoreconf -fiv
 def
-il
 
 }
 
 t() {
 
-nj test
+mk check
 
 }

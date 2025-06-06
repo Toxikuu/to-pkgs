@@ -14,9 +14,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz",
-      "dest": "tiff-4.7.0.tar.gz"
+      "kind": "Git",
+      "url": "https://gitlab.com/libtiff/libtiff.git",
+      "dest": "libtiff"
     }
   ],
   "dependencies": [
@@ -35,14 +35,6 @@
     {
       "name": "zstd",
       "kind": "Required"
-    },
-    {
-      "name": "cmake",
-      "kind": "Build"
-    },
-    {
-      "name": "ninja",
-      "kind": "Build"
     }
   ],
   "kcfg": []
