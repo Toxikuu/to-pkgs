@@ -12,16 +12,11 @@ s="$u"
 
 d=(
     "elogind"
-    "b,ninja"
-    "b,meson"
-    "b,git"
+    "b,samu"
+    "b,muon"
 )
 
 b() {
-
-with mn
-
-gco
 
 _cfg=(
     -D server=disabled

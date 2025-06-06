@@ -25,15 +25,11 @@
       "kind": "Required"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {
-      "name": "meson",
-      "kind": "Build"
-    },
-    {
-      "name": "git",
+      "name": "muon",
       "kind": "Build"
     }
   ],
