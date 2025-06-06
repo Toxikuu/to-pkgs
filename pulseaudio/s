@@ -24,7 +24,7 @@
   ],
   "dependencies": [
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {
@@ -61,6 +61,10 @@
     },
     {
       "name": "elogind",
+      "kind": "Required"
+    },
+    {
+      "name": "speex",
       "kind": "Required"
     },
     {

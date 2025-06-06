@@ -13,7 +13,7 @@ s=(
 )
 
 d=(
-    "b,ninja"
+    "b,samu"
     "b,meson"
 
     "alsa-lib"
@@ -24,6 +24,7 @@ d=(
     "libcap"
     "libsndfile"
     "elogind"
+    "speex"
 
     "libx11"
     "libxcb"
@@ -34,13 +35,13 @@ d=(
 
 b() {
 
-with mn
-
 _cfg=(
     -D doxygen=false
     -D gcov=false
     -D man=false
     -D tests=false # the tests require check
+    -D valgrind=disabled
+
     -D database=gdbm
     -D legacy-database-entry-format=false
     -D stream-restore-clear-old-devices=false # true is recommended for gnome
@@ -51,7 +52,6 @@ _cfg=(
     -D jack=disabled
     -D lirc=disabled
     -D openssl=disabled # used for apple support
-    -D valgrind=disabled
 )
 
 def
