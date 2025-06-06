@@ -1,6 +1,6 @@
 {
   "name": "nvidia",
-  "version": "575.51.02",
+  "version": "575.57.08",
   "about": "NVIDIA drivers",
   "maintainer": "Tox",
   "licenses": [
@@ -18,16 +18,20 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://us.download.nvidia.com/XFree86/Linux-x86_64/575.51.02/NVIDIA-Linux-x86_64-575.51.02.run",
-      "dest": "NVIDIA-Linux-x86_64-575.51.02.run"
+      "url": "https://us.download.nvidia.com/XFree86/Linux-x86_64/575.57.08/NVIDIA-Linux-x86_64-575.57.08.run",
+      "dest": "NVIDIA-Linux-x86_64-575.57.08.run"
     },
     {
       "kind": "Download",
-      "url": "https://glfs-book.github.io/glfs/patches/nvidia/nvidia-575.51.02-gcc15.patch",
-      "dest": "nvidia-575.51.02-gcc15.patch"
+      "url": "https://glfs-book.github.io/glfs/patches/nvidia/nvidia-575.57.08-kernel_gpl_cachyos-1.patch",
+      "dest": "nvidia-575.57.08-kernel_gpl_cachyos-1.patch"
     }
   ],
   "dependencies": [
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
     {
       "name": "libglvnd",
       "kind": "Required"
