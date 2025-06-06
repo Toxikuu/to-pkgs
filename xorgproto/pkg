@@ -1,27 +1,24 @@
 #!/to
 
 n="xorgproto"
-v="2024.1"
+v="1914233e662d23ffb3812b80fadd0bbd064ad91c"
 a="Xorg protocol headers"
 m="Tox"
 l="MIT"
 t="xorg lib"
 u="https://gitlab.freedesktop.org/xorg/proto/$n.git"
-vf="gr | grep '$n-' | sed 's,_,.,g' | sort -V"
 
-s=(
-    "https://xorg.freedesktop.org/archive/individual/proto/$n-$v.tar.xz"
-)
+s="$u"
 
 d=(
     "util-macros"
-    "b,meson"
-    "b,ninja"
+    "b,muon"
+    "b,samurai"
 )
 
 b() {
 
-with mn
+autoreconf -fiv
 def
 
 }
