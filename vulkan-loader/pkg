@@ -1,22 +1,21 @@
 #!/to
 
 n="vulkan-loader"
-v="1.4.315"
+v="1.4.313.0"
+tag="vulkan-sdk-$v"
 a="Vulkan Installable Client Driver Loader"
 m="Tox"
 l="Apache-2.0"
 t="lib gfx"
 u="https://github.com/KhronosGroup/$n.git"
-vf="gr | grep -E '^v[0-9]'"
+vf="gr | grep '^vulkan-sdk-' | cut -d- -f3-"
 
-s=(
-    "${u%.git}/archive/v$v/$n-$v.tar.gz"
-)
+s="$u"
 
 d=(
     "glibc"
     "b,cmake"
-    "b,ninja"
+    "b,samu"
     "b,vulkan-headers"
     "b,libx11"
     "b,wayland"
@@ -25,11 +24,6 @@ d=(
 
 b() {
 
-with cn
-
-# -D BUILD_WSI_WAYLAND_SUPPORT=OFF to build without wayland
-
 def
-il
 
 }
