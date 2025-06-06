@@ -9,9 +9,7 @@ t="utils xorg cli"
 u="https://gitlab.freedesktop.org/xorg/app/$n.git"
 vf="gr | grep '$n-[0-9]\.' | sort -V"
 
-s=(
-    "https://www.x.org/pub/individual/app/$n-$v.tar.xz"
-)
+s="https://www.x.org/pub/individual/app/$n-$v.tar.xz"
 
 d=(
     "libxmu"
