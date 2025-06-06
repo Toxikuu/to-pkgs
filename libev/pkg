@@ -1,0 +1,29 @@
+#!/to
+
+n="libev"
+v="4.33"
+a="Full-featured, high-performance event loop"
+m="Tox"
+l="BSD"
+t="lib"
+u="http://dist.schmorp.de/$n/"
+vf="curl -s '$u' | grep -Eo '$n-[0-9]+\.[0-9]+'"
+
+s=(
+    "${u}Attic/$n-$v.tar.gz"
+)
+
+d="glibc"
+
+b() {
+
+def
+rm -vf "$D/usr/include/event.h" # provided by libevent
+
+}
+
+t() {
+
+mk check
+
+}
