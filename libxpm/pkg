@@ -10,24 +10,11 @@ u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
 vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
 
 s="https://www.x.org/pub/individual/lib/${n/x/X}-$v.tar.xz"
-
 d=("libxt" "libxext" "libx11" "glibc" "b,util-macros")
 
 b() {
 
-_cfg=(
-    --disable-open-zfile
-)
-
+_cfg=(--disable-open-zfile)
 def
-il
 
 }
-
-# The test suite exists but has 0 tests :clueless:
-# t() {
-#
-# # Several failures expected
-# mk check || true
-#
-# }
