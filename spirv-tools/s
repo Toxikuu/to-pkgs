@@ -7,7 +7,7 @@
     "Apache-2.0"
   ],
   "upstream": "https://github.com/KhronosGroup/spirv-tools.git",
-  "version_fetch": "gr | grep 'vulkan-sdk-' | cut -d- -f3",
+  "version_fetch": "gr | grep '^vulkan-sdk-' | cut -d- -f3-",
   "tags": [
     "gfx",
     "utils",
@@ -15,14 +15,14 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/KhronosGroup/spirv-tools/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz",
-      "dest": "vulkan-sdk-1.4.313.0.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/KhronosGroup/spirv-tools.git",
+      "dest": "spirv-tools"
     }
   ],
   "dependencies": [
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {
