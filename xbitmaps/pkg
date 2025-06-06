@@ -9,13 +9,8 @@ t="lib xorg"
 u="https://gitlab.freedesktop.org/xorg/data/${n/x//}.git"
 vf="gr | grep '^$n-'"
 
-s=(
-    "https://www.x.org/pub/individual/data/$n-$v.tar.xz"
-)
-
-d=(
-    "b,util-macros"
-)
+s="https://www.x.org/pub/individual/data/$n-$v.tar.xz"
+d="b,util-macros"
 
 b() {
 
