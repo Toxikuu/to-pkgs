@@ -12,9 +12,7 @@ s=(
     "https://www.gnupg.org/ftp/gcrypt/$n/$n-$v.tar.gz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
