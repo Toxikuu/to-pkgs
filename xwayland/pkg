@@ -31,12 +31,10 @@ d=(
     "b,wayland-protocols"
     "b,dbus"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
-
-with mn
 
 # Don't install a manpage installed by xorg-server
 sed -i '/install_man/,$d' meson.build
@@ -46,7 +44,6 @@ _cfg=(
     -D secure-rpc=true
 )
 
-il
 def
 
 }
