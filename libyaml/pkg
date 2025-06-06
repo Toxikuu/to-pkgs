@@ -8,21 +8,12 @@ l="MIT"
 t="lib lang"
 u="https://github.com/${n#lib*}/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "glibc"
-    "b,git"
-)
+s="$u"
+d="glibc"
 
 b() {
 
-gco
 autoreconf -fiv
-
 def
-il License
 
 }
