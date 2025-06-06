@@ -9,7 +9,7 @@ t="lib xorg"
 u="https://gitlab.freedesktop.org/xorg/lib/$n.git"
 vf="gr | grep -i $n- | sed 's,_,.,g' | sort -V"
 
-s="https://www.x.org/pub/individual/lib/${n/ice/ICE}-$v.tar.xz"
+s="https://www.x.org/pub/individual/lib/libICE-$v.tar.xz"
 
 d=(
     "glibc"
@@ -21,6 +21,5 @@ d=(
 b() {
 
 def
-il COPYING
 
 }
