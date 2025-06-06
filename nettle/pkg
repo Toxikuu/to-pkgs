@@ -1,14 +1,15 @@
 #!/to
 
 n="nettle"
-v="6f2420d288fd37d07669ea7824a79bb2d7d4fee0"
+v="3.10.1"
 a="Low-level cryptographic library"
 m="Tox"
 l="LGPL-3.0-or-later OR GPL-2.0-or-later"
 t="sec lib"
 u="https://git.lysator.liu.se/$n/$n.git"
+vf="gr | grep '_release_' | cut -d_ -f2 | sort -V"
 
-s="$u"
+s="https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.gz"
 d="gmp"
 
 b() {
@@ -17,7 +18,6 @@ _cfg=(
     --disable-documentation
 )
 
-autoreconf -fiv
 def
 chmod -v 755 "$D"/usr/lib/lib{hogweed,$n}.so
 

@@ -1,22 +1,22 @@
 {
   "name": "nettle",
-  "version": "6f2420d288fd37d07669ea7824a79bb2d7d4fee0",
+  "version": "3.10.1",
   "about": "Low-level cryptographic library",
   "maintainer": "Tox",
   "licenses": [
     "LGPL-3.0-or-later OR GPL-2.0-or-later"
   ],
   "upstream": "https://git.lysator.liu.se/nettle/nettle.git",
-  "version_fetch": null,
+  "version_fetch": "gr | grep '_release_' | cut -d_ -f2 | sort -V",
   "tags": [
     "sec",
     "lib"
   ],
   "sources": [
     {
-      "kind": "Git",
-      "url": "https://git.lysator.liu.se/nettle/nettle.git",
-      "dest": "nettle"
+      "kind": "Download",
+      "url": "https://ftpmirror.gnu.org/gnu/nettle/nettle-3.10.1.tar.gz",
+      "dest": "nettle-3.10.1.tar.gz"
     }
   ],
   "dependencies": [
