@@ -1,0 +1,54 @@
+{
+  "name": "xinput",
+  "version": "1.6.4",
+  "about": "Device configuration utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xorg/app/xinput.git",
+  "version_fetch": "gr | grep -i '^xinput-' | sed 's,_,.,g' | sort -V",
+  "tags": [
+    "utils",
+    "cli",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.x.org/pub/individual/app/xinput-1.6.4.tar.xz",
+      "dest": "xinput-1.6.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxi",
+      "kind": "Required"
+    },
+    {
+      "name": "libxinerama",
+      "kind": "Required"
+    },
+    {
+      "name": "xrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Build"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

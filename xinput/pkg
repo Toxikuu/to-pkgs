@@ -1,0 +1,28 @@
+#!/to
+
+n="xinput"
+v="1.6.4"
+a="Device configuration utility"
+m="Tox"
+l="Custom"
+t="utils cli xorg"
+u="https://gitlab.freedesktop.org/xorg/app/$n.git"
+vf="gr | grep -i '^$n-' | sed 's,_,.,g' | sort -V"
+
+s="https://www.x.org/pub/individual/app/$n-$v.tar.xz"
+
+d=(
+    "libx11"
+    "libxi"
+    "libxinerama"
+    "xrandr"
+    "b,libxfixes"
+    "b,util-macros"
+    "b,xorgproto"
+)
+
+b() {
+
+def
+
+}
