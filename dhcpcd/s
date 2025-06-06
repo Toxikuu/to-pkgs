@@ -1,7 +1,7 @@
 {
   "name": "dhcpcd",
-  "version": "10.2.3",
-  "about": "Fully featured lightweight DHCP client",
+  "version": "10.2.4",
+  "about": "Fully-featured lightweight DHCP client",
   "maintainer": "Tox",
   "licenses": [
     "BSD-2-Clause"
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.3/dhcpcd-10.2.3.tar.xz",
-      "dest": "dhcpcd-10.2.3.tar.xz"
+      "url": "https://github.com/NetworkConfiguration/dhcpcd/releases/download/v10.2.4/dhcpcd-10.2.4.tar.xz",
+      "dest": "dhcpcd-10.2.4.tar.xz"
     }
   ],
   "dependencies": [

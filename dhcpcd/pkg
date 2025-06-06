@@ -1,8 +1,8 @@
 #!/to
 
 n="dhcpcd"
-v="10.2.3"
-a="Fully featured lightweight DHCP client"
+v="10.2.4"
+a="Fully-featured lightweight DHCP client"
 m="Tox"
 l="BSD-2-Clause"
 t="utils net cli"
@@ -28,7 +28,6 @@ _cfg=(
     --disable-privsep
 )
 
-il
 def
 
 # NOTE: While there is a BLFS service for dhcpcd, I don't use it.
