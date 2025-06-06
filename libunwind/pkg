@@ -19,10 +19,9 @@ d=(
 
 b() {
 
-autoreconf -fiv
-
 # Fix a gcc >= 15 build problem
 sed -i '/func.s/s/s//' tests/Gtest-nomalloc.c
+autoreconf -fiv
 
 def
 
