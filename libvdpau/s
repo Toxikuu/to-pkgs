@@ -1,22 +1,22 @@
 {
   "name": "libvdpau",
-  "version": "1.5",
+  "version": "2afa3f989af24a922692ac719fae23c321776cdb",
   "about": "NVIDIA's VDPAU library",
   "maintainer": "Tox",
   "licenses": [
     "MIT"
   ],
   "upstream": "https://gitlab.freedesktop.org/vdpau/libvdpau.git",
-  "version_fetch": "gr | cut -d- -f2- | sort -V",
+  "version_fetch": null,
   "tags": [
     "gfx",
     "lib"
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://gitlab.freedesktop.org/vdpau/libvdpau/-/archive/1.5/libvdpau-1.5.tar.bz2",
-      "dest": "libvdpau-1.5.tar.bz2"
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/vdpau/libvdpau.git",
+      "dest": "libvdpau"
     }
   ],
   "dependencies": [
@@ -25,7 +25,11 @@
       "kind": "Required"
     },
     {
-      "name": "meson",
+      "name": "muon",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
       "kind": "Build"
     },
     {

@@ -1,34 +1,26 @@
 #!/to
 
 n="libvdpau"
-v="1.5"
+v="2afa3f989af24a922692ac719fae23c321776cdb"
 a="NVIDIA's VDPAU library"
 m="Tox"
 l="MIT"
 t="gfx lib"
 u="https://gitlab.freedesktop.org/${n#lib*}/$n.git"
-vf="gr | cut -d- -f2- | sort -V"
 
-s=(
-    "${u%.git}/-/archive/$v/$n-$v.tar.bz2"
-)
+s="$u"
 
 d=(
     "libxext"
-    "b,meson"
+    "b,muon"
+    "b,samu"
     "b,xorgproto"
 )
 
 b() {
 
-with mn
 def
-il
 
 }
 
-t() {
-
-nj test
-
-}
+# The one test is known to fail on some systems
