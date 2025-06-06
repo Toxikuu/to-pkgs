@@ -19,15 +19,13 @@ s=(
 
 d=(
     "b,meson"
-    "b,samurai"
+    "b,samu"
     "expat"
     "glibc"
     "blfs-bootscripts"
 )
 
 b() {
-
-with meson samu
 
 _cfg=(
     -D doxygen_docs=disabled
