@@ -19,6 +19,5 @@ d=( "libxext" "libxi" "libx11" "glibc" "xorgproto" "b,util-macros" )
 b() {
 
 def
-il
 
 }
