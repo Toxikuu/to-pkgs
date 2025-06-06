@@ -1,7 +1,7 @@
 #!/to
 
 n="libjpeg-turbo"
-v="3.1.0"
+v="d163c99bf0aca57a44ca35442f8b885c45395c1d"
 a="Fast JPEG library"
 m="Tox"
 l=(
@@ -10,26 +10,20 @@ l=(
 )
 t="lib img"
 u="https://github.com/$n/$n.git"
-vf="gr | grep -v '[a-Z]'"
 
-s=(
-    "${u%.git}/releases/download/$v/$n-$v.tar.gz"
-)
+s="$u"
 
 d=(
     "b,cmake"
-    "b,yasm"
+    "b,nasm"
     "glibc"
 )
 
 b() {
 
-with cmake
-
 _cfg=(
     -D ENABLE_STATIC=FALSE
     -D CMAKE_INSTALL_DEFAULT_LIBDIR=lib
-    -D CMAKE_POLICY_VERSION_MINIMUM=3.5
 )
 
 def

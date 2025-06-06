@@ -1,6 +1,6 @@
 {
   "name": "libjpeg-turbo",
-  "version": "3.1.0",
+  "version": "d163c99bf0aca57a44ca35442f8b885c45395c1d",
   "about": "Fast JPEG library",
   "maintainer": "Tox",
   "licenses": [
@@ -8,16 +8,16 @@
     "IJG"
   ],
   "upstream": "https://github.com/libjpeg-turbo/libjpeg-turbo.git",
-  "version_fetch": "gr | grep -v '[a-Z]'",
+  "version_fetch": null,
   "tags": [
     "lib",
     "img"
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.1.0/libjpeg-turbo-3.1.0.tar.gz",
-      "dest": "libjpeg-turbo-3.1.0.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/libjpeg-turbo/libjpeg-turbo.git",
+      "dest": "libjpeg-turbo"
     }
   ],
   "dependencies": [
@@ -26,7 +26,7 @@
       "kind": "Build"
     },
     {
-      "name": "yasm",
+      "name": "nasm",
       "kind": "Build"
     },
     {
