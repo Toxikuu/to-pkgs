@@ -9,9 +9,7 @@ l="GPL-2.0-or-later"
 t="utils cli"
 u="https://github.com/$n/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "zlib"
