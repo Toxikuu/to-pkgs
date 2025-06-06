@@ -8,9 +8,7 @@ l="MIT"
 t="utils cli xorg"
 u="https://gitlab.freedesktop.org/xorg/app/$n.git"
 
-s=(
-    "https://www.x.org/pub/individual/app/$n-$v.tar.xz"
-)
+s="https://www.x.org/pub/individual/app/$n-$v.tar.xz"
 
 d=(
     "libx11"
