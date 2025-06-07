@@ -15,7 +15,7 @@ d="b,go"
 b() {
 
 export FZF_VERSION="$v"
-export FZF_REVISION=0
+export FZF_REVISION="Tox"
 sed -i 's/-w /-w -linkmode external /' Makefile
 
 govars
