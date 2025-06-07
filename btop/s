@@ -1,6 +1,6 @@
 {
   "name": "btop",
-  "version": "cfe075e6493169cd95c044b95695df2579fbb679",
+  "version": "1b0b89212e7e05ea3d4a1d7ec7596bf1b9224193",
   "about": "Resource monitor",
   "maintainer": "Tox",
   "licenses": [
@@ -23,10 +23,6 @@
     {
       "name": "glibc",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []
