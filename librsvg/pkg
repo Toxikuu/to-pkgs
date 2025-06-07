@@ -9,27 +9,28 @@ t="lib img gfx"
 u="https://github.com/GNOME/$n.git"
 vf="gr | grep -v '[a-Z]'"
 
-s="https://download.gnome.org/sources/librsvg/${v%.*}/librsvg-$v.tar.xz"
+s=(
+    "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
+)
 
 d=(
     "cairo"
-    "b,cargo-c"
-    "gdk-pixbuf"
-    "pango"
-    "harfbuzz"
     "freetype"
-    "b,rust"
-    "b,meson"
-    "b,ninja"
+    "gdk-pixbuf"
     "glib"
     "glibc"
-    "b,vala"
+    "harfbuzz"
     "libxml2"
+    "pango"
+
+    "b,cargo-c"
+    "b,meson"
+    "b,samu"
+    "b,rust"
+    "b,vala"
 )
 
 b() {
-
-with rust mn
 
 # LTO
 export CARGO_PROFILE_RELEASE_LTO=true CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1

@@ -26,36 +26,12 @@
       "kind": "Required"
     },
     {
-      "name": "cargo-c",
-      "kind": "Build"
-    },
-    {
-      "name": "gdk-pixbuf",
-      "kind": "Required"
-    },
-    {
-      "name": "pango",
-      "kind": "Required"
-    },
-    {
-      "name": "harfbuzz",
-      "kind": "Required"
-    },
-    {
       "name": "freetype",
       "kind": "Required"
     },
     {
-      "name": "rust",
-      "kind": "Build"
-    },
-    {
-      "name": "meson",
-      "kind": "Build"
-    },
-    {
-      "name": "ninja",
-      "kind": "Build"
+      "name": "gdk-pixbuf",
+      "kind": "Required"
     },
     {
       "name": "glib",
@@ -66,12 +42,36 @@
       "kind": "Required"
     },
     {
-      "name": "vala",
-      "kind": "Build"
+      "name": "harfbuzz",
+      "kind": "Required"
     },
     {
       "name": "libxml2",
       "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "cargo-c",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "vala",
+      "kind": "Build"
     }
   ],
   "kcfg": []
