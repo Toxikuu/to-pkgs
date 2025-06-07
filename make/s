@@ -15,7 +15,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz",
+      "url": "https://ftpmirror.gnu.org/gnu/make/make-4.4.1.tar.gz",
       "dest": "make-4.4.1.tar.gz"
     }
   ],

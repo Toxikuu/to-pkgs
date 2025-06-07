@@ -10,17 +10,13 @@ u="https://https.git.savannah.gnu.org/git/$n.git"
 vf="gr | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$'"
 
 s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+    "https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.gz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
-cfg
-mk
-mi
+def
 
 }
