@@ -1,0 +1,24 @@
+{
+  "name": "liblinear",
+  "version": "249",
+  "about": "Large linear classification library",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/cjlin1/liblinear.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "math"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/cjlin1/liblinear.git",
+      "dest": "liblinear"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

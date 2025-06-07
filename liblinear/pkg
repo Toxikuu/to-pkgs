@@ -1,0 +1,23 @@
+#!/to
+
+n="liblinear"
+v="249"
+tag="v$v"
+a="Large linear classification library"
+m="Tox"
+l="BSD-3-Clause"
+t="lib math"
+u="https://github.com/cjlin1/$n.git"
+
+s="$u"
+# TODO: Figure out what it depends on
+
+b() {
+
+mk lib
+
+install -vDm644 "${n#lib}.h" -t "$D/usr/include"
+install -vDm755 "$n.so.6"    -t "$D/usr/lib"
+ln -sfv         "$n.so.6"       "$D/usr/lib/$n.so"
+
+}
