@@ -9,7 +9,7 @@ t="core utils"
 u="git://git.savannah.gnu.org/$n.git"
 
 s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+    "https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.xz"
 )
 
 d=(
@@ -19,7 +19,6 @@ d=(
 
 b() {
 
-il
 def
 
 }
