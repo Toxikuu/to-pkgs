@@ -20,14 +20,13 @@ d=(
     "libpng"
     "libtiff"
     "shared-mime-info"
+    "pcre2"
+    "b,python"
     "b,meson"
-    "b,ninja"
-    "r,pcre2"
+    "b,samu"
 )
 
 b() {
-
-with mn
 
 _cfg=(
     --wrap-mode=nofallback
@@ -40,13 +39,12 @@ _cfg=(
 )
 
 def
-il
 
 }
 
 t() {
 
-nj test
+sa test
 
 }
 
