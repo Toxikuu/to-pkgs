@@ -11,20 +11,17 @@ u="https://codeberg.org/smxi/$n.git"
 s="$u"
 
 d=(
-    "b,git"
     "coreutils"
     "pciutils"
     "procps-ng"
     "util-linux"
     "perl"
-    # Also a whole bunch of optional (runtime?) dependencies
+    # Also a whole bunch of optional runtime dependencies
 )
 
 b() {
 
-gco
-il
-install -vDm755 "$n" "$D/usr/bin/$n"
-install -vDm644 "$n.1" "$D/usr/share/man/man1/$n.1"
+install -vDm755 "$n"    -t "$D/usr/bin/"
+install -vDm644 "$n.1"  -t "$D/usr/share/man/man1/"
 
 }
