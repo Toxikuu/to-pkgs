@@ -21,10 +21,6 @@
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
-    },
-    {
       "name": "xcb-util",
       "kind": "Build"
     },

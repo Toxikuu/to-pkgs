@@ -8,19 +8,15 @@ l="BSD-2-Clause"
 t="utils cli"
 u="https://github.com/baskerville/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "b,git"
     "b,xcb-util"
     "xcb-util-keysyms"
 )
 
 b() {
 
-gco
 mk PREFIX=/usr
 mi PREFIX=/usr
 
