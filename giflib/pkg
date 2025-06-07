@@ -25,7 +25,7 @@ cp -vf "pic/gifgrid.gif" "doc/$n-logo.gif"
 
 mk
 mi PREFIX=/usr
-rm -vf "$D/usr/lib/$n.a"
+rma
 
 }
 
