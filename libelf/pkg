@@ -38,6 +38,6 @@ mk
 mi -C "$n"
 
 install -vDm644 "config/$n.pc" -t "$D/usr/lib/pkgconfig/"
-rm -vf "$D/usr/lib/$n.a"
+rma
 
 }
