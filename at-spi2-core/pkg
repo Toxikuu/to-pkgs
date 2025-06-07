@@ -24,13 +24,11 @@ d=(
     "xprop"
     "gsettings-desktop-schemas"
     "b,meson"
-    "b,ninja"
+    "b,samu"
     "b,libxml2"
 )
 
 b() {
-
-with mn
 
 _cfg=(
     -D gtk2_atk_adaptor=false
