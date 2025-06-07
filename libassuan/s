@@ -4,11 +4,13 @@
   "about": "IPC library",
   "maintainer": "Tox",
   "licenses": [
-    "LICENSE"
+    "LGPL-2.1-or-later AND GPL-3.0-or-later AND FSFULLR"
   ],
   "upstream": "https://github.com/gpg/libassuan.git",
   "version_fetch": null,
-  "tags": [],
+  "tags": [
+    "lib"
+  ],
   "sources": [
     {
       "kind": "Download",
@@ -17,6 +19,10 @@
     }
   ],
   "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    },
     {
       "name": "glibc",
       "kind": "Required"

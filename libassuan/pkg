@@ -4,8 +4,8 @@ n="libassuan"
 v="3.0.2"
 a="IPC library"
 m="Tox"
-l="LICENSE"
-t=""
+l="LGPL-2.1-or-later AND GPL-3.0-or-later AND FSFULLR"
+t="lib"
 u="https://github.com/gpg/$n.git"
 
 s=(
@@ -13,6 +13,7 @@ s=(
 )
 
 d=(
+    "b,bzip2"
     "glibc"
     "libgpg-error"
 )
