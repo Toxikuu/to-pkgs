@@ -1,6 +1,6 @@
 {
   "name": "sudo",
-  "version": "77fe6ae51e53e46ef3b2cf6c379c9893677876f0",
+  "version": "a925829e607c343b99d12df861708c0bafb9241f",
   "about": "Privilege escalation utility",
   "maintainer": "Tox",
   "licenses": [
@@ -25,6 +25,10 @@
       "kind": "Required"
     },
     {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
       "name": "openssl",
       "kind": "Required"
     },
@@ -35,10 +39,6 @@
     {
       "name": "linux-pam",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []
