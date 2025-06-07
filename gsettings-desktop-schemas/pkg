@@ -16,15 +16,13 @@ d=(
     "glib"
     "pcre2"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
 
-with mn
-
 # Fix deprecated entries in schema templates
-sed -i -r 's:"(/system):"/org/gnome\1:g' schemas/*.in
+sed -Ei 's:"(/system):"/org/gnome\1:g' schemas/*.in
 
 _cfg=(
     -D introspection=true
