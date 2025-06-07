@@ -31,9 +31,6 @@ s=(
     "https://www.kernel.org/pub/linux/docs/$n/$n-$v.tar.xz"
 )
 
-d=(
-)
-
 b() {
 
 rm -vf man3/crypt*.3 # libxcrypt provides better ones
