@@ -1,0 +1,114 @@
+{
+  "name": "mpd",
+  "version": "0.24.4",
+  "about": "Flexible, powerful, server-side music player",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0"
+  ],
+  "upstream": "https://github.com/MusicPlayerDaemon/MPD.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli",
+    "audio"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/MusicPlayerDaemon/MPD.git",
+      "dest": "MPD"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "fmt",
+      "kind": "Required"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "expat",
+      "kind": "Required"
+    },
+    {
+      "name": "flac",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "icu",
+      "kind": "Required"
+    },
+    {
+      "name": "lame",
+      "kind": "Required"
+    },
+    {
+      "name": "libid3tag",
+      "kind": "Required"
+    },
+    {
+      "name": "libogg",
+      "kind": "Required"
+    },
+    {
+      "name": "libvorbis",
+      "kind": "Required"
+    },
+    {
+      "name": "libsndfile",
+      "kind": "Required"
+    },
+    {
+      "name": "opus",
+      "kind": "Required"
+    },
+    {
+      "name": "mpg123",
+      "kind": "Required"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "pipewire",
+      "kind": "Required"
+    },
+    {
+      "name": "pulseaudio",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

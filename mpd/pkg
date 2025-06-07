@@ -1,0 +1,149 @@
+#!/to
+
+n="mpd"
+v="0.24.4"
+tag="v$v"
+a="Flexible, powerful, server-side music player"
+m="Tox"
+l=("GPL-2.0")
+t="utils cli audio"
+u="https://github.com/MusicPlayerDaemon/${n^^}.git"
+
+s="$u"
+
+d=(
+    "b,meson"
+    "b,samu"
+
+    "fmt"
+    "alsa-lib"
+    "bzip2"
+    "curl"
+    "expat"
+    "flac"
+    "gcc"
+    "glibc"
+    "icu"
+    "lame"
+    "libid3tag"
+    "libogg"
+    "libvorbis"
+    "libsndfile"
+    # TODO: Add soxr
+    "opus"
+    "mpg123"
+    "pcre2"
+    "zlib"
+
+    "pipewire"
+    "pulseaudio"
+)
+
+b() {
+
+_cfg=(
+    -D daemon=true
+
+    # Random shit
+    -D dsd=false
+    -D upnp=disabled # db plugin
+    -D neighbor=false
+
+    # Input plugins
+    -D curl=enabled
+    -D nfs=disabled
+    -D mms=disabled
+    -D cdio_paranoia=disabled
+    -D smbclient=disabled
+    -D qobuz=disabled
+
+    # Archive plugins
+    -D zzip=disabled
+    -D iso9660=disabled
+    -D bzip2=enabled
+
+    # Tag plugins
+    -D id3tag=enabled
+
+    # Codecs
+    -D adplug=disabled
+    -D audiofile=disabled
+    -D faad=disabled
+    -D ffmpeg=enabled
+    -D flac=enabled
+    -D fluidsynth=disabled
+    -D gme=disabled
+    -D mad=disabled # mp3
+    -D mikmod=disabled
+    -D modplug=disabled
+    -D openmpt=disabled
+    -D mpg123=enabled
+    -D opus=enabled
+    -D sidplay=disabled
+    -D sndfile=enabled
+    -D tremor=disabled
+    # -D vgmstream=disabled # not available yet
+    -D vorbis=enabled
+    -D wavpack=disabled # TODO:
+    -D wildmidi=disabled
+    -D vorbisenc=enabled
+    -D lame=enabled
+    -D twolame=disabled
+    -D shine=disabled
+    -D wave_encoder=false
+
+    # Filter plugins
+    # TODO: Support both of these
+    -D libsamplerate=disabled
+    -D soxr=disabled
+
+    # Output plugins
+    -D alsa=enabled
+    -D ao=disabled
+    -D fifo=false
+    -D httpd=false
+    -D jack=disabled
+    -D openal=disabled
+    -D oss=disabled
+    -D pipe=true
+    -D pipewire=enabled
+    -D pulse=enabled
+    -D recorder=false
+    -D shout=disabled
+    -D snapcast=false
+    -D sndio=disabled
+    -D solaris_output=disabled
+
+    # Misc libraries
+    -D dbus=disabled # TODO: <-
+    -D expat=enabled
+    -D icu=enabled
+    -D iconv=enabled
+    -D nlohmann_json=disabled # TODO: <-
+    -D pcre=enabled
+    -D sqlite=disabled
+    -D zlib=enabled
+    -D zeroconf=disabled
+    -D io_uring=disabled
+    -D syslog=disabled
+    -D systemd=disabled
+
+    # Network support
+    -D tcp=true
+    -D ipv6=enabled
+    -D local_socket=true
+
+    # Bloat
+    -D d_ndebug=false # TODO: What does this do?
+    -D html_manual=false
+    -D doxygen=false
+    -D documentation=disabled
+    -D test=false
+    -D fuzzer=false
+    -D libfuzzer=false
+    -D manpages=true
+)
+
+def
+
+}
