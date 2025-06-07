@@ -23,12 +23,10 @@ d=(
     "libxrender"
     "zlib"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
-
-with mn
 
 _cfg=(
     -D xlib-xcb=enabled
@@ -40,6 +38,5 @@ _cfg=(
 )
 
 def
-il
 
 }
