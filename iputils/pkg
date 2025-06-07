@@ -1,7 +1,7 @@
 #!/to
 
 n="iputils"
-v="23b06385444fba29c898370ae6f297e41c11667b"
+v="bce12f96948b4842487541dc090942cfe0ee2a0c"
 a="The 'ping' networking utility"
 m="Tox"
 l=("BSD-3-Clause" "GPL-2.0-or-later")
@@ -12,15 +12,13 @@ s="$u"
 
 d=(
     "b,meson"
-    "b,samurai"
+    "b,samu"
     "b,iproute2"
     "libcap"
     "libidn2"
 )
 
 b() {
-
-with meson
 
 _cfg=(
     -D USE_CAP=true
