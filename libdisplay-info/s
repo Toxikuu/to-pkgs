@@ -24,10 +24,6 @@
       "kind": "Required"
     },
     {
-      "name": "git",
-      "kind": "Build"
-    },
-    {
       "name": "hwdata",
       "kind": "Build"
     },
@@ -36,7 +32,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {

@@ -12,17 +12,14 @@ s="$u"
 
 d=(
     "glibc"
-    "b,git"
     "b,hwdata"
     "b,meson"
-    "b,ninja"
+    "b,samu"
     "b,python"
 )
 
 b() {
 
-gco
-with mn
 def
 
 }
