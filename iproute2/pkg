@@ -1,7 +1,7 @@
 #!/to
 
 n="iproute2"
-v="6.14.0"
+v="6.15.0"
 a="IP routing utilities"
 m="Tox"
 l="GPL-2.0-or-later"
@@ -25,6 +25,5 @@ rm -vf man/man8/arpd.8
 
 mk NETNS_RUN_DIR=/run/netns
 mi SBINDIR=/usr/sbin
-il
 
 }
