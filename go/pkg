@@ -1,0 +1,41 @@
+#!/to
+
+n="go"
+v="1.24.4"
+a="The Go programming language"
+m="Tox"
+l="BSD-3-Clause"
+t="lib lang"
+u="https://github.com/${n}lang/$n.git"
+vf="gr | grep '^$n[0-9]' | vfs | sort -V"
+
+s=(
+    "https://$n.dev/dl/$n$v.linux-amd64.tar.gz"
+)
+
+b() {
+
+# Set variables
+GOROOT="/opt/$n"
+GOPATH="$GOROOT/work"
+
+mkdir -pv    "$GOROOT"
+cp -af {,.}* "$GOROOT"
+
+# Install go profile
+install -vDm755 /dev/stdin "$D/etc/profile.d/30-$n.sh" << EOF
+# /etc/profile.d/30-$n.sh
+export GOROOT="$GOROOT"
+export GOPATH="$GOPATH"
+
+if command -v $n &>/dev/null && [ -d "\$GOROOT/bin" ]; then
+    PATH="\$GOROOT/bin:\$PATH"
+fi
+EOF
+
+# Give the wheel group control over go
+chgrp -R wheel "$GOROOT"
+find "$GOROOT" -type d -exec chmod -v g+rwXs,o+rx {} +
+find "$GOROOT" -type f -exec chmod -v g+rw,o+r    {} +
+
+}

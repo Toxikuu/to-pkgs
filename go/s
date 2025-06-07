@@ -1,0 +1,24 @@
+{
+  "name": "go",
+  "version": "1.24.4",
+  "about": "The Go programming language",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/golang/go.git",
+  "version_fetch": "gr | grep '^go[0-9]' | vfs | sort -V",
+  "tags": [
+    "lib",
+    "lang"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://go.dev/dl/go1.24.4.linux-amd64.tar.gz",
+      "dest": "go1.24.4.linux-amd64.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
