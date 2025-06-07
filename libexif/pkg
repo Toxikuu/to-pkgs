@@ -8,18 +8,11 @@ l="LGPL-2.1"
 t="lib img"
 u="https://github.com/$n/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "b,git"
-    "glibc"
-)
+s="$u"
+d="glibc"
 
 b() {
 
-gco
 autoreconf -fiv
 def
 
