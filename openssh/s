@@ -16,9 +16,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/openssh/openssh-portable/archive/refs/tags/V_10_0_P2.tar.gz",
-      "dest": "V_10_0_P2.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/openssh/openssh-portable.git",
+      "dest": "openssh-portable"
     }
   ],
   "dependencies": [

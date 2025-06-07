@@ -12,9 +12,7 @@ vf="gr | grep '^V_' | grep -Ev 'PRE|TEST' | cut -d_ -f2- | sed -e 's,_,.,' -e 's
 tag="${v//./_}"
 tag="V_${tag//p/_P}"
 
-s=(
-    "${u%.git}/archive/refs/tags/$tag.tar.gz"
-)
+s="$u"
 
 d=(
     "pam"
@@ -41,11 +39,11 @@ _cfg=(
     --with-pid-dir=/run
 )
 
+autoreconf -fiv
 def
 
-install -vDm755 "contrib/ssh-copy-id" -t "$D/usr/bin/"
+install -vDm755 "contrib/ssh-copy-id"   -t "$D/usr/bin/"
 install -vDm755 "contrib/ssh-copy-id.1" -t "$D/usr/share/man/man1/"
-install -vDm644 OVERVIEW README* -t "$D/usr/share/doc/$n/"
-il
+install -vDm644 OVERVIEW README*        -t "$D/usr/share/doc/$n/"
 
 }
