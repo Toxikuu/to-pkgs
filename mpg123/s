@@ -25,6 +25,10 @@
     {
       "name": "alsa-lib",
       "kind": "Required"
+    },
+    {
+      "name": "pulseaudio",
+      "kind": "Required"
     }
   ],
   "kcfg": []
