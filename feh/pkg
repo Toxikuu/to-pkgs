@@ -11,19 +11,19 @@ u="https://github.com/derf/$n.git"
 s="$u"
 
 d=(
-    "b,git"
     "curl"
     "file"
     "imlib2"
     "libexif"
     "libxinerama"
     "b,libxt"
-    # TODO: Consider supporting imagemagick
+
+    # Optional runtime:
+    # "r,imagemagick"
+    # "r,libjpeg-turbo"
 )
 
 b() {
-
-gco
 
 _cfg=(
     VERSION="${v:8}"
