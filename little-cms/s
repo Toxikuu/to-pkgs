@@ -1,13 +1,13 @@
 {
   "name": "little-cms",
-  "version": "2.17",
+  "version": "7d0d7ac2b16b6ceddb10abfda4bbb1194ebd8a41",
   "about": "Little Color Management System",
   "maintainer": "Tox",
   "licenses": [
     "MIT"
   ],
   "upstream": "https://github.com/mm2/little-cms.git",
-  "version_fetch": "gr | sed -e 's,^lcms,,' -e 's,2-,,' | vfs | sort -V",
+  "version_fetch": null,
   "tags": [
     "lib",
     "gfx"
@@ -21,12 +21,16 @@
   ],
   "dependencies": [
     {
-      "name": "git",
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
       "kind": "Build"
     },
     {
-      "name": "libjpeg-turbo",
-      "kind": "Required"
+      "name": "samu",
+      "kind": "Build"
     }
   ],
   "kcfg": []

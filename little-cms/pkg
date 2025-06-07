@@ -1,31 +1,39 @@
 #!/to
 
 n="little-cms"
-v="2.17"
+v="7d0d7ac2b16b6ceddb10abfda4bbb1194ebd8a41"
 a="Little Color Management System"
 m="Tox"
 l="MIT"
 t="lib gfx"
 u="https://github.com/mm2/$n.git"
-vf="gr | sed -e 's,^lcms,,' -e 's,2-,,' | vfs | sort -V"
 
 s="$u"
 
 d=(
-    "b,git"
     "libjpeg-turbo"
+    "b,meson"
+    "b,samu"
 )
 
 b() {
 
-gco lcms$v
-NOCONFIGURE=1 ./autogen.sh
+_cfg=(
+    -D tests=enabled
+    -D jpeg=enabled
+    -D tiff=disabled
+    -D utils=false
+
+    -D fastfloat=true
+    -D threaded=true
+)
+
 def
 
 }
 
 t() {
 
-mk check
+sa test
 
 }
