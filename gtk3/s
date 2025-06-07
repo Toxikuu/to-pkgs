@@ -26,15 +26,23 @@
   ],
   "dependencies": [
     {
-      "name": "glib",
-      "kind": "Required"
-    },
-    {
       "name": "at-spi2-core",
       "kind": "Required"
     },
     {
       "name": "gdk-pixbuf",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "iso-codes",
       "kind": "Required"
     },
     {
@@ -46,15 +54,47 @@
       "kind": "Required"
     },
     {
+      "name": "shared-mime-info",
+      "kind": "Required"
+    },
+    {
       "name": "wayland",
       "kind": "Required"
     },
     {
-      "name": "wayland-protocols",
+      "name": "xrandr",
       "kind": "Required"
     },
     {
-      "name": "libxkbcommon",
+      "name": "librsvg",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcomposite",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcursor",
+      "kind": "Required"
+    },
+    {
+      "name": "libxdamage",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Required"
+    },
+    {
+      "name": "libxi",
       "kind": "Required"
     },
     {
@@ -62,8 +102,28 @@
       "kind": "Required"
     },
     {
-      "name": "iso-codes",
+      "name": "libxkbcommon",
       "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
     }
   ],
   "kcfg": []

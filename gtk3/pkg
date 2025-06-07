@@ -17,30 +17,45 @@ s=(
 )
 
 d=(
-    "glib"
     "at-spi2-core"
     "gdk-pixbuf"
+    "glib"
+    "glibc"
+    "iso-codes"
     "libepoxy"
     "pango"
+    "shared-mime-info"
     "wayland"
-    "wayland-protocols"
-    "libxkbcommon"
+    "xrandr"
+
+    "librsvg"
+    "libx11"
+    "libxcomposite"
+    "libxcursor"
+    "libxdamage"
+    "libxext"
+    "libxfixes"
+    "libxi"
     "libxinerama"
-    "iso-codes"
+    "libxkbcommon"
+    "libxrandr"
+    "libxrender"
+
+    "b,wayland-protocols"
+    "b,meson"
+    "b,samu"
 )
 
 
 b() {
 
-with mn
-
 pat "../$an-$v-upstream_fix-1.patch"
 
 _cfg=(
-    -D man=false
     -D broadway_backend=true
     -D xinerama=yes
 
+    -D man=false
     -D tests=false # tests want a graphical environment
     -D demos=false
     -D examples=false
