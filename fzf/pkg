@@ -1,0 +1,40 @@
+#!/to
+
+n="fzf"
+v="0.62.0"
+tag="v$v"
+a="Fuzzy finder"
+m="Tox"
+l="MIT"
+t="lib utils cli"
+u="https://github.com/junegunn/$n.git"
+
+s="$u"
+d="b,go"
+
+b() {
+
+export FZF_VERSION="$v"
+export FZF_REVISION=0
+sed -i 's/-w /-w -linkmode external /' Makefile
+
+govars
+mk
+
+# Install man pages
+install -vDm644 "man/man1/$n"{,-tmux}.1 -t "$D/usr/share/man/man1/"
+
+# Binaries
+install -vDm755 "bin/$n-tmux"           -t "$D/usr/bin/"
+install -vDm755 "target/$n-linux_amd64" -t "$D/usr/bin/"
+
+# Shell completions and bindings
+install -vDm644 shell/*.bash            -t "$D/usr/share/$n/"
+
+}
+
+t() {
+
+go test
+
+}

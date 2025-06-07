@@ -1,0 +1,30 @@
+{
+  "name": "fzf",
+  "version": "0.62.0",
+  "about": "Fuzzy finder",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/junegunn/fzf.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/junegunn/fzf.git",
+      "dest": "fzf"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "go",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
