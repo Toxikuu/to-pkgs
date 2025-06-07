@@ -8,19 +8,10 @@ l="Custom"
 t="lib audio codec"
 u="https://github.com/mstorsjo/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "b,git"
-    "glibc"
-)
+s="$u"
+d="glibc"
 
 b() {
-
-gco
-il NOTICE
 
 ./autogen.sh
 def
