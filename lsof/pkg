@@ -6,11 +6,9 @@ a="Lists open files for running processes"
 m="Tox"
 l="custom"
 t="utils cli"
-u="https://github.com/lsof-org/lsof.git" # upstream
+u="https://github.com/$n-org/$n.git" # upstream
 
-s=(
-    "${u%.git}/releases/download/$v/$n-$v.tar.gz"
-)
+s="$u"
 
 d=(
     "libtirpc"
@@ -24,8 +22,7 @@ _cfg=(
     --without-selinux
 )
 
-cfg
-mk
-mi
+autoreconf -fiv
+def
 
 }
