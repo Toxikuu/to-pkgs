@@ -13,19 +13,13 @@ t="lib sec"
 u="https://gitlab.com/gnutls/$n.git"
 
 s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+    "https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.gz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
-cfg
-mk
-mi
-
-install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
+def
 
 }
