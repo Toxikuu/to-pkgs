@@ -1,0 +1,39 @@
+#!/to
+
+n="lynx"
+v="2.9.2"
+a="TUI web browser"
+m="Tox"
+l="GPL-2.0-only"
+t="tui net"
+u="https://invisible-mirror.net/archives/$n/tarballs/?C=N;O=D"
+# TODO: This vf is atrocious
+vf="curl -s '$u' | grep -E '$n[0-9]\.[0-9]+\..+\.tar\.bz2' | grep -Ev 'rel|dev' | grep -Eo '$n[0-9]+\..*\.t' | cut -d. -f-3 | sed 's,$n,,' | head -n1"
+
+s=(
+    "${u%\?*}/$n$v.tar.bz2"
+)
+
+d=(
+    "bzip2"
+    "glibc"
+    "libidn2"
+    "ncurses"
+    "openssl"
+    "zlib"
+)
+
+b() {
+
+_cfg=(
+    --sysconfdir=/etc/$n
+    --with-{b,}zlib
+    --with-ssl
+    --with-screen=ncursesw
+    --enable-locale-charset
+    --datadir=/usr/share/doc/$n
+)
+
+def
+
+}
