@@ -35,6 +35,4 @@ _cfg=(
 
 def
 
-install -vDm644 COPYING -t "$D/usr/share/licenses/$n/"
-
 }
