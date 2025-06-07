@@ -8,7 +8,7 @@ l="GPL-2.0"
 u="https://github.com/rhboot/$n.git"
 vf="gr | grep -E '^[0-9]+$'"
 
-s="${u%.git}/archive/$v/$n-$v.tar.gz"
+s="$u"
 d=(
     "efivar"
     "popt"

@@ -14,9 +14,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz",
-      "dest": "efibootmgr-18.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/rhboot/efibootmgr.git",
+      "dest": "efibootmgr"
     }
   ],
   "dependencies": [
