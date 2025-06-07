@@ -1,32 +1,20 @@
 #!/to
 
 n="xxhash"
-v="1ec193eacfeae3e0da497373d41ccd850ebec9e5"
+v="1fc167c19f009265eb0a37117a03bbcdbc687e59"
 a="Extremely fast non-cryptographic hash algorithm"
 m="Tox"
-l=(
-    "BSD"
-    "GPL2"
-)
+l=("BSD" "GPL2")
 t="lib"
 u="https://github.com/Cyan4973/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "b,git"
-    "glibc"
-)
+s="$u"
+d="glibc"
 
 b() {
 
-gco
-
 mk PREFIX=/usr DISPATCH=1
 mi PREFIX=/usr DISPATCH=1
-
-il
+rm -vf "$D/usr/lib/lib$n.a"
 
 }

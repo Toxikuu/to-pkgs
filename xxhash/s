@@ -1,6 +1,6 @@
 {
   "name": "xxhash",
-  "version": "1ec193eacfeae3e0da497373d41ccd850ebec9e5",
+  "version": "1fc167c19f009265eb0a37117a03bbcdbc687e59",
   "about": "Extremely fast non-cryptographic hash algorithm",
   "maintainer": "Tox",
   "licenses": [
@@ -20,10 +20,6 @@
     }
   ],
   "dependencies": [
-    {
-      "name": "git",
-      "kind": "Build"
-    },
     {
       "name": "glibc",
       "kind": "Required"
