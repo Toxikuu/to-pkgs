@@ -39,3 +39,9 @@ find "$GOROOT" -type d -exec chmod -v g+rwXs,o+rx {} +
 find "$GOROOT" -type f -exec chmod -v g+rw,o+r    {} +
 
 }
+
+i() {
+
+. "/etc/profile.d/30-$n.sh"
+
+}
