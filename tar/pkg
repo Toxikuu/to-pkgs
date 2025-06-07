@@ -20,7 +20,6 @@ d=(
 
 b() {
 
-il
 FORCE_UNSAFE_CONFIGURE=1 \
 def
 
