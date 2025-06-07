@@ -24,20 +24,15 @@ d=(
     "sqlite"
     "b,vala"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
 
-with mn
-
 # Fix the API documentation install path
 sed 's/apiversion/soup_version/' -i docs/reference/meson.build
 
-_cfg=(
-    -D docs=disabled
-)
-
+_cfg=( -D docs=disabled )
 def
 
 }
