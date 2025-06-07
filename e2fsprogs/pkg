@@ -2,6 +2,7 @@
 
 n="e2fsprogs"
 v="1.47.2"
+tag="v$v"
 a="Programs for the ext4 filesystem"
 m="Tox"
 l=(
@@ -12,9 +13,7 @@ l=(
 t="fs utils cli core"
 u="https://github.com/tytso/$n.git"
 
-s=(
-    "${u%.git}/archive/refs/tags/v$v.tar.gz"
-)
+s="$u"
 
 d=(
     "glibc"

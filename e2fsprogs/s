@@ -18,9 +18,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.2.tar.gz",
-      "dest": "v1.47.2.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/tytso/e2fsprogs.git",
+      "dest": "e2fsprogs"
     }
   ],
   "dependencies": [
