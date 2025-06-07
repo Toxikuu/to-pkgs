@@ -24,6 +24,6 @@ _cfg=(
 )
 
 def
-rm -vf "$D"/usr/lib/libGLU.a
+rm -vf "$D/usr/lib/lib${n^^}.a"
 
 }
