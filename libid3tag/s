@@ -1,6 +1,6 @@
 {
   "name": "libid3tag",
-  "version": "eee94b22508a066f7b9bc1ae05d2d85982e73959",
+  "version": "80a23068e0ad03a290b5332c71108770eb1b355a",
   "about": "ID3 tag manipulation library",
   "maintainer": "Tox",
   "licenses": [
@@ -33,11 +33,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
-      "kind": "Build"
-    },
-    {
-      "name": "git",
+      "name": "samu",
       "kind": "Build"
     }
   ],
