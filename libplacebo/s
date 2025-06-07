@@ -59,7 +59,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {
@@ -88,10 +88,6 @@
     },
     {
       "name": "vulkan-headers",
-      "kind": "Build"
-    },
-    {
-      "name": "git",
       "kind": "Build"
     }
   ],
