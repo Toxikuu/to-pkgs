@@ -1,0 +1,120 @@
+{
+  "name": "pipewire",
+  "version": "1.4.5",
+  "about": "Low-latency audio/video router and processor",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "audio",
+    "video",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
+      "dest": "pipewire"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "gstreamer",
+      "kind": "Required"
+    },
+    {
+      "name": "gst-plugins-base",
+      "kind": "Required"
+    },
+    {
+      "name": "pulseaudio",
+      "kind": "Required"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "fdk-aac",
+      "kind": "Required"
+    },
+    {
+      "name": "ffmpeg",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "libsndfile",
+      "kind": "Required"
+    },
+    {
+      "name": "libusb",
+      "kind": "Required"
+    },
+    {
+      "name": "opus",
+      "kind": "Required"
+    },
+    {
+      "name": "vulkan-loader",
+      "kind": "Required"
+    },
+    {
+      "name": "vulkan-headers",
+      "kind": "Build"
+    },
+    {
+      "name": "libx11",
+      "kind": "Build"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

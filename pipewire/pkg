@@ -1,0 +1,77 @@
+#!/to
+
+n="pipewire"
+v="1.4.5"
+a="Low-latency audio/video router and processor"
+m="Tox"
+l="MIT"
+t="lib audio video utils cli"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+
+s="$u"
+
+d=(
+    # Bluetooth
+    # bluez
+    # sbc
+
+    # Camera
+    # libdrm
+    # v4l-utils
+
+    "gcc"
+    "dbus"
+    "glib"
+    "glibc"
+    "ncurses"
+    "readline"
+
+    # TODO: Most of these are probably build dependencies
+    "gstreamer"
+    "gst-plugins-base"
+    "pulseaudio"
+    "alsa-lib"
+    "fdk-aac"
+    "ffmpeg"
+    "libdrm"
+    "libxcb"
+    "libsndfile"
+    "libusb"
+    "opus"
+    "vulkan-loader"
+    "b,vulkan-headers"
+    "b,libx11"
+    "b,libxfixes"
+
+    # "r,wireplumber"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D man=disabled
+    -D docs=disabled
+
+    -D ffmpeg=enabled
+    -D vulkan=enabled
+
+    -D bluez5-codec-lc3plus=disabled
+    -D jack-devel=false
+    -D selinux=disabled
+    -D snap=disabled
+    -D session-managers="[]"
+    -D udevrulesdir=/usr/lib/udev/rules.d
+)
+
+def
+
+}
+
+t() {
+
+sa test
+
+}
