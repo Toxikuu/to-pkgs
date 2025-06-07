@@ -15,19 +15,13 @@ s=(
 
 d=(
     "b,cmake"
-    "b,ninja"
+    "b,samu"
     "gcc"
-    # TODO: Consider adding gtest
 )
 
 b() {
 
-with cn
-
-_cfg=(
-    -D BUILD_TESTING=OFF # TODO: Consider depending on "b,gtest"
-)
-
+_cfg=( -D BUILD_TESTING=OFF )
 def
 
 }
