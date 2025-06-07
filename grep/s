@@ -16,7 +16,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/grep/grep-3.12.tar.xz",
+      "url": "https://ftpmirror.gnu.org/gnu/grep/grep-3.12.tar.xz",
       "dest": "grep-3.12.tar.xz"
     }
   ],
