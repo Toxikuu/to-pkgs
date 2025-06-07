@@ -17,15 +17,13 @@ d=(
     "glibc"
     "sdl3"
     "b,cmake"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
 
-with cn
-
-il
 def
 ln -sv "$n.pc" "$D/usr/lib/pkgconfig/${n%-*}.pc"
+rm -vf "$D/usr/lib/libSDL2"*.a
 
 }
