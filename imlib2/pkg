@@ -1,16 +1,14 @@
 #!/to
 
 n="imlib2"
-v="2c2a13b2a7b2176224dce640376ef460ac0cd0a3"
+v="42ec80f0700f794ec0bff13d841fb29939515a59"
 a="Image loading and rendering library"
 m="Tox"
 l="BSD"
 t="lib img"
 u="https://git.enlightenment.org/old/legacy-$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "freetype"
@@ -27,12 +25,10 @@ d=(
     "libxext"
     "bzip2"
     "xz"
-    "b,git"
 )
 
 b() {
 
-gco
 autoreconf -fiv
 
 _cfg=(
@@ -65,10 +61,7 @@ _cfg=(
     --with-zlib
 )
 
-cfg
-sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-mk
-mi
+def
 
 # Remove test programs
 for test_prog in bumpmap colorspace poly show test; do

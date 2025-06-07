@@ -1,6 +1,6 @@
 {
   "name": "imlib2",
-  "version": "2c2a13b2a7b2176224dce640376ef460ac0cd0a3",
+  "version": "42ec80f0700f794ec0bff13d841fb29939515a59",
   "about": "Image loading and rendering library",
   "maintainer": "Tox",
   "licenses": [
@@ -71,10 +71,6 @@
     {
       "name": "xz",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []
