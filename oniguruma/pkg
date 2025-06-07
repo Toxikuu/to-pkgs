@@ -1,0 +1,19 @@
+#!/to
+
+n="oniguruma"
+v="f95747b462de672b6f8dbdeb478245ddf061ca53"
+a="Regex library"
+m="Tox"
+l="BSD"
+t="lib"
+u="https://github.com/kkos/$n.git"
+
+s="$u"
+
+b() {
+
+_cfg=( --enable-posix-api )
+autoreconf -fiv
+def
+
+}

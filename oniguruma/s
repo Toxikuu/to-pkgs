@@ -1,0 +1,23 @@
+{
+  "name": "oniguruma",
+  "version": "f95747b462de672b6f8dbdeb478245ddf061ca53",
+  "about": "Regex library",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://github.com/kkos/oniguruma.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/kkos/oniguruma.git",
+      "dest": "oniguruma"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
