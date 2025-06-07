@@ -1,7 +1,7 @@
 #!/to
 
 n="libusb"
-v="1.0.28"
+v="1.0.29"
 a="USB access library"
 m="Tox"
 l="LGPL-2.1"
@@ -13,6 +13,7 @@ s=(
 )
 
 d=(
+    "b,bzip2"
     "glibc"
     "udev"
 )
