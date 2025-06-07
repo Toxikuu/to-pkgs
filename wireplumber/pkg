@@ -1,0 +1,46 @@
+#!/to
+
+n="wireplumber"
+v="0.5.10"
+a="PipeWire session manager"
+m="Tox"
+l="MIT"
+t="lib utils audio"
+u="https://gitlab.freedesktop.org/pipewire/$n.git"
+
+s="$u"
+
+d=(
+    "elogind"
+    "glib"
+    "pipewire"
+    "lua"
+    "gcc"
+    "glibc"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+_cfg=( -D system-lua=true )
+def
+install -vDm755 "$A/pipewire-launcher.sh" -t "$D/usr/bin/"
+
+}
+
+t() {
+
+sa test
+
+}
+
+i() {
+
+# Prevent pulseaudio from autostarting
+rm -vf /etc/xdg/autostart/pulseaudio.desktop
+rm -vf /etc/xdg/Xwayland-session.d/00-pulseaudio-x11
+sed -e '$a autospawn = no' -i /etc/pulse/client.conf
+
+}

@@ -1,0 +1,58 @@
+{
+  "name": "wireplumber",
+  "version": "0.5.10",
+  "about": "PipeWire session manager",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/pipewire/wireplumber.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils",
+    "audio"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/pipewire/wireplumber.git",
+      "dest": "wireplumber"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "elogind",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "pipewire",
+      "kind": "Required"
+    },
+    {
+      "name": "lua",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
