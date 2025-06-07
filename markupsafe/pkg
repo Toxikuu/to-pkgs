@@ -8,9 +8,7 @@ l="BSD-3-Clause"
 t="lib core"
 u="https://github.com/pallets/$n.git"
 
-s=(
-    "${u%.git}/archive/refs/tags/$v.tar.gz"
-)
+s="$u"
 
 d=(
     "glibc"

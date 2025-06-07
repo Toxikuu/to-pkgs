@@ -14,9 +14,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/pallets/markupsafe/archive/refs/tags/3.0.2.tar.gz",
-      "dest": "3.0.2.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/pallets/markupsafe.git",
+      "dest": "markupsafe"
     }
   ],
   "dependencies": [
