@@ -1,6 +1,6 @@
 {
   "name": "x264",
-  "version": "85b5ccea1fab98841d79455e344c797c5ffc3212",
+  "version": "291476d73386eb6f0362214f28dce058c3fff3d9",
   "about": "The best H.264 encoder",
   "maintainer": "Tox",
   "licenses": [
@@ -21,10 +21,6 @@
     }
   ],
   "dependencies": [
-    {
-      "name": "git",
-      "kind": "Build"
-    },
     {
       "name": "nasm",
       "kind": "Build"
