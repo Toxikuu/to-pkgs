@@ -1,0 +1,69 @@
+#!/to
+
+n="gstreamer"
+v="1.26.2"
+a="Development framework for multimedia applications"
+t="lib audio video"
+u="https://github.com/$n/$n.git"
+vf="gr | grep -Ev '[a-Z]|-' | sort -V"
+d=(
+    "glibc"
+    "glib"
+    "gcc"
+    "libcap"
+    "libelf"
+    "libnsl"
+    # "libunwind"
+    # "b,alsa-lib"
+    # "b,aom"
+    "b,bzip2"
+    # "b,cairo"
+    # "b,flac"
+    # "b,gdk-pixbuf"
+    # "b,iso-codes"
+    # "b,lame"
+    # "b,lcms2"
+    # "b,libass"
+    # "b,libdrm"
+    # "b,libgudev"
+    # "b,libglvnd"
+    # "b,libjpeg-turbo"
+    # "b,ogg"
+    # "b,libpng"
+    # "b,pulseaudio"
+    # "b,librsvg"
+    # "b,libsndfile"
+    # "b,libvorbis"
+    # "b,libwebp"
+    # "b,libx11"
+    # "b,libxcb"
+    # "b,libxdamage"
+    # "b,libxext"
+    # "b,libxfixes"
+    # "b,libxi"
+    # "b,libxkbcommon"
+    # "b,libxml2"
+    # "b,libxrandr"
+    # "b,libxtst"
+    # "b,libxv"
+    # "b,mpg123"
+
+    "b,meson"
+    "b,samu"
+    "b,nasm"
+)
+
+s="https://$n.freedesktop.org/src/$n/$n-$v.tar.xz"
+
+b() {
+
+_cfg=( -D gst_debug=false )
+def
+
+}
+
+t() {
+
+sa test
+
+}

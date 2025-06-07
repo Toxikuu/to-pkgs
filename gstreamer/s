@@ -1,0 +1,64 @@
+{
+  "name": "gstreamer",
+  "version": "1.26.2",
+  "about": "Development framework for multimedia applications",
+  "maintainer": "",
+  "licenses": [],
+  "upstream": "https://github.com/gstreamer/gstreamer.git",
+  "version_fetch": "gr | grep -Ev '[a-Z]|-' | sort -V",
+  "tags": [
+    "lib",
+    "audio",
+    "video"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.2.tar.xz",
+      "dest": "gstreamer-1.26.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "libelf",
+      "kind": "Required"
+    },
+    {
+      "name": "libnsl",
+      "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "nasm",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
