@@ -1,0 +1,29 @@
+#!/to
+
+n="fmt"
+v="11.2.0"
+a="Formatting library"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://github.com/${n}lib/$n.git"
+vf="gr | sed 's,^v,,' | sort -V"
+
+s="$u"
+
+d=(
+    "gcc"
+    "glibc"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D FMT_TEST=OFF
+)
+
+def
+
+}
