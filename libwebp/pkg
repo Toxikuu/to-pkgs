@@ -14,9 +14,9 @@ s=(
 )
 
 d=(
-    "libpng"
-    "libjpeg-turbo"
     "glibc"
+    "libjpeg-turbo"
+    "libpng"
 )
 
 b() {

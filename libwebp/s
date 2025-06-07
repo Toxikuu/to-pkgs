@@ -21,7 +21,7 @@
   ],
   "dependencies": [
     {
-      "name": "libpng",
+      "name": "glibc",
       "kind": "Required"
     },
     {
@@ -29,7 +29,7 @@
       "kind": "Required"
     },
     {
-      "name": "glibc",
+      "name": "libpng",
       "kind": "Required"
     }
   ],
