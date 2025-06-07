@@ -1,6 +1,6 @@
 {
   "name": "mesa-utils",
-  "version": "af53ce6b1875c8fc06ac12d9f165611f41d7c7e8",
+  "version": "0386a2f118ce7ddf3a8d15dbde497fc8a95fa8bb",
   "about": "Essential Mesa utilities",
   "maintainer": "Tox",
   "licenses": [
@@ -76,11 +76,11 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {
-      "name": "git",
+      "name": "vulkan-headers",
       "kind": "Build"
     }
   ],

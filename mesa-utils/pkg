@@ -1,16 +1,14 @@
 #!/to
 
 n="mesa-utils"
-v="af53ce6b1875c8fc06ac12d9f165611f41d7c7e8"
+v="0386a2f118ce7ddf3a8d15dbde497fc8a95fa8bb"
 a="Essential Mesa utilities"
 m="Tox"
 l="MIT"
 t="gfx utils lib gui cli"
 u="https://gitlab.freedesktop.org/mesa/demos.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
     "libdrm"
@@ -26,14 +24,13 @@ d=(
     "b,glslang"
     "b,freeglut"
     "b,meson"
-    "b,ninja"
-    "b,git"
+    "b,samu"
+    "b,vulkan-headers"
 )
 
 b() {
 
-gco
-with mn
+with meson # TODO: Make the `with` guess matching less shit
 
 _cfg=(
     -D gles1=disabled
