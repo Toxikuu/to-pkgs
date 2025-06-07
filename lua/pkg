@@ -24,9 +24,9 @@ sed -e "s,MINOR,${v%.*}," -e "s,POINT,$v," "$A/$n.pc" |
 pat "$A/shared.patch"
 
 mk linux
-mi INSTALL_TOP=/usr                \
-   INSTALL_DATA="cp -d"            \
-   INSTALL_MAN=/usr/share/man/man1 \
+mi INSTALL_TOP="$D/usr"                 \
+   INSTALL_DATA="cp -d"                 \
+   INSTALL_MAN="$D/usr/share/man/man1"  \
    TO_LIB="lib$n.so lib$n.so.${v%.*} lib$n.so.$v"
 
 }
