@@ -1,0 +1,147 @@
+{
+  "name": "gst-plugins-base",
+  "version": "1.26.2",
+  "about": "Base gst plugins",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/gstreamer/gstreamer.git",
+  "version_fetch": "gr | grep -Ev '[a-Z]|-' | sort -V",
+  "tags": [
+    "lib",
+    "audio",
+    "video",
+    "codec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.2.tar.xz",
+      "dest": "gst-plugins-base-1.26.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "gstreamer",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "iso-codes",
+      "kind": "Required"
+    },
+    {
+      "name": "libgudev",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "libogg",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "libvorbis",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libwebp",
+      "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "libx11",
+      "kind": "Build"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Build"
+    },
+    {
+      "name": "libxdamage",
+      "kind": "Build"
+    },
+    {
+      "name": "libxext",
+      "kind": "Build"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Build"
+    },
+    {
+      "name": "libxi",
+      "kind": "Build"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Build"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Build"
+    },
+    {
+      "name": "libxtst",
+      "kind": "Build"
+    },
+    {
+      "name": "libxv",
+      "kind": "Build"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Build"
+    },
+    {
+      "name": "zlib",
+      "kind": "Build"
+    },
+    {
+      "name": "opus",
+      "kind": "Build"
+    },
+    {
+      "name": "sdl2",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

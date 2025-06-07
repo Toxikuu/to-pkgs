@@ -1,0 +1,66 @@
+#!/to
+
+n="gst-plugins-base"
+v="1.26.2"
+a="Base gst plugins"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib audio video codec"
+u="https://github.com/gstreamer/gstreamer.git"
+vf="gr | grep -Ev '[a-Z]|-' | sort -V"
+
+s=(
+    "https://gstreamer.freedesktop.org/src/$n/$n-$v.tar.xz"
+)
+
+d=(
+    "b,meson"
+    "b,samu"
+
+    "gstreamer"
+    "glib"
+
+    "alsa-lib"
+    "iso-codes"
+    "libgudev"
+    "libjpeg-turbo"
+    "libogg"
+    "libpng"
+    "libvorbis"
+    "libdrm"
+    "libglvnd"
+    "libwebp"
+    "pango"
+
+    "b,wayland-protocols"
+    "b,libx11"
+    "b,libxcb"
+    "b,libxdamage"
+    "b,libxext"
+    "b,libxfixes"
+    "b,libxi"
+    "b,libxkbcommon"
+    "b,libxrandr"
+    "b,libxtst"
+    "b,libxv"
+
+    "b,libxml2"
+    "b,zlib"
+    "b,opus"
+    "b,sdl2"
+
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+# Tests fail in build chroot because they want an X terminal, and one test is
+# known to fail on some systems
+samu test || true
+
+}
