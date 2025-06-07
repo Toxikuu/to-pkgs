@@ -8,20 +8,11 @@ l="GPL3"
 t="fetch cli utils"
 u="https://github.com/Toxikuu/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "b,git"
-    "b,rust"
-)
+s="$u"
+d="b,rust"
 
 b() {
 
-with rust
-
-gco
 def
 
 }
