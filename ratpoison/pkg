@@ -18,18 +18,14 @@ d=(
     "libxtst"
     "libxft"
     "libxrandr"
-    "b,git"
 )
 
 b() {
 
-gco
 ./autogen.sh
 
-cfg
 export CFLAGS+=" -DHAVE_GETLINE"
-mk
-mi
+def
 
 # Fix permissions
 chmod -v 755 "$D/usr/share/$n/"{allwindows.sh,clickframe.pl,rpshowall.sh,rpws,split.sh}
@@ -38,13 +34,9 @@ chmod -v 755 "$D/usr/share/$n/"{allwindows.sh,clickframe.pl,rpshowall.sh,rpws,sp
 rm -vf "$D/usr/share/$n/genrpbindings"
 
 # Generate bindings
-(
-    cd contrib
-    ./genrpbindings
-    install -vDm644 {${n/r/R}.pm,$n-cmd.el,$n.rb,$n.lisp,$n.py} \
-        -t "$D/usr/share/$n/bindings/"
-)
-
-il
+cd contrib # this is necessary because genrpbindings is poorly written
+./genrpbindings
+install -vDm644 {${n/r/R}.pm,$n-cmd.el,$n.rb,$n.lisp,$n.py} \
+    -t "$D/usr/share/$n/bindings/"
 
 }
