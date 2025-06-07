@@ -15,13 +15,12 @@ s=(
 d=(
     "gcc"
     "b,cmake"
-    "b,ninja"
+    "b,samu"
     "b,nasm"
 )
 
 b() {
 
-with cn
 cd source
 
 sed -r '/cmake_policy.*(0025|0054)/d' -i CMakeLists.txt
@@ -32,7 +31,10 @@ _cfg=(
 )
 
 def
-[ -e "$D/usr/lib/pkgconfig/x265.pc" ] || die "Missing pc file :("
 rm -vf "$D/usr/lib/lib$n.a"
+
+# The following check exists because this package used to not want to instsall a
+# pc file
+[ -e "$D/usr/lib/pkgconfig/$n.pc" ] || die "Missing pc file :("
 
 }
