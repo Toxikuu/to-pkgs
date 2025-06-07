@@ -24,22 +24,18 @@ d=(
     "libxft"
 
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
-
-with mn
 
 _cfg=(
     -D documentation=false
     -D man-pages=false
     -D introspection=enabled
     -D sysprof=disabled
-    --wrap-mode=nofallback
 )
 
 def
-il
 
 }
