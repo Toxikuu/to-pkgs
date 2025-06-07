@@ -26,7 +26,7 @@ install -vDm644 "man/man1/$n"{,-tmux}.1 -t "$D/usr/share/man/man1/"
 
 # Binaries
 install -vDm755 "bin/$n-tmux"           -t "$D/usr/bin/"
-install -vDm755 "target/$n-linux_amd64" -t "$D/usr/bin/"
+install -vDm755 "target/$n-linux_amd64"    "$D/usr/bin/$n"
 
 # Shell completions and bindings
 install -vDm644 shell/*.bash            -t "$D/usr/share/$n/"
@@ -35,6 +35,6 @@ install -vDm644 shell/*.bash            -t "$D/usr/share/$n/"
 
 t() {
 
-go test
+"$D/usr/bin/fzf" --version >&2
 
 }
