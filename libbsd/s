@@ -1,0 +1,29 @@
+{
+  "name": "libbsd",
+  "version": "0.12.2",
+  "about": "BSD compatibility library",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/libbsd/libbsd.git",
+  "version_fetch": null,
+  "tags": [
+    "bsd",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/libbsd/libbsd.git",
+      "dest": "libbsd"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libmd",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

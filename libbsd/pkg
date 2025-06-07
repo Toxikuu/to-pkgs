@@ -1,0 +1,23 @@
+#!/to
+
+n="libbsd"
+v="0.12.2"
+a="BSD compatibility library"
+m="Tox"
+l="Custom"
+t="bsd lib"
+u="https://gitlab.freedesktop.org/$n/$n.git"
+
+s="$u"
+d="libmd"
+
+b() {
+
+echo "$v" > .dist-version
+autoreconf -fiv
+export CFLAGS+=' -ffat-lto-objects'
+
+def
+rm -vf "$D/usr/lib/$n"*.a
+
+}
