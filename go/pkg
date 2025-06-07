@@ -13,14 +13,16 @@ s=(
     "https://$n.dev/dl/$n$v.linux-amd64.tar.gz"
 )
 
+qa=("!static")
+
 b() {
 
 # Set variables
 GOROOT="/opt/$n"
 GOPATH="$GOROOT/work"
 
-mkdir -pv    "$GOROOT"
-cp -af {,.}* "$GOROOT"
+mkdir -pv    "$D/$GOROOT"
+cp -af {,.}* "$D/$GOROOT"
 
 # Install go profile
 install -vDm755 /dev/stdin "$D/etc/profile.d/30-$n.sh" << EOF
@@ -34,9 +36,9 @@ fi
 EOF
 
 # Give the wheel group control over go
-chgrp -R wheel "$GOROOT"
-find "$GOROOT" -type d -exec chmod -v g+rwXs,o+rx {} +
-find "$GOROOT" -type f -exec chmod -v g+rw,o+r    {} +
+chgrp -R wheel "$D/$GOROOT"
+find "$D/$GOROOT" -type d -exec chmod -v g+rwXs,o+rx {} +
+find "$D/$GOROOT" -type f -exec chmod -v g+rw,o+r    {} +
 
 }
 
