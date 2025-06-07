@@ -6,7 +6,10 @@ a="Bootscripts for BLFS"
 m="Tox"
 l="MIT"
 t="core utils"
+vf="no"
 
+# TODO: Consider only using this package as a source, and not actually having a
+# b(); s=("p,blfs-bootscripts" "whatever")
 s=(
     "https://anduin.linuxfromscratch.org/BLFS/$n/$n-$v.tar.xz"
 )

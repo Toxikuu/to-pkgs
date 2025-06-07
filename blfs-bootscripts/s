@@ -7,7 +7,7 @@
     "MIT"
   ],
   "upstream": null,
-  "version_fetch": null,
+  "version_fetch": "no",
   "tags": [
     "core",
     "utils"
