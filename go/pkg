@@ -2,7 +2,7 @@
 
 n="go"
 v="1.24.4"
-a="The Go programming language"
+a="The ${n^} programming language"
 m="Tox"
 l="BSD-3-Clause"
 t="lib lang"
@@ -29,10 +29,7 @@ install -vDm755 /dev/stdin "$D/etc/profile.d/30-$n.sh" << EOF
 # /etc/profile.d/30-$n.sh
 export GOROOT="$GOROOT"
 export GOPATH="$GOPATH"
-
-if command -v $n &>/dev/null && [ -d "\$GOROOT/bin" ]; then
-    PATH="\$GOROOT/bin:\$PATH"
-fi
+PATH="\$GOROOT/bin:\$PATH"
 EOF
 
 # Give the wheel group control over go
