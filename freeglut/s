@@ -21,11 +21,11 @@
   ],
   "dependencies": [
     {
-      "name": "git",
+      "name": "cmake",
       "kind": "Build"
     },
     {
-      "name": "cmake",
+      "name": "samu",
       "kind": "Build"
     },
     {

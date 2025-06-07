@@ -11,8 +11,8 @@ u="https://github.com/$n/$n.git"
 s="$u"
 
 d=(
-    "b,git"
     "b,cmake"
+    "b,samu"
     "b,mesa"
     "b,glu"
     "glibc"
@@ -25,9 +25,6 @@ d=(
 
 b() {
 
-gco
-with cmake
-
 _cfg=(
     -D CMAKE_POLICY_VERSION_MINIMUM=3.5
     -D FREEGLUT_BUILD_DEMOS=OFF
@@ -35,8 +32,6 @@ _cfg=(
 )
 
 def
-
-il
 ln -sv glut.pc "$D/usr/lib/pkgconfig/$n.pc"
 
 }
