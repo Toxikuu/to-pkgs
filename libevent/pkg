@@ -13,9 +13,7 @@ s=(
     "${u%.git}/releases/download/release-$v-stable/$n-$v-stable.tar.gz"
 )
 
-d=(
-    "openssl"
-)
+d="openssl"
 
 b() {
 
