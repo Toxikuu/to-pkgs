@@ -22,15 +22,11 @@
   ],
   "dependencies": [
     {
-      "name": "git",
+      "name": "muon",
       "kind": "Build"
     },
     {
-      "name": "meson",
-      "kind": "Build"
-    },
-    {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {

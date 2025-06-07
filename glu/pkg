@@ -8,27 +8,16 @@ l=("MIT" "SGI-B-2.0")
 t="lib gfx"
 u="https://gitlab.freedesktop.org/mesa/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "b,git"
-    "b,meson"
-    "b,ninja"
+    "b,muon"
+    "b,samu"
     "libglvnd"
     "glibc"
 )
 
 b() {
-
-gco
-
-# Extract license and uncomment it
-head -n28 include/GL/glu.h | sed 's,.*\*,,' > LICENSE
-il
-
-with mn
 
 _cfg=(
     -D gl_provider=glvnd
