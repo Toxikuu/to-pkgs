@@ -7,13 +7,15 @@ m="Tox"
 l=("GPL-2.0-or-later" "LGPL-2.0-or-later" "LGPL-2.1-or-later" "MIT")
 t="lib sec"
 u="https://github.com/gpg/$n.git"
-vf="gr | cut -d- -f2- | grep -Ev '[a-Z]|-|@' | sort -V"
+vf="no" # TODO: Deal with 2.0.0
+# vf="gr | cut -d- -f2- | grep -Ev '[a-Z]|-|@' | sort -V"
 
 s=(
     "https://www.gnupg.org/ftp/gcrypt/$n/$n-$v.tar.bz2"
 )
 
 d=(
+    "b,bzip2"
     "libassuan"
     "glibc"
     "gcc"
