@@ -23,11 +23,11 @@
   ],
   "dependencies": [
     {
-      "name": "git",
+      "name": "python",
       "kind": "Build"
     },
     {
-      "name": "python",
+      "name": "setuptools",
       "kind": "Build"
     },
     {

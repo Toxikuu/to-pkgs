@@ -8,19 +8,15 @@ l="GPL3"
 t="net sec utils cli"
 u="https://git.launchpad.net/$n"
 
-s=(
-    "g,$u"
-)
+s="g,$u"
 
 d=(
-    "b,git"
     "b,python"
+    "b,setuptools"
     "iptables"
 )
 
 b() {
-
-gco
 
 # Prefer /usr/lib to /lib
 sed 's|/lib|/usr/lib|' -i setup.py
