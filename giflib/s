@@ -22,6 +22,11 @@
       "kind": "Download",
       "url": "https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-upstream_fixes-1.patch",
       "dest": "giflib-5.2.2-upstream_fixes-1.patch"
+    },
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/patches/blfs/svn/giflib-5.2.2-security_fixes-1.patch",
+      "dest": "giflib-5.2.2-security_fixes-1.patch"
     }
   ],
   "dependencies": [
