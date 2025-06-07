@@ -9,7 +9,6 @@ t="tui utils"
 u="https://github.com/gwsw/$n.git"
 
 s="$u"
-# s="${u%.git}/archive/refs/tags/v$v.tar.gz"
 
 d=(
     "glibc"
@@ -24,10 +23,7 @@ il # custom
 make -f Makefile.aut distfiles
 autoreconf -fiv
 
-_cfg=(
-    --with-regex=pcre2
-)
-
+_cfg=( --with-regex=pcre2 )
 def
 
 }
