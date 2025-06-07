@@ -2,8 +2,10 @@
   "name": "gstreamer",
   "version": "1.26.2",
   "about": "Development framework for multimedia applications",
-  "maintainer": "",
-  "licenses": [],
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
   "upstream": "https://github.com/gstreamer/gstreamer.git",
   "version_fetch": "gr | grep -Ev '[a-Z]|-' | sort -V",
   "tags": [

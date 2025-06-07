@@ -4,8 +4,11 @@ n="gstreamer"
 v="1.26.2"
 a="Development framework for multimedia applications"
 t="lib audio video"
+l="LGPL-2.1-or-later"
+m="Tox"
 u="https://github.com/$n/$n.git"
 vf="gr | grep -Ev '[a-Z]|-' | sort -V"
+
 d=(
     "glibc"
     "glib"
