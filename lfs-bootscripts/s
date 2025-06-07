@@ -23,6 +23,18 @@
     {
       "name": "sysvinit",
       "kind": "Runtime"
+    },
+    {
+      "name": "coreutils",
+      "kind": "Runtime"
+    },
+    {
+      "name": "util-linux",
+      "kind": "Runtime"
+    },
+    {
+      "name": "e2fsprogs",
+      "kind": "Runtime"
     }
   ],
   "kcfg": []

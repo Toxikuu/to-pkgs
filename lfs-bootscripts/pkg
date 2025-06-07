@@ -13,6 +13,9 @@ s=(
 
 d=(
     "r,sysvinit"
+    "r,coreutils"
+    "r,util-linux"
+    "r,e2fsprogs"
 )
 
 b() {
