@@ -1,6 +1,6 @@
 {
   "name": "libvpx",
-  "version": "1.15.1",
+  "version": "1.15.2",
   "about": "VP8 and VP9 codecs",
   "maintainer": "Tox",
   "licenses": [
@@ -15,9 +15,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/webmproject/libvpx/archive/v1.15.1/libvpx-1.15.1.tar.gz",
-      "dest": "libvpx-1.15.1.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/webmproject/libvpx.git",
+      "dest": "libvpx"
     }
   ],
   "dependencies": [

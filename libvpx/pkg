@@ -1,16 +1,15 @@
 #!/to
 
 n="libvpx"
-v="1.15.1"
+v="1.15.2"
+tag="v$v"
 a="VP8 and VP9 codecs"
 m="Tox"
 l="BSD"
 t="lib video codec"
 u="https://github.com/webmproject/$n.git"
 
-s=(
-    "${u%.git}/archive/v$v/$n-$v.tar.gz"
-)
+s="$u"
 
 d=(
     "b,nasm"
