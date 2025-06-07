@@ -2,6 +2,7 @@
 
 n="mpv"
 v="0.40.0"
+tag="v$v"
 a="Media player"
 m="Tox"
 l="GPL-2.0-or-later AND LGPL-2.1-or-later"
@@ -37,15 +38,12 @@ d=(
     "vulkan-loader"
     "zlib"
 
-    "b,git"
     "b,meson"
-    "b,ninja"
+    "b,samu"
     "b,vulkan-headers"
 )
 
 b() {
-
-with mn
 
 # Fix building with FFmpeg > 7.0
 sed -i 's/AV_OPT_TYPE_CHANNEL_LAYOUT/AV_OPT_TYPE_CHLAYOUT/' filters/f_lavfi.c
