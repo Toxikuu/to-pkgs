@@ -1,6 +1,6 @@
 {
   "name": "whois",
-  "version": "5.6.1",
+  "version": "5.6.2",
   "about": "Intelligent tool to query domain name information",
   "maintainer": "Tox",
   "licenses": [
@@ -15,9 +15,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/rfc1036/whois/archive/refs/tags/v5.6.1.tar.gz",
-      "dest": "v5.6.1.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/rfc1036/whois.git",
+      "dest": "whois"
     }
   ],
   "dependencies": [

@@ -1,7 +1,8 @@
 #!/to
 
 n="whois"
-v="5.6.1"
+v="5.6.2"
+tag="v$v"
 a="Intelligent tool to query domain name information"
 m="Tox"
 l="GPL-2.0"
@@ -9,9 +10,7 @@ t="net utils cli"
 u="https://github.com/rfc1036/$n.git"
 vf="gr | sed 's,^v,,' | grep -v '[a-Z]'"
 
-s=(
-    "${u%.git}/archive/refs/tags/v$v.tar.gz"
-)
+s="$u"
 
 d=(
     "libidn2"
@@ -20,8 +19,7 @@ d=(
 
 b() {
 
-il
 mk
-mk prefix=/usr install-whois
+mk DESTDIR="$D" prefix=/usr install-whois
 
 }
