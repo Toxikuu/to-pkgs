@@ -17,6 +17,11 @@
       "kind": "Git",
       "url": "https://github.com/RsyncProject/rsync.git",
       "dest": "rsync"
+    },
+    {
+      "kind": "Download",
+      "url": "https://github.com/RsyncProject/rsync/commit/026ef4cd09660c0a096e285e668b4ba7cd396509.patch",
+      "dest": "bool.patch"
     }
   ],
   "dependencies": [
@@ -51,10 +56,6 @@
     {
       "name": "python",
       "kind": "Required"
-    },
-    {
-      "name": "git",
-      "kind": "Build"
     }
   ],
   "kcfg": []

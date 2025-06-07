@@ -10,6 +10,7 @@ u="https://github.com/${n/r/R}Project/$n.git"
 
 s=(
     "$u"
+    "${u%.git}/commit/026ef4cd09660c0a096e285e668b4ba7cd396509.patch -> bool.patch"
 )
 
 d=(
@@ -21,12 +22,11 @@ d=(
     "zlib"
     "zstd"
     "python"
-    "b,git"
 )
 
 b() {
 
-gco
+pat "$S/bool.patch"
 
 _cfg=(
     --enable-ipv6
