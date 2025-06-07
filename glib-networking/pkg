@@ -22,23 +22,18 @@ d=(
 
     "b,zstd"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
 
-with mn
-
-_cfg=(
-    -D libproxy=disabled
-)
-
+_cfg=( -D libproxy=disabled )
 def
 
 }
 
 t() {
 
-nj test
+sa test
 
 }
