@@ -1,12 +1,12 @@
 {
   "name": "st",
-  "version": "0.9.2",
+  "version": "f8e451e26c5fdafa6f60cda1e249fc20e7dd450c",
   "about": "Suckless terminal",
   "maintainer": "Tox",
   "licenses": [
     "MIT"
   ],
-  "upstream": "https://git.suckless.org/st",
+  "upstream": "https://github.com/bakkeby/st-flexipatch.git",
   "version_fetch": null,
   "tags": [
     "suckless",
@@ -14,14 +14,22 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://dl.suckless.org/st/st-0.9.2.tar.gz",
-      "dest": "st-0.9.2.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/bakkeby/st-flexipatch.git",
+      "dest": "st-flexipatch"
     }
   ],
   "dependencies": [
     {
       "name": "libxft",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "fontconfig",
       "kind": "Required"
     }
   ],

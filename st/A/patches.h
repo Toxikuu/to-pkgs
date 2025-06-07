@@ -1,0 +1,15 @@
+#define ANYGEOMETRY_PATCH                   1
+#define ANYSIZE_PATCH                       1
+#define BOLD_IS_NOT_BRIGHT_PATCH            1
+#define BOXDRAW_PATCH                       1
+#define CLIPBOARD_PATCH                     1
+#define COLUMNS_PATCH                       1
+#define DYNAMIC_PADDING_PATCH               1
+#define OPENURLONCLICK_PATCH                1
+#define REFLOW_PATCH                        1
+#define SCROLLBACK_PATCH                    1
+#define SCROLLBACK_MOUSE_ALTSCREEN_PATCH    1
+#define SELECTION_COLORS_PATCH              1
+#define WIDE_GLYPHS_PATCH                   1
+#define XRESOURCES_PATCH                    1
+#define XRESOURCES_RELOAD_PATCH             1

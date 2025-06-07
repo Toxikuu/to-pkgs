@@ -4,22 +4,27 @@
 # package repo.
 
 n="st"
-v="0.9.2"
+v="f8e451e26c5fdafa6f60cda1e249fc20e7dd450c"
 a="Suckless terminal"
 m="Tox"
 l="MIT"
 t="suckless term"
-u="https://git.suckless.org/$n"
+u="https://github.com/bakkeby/$n-flexipatch.git"
 
-s="${u/git/dl}/$n-$v.tar.gz"
-d="libxft"
+s="$u"
+
+d=(
+    "libxft"
+    "freetype"
+    "fontconfig"
+)
 
 b() {
 
-mkdir -pv       "$D/usr/src/$n"
-cp -avf {,.}*   "$D/usr/src/$n"
+mv -vf "$A/patches.h" .
+mv -vf "$A/config.mk" .
 
-mk X11INCDIR=/usr/include/X11 X11LIB=/usr/lib/X11
+mk
 mi PREFIX=/usr
 
 }
