@@ -4,7 +4,6 @@ a="Tools and libraries for EFI variable manipulation"
 m="Tox"
 l="LGPL-2.1"
 t="lib"
-
 u="https://github.com/rhboot/$n.git"
 vf="gr | grep -Ev '[a-Z]|\.' | sort -V"
 
