@@ -1,0 +1,20 @@
+#!/to
+
+n="help2man"
+v="1.49.3"
+a="Conversion tool to create man files"
+m="Tox"
+l="GPL"
+t=""
+u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
+vf="curl -s '$u' | grep '$n-' | head -n1 | grep -Eo '$n-[0-9]+\.[0-9]+\.*[0-9]*'"
+
+s=(
+    "${u%\?*}/$n-$v.tar.xz"
+)
+
+b() {
+
+def
+
+}
