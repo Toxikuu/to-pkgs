@@ -1,0 +1,33 @@
+{
+  "name": "libpcap",
+  "version": "1.10.5",
+  "about": "Packet capture library",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/the-tcpdump-group/libpcap",
+  "version_fetch": "gr | cut -d- -f2- | grep -v '[a-Z]' | sort -V",
+  "tags": [
+    "lib",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.tcpdump.org/release/libpcap-1.10.5.tar.gz",
+      "dest": "libpcap-1.10.5.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libnl",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

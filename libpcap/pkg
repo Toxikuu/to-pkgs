@@ -1,0 +1,29 @@
+#!/to
+
+n="libpcap"
+v="1.10.5"
+a="Packet capture library"
+m="Tox"
+l="BSD-3-Clause"
+t="lib net"
+u="https://github.com/the-tcpdump-group/libpcap"
+vf="gr | cut -d- -f2- | grep -v '[a-Z]' | sort -V"
+
+s=(
+    "https://www.tcpdump.org/release/$n-$v.tar.gz"
+)
+
+d=(
+    "libnl"
+    "glibc"
+    # "b,bluez" # for bluetooth
+)
+
+b() {
+
+cfg
+mk
+sed -i '/INSTALL_DATA.*'$n'.a\|RANLIB.*'$n'.a/ s/^/#/' Makefile
+mi
+
+}
