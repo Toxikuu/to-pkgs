@@ -11,9 +11,8 @@ u="https://gitlab.freedesktop.org/$n/$n.git"
 s="$u"
 
 d=(
-    "b,git"
     "b,meson"
-    "b,ninja"
+    "b,samu"
     "b,wayland-protocols"
     "libxrandr"
     "gtk3"
@@ -23,14 +22,7 @@ d=(
 
 b() {
 
-gco
-with mn
-
-_cfg=(
-    -D demo=false
-)
-
+_cfg=( -D demo=false )
 def
-il
 
 }
