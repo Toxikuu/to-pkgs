@@ -9,29 +9,16 @@ t="lib gfx"
 u="https://gitlab.com/$n/$n.git"
 vf="gr | grep -Ev '[a-Z]' | sort -V"
 
-s=(
-    "${u%.git}/-/archive/$v/$n-$v.tar.bz2"
-)
-
-d=(
-    "glibc"
-    "libtool"
-)
+s="$u"
+d="glibc"
 
 b() {
 
 # Avoid installing to lib64
 sed -i '/LIBPOSTFIX="64"/s/64//' configure.ac
 
+echo "Fucking why does libtool want this LOL" > /usr/share/libtool/README
 ./autogen.sh
-cfg
-sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-
-# Set a meaningful build date
-sed -i "s/0/$(date +%Y%m%d)/" builddate.h
-
-mk
-mi
-il
+def
 
 }
