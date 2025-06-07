@@ -20,8 +20,8 @@
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
+      "name": "gcc",
+      "kind": "Required"
     }
   ],
   "kcfg": []

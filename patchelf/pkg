@@ -8,19 +8,12 @@ l="GPL-3.0-or-later"
 t="utils"
 u="https://github.com/NixOS/$n.git"
 
-s=(
-    "$u"
-)
-
-d=(
-    "b,git"
-)
+s="$u"
+d="gcc"
 
 b() {
 
-git checkout $v
 autoreconf -fiv
-
 def
 
 }
