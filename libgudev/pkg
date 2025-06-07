@@ -18,12 +18,17 @@ d=(
     "gcc"
     "udev"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 b() {
 
-with mn
 def
+
+}
+
+t() {
+
+sa test
 
 }
