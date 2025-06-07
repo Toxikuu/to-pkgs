@@ -1,6 +1,6 @@
 {
   "name": "to",
-  "version": "8df86dea2f0cc149d6d46aea841a04ab7143c2d7",
+  "version": "3b31759cb446fdf80612420f34e4ad70fa181552",
   "about": "Stupid-simple, (EVENTUALLY) rock-solid package manager for LFS",
   "maintainer": "Tox",
   "licenses": [
@@ -27,24 +27,8 @@
       "kind": "Required"
     },
     {
-      "name": "git",
-      "kind": "Build"
-    },
-    {
       "name": "rust",
       "kind": "Build"
-    },
-    {
-      "name": "bash",
-      "kind": "Runtime"
-    },
-    {
-      "name": "tar",
-      "kind": "Runtime"
-    },
-    {
-      "name": "zstd",
-      "kind": "Runtime"
     }
   ],
   "kcfg": []
