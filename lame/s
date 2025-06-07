@@ -20,6 +20,11 @@
       "dest": "lame-3.100.tar.gz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }
