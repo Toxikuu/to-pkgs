@@ -18,7 +18,7 @@ d=(
     "libtirpc"
     "libxcrypt"
     "b,meson"
-    "b,samurai"
+    "b,samu"
 )
 
 kcfg=(
@@ -27,15 +27,12 @@ kcfg=(
 
 b() {
 
-with meson samu
-
 _cfg=(
     -D docs=disabled
     -D econf=disabled
     -D selinux=disabled
 )
 
-il
 def
 
 chmod -v 4755 "$D/usr/sbin/unix_chkpwd"
@@ -48,9 +45,9 @@ install -vDm644 "$A/"* -t "$D/etc/pam.d/"
 
 t() {
 
-# NOTE: Tests are run in the chroot, and should thus not be prefixed with "$D"
-sa install
+D=/ si
 
+# Create a basic configuration for tests
 install -vDm644 /dev/stdin /etc/pam.d/other << "EOF"
 # /etc/pam.d/other
 
