@@ -12,15 +12,12 @@ s="${u%.git}/releases/download/v$v/$n-$v.tar.xz"
 
 d=(
     "glibc"
-    "b,meson"
-    "b,ninja"
+    "b,muon"
+    "b,samu"
 )
 
 b() {
 
-with meson ninja
-
 def
-il
 
 }
