@@ -1,7 +1,7 @@
 #!/to
 
 n="sdl3"
-v="3.2.14"
+v="3.2.16"
 a="Simple Directmedia Layer"
 m="Tox"
 l="Zlib"
@@ -23,7 +23,7 @@ d=(
     "libxrender"
 
     "b,cmake"
-    "b,ninja"
+    "b,samu"
 
     "b,alsa-lib"
     "b,libxinerama"
@@ -34,9 +34,11 @@ d=(
     "b,wayland-protocols"
 )
 
-b() {
+qa=(
+    "!static" # SDL3 installs a static library for testing :shrug:
+)
 
-with cn
+b() {
 
 CFLAGS+=" -ffat-lto-objects"
 _cfg=(
@@ -44,7 +46,6 @@ _cfg=(
     -D SDL_RPATH=OFF
 )
 
-il
 def
 
 }
