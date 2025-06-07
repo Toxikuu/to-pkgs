@@ -15,9 +15,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://repo.or.cz/isl.git/snapshot/433e17b9bccf4417725744316dff8a44caedcbcc.tar.gz",
-      "dest": "433e17b9bccf4417725744316dff8a44caedcbcc.tar.gz"
+      "kind": "Git",
+      "url": "https://repo.or.cz/isl.git",
+      "dest": "isl"
     }
   ],
   "dependencies": [

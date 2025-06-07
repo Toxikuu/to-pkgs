@@ -8,11 +8,7 @@ l="MIT"
 t="core math lib"
 u="https://repo.or.cz/$n.git"
 
-# TODO: Consider not commit versioning since git depends on isl
-s=(
-    "$u/snapshot/$v.tar.gz"
-)
-
+s="$u"
 d="gmp"
 
 b() {
