@@ -23,16 +23,13 @@ d=(
 b() {
 
 export RUST_TOOLCHAIN='stable'
-with rust
+export CFLAGS+=' -ffat-lto-objects'
 
 # Handle version-ambiguous Cargo.lock
 mv -vf ../Cargo.lock-$v Cargo.lock
 
-export CFLAGS+=' -ffat-lto-objects'
-
 cbr
-find target/release -maxdepth 1 -type f \
+find target/release -mindepth 1 -maxdepth 1 -type f \
     -executable -exec install -vDm755 -t "$D/usr/bin/" {} +
-il
 
 }
