@@ -13,10 +13,7 @@ s=(
     "https://mirror.us-midwest-1.nexcess.net/gnu/$n/$n-$v.tar.gz"
 )
 
-d=(
-    "perl"
-    # "uchardet" # TODO: Add back support for this once I get cmake working
-)
+d="perl"
 
 b() {
 
