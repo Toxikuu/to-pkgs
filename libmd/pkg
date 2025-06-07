@@ -1,0 +1,19 @@
+#!/to
+
+n="libmd"
+v="1.1.0"
+a="BSD Message Digest functions"
+m="Tox"
+l="BSD"
+t="lib bsd"
+u="https://git.hadrons.org/git/$n.git"
+
+s="$u"
+d="glibc"
+
+b() {
+
+sh autogen
+def
+
+}
