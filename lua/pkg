@@ -1,0 +1,38 @@
+#!/to
+
+n="lua"
+v="5.4.8" # TODO: Add and use a variable for MINOR
+a="Roblox language"
+m="Tox"
+l="LICENSE"
+t="lib lang"
+u="https://www.$n.org/ftp/"
+vf="curl -s '$u' | grep -Eo '$n-[0-9]+\.[0-9]+\.*[0-9]*' | sed 's,\.$,,' | uniq | sort -V"
+
+s=(
+    "$u$n-$v.tar.gz"
+)
+
+d="readline"
+
+b() {
+
+# Add version information into the asset pkgconf file
+sed -e "s,MINOR,${v%.*}," -e "s,POINT,$v," "$A/$n.pc" |
+    install -vDm644 /dev/stdin "$D/usr/lib/pkgconfig/$n.pc"
+
+pat "$A/shared.patch"
+
+mk linux
+mi INSTALL_TOP=/usr                \
+   INSTALL_DATA="cp -d"            \
+   INSTALL_MAN=/usr/share/man/man1 \
+   TO_LIB="lib$n.so lib$n.so.${v%.*} lib$n.so.$v"
+
+}
+
+t() {
+
+mk test
+
+}
