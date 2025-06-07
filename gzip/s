@@ -17,7 +17,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz",
+      "url": "https://ftpmirror.gnu.org/gnu/gzip/gzip-1.14.tar.xz",
       "dest": "gzip-1.14.tar.xz"
     }
   ],
@@ -37,14 +37,6 @@
     {
       "name": "coreutils",
       "kind": "Required"
-    },
-    {
-      "name": "diffutils",
-      "kind": "Runtime"
-    },
-    {
-      "name": "less",
-      "kind": "Runtime"
     }
   ],
   "kcfg": []

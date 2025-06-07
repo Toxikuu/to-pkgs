@@ -10,7 +10,7 @@ u="https://github.com/sailfishos-mirror/$n.git" # mirror because savannah is fuc
 vf="gr | vfs | sort -V"
 
 s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
+    "https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.xz"
 )
 
 d=(
@@ -18,8 +18,6 @@ d=(
     "sed"
     "grep"
     "coreutils"
-    "r,diffutils"
-    "r,less"
 )
 
 b() {
