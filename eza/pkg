@@ -1,49 +1,36 @@
 #!/to
 
 n="eza"
-v="0.21.3"
+v="0.21.4"
+tag="v$v"
 a="Modern ls alternative"
 m="Tox"
 l="EUPL-1.2"
 t="cli utils qol"
 u="https://github.com/$n-community/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "b,git"
     "b,curl"
-    "rust"
+    "b,rust"
     "glibc"
 )
 
 b() {
 
-with rust
-
-git checkout "v$v"
+# Install manpages
+curl -fsSL "${u%.git}/releases/download/v$v/man-$v.tar.gz" | tar xzvf -
+for i in {1,5}; do
+    install -vDm644 target/man-$v/*.$i -t "$D/usr/share/man/man$i/"
+done
 
 CFLAGS+=' -ffat-lto-objects'
 cbr
-install -vDm755 target/release/eza "$D/usr/bin/eza"
+install -vDm755 "target/release/$n" "$D/usr/bin/$n"
 
 # Install completions
-install -vDm644 "completions/bash/$n"      -t "$D/usr/share/bash-completion/completions"
-install -vDm644 "completions/zsh/_$n"      -t "$D/usr/share/zsh/site-functions/"
-install -vDm644 "completions/fish/$n.fish" -t "$D/usr/share/fish/vendor_completions.d"
-
-# Install license
-install -vDm644 LICENSE.txt -t "$D/usr/share/licenses/$n/"
-
-# Install manpages
-curl -L "${u%.git}/releases/download/v$v/man-$v.tar.gz" \
-    -o $n-man-$v.tar.gz
-tar xf $n-man-$v.tar.gz
-for i in {1,5}; do
-    cp -v target/man-$v/*.$i /usr/share/man/man$i
-done
+install -vDm644 "completions/bash/$n" -t "$D/usr/share/bash-completion/completions"
 
 # Install some aliases for eza
 install -vDm644 "$A/22-eza.sh" -t "$D/etc/profile.d/"
@@ -54,5 +41,11 @@ t() {
 
 cargo test
 target/release/eza -al
+
+}
+
+i() {
+
+. /etc/profile.d/22-eza.sh
 
 }
