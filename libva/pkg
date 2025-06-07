@@ -9,9 +9,7 @@ t="gfx lib"
 u="https://github.com/intel/$n.git"
 vf="gr | grep '^[0-9]\\.' | grep -v '[a-z]' | sort -V"
 
-s=(
-    "${u%.git}/archive/$v/$n-$v.tar.gz"
-)
+s="$u"
 
 d=(
     "libdrm"
@@ -20,13 +18,12 @@ d=(
     "libglvnd"
     "libxfixes"
     "wayland"
-    "b,meson"
-    "b,ninja"
+    "b,muon"
+    "b,samu"
 )
 
 b() {
 
-with mn
 def
 
 }

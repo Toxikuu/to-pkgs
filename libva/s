@@ -14,9 +14,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/intel/libva/archive/2.22.0/libva-2.22.0.tar.gz",
-      "dest": "libva-2.22.0.tar.gz"
+      "kind": "Git",
+      "url": "https://github.com/intel/libva.git",
+      "dest": "libva"
     }
   ],
   "dependencies": [
@@ -45,11 +45,11 @@
       "kind": "Required"
     },
     {
-      "name": "meson",
+      "name": "muon",
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     }
   ],
