@@ -36,7 +36,6 @@ _cfg=(
     --disable-bpf-compiler
 )
 
-il
 def
 
 }
