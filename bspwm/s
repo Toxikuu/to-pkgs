@@ -1,0 +1,40 @@
+{
+  "name": "bspwm",
+  "version": "af3bd8b4351f4478fe0fe3cfd6c09e44cb108b4b",
+  "about": "Tiling window manager based on binary space partitioning",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause"
+  ],
+  "upstream": "https://github.com/baskerville/bspwm.git",
+  "version_fetch": null,
+  "tags": [
+    "wm"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/baskerville/bspwm.git",
+      "dest": "bspwm"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "xcb-util",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-wm",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-keysyms",
+      "kind": "Required"
+    },
+    {
+      "name": "sxhkd",
+      "kind": "Runtime"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,25 @@
+#!/to
+
+n="bspwm"
+v="af3bd8b4351f4478fe0fe3cfd6c09e44cb108b4b"
+a="Tiling window manager based on binary space partitioning"
+m="Tox"
+l="BSD-2-Clause"
+t="wm"
+u="https://github.com/baskerville/$n.git"
+
+s="$u"
+
+d=(
+    "xcb-util"
+    "xcb-util-wm"
+    "xcb-util-keysyms"
+    "r,sxhkd"
+)
+
+b() {
+
+mk PREFIX=/usr
+mi PREFIX=/usr
+
+}
