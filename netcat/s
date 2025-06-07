@@ -1,0 +1,31 @@
+{
+  "name": "netcat",
+  "version": "181eeb7308110f709f8076b842d41724444a7cf6",
+  "about": "TCP/IP swiss army knife",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause",
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://salsa.debian.org/debian/netcat-openbsd.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://salsa.debian.org/debian/netcat-openbsd.git",
+      "dest": "netcat-openbsd"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libbsd",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

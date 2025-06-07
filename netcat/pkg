@@ -1,0 +1,30 @@
+#!/to
+
+n="netcat"
+v="181eeb7308110f709f8076b842d41724444a7cf6"
+a="TCP/IP swiss army knife"
+m="Tox"
+l=("BSD-2-Clause" "BSD-3-Clause")
+t="utils cli net"
+u="https://salsa.debian.org/debian/$n-openbsd.git"
+
+s="$u"
+d="libbsd"
+
+b() {
+
+while read patch; do
+    echo "Applying $patch"
+    pat "debian/patches/$patch"
+done < debian/patches/series
+
+CFLAGS+=" -I/usr/include/libbsd"
+LDFLAGS+=" -lbsd"
+make
+
+install -vDm644 nc.1 -t "$D/usr/share/man/man1/"
+install -vDm755 nc   -t "$D/usr/bin/"
+ln -sv          nc      "$D/usr/bin/$n"
+ln -sv          nc      "$D/usr/bin/ncat"
+
+}
