@@ -17,7 +17,7 @@ d=(
     "glibc"
     "udev"
     "b,meson"
-    "b,ninja"
+    "b,samu"
 )
 
 kcfg=(
@@ -26,8 +26,6 @@ kcfg=(
 )
 
 b() {
-
-with mn
 
 # Don't install an unneeded bootscript and udev rule
 sed -i '/^udev/,$ s/^/#/' util/meson.build
