@@ -2,54 +2,49 @@
 
 n="shaderc"
 v="2025.2"
+tag="v$v"
 a="Shader compilation toolkit"
 m="Tox"
 l="Apache-2.0"
 t="lib gfx"
 u="https://github.com/google/$n.git"
 
-s=(
-    "$u"
-)
+s="$u"
 
 d=(
-    "b,git"
     "gcc"
     "glibc"
     "glslang"
     "b,cmake"
-    "b,ninja"
+    "b,samu"
     "b,spirv-headers"
 )
 
 b() {
 
-with cn
-gco v$v
-
 # De-vendor libraries and prevent git-versioning
 sed '/examples/d;/third_party/d' -i CMakeLists.txt
-sed '/build-version/d' -i glslc/CMakeLists.txt
+sed '/build-version/d'           -i glslc/CMakeLists.txt
 cat << EOF > glslc/src/build-version.inc
-"$v\\n"
-"$(to data -V spirv-tools)\\n"
-"$(to data -V glslang)\\n"
+"$v\n"
+"$(LOG_LEVEL=OFF to data -V spirv-tools)\n"
+"$(LOG_LEVEL=OFF to data -V glslang)\n"
 EOF
 
 _cfg=(
     -D CMAKE_CXX_FLAGS="$CXXFLAGS -ffat-lto-objects"
     -D SHADERC_SKIP_TESTS=ON
-    -D PYTHON_EXECUTABLE=python3
     -D glslang_SOURCE_DIR=/usr/include/glslang
 )
 
 def
 rm -vf "$D/usr/lib/pkgconfig/${n}_static.pc"
+rma
 
 }
 
 t() {
 
-nj test
+sa test
 
 }

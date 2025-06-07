@@ -21,10 +21,6 @@
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
-    },
-    {
       "name": "gcc",
       "kind": "Required"
     },
@@ -41,7 +37,7 @@
       "kind": "Build"
     },
     {
-      "name": "ninja",
+      "name": "samu",
       "kind": "Build"
     },
     {
