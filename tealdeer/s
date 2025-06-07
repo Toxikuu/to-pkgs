@@ -24,11 +24,11 @@
   ],
   "dependencies": [
     {
-      "name": "rust",
-      "kind": "Build"
+      "name": "gcc",
+      "kind": "Required"
     },
     {
-      "name": "git",
+      "name": "rust",
       "kind": "Build"
     }
   ],
