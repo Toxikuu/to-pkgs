@@ -13,6 +13,7 @@ d="glibc"
 
 b() {
 
+echo "$v" > .dist-version
 sh autogen
 def
 
