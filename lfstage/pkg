@@ -1,0 +1,27 @@
+#!/to
+
+n="lfstage"
+v="38c5146bedcb34bab14005e497f0ee04ef219c03"
+a="LFS stage file generator"
+m="Tox"
+l="GPL-3.0"
+t="utils cli lfs"
+u="https://github.com/toxikuu/$n.git"
+
+s="$u"
+
+d=(
+    "b,rust"
+    "b,git"
+    "glibc"
+    "gcc"
+)
+
+b() {
+
+git submodule update --init --recursive
+
+mk
+mi
+
+}

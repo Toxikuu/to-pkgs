@@ -1,0 +1,42 @@
+{
+  "name": "lfstage",
+  "version": "38c5146bedcb34bab14005e497f0ee04ef219c03",
+  "about": "LFS stage file generator",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0"
+  ],
+  "upstream": "https://github.com/toxikuu/lfstage.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli",
+    "lfs"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/toxikuu/lfstage.git",
+      "dest": "lfstage"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
