@@ -1,0 +1,37 @@
+{
+  "name": "xcb-util-xrm",
+  "version": "a17de570ab18bfd8b7b9bf23af9e0bb2249d02c9",
+  "about": "XCB utility functions for the X resource manager",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/Airblader/xcb-util-xrm.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Airblader/xcb-util-xrm.git",
+      "dest": "xcb-util-xrm"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "xcb-util",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Build"
+    },
+    {
+      "name": "util-macros",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

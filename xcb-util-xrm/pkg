@@ -1,0 +1,24 @@
+#!/to
+
+n="xcb-util-xrm"
+v="a17de570ab18bfd8b7b9bf23af9e0bb2249d02c9"
+a="XCB utility functions for the X resource manager"
+m="Tox"
+l="MIT"
+t="lib xorg"
+u="https://github.com/Airblader/$n.git"
+
+s="$u"
+
+d=(
+    "xcb-util"
+    "b,libx11"
+    "b,util-macros"
+)
+
+b() {
+
+autoreconf -fiv
+def
+
+}
