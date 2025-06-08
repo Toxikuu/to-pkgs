@@ -1,0 +1,35 @@
+#!/to
+
+n="json-glib"
+v="1.10.6"
+a="JSON library built on GLib"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib"
+u="https://gitlab.gnome.org/GNOME/$n.git"
+vf="gr | grep -v '[a-Z]' | sort -V"
+
+s="$u"
+d=(
+    "glibc"
+    "glib"
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D installed_tests=false
+    -D man=false
+)
+
+def
+
+}
+
+t() {
+
+sa test
+
+}

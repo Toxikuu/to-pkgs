@@ -1,0 +1,40 @@
+{
+  "name": "json-glib",
+  "version": "1.10.6",
+  "about": "JSON library built on GLib",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://gitlab.gnome.org/GNOME/json-glib.git",
+  "version_fetch": "gr | grep -v '[a-Z]' | sort -V",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.gnome.org/GNOME/json-glib.git",
+      "dest": "json-glib"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
