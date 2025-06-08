@@ -2,7 +2,7 @@
 
 n="xdg-dbus-proxy"
 v="0.1.6"
-a="null"
+a="Filtering proxy for D-Bus connections"
 m="Tox"
 l="LGPL-2.1"
 t="utils"

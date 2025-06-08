@@ -1,7 +1,7 @@
 {
   "name": "xdg-dbus-proxy",
   "version": "0.1.6",
-  "about": "null",
+  "about": "Filtering proxy for D-Bus connections",
   "maintainer": "Tox",
   "licenses": [
     "LGPL-2.1"
