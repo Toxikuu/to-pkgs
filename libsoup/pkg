@@ -9,9 +9,7 @@ t="lib net"
 u="https://gitlab.gnome.org/GNOME/$n.git"
 vf="gr | grep -v '[a-Z]'"
 
-s=(
-    "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
-)
+s="$u"
 
 d=(
     "glib-networking"
@@ -31,8 +29,6 @@ b() {
 
 # Fix the API documentation install path
 sed 's/apiversion/soup_version/' -i docs/reference/meson.build
-
-_cfg=( -D docs=disabled )
 def
 
 }

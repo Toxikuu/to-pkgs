@@ -14,9 +14,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.5.tar.xz",
-      "dest": "libsoup-3.6.5.tar.xz"
+      "kind": "Git",
+      "url": "https://gitlab.gnome.org/GNOME/libsoup.git",
+      "dest": "libsoup"
     }
   ],
   "dependencies": [
