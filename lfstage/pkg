@@ -1,7 +1,7 @@
 #!/to
 
 n="lfstage"
-v="38c5146bedcb34bab14005e497f0ee04ef219c03"
+v="bea9488262bc07b1ff81b4ce0142a35e7b0cf5eb"
 a="LFS stage file generator"
 m="Tox"
 l="GPL-3.0"
@@ -13,6 +13,7 @@ s="$u"
 d=(
     "b,rust"
     "b,git"
+    "b,scdoc"
     "glibc"
     "gcc"
 )
