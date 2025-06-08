@@ -1,0 +1,34 @@
+{
+  "name": "docbook-xml",
+  "version": "4.5",
+  "about": "Widely used XML scheme for writing documentation",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://docbook.org",
+  "version_fetch": "no",
+  "tags": [
+    "doc",
+    "utils",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://docbook.org/xml/4.5/docbook-xml-4.5.zip",
+      "dest": "docbook-xml-4.5.zip"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "libarchive",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

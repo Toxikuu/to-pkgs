@@ -1,0 +1,167 @@
+#!/to
+
+n="docbook-xml"
+_db="${n%-*}"
+v="4.5"
+a="Widely used XML scheme for writing documentation"
+m="Tox"
+l="MIT"
+t="doc utils lib"
+u="https://$_db.org"
+vf="no"
+
+s=(
+    "$u/xml/$v/$n-$v.zip"
+)
+
+d=(
+    "libxml2"
+    "b,libarchive"
+)
+
+xmlc() { xmlcatalog --noout --add "$@"; }
+
+xt() {
+
+mkdir -pv "$B/$n"
+unzip -d  "$B/$n" "$S/$n-$v.zip"
+
+}
+
+b() {
+
+install -vdm755 "$D/usr/share/xml/$_db/xml-dtd-$v"
+install -vdm755 "$D/etc/xml"
+
+cp -dr "$_db.cat" *.dtd ent/ *.mod \
+    "$D/usr/share/xml/$_db/xml-dtd-$v"
+
+xmlcatalog --noout --create "$D/etc/xml/$_db"
+_gen_db_catalog
+
+# Fix permissions
+find "$D" -type f -exec chmod -vc a-x {} +
+chmod -vRc u=rwX,go=rX "$D"
+
+}
+
+i() {
+
+D=/ _gen_catalog_catalog
+D=/ _gen_compat_catalog
+
+}
+
+_gen_db_catalog() {
+
+xmlc "public"                                                               \
+    "-//OASIS//DTD DocBook XML V$v//EN"                                     \
+    "http://www.oasis-open.org/$_db/xml/$v/${_db}x.dtd"                     \
+    "$D/etc/xml/$_db"
+
+xmlc "public"                                                               \
+    "-//OASIS//DTD DocBook XML CALS Table Model V$v//EN"                    \
+    "file:///usr/share/xml/$_db/xml-dtd-$v/calstblx.dtd"                    \
+    "$D/etc/xml/$_db"
+
+xmlc "public"                                                               \
+    "-//OASIS//DTD XML Exchange Table Model 19990315//EN"                   \
+    "file:///usr/share/xml/$_db/xml-dtd-$v/soextblx.dtd"                    \
+    "$D/etc/xml/$_db"
+
+xmlc "public"                                                               \
+    "-//OASIS//ELEMENTS DocBook XML Information Pool V$v//EN"               \
+    "file:///usr/share/xml/$_db/xml-dtd-$v/dbpoolx.mod"                     \
+    "$D/etc/xml/$_db"
+
+xmlc "public"                                                               \
+    "-//OASIS//ELEMENTS DocBook XML Document Hierarchy V$v//EN"             \
+    "file:///usr/share/xml/$_db/xml-dtd-$v/dbhierx.mod"                     \
+    "$D/etc/xml/$_db"
+
+xmlc "public"                                                               \
+    "-//OASIS//ELEMENTS DocBook XML HTML Tables V$v//EN"                    \
+    "file:///usr/share/xml/$_db/xml-dtd-$v/htmltblx.mod"                    \
+    "$D/etc/xml/$_db"
+
+xmlc "public"                                                               \
+    "-//OASIS//ENTITIES DocBook XML Notations V$v//EN"                      \
+    "file:///usr/share/xml/$_db/xml-dtd-$v/dbnotnx.mod"                     \
+    "$D/etc/xml/$_db"
+
+xmlc "public"                                                               \
+    "-//OASIS//ENTITIES DocBook XML Character Entities V$v//EN"             \
+    "file:///usr/share/xml/$_db/xml-dtd-$v/dbcentx.mod"                     \
+    "$D/etc/xml/$_db"
+
+xmlc "public"                                                               \
+    "-//OASIS//ENTITIES DocBook XML Additional General Entities V$v//EN"    \
+    "file:///usr/share/xml/$_db/xml-dtd-$v/dbgenent.mod"                    \
+    "$D/etc/xml/$_db"
+
+xmlc "rewriteSystem"                                                        \
+    "http://www.oasis-open.org/$_db/xml/$v"                                 \
+    "file:///usr/share/xml/$_db/xml-dtd-$v"                                 \
+    "$D/etc/xml/$_db"
+
+xmlc "rewriteURI"                                                           \
+    "http://www.oasis-open.org/$_db/xml/$v"                                 \
+    "file:///usr/share/xml/$_db/xml-dtd-$v"                                 \
+    "$D/etc/xml/$_db"
+
+}
+
+_gen_catalog_catalog() {
+
+xmlcatalog --noout --create "$D/etc/xml/catalog"
+
+xmlc "delegatePublic"                   \
+    "-//OASIS//ENTITIES DocBook XML"    \
+    "file:///etc/xml/$_db-xml"          \
+    "$D/etc/xml/catalog"
+xmlc "delegatePublic"                   \
+    "-//OASIS//DTD DocBook XML"         \
+    "file:///etc/xml/$_db-xml"          \
+    "$D/etc/xml/catalog"
+xmlc "delegateSystem"                   \
+    "http://www.oasis-open.org/$_db/"   \
+    "file:///etc/xml/$_db-xml"          \
+    "$D/etc/xml/catalog"
+xmlc "delegateURI"                      \
+    "http://www.oasis-open.org/$_db/"   \
+    "file:///etc/xml/$_db-xml"          \
+    "$D/etc/xml/catalog"
+
+}
+
+_gen_compat_catalog() {
+
+for DTDV in 4.1.2 4.2 4.3 4.4
+do
+  xmlc "public"                                             \
+    "-//OASIS//DTD DocBook XML V$DTDV//EN"                  \
+    "http://www.oasis-open.org/$_db/xml/$DTDV/{$_db}x.dtd"  \
+    "$D/etc/xml/$_db"
+
+  xmlc "rewriteSystem"                                      \
+    "http://www.oasis-open.org/$_db/xml/$DTDV"              \
+    "file:///usr/share/xml/$_db/xml-dtd-$v"                 \
+    "$D/etc/xml/$_db"
+
+  xmlc "rewriteURI"                                         \
+    "http://www.oasis-open.org/$_db/xml/$DTDV"              \
+    "file:///usr/share/xml/$_db/xml-dtd-$v"                 \
+    "$D/etc/xml/$_db"
+
+  xmlc "delegateSystem"                                     \
+    "http://www.oasis-open.org/$_db/xml/$DTDV/"             \
+    "file:///etc/xml/$_db"                                  \
+    "$D/etc/xml/catalog"
+
+  xmlc "delegateURI"                                        \
+    "http://www.oasis-open.org/$_db/xml/$DTDV/"             \
+    "file:///etc/xml/$_db"                                  \
+    "$D/etc/xml/catalog"
+done
+
+}
