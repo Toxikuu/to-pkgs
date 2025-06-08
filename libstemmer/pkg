@@ -1,0 +1,29 @@
+#!/to
+
+n="libstemmer"
+v="3.0.1"
+tag="v$v"
+a="Stemming library supporting several languages"
+m="Tox"
+l="BSD-3-Clause"
+t="lib"
+u="https://github.com/snowballstem/snowball.git"
+
+s=(
+    "$u"
+    "https://gitlab.archlinux.org/archlinux/packaging/packages/snowball/-/raw/main/0001-Make-libstemmer-a-shared-library.patch -> so.patch"
+)
+
+d="glibc"
+
+b() {
+
+pat "$S/so.patch"
+mk
+
+install -vDm644 "include/$n.h" -t "$D/usr/include/"
+install -vDm644 "$n.so.0"         "$D/usr/lib/$n.so.0.0.0"
+ln -sv "$n.so.0.0.0"              "$D/usr/lib/$n.so.0"
+ln -sv "$n.so.0"                  "$D/usr/lib/$n.so"
+
+}

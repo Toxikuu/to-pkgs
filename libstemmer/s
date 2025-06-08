@@ -1,0 +1,33 @@
+{
+  "name": "libstemmer",
+  "version": "3.0.1",
+  "about": "Stemming library supporting several languages",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/snowballstem/snowball.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/snowballstem/snowball.git",
+      "dest": "snowball"
+    },
+    {
+      "kind": "Download",
+      "url": "https://gitlab.archlinux.org/archlinux/packaging/packages/snowball/-/raw/main/0001-Make-libstemmer-a-shared-library.patch",
+      "dest": "so.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
