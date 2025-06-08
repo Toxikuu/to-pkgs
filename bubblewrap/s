@@ -1,0 +1,48 @@
+{
+  "name": "bubblewrap",
+  "version": "0.11.0",
+  "about": "Low-level unprivileged sandboxing tool",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/containers/bubblewrap.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/containers/bubblewrap.git",
+      "dest": "bubblewrap"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": [
+    "NAMESPACES=*",
+    "USER_NS=*"
+  ]
+}

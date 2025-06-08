@@ -1,0 +1,31 @@
+#!/to
+
+n="bubblewrap"
+v="0.11.0"
+tag="v$v"
+a="Low-level unprivileged sandboxing tool"
+m="Tox"
+l="LGPL-2.0-or-later"
+t="lib utils"
+u="https://github.com/containers/$n.git"
+
+s="$u"
+
+d=(
+    "glibc"
+    "gcc"
+    "libcap"
+    "b,meson"
+    "b,samu"
+)
+
+kcfg=(
+    "NAMESPACES=*"
+    "USER_NS=*"
+)
+
+b() {
+
+def
+
+}
