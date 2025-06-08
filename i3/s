@@ -1,0 +1,68 @@
+{
+  "name": "i3",
+  "version": "cfa4cf16bea809c7c715a86c428757e577c85254",
+  "about": "A tiling window manager for X11",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/i3/i3.git",
+  "version_fetch": null,
+  "tags": [
+    "wm"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/i3/i3.git",
+      "dest": "i3"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libev",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "startup-notification",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-keysyms",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-cursor",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-xrm",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-wm",
+      "kind": "Required"
+    },
+    {
+      "name": "yajl",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

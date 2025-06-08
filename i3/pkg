@@ -1,0 +1,31 @@
+#!/to
+
+n="i3"
+v="cfa4cf16bea809c7c715a86c428757e577c85254"
+a="A tiling window manager for X11"
+m="Tox"
+l="BSD-3-Clause"
+t="wm"
+u="https://github.com/$n/$n.git"
+
+s="$u"
+
+d=(
+    "libev"
+    "libxkbcommon"
+    "pango"
+    "startup-notification"
+    "xcb-util-keysyms"
+    "xcb-util-cursor"
+    "xcb-util-xrm"
+    "xcb-util-wm"
+    "yajl"
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}
