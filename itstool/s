@@ -1,0 +1,41 @@
+{
+  "name": "itstool",
+  "version": "2.0.7",
+  "about": "XML translation tool",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-only"
+  ],
+  "upstream": "https://itstool.org/download.html",
+  "version_fetch": "curl -s https://itstool.org/download.html | grep -E 'itstool-[0-9]+' | head -n1 | grep -Eo 'itstool-[0-9]+\\.[0-9]+\\.[0-9]+'",
+  "tags": [
+    "i18n",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "http://files.itstool.org/itstool/itstool-2.0.7.tar.bz2",
+      "dest": "itstool-2.0.7.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "docbook-xml",
+      "kind": "Required"
+    },
+    {
+      "name": "python",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

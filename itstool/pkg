@@ -1,0 +1,31 @@
+#!/to
+
+n="itstool"
+v="2.0.7"
+a="XML translation tool"
+m="Tox"
+l="GPL-3.0-only"
+t="i18n utils"
+u="https://$n.org/download.html"
+vf="curl -s $u | grep -E '$n-[0-9]+' | head -n1 | grep -Eo '$n-[0-9]+\.[0-9]+\.[0-9]+'"
+
+s=(
+    "http://files.$n.org/$n/$n-$v.tar.bz2"
+)
+
+d=(
+    "b,bzip2"
+    "libxml2"
+    "docbook-xml"
+    "python"
+)
+
+b() {
+
+for patch in "$A/"*.patch; do
+    pat "$patch"
+done
+
+def
+
+}
