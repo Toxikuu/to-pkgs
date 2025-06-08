@@ -1,0 +1,19 @@
+#!/to
+
+n="libdaemon"
+v="0.14"
+a="UNIX daemon library"
+m="Tox"
+l="LGPL"
+t="lib"
+u="http://0pointer.de/lennart/projects/$n/"
+vf="curl -s '$u' | grep '<title>' | awk '{{print \$2}}' | cut -d'<' -f1"
+
+s="$u$n-$v.tar.gz"
+d="glibc"
+
+b() {
+
+def
+
+}
