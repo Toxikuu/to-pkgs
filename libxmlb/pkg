@@ -1,0 +1,34 @@
+#!/to
+
+n="libxmlb"
+v="0.3.22"
+a="A library to help create and query binary XML blobs"
+m="Tox"
+l="LGPL-2.1"
+t="lib"
+u="https://github.com/hughsie/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "glib"
+    "glibc"
+    "libstemmer"
+    "xz"
+    "zstd"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D stemmer=true
+    -D introspection=true
+    -D gtkdoc=false
+)
+
+def
+
+}
