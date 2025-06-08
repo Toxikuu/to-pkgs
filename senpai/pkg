@@ -1,0 +1,32 @@
+#!/to
+
+n="senpai"
+v="0.4.1"
+tag="v$v"
+a="A modern terminal IRC client"
+m="Tox"
+l="ISC"
+t="irc utils tui"
+u="https://git.sr.ht/~delthas/$n"
+
+s="$u"
+
+d=(
+    "glibc"
+    "b,go"
+    "b,scdoc"
+)
+
+b() {
+
+gob "./cmd/$n"
+mk "doc/$n."{1,5}
+mi PREFIX=/usr
+
+}
+
+t() {
+
+go test -v ./...
+
+}

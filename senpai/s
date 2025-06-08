@@ -1,0 +1,38 @@
+{
+  "name": "senpai",
+  "version": "0.4.1",
+  "about": "A modern terminal IRC client",
+  "maintainer": "Tox",
+  "licenses": [
+    "ISC"
+  ],
+  "upstream": "https://git.sr.ht/~delthas/senpai",
+  "version_fetch": null,
+  "tags": [
+    "irc",
+    "utils",
+    "tui"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.sr.ht/~delthas/senpai",
+      "dest": "senpai"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "go",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
