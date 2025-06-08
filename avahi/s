@@ -1,0 +1,67 @@
+{
+  "name": "avahi",
+  "version": "0.8",
+  "about": "Service discovery system",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL"
+  ],
+  "upstream": "https://github.com/avahi/avahi.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch",
+      "dest": "race.patch"
+    },
+    {
+      "kind": "Download",
+      "url": "https://github.com/avahi/avahi/releases/download/v0.8/avahi-0.8.tar.gz",
+      "dest": "avahi-0.8.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "gtk3",
+      "kind": "Required"
+    },
+    {
+      "name": "libdaemon",
+      "kind": "Required"
+    },
+    {
+      "name": "libevent",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "expat",
+      "kind": "Required"
+    },
+    {
+      "name": "gdbm",
+      "kind": "Required"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

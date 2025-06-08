@@ -1,0 +1,71 @@
+#!/to
+
+n="avahi"
+v="0.8"
+a="Service discovery system"
+m="Tox"
+l="LGPL"
+t="lib utils net"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "https://www.linuxfromscratch.org/patches/blfs/svn/$n-$v-ipv6_race_condition_fix-1.patch -> race.patch"
+    "${u%.git}/releases/download/v$v/$n-$v.tar.gz"
+)
+
+d=(
+    "glib"
+    "gtk3"
+    "libdaemon"
+    "libevent"
+    "dbus"
+    "expat"
+    "gdbm"
+    "libcap"
+    "b,setuptools"
+)
+
+b() {
+
+pat "$S/race.patch"
+
+# Fix a security vulnerability
+sed -i '426a if (events & AVAHI_WATCH_HUP) { \
+client_free(c); \
+return; \
+}' "$n-daemon/simple-protocol.c"
+
+_cfg=(
+    --disable-mono{,doc}
+    --enable-libevent
+    --disable-python
+    --disable-qt{3..5}
+    --disable-core-docs
+    --with-distro=none
+    --with-autoipd-{group,user}="$n"
+    --with-avahi-priv-access-group=network
+    --with-systemdsystemunitdir=no
+    --with-dbus-system-address='unix:path=/run/dbus/system_bus_socket'
+
+    --enable-gtk3
+    --disable-tests
+    --enable-libdaemon
+    --enable-dbus
+
+    --disable-compat-{howl,libdns_sd}
+)
+
+def
+
+}
+
+i() {
+
+groupadd -fg 86 network
+groupadd -fg 84 "$n"
+if ! id "$n"; then
+    useradd -c "${n^} Daemon Owner" -d "/run/$n-daemon" -u 84 \
+        -g "$n" -s /bin/false "$n"
+fi
+
+}
