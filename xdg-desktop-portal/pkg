@@ -1,0 +1,39 @@
+#!/to
+
+n="xdg-desktop-portal"
+v="1.20.3"
+a="Desktop integration portal"
+m="Tox"
+l="LGPL-2.1"
+t="lib"
+u="https://github.com/flatpak/$n.git"
+
+s="$u"
+
+d=(
+    "gcc"
+    "glib"
+    "glibc"
+    "libgudev"
+    "bubblewrap"
+    "fuse3"
+    "gdk-pixbuf"
+    "json-glib"
+    "pipewire"
+    "r,dbus"
+    # "r,xdg-desktop-portal-gtk"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D tests=disabled
+)
+
+def
+rm -rvf /usr/lib/systemd
+
+}

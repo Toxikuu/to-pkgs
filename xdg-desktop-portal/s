@@ -1,0 +1,72 @@
+{
+  "name": "xdg-desktop-portal",
+  "version": "1.20.3",
+  "about": "Desktop integration portal",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1"
+  ],
+  "upstream": "https://github.com/flatpak/xdg-desktop-portal.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/flatpak/xdg-desktop-portal.git",
+      "dest": "xdg-desktop-portal"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libgudev",
+      "kind": "Required"
+    },
+    {
+      "name": "bubblewrap",
+      "kind": "Required"
+    },
+    {
+      "name": "fuse3",
+      "kind": "Required"
+    },
+    {
+      "name": "gdk-pixbuf",
+      "kind": "Required"
+    },
+    {
+      "name": "json-glib",
+      "kind": "Required"
+    },
+    {
+      "name": "pipewire",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Runtime"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
