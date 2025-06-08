@@ -1,0 +1,34 @@
+#!/to
+
+n="xdg-dbus-proxy"
+v="0.1.6"
+a="null"
+m="Tox"
+l="LGPL-2.1"
+t="utils"
+u="https://github.com/flatpak/$n.git"
+
+s="$u"
+
+d=(
+    "glib"
+    "dbus"
+    "gcc"
+    "glib"
+    "glibc"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+sa test
+
+}

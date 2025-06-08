@@ -1,0 +1,52 @@
+{
+  "name": "xdg-dbus-proxy",
+  "version": "0.1.6",
+  "about": "null",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1"
+  ],
+  "upstream": "https://github.com/flatpak/xdg-dbus-proxy.git",
+  "version_fetch": null,
+  "tags": [
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/flatpak/xdg-dbus-proxy.git",
+      "dest": "xdg-dbus-proxy"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
