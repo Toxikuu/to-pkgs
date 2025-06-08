@@ -57,10 +57,6 @@
       "kind": "Required"
     },
     {
-      "name": "which",
-      "kind": "Required"
-    },
-    {
       "name": "xz",
       "kind": "Required"
     },

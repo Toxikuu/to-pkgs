@@ -22,7 +22,6 @@ d=(
     "util-linux"
     "udev"
     "elogind"
-    "which"
     "xz"
     "zlib"
     "gpgme"
