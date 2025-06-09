@@ -28,18 +28,18 @@ qa=(
 )
 
 nvsym() {
-    pushd $(dirname $1) &>/dev/null
+    pushd $(dirname $1) > /dev/null
 
     origin=$(basename $1)
     soname=$(objdump -p $origin.so.*.*.* |
         grep 'SONAME' | awk '{print $2}')
 
     if [ -n $soname ]; then
-        [ -e $soname  ]   || ln -sv $origin.so.*.*.* $soname
+        [ -e $soname ]    || ln -sv $origin.so.*.*.* $soname
         [ -e $origin.so ] || ln -sv $soname $origin.so
     fi
 
-    popd &>/dev/null
+    popd > /dev/null
 }
 
 xt() {
