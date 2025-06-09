@@ -7,7 +7,7 @@ m="Tox"
 l="GPL-3.0-or-later"
 t="shell core"
 u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
-vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|diff|doc|\.sig|patches' | head -n1 | cut -d \" -f8 | sed 's,.tar.gz,,'"
+vf="curl -s '$u' | grep '$n-' | grep -Ev -- '-beta|-alpha|diff|doc|\.sig|patches' | head -n1 | cut -d '\"' -f8 | sed 's,.tar.gz,,'"
 
 s=(
     "https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
