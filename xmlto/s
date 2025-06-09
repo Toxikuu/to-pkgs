@@ -1,0 +1,29 @@
+{
+  "name": "xmlto",
+  "version": "0.0.29",
+  "about": "Convert xml to many other formats",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://pagure.io/xmlto.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://pagure.io/xmlto.git",
+      "dest": "xmlto"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxslt",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

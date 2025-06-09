@@ -1,0 +1,21 @@
+#!/to
+
+n="xmlto"
+v="0.0.29"
+a="Convert xml to many other formats"
+m="Tox"
+l="GPL"
+t="lib utils"
+u="https://pagure.io/$n.git"
+
+s="$u"
+d=(
+    "libxslt"
+)
+
+b() {
+
+autoreconf -fiv
+def
+
+}
