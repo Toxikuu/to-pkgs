@@ -1,6 +1,6 @@
 {
   "name": "libdrm",
-  "version": "2.4.124",
+  "version": "2.4.125",
   "about": "Userspace interface to kernel DRM services",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz",
-      "dest": "libdrm-2.4.124.tar.xz"
+      "url": "https://dri.freedesktop.org/libdrm/libdrm-2.4.125.tar.xz",
+      "dest": "libdrm-2.4.125.tar.xz"
     }
   ],
   "dependencies": [

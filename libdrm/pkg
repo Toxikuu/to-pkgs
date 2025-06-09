@@ -1,7 +1,7 @@
 #!/to
 
 n="libdrm"
-v="2.4.124"
+v="2.4.125"
 a="Userspace interface to kernel DRM services"
 m="Tox"
 l="MIT"
