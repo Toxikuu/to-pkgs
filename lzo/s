@@ -1,0 +1,31 @@
+{
+  "name": "lzo",
+  "version": "2.10",
+  "about": "Portable lossless data compression library",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://www.oberhumer.com/opensource/lzo/",
+  "version_fetch": "curl -s 'https://www.oberhumer.com/opensource/lzo/' | grep -Eo 'Version [0-9]+\\.[0-9]+\\.*[0-9]*' | awk '{print $2}'",
+  "tags": [
+    "lib",
+    "z",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz",
+      "dest": "lzo-2.10.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

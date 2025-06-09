@@ -1,0 +1,27 @@
+#!/to
+
+n="lzo"
+v="2.10"
+a="Portable lossless data compression library"
+m="Tox"
+l="GPL"
+t="lib z utils cli"
+u="https://www.oberhumer.com/opensource/$n/"
+vf="curl -s '$u' | grep -Eo 'Version [0-9]+\.[0-9]+\.*[0-9]*' | awk '{print \$2}'"
+
+s="${u}download/$n-$v.tar.gz"
+d="glibc"
+
+b() {
+
+_cfg=( --enable-shared )
+def
+
+}
+
+t() {
+
+mk check
+mk test
+
+}
