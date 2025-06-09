@@ -1,0 +1,170 @@
+#!/to
+
+n="docbook-xsl"
+_db="${n%-*}"
+v="1.79.2"
+a="XML stylesheets for DocBook XML transformations"
+m="Tox"
+l="Custom"
+t=""
+u="https://github.com/$_db/xslt10-stylesheets.git"
+vf="gr | grep -Ev '[a-Z]|-' | sort -V"
+
+s=(
+    "${u%.git}/releases/download/release/$v/$n"{,-nons}"-$v.tar.bz2"
+)
+
+d=(
+    "docbook-xml" # depend on docbook's catalog
+    "r,libxml2"
+    "b,bzip2"
+)
+
+xmlc() { xmlcatalog --noout --add "$@"; }
+
+b() {
+
+patch -Np2 -i "$A/recurstring.patch" -d "$n-$v"
+patch -Np2 -i "$A/recurstring.patch" -d "$n-nons-$v"
+
+cd "$B/$n-$v"
+dir="$D/usr/share/xml/$_db/xsl-stylesheets-$v"
+install -vdm755 "$dir"
+
+cp -rv  VERSION assembly common eclipse epub epub3 extensions fo        \
+        highlighting html htmlhelp images javahelp lib manpages params  \
+        profiling roundtrip slides template tests tools webhelp website \
+        xhtml xhtml-1_1 xhtml5                                          \
+    "$dir"
+
+ln -sv  VERSION "$dir/VERSION.xsl"
+
+
+cd "$B/$n-nons-$v"
+dir="$D/usr/share/xml/$_db/xsl-stylesheets-nons-$v"
+install -vdm755 "$dir"
+
+cp -rv VERSION assembly common eclipse epub epub3 extensions fo        \
+       highlighting html htmlhelp images javahelp lib manpages params  \
+       profiling roundtrip slides template tests tools webhelp website \
+       xhtml xhtml-1_1 xhtml5                                          \
+    "$dir"
+
+ln -sv VERSION "$dir/VERSION.xsl"
+
+}
+
+i() {
+
+_gen_ns_catalog
+_gen_nons_catalog
+
+}
+
+_gen_nons_catalog() {
+
+xmlc "rewriteSystem"                                            \
+           "http://cdn.$_db.org/release/xsl/$v"                 \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteSystem"                                            \
+           "https://cdn.$_db.org/release/xsl/$v"                \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"         ln -s VERSION /usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2/VERSION.xsl &&                                      \
+           "http://cdn.$_db.org/release/xsl/$v"                 \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"                                               \
+           "https://cdn.$_db.org/release/xsl/$v"                \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteSystem"                                            \
+           "http://cdn.$_db.org/release/xsl/current"            \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteSystem"                                            \
+           "https://cdn.$_db.org/release/xsl/current"           \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"                                               \
+           "http://cdn.$_db.org/release/xsl/current"            \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"                                               \
+           "https://cdn.$_db.org/release/xsl/current"           \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteSystem"                                            \
+           "http://$_db.sourceforge.net/release/xsl-ns/current" \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"                                               \
+           "http://$_db.sourceforge.net/release/xsl-ns/current" \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+}
+
+_gen_ns_catalog() {
+
+xmlc "rewriteSystem"                                            \
+           "http://cdn.$_db.org/release/xsl/$v"                 \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteSystem"                                            \
+           "https://cdn.$_db.org/release/xsl/$v"                \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"                                               \
+           "http://cdn.$_db.org/release/xsl/$v"                 \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"                                               \
+           "https://cdn.$_db.org/release/xsl/$v"                \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteSystem"                                            \
+           "http://cdn.$_db.org/release/xsl/current"            \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteSystem"                                            \
+           "https://cdn.$_db.org/release/xsl/current"           \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"                                               \
+           "http://cdn.$_db.org/release/xsl/current"            \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"                                               \
+           "https://cdn.$_db.org/release/xsl/current"           \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteSystem"                                            \
+           "http://$_db.sourceforge.net/release/xsl-ns/current" \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+xmlc "rewriteURI"                                               \
+           "http://$_db.sourceforge.net/release/xsl-ns/current" \
+           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "/etc/xml/catalog"
+
+}

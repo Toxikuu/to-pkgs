@@ -1,0 +1,39 @@
+{
+  "name": "docbook-xsl",
+  "version": "1.79.2",
+  "about": "XML stylesheets for DocBook XML transformations",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://github.com/docbook/xslt10-stylesheets.git",
+  "version_fetch": "gr | grep -Ev '[a-Z]|-' | sort -V",
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-1.79.2.tar.bz2",
+      "dest": "docbook-xsl-1.79.2.tar.bz2"
+    },
+    {
+      "kind": "Download",
+      "url": "https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-nons-1.79.2.tar.bz2",
+      "dest": "docbook-xsl-nons-1.79.2.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "docbook-xml",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Runtime"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
