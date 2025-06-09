@@ -1,6 +1,6 @@
 {
   "name": "x264",
-  "version": "291476d73386eb6f0362214f28dce058c3fff3d9",
+  "version": "b35605ace3ddf7c1a5d67a2eb553f034aef41d55",
   "about": "The best H.264 encoder",
   "maintainer": "Tox",
   "licenses": [
