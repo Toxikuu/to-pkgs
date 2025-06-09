@@ -40,3 +40,9 @@ _cfg=(
 def
 
 }
+
+i() {
+
+setcap cap_net_raw+ep /bin/ping
+
+}
