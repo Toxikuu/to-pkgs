@@ -23,16 +23,24 @@ d=(
     "b,libelf"
 )
 
+qa=(
+    "brokensymlinks"
+)
+
 nvsym() {
-    soname=$(readelf -d $1.so.*.*.* |
+    pushd $(dirname $1) &>/dev/null
+    orig=$(basename $1)
+
+    soname=$(readelf -d $orig.so.*.*.* |
         grep '(SONAME)' | sed -n 's/.*\[\(.*\)\]/\1/p')
 
     if test -n $soname; then
-        test -e $(dirname $1)/$soname ||
-            ln -svf $1.so.*.*.* $(dirname $1)/$soname
-        test -e $1.so ||
-            ln -svf $soname $1.so
+        test -e $soname ||
+            ln -svf $orig.so.*.*.* $soname
+        test -e $orig.so ||
+            ln -svf $soname $orig.so
     fi
+    popd &>/dev/null
 }
 
 b() {
