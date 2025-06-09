@@ -1,0 +1,53 @@
+{
+  "name": "dconf",
+  "version": "0.40.0",
+  "about": "Configuration database system",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL"
+  ],
+  "upstream": "https://gitlab.gnome.org/GNOME/dconf.git",
+  "version_fetch": "gr | sed s,dconf-,, | sort -V",
+  "tags": [
+    "utils",
+    "db"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz",
+      "dest": "dconf-0.40.0.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "libxslt",
+      "kind": "Required"
+    },
+    {
+      "name": "bash-completion",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "vala",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
