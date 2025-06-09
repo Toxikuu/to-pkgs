@@ -1,0 +1,45 @@
+{
+  "name": "xdg-utils",
+  "version": "1.2.1",
+  "about": "Desktop integration utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/xdg/xdg-utils.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/xdg/xdg-utils.git",
+      "dest": "xdg-utils"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "file",
+      "kind": "Required"
+    },
+    {
+      "name": "xprop",
+      "kind": "Required"
+    },
+    {
+      "name": "xset",
+      "kind": "Required"
+    },
+    {
+      "name": "lynx",
+      "kind": "Build"
+    },
+    {
+      "name": "xmlto",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

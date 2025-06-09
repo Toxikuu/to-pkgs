@@ -1,0 +1,25 @@
+#!/to
+
+n="xdg-utils"
+v="1.2.1"
+tag="v$v"
+a="Desktop integration utilities"
+m="Tox"
+l="MIT"
+t="utils cli"
+u="https://gitlab.freedesktop.org/xdg/$n.git"
+
+s="$u"
+d=(
+    "file"
+    "xprop"
+    "xset"
+    "b,lynx"
+    "b,xmlto"
+)
+
+b() {
+
+def
+
+}
