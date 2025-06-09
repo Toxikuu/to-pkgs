@@ -73,7 +73,7 @@ xmlc "rewriteSystem"                                            \
            "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
            "/etc/xml/catalog"
 
-xmlc "rewriteURI"         ln -s VERSION /usr/share/xml/docbook/xsl-stylesheets-nons-1.79.2/VERSION.xsl &&                                      \
+xmlc "rewriteURI"                                               \
            "http://cdn.$_db.org/release/xsl/$v"                 \
            "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
            "/etc/xml/catalog"
