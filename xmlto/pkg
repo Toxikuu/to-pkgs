@@ -2,7 +2,7 @@
 
 n="xmlto"
 v="0.0.29"
-a="Convert xml to many other formats"
+a="Convert XML to many other formats"
 m="Tox"
 l="GPL"
 t="lib utils"

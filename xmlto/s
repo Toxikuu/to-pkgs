@@ -1,7 +1,7 @@
 {
   "name": "xmlto",
   "version": "0.0.29",
-  "about": "Convert xml to many other formats",
+  "about": "Convert XML to many other formats",
   "maintainer": "Tox",
   "licenses": [
     "GPL"
