@@ -1,0 +1,92 @@
+{
+  "name": "appstream",
+  "version": "1.0.5",
+  "about": "Provides a standard for creating app stores across distributions",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/ximion/appstream.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.5.tar.xz",
+      "dest": "AppStream-1.0.5.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "elogind",
+      "kind": "Required"
+    },
+    {
+      "name": "itstool",
+      "kind": "Required"
+    },
+    {
+      "name": "libyaml",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "libxmlb",
+      "kind": "Required"
+    },
+    {
+      "name": "libstemmer",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "libxslt",
+      "kind": "Required"
+    },
+    {
+      "name": "docbook-xsl",
+      "kind": "Required"
+    },
+    {
+      "name": "docbook-xml",
+      "kind": "Required"
+    },
+    {
+      "name": "gperf",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

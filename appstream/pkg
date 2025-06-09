@@ -1,0 +1,74 @@
+#!/to
+
+n="appstream"
+v="1.0.5"
+a="Provides a standard for creating app stores across distributions"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib"
+u="https://github.com/ximion/$n.git"
+
+s=(
+    "https://www.freedesktop.org/software/$n/releases/AppStream-$v.tar.xz"
+)
+
+d=(
+    "curl"
+    "elogind"
+    "itstool"
+    "libyaml"
+    "libxml2"
+    "libxmlb"
+    "libstemmer"
+
+    # "cairo"
+    # "fontconfig"
+    # "freetype"
+    "gcc"
+    # "gdk-pixbuf"
+    "glib"
+    "glibc"
+    #
+    # "librsvg"
+    # "pango"
+    "zstd"
+    "libxslt"
+    "docbook-xsl"
+    "docbook-xml"
+
+    "b,gperf"
+    "b,meson"
+    "b,ninja" # explicitly wanted thank you appstream
+)
+
+b() {
+
+_cfg=(
+    -D apidocs=false
+    -D stemming=true
+
+    -D vapi=false
+    -D qt=false
+    -D compose=false
+    -D apt-support=false
+    -D gir=true
+    -D svg-support=true
+    -D docs=false
+
+    -D maintainer=false
+    -D static-analysis=false
+)
+
+sed -i '229d' meson.build
+def
+
+# Wanted
+install -vDm644 "$A/org.linuxfromscratch.lfs.xml" -t "$D/usr/share/metainfo/"
+
+}
+
+t() {
+
+nj test
+
+}
