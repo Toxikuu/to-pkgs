@@ -43,27 +43,40 @@ nvsym() {
     popd &>/dev/null
 }
 
-b() {
-
-kver=$(</usr/src/linux/version)
+xt() {
 
 sh "$S/${n^^}-Linux-x86_64-$v.run" -x
-cd "${n^^}-Linux-x86_64-$v"
+
+}
+
+b() {
+
+# Setup
+shopt -u nullglob
+kver=$(</usr/src/linux/version)
 
 # Patch NVIDIA's broken ass drivers
 patch -d kernel -Np1 -i "$S/$n-$v-kernel_gpl_cachyos-1.patch"
 
 # Build and install modules
-cd kernel-open
+pushd kernel-open
+
 _cfg=(
-    KERNEL_SOURCES="/usr/src/linux"
+    NV_VERBOSE=1
     KERNEL_UNAME="$kver"
-    KERNEL_MODLIB="$D/usr/lib/modules/$kver"
+    KERNEL_MODLIB="$D/usr/lib/modules/$kver" # TODO: NVIDIA's Makefile appears to ignore this ??
+    KERNEL_SOURCES="/usr/src/linux"
     NV_EXCLUDE_KERNEL_MODULES="$n-peermem $n-uvm"
 )
 mk "${_cfg[@]}"
 mk "${_cfg[@]}" modules_install
-cd ..
+[ -e "$D/usr/lib/modules/$kver/kernel/drivers/video/$n.ko" ] ||
+    install -vDm644 "/usr/lib/modules/$kver/kernel/drivers/video/$n"* \
+        -t "$D/usr/lib/modules/$kver/kernel/drivers/video/"
+[ -e "$D/usr/lib/modules/$kver/kernel/drivers/video/$n.ko" ] ||
+    die "Kernel modules weren't installed where they belong"
+
+popd
 
 # Install firmware
 install -vDm644 "firmware/gsp_tu10x.bin"        -t "$D/usr/lib/firmware/$n/$v/"
