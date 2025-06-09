@@ -10,7 +10,7 @@ l=(
     "Apache-2.0"
     "MIT"
 )
-t="doc core utils cli"
+t="doc utils cli"
 u="https://github.com/$n-rs/$n.git"
 
 s="$u"
@@ -23,7 +23,7 @@ d=(
 b() {
 
 cbr
-install -vDm755 "target/release/$an"    -t "$D/usr/bin/$an"
+install -vDm755 "target/release/$an"    -t "$D/usr/bin/"
 
 # Install completions
 install -vDm644 "completion/bash_$n"    "$D/usr/share/bash-completion/completions/$an"
