@@ -29,17 +29,16 @@ qa=(
 
 nvsym() {
     pushd $(dirname $1) &>/dev/null
-    orig=$(basename $1)
 
-    soname=$(readelf -d $orig.so.*.*.* |
-        grep '(SONAME)' | sed -n 's/.*\[\(.*\)\]/\1/p')
+    origin=$(basename $1)
+    soname=$(objdump -p $origin.so.*.*.* |
+        grep 'SONAME' | awk '{print $2}')
 
-    if test -n $soname; then
-        test -e $soname ||
-            ln -svf $orig.so.*.*.* $soname
-        test -e $orig.so ||
-            ln -svf $soname $orig.so
+    if [ -n $soname ]; then
+        [ -e $soname  ]   || ln -sv $origin.so.*.*.* $soname
+        [ -e $origin.so ] || ln -sv $soname $origin.so
     fi
+
     popd &>/dev/null
 }
 
