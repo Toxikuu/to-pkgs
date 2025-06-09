@@ -24,6 +24,7 @@ d=(
     "libpciaccess"
     "libtirpc"
     "libdrm"
+    "libepoxy"
     "mesa"
     "nvidia" # Needed for dri.pc
 
@@ -62,7 +63,7 @@ b() {
 pat "$S/$n-tearfree_backport-3.patch"
 
 _cfg=(
-    -D glamor=false
+    -D glamor=true
     -D secure-rpc=true
     -D xkb_output_dir=/var/lib/xkb
 )
