@@ -43,6 +43,6 @@ def
 
 i() {
 
-setcap cap_net_raw+ep /bin/ping
+setcap cap_net_raw+ep /usr/bin/ping
 
 }
