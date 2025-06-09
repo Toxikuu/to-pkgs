@@ -28,15 +28,23 @@ qa=(
 )
 
 nvsym() {
-    pushd $(dirname $1) > /dev/null
+    pushd "$(dirname $1)" > /dev/null
 
-    origin=$(basename $1)
-    soname=$(objdump -p $origin.so.*.*.* |
+    origin="$(basename $1)"
+    if [ "$origin" = "libOpenCL" ]; then
+        VER="1.0.0"
+    else
+        VER="$v"
+    fi
+
+    soname=$(objdump -p "$origin.so.$VER" |
         grep 'SONAME' | awk '{print $2}')
 
-    if [ -n $soname ]; then
-        [ -e $soname ]    || ln -sv $origin.so.*.*.* $soname
-        [ -e $origin.so ] || ln -sv $soname $origin.so
+    if [ -n "$soname" ]; then
+        if [ "$origin.so.$VER" != "$soname" ]; then
+            ln -sfv "$origin.so.$VER" "$soname"
+        fi
+        ln -sfv "$soname" "$origin.so"
     fi
 
     popd > /dev/null
