@@ -1,0 +1,29 @@
+{
+  "name": "bash-completion",
+  "version": "2.16.0",
+  "about": "Programmable completions for bash",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://github.com/scop/bash-completion.git",
+  "version_fetch": "gr | vfs | grep '\\.' | tr -d v | sort -V",
+  "tags": [
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/scop/bash-completion.git",
+      "dest": "bash-completion"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bash",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,24 @@
+#!/to
+
+n="bash-completion"
+v="2.16.0"
+a="Programmable completions for bash"
+m="Tox"
+l="GPL-2.0-only"
+t="lib utils"
+u="https://github.com/scop/$n.git"
+vf="gr | vfs | grep '\.' | tr -d v | sort -V"
+
+s="$u"
+d="bash"
+
+b() {
+
+autoreconf -fiv
+def
+
+# Remove extraneous completions
+rm -vf "$D/usr/share/$n-completions/makepkg"
+rm -vf "$D/usr/share/$n-completions/secret-tool"
+
+}
