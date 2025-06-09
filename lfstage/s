@@ -1,6 +1,6 @@
 {
   "name": "lfstage",
-  "version": "bea9488262bc07b1ff81b4ce0142a35e7b0cf5eb",
+  "version": "d2bcde008e1cc1633ed1a40a1cccaa079f083e99",
   "about": "LFS stage file generator",
   "maintainer": "Tox",
   "licenses": [
