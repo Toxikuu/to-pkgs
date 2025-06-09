@@ -64,53 +64,53 @@ _gen_nons_catalog
 _gen_nons_catalog() {
 
 xmlc "rewriteSystem"                                            \
-           "http://cdn.$_db.org/release/xsl/$v"                 \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "http://cdn.$_db.org/release/xsl-nons/$v"            \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 xmlc "rewriteSystem"                                            \
-           "https://cdn.$_db.org/release/xsl/$v"                \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "https://cdn.$_db.org/release/xsl-nons/$v"           \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 xmlc "rewriteURI"                                               \
-           "http://cdn.$_db.org/release/xsl/$v"                 \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "http://cdn.$_db.org/release/xsl-nons/$v"            \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 xmlc "rewriteURI"                                               \
-           "https://cdn.$_db.org/release/xsl/$v"                \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "https://cdn.$_db.org/release/xsl-nons/$v"           \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 xmlc "rewriteSystem"                                            \
-           "http://cdn.$_db.org/release/xsl/current"            \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "http://cdn.$_db.org/release/xsl-nons/current"       \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 xmlc "rewriteSystem"                                            \
-           "https://cdn.$_db.org/release/xsl/current"           \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "https://cdn.$_db.org/release/xsl-nons/current"      \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 xmlc "rewriteURI"                                               \
-           "http://cdn.$_db.org/release/xsl/current"            \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "http://cdn.$_db.org/release/xsl-nons/current"       \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 xmlc "rewriteURI"                                               \
-           "https://cdn.$_db.org/release/xsl/current"           \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "https://cdn.$_db.org/release/xsl-nons/current"      \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 xmlc "rewriteSystem"                                            \
-           "http://$_db.sourceforge.net/release/xsl-ns/current" \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "http://$_db.sourceforge.net/release/xsl/current"    \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 xmlc "rewriteURI"                                               \
-           "http://$_db.sourceforge.net/release/xsl-ns/current" \
-           "/usr/share/xml/$_db/xsl-stylesheets-$v"             \
+           "http://$_db.sourceforge.net/release/xsl/current"    \
+           "/usr/share/xml/$_db/xsl-stylesheets-nons-$v"        \
            "/etc/xml/catalog"
 
 }
