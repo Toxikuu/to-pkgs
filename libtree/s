@@ -1,0 +1,29 @@
+{
+  "name": "libtree",
+  "version": "95d8992968a18ae957fef723f103b416d0843398",
+  "about": "ldd as a tree",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/haampie/libtree",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/haampie/libtree",
+      "dest": "libtree"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

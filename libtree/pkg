@@ -1,0 +1,25 @@
+#!/to
+
+n="libtree"
+v="95d8992968a18ae957fef723f103b416d0843398"
+a="ldd as a tree"
+m="Tox"
+l="MIT"
+t="utils cli"
+u="https://github.com/haampie/libtree"
+
+s="$u"
+d="glibc"
+
+b() {
+
+mk
+mi PREFIX=/usr
+
+}
+
+t() {
+
+mk check
+
+}
