@@ -33,11 +33,11 @@
     },
     {
       "name": "docbook-xml",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "docbook-xsl",
-      "kind": "Runtime"
+      "kind": "Required"
     }
   ],
   "kcfg": []

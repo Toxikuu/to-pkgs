@@ -14,7 +14,7 @@ d=(
     "glibc"
     "libxml2"
     "xz"
-    r,docbook-x{m,s}l
+    docbook-x{m,s}l # technically runtime, but libxslt is useless without them
 )
 
 b() {
