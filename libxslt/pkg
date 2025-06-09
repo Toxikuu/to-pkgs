@@ -1,0 +1,31 @@
+#!/to
+
+n="libxslt"
+v="1.1.43"
+tag="v$v"
+a="XSL transformation library"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://gitlab.gnome.org/GNOME/$n.git"
+
+s="$u"
+d=(
+    "glibc"
+    "libxml2"
+    "xz"
+    r,docbook-x{m,s}l
+)
+
+b() {
+
+autoreconf -fiv
+def
+
+}
+
+t() {
+
+mk check
+
+}

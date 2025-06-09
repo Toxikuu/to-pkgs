@@ -1,0 +1,44 @@
+{
+  "name": "libxslt",
+  "version": "1.1.43",
+  "about": "XSL transformation library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.gnome.org/GNOME/libxslt.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.gnome.org/GNOME/libxslt.git",
+      "dest": "libxslt"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "docbook-xml",
+      "kind": "Runtime"
+    },
+    {
+      "name": "docbook-xsl",
+      "kind": "Runtime"
+    }
+  ],
+  "kcfg": []
+}
