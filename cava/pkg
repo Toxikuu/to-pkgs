@@ -9,7 +9,6 @@ t="tui audio utils"
 u="https://github.com/karlstav/$n.git"
 
 s="$u"
-
 d=(
     "alsa-lib"
     "fftw"
@@ -21,6 +20,7 @@ d=(
 
 b() {
 
+echo "${v:0:8}" > version
 autoreconf -fiv
 def
 
