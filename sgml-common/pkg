@@ -1,0 +1,22 @@
+#!/to
+
+n="sgml-common"
+v="0.6.3"
+a="Tools for maintaining centralized SGML catalogs"
+m="Tox"
+l="GPL-1.0-or-later"
+t=""
+u="https://www.sourceware.org/pub/docbook-tools/new-trials/SOURCES/"
+vf="no"
+
+s=(
+    "$u$n-$v.tgz"
+)
+
+b() {
+
+pat "$A/man.patch"
+autoreconf -fiv
+def
+
+}

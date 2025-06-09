@@ -1,0 +1,21 @@
+{
+  "name": "sgml-common",
+  "version": "0.6.3",
+  "about": "Tools for maintaining centralized SGML catalogs",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-1.0-or-later"
+  ],
+  "upstream": "https://www.sourceware.org/pub/docbook-tools/new-trials/SOURCES/",
+  "version_fetch": "no",
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.sourceware.org/pub/docbook-tools/new-trials/SOURCES/sgml-common-0.6.3.tgz",
+      "dest": "sgml-common-0.6.3.tgz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
