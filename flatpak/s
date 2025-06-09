@@ -1,0 +1,165 @@
+{
+  "name": "flatpak",
+  "version": "1.16.1",
+  "about": "Linux application sandboxing and distribution framework",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1"
+  ],
+  "upstream": "https://github.com/flatpak/flatpak.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/flatpak/flatpak/releases/download/1.16.1/flatpak-1.16.1.tar.xz",
+      "dest": "flatpak-1.16.1.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "appstream",
+      "kind": "Required"
+    },
+    {
+      "name": "bubblewrap",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "fuse3",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "gpgme",
+      "kind": "Required"
+    },
+    {
+      "name": "json-glib",
+      "kind": "Required"
+    },
+    {
+      "name": "libsoup3",
+      "kind": "Required"
+    },
+    {
+      "name": "elogind",
+      "kind": "Required"
+    },
+    {
+      "name": "ostree",
+      "kind": "Required"
+    },
+    {
+      "name": "p11-kit",
+      "kind": "Required"
+    },
+    {
+      "name": "pyparsing",
+      "kind": "Build"
+    },
+    {
+      "name": "gdk-pixbuf",
+      "kind": "Required"
+    },
+    {
+      "name": "polkit",
+      "kind": "Required"
+    },
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "xdg-utils",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "avahi",
+      "kind": "Required"
+    },
+    {
+      "name": "bubblewrap",
+      "kind": "Required"
+    },
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "dconf",
+      "kind": "Required"
+    },
+    {
+      "name": "libarchive",
+      "kind": "Required"
+    },
+    {
+      "name": "libseccomp",
+      "kind": "Required"
+    },
+    {
+      "name": "libxau",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "xdg-dbus-proxy",
+      "kind": "Required"
+    },
+    {
+      "name": "xdg-desktop-portal",
+      "kind": "Required"
+    },
+    {
+      "name": "shadow",
+      "kind": "Build"
+    },
+    {
+      "name": "socat",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,74 @@
+#!/to
+
+n="flatpak"
+v="1.16.1"
+a="Linux application sandboxing and distribution framework"
+m="Tox"
+l="LGPL-2.1"
+t="utils lib"
+u="https://github.com/$n/$n.git"
+
+s="${u%.git}/releases/download/$v/$n-$v.tar.xz"
+d=(
+    "gcc"
+    "glibc"
+
+    "appstream"
+    "bubblewrap"
+    "dbus"
+    "fuse3"
+    "glib"
+    "gpgme"
+    "json-glib"
+    "libsoup3"
+    "elogind"
+    "ostree"
+    "p11-kit"
+    "b,pyparsing"
+
+    "gdk-pixbuf"
+    "polkit"
+    "python"
+    "xdg-utils"
+    "wayland"
+    "zstd"
+    "b,wayland-protocols"
+
+    "avahi"
+    "bubblewrap"
+    "curl"
+    "dconf"
+    "libarchive"
+    "libseccomp"
+    "libxau"
+    "libxml2"
+    "xdg-dbus-proxy"
+    "xdg-desktop-portal"
+
+    "b,shadow" # TODO: Figure out a better way to handle i() calling shadow commands
+    "b,socat" # tests
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D systemd=disabled
+    -D tests=true
+    -D selinux_module=disabled
+    -D system_dbus_proxy=xdg-dbus-proxy
+    -D system_bubblewrap=bwrap
+    -D dbus_config_dir=/usr/share/dbus-1/system.d
+)
+
+def
+
+}
+
+t() {
+
+# Tests fail in the chroot
+: || sa test
+
+}
