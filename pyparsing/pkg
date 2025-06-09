@@ -1,0 +1,25 @@
+#!/to
+
+n="pyparsing"
+v="3.2.3"
+a="General purpose parsing module"
+m="Tox"
+l="MIT"
+t="lib py"
+u="https://github.com/$n/$n.git"
+vf="gr | vfs | grep -v _"
+
+s="$u"
+d=(
+    "python"
+    "b,setuptools"
+)
+
+b() {
+
+with pip
+
+pipb
+pipi
+
+}

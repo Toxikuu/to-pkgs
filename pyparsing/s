@@ -1,0 +1,33 @@
+{
+  "name": "pyparsing",
+  "version": "3.2.3",
+  "about": "General purpose parsing module",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/pyparsing/pyparsing.git",
+  "version_fetch": "gr | vfs | grep -v _",
+  "tags": [
+    "lib",
+    "py"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/pyparsing/pyparsing.git",
+      "dest": "pyparsing"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
