@@ -1,7 +1,7 @@
 #!/to
 
 n="xkeyboard-config"
-v="2.44"
+v="2.45"
 a="X keyboard configuration database"
 m="Tox"
 l="Custom"
@@ -15,6 +15,10 @@ s=(
 d=(
     "b,muon"
     "b,samu"
+)
+
+qa=(
+    "!brokensymlinks"
 )
 
 b() {
