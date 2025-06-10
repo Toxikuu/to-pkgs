@@ -1,6 +1,6 @@
 {
   "name": "sudo-rs",
-  "version": "fbcc6a1edb344b171807d682ded1b62cfe2c79cf",
+  "version": "65576dd2db0c22b5678f527e66c310f308e63aff",
   "about": "Privilege escalation utility",
   "maintainer": "Tox",
   "licenses": [
@@ -22,20 +22,16 @@
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
-    },
-    {
-      "name": "rust",
-      "kind": "Build"
-    },
-    {
       "name": "glibc",
       "kind": "Required"
     },
     {
       "name": "pam",
       "kind": "Required"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
     },
     {
       "name": "procps-ng",

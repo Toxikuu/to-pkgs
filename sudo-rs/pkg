@@ -1,39 +1,27 @@
 #!/to
 
 n="sudo-rs"
-v="fbcc6a1edb344b171807d682ded1b62cfe2c79cf"
+v="65576dd2db0c22b5678f527e66c310f308e63aff"
 a="Privilege escalation utility"
 m="Tox"
-l=(
-    "Apache-2.0"
-    "MIT"
-)
+l=("Apache-2.0" "MIT")
 t="utils cli"
 u="https://github.com/trifectatechfoundation/$n.git"
 
-s=(
-    "$u"
-)
-
+s="$u"
 d=(
-    "b,git"
-    "b,rust"
     "glibc"
     "pam"
+    "b,rust"
     "b,procps-ng" # tests assume it exists
 )
 
 b() {
 
-with rust
-
-gco
 cbr
 
-install -vDm4755 target/release/su{,do}         -t "$D/usr/bin/"
-install -vDm755  target/release/visudo          -t "$D/usr/bin/"
-install -vDm644  LICENSE-*                      -t "$D/usr/share/licenses/$n/"
-install -vDm644  {README,SECURITY,CHANGELOG}.md -t "$D/usr/share/doc/$n/"
+install -vDm4755 target/release/su{,do} -t "$D/usr/bin/"
+install -vDm755  target/release/visudo  -t "$D/usr/bin/"
 
 }
 
