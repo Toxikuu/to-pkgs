@@ -15,14 +15,12 @@ s=(
 
 d=(
     "b,meson"
-    "b,samurai"
+    "b,samu"
     "libidn2"
     "libunistring"
 )
 
 b() {
-
-with meson
 
 _cfg=(
     -D tests=false
