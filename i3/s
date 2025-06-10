@@ -62,6 +62,10 @@
     {
       "name": "samu",
       "kind": "Build"
+    },
+    {
+      "name": "autotiling",
+      "kind": "Runtime"
     }
   ],
   "kcfg": []

@@ -20,8 +20,10 @@ d=(
     "xcb-util-xrm"
     "xcb-util-wm"
     "yajl"
+
     "b,meson"
     "b,samu"
+    "r,autotiling"
 )
 
 b() {
