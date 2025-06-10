@@ -1,0 +1,23 @@
+#!/to
+
+n="jbig2dec"
+v="0.20"
+a="Decoder implementation of the JBIG2 image compression format"
+m="Tox"
+l="GPL3"
+t="lib img codec z"
+u="https://github.com/ArtifexSoftware/$n.git"
+
+s="$u"
+
+d=(
+    "glibc"
+    "libpng"
+)
+
+b() {
+
+NOCONFIGURE=1 ./autogen.sh
+def
+
+}

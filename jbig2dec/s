@@ -1,0 +1,35 @@
+{
+  "name": "jbig2dec",
+  "version": "0.20",
+  "about": "Decoder implementation of the JBIG2 image compression format",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://github.com/ArtifexSoftware/jbig2dec.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "img",
+    "codec",
+    "z"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/ArtifexSoftware/jbig2dec.git",
+      "dest": "jbig2dec"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
