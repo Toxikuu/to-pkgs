@@ -11,6 +11,7 @@ u="https://github.com/pwmt/$n.git"
 s="$u"
 
 d=(
+    "libseccomp"
     "desktop-file-utils"
     "file"
     "glibc"
@@ -19,12 +20,11 @@ d=(
     "girara"
     "json-glib"
     "sqlite"
-    # "libsynctex" for synxtex support
-
-    "libseccomp"
+    # "libsynctex" for synctex support
 
     "b,meson"
     "b,samu"
+    "r,zathura-pdf-mupdf"
 )
 
 b() {

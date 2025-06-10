@@ -21,6 +21,10 @@
   ],
   "dependencies": [
     {
+      "name": "libseccomp",
+      "kind": "Required"
+    },
+    {
       "name": "desktop-file-utils",
       "kind": "Required"
     },
@@ -53,16 +57,16 @@
       "kind": "Required"
     },
     {
-      "name": "libseccomp",
-      "kind": "Required"
-    },
-    {
       "name": "meson",
       "kind": "Build"
     },
     {
       "name": "samu",
       "kind": "Build"
+    },
+    {
+      "name": "zathura-pdf-mupdf",
+      "kind": "Runtime"
     }
   ],
   "kcfg": []
