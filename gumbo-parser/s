@@ -1,0 +1,36 @@
+{
+  "name": "gumbo-parser",
+  "version": "0.13.1",
+  "about": "HTML5 parsing library in pure C99",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "upstream": "https://codeberg.org/gumbo-parser/gumbo-parser.git",
+  "version_fetch": "gr | tr -d v | sort -V",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://codeberg.org/gumbo-parser/gumbo-parser.git",
+      "dest": "gumbo-parser"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "muon",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

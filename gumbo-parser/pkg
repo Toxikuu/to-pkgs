@@ -1,0 +1,28 @@
+#!/to
+
+n="gumbo-parser"
+v="0.13.1"
+a="HTML5 parsing library in pure C99"
+m="Tox"
+l="Apache-2.0"
+t="lib"
+u="https://codeberg.org/$n/$n.git"
+vf="gr | tr -d v | sort -V"
+
+s="$u"
+d=(
+    "glibc"
+    "b,muon"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D tests=false
+    -D examples=false
+)
+def
+rma
+
+}
