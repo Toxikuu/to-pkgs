@@ -1,0 +1,33 @@
+#!/to
+
+n="xdg-desktop-portal-gtk"
+v="1.15.3"
+a="GTK-based xdg-desktop-portal backend implementation"
+m="Tox"
+l="LGPL-2.0-or-later"
+t="lib"
+u="https://github.com/flatpak/$n.git"
+vf="gr | tr -d v | sort -V"
+
+s="$u"
+d=(
+    "fontconfig"
+    "gcc"
+    "glibc"
+    "gdk-pixbuf"
+    "glib"
+    "gsettings-desktop-schemas"
+    "gtk3"
+    "xdg-desktop-portal"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+_cfg=( -D wallpaper=disabled )
+def
+rm -rvf /usr/lib/systemd
+
+}
