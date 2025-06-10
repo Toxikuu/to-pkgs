@@ -1,6 +1,6 @@
 {
   "name": "attr",
-  "version": "b90f0ae9288e6186b41df33eb5e08f906a790e9c",
+  "version": "4d4a562d7b73dcea8bd4b2d40b8c030d5065111b",
   "about": "Utilities to administer filesystem object attributes",
   "maintainer": "Tox",
   "licenses": [
