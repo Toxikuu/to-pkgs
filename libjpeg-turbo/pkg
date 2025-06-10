@@ -1,7 +1,7 @@
 #!/to
 
 n="libjpeg-turbo"
-v="d163c99bf0aca57a44ca35442f8b885c45395c1d"
+v="7723f50f3f66b9da74376e6d8badb6162464212c"
 a="Fast JPEG library"
 m="Tox"
 l=(
