@@ -1,0 +1,69 @@
+{
+  "name": "zathura",
+  "version": "0.5.11",
+  "about": "Minimal document viewer",
+  "maintainer": "Tox",
+  "licenses": [
+    "Zlib"
+  ],
+  "upstream": "https://github.com/pwmt/zathura.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "gui"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/pwmt/zathura.git",
+      "dest": "zathura"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "desktop-file-utils",
+      "kind": "Required"
+    },
+    {
+      "name": "file",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gtk3",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "girara",
+      "kind": "Required"
+    },
+    {
+      "name": "json-glib",
+      "kind": "Required"
+    },
+    {
+      "name": "sqlite",
+      "kind": "Required"
+    },
+    {
+      "name": "libseccomp",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

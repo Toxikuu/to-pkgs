@@ -1,0 +1,40 @@
+#!/to
+
+n="zathura"
+v="0.5.11"
+a="Minimal document viewer"
+m="Tox"
+l="Zlib"
+t="utils gui"
+u="https://github.com/pwmt/$n.git"
+
+s="$u"
+
+d=(
+    "desktop-file-utils"
+    "file"
+    "glibc"
+    "gtk3"
+    "glib"
+    "girara"
+    "json-glib"
+    "sqlite"
+    # "libsynctex" for synxtex support
+
+    "libseccomp"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+sa test
+
+}
