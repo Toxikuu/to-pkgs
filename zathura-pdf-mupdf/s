@@ -1,0 +1,68 @@
+{
+  "name": "zathura-pdf-mupdf",
+  "version": "0.4.4",
+  "about": "PDF support for Zathura (MuPDF backend)",
+  "maintainer": "Tox",
+  "licenses": [
+    "Zlib"
+  ],
+  "upstream": "https://github.com/pwmt/zathura-pdf-mupdf.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/pwmt/zathura-pdf-mupdf.git",
+      "dest": "zathura-pdf-mupdf"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "jbig2dec",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "openjpeg",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "zathura",
+      "kind": "Required"
+    },
+    {
+      "name": "girara",
+      "kind": "Required"
+    },
+    {
+      "name": "mupdf",
+      "kind": "Required"
+    },
+    {
+      "name": "gumbo-parser",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,33 @@
+#!/to
+
+n="zathura-pdf-mupdf"
+v="0.4.4"
+a="PDF support for Zathura (MuPDF backend)"
+m="Tox"
+l="Zlib"
+t="lib"
+u="https://github.com/pwmt/$n.git"
+
+s="$u"
+
+d=(
+    "cairo"
+    "jbig2dec"
+    "libjpeg-turbo"
+    "openjpeg"
+    "openssl"
+    "zathura"
+    "girara"
+    "mupdf"
+    "gumbo-parser"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+pat "$A/mupdf.patch"
+def
+
+}
