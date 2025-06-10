@@ -1,7 +1,7 @@
 #!/to
 
 n="pkgconf"
-v="aa5813ac5ea6ee724f51d72447454f49b48e56cf"
+v="efdeb71de5eb22c5477da1626e8dbffeca6471c2"
 a="Package compiler and linker metadata toolkit"
 m="Tox"
 l="ISC"
