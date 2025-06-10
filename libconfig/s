@@ -1,0 +1,32 @@
+{
+  "name": "libconfig",
+  "version": "1.8.1",
+  "about": "Configuration File Library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-only"
+  ],
+  "upstream": "https://github.com/hyperrealm/libconfig.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/hyperrealm/libconfig.git",
+      "dest": "libconfig"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,20 @@
+#!/to
+
+n="libconfig"
+v="1.8.1"
+tag="v$v"
+a="Configuration File Library"
+m="Tox"
+l="LGPL-2.1-only"
+t="lib"
+u="https://github.com/hyperrealm/$n.git"
+
+s="$u"
+d=("gcc" "glibc")
+
+b() {
+
+autoreconf -fiv
+def
+
+}
