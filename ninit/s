@@ -1,0 +1,30 @@
+{
+  "name": "ninit",
+  "version": "631e18dae932540bea25fef07d75c875ae84bfa6",
+  "about": "A rather simple init",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://git.disroot.org/nyght/ninit.git",
+  "version_fetch": null,
+  "tags": [
+    "init",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.disroot.org/nyght/ninit.git",
+      "dest": "ninit"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
