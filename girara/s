@@ -1,0 +1,44 @@
+{
+  "name": "girara",
+  "version": "0.4.5",
+  "about": "Minimal UI library",
+  "maintainer": "Tox",
+  "licenses": [
+    "Zlib"
+  ],
+  "upstream": "https://github.com/pwmt/girara.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/pwmt/girara.git",
+      "dest": "girara"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "gtk3",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

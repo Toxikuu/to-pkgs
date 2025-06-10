@@ -1,0 +1,32 @@
+#!/to
+
+n="girara"
+v="0.4.5"
+a="Minimal UI library"
+m="Tox"
+l="Zlib"
+t="lib"
+u="https://github.com/pwmt/$n.git"
+
+s="$u"
+
+d=(
+    "glibc"
+    "glib"
+    "gtk3"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+sa test
+
+}
