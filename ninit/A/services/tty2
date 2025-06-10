@@ -1,0 +1,16 @@
+#!/bin/sh
+
+case $1 in
+    -s)
+	    while :; do
+            chpst -P agetty -i --delay 1 -J -s 38400 -t 600 tty2 tty2;
+	    done
+        ;;
+    -k)
+        exit 0;
+        ;;
+	*)
+        echo "usage: $0 -s|-k"
+        exit 1;
+        ;;
+esac

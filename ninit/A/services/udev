@@ -1,0 +1,20 @@
+#!/bin/sh
+
+case $1 in
+    -s)
+        udevadm control --exit
+        udevd --daemon
+	    udevadm trigger --action=add --type=subsystems  2>/dev/null 1>&2
+	    udevadm trigger --action=add --type=devices     2>/dev/null 1>&2
+	    udevadm settle
+    ;;
+    -k)
+	    udevadm control --exit
+        pkill udevd
+        exit 0;
+    ;;
+	*)
+	   echo "usage: $0 -s|-k"
+        exit 1;
+    ;;
+esac

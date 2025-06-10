@@ -13,6 +13,20 @@ d="glibc"
 
 b() {
 
-mi -C src
+_cfg=(
+    BIN=/usr/sbin
+    NINITBIN=/usr/sbin
+    NINITFOLDER=/etc/ninit
+    MANDIR=/usr/share/man
+)
+
+mi "${_cfg[@]}" -C src
+
+ln -sfv "nhalt" "$D/usr/sbin/halt"
+ln -sfv "nhalt" "$D/usr/sbin/reboot"
+ln -sfv "ninit" "$D/usr/sbin/init"
+
+mkdir -pv     "$D/etc/$n"
+cp -af "$A/"* "$D/etc/$n/"
 
 }

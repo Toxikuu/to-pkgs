@@ -1,0 +1,15 @@
+#!/bin/sh
+
+case $1 in
+	-s)
+        sh -x /etc/ninit/services/scripts/network.sh \
+            > /etc/ninit/services/logs/network.log 2>&1
+        ;;
+	-k)
+        echo "NOT IMPLEMENTED"
+        exit 0;
+        ;;
+	*)
+        echo "usage: $0 -s|-k"
+        exit 1;
+esac

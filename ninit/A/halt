@@ -1,0 +1,39 @@
+#!/bin/sh
+
+export TERM=linux
+export PATH="/usr/bin:/usr/sbin"
+decoration() printf " [\033[0;35m*\033[0;0m] "
+
+printf "\n"
+
+#KILL
+
+decoration ; printf "[services]:\n"
+sv -k 2>/dev/null | paste /dev/null -
+
+decoration ; printf "Waiting for all the processes to terminate safely...\n"
+killall5 -s 15 #SIGTERM
+sleep 1
+decoration ; printf "Killing the rest of the sluggish ones...\n"
+killall5 -s 9 #SIGKILL
+
+#CLEANING
+
+decoration ; printf "Cleaning service logs...\n"
+rm -f /etc/ninit/services/logs/*.log
+
+decoration ; printf "Cleaning tmp folder...\n"
+rm -rf   /tmp 2>/dev/null
+mkdir -p /tmp 2>/dev/null
+
+#FILE SYSTEM
+
+sync
+decoration; printf "Remounting rootfs as read-only...\n"
+mount -o ro,remount / || exit 1
+
+decoration ; printf "Umounting pseudo file systems...\n";
+sync
+umount -a
+
+exit 0;

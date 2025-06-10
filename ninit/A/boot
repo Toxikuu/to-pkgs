@@ -1,0 +1,36 @@
+#!/bin/sh
+
+export TERM=linux
+export PATH="/usr/bin:/usr/sbin"
+decoration() printf " [\033[0;35m*\033[0;0m] "
+
+#BANNER
+
+clear
+printf "\n  \033[1;35m*\033[0;0m Ninit is booting your computer \033[1;35m*\033[0;0m\n";
+printf " ------------------------------------\n\n"
+
+#FILE SYSTEM
+
+decoration ; printf "Mounting pseudo file systems...\n";
+mountpoint -q /proc || mount -o nosuid,noexec,nodev -t proc proc /proc   || exit 1
+mountpoint -q /sys  || mount -o nosuid,noexec,nodev -t sysfs sys /sys    || exit 1
+mountpoint -q /dev  || mount -o mode=0755,nosuid    -t devtmpfs dev /dev || exit 1
+
+decoration ; printf "Remounting rootfs as read-write...\n"
+mount -o remount,rw / || exit 1
+
+decoration ; printf "Initializating swap...\n"
+swapon -a || printf " ..error.. \n"
+
+#NETWORK
+
+decoration ; printf "Setting up loopback interface...\n"
+ifconfig lo up || printf " ..error.. \n"
+
+#SERVICES
+
+decoration ; printf "[services]:\n"
+(sv -s || printf " ..error.. \n") 2>/dev/null | paste /dev/null -
+
+exit 0;
