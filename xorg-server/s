@@ -83,6 +83,10 @@
       "kind": "Build"
     },
     {
+      "name": "libxfont2",
+      "kind": "Required"
+    },
+    {
       "name": "util-macros",
       "kind": "Build"
     },
@@ -112,10 +116,6 @@
     },
     {
       "name": "libxcvt",
-      "kind": "Build"
-    },
-    {
-      "name": "libxfont2",
       "kind": "Build"
     },
     {
@@ -169,6 +169,10 @@
     {
       "name": "xcb-util-wm",
       "kind": "Build"
+    },
+    {
+      "name": "xkbcomp",
+      "kind": "Runtime"
     },
     {
       "name": "xkeyboard-config",

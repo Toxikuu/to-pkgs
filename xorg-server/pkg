@@ -31,6 +31,8 @@ d=(
     "b,meson"
     "b,samu"
 
+    "libxfont2"
+
     "b,util-macros"
     "b,xorgproto"
     "b,font-util"
@@ -39,7 +41,6 @@ d=(
     "b,libxi"
     "b,libxaw"
     "b,libxcvt"
-    "b,libxfont2"
     "b,libxfixes"
     "b,libxi"
     "b,libxkbfile"
@@ -54,6 +55,7 @@ d=(
     "b,xcb-util-renderutil"
     "b,xcb-util-wm"
 
+    "r,xkbcomp"
     "r,xkeyboard-config"
     "r,xf86-input-libinput"
 )
