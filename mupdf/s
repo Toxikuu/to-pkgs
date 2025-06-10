@@ -59,6 +59,14 @@
       "kind": "Required"
     },
     {
+      "name": "jbig2dec",
+      "kind": "Required"
+    },
+    {
+      "name": "gumbo-parser",
+      "kind": "Required"
+    },
+    {
       "name": "zlib",
       "kind": "Required"
     },
