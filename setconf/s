@@ -1,0 +1,29 @@
+{
+  "name": "setconf",
+  "version": "e77f567307cdd89792b405570201f42a9b763650",
+  "about": "Utility to change settings in configuration files",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0"
+  ],
+  "upstream": "https://github.com/xyproto/setconf.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/xyproto/setconf.git",
+      "dest": "setconf"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "python",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

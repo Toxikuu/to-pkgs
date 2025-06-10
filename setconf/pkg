@@ -1,0 +1,19 @@
+#!/to
+
+n="setconf"
+v="e77f567307cdd89792b405570201f42a9b763650"
+a="Utility to change settings in configuration files"
+m="Tox"
+l="GPL-2.0"
+t="utils cli"
+u="https://github.com/xyproto/$n.git"
+
+s="$u"
+d="python"
+
+b() {
+
+install -vDm755 "$n.py"     "$D/usr/bin/$n"
+install -vDm644 "$n.1"   -t "$D/usr/share/man/man1/"
+
+}
