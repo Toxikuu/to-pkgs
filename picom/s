@@ -1,0 +1,77 @@
+{
+  "name": "picom",
+  "version": "b99537235bf858ccf527217bfc196d4923a3e3a1",
+  "about": "Lightweight X11 compositor",
+  "maintainer": "Tox",
+  "licenses": [
+    "MPL-2.0 AND MIT"
+  ],
+  "upstream": "https://github.com/yshui/picom.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/yshui/picom.git",
+      "dest": "picom"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libconfig",
+      "kind": "Required"
+    },
+    {
+      "name": "libepoxy",
+      "kind": "Required"
+    },
+    {
+      "name": "libev",
+      "kind": "Required"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Required"
+    },
+    {
+      "name": "pixman",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-image",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-renderutil",
+      "kind": "Required"
+    },
+    {
+      "name": "uthash",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "setconf",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

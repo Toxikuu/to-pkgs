@@ -1,0 +1,37 @@
+#!/to
+
+n="picom"
+v="b99537235bf858ccf527217bfc196d4923a3e3a1"
+a="Lightweight X11 compositor"
+m="Tox"
+l="MPL-2.0 AND MIT"
+t="utils gfx"
+u="https://github.com/yshui/$n.git"
+
+s="$u"
+d=(
+    "dbus"
+    "libglvnd"
+    "libconfig"
+    "libepoxy"
+    "libev"
+    "pcre2"
+    "pixman"
+    "xcb-util-image"
+    "xcb-util-renderutil"
+
+    "b,uthash"
+    "b,meson"
+    "b,samu"
+    "b,setconf"
+)
+
+b() {
+
+setconf "$n.desktop" 'Icon=compton'
+def
+
+# Install "default" config
+install -vDm644 "$A/$n.conf" -t "$D/usr/share/$n/"
+
+}
