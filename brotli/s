@@ -1,0 +1,34 @@
+{
+  "name": "brotli",
+  "version": "1.1.0",
+  "about": "Brotli compression format",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/google/brotli.git",
+  "version_fetch": "gr | tr -d v | grep -v [a-Z] | sort -V",
+  "tags": [
+    "lib",
+    "z",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/google/brotli.git",
+      "dest": "brotli"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
