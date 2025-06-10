@@ -1,7 +1,7 @@
 #!/to
 
 n="mpg123"
-v="1.32.10"
+v="1.33.0"
 a="Fast CLI MP3 player"
 m="Tox"
 l="LGPL-2.1"
