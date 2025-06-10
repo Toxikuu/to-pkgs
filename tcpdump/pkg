@@ -1,0 +1,30 @@
+#!/to
+
+n="tcpdump"
+v="4.99.5"
+tag="$n-$v"
+a="Powerful command-line packet analyzer"
+m="Tox"
+l="BSD-3-Clause"
+t="net utils"
+u="https://github.com/the-$n-group/$n.git"
+
+s="$u"
+d=(
+    "glibc"
+    lib{,p}cap
+    "openssl"
+    "b,cmake"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+mk VERBOSE=1 check
+
+}
