@@ -1,7 +1,7 @@
 #!/to
 
 n="graphviz"
-v="12.2.1"
+v="13.0.0"
 a="Graph visualization software"
 m="Tox"
 l="EPL"
@@ -17,7 +17,9 @@ b() {
 # Avoid installing to lib64
 sed -i '/LIBPOSTFIX="64"/s/64//' configure.ac
 
+# Satisfy libtool wanting its readme
 echo "Fucking why does libtool want this LOL" > /usr/share/libtool/README
+
 ./autogen.sh
 def
 

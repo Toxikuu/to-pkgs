@@ -1,6 +1,6 @@
 {
   "name": "graphviz",
-  "version": "12.2.1",
+  "version": "13.0.0",
   "about": "Graph visualization software",
   "maintainer": "Tox",
   "licenses": [
