@@ -1,0 +1,22 @@
+#!/to
+
+n="autotiling"
+v="5476582d5e6d4592adcf01bd4678a647ba306003"
+a="Autotiling script for i3 and sway"
+m="Tox"
+l="MIT"
+t="utils"
+u="https://github.com/ammgws/$n-rs.git"
+
+s="$u"
+
+d=(
+    "b,rust"
+)
+
+b() {
+
+cbr
+install -vDm755 "target/release/$n-rs" "$D/usr/bin/$n"
+
+}

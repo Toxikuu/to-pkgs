@@ -1,0 +1,28 @@
+{
+  "name": "autotiling",
+  "version": "5476582d5e6d4592adcf01bd4678a647ba306003",
+  "about": "Autotiling script for i3 and sway",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/ammgws/autotiling-rs.git",
+  "version_fetch": null,
+  "tags": [
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/ammgws/autotiling-rs.git",
+      "dest": "autotiling-rs"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "rust",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
