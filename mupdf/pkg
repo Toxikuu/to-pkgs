@@ -1,0 +1,84 @@
+#!/to
+
+# NOTE: I only package the libraries since I don't use the other stuff
+n="mupdf"
+v="1.26.2"
+a="Lightweight PDF and XPS viewer"
+m="Tox"
+l="AGPL-3.0-or-later"
+t="lib utils gui cli"
+u="https://github.com/ArtifexSoftware/$n.git"
+vf="gr | grep -v [a-Z] | sort -V"
+
+# Used instead of git because of submodule hell
+s=(
+    "https://www.$n.com/downloads/archive/$n-$v-source.tar.gz"
+)
+
+d=(
+    "brotli"
+    "freetype"
+    "glu"
+    "freeglut"
+    "gcc"
+    "glibc"
+    "harfbuzz"
+    "libjpeg-turbo"
+    "openjpeg"
+    # "tesseract"
+    "zlib"
+    "openssl"
+    "curl"
+
+    "b,python"
+
+    "libx11"
+    "libxext"
+)
+
+b() {
+
+_cfg=(
+    "USE_SYSTEM_CURL         := yes"
+    "USE_SYSTEM_FREETYPE     := yes"
+    "USE_SYSTEM_GLUT         := yes"
+    "USE_SYSTEM_GUMBO        := no "
+    "USE_SYSTEM_HARFBUZZ     := yes"
+    "USE_SYSTEM_JBIG2DEC     := no " # TODO: <-
+    "USE_SYSTEM_JPEGXR       := no "
+    "USE_SYSTEM_LCMS2        := no "
+    "USE_SYSTEM_LIBJPEG      := yes"
+    "USE_SYSTEM_MUJS         := no "
+    "USE_SYSTEM_OPENJPEG     := yes"
+    "USE_SYSTEM_ZLIB         := yes"
+
+    "USE_SYSTEM_LIBS         := yes"
+    "USE_SYSTEM_LEPTONICA    := no "
+    "USE_SYSTEM_TESSERACT    := no "
+    "USE_TESSERACT           := yes"
+    "LINUX_OR_OPENBSD        := yes" # required for soname symlinks
+)
+
+# Write build configuration
+printf "%s\n" "${_cfg[@]}" > user.make
+cat user.make >&2
+
+# Build
+export XCFLAGS=-fPIC
+mk build=release shared=yes verbose=yes
+unset XCFLAGS
+
+# Install libraries only
+mi prefix=/usr SO_INSTALL_MODE=755 install-shared-c{,++}
+
+# Install pkgconf file
+sed "s,|VERSION|,$v," "$A/$n.pc" |
+    install -vDm644 /dev/stdin "$D/usr/lib/pkgconfig/$n.pc"
+
+# Evidently install-shared-c means install static!
+rma
+
+# And we can't install libraries without installing programs!
+rm -rf "$D/usr/bin"
+
+}

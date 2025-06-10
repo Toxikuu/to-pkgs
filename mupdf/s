@@ -1,0 +1,87 @@
+{
+  "name": "mupdf",
+  "version": "1.26.2",
+  "about": "Lightweight PDF and XPS viewer",
+  "maintainer": "Tox",
+  "licenses": [
+    "AGPL-3.0-or-later"
+  ],
+  "upstream": "https://github.com/ArtifexSoftware/mupdf.git",
+  "version_fetch": "gr | grep -v [a-Z] | sort -V",
+  "tags": [
+    "lib",
+    "utils",
+    "gui",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz",
+      "dest": "mupdf-1.26.2-source.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "brotli",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "glu",
+      "kind": "Required"
+    },
+    {
+      "name": "freeglut",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "harfbuzz",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "openjpeg",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
