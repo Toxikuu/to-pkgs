@@ -1,0 +1,43 @@
+{
+  "name": "openjpeg",
+  "version": "2.5.3",
+  "about": "JPEG 2000 codec",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause",
+    "MIT"
+  ],
+  "upstream": "https://github.com/uclouvain/openjpeg.git",
+  "version_fetch": "gr | sed -e 's,^version.,,' -e 's,^v,,' | grep -v [a-Z] | sort -V",
+  "tags": [
+    "codec",
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/uclouvain/openjpeg.git",
+      "dest": "openjpeg"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "lcms2",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,32 @@
+#!/to
+
+n="openjpeg"
+v="2.5.3"
+tag="v$v"
+a="JPEG 2000 codec"
+m="Tox"
+l=("BSD-2-Clause" "MIT")
+t="codec lib utils"
+u="https://github.com/uclouvain/$n.git"
+vf="gr | sed -e 's,^version.,,' -e 's,^v,,' | grep -v [a-Z] | sort -V"
+
+s="$u"
+d=(
+    "glibc"
+    "lcms2"
+    "libpng"
+    "b,cmake"
+)
+
+b() {
+
+rm -rf thirdparty/*/
+
+_cfg=(
+    -D BUILD_STATIC_LIBS=OFF
+    -D BUILD_DOC=off
+)
+
+def
+
+}
