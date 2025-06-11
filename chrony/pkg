@@ -1,7 +1,7 @@
 #!/to
 
 n="chrony"
-v="4.6.1"
+v="4.7"
 a="Advanced NTP client and server"
 m="Tox"
 l="GPL-2.0-or-later"

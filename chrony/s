@@ -1,6 +1,6 @@
 {
   "name": "chrony",
-  "version": "4.6.1",
+  "version": "4.7",
   "about": "Advanced NTP client and server",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://chrony-project.org/releases/chrony-4.6.1.tar.gz",
-      "dest": "chrony-4.6.1.tar.gz"
+      "url": "https://chrony-project.org/releases/chrony-4.7.tar.gz",
+      "dest": "chrony-4.7.tar.gz"
     }
   ],
   "dependencies": [
