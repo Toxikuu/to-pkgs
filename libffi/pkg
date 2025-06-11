@@ -1,7 +1,7 @@
 #!/to
 
 n="libffi"
-v="3.5.0"
+v="3.5.1"
 a="Foreign Function Interface library"
 m="Tox"
 l="MIT"

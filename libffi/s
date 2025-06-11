@@ -1,6 +1,6 @@
 {
   "name": "libffi",
-  "version": "3.5.0",
+  "version": "3.5.1",
   "about": "Foreign Function Interface library",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/libffi/libffi/releases/download/v3.5.0/libffi-3.5.0.tar.gz",
-      "dest": "libffi-3.5.0.tar.gz"
+      "url": "https://github.com/libffi/libffi/releases/download/v3.5.1/libffi-3.5.1.tar.gz",
+      "dest": "libffi-3.5.1.tar.gz"
     }
   ],
   "dependencies": [
