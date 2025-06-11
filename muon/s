@@ -1,6 +1,6 @@
 {
   "name": "muon",
-  "version": "a29ec0c95253617a90f46530fa644393b323c461",
+  "version": "e6d3f5ad64d5063bfc875484c8280bcec39c7acd",
   "about": "An implementation of the meson build system in c99",
   "maintainer": "Tox",
   "licenses": [
