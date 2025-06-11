@@ -1,6 +1,6 @@
 {
   "name": "python",
-  "version": "3.13.4",
+  "version": "3.13.5",
   "about": "The Python programming language",
   "maintainer": "Tox",
   "licenses": [
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.python.org/ftp/python/3.13.4/Python-3.13.4.tar.xz",
-      "dest": "Python-3.13.4.tar.xz"
+      "url": "https://www.python.org/ftp/python/3.13.5/Python-3.13.5.tar.xz",
+      "dest": "Python-3.13.5.tar.xz"
     }
   ],
   "dependencies": [
