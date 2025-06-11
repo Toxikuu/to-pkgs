@@ -1,7 +1,7 @@
 #!/to
 
 n="pixman"
-v="0.46.0"
+v="0.46.2"
 a="Pixel manipulation library"
 m="Tox"
 l="MIT"

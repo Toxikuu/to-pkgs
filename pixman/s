@@ -1,6 +1,6 @@
 {
   "name": "pixman",
-  "version": "0.46.0",
+  "version": "0.46.2",
   "about": "Pixel manipulation library",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.x.org/releases/individual/lib/pixman-0.46.0.tar.xz",
-      "dest": "pixman-0.46.0.tar.xz"
+      "url": "https://www.x.org/releases/individual/lib/pixman-0.46.2.tar.xz",
+      "dest": "pixman-0.46.2.tar.xz"
     }
   ],
   "dependencies": [
