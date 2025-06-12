@@ -26,12 +26,14 @@ PREFIX=/usr
 SBINDIR=\$PREFIX/sbin
 MANDIR=\$PREFIX/share/man
 
-BUILD_CATMAN=1
-
 CFLAGS=${CFLAGS@Q}
 LDFLAGS=${LDFLAGS@Q}
 EOF
 
 def
+
+# Don't install catman
+rm -vf "$D/usr/sbin/catman"
+rm -vf "$D/usr/share/man/man8/catman.8"
 
 }
