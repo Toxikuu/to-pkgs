@@ -1,0 +1,32 @@
+#!/to
+
+n="inih"
+v="60"
+tag="r$v"
+a="Simple ini file parser"
+m="Tox"
+l="BSD-3-Clause"
+t="lib"
+u="https://github.com/benhoyt/$n.git"
+vf="gr | vfs | tr -d r | sort -V"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+sa test
+
+}
