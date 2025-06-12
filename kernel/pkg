@@ -2,7 +2,7 @@
 
 n="kernel"
 an="linux"
-v="6.15.1"
+v="6.15.2"
 a="The ${an^} $n"
 m="Tox"
 l="GPL-2.0-only"
@@ -16,6 +16,7 @@ s=(
 
 qa=(
     "!static"
+    "!artifactsymlinks"
 )
 
 # NOTE: This list may be incomplete
