@@ -1,0 +1,28 @@
+{
+  "name": "jansson",
+  "version": "2.14.1",
+  "about": "JSON library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/akheron/jansson.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/akheron/jansson.git",
+      "dest": "jansson"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

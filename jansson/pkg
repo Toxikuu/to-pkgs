@@ -1,0 +1,26 @@
+#!/to
+
+n="jansson"
+v="2.14.1"
+a="JSON library"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://github.com/akheron/$n.git"
+
+s="$u"
+d="glibc"
+tag="v$v"
+
+b() {
+
+autoreconf -fiv
+def
+
+}
+
+t() {
+
+mk check
+
+}
