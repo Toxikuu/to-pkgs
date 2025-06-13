@@ -1,7 +1,7 @@
 #!/to
 
 n="wayland-protocols"
-v="1.44"
+v="1.45"
 a="Additional protocols for Wayland"
 m="Tox"
 l="MIT"
@@ -9,7 +9,6 @@ t="lib gfx"
 u="https://gitlab.freedesktop.org/wayland/$n.git"
 
 s="$u"
-
 d=(
     "b,wayland"
     "b,meson"

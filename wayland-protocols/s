@@ -1,6 +1,6 @@
 {
   "name": "wayland-protocols",
-  "version": "1.44",
+  "version": "1.45",
   "about": "Additional protocols for Wayland",
   "maintainer": "Tox",
   "licenses": [
