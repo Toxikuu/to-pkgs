@@ -1,6 +1,6 @@
 {
   "name": "glib",
-  "version": "2.85.0",
+  "version": "2.85.1",
   "about": "Low level core library",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://download.gnome.org/sources/glib/2.85/glib-2.85.0.tar.xz",
-      "dest": "glib-2.85.0.tar.xz"
+      "url": "https://download.gnome.org/sources/glib/2.85/glib-2.85.1.tar.xz",
+      "dest": "glib-2.85.1.tar.xz"
     },
     {
       "kind": "Download",

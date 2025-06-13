@@ -1,7 +1,7 @@
 #!/to
 
 n="glib"
-v="2.85.0" # Even minor parts mean stable
+v="2.85.1" # Even minor parts mean stable
 a="Low level core library"
 m="Tox"
 l="LGPL-2.1-or-later"
