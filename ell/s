@@ -1,6 +1,6 @@
 {
   "name": "ell",
-  "version": "0.77",
+  "version": "0.78",
   "about": "Embedded Linux library",
   "maintainer": "Tox",
   "licenses": [
@@ -14,8 +14,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.77.tar.xz",
-      "dest": "ell-0.77.tar.xz"
+      "url": "https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.78.tar.xz",
+      "dest": "ell-0.78.tar.xz"
     }
   ],
   "dependencies": [
