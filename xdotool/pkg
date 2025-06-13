@@ -19,6 +19,6 @@ d=(
 b() {
 
 mk WITHOUT_RPATH_FIX=1
-mi PREFIX="$D/usr" INSTALLMAN="$D/usr/share/man"
+mi PREFIX=/usr INSTALLMAN=/usr/share/man
 
 }
