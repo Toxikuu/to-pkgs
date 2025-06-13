@@ -7,8 +7,8 @@ work.**
 
 ## TODO
 - [x] Add to
-    - [ ] Resolve all dependencies and improve build instructions
-- [ ] Update to gcc@15
+    - [x] Resolve all dependencies and improve build instructions
+- [x] Update to gcc@15
 - [x] Add GitHub issue templates and tags for failing builds, new packages, updates, etc.
 - [x] Add xorg libraries
 - [ ] Add xorg applications (wip)
