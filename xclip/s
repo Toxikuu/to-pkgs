@@ -1,0 +1,30 @@
+{
+  "name": "xclip",
+  "version": "2c3b811002b35d3be7f39cc1145dd06bdb32e31c",
+  "about": "X11 clipboard CLI",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://github.com/astrand/xclip.git",
+  "version_fetch": null,
+  "tags": [
+    "cli",
+    "utils",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/astrand/xclip.git",
+      "dest": "xclip"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxmu",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

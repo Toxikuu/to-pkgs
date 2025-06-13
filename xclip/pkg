@@ -1,0 +1,19 @@
+#!/to
+
+n="xclip"
+v="2c3b811002b35d3be7f39cc1145dd06bdb32e31c"
+a="X11 clipboard CLI"
+m="Tox"
+l="GPL-2.0-only"
+t="cli utils xorg"
+u="https://github.com/astrand/$n.git"
+
+s="$u"
+d="libxmu"
+
+b() {
+
+autoreconf -fiv
+def
+
+}
