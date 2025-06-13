@@ -2,9 +2,6 @@
 
 ## The main package repository for to
 
-**WARNING: To is undergoing significant changes. Don't expect anything here to
-work.**
-
 ## TODO
 - [x] Add to
     - [x] Resolve all dependencies and improve build instructions
