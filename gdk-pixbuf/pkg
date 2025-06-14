@@ -7,7 +7,7 @@ m="Tox"
 l="LGPL-2.0-or-later"
 t="img lib"
 u="https://github.com/GNOME/$n.git"
-vf="gr | grep -v '[a-Z]' | grep -v '[0-9]\\.9' | sort -V"
+vf="gr | grep -v '[a-Z]' | grep -v '[0-9]\\.9[0-9]' | vfem | sort -V"
 
 s=(
     "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
@@ -28,11 +28,13 @@ d=(
 
 b() {
 
+# TODO: Reference https://gitlab.gnome.org/GNOME/gdk-pixbuf/-/releases/2.43.2
+# for updated recommended configure options whenever I update this
 _cfg=(
-    --wrap-mode=nofallback
     -D man=false
     -D gtk_doc=false
     -D installed_tests=false
+
     -D introspection=enabled
     -D builtin_loaders=all
     -D others=enabled
