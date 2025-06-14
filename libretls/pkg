@@ -9,7 +9,6 @@ t="sec lib"
 u="https://git.causal.agency/$n"
 
 s="$u"
-
 d="openssl"
 
 b() {
