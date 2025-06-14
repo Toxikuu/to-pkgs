@@ -40,6 +40,10 @@
     {
       "name": "libelf",
       "kind": "Required"
+    },
+    {
+      "name": "jansson",
+      "kind": "Required"
     }
   ],
   "kcfg": []

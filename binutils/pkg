@@ -25,6 +25,7 @@ d=(
     "zstd"
     "glibc"
     "libelf"
+    "jansson"
 )
 
 qa=(
@@ -41,6 +42,7 @@ _cfg=(
     --prefix=/usr
     --sysconfdir=/etc
 
+    --enable-jansson
     --enable-ld=default
     --enable-plugins
     --enable-shared
