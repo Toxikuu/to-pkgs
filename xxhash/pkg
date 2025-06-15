@@ -1,7 +1,7 @@
 #!/to
 
 n="xxhash"
-v="1fc167c19f009265eb0a37117a03bbcdbc687e59"
+v="95b6fcc3fe76f39f99ae1906920e239166406588"
 a="Extremely fast non-cryptographic hash algorithm"
 m="Tox"
 l=("BSD" "GPL2")
