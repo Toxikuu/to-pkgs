@@ -1,7 +1,7 @@
 #!/to
 
 n="libass"
-v="bbb3c7f1570a4a021e52683f3fbdf74fe492ae84"
+v="582630d6be8ee47670733257ffb18663831a8d77"
 a="Portable library for ASS subtitle rendering"
 m="Tox"
 l="BSD"
