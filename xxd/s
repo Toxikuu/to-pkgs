@@ -1,0 +1,25 @@
+{
+  "name": "xxd",
+  "version": "1.3.7",
+  "about": "Hex dump utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only",
+    "MIT"
+  ],
+  "upstream": "https://github.com/xyproto/tinyxxd.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/xyproto/tinyxxd.git",
+      "dest": "tinyxxd"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
