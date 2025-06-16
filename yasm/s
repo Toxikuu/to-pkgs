@@ -19,12 +19,17 @@
       "kind": "Git",
       "url": "https://github.com/yasm/yasm.git",
       "dest": "yasm"
+    },
+    {
+      "kind": "Download",
+      "url": "https://patch-diff.githubusercontent.com/raw/yasm/yasm/pull/287.patch",
+      "dest": "gcc15.patch"
     }
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
+      "name": "glibc",
+      "kind": "Required"
     }
   ],
   "kcfg": []

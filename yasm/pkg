@@ -15,15 +15,15 @@ u="https://github.com/$n/$n.git"
 
 s=(
     "$u"
+    "https://patch-diff.githubusercontent.com/raw/$n/$n/pull/287.patch -> gcc15.patch"
 )
+d="glibc"
 
-d=(
-    "b,git"
-)
+qa=("!static")
 
 b() {
 
-git checkout "$v"
+pat "$S/gcc15.patch"
 ./autogen.sh
 
 # Don't compile Windows-only programs
@@ -31,8 +31,6 @@ sed -i 's#) ytasm.*#)#' Makefile.in
 
 CFLAGS+=' -ffat-lto-objects' \
 def
-
-install -vDm644 COPYING BSD.txt -t "$D/usr/share/licenses/$n/"
 
 }
 
