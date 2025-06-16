@@ -18,16 +18,12 @@ s=(
     "${u%.git}/releases/download/release-${v//./-}/${n}4c-${v//./_}-src.tgz"
 )
 
-d=(
-    "glibc"
-)
+d="glibc"
 
 b() {
 
 cd source
-
 def
-install -vDm644 "../LICENSE" -t "$D/usr/share/licenses/$n/"
 
 }
 
