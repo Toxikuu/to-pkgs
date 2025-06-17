@@ -1,7 +1,7 @@
 #!/to
 
 n="git"
-v="2.49.0"
+v="2.50.0"
 a="The fast distributed version control system"
 m="Tox"
 l="GPL-2.0-only"
