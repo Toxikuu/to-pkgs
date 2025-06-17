@@ -1,7 +1,7 @@
 #!/to
 
 n="xorg-server"
-v="21.1.16"
+v="21.1.17"
 a="X Window system server"
 m="Tox"
 l="SGI"
