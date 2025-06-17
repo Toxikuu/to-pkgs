@@ -1,6 +1,6 @@
 {
   "name": "xwayland",
-  "version": "24.1.6",
+  "version": "24.1.7",
   "about": "Allows running X clients on Wayland",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.x.org/pub/individual/xserver/xwayland-24.1.6.tar.xz",
-      "dest": "xwayland-24.1.6.tar.xz"
+      "url": "https://www.x.org/pub/individual/xserver/xwayland-24.1.7.tar.xz",
+      "dest": "xwayland-24.1.7.tar.xz"
     }
   ],
   "dependencies": [

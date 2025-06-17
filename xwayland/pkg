@@ -1,7 +1,7 @@
 #!/to
 
 n="xwayland"
-v="24.1.6"
+v="24.1.7"
 a="Allows running X clients on Wayland"
 m="Tox"
 l="SGI"
