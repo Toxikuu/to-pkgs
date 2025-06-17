@@ -1,6 +1,6 @@
 {
   "name": "pkgconf",
-  "version": "efdeb71de5eb22c5477da1626e8dbffeca6471c2",
+  "version": "fea9592aa4c89e02fd7afbf761e053f15f0fcf6d",
   "about": "Package compiler and linker metadata toolkit",
   "maintainer": "Tox",
   "licenses": [
