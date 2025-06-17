@@ -3,7 +3,7 @@
 # https://github.com/glfs-book/glfs/blob/trunk/shareddeps/drivers/nvidia.xml
 
 n="nvidia"
-v="575.57.08"
+v="575.64"
 a="${n^^} drivers"
 m="Tox"
 l="Custom"
@@ -13,7 +13,6 @@ vf="curl -s https://api.github.com/repos/${n^^}/open-gpu-kernel-modules/releases
 
 s=(
     "https://us.download.$n.com/XFree86/Linux-x86_64/$v/${n^^}-Linux-x86_64-$v.run"
-    "https://glfs-book.github.io/glfs/patches/$n/$n-$v-kernel_gpl_cachyos-1.patch"
 )
 
 d=(
@@ -61,9 +60,6 @@ b() {
 # Setup
 shopt -u nullglob
 kver=$(</usr/src/linux/version)
-
-# Patch NVIDIA's broken ass drivers
-patch -d kernel -Np1 -i "$S/$n-$v-kernel_gpl_cachyos-1.patch"
 
 # Build and install modules
 pushd kernel-open
@@ -116,9 +112,9 @@ install -vDm644  "$n-application-profiles"*     -t "$D/usr/share/$n/"
 install -vDm755 "${n}_drv.so"*                  -t "$D/usr/lib/xorg/modules/drivers/"
 install -vDm755 "libglxserver_$n.so"*           -t "$D/usr/lib/xorg/modules/extensions/"
 
-ln -svf "libglxserver_$n.so".*.*.*  \
+ln -sfv "libglxserver_$n.so.$v" \
     "$D/usr/lib/xorg/modules/extensions/libglxserver_$n.so.1"
-ln -svf "libglxserver_$n.so.1"      \
+ln -sfv "libglxserver_$n.so.1"  \
     "$D/usr/lib/xorg/modules/extensions/libglxserver_$n.so"
 
 install -vDm755 "libGLX_$n.so"* "lib$n-fbc.so"* -t "$D/usr/lib/"
@@ -129,6 +125,7 @@ nvsym "$D/usr/lib/lib$n-fbc"
 install -vDm644 "$n-drm-outputclass.conf"       -t "$D/usr/share/X11/xorg.conf.d/"
 
 # EGL
+# TODO: EGL may require more stuff
 libs=(
     lib$n-egl-gbm
     lib$n-egl-wayland

@@ -1,6 +1,6 @@
 {
   "name": "nvidia",
-  "version": "575.57.08",
+  "version": "575.64",
   "about": "NVIDIA drivers",
   "maintainer": "Tox",
   "licenses": [
@@ -18,13 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://us.download.nvidia.com/XFree86/Linux-x86_64/575.57.08/NVIDIA-Linux-x86_64-575.57.08.run",
-      "dest": "NVIDIA-Linux-x86_64-575.57.08.run"
-    },
-    {
-      "kind": "Download",
-      "url": "https://glfs-book.github.io/glfs/patches/nvidia/nvidia-575.57.08-kernel_gpl_cachyos-1.patch",
-      "dest": "nvidia-575.57.08-kernel_gpl_cachyos-1.patch"
+      "url": "https://us.download.nvidia.com/XFree86/Linux-x86_64/575.64/NVIDIA-Linux-x86_64-575.64.run",
+      "dest": "NVIDIA-Linux-x86_64-575.64.run"
     }
   ],
   "dependencies": [
