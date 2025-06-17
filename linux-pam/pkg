@@ -1,7 +1,7 @@
 #!/to
 
 n="linux-pam"
-v="1.7.0"
+v="1.7.1"
 a="Pluggable Authentication Modules"
 m="Tox"
 l="GPL-2.0-only"
