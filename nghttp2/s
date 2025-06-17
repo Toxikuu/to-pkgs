@@ -1,6 +1,6 @@
 {
   "name": "nghttp2",
-  "version": "1.65.0",
+  "version": "1.66.0",
   "about": "HTTP/2 implementation",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.65.0/nghttp2-1.65.0.tar.xz",
-      "dest": "nghttp2-1.65.0.tar.xz"
+      "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.66.0/nghttp2-1.66.0.tar.xz",
+      "dest": "nghttp2-1.66.0.tar.xz"
     }
   ],
   "dependencies": [
