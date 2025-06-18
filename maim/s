@@ -1,0 +1,77 @@
+{
+  "name": "maim",
+  "version": "1011cfe347fc744ef573474f4111e533c5490a65",
+  "about": "Make Image utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://github.com/naelstrof/maim.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/naelstrof/maim.git",
+      "dest": "maim"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "libwebp",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcomposite",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "slop",
+      "kind": "Required"
+    },
+    {
+      "name": "glm",
+      "kind": "Build"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
