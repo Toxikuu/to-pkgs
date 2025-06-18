@@ -1,0 +1,25 @@
+{
+  "name": "glm",
+  "version": "1.0.1",
+  "about": "OpenGL math library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/g-truc/glm.git",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [
+    "math",
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/g-truc/glm.git",
+      "dest": "glm"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

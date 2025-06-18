@@ -1,0 +1,19 @@
+#!/to
+
+n="glm"
+v="1.0.1"
+a="OpenGL math library"
+m="Tox"
+l="MIT"
+t="math lib gfx"
+u="https://github.com/g-truc/$n.git"
+vf="gr | grep -v '[a-Z]'"
+
+s="$u"
+
+b() {
+
+mkdir -pv  "$D/usr/include"
+cp -r "$n" "$D/usr/include"
+
+}
