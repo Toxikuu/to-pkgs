@@ -1,0 +1,55 @@
+{
+  "name": "slop",
+  "version": "e11dd12bb9f6b68c3fce9e2f74e5c044d8cd7b70",
+  "about": "Selection Operation utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL3"
+  ],
+  "upstream": "https://github.com/naelstrof/slop.git",
+  "version_fetch": null,
+  "tags": [
+    "cli",
+    "gui",
+    "utils",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/naelstrof/slop.git",
+      "dest": "slop"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "glew",
+      "kind": "Required"
+    },
+    {
+      "name": "glm",
+      "kind": "Build"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

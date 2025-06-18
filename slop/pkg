@@ -1,0 +1,28 @@
+#!/to
+
+n="slop"
+v="e11dd12bb9f6b68c3fce9e2f74e5c044d8cd7b70"
+a="Selection Operation utility"
+m="Tox"
+l="GPL3"
+t="cli gui utils gfx"
+u="https://github.com/naelstrof/$n.git"
+
+s="$u"
+
+d=(
+    "libx11"
+    "libxext"
+    "libxrender"
+    "glew"
+    "b,glm"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+_cfg=( -DCMAKE_POLICY_VERSION_MINIMUM=3.5 )
+def
+
+}
