@@ -1,6 +1,6 @@
 {
   "name": "xorg-server",
-  "version": "21.1.17",
+  "version": "21.1.18",
   "about": "X Window system server",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.x.org/pub/individual/xserver/xorg-server-21.1.17.tar.xz",
-      "dest": "xorg-server-21.1.17.tar.xz"
+      "url": "https://www.x.org/pub/individual/xserver/xorg-server-21.1.18.tar.xz",
+      "dest": "xorg-server-21.1.18.tar.xz"
     },
     {
       "kind": "Download",
