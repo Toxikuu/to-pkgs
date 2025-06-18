@@ -1,0 +1,32 @@
+#!/to
+
+n="glew"
+v="2.2.0"
+tag="$n-$v"
+a="OpenGL Extension Wrangler Library"
+m="Tox"
+l="Custom"
+t="lib gfx"
+u="https://github.com/nigels-com/$n.git"
+
+s=(
+    "${u%.git}/releases/download/$tag/$tag.tgz"
+)
+
+d=(
+    "glibc"
+    "glu"
+    "libglvnd"
+)
+
+b() {
+
+sed -i 's,lib64,lib,' config/Makefile.linux
+sed -i -e '/glew.lib.static:/d' \
+       -e '/0644 .*STATIC/d'    \
+       -e 's,glew.lib.static,,' Makefile
+
+mk STRIP=
+mk GLEW_DEST="$D/usr" STRIP= install.all
+
+}

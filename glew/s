@@ -1,0 +1,37 @@
+{
+  "name": "glew",
+  "version": "2.2.0",
+  "about": "OpenGL Extension Wrangler Library",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://github.com/nigels-com/glew.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/nigels-com/glew/releases/download/glew-2.2.0/glew-2.2.0.tgz",
+      "dest": "glew-2.2.0.tgz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "glu",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
