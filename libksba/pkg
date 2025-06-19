@@ -1,0 +1,31 @@
+#!/to
+
+n="libksba"
+v="1.6.7"
+a="Library for working with X.509 certificates, CMS data and related objects"
+m="Tox"
+l=("GPL-2.0-only" "GPL-3.0-only" "LGPL-3.0-only")
+t="lib sec"
+u="git://git.gnupg.org/$n.git"
+
+s=(
+    "https://gnupg.org/ftp/gcrypt/$n/$n-$v.tar.bz2"
+)
+
+d=(
+    "glibc"
+    "libgpg-error"
+    "b,bzip2"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+mk check
+
+}

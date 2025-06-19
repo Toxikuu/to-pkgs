@@ -1,0 +1,39 @@
+{
+  "name": "libksba",
+  "version": "1.6.7",
+  "about": "Library for working with X.509 certificates, CMS data and related objects",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only",
+    "GPL-3.0-only",
+    "LGPL-3.0-only"
+  ],
+  "upstream": "git://git.gnupg.org/libksba.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "sec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://gnupg.org/ftp/gcrypt/libksba/libksba-1.6.7.tar.bz2",
+      "dest": "libksba-1.6.7.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libgpg-error",
+      "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
