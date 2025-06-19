@@ -1,0 +1,25 @@
+#!/to
+
+n="lmdb"
+an="${n^^}"
+v="0.9.33"
+tag="${an}_$v"
+a="Symas Lightning Memory-Mapped Database"
+m="Tox"
+l="Custom"
+t="lib db"
+u="https://git.openldap.org/openldap/openldap.git" # lmdb is part of this
+vf="gr | grep '^${an}_' | cut -d_ -f2- | sort -V"
+
+s="$u"
+d="glibc"
+
+b() {
+
+cd "libraries/lib$n"
+
+mk
+sed -i "s, lib$n.a,," Makefile
+mi prefix=/usr
+
+}

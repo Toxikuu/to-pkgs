@@ -1,0 +1,29 @@
+{
+  "name": "lmdb",
+  "version": "0.9.33",
+  "about": "Symas Lightning Memory-Mapped Database",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://git.openldap.org/openldap/openldap.git",
+  "version_fetch": "gr | grep '^LMDB_' | cut -d_ -f2- | sort -V",
+  "tags": [
+    "lib",
+    "db"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.openldap.org/openldap/openldap.git",
+      "dest": "openldap"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
