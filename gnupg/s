@@ -1,0 +1,85 @@
+{
+  "name": "gnupg",
+  "version": "2.4.8",
+  "about": "GNU's Pretty Good Privacy",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://github.com/gpg/gnupg.git",
+  "version_fetch": "gr | vfs | vfem | sort -V",
+  "tags": [
+    "lib",
+    "sec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.8.tar.bz2",
+      "dest": "gnupg-2.4.8.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libgpg-error",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "libassuan",
+      "kind": "Required"
+    },
+    {
+      "name": "libgcrypt",
+      "kind": "Required"
+    },
+    {
+      "name": "libksba",
+      "kind": "Required"
+    },
+    {
+      "name": "npth",
+      "kind": "Required"
+    },
+    {
+      "name": "openldap",
+      "kind": "Required"
+    },
+    {
+      "name": "gnutls",
+      "kind": "Required"
+    },
+    {
+      "name": "pinentry",
+      "kind": "Required"
+    },
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "libusb",
+      "kind": "Required"
+    },
+    {
+      "name": "sqlite",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

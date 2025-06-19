@@ -1,0 +1,45 @@
+#!/to
+
+n="gnupg"
+v="2.4.8"
+a="GNU's Pretty Good Privacy"
+m="Tox"
+l="GPL-3.0-or-later"
+t="lib sec"
+u="https://github.com/gpg/$n.git"
+vf="gr | vfs | vfem | sort -V"
+
+s=(
+    "https://www.$n.org/ftp/gcrypt/$n/$n-$v.tar.bz2"
+)
+
+d=(
+    "bzip2"
+    "glibc"
+    "libgpg-error"
+    "readline"
+    "zlib"
+
+    "libassuan"
+    "libgcrypt"
+    "libksba"
+    "npth"
+    "openldap"
+    "gnutls"
+    "pinentry"
+    "curl"
+    "libusb"
+    "sqlite"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+mk check
+
+}
