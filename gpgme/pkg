@@ -1,14 +1,13 @@
 #!/to
 
 n="gpgme"
-v="1.24.3"
+v="2.0.0"
 a="GPG Made Easy"
 m="Tox"
 l=("GPL-2.0-or-later" "LGPL-2.0-or-later" "LGPL-2.1-or-later" "MIT")
 t="lib sec"
 u="https://github.com/gpg/$n.git"
-vf="no" # TODO: Deal with 2.0.0
-# vf="gr | cut -d- -f2- | grep -Ev '[a-Z]|-|@' | sort -V"
+vf="gr | cut -d- -f2- | grep -Ev '[a-Z]|-|@' | sort -V"
 
 s=(
     "https://www.gnupg.org/ftp/gcrypt/$n/$n-$v.tar.bz2"
@@ -17,21 +16,27 @@ s=(
 d=(
     "b,bzip2"
     "libassuan"
+    "libgpg-error"
     "glibc"
     "gcc"
+    "gnupg"
 )
 
 b() {
 
-mkdir -pv   build
-cd          build
-
 _cfg=(
-    --disable-gpg-test
+    --disable-gpgsm-test
+    --disable-fd-passing
 )
 
 cfg
 mk PYTHONS=
 mi PYTHONS=
+
+}
+
+t() {
+
+mk check
 
 }
