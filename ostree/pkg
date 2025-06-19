@@ -34,5 +34,6 @@ d=(
 b() {
 
 def
+rm -rf "$D/etc/grub.d" # ??
 
 }
