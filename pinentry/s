@@ -1,0 +1,41 @@
+{
+  "name": "pinentry",
+  "version": "1.3.1",
+  "about": "PIN entry dialogs",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "git://git.gnupg.org/pinentry.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "sec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.1.tar.bz2",
+      "dest": "pinentry-1.3.1.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "libassuan",
+      "kind": "Required"
+    },
+    {
+      "name": "libgpg-error",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,35 @@
+#!/to
+
+n="pinentry"
+v="1.3.1"
+a="PIN entry dialogs"
+m="Tox"
+l="GPL"
+t="lib sec"
+u="git://git.gnupg.org/$n.git"
+
+s=(
+    "https://gnupg.org/ftp/gcrypt/$n/$n-$v.tar.bz2"
+)
+
+d=(
+    "b,bzip2"
+    "ncurses"
+    "libassuan"
+    "libgpg-error"
+)
+
+b() {
+
+_cfg=(
+    --enable-pinentry-tty
+    --enable-pinentry-curses
+    --enable-fallback-curses
+
+    --enable-pinentry-qt=no
+    --enable-pinentry-emacs=no
+)
+
+def
+
+}
