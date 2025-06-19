@@ -1,0 +1,32 @@
+{
+  "name": "npth",
+  "version": "1.8",
+  "about": "New portable threads library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "git://git.gnupg.org/npth.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2",
+      "dest": "npth-1.8.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

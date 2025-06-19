@@ -1,0 +1,30 @@
+#!/to
+
+n="npth"
+v="1.8"
+a="New portable threads library"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib"
+u="git://git.gnupg.org/$n.git"
+
+s=(
+    "https://gnupg.org/ftp/gcrypt/$n/$n-$v.tar.bz2"
+)
+
+d=(
+    "glibc"
+    "b,bzip2"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+mk check
+
+}
