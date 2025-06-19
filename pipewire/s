@@ -108,6 +108,10 @@
       "kind": "Build"
     },
     {
+      "name": "wireplumber",
+      "kind": "Runtime"
+    },
+    {
       "name": "meson",
       "kind": "Build"
     },

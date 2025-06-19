@@ -43,7 +43,7 @@ d=(
     "b,libx11"
     "b,libxfixes"
 
-    # "r,wireplumber"
+    "r,wireplumber"
 
     "b,meson"
     "b,samu"
