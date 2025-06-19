@@ -1,0 +1,36 @@
+#!/to
+
+n="libgcrypt"
+v="1.11.1"
+a="General purpose cryptographic library"
+m="Tox"
+l="LGPL-2.1-or-later AND GPL-2.0-or-later"
+t="lib sec"
+u="git://git.gnupg.org/$n.git"
+vf="gr | sed s,^$n-,, | grep -v [a-Z] | sort -V"
+
+s=(
+    "https://gnupg.org/ftp/gcrypt/$n/$n-$v.tar.bz2"
+)
+
+d=(
+    "libgpg-error"
+    "glibc"
+    "b,bzip2"
+)
+
+b() {
+
+_cfg=(
+    --disable-padlock-support
+)
+
+def
+
+}
+
+t() {
+
+mk check
+
+}
