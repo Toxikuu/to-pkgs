@@ -1,7 +1,7 @@
 #!/to
 
 n="mpfr"
-v="d663fad084ab048c891d00dbdea8b19b748ffc6b"
+v="e58ad863257a31f6e3faced95b365e4fc75e3e1e"
 a="Multiple-precision floating-point math library"
 m="Tox"
 l=(
