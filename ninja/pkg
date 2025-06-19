@@ -1,7 +1,7 @@
 #!/to
 
 n="ninja"
-v="1.12.1"
+v="1.13.0"
 a="Small, fast build system"
 m="Tox"
 l="Apache-2.0"
