@@ -1,0 +1,41 @@
+#!/to
+
+n="openldap"
+v="2.6.10"
+tag="${n^^}_REL_ENG_${v//./_}"
+a="Lightweight Directory Access Protocol (LDAP)"
+m="Tox"
+l="Custom"
+t="lib"
+u="https://git.$n.org/$n/$n.git"
+vf="gr | grep ^${n^^}_REL_ENG_ | cut -d_ -f4- | grep -v [a-Z] | sort -V | sed s,_,.,g"
+
+s=(
+    "$u"
+    "https://www.linuxfromscratch.org/patches/blfs/svn/$n-$v-consolidated-1.patch"
+)
+
+d=(
+    "libtool"
+    "perl"
+    "cyrus-sasl"
+    "gnutls"
+    "b,util-linux"
+)
+
+b() {
+
+pat "$S/$n-$v-consolidated-1.patch"
+autoconf
+
+_cfg=(
+    --enable-dynamic
+    --disable-{debug,slapd}
+)
+
+cfg
+mk depend
+mk
+mi
+
+}

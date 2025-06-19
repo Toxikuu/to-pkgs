@@ -1,0 +1,49 @@
+{
+  "name": "openldap",
+  "version": "2.6.10",
+  "about": "Lightweight Directory Access Protocol (LDAP)",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://git.openldap.org/openldap/openldap.git",
+  "version_fetch": "gr | grep ^OPENLDAP_REL_ENG_ | cut -d_ -f4- | grep -v [a-Z] | sort -V | sed s,_,.,g",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.openldap.org/openldap/openldap.git",
+      "dest": "openldap"
+    },
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.6.10-consolidated-1.patch",
+      "dest": "openldap-2.6.10-consolidated-1.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libtool",
+      "kind": "Required"
+    },
+    {
+      "name": "perl",
+      "kind": "Required"
+    },
+    {
+      "name": "cyrus-sasl",
+      "kind": "Required"
+    },
+    {
+      "name": "gnutls",
+      "kind": "Required"
+    },
+    {
+      "name": "util-linux",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
