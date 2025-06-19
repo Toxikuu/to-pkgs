@@ -2,7 +2,7 @@
 
 n="kernel"
 an="linux"
-v="6.15.2"
+v="6.15.3"
 a="The ${an^} $n"
 m="Tox"
 l="GPL-2.0-only"
