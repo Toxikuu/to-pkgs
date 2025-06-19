@@ -1,0 +1,58 @@
+{
+  "name": "cyrus-sasl",
+  "version": "2.1.28",
+  "about": "Cyrus saslauthd SASL authentication daemon",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause-Attribution"
+  ],
+  "upstream": "https://github.com/cyrusimap/cyrus-sasl.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "sec"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz",
+      "dest": "cyrus-sasl-2.1.28.tar.gz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch",
+      "dest": "cyrus-sasl-2.1.28-gcc15_fixes-1.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "lmdb",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcrypt",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "pam",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "sqlite",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

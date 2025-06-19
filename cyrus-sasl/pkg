@@ -1,0 +1,45 @@
+#!/to
+
+n="cyrus-sasl"
+v="2.1.28"
+a="Cyrus saslauthd SASL authentication daemon"
+m="Tox"
+l="BSD-3-Clause-Attribution"
+t="lib sec"
+u="https://github.com/cyrusimap/$n.git"
+
+s=(
+    "${u%.git}/releases/download/$n-$v/$n-$v.tar.gz"
+    "https://www.linuxfromscratch.org/patches/blfs/svn/$n-$v-gcc15_fixes-1.patch"
+)
+
+d=(
+    "lmdb"
+    "glibc"
+    "libxcrypt"
+    "openssl"
+    "pam"
+    "glibc"
+    "b,sqlite"
+)
+
+b() {
+
+pat "$S/$n-$v-gcc15_fixes-1.patch"
+autoreconf -fiv
+
+sed '/saslint/a #include <time.h>'       -i lib/saslutil.c
+sed '/plugin_common/a #include <time.h>' -i plugins/cram.c
+
+_cfg=(
+    --enable-auth-sasldb
+    --with-dblib=lmdb
+    --with-dbpath=/var/lib/sasl/sasldb2
+    --with-sphinx-build=no
+    --with-saslauthd=/var/run/saslauthd
+)
+
+def
+install -vdm700 "$D/var/lib/sasl"
+
+}
