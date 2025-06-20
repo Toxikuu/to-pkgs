@@ -38,10 +38,6 @@
     {
       "name": "glibc",
       "kind": "Required"
-    },
-    {
-      "name": "blfs-bootscripts",
-      "kind": "Required"
     }
   ],
   "kcfg": []
