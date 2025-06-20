@@ -21,16 +21,11 @@
       "kind": "Download",
       "url": "https://github.com/systemd/systemd/archive/v257.6/systemd-257.6.tar.gz",
       "dest": "systemd-257.6.tar.gz"
-    },
-    {
-      "kind": "Download",
-      "url": "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz",
-      "dest": "udev-lfs-20230818.tar.xz"
     }
   ],
   "dependencies": [
     {
-      "name": "samurai",
+      "name": "samu",
       "kind": "Build"
     },
     {
