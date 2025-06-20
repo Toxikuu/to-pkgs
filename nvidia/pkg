@@ -1,5 +1,5 @@
 #!/to
-# Huge thanks to Zeckma
+# Huge thanks to Zeckma for her work on:
 # https://github.com/glfs-book/glfs/blob/trunk/shareddeps/drivers/nvidia.xml
 
 n="nvidia"
