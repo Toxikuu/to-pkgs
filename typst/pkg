@@ -1,0 +1,43 @@
+#!/to
+
+n="typst"
+v="0.13.1"
+tag="v$v"
+a="Modern typesetting system"
+m="Tox"
+l="Apache-2.0"
+t="type utils cli"
+u="https://github.com/$n/$n.git"
+vf="gr | grep -v -- - | sort -V"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "openssl"
+    "b,rust"
+)
+
+b() {
+
+CFLAGS+=' -ffat-lto-objects'
+
+export TYPST_VERSION="$v"
+export GEN_ARTIFACTS=artifacts/
+export OPENSSL_NO_VENDOR=true
+
+cbr -p "$n-cli"
+
+artifacts="crates/$n-cli/$GEN_ARTIFACTS"
+
+install -vDm755 "target/release/$n" -t "$D/usr/bin"
+install -vDm644 "$artifacts$n"*.1   -t "$D/usr/share/man/man1/"
+install -vDm644 "$artifacts$n.bash"    "$D/usr/share/bash-completion/completions/$n"
+
+}
+
+t() {
+
+cargo test
+
+}
