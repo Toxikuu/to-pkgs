@@ -1,0 +1,28 @@
+{
+  "name": "liburcu",
+  "version": "0.15.3",
+  "about": "Userspace read-copy-update library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL2.1"
+  ],
+  "upstream": "https://git.liburcu.org/userspace-rcu.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.liburcu.org/userspace-rcu.git",
+      "dest": "userspace-rcu"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

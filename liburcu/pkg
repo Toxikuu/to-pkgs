@@ -1,0 +1,20 @@
+#!/to
+
+n="liburcu"
+v="0.15.3"
+tag="v$v"
+a="Userspace read-copy-update library"
+m="Tox"
+l="LGPL2.1"
+t="lib"
+u="https://git.$n.org/userspace-rcu.git"
+
+s="$u"
+d="glibc"
+
+b() {
+
+autoreconf -fiv
+def
+
+}
