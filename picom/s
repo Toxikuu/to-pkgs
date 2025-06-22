@@ -1,6 +1,6 @@
 {
   "name": "picom",
-  "version": "b99537235bf858ccf527217bfc196d4923a3e3a1",
+  "version": "9b8b0e956514779de15898475091de01d59b4394",
   "about": "Lightweight X11 compositor",
   "maintainer": "Tox",
   "licenses": [
