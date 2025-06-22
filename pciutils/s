@@ -1,6 +1,6 @@
 {
   "name": "pciutils",
-  "version": "2bbe1d46b628b155f691d31a8f5b5e0255f3be3f",
+  "version": "8372cd499e99c4ff55f86075f244e5816d752e24",
   "about": "PCI utilities",
   "maintainer": "Tox",
   "licenses": [
