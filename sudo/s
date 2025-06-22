@@ -1,6 +1,6 @@
 {
   "name": "sudo",
-  "version": "5fad16bda22ce5948eddb9e49451a2f8806105b8",
+  "version": "51c3488100a2773a6147b043e1f9fb2490cfc005",
   "about": "Privilege escalation utility",
   "maintainer": "Tox",
   "licenses": [
