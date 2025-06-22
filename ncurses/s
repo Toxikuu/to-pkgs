@@ -1,6 +1,6 @@
 {
   "name": "ncurses",
-  "version": "6.5-20250614",
+  "version": "6.5-20250621",
   "about": "Libraries for terminal-independent character screen handling",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250614.tgz",
-      "dest": "ncurses-6.5-20250614.tgz"
+      "url": "https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250621.tgz",
+      "dest": "ncurses-6.5-20250621.tgz"
     }
   ],
   "dependencies": [
