@@ -1,7 +1,7 @@
 #!/to
 
 n="wayland"
-v="ba9f9a446f7462a7b41b34e585c7beca020d12f7"
+v="eecf3f7635586c41d985e0f443fd4f8930751487"
 a="Display server protocol"
 m="Tox"
 l="MIT"
