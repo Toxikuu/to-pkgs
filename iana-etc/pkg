@@ -1,7 +1,7 @@
 #!/to
 
 n="iana-etc"
-v="20250612"
+v="20250618"
 a="The Internet Assigned Numbers Authority's services and protocols"
 m="Tox"
 l="MIT"
