@@ -1,6 +1,6 @@
 {
   "name": "libexif",
-  "version": "1f544d824f98e4261c6592c38fcd3d42bfb97d12",
+  "version": "1a31f67eabcca2be32e12adaf0b5892dee71a5b7",
   "about": "EXIF data library",
   "maintainer": "Tox",
   "licenses": [
