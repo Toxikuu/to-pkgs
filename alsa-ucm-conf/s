@@ -1,6 +1,6 @@
 {
   "name": "alsa-ucm-conf",
-  "version": "436fbad2a02b91435645e039664af469595ab500",
+  "version": "1b69ade9b6d7ee37a87c08b12d7955d0b68fa69d",
   "about": "ALSA Use Case Manager configuration files",
   "maintainer": "Tox",
   "licenses": [
