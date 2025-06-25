@@ -1,7 +1,7 @@
 #!/to
 
 n="tmux"
-v="96244dd727617df1855a7e9cd1d98fdeafcf44a8"
+v="e7f15d09be61fd0b9d54f6fec2f47ace4008b4dc"
 a="Terminal multiplexer"
 m="Tox"
 l="BSD"
