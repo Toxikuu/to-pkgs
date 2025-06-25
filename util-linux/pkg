@@ -1,7 +1,7 @@
 #!/to
 
 n="util-linux"
-v="2.41"
+v="2.41.1"
 a="Miscellaneous utility prorgrams"
 m="Tox"
 l=(
