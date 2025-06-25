@@ -1,7 +1,7 @@
 #!/to
 
 n="btrfs-progs"
-v="6.14"
+v="6.15"
 tag="v$v"
 a="Btrfs filesystem utilities"
 m="Tox"
