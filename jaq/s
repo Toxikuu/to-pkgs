@@ -1,0 +1,38 @@
+{
+  "name": "jaq",
+  "version": "2.2.0",
+  "about": "Command-line JSON processor",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/01mf02/jaq.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "lang",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/01mf02/jaq.git",
+      "dest": "jaq"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

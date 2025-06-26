@@ -1,0 +1,31 @@
+#!/to
+
+n="jaq"
+v="2.2.0"
+tag="v$v"
+a="Command-line JSON processor"
+m="Tox"
+l="MIT"
+t="utils lang cli"
+u="https://github.com/01mf02/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "b,rust"
+)
+
+b() {
+
+CFLAGS+=' -ffat-lto-objects'
+cbr
+install -vDm755 "target/release/$n" -t "$D/usr/bin/"
+
+}
+
+t() {
+
+cargo test
+
+}
