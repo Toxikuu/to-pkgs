@@ -20,7 +20,9 @@ b() {
 
 CFLAGS+=' -ffat-lto-objects'
 cbr
+
 install -vDm755 "target/release/$n" -t "$D/usr/bin/"
+ln -sv "jaq" "$D/usr/bin/jq"
 
 }
 
