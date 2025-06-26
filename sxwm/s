@@ -1,6 +1,6 @@
 {
   "name": "sxwm",
-  "version": "0b0a508650dbc4e731830451bcd34bfefdbaac64",
+  "version": "d5a8c802cb80e23532f5521003de96bd47834ee7",
   "about": "Simple X Window Manager",
   "maintainer": "Tox",
   "licenses": [
