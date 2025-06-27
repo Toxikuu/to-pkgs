@@ -1,6 +1,6 @@
 {
   "name": "gstreamer",
-  "version": "1.26.2",
+  "version": "1.26.3",
   "about": "Development framework for multimedia applications",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.2.tar.xz",
-      "dest": "gstreamer-1.26.2.tar.xz"
+      "url": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.26.3.tar.xz",
+      "dest": "gstreamer-1.26.3.tar.xz"
     }
   ],
   "dependencies": [
