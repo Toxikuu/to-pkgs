@@ -1,6 +1,6 @@
 {
   "name": "gst-plugins-base",
-  "version": "1.26.2",
+  "version": "1.26.3",
   "about": "Base gst plugins",
   "maintainer": "Tox",
   "licenses": [
@@ -17,8 +17,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.2.tar.xz",
-      "dest": "gst-plugins-base-1.26.2.tar.xz"
+      "url": "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.26.3.tar.xz",
+      "dest": "gst-plugins-base-1.26.3.tar.xz"
     }
   ],
   "dependencies": [
