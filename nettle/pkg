@@ -1,7 +1,7 @@
 #!/to
 
 n="nettle"
-v="3.10.1"
+v="3.10.2"
 a="Low-level cryptographic library"
 m="Tox"
 l="LGPL-3.0-or-later OR GPL-2.0-or-later"
