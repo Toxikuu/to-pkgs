@@ -136,7 +136,8 @@ xmlc "delegateURI"                      \
 
 _gen_compat_catalog() {
 
-for DTDV in 4.1.2 4.2 4.3 4.4
+# NOTE: $v is generated as well
+for DTDV in 4.1.2 4.2 4.3 4.4 4.5
 do
   xmlc "public"                                             \
     "-//OASIS//DTD DocBook XML V$DTDV//EN"                  \
