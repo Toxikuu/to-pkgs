@@ -8,7 +8,10 @@
   ],
   "upstream": "https://www.sourceware.org/pub/docbook-tools/new-trials/SOURCES/",
   "version_fetch": "no",
-  "tags": [],
+  "tags": [
+    "doc",
+    "utils"
+  ],
   "sources": [
     {
       "kind": "Download",

@@ -5,7 +5,7 @@ v="0.6.3"
 a="Tools for maintaining centralized SGML catalogs"
 m="Tox"
 l="GPL-1.0-or-later"
-t=""
+t="doc utils"
 u="https://www.sourceware.org/pub/docbook-tools/new-trials/SOURCES/"
 vf="no"
 
@@ -17,6 +17,19 @@ b() {
 
 pat "$A/man.patch"
 autoreconf -fiv
-def
+cfg
+
+mk
+mi docdir=/usr/share/doc
+
+}
+
+i() {
+
+install-catalog --add /etc/sgml/sgml-ent.cat \
+    /usr/share/sgml/sgml-iso-entities-8879.1986/catalog
+
+install-catalog --add /etc/sgml/sgml-docbook.cat \
+    /etc/sgml/sgml-ent.cat
 
 }

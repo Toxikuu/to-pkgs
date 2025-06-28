@@ -51,7 +51,7 @@ i() {
 install-catalog --add /etc/sgml/sgml-docbook-dtd-$v.cat \
     /usr/share/sgml/$n-$v/catalog
 
-install-catalog --add /etc/sgml/sgml-docbook-dtd-4.5.cat \
+install-catalog --add /etc/sgml/sgml-docbook-dtd-$v.cat \
     /etc/sgml/sgml-docbook.cat
 
 }
