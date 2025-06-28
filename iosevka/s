@@ -1,0 +1,23 @@
+{
+  "name": "iosevka",
+  "version": "3.4.0",
+  "about": "Iosevka Nerd Font",
+  "maintainer": "Tox",
+  "licenses": [
+    "OFL"
+  ],
+  "upstream": "https://github.com/ryanoasis/nerd-fonts.git",
+  "version_fetch": null,
+  "tags": [
+    "font"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Iosevka.tar.xz",
+      "dest": "Iosevka.tar.xz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
