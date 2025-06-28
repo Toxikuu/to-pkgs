@@ -1,0 +1,42 @@
+{
+  "name": "tidy",
+  "version": "5.8.0",
+  "about": "HTML formatter",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://github.com/htacg/tidy-html5.git",
+  "version_fetch": "gr | grep -v '[a-Z]'",
+  "tags": [
+    "doc",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/htacg/tidy-html5.git",
+      "dest": "tidy-html5"
+    },
+    {
+      "kind": "Download",
+      "url": "https://www.linuxfromscratch.org/patches/blfs/svn/tidy-html5-5.8.0-cmake4_fixes-1.patch",
+      "dest": "cmake4.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "libxslt",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,39 @@
+#!/to
+
+n="tidy"
+v="5.8.0"
+a="HTML formatter"
+m="Tox"
+l="Custom"
+t="doc utils"
+u="https://github.com/htacg/$n-html5.git"
+vf="gr | grep -v '[a-Z]'"
+
+s=(
+    "$u"
+    "https://www.linuxfromscratch.org/patches/blfs/svn/$n-html5-$v-cmake4_fixes-1.patch -> cmake4.patch"
+)
+
+d=(
+    "glibc"
+    "b,cmake"
+    "b,libxslt"
+)
+
+b() {
+
+export CFLAGS+=" -ffat-lto-objects"
+export CXXFLAGS+=" -ffat-lto-objects"
+
+pat "$S/cmake4.patch"
+
+_cfg=(
+    -D BUILD_TAB2SPACE=ON
+)
+
+def
+
+rm -vf "$D/usr/lib/lib$n.a"
+install -vm755 tab2space -t "$D/usr/bin/"
+
+}
