@@ -1,0 +1,57 @@
+#!/to
+
+n="docbook-sgml"
+v="4.5"
+a="Document type definitions for verification of SGML data files against the DocBook rule set"
+m="Tox"
+l="Custom"
+t="lib doc"
+u="https://www.docbook.org/sgml/"
+vf="no" # dead
+
+s=(
+    "${u}$v/${n%-*}-$v.zip"
+)
+
+d=(
+    "sgml-common"
+    "b,libarchive"
+)
+
+b() {
+
+chown -R 0:0 .
+sed -e '/ISO 8879/d' \
+    -e '/gml/d'      \
+    -i docbook.cat
+
+# Add backwards compatibility
+cat >> docbook.cat << "EOF"
+
+  -- Begin Single Major Version catalog changes --
+
+PUBLIC "-//OASIS//DTD DocBook V4.4//EN" "docbook.dtd"
+PUBLIC "-//OASIS//DTD DocBook V4.3//EN" "docbook.dtd"
+PUBLIC "-//OASIS//DTD DocBook V4.2//EN" "docbook.dtd"
+PUBLIC "-//OASIS//DTD DocBook V4.1//EN" "docbook.dtd"
+PUBLIC "-//OASIS//DTD DocBook V4.0//EN" "docbook.dtd"
+
+  -- End Single Major Version catalog changes --
+
+EOF
+
+DTDDIR="usr/share/sgml/$n-$v"
+install -vDm644 docbook.cat       "$D/$DTDDIR/catalog"
+install -vm644 *.{dtd,mod,dcl} -t "$D/$DTDDIR/"
+
+}
+
+i() {
+
+install-catalog --add /etc/sgml/sgml-docbook-dtd-$v.cat \
+    /usr/share/sgml/$n-$v/catalog
+
+install-catalog --add /etc/sgml/sgml-docbook-dtd-4.5.cat \
+    /etc/sgml/sgml-docbook.cat
+
+}

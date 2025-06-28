@@ -1,0 +1,33 @@
+{
+  "name": "docbook-sgml",
+  "version": "4.5",
+  "about": "Document type definitions for verification of SGML data files against the DocBook rule set",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://www.docbook.org/sgml/",
+  "version_fetch": "no",
+  "tags": [
+    "lib",
+    "doc"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.docbook.org/sgml/4.5/docbook-4.5.zip",
+      "dest": "docbook-4.5.zip"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "sgml-common",
+      "kind": "Required"
+    },
+    {
+      "name": "libarchive",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
