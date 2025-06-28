@@ -1,0 +1,50 @@
+{
+  "name": "zip",
+  "version": "3.0",
+  "about": "Zip compressor",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "http://www.info-zip.org/Zip.html",
+  "version_fetch": "no",
+  "tags": [
+    "utils",
+    "cli",
+    "z"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://downloads.sourceforge.net/infozip/zip30.tar.gz",
+      "dest": "zip30.tar.gz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://src.fedoraproject.org/rpms/zip/raw/rawhide/f/zip-3.0-currdir.patch",
+      "dest": "zip-3.0-currdir.patch"
+    },
+    {
+      "kind": "Download",
+      "url": "https://src.fedoraproject.org/rpms/zip/raw/rawhide/f/zip-3.0-exec-shield.patch",
+      "dest": "zip-3.0-exec-shield.patch"
+    },
+    {
+      "kind": "Download",
+      "url": "https://src.fedoraproject.org/rpms/zip/raw/rawhide/f/zip-3.0-format-security.patch",
+      "dest": "zip-3.0-format-security.patch"
+    },
+    {
+      "kind": "Download",
+      "url": "https://src.fedoraproject.org/rpms/zip/raw/rawhide/f/zipnote.patch",
+      "dest": "zipnote.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

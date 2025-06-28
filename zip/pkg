@@ -1,0 +1,38 @@
+#!/to
+
+n="zip"
+v="3.0"
+a="Zip compressor"
+m="Tox"
+l="Custom"
+t="utils cli z"
+u="http://www.info-$n.org/${n^}.html"
+vf="no" # upstream is dead :(
+
+s=(
+    "https://downloads.sourceforge.net/infozip/${n}${v/./}.tar.gz"
+    "https://src.fedoraproject.org/rpms/$n/raw/rawhide/f/$n-$v-currdir.patch"
+    "https://src.fedoraproject.org/rpms/$n/raw/rawhide/f/$n-$v-exec-shield.patch"
+    "https://src.fedoraproject.org/rpms/$n/raw/rawhide/f/$n-$v-format-security.patch"
+    "https://src.fedoraproject.org/rpms/$n/raw/rawhide/f/${n}note.patch"
+)
+
+d="bzip2"
+
+b() {
+
+sed -i "/^CFLAGS_NOOPT =/s/\$/ $CFLAGS/"  unix/Makefile
+sed -i "s/^LFLAGS1=''/LFLAGS1=$LDFLAGS/"            unix/configure
+
+pat "$S/$n-$v-currdir.patch"
+pat "$S/$n-$v-exec-shield.patch"
+pat "$S/$n-$v-format-security.patch"
+pat "$S/${n}note.patch"
+
+mk -f unix/Makefile prefix=/usr generic CC="gcc -std=gnu89"
+mk -f unix/Makefile                 \
+    prefix="$D/usr"                 \
+    MANDIR="$D/usr/share/man/man1"  \
+    install
+
+}
