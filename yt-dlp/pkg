@@ -1,0 +1,26 @@
+#!/to
+
+n="yt-dlp"
+v="2025.06.25"
+a="Feature-rich CLI media downloader"
+m="Tox"
+l="Unlicense"
+t="utils cli"
+u="https://github.com/$n/$n.git"
+
+s="$u"
+d=(
+    "r,ffmpeg"
+
+    "zip"
+    "python"
+    "curl"
+    "make-ca"
+)
+
+b() {
+
+mk $n
+install -vDm755 $n -t "$D/usr/bin/"
+
+}

@@ -1,0 +1,45 @@
+{
+  "name": "yt-dlp",
+  "version": "2025.06.25",
+  "about": "Feature-rich CLI media downloader",
+  "maintainer": "Tox",
+  "licenses": [
+    "Unlicense"
+  ],
+  "upstream": "https://github.com/yt-dlp/yt-dlp.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/yt-dlp/yt-dlp.git",
+      "dest": "yt-dlp"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "ffmpeg",
+      "kind": "Runtime"
+    },
+    {
+      "name": "zip",
+      "kind": "Required"
+    },
+    {
+      "name": "python",
+      "kind": "Required"
+    },
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "make-ca",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
