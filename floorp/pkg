@@ -1,0 +1,62 @@
+#!/to
+
+n="floorp"
+v="11.28.0"
+a="Firefox fork focused on performance and customization"
+m="Tox"
+l="LICENSE"
+t="net utils gui browser"
+u="https://github.com/${n^}-Projects/${n^}.git"
+vf="no" # TODO: <-
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.linux-x86_64.tar.bz2"
+)
+
+d=(
+    "b,bzip2"
+
+    "glibc"
+    "gtk3"
+    "alsa-lib"
+)
+
+b() {
+
+install -vdm755 "$D/usr/lib/$n"
+cp -a {,.}*     "$D/usr/lib/$n/"
+
+# Desktop file
+install -vDm644 /dev/stdin "$D/usr/share/applications/$n.desktop" << .
+[Desktop Entry]
+Version=1.0
+Name=Floorp
+GenericName=Web Browser
+Exec=floorp --class=floorp %u
+Icon=Firefox
+Terminal=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
+Categories=Network;WebBrowser;
+Keywords=web;browser;internet;firefox;
+.
+
+# Wrapper script
+install -vDm755 /dev/stdin "$D/usr/bin/$n" << .
+#!/bin/sh
+exec /usr/lib/$n/$n "\$@"
+.
+
+# Disable auto-updates
+install -vDm644 /dev/stdin "$D/usr/lib/$n/distribution/policies.json" << .
+{
+    "policies": {
+        "DisableAppUpdate": true
+    }
+}
+.
+
+# Fix permissions
+chmod -R u+rwX,go+rX,go-w "$D"
+
+}

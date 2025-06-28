@@ -1,0 +1,43 @@
+{
+  "name": "floorp",
+  "version": "11.28.0",
+  "about": "Firefox fork focused on performance and customization",
+  "maintainer": "Tox",
+  "licenses": [
+    "LICENSE"
+  ],
+  "upstream": "https://github.com/Floorp-Projects/Floorp.git",
+  "version_fetch": "no",
+  "tags": [
+    "net",
+    "utils",
+    "gui",
+    "browser"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v11.28.0/floorp-11.28.0.linux-x86_64.tar.bz2",
+      "dest": "floorp-11.28.0.linux-x86_64.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gtk3",
+      "kind": "Required"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
