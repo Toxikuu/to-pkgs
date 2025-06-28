@@ -1,0 +1,18 @@
+#!/to
+
+n="shellcheck"
+v="0.10.0"
+a="Shell script analysis tool"
+m="Tox"
+l="GPL-3.0"
+t="utils cli"
+u="https://github.com/koalaman/$n.git"
+s="${u%.git}/releases/download/v$v/$n-v$v.linux.x86_64.tar.xz"
+
+# A static binary install is used since shellcheck requires haskell and I'd
+# rather not deal with that rabbit hole right now.
+b() {
+
+install -vDm755 "$n" -t "$D/usr/bin/"
+
+}
