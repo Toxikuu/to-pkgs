@@ -6,13 +6,9 @@ a="Utility for directing compilation"
 m="Tox"
 l="GPL3"
 t="core utils"
-u="https://https.git.savannah.gnu.org/git/$n.git"
-vf="gr | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$'"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.gz"
-)
-
+s="${u%\?*}$n-$v.tar.gz"
 d="glibc"
 
 b() {

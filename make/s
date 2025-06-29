@@ -6,8 +6,8 @@
   "licenses": [
     "GPL3"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/make.git",
-  "version_fetch": "gr | grep -Ev '[a-Z]' | grep -Ev '9[0-9]$'",
+  "upstream": "http://mirror.rit.edu/gnu/make/?C=M&O=D",
+  "version_fetch": null,
   "tags": [
     "core",
     "utils"
@@ -15,7 +15,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftpmirror.gnu.org/gnu/make/make-4.4.1.tar.gz",
+      "url": "http://mirror.rit.edu/gnu/make/make-4.4.1.tar.gz",
       "dest": "make-4.4.1.tar.gz"
     }
   ],
