@@ -1,17 +1,14 @@
 #!/to
 
-# NOTE: Mirrors are used because upstream is unstable
 n="automake"
-v="1.18"
+v="1.18.1"
 a="Automatic Makefile generator"
 m="Tox"
 l="GPL"
 t="utils core"
-u="https://github.com/sailfishos-mirror/$n.git"
-vf="gr | vfs | sed 's,^v,,' | grep -v '[a-Z]'"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s="https://mirrors.ocf.berkeley.edu/gnu/$n/$n-$v.tar.xz"
-
+s="${u%\?*}$n-$v.tar.xz"
 d=(
     "perl"
     "b,autoconf"
