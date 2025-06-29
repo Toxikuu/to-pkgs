@@ -7,7 +7,7 @@
     "LGPL"
   ],
   "upstream": "http://0pointer.de/lennart/projects/libdaemon/",
-  "version_fetch": "curl -s 'http://0pointer.de/lennart/projects/libdaemon/' | grep '<title>' | awk '{{print $2}}' | cut -d'<' -f1",
+  "version_fetch": "no",
   "tags": [
     "lib"
   ],

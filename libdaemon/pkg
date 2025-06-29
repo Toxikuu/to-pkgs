@@ -7,13 +7,14 @@ m="Tox"
 l="LGPL"
 t="lib"
 u="http://0pointer.de/lennart/projects/$n/"
-vf="curl -s '$u' | grep '<title>' | awk '{{print \$2}}' | cut -d'<' -f1"
+vf="no" # last release was in 2009
 
 s="$u$n-$v.tar.gz"
 d="glibc"
 
 b() {
 
+_cfg=( --disable-lynx )
 def
 
 }
