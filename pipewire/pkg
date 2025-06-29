@@ -1,7 +1,7 @@
 #!/to
 
 n="pipewire"
-v="1.4.5"
+v="1.4.6"
 a="Low-latency audio/video router and processor"
 m="Tox"
 l="MIT"
