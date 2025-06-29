@@ -4,12 +4,10 @@
   "about": "Automatic configure script builder",
   "maintainer": "Tox",
   "licenses": [
-    "GPL2",
-    "GPL3",
-    "Custom"
+    "GPL-3.0-or-later WITH Autoconf-exception-3.0"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/autoconf.git",
-  "version_fetch": "gr | grep '^v[0-9]\\.[0-9]' | grep -v '[a-z]$'",
+  "upstream": "http://mirror.rit.edu/gnu/autoconf/?C=M&O=D",
+  "version_fetch": null,
   "tags": [
     "lib",
     "utils",
@@ -18,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz",
-      "dest": "autoconf-2.72.tar.xz"
+      "url": "http://mirror.rit.edu/gnu/autoconf/autoconf-2.72.tar.gz",
+      "dest": "autoconf-2.72.tar.gz"
     }
   ],
   "dependencies": [

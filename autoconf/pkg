@@ -4,28 +4,16 @@ n="autoconf"
 v="2.72"
 a="Automatic configure script builder"
 m="Tox"
-l=(
-    "GPL2"
-    "GPL3"
-    "Custom"
-)
+l="GPL-3.0-or-later WITH ${n^}-exception-3.0"
 t="lib utils core"
-u="https://https.git.savannah.gnu.org/git/$n.git"
-vf="gr | grep '^v[0-9]\\.[0-9]' | grep -v '[a-z]$'"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
-)
-
-d=(
-    "m4"
-    "perl"
-)
+s="${u%\?*}$n-$v.tar.gz"
+d=("m4" "perl")
 
 b() {
 
 def
-il COPYING.EXCEPTION
 rm -vf "$D"/usr/share/info/standards.info
 
 }
