@@ -6,17 +6,10 @@ a="Parser generator"
 m="Tox"
 l="GPL-3.0-or-later"
 t="core"
-u="https://https.git.savannah.gnu.org/git/$n.git"
-vf="gr | vfs | sed 's,^v,,' | grep -v '[a-Z]'"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
-)
-
-d=(
-    "m4"
-    "glibc"
-)
+s="${u%\?*}$n-$v.tar.gz"
+d="m4"
 
 qa=(
     "!static" # liby.a wanted by posix
