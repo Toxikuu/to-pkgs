@@ -1,6 +1,6 @@
 {
   "name": "udev",
-  "version": "257.6",
+  "version": "257.7",
   "about": "Programs for dynamic device node creation",
   "maintainer": "Tox",
   "licenses": [
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/systemd/systemd/archive/v257.6/systemd-257.6.tar.gz",
-      "dest": "systemd-257.6.tar.gz"
+      "url": "https://github.com/systemd/systemd/archive/v257.7/systemd-257.7.tar.gz",
+      "dest": "systemd-257.7.tar.gz"
     }
   ],
   "dependencies": [
