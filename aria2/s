@@ -1,0 +1,51 @@
+{
+  "name": "aria2",
+  "version": "b519ce04e3f3a0651fcec43550bc71f09771b069",
+  "about": "Lightweight multi-protocol, multi-source download utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://github.com/aria2/aria2.git",
+  "version_fetch": null,
+  "tags": [
+    "cli",
+    "utils",
+    "lib",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/aria2/aria2.git",
+      "dest": "aria2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "c-ares",
+      "kind": "Required"
+    },
+    {
+      "name": "make-ca",
+      "kind": "Required"
+    },
+    {
+      "name": "gnutls",
+      "kind": "Required"
+    },
+    {
+      "name": "libssh2",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "sqlite",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

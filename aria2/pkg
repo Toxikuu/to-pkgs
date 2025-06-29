@@ -1,0 +1,35 @@
+#!/to
+
+n="aria2"
+v="b519ce04e3f3a0651fcec43550bc71f09771b069"
+a="Lightweight multi-protocol, multi-source download utility"
+m="Tox"
+l="GPL"
+t="cli utils lib net"
+u="https://github.com/$n/$n.git"
+
+s="$u"
+d=(
+    "c-ares"
+    "make-ca"
+    "gnutls"
+    "libssh2"
+    "libxml2"
+    "sqlite"
+)
+
+b() {
+
+autoreconf -fiv
+
+_cfg=(
+    --enable-lib$n
+)
+
+def
+
+# Relocate completions
+install -vDm644 "$D/usr/share/doc/$n/bash_completion/${n}c" -t "$D/usr/share/bash-completion/completions/"
+rm -rf "$D/usr/share/doc/aria2/bash_completion"
+
+}
