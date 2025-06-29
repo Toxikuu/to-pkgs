@@ -1,7 +1,7 @@
 #!/to
 
 n="muon"
-v="366e201ae2158eb96c6e33d8024e342b89220e54"
+v="d27356b93c8c0388781f8253ec2d0503262988f9"
 a="An implementation of the meson build system in c99"
 m="Tox"
 l="GPL-3.0"
