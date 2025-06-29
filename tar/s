@@ -6,7 +6,7 @@
   "licenses": [
     "GPL3"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/tar.git",
+  "upstream": "http://mirror.rit.edu/gnu/tar/?C=M&O=D",
   "version_fetch": null,
   "tags": [
     "utils",
@@ -16,21 +16,13 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz",
+      "url": "http://mirror.rit.edu/gnu/tar/tar-1.35.tar.xz",
       "dest": "tar-1.35.tar.xz"
     }
   ],
   "dependencies": [
     {
       "name": "acl",
-      "kind": "Required"
-    },
-    {
-      "name": "glibc",
-      "kind": "Required"
-    },
-    {
-      "name": "attr",
       "kind": "Required"
     }
   ],
