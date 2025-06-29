@@ -6,7 +6,7 @@
   "licenses": [
     "GPL3"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/texinfo.git",
+  "upstream": "http://mirror.rit.edu/gnu/texinfo/?C=M&O=D",
   "version_fetch": null,
   "tags": [
     "core",
@@ -16,7 +16,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz",
+      "url": "http://mirror.rit.edu/gnu/texinfo/texinfo-7.2.tar.xz",
       "dest": "texinfo-7.2.tar.xz"
     }
   ],

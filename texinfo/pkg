@@ -6,12 +6,9 @@ a="Info page utility"
 m="Tox"
 l="GPL3"
 t="core doc utils"
-u="https://https.git.savannah.gnu.org/git/$n.git"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
-)
-
+s="${u%\?*}$n-$v.tar.xz"
 d=(
     "ncurses"
     "gzip"
