@@ -1,12 +1,12 @@
 {
   "name": "gdbm",
-  "version": "0d3d46cdee38c7b00a107c52875ffb36c2bc7170",
+  "version": "1.25",
   "about": "The GNU Database Manager",
   "maintainer": "Tox",
   "licenses": [
     "GPL-3.0-or-later"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/gdbm.git",
+  "upstream": "http://mirror.rit.edu/gnu/gdbm/?C=M;O=D",
   "version_fetch": null,
   "tags": [
     "core",
@@ -15,9 +15,9 @@
   ],
   "sources": [
     {
-      "kind": "Git",
-      "url": "https://https.git.savannah.gnu.org/git/gdbm.git",
-      "dest": "gdbm"
+      "kind": "Download",
+      "url": "http://mirror.rit.edu/gnu/gdbm/gdbm-1.25.tar.gz",
+      "dest": "gdbm-1.25.tar.gz"
     }
   ],
   "dependencies": [

@@ -1,24 +1,20 @@
 #!/to
 
 n="gdbm"
-v="0d3d46cdee38c7b00a107c52875ffb36c2bc7170"
+v="1.25"
 a="The GNU Database Manager"
 m="Tox"
 l="GPL-3.0-or-later"
 t="core lib db"
-u="https://https.git.savannah.gnu.org/git/$n.git"
+u="http://mirror.rit.edu/gnu/$n/?C=M;O=D"
 
-s="$u"
+s="${u%\?*}$n-$v.tar.gz"
 d="glibc"
 
 b() {
 
 # Compatibility library wanted by some packages
-_cfg=(
-    --enable-libgdbm-compat
-)
-
-autoreconf -fiv
+_cfg=( --enable-libgdbm-compat )
 def
 
 }
