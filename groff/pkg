@@ -6,13 +6,9 @@ a="Programs for processing and formatting text and images"
 m="Tox"
 l="GPL-3.0-or-later"
 t="lib"
-u="https://https.git.savannah.gnu.org/git/$n.git"
-vf="gr | grep -E '^[0-9]+' | grep -Ev '[a-z]+'"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "https://mirror.us-midwest-1.nexcess.net/gnu/$n/$n-$v.tar.gz"
-)
-
+s="${u%\?*}$n-$v.tar.gz"
 d="perl"
 
 b() {

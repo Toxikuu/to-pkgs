@@ -6,15 +6,15 @@
   "licenses": [
     "GPL-3.0-or-later"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/groff.git",
-  "version_fetch": "gr | grep -E '^[0-9]+' | grep -Ev '[a-z]+'",
+  "upstream": "http://mirror.rit.edu/gnu/groff/?C=M&O=D",
+  "version_fetch": null,
   "tags": [
     "lib"
   ],
   "sources": [
     {
       "kind": "Download",
-      "url": "https://mirror.us-midwest-1.nexcess.net/gnu/groff/groff-1.23.0.tar.gz",
+      "url": "http://mirror.rit.edu/gnu/groff/groff-1.23.0.tar.gz",
       "dest": "groff-1.23.0.tar.gz"
     }
   ],
