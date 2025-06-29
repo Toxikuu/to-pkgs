@@ -13,6 +13,7 @@ s=(
     "https://$n.dev/dl/$n$v.linux-amd64.tar.gz"
 )
 
+d="make-ca"
 qa=("!static")
 
 b() {

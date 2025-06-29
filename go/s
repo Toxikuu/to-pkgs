@@ -19,6 +19,11 @@
       "dest": "go1.24.4.linux-amd64.tar.gz"
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "make-ca",
+      "kind": "Required"
+    }
+  ],
   "kcfg": []
 }
