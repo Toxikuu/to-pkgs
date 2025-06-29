@@ -1,7 +1,7 @@
 #!/to
 
 n="ncurses"
-v="6.5-20250621"
+v="6.5-20250628"
 a="Libraries for terminal-independent character screen handling"
 m="Tox"
 l="MIT"
