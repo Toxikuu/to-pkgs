@@ -7,7 +7,7 @@
     "LICENSE"
   ],
   "upstream": "https://www.lua.org/ftp/",
-  "version_fetch": "curl -s 'https://www.lua.org/ftp/' | grep -Eo 'lua-[0-9]+\\.[0-9]+\\.*[0-9]*' | sed 's,\\.$,,' | uniq | sort -V",
+  "version_fetch": "n='lua' u='https://www.lua.org/ftp/' cr | sort -V",
   "tags": [
     "lib",
     "lang"
