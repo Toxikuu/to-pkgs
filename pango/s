@@ -1,6 +1,6 @@
 {
   "name": "pango",
-  "version": "1.56.3",
+  "version": "1.56.4",
   "about": "Library for text layout and rendering",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://download.gnome.org/sources/pango/1.56/pango-1.56.3.tar.xz",
-      "dest": "pango-1.56.3.tar.xz"
+      "url": "https://download.gnome.org/sources/pango/1.56/pango-1.56.4.tar.xz",
+      "dest": "pango-1.56.4.tar.xz"
     }
   ],
   "dependencies": [
