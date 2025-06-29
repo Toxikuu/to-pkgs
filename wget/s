@@ -7,7 +7,7 @@
     "GPL-3.0-or-later"
   ],
   "upstream": "https://gitlab.com/gnuwget/wget2.git",
-  "version_fetch": "gr | grep v | tail -n1 | cut -d/ -f3",
+  "version_fetch": "gr | sed -e 's,wget2-,,' -e 's,^v,,' | sort -V",
   "tags": [
     "net",
     "lib",
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://gnuwget.gitlab.io/wget2/wget2-latest.tar.gz",
-      "dest": "wget2-latest.tar.gz"
+      "url": "http://mirror.rit.edu/gnu/wget/wget2-2.2.0.tar.gz",
+      "dest": "wget2-2.2.0.tar.gz"
     }
   ],
   "dependencies": [
@@ -30,11 +30,31 @@
       "kind": "Required"
     },
     {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
       "name": "libidn2",
       "kind": "Required"
     },
     {
       "name": "libpsl",
+      "kind": "Required"
+    },
+    {
+      "name": "nghttp2",
       "kind": "Required"
     },
     {

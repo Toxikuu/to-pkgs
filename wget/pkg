@@ -8,17 +8,22 @@ m="Tox"
 l="GPL-3.0-or-later"
 t="net lib utils"
 u="https://gitlab.com/gnu$n/$an.git"
-vf="gr | grep v | tail -n1 | cut -d/ -f3"
+vf="gr | sed -e 's,$an-,,' -e 's,^v,,' | sort -V"
 
 s=(
-    "https://gnu$n.gitlab.io/$an/$an-latest.tar.gz"
+    "http://mirror.rit.edu/gnu/$n/$an-$v.tar.gz"
 )
 
 d=(
     "glibc"
     "zlib"
+    "bzip2"
+    "xz"
+    "zstd"
+    "openssl"
     "libidn2"
     "libpsl"
+    "nghttp2"
     "pcre2"
     "r,make-ca"
     "b,gperf"
@@ -29,14 +34,23 @@ b() {
 _cfg=(
     --with-lzma
     --with-bzip2
+    --with-zstd
     --with-gnu-ld
+    --with-libnghttp2
+    --with-ssl=openssl
+    --with-libpcre2
 
+    --without-gpgme
     --without-lzip
     --without-brotlidec
     --without-plugin-support
+    --without-libpcre
+    --without-libmicrohttpd
 
+    --disable-nls
     --disable-doc
     --disable-fuzzing
+    --disable-libproxy
 
     --enable-threads=posix
     --enable-year2038
