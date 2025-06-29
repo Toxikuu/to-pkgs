@@ -7,7 +7,7 @@
     "BSD"
   ],
   "upstream": "http://dist.schmorp.de/libev/",
-  "version_fetch": "curl -s 'http://dist.schmorp.de/libev/' | grep -Eo 'libev-[0-9]+\\.[0-9]+'",
+  "version_fetch": "cr -2 'http://dist.schmorp.de/libev/' 'libev'",
   "tags": [
     "lib"
   ],

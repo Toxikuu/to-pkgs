@@ -7,7 +7,7 @@ m="Tox"
 l="BSD"
 t="lib"
 u="http://dist.schmorp.de/$n/"
-vf="curl -s '$u' | grep -Eo '$n-[0-9]+\.[0-9]+'"
+vf="cr -2 '$u' '$n'"
 
 s=(
     "${u}Attic/$n-$v.tar.gz"
