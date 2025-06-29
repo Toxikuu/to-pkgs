@@ -1,7 +1,7 @@
 #!/to
 
 n="sqlite"
-v="3.50.1"
+v="3.50.2"
 a="SQL database engine"
 m="Tox"
 l="Custom"
