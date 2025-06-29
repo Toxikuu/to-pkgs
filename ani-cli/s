@@ -1,0 +1,54 @@
+{
+  "name": "ani-cli",
+  "version": "4.10",
+  "about": "Utility to browse and play anime",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0"
+  ],
+  "upstream": "https://github.com/pystardust/ani-cli.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli",
+    "video"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/pystardust/ani-cli.git",
+      "dest": "ani-cli"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "aria2",
+      "kind": "Runtime"
+    },
+    {
+      "name": "curl",
+      "kind": "Runtime"
+    },
+    {
+      "name": "ffmpeg",
+      "kind": "Runtime"
+    },
+    {
+      "name": "fzf",
+      "kind": "Runtime"
+    },
+    {
+      "name": "grep",
+      "kind": "Runtime"
+    },
+    {
+      "name": "mpv",
+      "kind": "Runtime"
+    },
+    {
+      "name": "sed",
+      "kind": "Runtime"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,28 @@
+#!/to
+
+n="ani-cli"
+v="4.10"
+tag="v$v"
+a="Utility to browse and play anime"
+m="Tox"
+l="GPL-3.0"
+t="utils cli video"
+u="https://github.com/pystardust/$n.git"
+
+s="$u"
+d=(
+    "r,aria2"
+    "r,curl"
+    "r,ffmpeg"
+    "r,fzf"
+    "r,grep"
+    "r,mpv"
+    "r,sed"
+)
+
+b() {
+
+install -vDm755 "$n"   -t "$D/usr/bin/"
+install -vDm644 "$n.1" -t "$D/usr/share/man/man1/"
+
+}
