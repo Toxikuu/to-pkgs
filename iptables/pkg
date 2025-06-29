@@ -26,6 +26,10 @@ kcfg=(
     "ip_nf_iptables = y/m"
 )
 
+qa=(
+    "!brokensymlinks"
+)
+
 b() {
 
 _cfg=(
