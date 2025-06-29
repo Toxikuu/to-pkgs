@@ -7,7 +7,7 @@
     "GPL-3.0-only"
   ],
   "upstream": "https://itstool.org/download.html",
-  "version_fetch": "curl -s https://itstool.org/download.html | grep -E 'itstool-[0-9]+' | head -n1 | grep -Eo 'itstool-[0-9]+\\.[0-9]+\\.[0-9]+'",
+  "version_fetch": "curl -s 'https://itstool.org/download.html' | grep -E 'itstool-[0-9]+' | head -n1 | grep -Eo 'itstool-[0-9]+\\.[0-9]+\\.[0-9]+'",
   "tags": [
     "i18n",
     "utils"

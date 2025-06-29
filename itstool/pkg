@@ -7,7 +7,7 @@ m="Tox"
 l="GPL-3.0-only"
 t="i18n utils"
 u="https://$n.org/download.html"
-vf="curl -s $u | grep -E '$n-[0-9]+' | head -n1 | grep -Eo '$n-[0-9]+\.[0-9]+\.[0-9]+'"
+vf="curl -s '$u' | grep -E '$n-[0-9]+' | head -n1 | grep -Eo '$n-[0-9]+\.[0-9]+\.[0-9]+'"
 
 s=(
     "http://files.$n.org/$n/$n-$v.tar.bz2"
