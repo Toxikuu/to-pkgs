@@ -6,28 +6,20 @@ a="File comparison utilities"
 m="Tox"
 l="GPL-3.0-or-later"
 t="core utils cli"
-u="https://https.git.savannah.gnu.org/git/$n.git"
+u="http://mirror.rit.edu/gnu/$n/?C=M;O=D"
 
-s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
-)
-
-d=(
-    "glibc"
-)
+s="${u%\?*}$n-$v.tar.xz"
+d="glibc"
 
 b() {
 
-_cfg=(
-    --disable-gcc-warnings
-)
-
+_cfg=( --disable-gcc-warnings )
 def
 
 }
 
 t() {
 
-mk check 2>&1 | tee /tmp/testlog
+mk check
 
 }

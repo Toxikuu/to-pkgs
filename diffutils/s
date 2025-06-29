@@ -6,7 +6,7 @@
   "licenses": [
     "GPL-3.0-or-later"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/diffutils.git",
+  "upstream": "http://mirror.rit.edu/gnu/diffutils/?C=M;O=D",
   "version_fetch": null,
   "tags": [
     "core",
@@ -16,7 +16,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.12.tar.xz",
+      "url": "http://mirror.rit.edu/gnu/diffutils/diffutils-3.12.tar.xz",
       "dest": "diffutils-3.12.tar.xz"
     }
   ],
