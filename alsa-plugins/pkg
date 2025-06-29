@@ -18,6 +18,10 @@ d=(
     "b,bzip2"
 )
 
+qa=(
+    "!brokensymlinks"
+)
+
 b() {
 
 _cfg=(
