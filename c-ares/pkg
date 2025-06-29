@@ -1,0 +1,22 @@
+#!/to
+
+n="c-ares"
+v="1.34.5"
+tag="v$v"
+a="Asynchronous DNS request library"
+m="Tox"
+l="MIT"
+t="lib net"
+u="https://github.com/$n/$n.git"
+
+s="$u"
+d=(
+    "b,cmake"
+    "glibc"
+)
+
+b() {
+
+def
+
+}

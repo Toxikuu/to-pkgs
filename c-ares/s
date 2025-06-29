@@ -1,0 +1,33 @@
+{
+  "name": "c-ares",
+  "version": "1.34.5",
+  "about": "Asynchronous DNS request library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/c-ares/c-ares.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/c-ares/c-ares.git",
+      "dest": "c-ares"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
