@@ -8,8 +8,10 @@
 - [x] Update to gcc@15
 - [x] Add GitHub issue templates and tags for failing builds, new packages, updates, etc.
 - [x] Add xorg libraries
-- [ ] Add xorg applications (wip)
+- [ ] Add remaining xorg applications
 - [x] Migrate stubborn savannah upstreams to a really gross but hopefully less
 unstable mirror like `https://https.git.savannah.gnu.org/git/gettext.git/`
+    - [x] Migrate AGAIN to ANYTHING ELSE because FUCK SAVANNAH and its awful
+      uptime
 - [ ] Switch to sudo-rs as the default sudo
     - [ ] Testing required
