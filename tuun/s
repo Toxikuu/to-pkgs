@@ -1,6 +1,6 @@
 {
   "name": "tuun",
-  "version": "3.5.3",
+  "version": "4.1.1",
   "about": "Minimal music player using MPV as a backend",
   "maintainer": "Tox",
   "licenses": [
@@ -23,15 +23,15 @@
   ],
   "dependencies": [
     {
-      "name": "git",
-      "kind": "Build"
-    },
-    {
       "name": "rust",
       "kind": "Build"
     },
     {
       "name": "mpv",
+      "kind": "Runtime"
+    },
+    {
+      "name": "fzf",
       "kind": "Runtime"
     },
     {

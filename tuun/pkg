@@ -1,7 +1,8 @@
 #!/to
 
 n="tuun"
-v="3.5.3"
+v="4.1.1"
+tag="v$v"
 a="Minimal music player using MPV as a backend"
 m="Tox"
 l="GPL-3.0"
@@ -9,11 +10,10 @@ t="gui audio utils me"
 u="https://github.com/Toxikuu/$n.git"
 
 s="$u"
-
 d=(
-    "b,git"
     "b,rust"
     "r,mpv"
+    "r,fzf"
     "gcc"
     "libx11"
     "libxtst"
@@ -26,9 +26,6 @@ d=(
 )
 
 b() {
-
-with rust
-gco v$v
 
 mk
 mi
