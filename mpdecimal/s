@@ -7,7 +7,7 @@
     "BSD"
   ],
   "upstream": "https://www.bytereef.org/mpdecimal/download.html",
-  "version_fetch": "curl -fsSL 'https://www.bytereef.org/mpdecimal/download.html' | grep -oP -- 'mpdecimal-[0-9]+\\.[0-9]+(\\.[0-9]+)?' | sort -V",
+  "version_fetch": "cr 'https://www.bytereef.org/mpdecimal/download.html' 'mpdecimal' | sort -V",
   "tags": [
     "lib",
     "math",
