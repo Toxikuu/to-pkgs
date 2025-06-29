@@ -1,16 +1,15 @@
 #!/to
 
 n="acl"
-v="9053e722421454b115e699743a9b0a66808ab756"
+v="2.3.2"
 a="Access Control Lists"
 m="Tox"
 l="LGPL"
 t="core lib"
-u="https://https.git.savannah.gnu.org/git/$n.git"
+u="http://download.savannah.nongnu.org/releases/acl/?C=M&O=D"
 
 s=(
-    "$u"
-    # "https://download.savannah.gnu.org/releases/$n/$n-$v.tar.xz"
+    "${u%\?*}$n-$v.tar.xz"
 )
 
 d=(
@@ -20,11 +19,6 @@ d=(
 
 b() {
 
-./autogen.sh
-cfg
-sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-
-mk
-mi
+def
 
 }
