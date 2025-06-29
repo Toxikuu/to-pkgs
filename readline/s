@@ -6,8 +6,8 @@
   "licenses": [
     "GPL-3.0-only"
   ],
-  "upstream": "https://ftp.gnu.org/gnu/readline/?C=M;O=D",
-  "version_fetch": "curl -s 'https://ftp.gnu.org/gnu/readline/?C=M;O=D' | grep 'readline-' | grep -Ev -- '-beta|-alpha|diff|doc|sig|patches' | head -n1 | cut -d- -f2- | sed 's,.tar.*,,'",
+  "upstream": "http://mirror.rit.edu/gnu/readline/?C=M&O=D",
+  "version_fetch": "curl -s 'http://mirror.rit.edu/gnu/readline/?C=M&O=D' | grep 'readline-' | grep -Ev -- '-beta|-alpha|diff|doc|sig|patches' | head -n1 | cut -d- -f2- | sed 's,.tar.*,,'",
   "tags": [
     "lib",
     "critical",
@@ -16,7 +16,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/readline/readline-8.3-rc2.tar.gz",
+      "url": "http://mirror.rit.edu/gnu/readline/readline-8.3-rc2.tar.gz",
       "dest": "readline-8.3-rc2.tar.gz"
     }
   ],
