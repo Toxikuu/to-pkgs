@@ -9,13 +9,9 @@ l=(
     "LGPL-3.0-or-later"
 )
 t="core math"
-u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
-vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d'\"' -f8 | cut -d- -f2 | cut -d. -f1-3"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "${u%\?*}/$n-$v.tar.xz"
-)
-
+s="${u%\?*}$n-$v.tar.xz"
 d="glibc"
 
 b() {

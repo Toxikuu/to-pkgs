@@ -7,8 +7,8 @@
     "GPL-2.0-or-later",
     "LGPL-3.0-or-later"
   ],
-  "upstream": "https://ftp.gnu.org/gnu/gmp/?C=M;O=D",
-  "version_fetch": "curl -s 'https://ftp.gnu.org/gnu/gmp/?C=M;O=D' | grep 'gmp-' | head -n1 | cut -d'\"' -f8 | cut -d- -f2 | cut -d. -f1-3",
+  "upstream": "http://mirror.rit.edu/gnu/gmp/?C=M&O=D",
+  "version_fetch": null,
   "tags": [
     "core",
     "math"
@@ -16,7 +16,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/gmp//gmp-6.3.0.tar.xz",
+      "url": "http://mirror.rit.edu/gnu/gmp/gmp-6.3.0.tar.xz",
       "dest": "gmp-6.3.0.tar.xz"
     }
   ],
