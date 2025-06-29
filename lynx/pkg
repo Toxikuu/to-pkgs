@@ -6,12 +6,11 @@ a="TUI web browser"
 m="Tox"
 l="GPL-2.0-only"
 t="tui net"
-u="https://invisible-mirror.net/archives/$n/tarballs/?C=N;O=D"
-# TODO: This vf is atrocious
-vf="curl -s '$u' | grep -E '$n[0-9]\.[0-9]+\..+\.tar\.bz2' | grep -Ev 'rel|dev' | grep -Eo '$n[0-9]+\..*\.t' | cut -d. -f-3 | sed 's,$n,,' | head -n1"
+u="https://invisible-mirror.net/archives/$n/tarballs/?C=M;O=D"
+vf="curl -s '$u' | grep -E '$n[0-9]\.[0-9]+\..+\.tar' | grep -Ev 'rel|dev' | grep -Eo '$n[0-9]+\.[0-9]+\.[0-9]+' | sed 's,$n,,' | head -n1"
 
 s=(
-    "${u%\?*}/$n$v.tar.bz2"
+    "${u%\?*}$n$v.tar.bz2"
 )
 
 d=(

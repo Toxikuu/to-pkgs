@@ -6,8 +6,8 @@
   "licenses": [
     "GPL-2.0-only"
   ],
-  "upstream": "https://invisible-mirror.net/archives/lynx/tarballs/?C=N;O=D",
-  "version_fetch": "curl -s 'https://invisible-mirror.net/archives/lynx/tarballs/?C=N;O=D' | grep -E 'lynx[0-9]\\.[0-9]+\\..+\\.tar\\.bz2' | grep -Ev 'rel|dev' | grep -Eo 'lynx[0-9]+\\..*\\.t' | cut -d. -f-3 | sed 's,lynx,,' | head -n1",
+  "upstream": "https://invisible-mirror.net/archives/lynx/tarballs/?C=M;O=D",
+  "version_fetch": "curl -s 'https://invisible-mirror.net/archives/lynx/tarballs/?C=M;O=D' | grep -E 'lynx[0-9]\\.[0-9]+\\..+\\.tar' | grep -Ev 'rel|dev' | grep -Eo 'lynx[0-9]+\\.[0-9]+\\.[0-9]+' | sed 's,lynx,,' | head -n1",
   "tags": [
     "tui",
     "net"
@@ -15,7 +15,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://invisible-mirror.net/archives/lynx/tarballs//lynx2.9.2.tar.bz2",
+      "url": "https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.2.tar.bz2",
       "dest": "lynx2.9.2.tar.bz2"
     }
   ],
