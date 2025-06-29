@@ -6,7 +6,7 @@
   "licenses": [
     "GPL-3.0-or-later"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/gperf.git",
+  "upstream": "http://mirror.rit.edu/gnu/gperf/?C=M&O=D",
   "version_fetch": null,
   "tags": [
     "lib"
@@ -14,7 +14,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://gnu.mirror.constant.com/gperf/gperf-3.3.tar.gz",
+      "url": "http://mirror.rit.edu/gnu/gperf/gperf-3.3.tar.gz",
       "dest": "gperf-3.3.tar.gz"
     }
   ],

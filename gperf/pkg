@@ -6,9 +6,9 @@ a="Perfect hash function generator"
 m="Tox"
 l="GPL-3.0-or-later"
 t="lib"
-u="https://https.git.savannah.gnu.org/git/$n.git"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s="https://gnu.mirror.constant.com/$n/$n-$v.tar.gz"
+s="${u%\?*}$n-$v.tar.gz"
 d="glibc"
 
 b() {
