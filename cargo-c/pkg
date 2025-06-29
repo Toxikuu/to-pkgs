@@ -1,7 +1,7 @@
 #!/to
 
 n="cargo-c"
-v="0.10.13"
+v="0.10.14"
 a="Cargo subcommand to create C-ABI compatible libraries"
 m="Tox"
 l="MIT"
