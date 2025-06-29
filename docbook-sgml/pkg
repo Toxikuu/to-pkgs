@@ -40,9 +40,8 @@ PUBLIC "-//OASIS//DTD DocBook V4.0//EN" "docbook.dtd"
 
 EOF
 
-DTDDIR="usr/share/sgml/$n-$v"
-install -vDm644 docbook.cat       "$D/$DTDDIR/catalog"
-install -vm644 *.{dtd,mod,dcl} -t "$D/$DTDDIR/"
+install -vDm644 docbook.cat       "$D/usr/share/sgml/$n-$v/catalog"
+install -vm644 *.{dtd,mod,dcl} -t "$D/usr/share/sgml/$n-$v/"
 
 }
 
