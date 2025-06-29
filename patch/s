@@ -6,7 +6,7 @@
   "licenses": [
     "GPL"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/patch.git",
+  "upstream": "http://mirror.rit.edu/gnu/patch/?C=M&O=D",
   "version_fetch": null,
   "tags": [
     "core",
@@ -15,15 +15,11 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz",
+      "url": "http://mirror.rit.edu/gnu/patch/patch-2.8.tar.xz",
       "dest": "patch-2.8.tar.xz"
     }
   ],
   "dependencies": [
-    {
-      "name": "glibc",
-      "kind": "Required"
-    },
     {
       "name": "attr",
       "kind": "Required"
