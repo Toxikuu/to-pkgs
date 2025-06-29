@@ -12,7 +12,6 @@ vf="curl -s '$u' | grep '$n-' | cut -d- -f6 | cut -d. -f1-2"
 s=(
     "https://downloads.sourceforge.net/$n/$n-$v.tar.gz"
 )
-
 d="ncurses"
 
 b() {
