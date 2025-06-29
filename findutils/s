@@ -6,7 +6,7 @@
   "licenses": [
     "GPL-3.0-or-later"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/findutils.git",
+  "upstream": "http://mirror.rit.edu/gnu/findutils/?C=M&O=D",
   "version_fetch": null,
   "tags": [
     "utils",
@@ -17,7 +17,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftpmirror.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz",
+      "url": "http://mirror.rit.edu/gnu/findutils/findutils-4.10.0.tar.xz",
       "dest": "findutils-4.10.0.tar.xz"
     }
   ],

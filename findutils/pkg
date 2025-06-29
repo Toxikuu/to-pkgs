@@ -6,12 +6,9 @@ a="Programs to find and execute commands on files"
 m="Tox"
 l="GPL-3.0-or-later"
 t="utils core lib cli"
-u="https://https.git.savannah.gnu.org/git/$n.git"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.xz"
-)
-
+s="${u%\?*}$n-$v.tar.xz"
 d="glibc"
 
 b() {
