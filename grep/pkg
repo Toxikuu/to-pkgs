@@ -6,12 +6,9 @@ a="String search utility"
 m="Tox"
 l="GPL-3.0"
 t="core utils cli"
-u="https://https.git.savannah.gnu.org/git/$n.git"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.xz"
-)
-
+s="${u%\?*}$n-$v.tar.xz"
 d=(
     "glibc"
     "pcre2"

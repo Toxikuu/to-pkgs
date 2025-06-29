@@ -6,7 +6,7 @@
   "licenses": [
     "GPL-3.0"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/grep.git",
+  "upstream": "http://mirror.rit.edu/gnu/grep/?C=M&O=D",
   "version_fetch": null,
   "tags": [
     "core",
@@ -16,7 +16,7 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftpmirror.gnu.org/gnu/grep/grep-3.12.tar.xz",
+      "url": "http://mirror.rit.edu/gnu/grep/grep-3.12.tar.xz",
       "dest": "grep-3.12.tar.xz"
     }
   ],
