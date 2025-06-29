@@ -6,7 +6,7 @@
   "licenses": [
     "GPL-3.0-or-later"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/gawk.git",
+  "upstream": "http://mirror.rit.edu/gnu/gawk/?C=M&O=D",
   "version_fetch": null,
   "tags": [
     "core",
@@ -17,15 +17,11 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/gawk/gawk-5.3.2.tar.xz",
+      "url": "http://mirror.rit.edu/gnu/gawk/gawk-5.3.2.tar.xz",
       "dest": "gawk-5.3.2.tar.xz"
     }
   ],
   "dependencies": [
-    {
-      "name": "glibc",
-      "kind": "Required"
-    },
     {
       "name": "mpfr",
       "kind": "Required"

@@ -6,29 +6,20 @@ a="Programs for manipulating text"
 m="Tox"
 l="GPL-3.0-or-later"
 t="core utils lib cli"
-u="https://https.git.savannah.gnu.org/git/$n.git"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "https://ftp.gnu.org/gnu/$n/$n-$v.tar.xz"
-)
-
-d=(
-    "glibc"
-    "mpfr"
-)
+s="${u%\?*}$n-$v.tar.xz"
+d="mpfr"
 
 b() {
 
 # Avoid installing unneeded files
 sed -i 's/extras//' Makefile.in
 
-_cfg=(
-    --without-libsigsegv
-)
-
+_cfg=( --without-libsigsegv )
 def
 
 # Compatibility sylink
-ln -sv $n.1 "$D"/usr/share/man/man1/awk.1
+ln -sfv "$n.1" "$D/usr/share/man/man1/awk.1"
 
 }
