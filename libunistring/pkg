@@ -4,17 +4,11 @@ n="libunistring"
 v="1.3"
 a="Unicode string manipulation library"
 m="Tox"
-l=(
-    "GPL-2.0-or-later"
-    "LGPL-3.0-or-later"
-)
+l=("GPL-2.0-or-later" "LGPL-3.0-or-later")
 t="lib"
-u="https://https.git.savannah.gnu.org/git/$n.git"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s=(
-    "https://ftpmirror.gnu.org/gnu/$n/$n-$v.tar.xz"
-)
-
+s="${u%\?*}$n-$v.tar.xz"
 d="glibc"
 
 b() {
