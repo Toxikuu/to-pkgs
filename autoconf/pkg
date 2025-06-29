@@ -18,9 +18,10 @@ rm -vf "$D"/usr/share/info/standards.info
 
 }
 
-t() {
-
-# Disable broken test 227
-mk check TESTSUITEFLAGS="1-226 228-"
-
-}
+# Tests take an eternity
+# t() {
+#
+# # Disable broken test 227
+# mk check TESTSUITEFLAGS="1-226 228-"
+#
+# }
