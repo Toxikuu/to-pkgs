@@ -6,16 +6,16 @@
   "licenses": [
     "GPL-3.0"
   ],
-  "upstream": "https://https.git.savannah.gnu.org/git/m4.git",
-  "version_fetch": "gr | sort -V | grep -B1 v1.5.89a | head -n1",
+  "upstream": "http://mirror.rit.edu/gnu/m4/?C=M&O=D",
+  "version_fetch": null,
   "tags": [
     "core"
   ],
   "sources": [
     {
       "kind": "Download",
-      "url": "https://mirrors.ibiblio.org/gnu/m4/m4-1.4.20.tar.xz",
-      "dest": "m4-1.4.20.tar.xz"
+      "url": "http://mirror.rit.edu/gnu/m4/m4-1.4.20.tar.gz",
+      "dest": "m4-1.4.20.tar.gz"
     }
   ],
   "dependencies": [
