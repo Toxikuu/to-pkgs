@@ -6,10 +6,9 @@ a="A utility to show the full path of commands"
 m="Tox"
 l="GPL-3.0-or-later"
 t="utils cli"
-u="https://ftp.gnu.org/gnu/$n/?C=M;O=D"
-vf="curl -s '$u' | grep $n- | head -n1 | cut -d- -f2 | cut -d. -f1-2"
+u="http://mirror.rit.edu/gnu/$n/?C=M&O=D"
 
-s="https://ftp.gnu.org/gnu/$n/$n-$v.tar.gz"
+s="${u%\?*}$n-$v.tar.gz"
 d="glibc"
 
 b() {
