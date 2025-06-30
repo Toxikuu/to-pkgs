@@ -1,0 +1,7 @@
+,hook install
+To use KVM as an unprivileged user, add the user to the `kvm` group:
+$ sudo usermod -aG kvm $USER
+
+,hook remove
+You may want to remove your user from the `kvm` group:
+$ sudo gpasswd --delete $USER kvm

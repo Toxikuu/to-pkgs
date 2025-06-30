@@ -1,0 +1,131 @@
+{
+  "name": "qemu",
+  "version": "10.0.2",
+  "about": "Generic machine emulator and virtualizer",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://github.com/qemu/qemu.git",
+  "version_fetch": null,
+  "tags": [
+    "emu",
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.qemu.org/qemu-10.0.2.tar.xz",
+      "dest": "qemu-10.0.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "dtc",
+      "kind": "Required"
+    },
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "gnutls",
+      "kind": "Required"
+    },
+    {
+      "name": "nettle",
+      "kind": "Required"
+    },
+    {
+      "name": "pixman",
+      "kind": "Required"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "dtc",
+      "kind": "Required"
+    },
+    {
+      "name": "libslirp",
+      "kind": "Required"
+    },
+    {
+      "name": "sdl2",
+      "kind": "Required"
+    },
+    {
+      "name": "libseccomp",
+      "kind": "Required"
+    },
+    {
+      "name": "libssh2",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "libtasn1",
+      "kind": "Required"
+    },
+    {
+      "name": "libusb",
+      "kind": "Required"
+    },
+    {
+      "name": "libaio",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": [
+    "virtualization=*",
+    "kvm=*/m",
+    "kvm_amd=*/m/ ",
+    "kvm_intel=*/m/"
+  ]
+}

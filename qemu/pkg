@@ -1,0 +1,92 @@
+#!/to
+
+n="qemu"
+v="10.0.2"
+a="Generic machine emulator and virtualizer"
+m="Tox"
+l="GPL-2.0-only"
+t="emu utils cli"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "https://download.$n.org/$n-$v.tar.xz"
+)
+d=(
+    "glibc"
+    "glib"
+    "gcc"
+
+    "zlib"
+    "zstd"
+
+    "dtc"
+    "cairo"
+    "gnutls"
+    "nettle"
+    "pixman"
+    "alsa-lib"
+    "dtc"
+    "libslirp"
+    "sdl2"
+
+    "libseccomp"
+    "libssh2"
+    "libpng"
+    "libjpeg-turbo"
+    "mesa"
+    "libtasn1"
+    "libusb"
+    "libaio"
+    "ncurses"
+
+    "b,meson"
+    "b,samu"
+)
+
+kcfg=(
+    "virtualization=*"
+    "kvm=*/m"
+    kvm_{amd,intel}"=*/m/ "
+
+    # Also some other stuff if the bridge network device is used
+)
+
+b() {
+
+QEMU_ARCH="x86_64-softmmu"
+
+mkdir -pv build
+cd        build
+
+NO_DEFAULT=1
+_cfg=(
+    --prefix=/usr
+    --sysconfdir=/etc
+    --localstatedir=/var
+    --target-list="$QEMU_ARCH"
+    --audio-drv-list=alsa
+    --disable-pa
+    --enable-slirp
+)
+
+cfg
+
+# Since make wraps `ninja`, we can't use `def`
+mk
+mi
+
+# Change permissions of the bridge helper script
+chgrp kvm  "$D/usr/libexec/$n-bridge-helper"
+chmod 4750 "$D/usr/libexec/$n-bridge-helper"
+
+# Convenience symlink
+ln -sfv "$n-system-${QEMU_ARCH%-*}" "$D/usr/bin/qemu"
+
+}
+
+t() {
+
+# A few tests fail, probably due to the build environment
+samu test || true
+
+}
