@@ -46,7 +46,7 @@ def
 
 t() {
 
-sa test
+sa -j1 test
 
 }
 
