@@ -1,0 +1,27 @@
+#!/to
+
+n="libaio"
+v="0.3.113"
+a="Asynchronous I/O library"
+m="Tox"
+l="LGPL-2.0-or-later"
+t="lib"
+u="https://pagure.io/$n.git"
+vf="gr | sed -e 's,^$n.,,' -e 's,-,.,g' | grep -v '9[0-9]' | sort -V"
+
+s="${u%.git}/archive/$n-$v/$n-$n-$v.tar.gz"
+d="glibc"
+
+b() {
+
+sed -i "/install.*$n.a/s/^/#/" src/Makefile
+mk
+mi
+
+}
+
+t() {
+
+mk partcheck
+
+}

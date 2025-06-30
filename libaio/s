@@ -1,0 +1,28 @@
+{
+  "name": "libaio",
+  "version": "0.3.113",
+  "about": "Asynchronous I/O library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.0-or-later"
+  ],
+  "upstream": "https://pagure.io/libaio.git",
+  "version_fetch": "gr | sed -e 's,^libaio.,,' -e 's,-,.,g' | grep -v '9[0-9]' | sort -V",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://pagure.io/libaio/archive/libaio-0.3.113/libaio-libaio-0.3.113.tar.gz",
+      "dest": "libaio-libaio-0.3.113.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
