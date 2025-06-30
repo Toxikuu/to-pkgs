@@ -23,6 +23,7 @@ d=(
     "gdbm"
     "libcap"
     "b,setuptools"
+    "shadow" # needed for i()
 )
 
 b() {
