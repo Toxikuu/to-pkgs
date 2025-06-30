@@ -1,0 +1,38 @@
+{
+  "name": "libslirp",
+  "version": "4.9.1",
+  "about": "General purpose TCP-IP emulator",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD",
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/slirp/libslirp.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "emu"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/slirp/libslirp.git",
+      "dest": "libslirp"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

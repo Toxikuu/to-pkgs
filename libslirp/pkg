@@ -1,0 +1,29 @@
+#!/to
+
+n="libslirp"
+v="4.9.1"
+tag="v$v"
+a="General purpose TCP-IP emulator"
+m="Tox"
+l=("BSD" "MIT")
+t="lib emu"
+u="https://gitlab.freedesktop.org/${n#lib}/$n.git"
+
+s="$u"
+d=(
+    "b,meson"
+    "b,samu"
+    "glib"
+)
+
+b() {
+
+def
+
+}
+
+t() {
+
+sa test
+
+}
