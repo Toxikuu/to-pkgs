@@ -1,0 +1,35 @@
+#!/to
+
+n="dtc"
+v="1.7.2"
+tag="v$v"
+a="Device Tree Compiler"
+m="Tox"
+l="GPL-2.0-or-later"
+t="lib"
+u="https://github.com/dgibson/$n.git"
+
+s="$u"
+
+d=(
+    "glibc"
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D python=disabled
+)
+
+def
+rm -vf "$D/usr/lib/libfdt.a"
+
+}
+
+t() {
+
+CC='gcc -Wl,-z,noexecstack' meson test -v
+
+}

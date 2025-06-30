@@ -1,0 +1,36 @@
+{
+  "name": "dtc",
+  "version": "1.7.2",
+  "about": "Device Tree Compiler",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/dgibson/dtc.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/dgibson/dtc.git",
+      "dest": "dtc"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
