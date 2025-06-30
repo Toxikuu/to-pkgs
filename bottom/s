@@ -1,0 +1,29 @@
+{
+  "name": "bottom",
+  "version": "0f878c4ae2fae99daee565055a85c182e398f193",
+  "about": "Yet another system monitor",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/ClementTsang/bottom.git",
+  "version_fetch": null,
+  "tags": [
+    "tui",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/ClementTsang/bottom.git",
+      "dest": "bottom"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "rust",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,31 @@
+#!/to
+
+n="bottom"
+an="btm"
+v="0f878c4ae2fae99daee565055a85c182e398f193"
+a="Yet another system monitor"
+m="Tox"
+l="MIT"
+t="tui utils"
+u="https://github.com/ClementTsang/$n.git"
+
+s="$u"
+d="b,rust"
+
+b() {
+
+BTM_GENERATE=true cbr
+
+# Install binary
+install -vDm755 "target/release/$an" -t "$D/usr/bin/"
+
+# Install docs
+install -vDm644 *.md                 -t "$D/usr/share/doc/$n/"
+cp -vr docs sample_configs              "$D/usr/share/doc/$n/"
+
+# Install extras
+cd "target/tmp/$n"
+install -vDm644 manpage/$an.1        -t "$D/usr/share/man/man1/"
+install -vDm644 completion/$an.bash     "$D/usr/share/bash-completion/completions/$an"
+
+}
