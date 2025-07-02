@@ -1,7 +1,7 @@
 #!/to
 
 n="hwdata"
-v="0.396"
+v="0.397"
 tag="v$v"
 a="Hardware identification databases"
 m="Tox"
