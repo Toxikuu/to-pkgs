@@ -1,7 +1,7 @@
 #!/to
 
 n="graphviz"
-v="13.0.1"
+v="13.1.0"
 a="Graph visualization software"
 m="Tox"
 l="EPL"
