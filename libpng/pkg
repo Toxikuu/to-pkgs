@@ -2,7 +2,7 @@
 
 # NOTE: The apng patch is not applied, at least for now.
 n="libpng"
-v="1.6.49"
+v="1.6.50"
 tag="v$v"
 a="PNG libraries"
 m="Tox"
