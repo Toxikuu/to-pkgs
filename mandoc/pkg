@@ -37,3 +37,12 @@ rm -vf "$D/usr/sbin/catman"
 rm -vf "$D/usr/share/man/man8/catman.8"
 
 }
+
+i() {
+
+# Create the database if we're not in the build chroot
+if ! in_build_chroot; then
+    makewhatis /usr/share/man
+fi
+
+}
