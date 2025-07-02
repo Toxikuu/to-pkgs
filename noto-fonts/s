@@ -1,0 +1,24 @@
+{
+  "name": "noto-fonts",
+  "version": "2025.07.01",
+  "about": "Noto TTF fonts",
+  "maintainer": "Tox",
+  "licenses": [
+    "OFL-1.1-no-RFN"
+  ],
+  "upstream": "https://github.com/notofonts/notofonts.github.io.git",
+  "version_fetch": "gr | grep '^noto-monthly-release-' | cut -d- -f4- | sort -V",
+  "tags": [
+    "font",
+    "i18n"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-2025.07.01.tar.gz",
+      "dest": "noto-monthly-release-2025.07.01.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

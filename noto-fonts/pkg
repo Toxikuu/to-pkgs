@@ -1,0 +1,26 @@
+#!/to
+
+n="noto-fonts"
+an="${n/-/}"
+v="2025.07.01"
+a="Noto TTF fonts"
+m="Tox"
+l="OFL-1.1-no-RFN"
+t="font i18n"
+u="https://github.com/$an/$an.github.io.git"
+vf="gr | grep '^noto-monthly-release-' | cut -d- -f4- | sort -V"
+
+s="${u%.git}/archive/refs/tags/noto-monthly-release-$v.tar.gz"
+
+b() {
+
+# Install fonts, but remove extras
+install -vDm644 fonts/*/hinted/ttf/*.tt[fc] -t "$D/usr/share/fonts/noto"
+rm -vf "$D/usr/share/fonts/noto/Noto"*-{Condensed,Semi,Extra}*.ttf
+
+# Install fontconfig files
+install -vDm644 "$A"/*.conf -t "$D/usr/share/fontconfig/conf.avail/"
+install -vdm755 "$D/usr/share/fontconfig/conf.default"
+ln -srv "$D/usr/share/fontconfig/conf.avail/"* "$D/usr/share/fontconfig/conf.default"
+
+}
