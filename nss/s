@@ -1,6 +1,6 @@
 {
   "name": "nss",
-  "version": "3.113",
+  "version": "3.113.1",
   "about": "Network Security Services",
   "maintainer": "Tox",
   "licenses": [
@@ -17,8 +17,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_113_RTM/src/nss-3.113.tar.gz",
-      "dest": "nss-3.113.tar.gz"
+      "url": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_113_1_RTM/src/nss-3.113.1.tar.gz",
+      "dest": "nss-3.113.1.tar.gz"
     },
     {
       "kind": "Download",
