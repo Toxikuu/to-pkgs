@@ -1,7 +1,7 @@
 #!/to
 
 n="yt-dlp"
-v="2025.06.25"
+v="2025.06.30"
 a="Feature-rich CLI media downloader"
 m="Tox"
 l="Unlicense"
