@@ -1,13 +1,13 @@
 #!/to
 
 n="shadow"
-v="4.17.4"
+v="4.18.0"
 a="Secure password handling"
 m="Tox"
 l="BSD-3-Clause"
 t="core sec lib"
 u="https://github.com/$n-maint/$n.git"
-vf="gr | grep '^[0-9]\+\\.[0-9]' | sort -V"
+vf="gr | vfs | grep '^[0-9]\+\\.[0-9]' | sort -V"
 
 s=(
     "${u%.git}/releases/download/$v/$n-$v.tar.xz"
@@ -54,7 +54,7 @@ _cfg=(
 
 touch /usr/bin/passwd # precaution
 cfg
-sed 's/ -shared / -Wl,-O1,--as-needed\0/g' -i libtool
+unoverlink
 
 mk
 mi exec_prefix=/usr pamdir=
