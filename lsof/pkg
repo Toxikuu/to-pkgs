@@ -1,7 +1,7 @@
 #!/to
 
 n="lsof"
-v="4.99.4"
+v="4.99.5"
 a="Lists open files for running processes"
 m="Tox"
 l="custom"
