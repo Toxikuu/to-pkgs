@@ -1,6 +1,6 @@
 {
   "name": "nvidia",
-  "version": "575.64",
+  "version": "575.64.03",
   "about": "NVIDIA drivers",
   "maintainer": "Tox",
   "licenses": [
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://us.download.nvidia.com/XFree86/Linux-x86_64/575.64/NVIDIA-Linux-x86_64-575.64.run",
-      "dest": "NVIDIA-Linux-x86_64-575.64.run"
+      "url": "https://us.download.nvidia.com/XFree86/Linux-x86_64/575.64.03/NVIDIA-Linux-x86_64-575.64.03.run",
+      "dest": "NVIDIA-Linux-x86_64-575.64.03.run"
     }
   ],
   "dependencies": [

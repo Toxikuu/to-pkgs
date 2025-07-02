@@ -3,7 +3,7 @@
 # https://github.com/glfs-book/glfs/blob/trunk/shareddeps/drivers/nvidia.xml
 
 n="nvidia"
-v="575.64"
+v="575.64.03"
 a="${n^^} drivers"
 m="Tox"
 l="Custom"
