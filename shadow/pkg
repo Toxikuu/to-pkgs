@@ -99,17 +99,19 @@ done
 
 i() {
 
-pwconv
-grpconv
+if ! in_build_chroot; then
+    pwconv
+    grpconv
 
-if [ ! -e /etc/default/useradd ]; then
-    mkdir -pv /etc/default
-    useradd -D --gid 999
-    sed -i '/MAIL/s/yes/no/' /etc/default/useradd
+    if [ ! -e /etc/default/useradd ]; then
+        mkdir -pv /etc/default
+        useradd -D --gid 999
+        sed -i '/MAIL/s/yes/no/' /etc/default/useradd
+    fi
+
+    for f in login.access limits; do
+        rm -vf "/etc/$f"
+    done
 fi
-
-for f in login.access limits; do
-    rm -vf "/etc/$f"
-done
 
 }
