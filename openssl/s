@@ -1,6 +1,6 @@
 {
   "name": "openssl",
-  "version": "3.5.0",
+  "version": "3.5.1",
   "about": "Cryptography tools and libraries",
   "maintainer": "Tox",
   "licenses": [
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.0/openssl-3.5.0.tar.gz",
-      "dest": "openssl-3.5.0.tar.gz"
+      "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.1/openssl-3.5.1.tar.gz",
+      "dest": "openssl-3.5.1.tar.gz"
     }
   ],
   "dependencies": [
