@@ -1,0 +1,24 @@
+{
+  "name": "noto-fonts-cjk",
+  "version": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+  "about": "Noto CJK fonts",
+  "maintainer": "Tox",
+  "licenses": [
+    "OFL-1.1"
+  ],
+  "upstream": "https://github.com/notofonts/noto-cjk.git",
+  "version_fetch": null,
+  "tags": [
+    "font",
+    "i18n"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/notofonts/noto-cjk.git",
+      "dest": "noto-cjk"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

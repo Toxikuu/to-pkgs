@@ -1,0 +1,17 @@
+#!/to
+
+n="noto-fonts-cjk"
+v="f8d157532fbfaeda587e826d4cd5b21a49186f7c"
+a="Noto CJK fonts"
+m="Tox"
+l="OFL-1.1"
+t="font i18n"
+u="https://github.com/notofonts/noto-cjk.git"
+
+s="$u"
+
+b() {
+
+install -vDm644 */OTC/*.ttc -t "$D/usr/share/fonts/noto/CJK/"
+
+}
