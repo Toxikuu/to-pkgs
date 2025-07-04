@@ -1,7 +1,7 @@
 #!/to
 
 n="eza"
-v="0.21.6"
+v="0.22.0"
 tag="v$v"
 a="Modern ls alternative"
 m="Tox"
