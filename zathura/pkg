@@ -1,7 +1,7 @@
 #!/to
 
 n="zathura"
-v="0.5.11"
+v="0.5.12"
 a="Minimal document viewer"
 m="Tox"
 l="Zlib"
