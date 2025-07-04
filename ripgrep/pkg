@@ -1,7 +1,7 @@
 #!/to
 
 n="ripgrep"
-v="cbc598f245f3c157a872b69102653e2e349b6d92"
+v="3b7fd442a6f3aa73f650e763d7cbb902c03d700e"
 a="Oxidized, recursive grep"
 m="Tox"
 l="Unlicense OR MIT"
