@@ -1,7 +1,7 @@
 #!/to
 
 n="bash"
-v="5.3-rc2"
+v="5.3"
 a="The Bourne-Again Shell"
 m="Tox"
 l="GPL-3.0-or-later"
