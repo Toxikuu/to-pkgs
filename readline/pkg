@@ -1,7 +1,7 @@
 #!/to
 
 n="readline"
-v="8.3-rc2"
+v="8.3"
 a="Libraries for command-line editing and history"
 m="Tox"
 l="GPL-3.0-only"
