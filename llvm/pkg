@@ -1,0 +1,98 @@
+#!/to
+
+n="llvm"
+v="20.1.7"
+a="Low Level Virtual Machine"
+m="Tox"
+l="Apache-2.0 WITH LLVM-exception"
+t="lib"
+u="https://github.com/$n/$n-project.git"
+vf="gr | grep -Ev 'rc|init' | sort -V | cut -d- -f2-"
+
+s=(
+    "${u%.git}/releases/download/${n}org-$v/$n-$v.src.tar.xz"
+    "${u%.git}/releases/download/${n}org-$v/cmake-$v.src.tar.xz"
+    "${u%.git}/releases/download/${n}org-$v/third-party-$v.src.tar.xz"
+
+    "${u%.git}/releases/download/${n}org-$v/clang-$v.src.tar.xz"
+    "${u%.git}/releases/download/${n}org-$v/compiler-rt-$v.src.tar.xz"
+)
+
+d=(
+    "perl"
+    "b,cmake"
+    "b,libffi"
+    "b,libxml2"
+    "b,ninja"
+    "b,setuptools"
+    "b,zlib"
+    "b,zstd"
+    "b,python"
+)
+
+qa=(
+    "!static"
+)
+
+xt() {
+
+tar xf "$S/$n-$v.src.tar.xz"
+
+tar xf "$S/cmake-$v.src.tar.xz"
+tar xf "$S/third-party-$v.src.tar.xz"
+
+# LLVM expects these sources to exist at ../$source
+mv -v "cmake-$v.src" cmake
+mv -v "third-party-$v.src" third-party
+
+cd     "$B/$n-$v.src"
+
+tar xf "$S/clang-$v.src.tar.xz" -C tools
+mv -v "tools/clang-$v.src" tools/clang
+
+tar xf "$S/compiler-rt-$v.src.tar.xz" -C projects
+mv -v "projects/compiler-rt-$v.src" projects/compiler-rt
+
+}
+
+b() {
+
+# Ensure FileCheck is installed (wanted by some test suites)
+sed 's,utility,tool,' -i utils/FileCheck/CMakeLists.txt
+
+_cfg=(
+    -D BUILD_SHARED_LIBS=OFF # override default since rust wants static llvm libraries
+
+    -D LLVM_BUILD_DOCS=OFF
+    -D LLVM_BUILD_TESTS=OFF
+
+    -D LLVM_ENABLE_BINDINGS=OFF
+    -D LLVM_ENABLE_CURL=OFF # TODO: Look into this as it actually seems pretty cool
+    -D LLVM_ENABLE_FFI=ON
+    -D LLVM_ENABLE_RTTI=ON
+    -D LLVM_ENABLE_SPHINX=OFF
+
+    -D LLVM_BINUTILS_INCDIR=/usr/include
+    -D LLVM_INCLUDE_BENCHMARKS=OFF
+    -D LLVM_BUILD_LLVM_DYLIB=ON
+    -D LLVM_LINK_LLVM_DYLIB=ON
+    -D LLVM_TARGETS_TO_BUILD="X86;host"
+
+    -D CLANG_DEFAULT_PIE_ON_LINUX=ON
+    -D CLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang
+
+    -D LLVM_INSTALL_UTILS=ON
+    -D LLVM_INSTALL_GTEST=ON
+
+    -D LLVM_USE_PERF=OFF # TODO: Package perf
+)
+
+export NINJAJOBS="$(nproc)"
+def
+install -vDm755 bin/FileCheck -t "$D/usr/bin/"
+
+for i in clang{,++}; do
+    echo "-fstack-protector-strong" | install -vDm644 /dev/stdin "$D/etc/clang/$i.cfg"
+done
+
+}

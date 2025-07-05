@@ -1,0 +1,80 @@
+{
+  "name": "llvm",
+  "version": "20.1.7",
+  "about": "Low Level Virtual Machine",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0 WITH LLVM-exception"
+  ],
+  "upstream": "https://github.com/llvm/llvm-project.git",
+  "version_fetch": "gr | grep -Ev 'rc|init' | sort -V | cut -d- -f2-",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/llvm-20.1.7.src.tar.xz",
+      "dest": "llvm-20.1.7.src.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/cmake-20.1.7.src.tar.xz",
+      "dest": "cmake-20.1.7.src.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/third-party-20.1.7.src.tar.xz",
+      "dest": "third-party-20.1.7.src.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/clang-20.1.7.src.tar.xz",
+      "dest": "clang-20.1.7.src.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/compiler-rt-20.1.7.src.tar.xz",
+      "dest": "compiler-rt-20.1.7.src.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "perl",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "libffi",
+      "kind": "Build"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Build"
+    },
+    {
+      "name": "zlib",
+      "kind": "Build"
+    },
+    {
+      "name": "zstd",
+      "kind": "Build"
+    },
+    {
+      "name": "python",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
