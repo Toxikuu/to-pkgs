@@ -65,9 +65,6 @@ b() {
 # Sign
 sed -i '/EXTRAVERSION = /s/.*/EXTRAVERSION = -to/' Makefile
 
-# Avoid -dirty for uncommitted changes
-sed -i '138,153d' scripts/setlocalversion
-
 # Reuse the old config
 mk olddefconfig
 _ensure_required_kopts
