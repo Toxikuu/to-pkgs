@@ -1,0 +1,26 @@
+#!/to
+
+n="rmpc"
+v="0.9.0"
+tag="v$v"
+a="A beautiful, configurable TUI client for MPD"
+m="Tox"
+l="BSD-3-Clause"
+t="utils tui audio"
+u="https://github.com/mierak/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "b,rust"
+)
+
+b() {
+
+cbr
+install -vDm755 "target/release/$n" -t "$D/usr/bin/"
+
+install -vDm644 "target/completions/$n.bash" "$D/usr/share/bash-completion/completions/$n"
+install -vDm644 "target/man/$n.1" -t "$D/usr/share/man/man1/"
+
+}
