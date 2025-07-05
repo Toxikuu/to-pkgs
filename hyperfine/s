@@ -1,0 +1,34 @@
+{
+  "name": "hyperfine",
+  "version": "1.19.0",
+  "about": "CLI benchmarking tool",
+  "maintainer": "Tox",
+  "licenses": [
+    "APACHE",
+    "MIT"
+  ],
+  "upstream": "https://github.com/sharkdp/hyperfine.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/sharkdp/hyperfine.git",
+      "dest": "hyperfine"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

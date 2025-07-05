@@ -1,0 +1,34 @@
+#!/to
+
+n="hyperfine"
+v="1.19.0"
+tag="v$v"
+a="CLI benchmarking tool"
+m="Tox"
+l=("APACHE" "MIT")
+t="utils cli"
+u="https://github.com/sharkdp/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "b,rust"
+)
+
+b() {
+
+cbr
+
+install -vDm755 "target/release/$n" -t "$D/usr/bin/"
+install -vDm755 "scripts/"*.py      -t "$D/usr/lib/$n/scripts/"
+
+install -vDm644 "doc/$n.1"          -t "$D/usr/share/man/man1/"
+install -vDm644 "target/release/build/$n-"*"/out/$n.bash" "$D/usr/share/bash-completion/completions/$n"
+
+}
+
+t() {
+
+cargo test --release
+
+}
