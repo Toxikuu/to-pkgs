@@ -36,27 +36,9 @@ d=(
 
 xt() {
 
-pwd | grep "^$B$" || die "Wrong cwd"
-
-# Reuse host system's sources if extant
-if [ -d "$S/sys-$an" ]; then
-    cp -af "$S/sys-$an" "sys-$an"
-    cd "sys-$an"
-else
-    tar xf "$S/$an-$v.tar.gz"
-    cd "$an-$v"
-    cp -vf "$A/default-config" ".config"
-fi
-
-}
-
-p() {
-
-# Reuse sources
-if [ -d /usr/src/$an-$v ]; then
-    mkdir -pv "/var/lib/to/chroot/upper/$S/sys-$an"
-    cp -af "/usr/src/$an-$v" "/var/lib/to/chroot/upper/$S/sys-$an"
-fi
+tar xf "$S/$an-$v.tar.gz"
+cd "$an-$v"
+cp -vf "$A/default-config" ".config"
 
 }
 
