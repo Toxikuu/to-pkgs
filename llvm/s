@@ -40,19 +40,7 @@
   ],
   "dependencies": [
     {
-      "name": "perl",
-      "kind": "Required"
-    },
-    {
       "name": "cmake",
-      "kind": "Build"
-    },
-    {
-      "name": "libffi",
-      "kind": "Build"
-    },
-    {
-      "name": "libxml2",
       "kind": "Build"
     },
     {
@@ -64,16 +52,28 @@
       "kind": "Build"
     },
     {
+      "name": "perl",
+      "kind": "Required"
+    },
+    {
+      "name": "libffi",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
       "name": "zlib",
-      "kind": "Build"
+      "kind": "Required"
     },
     {
       "name": "zstd",
-      "kind": "Build"
+      "kind": "Required"
     },
     {
       "name": "python",
-      "kind": "Build"
+      "kind": "Required"
     }
   ],
   "kcfg": []

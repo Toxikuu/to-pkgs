@@ -19,15 +19,16 @@ s=(
 )
 
 d=(
-    "perl"
     "b,cmake"
-    "b,libffi"
-    "b,libxml2"
     "b,ninja"
     "b,setuptools"
-    "b,zlib"
-    "b,zstd"
-    "b,python"
+
+    "perl"
+    "libffi"
+    "libxml2"
+    "zlib"
+    "zstd"
+    "python"
 )
 
 qa=(
