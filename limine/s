@@ -1,0 +1,41 @@
+{
+  "name": "limine",
+  "version": "9.3.4",
+  "about": "Advanced, portable, multiprotocol bootloader",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-2-Clause"
+  ],
+  "upstream": "https://github.com/limine-bootloader/limine.git",
+  "version_fetch": "gr | grep -v binary | sort -V",
+  "tags": [
+    "utils",
+    "boot"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/limine-bootloader/limine/releases/download/v9.3.4/limine-9.3.4.tar.xz",
+      "dest": "limine-9.3.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "binutils",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "nasm",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

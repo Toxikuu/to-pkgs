@@ -1,0 +1,33 @@
+#!/to
+
+n="limine"
+v="9.3.4"
+a="Advanced, portable, multiprotocol bootloader"
+m="Tox"
+l="BSD-2-Clause"
+t="utils boot"
+u="https://github.com/$n-bootloader/$n.git"
+vf="gr | grep -v binary | sort -V"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+)
+
+d=(
+    "binutils"
+    "gcc"
+    "glibc"
+    "b,nasm"
+)
+
+b() {
+
+_cfg=(
+    --enable-uefi-x86-64
+    --prefix=/usr
+)
+
+def
+rm -rv "$D/usr/share/doc/$n/LICENSES"
+
+}
