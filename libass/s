@@ -1,6 +1,6 @@
 {
   "name": "libass",
-  "version": "084333fc1476fa2fd005c1410e1c4a618a3696cd",
+  "version": "26217e013000df94ff017b175834ab328ce1fa31",
   "about": "Portable library for ASS subtitle rendering",
   "maintainer": "Tox",
   "licenses": [
