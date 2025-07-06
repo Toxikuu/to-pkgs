@@ -12,12 +12,30 @@ s="$u"
 
 d=(
     "b,rust"
+    "b,llvm"
+    "b,hyperfine"
     "pcre2"
 )
 
 b() {
 
+# Setup
+patch -Np1 -i "$A/opt.patch"
+export MALLOC_CONF="thp:always,metadata_thp:always"
+export PGO_PROFILE_DIR=/tmp/pgo
+export RUSTFLAGS+=" -Cprofile-generate=$PGO_PROFILE_DIR"
+
+# Profile
 cbr --features=pcre2
+hyperfine --warmup 2 --min-runs 32 --max-runs 64 'target/release/rg -i /bin/sh /usr'
+
+# Rebuild with profile data
+export RUSTFLAGS="$(echo $RUSTFLAGS | sed "s|-Cprofile-generate=$PGO_PROFILE_DIR||g")"
+llvm-profdata merge -o "$PGO_PROFILE_DIR/merged.profdata" "$PGO_PROFILE_DIR"
+export RUSTFLAGS+=" -Cprofile-use=${PGO_PROFILE_DIR}/merged.profdata"
+cbr --features=pcre2
+
+# Install
 install -vDm755 target/release/rg "$D/usr/bin/rg"
 
 target/release/rg --generate complete-bash  | install -vDm644 /dev/stdin "$D/usr/share/bash-completion/completions/rg"

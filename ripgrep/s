@@ -25,6 +25,14 @@
       "kind": "Build"
     },
     {
+      "name": "llvm",
+      "kind": "Build"
+    },
+    {
+      "name": "hyperfine",
+      "kind": "Build"
+    },
+    {
       "name": "pcre2",
       "kind": "Required"
     }
