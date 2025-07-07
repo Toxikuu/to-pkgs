@@ -1,6 +1,6 @@
 {
   "name": "sudo-rs",
-  "version": "5259536b30a9894b8d75667259466d82e6829a7c",
+  "version": "c3f4de3ede388061ce85f5b797156708c756427f",
   "about": "Privilege escalation utility",
   "maintainer": "Tox",
   "licenses": [
