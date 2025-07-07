@@ -1,0 +1,41 @@
+#!/to
+
+n="cpio"
+v="2.15"
+a="Archival utility"
+m="Tox"
+l="GPL-3.0-or-later"
+t="utils cli"
+u="http://mirror.rit.edu/gnu/$n/?C=M;O=D"
+
+s=(
+    "${u%\?*}$n-$v.tar.bz2"
+)
+
+d=(
+    "glibc"
+    "b,bzip2"
+)
+
+b() {
+
+# GCC 15 workaround
+sed -e "/^extern int (\*xstat)/s/()/(const char * restrict,  struct stat * restrict)/" \
+    -i src/extern.h
+sed -e "/^int (\*xstat)/s/()/(const char * restrict,  struct stat * restrict)/" \
+    -i src/global.c
+
+_cfg=(
+    --disable-mt
+    --with-rmt=/usr/libexec/rmt
+)
+
+def
+
+}
+
+t() {
+
+mk check
+
+}

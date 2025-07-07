@@ -1,0 +1,33 @@
+{
+  "name": "cpio",
+  "version": "2.15",
+  "about": "Archival utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "http://mirror.rit.edu/gnu/cpio/?C=M;O=D",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "http://mirror.rit.edu/gnu/cpio/cpio-2.15.tar.bz2",
+      "dest": "cpio-2.15.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
