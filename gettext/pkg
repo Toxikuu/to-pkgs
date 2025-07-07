@@ -1,7 +1,7 @@
 #!/to
 
 n="gettext"
-v="0.25"
+v="0.25.1"
 a="i18n and l10n toolkit"
 m="Tox"
 l=(
