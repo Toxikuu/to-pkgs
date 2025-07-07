@@ -1,7 +1,7 @@
 #!/to
 
 n="libcap"
-v="a5753d029173d69b09f593da13575b19e17641ff"
+v="a37b30288380b7ca1e513611eb1c2a3ac5493cc5"
 a="POSIX 1003.1e capabilities"
 m="Tox"
 l="BSD-3-Clause OR GPL-2.0-only"
