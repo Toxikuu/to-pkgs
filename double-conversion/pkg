@@ -1,0 +1,29 @@
+#!/to
+
+n="double-conversion"
+v="3d97642d15b27538fa0b714d8e80068520e26967"
+a="Binary-decimal and decimal-binary routines for IEEE doubles"
+m="Tox"
+l="BSD-3-Clause"
+t="lib math"
+u="https://github.com/google/$n.git"
+
+s="$u"
+d=(
+    "glibc"
+    "gcc"
+    "b,cmake"
+)
+
+b() {
+
+_cfg=( -D BUILD_TESTING=ON )
+def
+
+}
+
+t() {
+
+mk test
+
+}

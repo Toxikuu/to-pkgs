@@ -1,0 +1,37 @@
+{
+  "name": "double-conversion",
+  "version": "3d97642d15b27538fa0b714d8e80068520e26967",
+  "about": "Binary-decimal and decimal-binary routines for IEEE doubles",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/google/double-conversion.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "math"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/google/double-conversion.git",
+      "dest": "double-conversion"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
