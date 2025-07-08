@@ -2,12 +2,12 @@
 
 n="libmng"
 v="2.0.3"
-a="A collection of routines used to create and manipulate MNG format graphics files"
+a="Multiple-image Network Graphics library"
 m="Tox"
-l="LicenseRef-libmng"
-t=""
-u="https://www.libmng.com/"
-vf="no" # last change was over a decade ago
+l="Zlib"
+t="lib img"
+u="https://sourceforge.net/projects/$n/"
+vf="no" # last change was about a decade ago
 
 s=(
     "https://downloads.sourceforge.net/$n/$n-$v.tar.xz"

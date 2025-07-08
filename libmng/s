@@ -1,14 +1,17 @@
 {
   "name": "libmng",
   "version": "2.0.3",
-  "about": "A collection of routines used to create and manipulate MNG format graphics files",
+  "about": "Multiple-image Network Graphics library",
   "maintainer": "Tox",
   "licenses": [
-    "LicenseRef-libmng"
+    "Zlib"
   ],
-  "upstream": "https://www.libmng.com/",
+  "upstream": "https://sourceforge.net/projects/libmng/",
   "version_fetch": "no",
-  "tags": [],
+  "tags": [
+    "lib",
+    "img"
+  ],
   "sources": [
     {
       "kind": "Download",
