@@ -1,0 +1,38 @@
+{
+  "name": "libmng",
+  "version": "2.0.3",
+  "about": "A collection of routines used to create and manipulate MNG format graphics files",
+  "maintainer": "Tox",
+  "licenses": [
+    "LicenseRef-libmng"
+  ],
+  "upstream": "https://www.libmng.com/",
+  "version_fetch": "no",
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz",
+      "dest": "libmng-2.0.3.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "lcms2",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
