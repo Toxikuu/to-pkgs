@@ -27,3 +27,9 @@ _cfg=(
 BD="BUILD" def
 
 }
+
+t() {
+
+mk test
+
+}
