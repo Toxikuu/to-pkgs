@@ -1,0 +1,29 @@
+#!/to
+
+n="jasper"
+v="4.2.5"
+tag="version-$v"
+a="Reference implementation of the JPEG-2000 codec"
+m="Tox"
+l="Custom"
+t="lib img codec"
+u="https://github.com/$n-software/$n.git"
+vf="gr | sed 's,^version-,,' | grep -v '[a-Z]' | sort -V"
+
+s="$u"
+
+d=(
+    "b,cmake"
+    "libjpeg-turbo"
+)
+
+b() {
+
+_cfg=(
+    -D JAS_ENABLE_DOC=NO
+    -D ALLOW_IN_SOURCE_BUILD=YES
+)
+
+BD="BUILD" def
+
+}
