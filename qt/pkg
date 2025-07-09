@@ -1,0 +1,150 @@
+#!/to
+
+n="qt"
+v="6.9.1"
+an="$n${v:0:1}" # qt6
+a="Application and UI framework"
+m="Tox"
+l=(
+    "GPL-3.0-only"
+    "LGPL-3.0-only"
+    "Qt-GPL-exception-1.0"
+    "Custom"
+)
+t="lib gui"
+u="https://github.com/$n/${n}base.git"
+
+s=(
+    "https://download.$n.io/archive/$n/${v%.*}/$v/single/$n-everywhere-src-$v.tar.xz"
+    "https://gitlab.archlinux.org/archlinux/packaging/packages/$an-base/-/raw/main/$an-base-cflags.patch -> cflags.patch"
+    "https://gitlab.archlinux.org/archlinux/packaging/packages/$an-base/-/blob/main/$an-base-nostrip.patch -> nostrip.patch"
+)
+
+d=(
+    "dbus"
+    "double-conversion"
+    "fontconfig"
+    "freetype"
+    "gcc"
+    "glibc"
+    "glib"
+    "harfbuzz"
+    "icu"
+    "libdrm"
+    "libglvnd"
+    "libice"
+    "libinput"
+    "libjpeg-turbo"
+    "libpng"
+    "libsm"
+    "libx11"
+    "libxcb"
+    "libxkbcommon"
+    "mesa"
+    "mtdev"
+    "openssl"
+    "pcre2"
+    "shared-mime-info"
+    "sqlite"
+    xcb-util-{cursor,image,keysyms,renderutil,wm}
+    "xdg-utils"
+    "zlib"
+    "zstd"
+
+    "alsa-lib"
+    "make-ca"
+    "gst-plugins-base"
+    "libtiff"
+    "libwebp"
+    "wayland"
+    "nvidia"
+    "pciutils"
+    "sdl2"
+    "pulseaudio"
+    "udev"
+
+    "b,cmake"
+    "b,ninja"
+)
+
+qa=(
+    "!static"
+)
+
+b() {
+
+with ninja
+
+NO_DEFAULT=1
+_cfg=(
+    -prefix         /usr
+    -archdatadir    lib/$an
+    -libdir         lib/$an
+    -datadir        share/$an
+    -libexecdir     lib/$an
+    -sysconfdir     /etc/xdg
+
+    -release
+    -shared
+    -no-static
+    -no-sbom
+    -no-rpath
+
+    -nomake         examples
+    -nomake         tests
+    -nomake         benchmarks
+
+    -dbus-linked
+    -system-doubleconversion
+    -glib
+    -icu
+    -system-pcre
+    -system-zlib
+
+    -no-journald
+    -no-slog2
+    -syslog
+
+    -openssl-linked
+    -no-cups
+    -emojisegmenter
+    -fontconfig
+    -system-freetype
+    -system-harfbuzz
+
+    -egl
+    -qpa            xcb
+    -default-qpa    xcb
+    -xcb-xlib
+    -xcb
+
+    -libudev
+    -evdev
+    -libinput
+    -mtdev
+    -xkbcommon
+
+    -ico
+    -system-libpng
+    -system-libjpeg
+    -system-tiff
+    -system-webp
+    -system-sqlite
+
+    -pulseaudio
+
+    -no-flite
+    -no-speechd
+
+    -skip           qt3d
+    -skip           qtquick3dphysics
+    -skip           qtwebengine
+)
+
+./configure "${_cfg[@]}"
+nj
+ni
+
+find "$D/usr" -name '*.prl' -exec sed -i '/^QMAKE_PRL_BUILD_DIR/d' {} \;
+
+}

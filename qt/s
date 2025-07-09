@@ -1,0 +1,222 @@
+{
+  "name": "qt",
+  "version": "6.9.1",
+  "about": "Application and UI framework",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-only",
+    "LGPL-3.0-only",
+    "Qt-GPL-exception-1.0",
+    "Custom"
+  ],
+  "upstream": "https://github.com/qt/qtbase.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gui"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://download.qt.io/archive/qt/6.9/6.9.1/single/qt-everywhere-src-6.9.1.tar.xz",
+      "dest": "qt-everywhere-src-6.9.1.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://gitlab.archlinux.org/archlinux/packaging/packages/qt6-base/-/raw/main/qt6-base-cflags.patch",
+      "dest": "cflags.patch"
+    },
+    {
+      "kind": "Download",
+      "url": "https://gitlab.archlinux.org/archlinux/packaging/packages/qt6-base/-/blob/main/qt6-base-nostrip.patch",
+      "dest": "nostrip.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "double-conversion",
+      "kind": "Required"
+    },
+    {
+      "name": "fontconfig",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "harfbuzz",
+      "kind": "Required"
+    },
+    {
+      "name": "icu",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libice",
+      "kind": "Required"
+    },
+    {
+      "name": "libinput",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "libsm",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "mtdev",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "pcre2",
+      "kind": "Required"
+    },
+    {
+      "name": "shared-mime-info",
+      "kind": "Required"
+    },
+    {
+      "name": "sqlite",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-cursor",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-image",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-keysyms",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-renderutil",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-wm",
+      "kind": "Required"
+    },
+    {
+      "name": "xdg-utils",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "make-ca",
+      "kind": "Required"
+    },
+    {
+      "name": "gst-plugins-base",
+      "kind": "Required"
+    },
+    {
+      "name": "libtiff",
+      "kind": "Required"
+    },
+    {
+      "name": "libwebp",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "nvidia",
+      "kind": "Required"
+    },
+    {
+      "name": "pciutils",
+      "kind": "Required"
+    },
+    {
+      "name": "sdl2",
+      "kind": "Required"
+    },
+    {
+      "name": "pulseaudio",
+      "kind": "Required"
+    },
+    {
+      "name": "udev",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "ninja",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
