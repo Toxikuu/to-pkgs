@@ -1,7 +1,7 @@
 #!/to
 
 n="sudo"
-v="cb4e267341332fb4957d68d98fd8e51c12d14aef"
+v="e5d953f33925bfa183e32fdd1e41ac7f9da5f470"
 a="Privilege escalation utility"
 m="Tox"
 l="custom"
