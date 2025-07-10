@@ -1,6 +1,6 @@
 {
   "name": "ninja",
-  "version": "1.13.0",
+  "version": "1.13.1",
   "about": "Small, fast build system",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/ninja-build/ninja/archive/v1.13.0/ninja-1.13.0.tar.gz",
-      "dest": "ninja-1.13.0.tar.gz"
+      "url": "https://github.com/ninja-build/ninja/archive/v1.13.1/ninja-1.13.1.tar.gz",
+      "dest": "ninja-1.13.1.tar.gz"
     }
   ],
   "dependencies": [
