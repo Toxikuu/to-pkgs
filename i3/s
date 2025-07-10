@@ -1,6 +1,6 @@
 {
   "name": "i3",
-  "version": "cfa4cf16bea809c7c715a86c428757e577c85254",
+  "version": "9fc24064e7f9d398e4ff6e727e3098b65c07e3ca",
   "about": "A tiling window manager for X11",
   "maintainer": "Tox",
   "licenses": [
