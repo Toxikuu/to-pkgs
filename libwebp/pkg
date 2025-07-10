@@ -1,7 +1,7 @@
 #!/to
 
 n="libwebp"
-v="1.5.0"
+v="1.6.0"
 a="WebP library"
 m="Tox"
 l="BSD-3-Clause"

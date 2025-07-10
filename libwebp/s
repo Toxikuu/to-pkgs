@@ -1,6 +1,6 @@
 {
   "name": "libwebp",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "about": "WebP library",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.5.0.tar.gz",
-      "dest": "libwebp-1.5.0.tar.gz"
+      "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz",
+      "dest": "libwebp-1.6.0.tar.gz"
     }
   ],
   "dependencies": [
