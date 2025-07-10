@@ -31,6 +31,11 @@ install -vDm755 "target/$n-linux_amd64"    "$D/usr/bin/$n"
 # Shell completions and bindings
 install -vDm644 shell/*.bash            -t "$D/usr/share/$n/"
 
+install -vDm644 /dev/stdin "$D/etc/profile.d/77-fzf.sh" << EOF
+export FZF_DEFAULT_OPTS="--color=bw --border=horizontal --reverse --pointer='- ' --no-scrollbar --prompt='- ' --input-border=none --no-separator --ellipsis=''"
+eval "$(fzf --bash)"
+EOF
+
 }
 
 t() {
