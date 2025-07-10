@@ -1,7 +1,7 @@
 #!/to
 
 n="jaq"
-v="2.2.0"
+v="2.3.0"
 tag="v$v"
 a="Command-line JSON processor"
 m="Tox"
