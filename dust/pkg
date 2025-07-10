@@ -1,0 +1,27 @@
+#!/to
+
+n="dust"
+v="1.2.2"
+tag="v$v"
+a="Oxidized du"
+m="Tox"
+l="Apache-2.0"
+t="utils rs"
+u="https://github.com/bootandy/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "b,rust"
+)
+
+b() {
+
+cbr
+install -vDm755 "target/release/$n" -t  "$D/usr/bin/"
+
+install -vDm644 "completions/$n.bash"   "$D/usr/share/bash-completion/completions/$n"
+install -vDm644 "man-page/$n.1"     -t  "$D/usr/share/man/man1/"
+
+}

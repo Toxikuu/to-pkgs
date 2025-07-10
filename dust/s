@@ -1,0 +1,37 @@
+{
+  "name": "dust",
+  "version": "1.2.2",
+  "about": "Oxidized du",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "upstream": "https://github.com/bootandy/dust.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "rs"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/bootandy/dust.git",
+      "dest": "dust"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
