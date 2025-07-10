@@ -1,6 +1,6 @@
 {
   "name": "bc",
-  "version": "a4d24ed8daa448357a507df91e50369385582ed7",
+  "version": "6d595fa4d6130e492b3a7fce22ec4a713574ac47",
   "about": "Arbitrary precision numeric processing language",
   "maintainer": "Tox",
   "licenses": [
