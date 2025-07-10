@@ -1,7 +1,7 @@
 #!/to
 
 n="gst-plugins-base"
-v="1.26.3"
+v="1.27.1"
 a="Base gst plugins"
 m="Tox"
 l="LGPL-2.1-or-later"
