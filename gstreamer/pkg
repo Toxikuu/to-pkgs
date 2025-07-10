@@ -1,7 +1,7 @@
 #!/to
 
 n="gstreamer"
-v="1.26.3"
+v="1.27.1"
 a="Development framework for multimedia applications"
 t="lib audio video"
 l="LGPL-2.1-or-later"
