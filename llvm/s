@@ -1,6 +1,6 @@
 {
   "name": "llvm",
-  "version": "20.1.7",
+  "version": "20.1.8",
   "about": "Low Level Virtual Machine",
   "maintainer": "Tox",
   "licenses": [
@@ -14,28 +14,28 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/llvm-20.1.7.src.tar.xz",
-      "dest": "llvm-20.1.7.src.tar.xz"
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/llvm-20.1.8.src.tar.xz",
+      "dest": "llvm-20.1.8.src.tar.xz"
     },
     {
       "kind": "Download",
-      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/cmake-20.1.7.src.tar.xz",
-      "dest": "cmake-20.1.7.src.tar.xz"
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/cmake-20.1.8.src.tar.xz",
+      "dest": "cmake-20.1.8.src.tar.xz"
     },
     {
       "kind": "Download",
-      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/third-party-20.1.7.src.tar.xz",
-      "dest": "third-party-20.1.7.src.tar.xz"
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/third-party-20.1.8.src.tar.xz",
+      "dest": "third-party-20.1.8.src.tar.xz"
     },
     {
       "kind": "Download",
-      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/clang-20.1.7.src.tar.xz",
-      "dest": "clang-20.1.7.src.tar.xz"
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/clang-20.1.8.src.tar.xz",
+      "dest": "clang-20.1.8.src.tar.xz"
     },
     {
       "kind": "Download",
-      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/compiler-rt-20.1.7.src.tar.xz",
-      "dest": "compiler-rt-20.1.7.src.tar.xz"
+      "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/compiler-rt-20.1.8.src.tar.xz",
+      "dest": "compiler-rt-20.1.8.src.tar.xz"
     }
   ],
   "dependencies": [
