@@ -1,7 +1,7 @@
 #!/to
 
 n="go"
-v="1.24.4"
+v="1.24.5"
 a="The ${n^} programming language"
 m="Tox"
 l="BSD-3-Clause"
