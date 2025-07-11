@@ -26,6 +26,6 @@ def
 t() {
 
 # 2 of the 3 tests fail :sob:
-samu test || true
+sa test || true
 
 }
