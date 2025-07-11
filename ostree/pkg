@@ -1,7 +1,7 @@
 #!/to
 
 n="ostree"
-v="2025.2"
+v="2025.3"
 a="OS and container deployment utility"
 m="Tox"
 l="LGPL-2.0-or-later"
