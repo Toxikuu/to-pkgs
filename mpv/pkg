@@ -10,7 +10,6 @@ t="lib video utils gui cli"
 u="https://github.com/$n-player/$n.git"
 
 s="$u"
-
 d=(
     "alsa-lib"
     "desktop-file-utils"
@@ -33,7 +32,7 @@ d=(
     "libxv"
     "luajit"
     "mesa"
-    "pulseaudio"
+    "pipewire"
     "uchardet"
     "vulkan-loader"
     "zlib"
@@ -71,6 +70,21 @@ _cfg=(
     -D build-date=false
     -D fuzzers=false
 
+    # Audio output
+    -D alsa=enabled
+    -D audiounit=disabled
+    -D coreaudio=disabled
+    -D avfoundation=disabled
+    -D jack=disabled
+    -D openal=disabled
+    -D opensles=disabled
+    -D oss-audio=disabled
+    -D pipewire=enabled
+    -D pulse=disabled
+    -D sdl2-audio=disabled
+    -D sndio=disabled
+    -D wasapi=disabled
+
     # Explicitly disable options targetting inferior operating systems
     -D win32-threads=disabled
     -D win32-smtc=disabled
@@ -82,6 +96,13 @@ _cfg=(
     -D macos-media-player=disabled
     -D macos-touchbar=disabled
     -D swift-build=disabled
+    -D gl-cocoa=disabled
+    -D cocoa=disabled
+
+    # Manual
+    -D pdf-build=disabled
+    -D html-build=disabled
+    -D manpage-build=disabled # requires rst2man from docutils
 )
 
 def
