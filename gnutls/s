@@ -1,19 +1,19 @@
 {
   "name": "gnutls",
-  "version": "3.8.9",
+  "version": "3.8.10",
   "about": "GNU TLS library",
   "maintainer": "Tox",
   "licenses": [
     "GPL-3.0-or-later AND LGPL-2.1-or-later"
   ],
   "upstream": "https://gitlab.com/gnutls/gnutls.git",
-  "version_fetch": "gr | grep -v '[a-Z]'",
+  "version_fetch": "gr | grep -v '[a-Z]' | sort -V",
   "tags": [],
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.9.tar.xz",
-      "dest": "gnutls-3.8.9.tar.xz"
+      "url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.10.tar.xz",
+      "dest": "gnutls-3.8.10.tar.xz"
     }
   ],
   "dependencies": [
