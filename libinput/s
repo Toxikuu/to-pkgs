@@ -1,6 +1,6 @@
 {
   "name": "libinput",
-  "version": "1.28.1",
+  "version": "1.28.901",
   "about": "Input device management and event handling library",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +16,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.28.1/libinput-1.28.1.tar.gz",
-      "dest": "libinput-1.28.1.tar.gz"
+      "url": "https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.28.901/libinput-1.28.901.tar.gz",
+      "dest": "libinput-1.28.901.tar.gz"
     }
   ],
   "dependencies": [
