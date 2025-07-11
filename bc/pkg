@@ -20,9 +20,8 @@ b() {
 NO_DEFAULT=1
 _cfg=(
     --prefix=/usr
-    -G
-    -O3
-    -r
+    -G              # omit parts of the test suite depending on a bc install
+    -r              # use readline
 )
 
 def
@@ -31,6 +30,6 @@ def
 
 t() {
 
-make test
+mk test
 
 }
