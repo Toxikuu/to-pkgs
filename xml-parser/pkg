@@ -4,9 +4,7 @@ n="xml-parser"
 v="2.47"
 a="Perl interface to Expat"
 m="Tox"
-l=(
-    "Artistic-2.0"
-)
+l="Artistic-2.0"
 t="lib"
 u="https://github.com/cpan-authors/XML-Parser.git"
 vf="gr | sed -e 's,^v,,' -e 's,_,.,g' | sort -V"
@@ -22,7 +20,6 @@ d=(
 
 b() {
 
-il
 perl Makefile.PL
 mk
 mi
