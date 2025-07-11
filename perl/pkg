@@ -1,7 +1,7 @@
 #!/to
 
 n="perl"
-v="5.40.2"
+v="5.42.0"
 
 MINOR="${v%.*}"
 MAJOR="${MINOR%.*}"
@@ -16,7 +16,6 @@ vf="gr | vfem | vfs"
 
 s=(
     "${u%.git}/archive/refs/tags/v$v.tar.gz"
-    "https://www.linuxfromscratch.org/patches/lfs/development/$n-$v-upstream_fix-1.patch"
 )
 
 d=(
@@ -29,8 +28,6 @@ d=(
 )
 
 b() {
-
-pat "$S/$n-$v-upstream_fix-1.patch"
 
 export BUILD_ZLIB=False
 export BUILD_BZIP2=0

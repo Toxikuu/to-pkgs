@@ -1,6 +1,6 @@
 {
   "name": "perl",
-  "version": "5.40.2",
+  "version": "5.42.0",
   "about": "The Practical Extrarction and Report Language",
   "maintainer": "Tox",
   "licenses": [
@@ -15,13 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/Perl/perl5/archive/refs/tags/v5.40.2.tar.gz",
-      "dest": "v5.40.2.tar.gz"
-    },
-    {
-      "kind": "Download",
-      "url": "https://www.linuxfromscratch.org/patches/lfs/development/perl-5.40.2-upstream_fix-1.patch",
-      "dest": "perl-5.40.2-upstream_fix-1.patch"
+      "url": "https://github.com/Perl/perl5/archive/refs/tags/v5.42.0.tar.gz",
+      "dest": "v5.42.0.tar.gz"
     }
   ],
   "dependencies": [
