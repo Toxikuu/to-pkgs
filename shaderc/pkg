@@ -27,8 +27,8 @@ sed '/examples/d;/third_party/d' -i CMakeLists.txt
 sed '/build-version/d'           -i glslc/CMakeLists.txt
 cat << EOF > glslc/src/build-version.inc
 "$v\n"
-"$(LOG_LEVEL=OFF to data -V spirv-tools)\n"
-"$(LOG_LEVEL=OFF to data -V glslang)\n"
+"$(vof spirv-tools)\n"
+"$(vof glslang)\n"
 EOF
 
 _cfg=(
