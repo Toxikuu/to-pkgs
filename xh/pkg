@@ -1,0 +1,37 @@
+#!/to
+
+n="xh"
+v="0.24.1"
+tag="v$v"
+a="Fast, friendly tool for sending HTTP requests"
+m="Tox"
+l="MIT"
+t="utils net"
+u="https://github.com/ducaale/$n.git"
+
+s=(
+    "$u"
+    "https://github.com/ducaale/xh/commit/fe9e4769333633c3fa868bdb3c90a2caf4344ee3.patch -> gcc15-onig.patch"
+)
+d=(
+    "oniguruma"
+    "openssl"
+    "gcc"
+    "b,rust"
+)
+
+b() {
+
+pat "$S/gcc15-onig.patch"
+CFLAGS+=' -ffat-lto-objects'
+cbr --features native-tls
+
+install -vDm755 "target/release/$n" -t "$D/usr/bin/"
+install -vDm644 "doc/$n.1"          -t "$D/usr/share/man/man1/"
+
+install -vDm644 "completions/$n.bash" "$D/usr/share/bash-completions/completions/$n"
+
+# `xh` will default to https if the binary name is `xhs`
+ln -sfv "$n" "$D/usr/bin/${n}s"
+
+}

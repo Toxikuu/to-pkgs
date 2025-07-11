@@ -1,0 +1,46 @@
+{
+  "name": "xh",
+  "version": "0.24.1",
+  "about": "Fast, friendly tool for sending HTTP requests",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/ducaale/xh.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/ducaale/xh.git",
+      "dest": "xh"
+    },
+    {
+      "kind": "Download",
+      "url": "https://github.com/ducaale/xh/commit/fe9e4769333633c3fa868bdb3c90a2caf4344ee3.patch",
+      "dest": "gcc15-onig.patch"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "oniguruma",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
