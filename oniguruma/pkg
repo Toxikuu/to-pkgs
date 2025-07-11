@@ -1,19 +1,18 @@
 #!/to
 
 n="oniguruma"
-v="f95747b462de672b6f8dbdeb478245ddf061ca53"
+v="6.9.10"
 a="Regex library"
 m="Tox"
 l="BSD"
 t="lib"
 u="https://github.com/kkos/$n.git"
 
-s="$u"
+s="${u%.git}/releases/download/v$v/onig-$v.tar.gz"
 
 b() {
 
 _cfg=( --enable-posix-api )
-autoreconf -fiv
 def
 
 }

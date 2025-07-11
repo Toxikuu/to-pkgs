@@ -1,6 +1,6 @@
 {
   "name": "oniguruma",
-  "version": "f95747b462de672b6f8dbdeb478245ddf061ca53",
+  "version": "6.9.10",
   "about": "Regex library",
   "maintainer": "Tox",
   "licenses": [
@@ -13,9 +13,9 @@
   ],
   "sources": [
     {
-      "kind": "Git",
-      "url": "https://github.com/kkos/oniguruma.git",
-      "dest": "oniguruma"
+      "kind": "Download",
+      "url": "https://github.com/kkos/oniguruma/releases/download/v6.9.10/onig-6.9.10.tar.gz",
+      "dest": "onig-6.9.10.tar.gz"
     }
   ],
   "dependencies": [],
