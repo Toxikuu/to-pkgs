@@ -34,8 +34,7 @@ xt() {
 
 b() {
 
-# TODO: Add a utility for this
-PV="5.40.2"
+PV="$(vof perl)"
 
 _cfg=(
     --with-python=python3
