@@ -61,6 +61,6 @@ t() {
 
 # Tests fail in build chroot because they want an X terminal, and one test is
 # known to fail on some systems
-samu test || true
+sa test || true
 
 }
