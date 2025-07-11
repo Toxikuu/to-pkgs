@@ -1,6 +1,6 @@
 {
   "name": "limine",
-  "version": "9.3.4",
+  "version": "9.4.0",
   "about": "Advanced, portable, multiprotocol bootloader",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/limine-bootloader/limine/releases/download/v9.3.4/limine-9.3.4.tar.xz",
-      "dest": "limine-9.3.4.tar.xz"
+      "url": "https://github.com/limine-bootloader/limine/releases/download/v9.4.0/limine-9.4.0.tar.xz",
+      "dest": "limine-9.4.0.tar.xz"
     }
   ],
   "dependencies": [
