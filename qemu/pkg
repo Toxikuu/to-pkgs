@@ -86,7 +86,9 @@ ln -sfv "$n-system-${QEMU_ARCH%-*}" "$D/usr/bin/qemu"
 
 t() {
 
+with samu
+
 # A few tests fail, probably due to the build environment
-samu test || true
+sa test || true
 
 }
