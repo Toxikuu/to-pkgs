@@ -47,7 +47,7 @@ def
 t() {
 
 # An older machine I own runs out of memory for test 11 (pixbuf-jpeg)
-samu test || true
+sa test || true
 
 }
 
