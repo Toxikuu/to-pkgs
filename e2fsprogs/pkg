@@ -1,7 +1,7 @@
 #!/to
 
 n="e2fsprogs"
-v="1.47.2"
+v="1.47.3"
 tag="v$v"
 a="Programs for the ext4 filesystem"
 m="Tox"
