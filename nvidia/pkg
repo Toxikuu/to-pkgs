@@ -192,17 +192,27 @@ EOF
 
 # Blacklist stuff necessary to have a functional tty
 install -vDm644 /dev/stdin "$D/usr/lib/modprobe.d/nvfb.conf" << EOF
-# /usr/lib/modprobe.d/nvfb.conf
+# /usr/lib/modprobe.d/nouveau.conf
 
 blacklist ${n}fb
 blacklist nouveau
+blacklist nova_core
+blacklist nova_drm
 EOF
 
-# Blacklist stuff necessary to have a functional wayland
+# Use modesetting by default (needed for Wayland)
 install -vDm644 /dev/stdin "$D/usr/lib/modprobe.d/${n}_drm.conf" << EOF
 # /usr/lib/modprobe.d/${n}_drm.conf
 
 options ${n}_drm modeset=1
+EOF
+
+# Prevent losing memory allocations when sleeping/hibernating
+install -vDm644 /dev/stdin "$D/usr/lib/modprobe.d/$n-sleep.conf" << EOF
+# /usr/lib/modprobe.d/$n-sleep.conf
+
+options $n NVreg_PreserveVideoMemoryAllocations=1
+options $n NVreg_TemporaryFilePath=/var/tmp
 EOF
 
 }
