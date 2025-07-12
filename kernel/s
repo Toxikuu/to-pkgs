@@ -1,6 +1,6 @@
 {
   "name": "kernel",
-  "version": "6.15.5",
+  "version": "6.15.6",
   "about": "The Linux kernel",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.15.5.tar.gz",
-      "dest": "linux-6.15.5.tar.gz"
+      "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.15.6.tar.gz",
+      "dest": "linux-6.15.6.tar.gz"
     }
   ],
   "dependencies": [
