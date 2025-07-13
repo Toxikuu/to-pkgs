@@ -146,7 +146,7 @@
       "kind": "Required"
     },
     {
-      "name": "pulseaudio",
+      "name": "pipewire",
       "kind": "Required"
     },
     {

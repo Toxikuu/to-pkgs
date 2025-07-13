@@ -44,7 +44,7 @@ d=(
     "fdk-aac"
     "openssl"
     "opus"
-    "pulseaudio"
+    "pipewire"
     "sdl2-compat"
     "vulkan-loader"
     "xz"
