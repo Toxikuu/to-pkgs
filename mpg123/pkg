@@ -15,7 +15,7 @@ s=(
 
 d=(
     "alsa-lib"
-    "pulseaudio"
+    "pipewire"
 )
 
 b() {
