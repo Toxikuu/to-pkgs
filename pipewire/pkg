@@ -32,14 +32,11 @@ d=(
     "pulseaudio"
     "alsa-lib"
     "fdk-aac"
-    "ffmpeg"
     "libdrm"
     "libxcb"
     "libsndfile"
     "libusb"
     "opus"
-    "vulkan-loader"
-    "b,vulkan-headers"
     "b,libx11"
     "b,libxfixes"
 
@@ -55,8 +52,8 @@ _cfg=(
     -D man=disabled
     -D docs=disabled
 
-    -D ffmpeg=enabled
-    -D vulkan=enabled
+    -D ffmpeg=disabled
+    -D vulkan=disabled
 
     -D bluez5-codec-lc3plus=disabled
     -D jack-devel=false

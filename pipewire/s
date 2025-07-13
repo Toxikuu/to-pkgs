@@ -68,10 +68,6 @@
       "kind": "Required"
     },
     {
-      "name": "ffmpeg",
-      "kind": "Required"
-    },
-    {
       "name": "libdrm",
       "kind": "Required"
     },
@@ -90,14 +86,6 @@
     {
       "name": "opus",
       "kind": "Required"
-    },
-    {
-      "name": "vulkan-loader",
-      "kind": "Required"
-    },
-    {
-      "name": "vulkan-headers",
-      "kind": "Build"
     },
     {
       "name": "libx11",
