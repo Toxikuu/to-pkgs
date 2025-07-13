@@ -1,0 +1,33 @@
+#!/to
+
+n="xvidcore"
+v="1.3.7"
+a="XviD is an open source MPEG-4 video codec"
+m="Tox"
+l="GPL"
+t="lib codec video"
+u="https://downloads.xvid.com/downloads"
+vf="u=$u n=$n cr | uniq | sort -V"
+
+s=(
+    "$u/$n-$v.tar.gz"
+)
+
+d=(
+    "glibc"
+    "b,nasm"
+)
+
+b() {
+
+# GCC 15 fix
+sed -i '/typedef int bool;/d' src/encoder.h
+
+cd build/generic
+sed -i 's/^LN_S=@LN_S@/&fv/' platform.inc.in
+sed -i '/libdir.*STATIC_LIB/ s/^/#/' Makefile
+
+def
+chmod -v 755 "$D/usr/lib/lib$n.so.4.3"
+
+}

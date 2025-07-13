@@ -1,0 +1,34 @@
+{
+  "name": "xvidcore",
+  "version": "1.3.7",
+  "about": "XviD is an open source MPEG-4 video codec",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://downloads.xvid.com/downloads",
+  "version_fetch": "u=https://downloads.xvid.com/downloads n=xvidcore cr | uniq | sort -V",
+  "tags": [
+    "lib",
+    "codec",
+    "video"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz",
+      "dest": "xvidcore-1.3.7.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "nasm",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
