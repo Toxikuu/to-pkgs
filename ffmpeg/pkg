@@ -51,6 +51,7 @@ d=(
     "zlib"
     "x264"
     "x265"
+    "xvidcore"
 
     "b,nasm"
     "b,vulkan-headers"
