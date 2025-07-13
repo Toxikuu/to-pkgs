@@ -21,6 +21,7 @@ d=(
     "libxcursor"
     "libxext"
     "libxrender"
+    "pipewire"
 
     "b,cmake"
     "b,samu"

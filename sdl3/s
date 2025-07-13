@@ -51,6 +51,10 @@
       "kind": "Required"
     },
     {
+      "name": "pipewire",
+      "kind": "Required"
+    },
+    {
       "name": "cmake",
       "kind": "Build"
     },
