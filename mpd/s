@@ -104,10 +104,6 @@
     {
       "name": "pipewire",
       "kind": "Required"
-    },
-    {
-      "name": "pulseaudio",
-      "kind": "Required"
     }
   ],
   "kcfg": []

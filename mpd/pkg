@@ -36,7 +36,6 @@ d=(
     "zlib"
 
     "pipewire"
-    "pulseaudio"
 )
 
 b() {
@@ -107,7 +106,7 @@ _cfg=(
     -D oss=disabled
     -D pipe=true
     -D pipewire=enabled
-    -D pulse=enabled
+    -D pulse=disabled
     -D recorder=false
     -D shout=disabled
     -D snapcast=false
