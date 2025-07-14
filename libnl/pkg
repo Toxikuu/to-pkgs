@@ -1,7 +1,7 @@
 #!/to
 
 n="libnl"
-v="641cd0e77761ed44f1d19dd073766c99732ddd5a"
+v="0554543dd6a38658355be93a869cb18953a63852"
 a="Netlink Library Suite"
 m="Tox"
 l="LGPL-2.1"
