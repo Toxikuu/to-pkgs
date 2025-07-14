@@ -6,7 +6,7 @@
   "licenses": [
     "MIT"
   ],
-  "upstream": "https://github.com/haampie/libtree",
+  "upstream": "https://github.com/haampie/libtree.git",
   "version_fetch": null,
   "tags": [
     "utils",
@@ -15,7 +15,7 @@
   "sources": [
     {
       "kind": "Git",
-      "url": "https://github.com/haampie/libtree",
+      "url": "https://github.com/haampie/libtree.git",
       "dest": "libtree"
     }
   ],

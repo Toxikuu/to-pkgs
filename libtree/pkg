@@ -6,7 +6,7 @@ a="ldd as a tree"
 m="Tox"
 l="MIT"
 t="utils cli"
-u="https://github.com/haampie/libtree"
+u="https://github.com/haampie/$n.git"
 
 s="$u"
 d="glibc"
