@@ -28,7 +28,7 @@ d=(
 
 b() {
 
-cbr --no-default-features --features=x11
+cbr --no-default-features --features=x11,wayland
 
 # Build man pages
 pushd extra/man &&
