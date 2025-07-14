@@ -15,3 +15,6 @@ unstable mirror like `https://https.git.savannah.gnu.org/git/gettext.git/`
       uptime
 - [ ] Switch to sudo-rs as the default sudo
     - [ ] Testing required
+- [x] Add xvidcore as an ffmpeg dependency
+
+<!-- TODO: See if `git config commit.cleanup strip` helps -->
