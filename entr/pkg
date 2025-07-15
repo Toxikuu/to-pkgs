@@ -1,0 +1,21 @@
+#!/to
+
+n="entr"
+v="5.7"
+a="Run arbitrary commands on file change"
+m="Tox"
+l="MIT"
+t="utils cli"
+u="https://github.com/eradman/$n.git"
+
+s="$u"
+d="glibc"
+
+b() {
+
+export PREFIX=/usr
+export NO_DEFAULT=1
+
+def
+
+}

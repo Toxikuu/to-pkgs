@@ -1,0 +1,29 @@
+{
+  "name": "entr",
+  "version": "5.7",
+  "about": "Run arbitrary commands on file change",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/eradman/entr.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/eradman/entr.git",
+      "dest": "entr"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
