@@ -1,0 +1,27 @@
+#!/to
+
+n="caddy"
+v="2.10.0"; tag="v$v"
+a="Fast web server with automatic HTTPS"
+m="Tox"
+l="Apache-2.0"
+t="net srv"
+u="https://github.com/${n}server/$n.git"
+
+s="$u"
+d=(
+    "glibc"
+    "mailcap"
+    "b,go"
+)
+
+b() {
+
+cd "cmd/$n"
+gob .
+
+install -vDm755 "$n" -t "$D/usr/bin/"
+"./$n" completion bash |
+    install -vDm644 /dev/stdin "$D/usr/share/bash-completion/completions/$n"
+
+}

@@ -1,0 +1,37 @@
+{
+  "name": "caddy",
+  "version": "2.10.0",
+  "about": "Fast web server with automatic HTTPS",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "upstream": "https://github.com/caddyserver/caddy.git",
+  "version_fetch": null,
+  "tags": [
+    "net",
+    "srv"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/caddyserver/caddy.git",
+      "dest": "caddy"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "mailcap",
+      "kind": "Required"
+    },
+    {
+      "name": "go",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
