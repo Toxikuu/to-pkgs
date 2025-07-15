@@ -1,0 +1,21 @@
+#!/to
+
+n="mailcap"
+v="2.1.54"
+a="MIME type associations for file types"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://pagure.io/$n"
+vf="gr | sed -e 's,^r,,' -e 's,-,.,g' | grep -v [a-Z] | sort -V"
+
+s=(
+    "$u/archive/r${v//./-}/mailcap-r${v//./-}.tar.gz"
+)
+
+b() {
+
+mk
+mi
+
+}

@@ -1,0 +1,23 @@
+{
+  "name": "mailcap",
+  "version": "2.1.54",
+  "about": "MIME type associations for file types",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://pagure.io/mailcap",
+  "version_fetch": "gr | sed -e 's,^r,,' -e 's,-,.,g' | grep -v [a-Z] | sort -V",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://pagure.io/mailcap/archive/r2-1-54/mailcap-r2-1-54.tar.gz",
+      "dest": "mailcap-r2-1-54.tar.gz"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}
