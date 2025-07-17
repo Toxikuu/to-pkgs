@@ -1,7 +1,7 @@
 #!/to
 
 n="libxml2"
-v="2.14.4"
+v="2.14.5"
 a="XML parsing libraries"
 m="Tox"
 l="MIT"

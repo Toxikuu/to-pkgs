@@ -1,6 +1,6 @@
 {
   "name": "libxml2",
-  "version": "2.14.4",
+  "version": "2.14.5",
   "about": "XML parsing libraries",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +15,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.4.tar.xz",
-      "dest": "libxml2-2.14.4.tar.xz"
+      "url": "https://download.gnome.org/sources/libxml2/2.14/libxml2-2.14.5.tar.xz",
+      "dest": "libxml2-2.14.5.tar.xz"
     }
   ],
   "dependencies": [
