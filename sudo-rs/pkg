@@ -1,7 +1,7 @@
 #!/to
 
 n="sudo-rs"
-v="43d0f4c022df165f9335994e55a3e9549ecf9182"
+v="7bd6d42df2e9bff49ac154cc43d519a419874af5"
 a="Privilege escalation utility"
 m="Tox"
 l=("Apache-2.0" "MIT")
