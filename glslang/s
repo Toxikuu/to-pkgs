@@ -1,6 +1,6 @@
 {
   "name": "glslang",
-  "version": "1.4.313.0",
+  "version": "1.4.321.0",
   "about": "Frontend and validator for OpenGL and Vulkan shaders",
   "maintainer": "Tox",
   "licenses": [
