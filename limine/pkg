@@ -1,7 +1,7 @@
 #!/to
 
 n="limine"
-v="9.4.0"
+v="9.5.0"
 a="Advanced, portable, multiprotocol bootloader"
 m="Tox"
 l="BSD-2-Clause"
