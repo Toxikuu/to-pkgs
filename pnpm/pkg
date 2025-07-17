@@ -1,0 +1,19 @@
+#!/to
+
+n="pnpm"
+v="10.13.1"
+a="Fast, efficient package manager"
+m="Tox"
+l="MIT"
+t="pm utils"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "d,${u%.git}/releases/download/v$v/$n-linux-x64 -> $n"
+)
+
+b() {
+
+install -vDm755 "$n" -t "$D/usr/bin/"
+
+}
