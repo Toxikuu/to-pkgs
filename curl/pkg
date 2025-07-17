@@ -1,7 +1,7 @@
 #!/to
 
 n="curl"
-v="8.14.1"
+v="8.15.0"
 a="Tool and library for transferring data with URLs"
 m="Tox"
 l="MIT"
