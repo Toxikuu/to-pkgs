@@ -1,6 +1,6 @@
 {
   "name": "whois",
-  "version": "5.6.2",
+  "version": "5.6.3",
   "about": "Intelligent tool to query domain name information",
   "maintainer": "Tox",
   "licenses": [
