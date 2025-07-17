@@ -1,7 +1,7 @@
 #!/to
 
 n="spirv-tools"
-v="1.4.313.0"
+v="1.4.321.0"
 tag="vulkan-sdk-$v"
 a="Libraries and utilities for processing SPIR-V modules"
 m="Tox"
