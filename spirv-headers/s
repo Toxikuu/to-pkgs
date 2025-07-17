@@ -1,6 +1,6 @@
 {
   "name": "spirv-headers",
-  "version": "1.4.313.0",
+  "version": "1.4.321.0",
   "about": "SPIR-V headers",
   "maintainer": "Tox",
   "licenses": [
