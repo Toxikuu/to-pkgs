@@ -1,6 +1,9 @@
 {
   "name": "nss",
-  "version": "3.113.1",
+  "version": {
+    "version": "3.113.1",
+    "release": 1
+  },
   "about": "Network Security Services",
   "maintainer": "Tox",
   "licenses": [

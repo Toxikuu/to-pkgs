@@ -2,6 +2,7 @@
 
 n="fzf"
 v="0.64.0"
+r="1"
 tag="v$v"
 a="Fuzzy finder"
 m="Tox"

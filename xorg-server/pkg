@@ -2,6 +2,7 @@
 
 n="xorg-server"
 v="21.1.18"
+r="1"
 a="X Window system server"
 m="Tox"
 l="SGI"

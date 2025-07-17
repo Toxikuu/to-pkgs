@@ -1,6 +1,9 @@
 {
   "name": "popt",
-  "version": "1.19",
+  "version": {
+    "version": "1.19",
+    "release": 1
+  },
   "about": "Libraries for parsing command-line options",
   "maintainer": "Tox",
   "licenses": [

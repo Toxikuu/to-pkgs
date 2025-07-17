@@ -1,6 +1,9 @@
 {
   "name": "libx11",
-  "version": "1.8.12",
+  "version": {
+    "version": "1.8.12",
+    "release": 1
+  },
   "about": "X11 client-side library",
   "maintainer": "Tox",
   "licenses": [

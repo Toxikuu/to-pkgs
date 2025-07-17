@@ -2,6 +2,7 @@
 
 n="lfstage"
 v="d2bcde008e1cc1633ed1a40a1cccaa079f083e99"
+r="1"
 a="LFS stage file generator"
 m="Tox"
 l="GPL-3.0"

@@ -1,6 +1,9 @@
 {
   "name": "oniguruma",
-  "version": "6.9.10",
+  "version": {
+    "version": "6.9.10",
+    "release": 1
+  },
   "about": "Regex library",
   "maintainer": "Tox",
   "licenses": [

@@ -2,6 +2,7 @@
 
 n="xxhash"
 v="38d555879fddae7300ece2c0820b3332c1d5748f"
+r="1"
 a="Extremely fast non-cryptographic hash algorithm"
 m="Tox"
 l=("BSD" "GPL2")

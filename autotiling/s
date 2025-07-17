@@ -1,6 +1,9 @@
 {
   "name": "autotiling",
-  "version": "97a36cc63f59a3a4afbbf236a404d4f3e4a9e71a",
+  "version": {
+    "version": "97a36cc63f59a3a4afbbf236a404d4f3e4a9e71a",
+    "release": 1
+  },
   "about": "Autotiling script for i3 and sway",
   "maintainer": "Tox",
   "licenses": [

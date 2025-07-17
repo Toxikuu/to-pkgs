@@ -1,6 +1,9 @@
 {
   "name": "less",
-  "version": "36562bd5e51f31226d5821c32d3f5e3fa595fcb5",
+  "version": {
+    "version": "36562bd5e51f31226d5821c32d3f5e3fa595fcb5",
+    "release": 1
+  },
   "about": "Text pager",
   "maintainer": "Tox",
   "licenses": [

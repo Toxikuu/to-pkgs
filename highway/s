@@ -1,6 +1,9 @@
 {
   "name": "highway",
-  "version": "1.2.0",
+  "version": {
+    "version": "1.2.0",
+    "release": 1
+  },
   "about": "Performance-portable, length-agnostic SIMD with runtime dispatch",
   "maintainer": "Tox",
   "licenses": [

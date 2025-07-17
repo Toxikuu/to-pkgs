@@ -2,6 +2,7 @@
 
 n="kbd"
 v="2.8.0"
+r="1"
 a="Keytable files, console fonts, and keyboard utilities"
 m="Tox"
 l="GPL-2.0-or-later"

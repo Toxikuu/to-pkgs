@@ -2,6 +2,7 @@
 
 n="glm"
 v="1.0.1"
+r="1"
 a="OpenGL math library"
 m="Tox"
 l="MIT"

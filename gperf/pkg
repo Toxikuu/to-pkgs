@@ -2,6 +2,7 @@
 
 n="gperf"
 v="3.3"
+r="1"
 a="Perfect hash function generator"
 m="Tox"
 l="GPL-3.0-or-later"

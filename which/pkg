@@ -2,6 +2,7 @@
 
 n="which"
 v="2.23"
+r="1"
 a="A utility to show the full path of commands"
 m="Tox"
 l="GPL-3.0-or-later"

@@ -1,6 +1,9 @@
 {
   "name": "iceauth",
-  "version": "1.0.10",
+  "version": {
+    "version": "1.0.10",
+    "release": 1
+  },
   "about": "ICE authority file utility",
   "maintainer": "Tox",
   "licenses": [

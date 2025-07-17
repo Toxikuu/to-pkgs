@@ -1,6 +1,9 @@
 {
   "name": "xf86-input-evdev",
-  "version": "2.11.0",
+  "version": {
+    "version": "2.11.0",
+    "release": 1
+  },
   "about": "X evdev input driver",
   "maintainer": "Tox",
   "licenses": [

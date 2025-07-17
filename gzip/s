@@ -1,6 +1,9 @@
 {
   "name": "gzip",
-  "version": "1.14",
+  "version": {
+    "version": "1.14",
+    "release": 1
+  },
   "about": "GNU compression utility",
   "maintainer": "Tox",
   "licenses": [

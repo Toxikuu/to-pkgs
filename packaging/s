@@ -1,6 +1,9 @@
 {
   "name": "packaging",
-  "version": "25.0",
+  "version": {
+    "version": "25.0",
+    "release": 1
+  },
   "about": "Core utilities for Python packages",
   "maintainer": "Tox",
   "licenses": [

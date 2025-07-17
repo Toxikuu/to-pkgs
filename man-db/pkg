@@ -2,6 +2,7 @@
 
 n="man-db"
 v="2.13.1"
+r="1"
 a="Utility for reading man pages"
 m="Tox"
 l="GPL-2.0-or-later AND GPL-3.0-or-later"

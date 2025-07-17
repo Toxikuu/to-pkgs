@@ -1,6 +1,9 @@
 {
   "name": "gnutls",
-  "version": "3.8.10",
+  "version": {
+    "version": "3.8.10",
+    "release": 1
+  },
   "about": "GNU TLS library",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "iniparser",
-  "version": "4bef811283e0ec1658c60e09950bd5a1ddc92e4b",
+  "version": {
+    "version": "4bef811283e0ec1658c60e09950bd5a1ddc92e4b",
+    "release": 1
+  },
   "about": "Standalone ini file parser",
   "maintainer": "Tox",
   "licenses": [

@@ -2,6 +2,7 @@
 
 n="libxcrypt"
 v="e34e0634a7192383dbb4445b6d7568e36baef675"
+r="1"
 a="Modern library for password hashing"
 m="Tox"
 l="LGPL"

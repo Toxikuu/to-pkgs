@@ -1,6 +1,9 @@
 {
   "name": "opus",
-  "version": "1.5.2",
+  "version": {
+    "version": "1.5.2",
+    "release": 1
+  },
   "about": "Lossy audio compression format well suited to transmission",
   "maintainer": "Tox",
   "licenses": [

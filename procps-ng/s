@@ -1,6 +1,9 @@
 {
   "name": "procps-ng",
-  "version": "4.0.5",
+  "version": {
+    "version": "4.0.5",
+    "release": 1
+  },
   "about": "Programs for monitoring processes",
   "maintainer": "Tox",
   "licenses": [

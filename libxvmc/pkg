@@ -2,6 +2,7 @@
 
 n="libxvmc"
 v="1.0.14"
+r="1"
 a="X Video Motion Compensation extension library"
 m="Tox"
 l="Custom"

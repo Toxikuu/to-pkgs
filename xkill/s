@@ -1,6 +1,9 @@
 {
   "name": "xkill",
-  "version": "1.0.6",
+  "version": {
+    "version": "1.0.6",
+    "release": 1
+  },
   "about": "Kill a client by its X resource",
   "maintainer": "Tox",
   "licenses": [

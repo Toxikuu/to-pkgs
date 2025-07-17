@@ -1,6 +1,9 @@
 {
   "name": "libxcvt",
-  "version": "0.1.3",
+  "version": {
+    "version": "0.1.3",
+    "release": 1
+  },
   "about": "VESA CVT standard timing modelines generator",
   "maintainer": "Tox",
   "licenses": [

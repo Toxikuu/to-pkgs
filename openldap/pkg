@@ -2,6 +2,7 @@
 
 n="openldap"
 v="2.6.10"
+r="1"
 tag="${n^^}_REL_ENG_${v//./_}"
 a="Lightweight Directory Access Protocol (LDAP)"
 m="Tox"

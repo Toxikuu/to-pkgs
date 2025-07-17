@@ -2,6 +2,7 @@
 
 n="blfs-bootscripts"
 v="20250225"
+r="1"
 a="Bootscripts for BLFS"
 m="Tox"
 l="MIT"

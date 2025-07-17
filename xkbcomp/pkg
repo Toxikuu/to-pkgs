@@ -2,6 +2,7 @@
 
 n="xkbcomp"
 v="1.4.7"
+r="1"
 a="X Keyboard description compiler"
 m="Tox"
 l="Custom"

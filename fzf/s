@@ -1,6 +1,9 @@
 {
   "name": "fzf",
-  "version": "0.64.0",
+  "version": {
+    "version": "0.64.0",
+    "release": 1
+  },
   "about": "Fuzzy finder",
   "maintainer": "Tox",
   "licenses": [

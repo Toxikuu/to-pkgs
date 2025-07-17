@@ -2,6 +2,7 @@
 
 n="libtasn1"
 v="4.20.0"
+r="1"
 a="Highly portable ASN.1 library"
 m="Tox"
 l=(

@@ -2,6 +2,7 @@
 
 n="ani-cli"
 v="4.10"
+r="1"
 tag="v$v"
 a="Utility to browse and play anime"
 m="Tox"

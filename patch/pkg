@@ -2,6 +2,7 @@
 
 n="patch"
 v="2.8"
+r="1"
 a="Utility to patch sources"
 m="Tox"
 l="GPL"

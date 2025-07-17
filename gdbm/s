@@ -1,6 +1,9 @@
 {
   "name": "gdbm",
-  "version": "1.25",
+  "version": {
+    "version": "1.25",
+    "release": 1
+  },
   "about": "The GNU Database Manager",
   "maintainer": "Tox",
   "licenses": [

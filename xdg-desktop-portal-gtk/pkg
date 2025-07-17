@@ -2,6 +2,7 @@
 
 n="xdg-desktop-portal-gtk"
 v="1.15.3"
+r="1"
 a="GTK-based xdg-desktop-portal backend implementation"
 m="Tox"
 l="LGPL-2.0-or-later"

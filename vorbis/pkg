@@ -2,6 +2,7 @@
 
 n="vorbis"
 v="1.3.7"
+r="1"
 a="Reference implementation of the Ogg Vorbis audio format."
 m="Tox"
 l="BSD-3-Clause"

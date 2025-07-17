@@ -2,6 +2,7 @@
 
 n="double-conversion"
 v="3d97642d15b27538fa0b714d8e80068520e26967"
+r="1"
 a="Binary-decimal and decimal-binary routines for IEEE doubles"
 m="Tox"
 l="BSD-3-Clause"

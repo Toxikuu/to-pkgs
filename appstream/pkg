@@ -2,6 +2,7 @@
 
 n="appstream"
 v="1.0.5"
+r="1"
 a="Provides a standard for creating app stores across distributions"
 m="Tox"
 l="LGPL-2.1-or-later"

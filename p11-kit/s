@@ -1,6 +1,9 @@
 {
   "name": "p11-kit",
-  "version": "0.25.5",
+  "version": {
+    "version": "0.25.5",
+    "release": 1
+  },
   "about": "Loads and enumerates PKCS#11 modules",
   "maintainer": "Tox",
   "licenses": [

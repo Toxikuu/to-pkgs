@@ -1,6 +1,9 @@
 {
   "name": "startup-notification",
-  "version": "64eb585315cfb1fb4fe68c8f705956e9fed46545",
+  "version": {
+    "version": "64eb585315cfb1fb4fe68c8f705956e9fed46545",
+    "release": 1
+  },
   "about": "Libary to monitor and display application startup",
   "maintainer": "Tox",
   "licenses": [

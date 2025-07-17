@@ -1,6 +1,9 @@
 {
   "name": "grep",
-  "version": "3.12",
+  "version": {
+    "version": "3.12",
+    "release": 1
+  },
   "about": "String search utility",
   "maintainer": "Tox",
   "licenses": [

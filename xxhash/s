@@ -1,6 +1,9 @@
 {
   "name": "xxhash",
-  "version": "38d555879fddae7300ece2c0820b3332c1d5748f",
+  "version": {
+    "version": "38d555879fddae7300ece2c0820b3332c1d5748f",
+    "release": 1
+  },
   "about": "Extremely fast non-cryptographic hash algorithm",
   "maintainer": "Tox",
   "licenses": [

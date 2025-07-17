@@ -2,6 +2,7 @@
 
 n="xh"
 v="0.24.1"
+r="1"
 tag="v$v"
 a="Fast, friendly tool for sending HTTP requests"
 m="Tox"

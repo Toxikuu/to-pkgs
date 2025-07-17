@@ -1,6 +1,9 @@
 {
   "name": "fdk-aac",
-  "version": "2ef9a141c40bf254bde7d22c197c615db5b265ed",
+  "version": {
+    "version": "2ef9a141c40bf254bde7d22c197c615db5b265ed",
+    "release": 1
+  },
   "about": "A standalone library of Android's Fraunhofer FDK AAC code",
   "maintainer": "Tox",
   "licenses": [

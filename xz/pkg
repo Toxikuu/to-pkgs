@@ -2,6 +2,7 @@
 
 n="xz"
 v="5.8.1"
+r="1"
 a="The LZMA and XZ compression formats"
 m="Tox"
 l="GPL LGPL custom"

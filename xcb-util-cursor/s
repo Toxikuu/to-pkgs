@@ -1,6 +1,9 @@
 {
   "name": "xcb-util-cursor",
-  "version": "0.1.5",
+  "version": {
+    "version": "0.1.5",
+    "release": 1
+  },
   "about": "XCB cursor library",
   "maintainer": "Tox",
   "licenses": [

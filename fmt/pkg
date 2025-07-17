@@ -2,6 +2,7 @@
 
 n="fmt"
 v="11.2.0"
+r="1"
 a="Formatting library"
 m="Tox"
 l="MIT"

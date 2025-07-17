@@ -1,6 +1,9 @@
 {
   "name": "efibootmgr",
-  "version": "18",
+  "version": {
+    "version": "18",
+    "release": 1
+  },
   "about": "User-space application to modify the EFI Boot Manager",
   "maintainer": "Tox",
   "licenses": [

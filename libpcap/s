@@ -1,6 +1,9 @@
 {
   "name": "libpcap",
-  "version": "1.10.5",
+  "version": {
+    "version": "1.10.5",
+    "release": 1
+  },
   "about": "Packet capture library",
   "maintainer": "Tox",
   "licenses": [

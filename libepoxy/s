@@ -1,6 +1,9 @@
 {
   "name": "libepoxy",
-  "version": "1.5.10",
+  "version": {
+    "version": "1.5.10",
+    "release": 1
+  },
   "about": "OpenGL function pointer management library",
   "maintainer": "Tox",
   "licenses": [

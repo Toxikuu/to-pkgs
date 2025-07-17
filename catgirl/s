@@ -1,6 +1,9 @@
 {
   "name": "catgirl",
-  "version": "6842cc755ed186793c3b2fd2736e6efb497e52e7",
+  "version": {
+    "version": "6842cc755ed186793c3b2fd2736e6efb497e52e7",
+    "release": 1
+  },
   "about": "Terminal IRC client",
   "maintainer": "Tox",
   "licenses": [

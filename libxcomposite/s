@@ -1,6 +1,9 @@
 {
   "name": "libxcomposite",
-  "version": "0.4.6",
+  "version": {
+    "version": "0.4.6",
+    "release": 1
+  },
   "about": "X11 Composite extension library",
   "maintainer": "Tox",
   "licenses": [

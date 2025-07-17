@@ -1,6 +1,9 @@
 {
   "name": "libglvnd",
-  "version": "1.7.0",
+  "version": {
+    "version": "1.7.0",
+    "release": 1
+  },
   "about": "The GL Vendor-Neutral Dispatch library",
   "maintainer": "Tox",
   "licenses": [

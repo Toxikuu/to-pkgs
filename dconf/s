@@ -1,6 +1,9 @@
 {
   "name": "dconf",
-  "version": "0.40.0",
+  "version": {
+    "version": "0.40.0",
+    "release": 1
+  },
   "about": "Configuration database system",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "zip",
-  "version": "3.0",
+  "version": {
+    "version": "3.0",
+    "release": 1
+  },
   "about": "Zip compressor",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "to",
-  "version": "6db5c20dd049b67c768d83eeabd58d96fc544c5d",
+  "version": {
+    "version": "6db5c20dd049b67c768d83eeabd58d96fc544c5d",
+    "release": 1
+  },
   "about": "Stupid-simple, (EVENTUALLY) rock-solid package manager for LFS",
   "maintainer": "Tox",
   "licenses": [

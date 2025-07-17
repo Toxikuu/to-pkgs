@@ -2,6 +2,7 @@
 
 n="xdg-user-dirs"
 v="0.18"
+r="1"
 a="User directory management tool"
 m="Tox"
 l="GPL"

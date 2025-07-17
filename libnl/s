@@ -1,6 +1,9 @@
 {
   "name": "libnl",
-  "version": "0554543dd6a38658355be93a869cb18953a63852",
+  "version": {
+    "version": "0554543dd6a38658355be93a869cb18953a63852",
+    "release": 1
+  },
   "about": "Netlink Library Suite",
   "maintainer": "Tox",
   "licenses": [

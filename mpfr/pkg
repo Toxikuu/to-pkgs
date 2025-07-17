@@ -2,6 +2,7 @@
 
 n="mpfr"
 v="9ee7521629dcbd2f0c744ef95554f9b2a644530c"
+r="1"
 a="Multiple-precision floating-point math library"
 m="Tox"
 l=(

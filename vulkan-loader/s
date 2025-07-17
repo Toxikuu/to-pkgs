@@ -1,6 +1,9 @@
 {
   "name": "vulkan-loader",
-  "version": "1.4.321.0",
+  "version": {
+    "version": "1.4.321.0",
+    "release": 1
+  },
   "about": "Vulkan Installable Client Driver Loader",
   "maintainer": "Tox",
   "licenses": [

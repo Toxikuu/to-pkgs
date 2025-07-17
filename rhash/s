@@ -1,6 +1,9 @@
 {
   "name": "rhash",
-  "version": "cce6c628f93d9ed332921656aa5e1750d12b8d3e",
+  "version": {
+    "version": "cce6c628f93d9ed332921656aa5e1750d12b8d3e",
+    "release": 1
+  },
   "about": "Utility for computing hash sums",
   "maintainer": "Tox",
   "licenses": [

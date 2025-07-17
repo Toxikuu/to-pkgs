@@ -1,6 +1,9 @@
 {
   "name": "floorp",
-  "version": "11.28.0",
+  "version": {
+    "version": "11.28.0",
+    "release": 1
+  },
   "about": "Firefox fork focused on performance and customization",
   "maintainer": "Tox",
   "licenses": [

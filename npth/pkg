@@ -2,6 +2,7 @@
 
 n="npth"
 v="1.8"
+r="1"
 a="New portable threads library"
 m="Tox"
 l="LGPL-2.1-or-later"

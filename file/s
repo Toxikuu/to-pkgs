@@ -1,6 +1,9 @@
 {
   "name": "file",
-  "version": "5.46",
+  "version": {
+    "version": "5.46",
+    "release": 1
+  },
   "about": "File type identification utility",
   "maintainer": "Tox",
   "licenses": [

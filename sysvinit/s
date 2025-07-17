@@ -1,6 +1,9 @@
 {
   "name": "sysvinit",
-  "version": "3.14",
+  "version": {
+    "version": "3.14",
+    "release": 1
+  },
   "about": "Classic init system",
   "maintainer": "Tox",
   "licenses": [

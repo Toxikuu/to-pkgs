@@ -2,6 +2,7 @@
 
 n="sdl2-compat"
 v="2.32.56"
+r="1"
 a="SDL2 compatibility layer using SDL3"
 m="Tox"
 l="Zlib"

@@ -1,5 +1,6 @@
 n="efivar"
 v="39"
+r="1"
 a="Tools and libraries for EFI variable manipulation"
 m="Tox"
 l="LGPL-2.1"

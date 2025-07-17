@@ -2,6 +2,7 @@
 
 n="pkgconf"
 v="1550bf53b3bb04b68fb6a405f9627674ad3bbd55"
+r="1"
 a="Package compiler and linker metadata toolkit"
 m="Tox"
 l="ISC"

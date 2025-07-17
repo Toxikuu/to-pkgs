@@ -2,6 +2,7 @@
 
 n="fastfetch"
 v="2.48.0"
+r="1"
 a="Well-maintained, feature-rich, fast fetch script"
 m="Tox"
 l="MIT"

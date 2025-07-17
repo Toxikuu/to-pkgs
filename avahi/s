@@ -1,6 +1,9 @@
 {
   "name": "avahi",
-  "version": "0.8",
+  "version": {
+    "version": "0.8",
+    "release": 1
+  },
   "about": "Service discovery system",
   "maintainer": "Tox",
   "licenses": [

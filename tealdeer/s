@@ -1,6 +1,9 @@
 {
   "name": "tealdeer",
-  "version": "1.7.2",
+  "version": {
+    "version": "1.7.2",
+    "release": 1
+  },
   "about": "Very fast oxidized tldr implementation",
   "maintainer": "Tox",
   "licenses": [

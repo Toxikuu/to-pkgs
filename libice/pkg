@@ -2,6 +2,7 @@
 
 n="libice"
 v="1.1.2"
+r="1"
 a="X11 Inter-Client Exchange library"
 m="Tox"
 l="MIT"

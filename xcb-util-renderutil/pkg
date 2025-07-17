@@ -2,6 +2,7 @@
 
 n="xcb-util-renderutil"
 v="0.3.10"
+r="1"
 a="Convenience functions for the X Render extension"
 m="Tox"
 l="X11 AND HPND-sell-variant"

@@ -2,6 +2,7 @@
 
 n="gdk-pixbuf"
 v="2.42.12"
+r="1"
 a="Pixel buffer manipulation library"
 m="Tox"
 l="LGPL-2.0-or-later"

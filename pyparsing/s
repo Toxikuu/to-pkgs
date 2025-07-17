@@ -1,6 +1,9 @@
 {
   "name": "pyparsing",
-  "version": "3.2.3",
+  "version": {
+    "version": "3.2.3",
+    "release": 1
+  },
   "about": "General purpose parsing module",
   "maintainer": "Tox",
   "licenses": [

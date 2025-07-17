@@ -2,6 +2,7 @@
 
 n="libgpg-error"
 v="1.55"
+r="1"
 a="GPG error library"
 m="Tox"
 l="LGPL-2.1-or-later"

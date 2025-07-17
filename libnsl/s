@@ -1,6 +1,9 @@
 {
   "name": "libnsl",
-  "version": "3b06568b38f0d2ba12adcd029c0f31a632cbbde7",
+  "version": {
+    "version": "3b06568b38f0d2ba12adcd029c0f31a632cbbde7",
+    "release": 1
+  },
   "about": "Public client interface for NIS(YP)",
   "maintainer": "Tox",
   "licenses": [

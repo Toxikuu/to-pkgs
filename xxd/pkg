@@ -2,6 +2,7 @@
 
 n="xxd"
 v="1.3.7"
+r="1"
 tag="v$v"
 a="Hex dump utility"
 m="Tox"

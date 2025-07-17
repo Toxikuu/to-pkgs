@@ -2,6 +2,7 @@
 
 n="xcb-util-keysyms"
 v="0.4.1"
+r="1"
 a="Standard X constants and conversion to/from keycodes"
 m="Tox"
 l="X11"

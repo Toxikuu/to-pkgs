@@ -2,6 +2,7 @@
 
 n="libxxf86dga"
 v="1.1.6"
+r="1"
 a="X Direct Graphics Access extension library"
 m="Tox"
 l="Custom"

@@ -1,6 +1,9 @@
 {
   "name": "libxext",
-  "version": "1.3.6",
+  "version": {
+    "version": "1.3.6",
+    "release": 1
+  },
   "about": "X11 miscellaneous extensions library",
   "maintainer": "Tox",
   "licenses": [

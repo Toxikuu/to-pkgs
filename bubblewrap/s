@@ -1,6 +1,9 @@
 {
   "name": "bubblewrap",
-  "version": "0.11.0",
+  "version": {
+    "version": "0.11.0",
+    "release": 1
+  },
   "about": "Low-level unprivileged sandboxing tool",
   "maintainer": "Tox",
   "licenses": [

@@ -2,6 +2,7 @@
 
 n="harfbuzz"
 v="11.2.1"
+r="1"
 a="OpenType text shaping engine"
 m="Tox"
 l="MIT"

@@ -2,6 +2,7 @@
 
 n="libpipeline"
 v="1.5.8"
+r="1"
 a="Library for manipulating subprocess pipelines"
 m="Tox"
 l="GPL-3.0-or-later"

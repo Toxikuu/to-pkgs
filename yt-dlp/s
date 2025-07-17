@@ -1,6 +1,9 @@
 {
   "name": "yt-dlp",
-  "version": "2025.06.30",
+  "version": {
+    "version": "2025.06.30",
+    "release": 1
+  },
   "about": "Feature-rich CLI media downloader",
   "maintainer": "Tox",
   "licenses": [

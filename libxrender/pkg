@@ -2,6 +2,7 @@
 
 n="libxrender"
 v="0.9.12"
+r="1"
 a="X Rendering Extension client library"
 m="Tox"
 l="MIT"

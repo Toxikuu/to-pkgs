@@ -2,6 +2,7 @@
 
 n="cpio"
 v="2.15"
+r="1"
 a="Archival utility"
 m="Tox"
 l="GPL-3.0-or-later"

@@ -3,6 +3,7 @@
 n="libutempter"
 an="${n#lib*}"
 v="4caa8ab94ff8b207228fa723a89214bf5e929321"
+r="1"
 a="Library allowing non-privileged utmp writing"
 m="Tox"
 l="LGPL-2.1-or-later"

@@ -1,6 +1,9 @@
 {
   "name": "girara",
-  "version": "0.4.5",
+  "version": {
+    "version": "0.4.5",
+    "release": 1
+  },
   "about": "Minimal UI library",
   "maintainer": "Tox",
   "licenses": [

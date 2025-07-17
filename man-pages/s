@@ -1,6 +1,9 @@
 {
   "name": "man-pages",
-  "version": "6.14",
+  "version": {
+    "version": "6.14",
+    "release": 1
+  },
   "about": "Linux man pages",
   "maintainer": "Tox",
   "licenses": [

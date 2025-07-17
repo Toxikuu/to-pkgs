@@ -1,6 +1,9 @@
 {
   "name": "markupsafe",
-  "version": "3.0.2",
+  "version": {
+    "version": "3.0.2",
+    "release": 1
+  },
   "about": "String safety for XML/HTML markup",
   "maintainer": "Tox",
   "licenses": [

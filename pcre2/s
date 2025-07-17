@@ -1,6 +1,9 @@
 {
   "name": "pcre2",
-  "version": "10.45",
+  "version": {
+    "version": "10.45",
+    "release": 1
+  },
   "about": "Perl-Compatible Regular Expressions",
   "maintainer": "Tox",
   "licenses": [

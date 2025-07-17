@@ -2,6 +2,7 @@
 
 n="libgcrypt"
 v="1.11.1"
+r="1"
 a="General purpose cryptographic library"
 m="Tox"
 l="LGPL-2.1-or-later AND GPL-2.0-or-later"

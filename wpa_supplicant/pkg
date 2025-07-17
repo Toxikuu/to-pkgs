@@ -2,6 +2,7 @@
 
 n="wpa_supplicant"
 v="2.11"
+r="1"
 a="A utility providing key negotiation for WPA wireless networks"
 m="Tox"
 l="BSD-3-Clause"

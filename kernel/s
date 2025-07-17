@@ -1,6 +1,9 @@
 {
   "name": "kernel",
-  "version": "6.15.6",
+  "version": {
+    "version": "6.15.6",
+    "release": 1
+  },
   "about": "The Linux kernel",
   "maintainer": "Tox",
   "licenses": [

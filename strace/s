@@ -1,6 +1,9 @@
 {
   "name": "strace",
-  "version": "6.15",
+  "version": {
+    "version": "6.15",
+    "release": 1
+  },
   "about": "A diagnostic, debugging, and instructional userspace tracer",
   "maintainer": "Tox",
   "licenses": [

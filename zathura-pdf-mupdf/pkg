@@ -2,6 +2,7 @@
 
 n="zathura-pdf-mupdf"
 v="0.4.4"
+r="1"
 a="PDF support for Zathura (MuPDF backend)"
 m="Tox"
 l="Zlib"

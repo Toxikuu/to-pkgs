@@ -1,6 +1,9 @@
 {
   "name": "iproute2",
-  "version": "6.15.0",
+  "version": {
+    "version": "6.15.0",
+    "release": 1
+  },
   "about": "IP routing utilities",
   "maintainer": "Tox",
   "licenses": [

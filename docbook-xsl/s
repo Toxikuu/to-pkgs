@@ -1,6 +1,9 @@
 {
   "name": "docbook-xsl",
-  "version": "1.79.2",
+  "version": {
+    "version": "1.79.2",
+    "release": 1
+  },
   "about": "XML stylesheets for DocBook XML transformations",
   "maintainer": "Tox",
   "licenses": [

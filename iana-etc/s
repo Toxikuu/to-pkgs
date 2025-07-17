@@ -1,6 +1,9 @@
 {
   "name": "iana-etc",
-  "version": "20250711",
+  "version": {
+    "version": "20250711",
+    "release": 1
+  },
   "about": "The Internet Assigned Numbers Authority's services and protocols",
   "maintainer": "Tox",
   "licenses": [

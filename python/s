@@ -1,6 +1,9 @@
 {
   "name": "python",
-  "version": "3.13.5",
+  "version": {
+    "version": "3.13.5",
+    "release": 1
+  },
   "about": "The Python programming language",
   "maintainer": "Tox",
   "licenses": [

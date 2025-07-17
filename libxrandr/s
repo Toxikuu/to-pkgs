@@ -1,6 +1,9 @@
 {
   "name": "libxrandr",
-  "version": "1.5.4",
+  "version": {
+    "version": "1.5.4",
+    "release": 1
+  },
   "about": "X11 RandR extension library",
   "maintainer": "Tox",
   "licenses": [

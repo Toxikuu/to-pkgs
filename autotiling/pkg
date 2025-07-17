@@ -2,6 +2,7 @@
 
 n="autotiling"
 v="97a36cc63f59a3a4afbbf236a404d4f3e4a9e71a"
+r="1"
 a="Autotiling script for i3 and sway"
 m="Tox"
 l="MIT"

@@ -1,6 +1,9 @@
 {
   "name": "autoconf",
-  "version": "2.72",
+  "version": {
+    "version": "2.72",
+    "release": 1
+  },
   "about": "Automatic configure script builder",
   "maintainer": "Tox",
   "licenses": [

@@ -3,6 +3,7 @@
 n="docbook-xml"
 _db="${n%-*}"
 v="4.5"
+r="1"
 a="Widely used XML scheme for writing documentation"
 m="Tox"
 l="MIT"

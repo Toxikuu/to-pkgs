@@ -2,6 +2,7 @@
 
 n="lz4"
 v="1.10.0"
+r="1"
 a="The $n compression algorithm"
 m="Tox"
 l="GPL-2.0-or-later"

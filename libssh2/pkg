@@ -2,6 +2,7 @@
 
 n="libssh2"
 v="1.11.1"
+r="1"
 a="Client-side SSH2 library"
 m="Tox"
 l="BSD-3-Clause"

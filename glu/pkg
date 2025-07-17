@@ -2,6 +2,7 @@
 
 n="glu"
 v="a2b96c7bba8db8fec3e02fb4227a7f7b02cabad1"
+r="1"
 a="Mesa OpenGL Utility library"
 m="Tox"
 l=("MIT" "SGI-B-2.0")

@@ -2,6 +2,7 @@
 
 n="bash-completion"
 v="2.16.0"
+r="1"
 a="Programmable completions for bash"
 m="Tox"
 l="GPL-2.0-only"

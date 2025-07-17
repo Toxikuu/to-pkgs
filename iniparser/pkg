@@ -2,6 +2,7 @@
 
 n="iniparser"
 v="4bef811283e0ec1658c60e09950bd5a1ddc92e4b"
+r="1"
 a="Standalone ini file parser"
 m="Tox"
 l="MIT"

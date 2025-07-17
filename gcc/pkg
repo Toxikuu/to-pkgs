@@ -2,6 +2,7 @@
 
 n="gcc"
 v="15.1.0"
+r="1"
 a="The GNU compiler collection"
 m="Tox"
 l=(

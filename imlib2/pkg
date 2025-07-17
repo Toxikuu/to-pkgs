@@ -2,6 +2,7 @@
 
 n="imlib2"
 v="72b610076ab5cd7645d0b439f17486beffda307a"
+r="1"
 a="Image loading and rendering library"
 m="Tox"
 l="BSD"

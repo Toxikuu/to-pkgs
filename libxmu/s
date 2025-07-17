@@ -1,6 +1,9 @@
 {
   "name": "libxmu",
-  "version": "1.2.1",
+  "version": {
+    "version": "1.2.1",
+    "release": 1
+  },
   "about": "X11 miscellaneous micro-utility library",
   "maintainer": "Tox",
   "licenses": [

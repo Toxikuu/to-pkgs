@@ -2,6 +2,7 @@
 
 n="cargo-c"
 v="0.10.14"
+r="1"
 a="Cargo subcommand to create C-ABI compatible libraries"
 m="Tox"
 l="MIT"

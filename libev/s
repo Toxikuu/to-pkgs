@@ -1,6 +1,9 @@
 {
   "name": "libev",
-  "version": "4.33",
+  "version": {
+    "version": "4.33",
+    "release": 1
+  },
   "about": "Full-featured, high-performance event loop",
   "maintainer": "Tox",
   "licenses": [

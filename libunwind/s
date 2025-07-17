@@ -1,6 +1,9 @@
 {
   "name": "libunwind",
-  "version": "1.8.2",
+  "version": {
+    "version": "1.8.2",
+    "release": 1
+  },
   "about": "Library to determine and manipulate a program's call-chain",
   "maintainer": "Tox",
   "licenses": [

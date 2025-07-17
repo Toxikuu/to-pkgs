@@ -1,6 +1,9 @@
 {
   "name": "bzip2",
-  "version": "1.0.8",
+  "version": {
+    "version": "1.0.8",
+    "release": 1
+  },
   "about": "The bzip2 compression algorithm",
   "maintainer": "Tox",
   "licenses": [

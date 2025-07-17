@@ -1,6 +1,9 @@
 {
   "name": "xorg-server",
-  "version": "21.1.18",
+  "version": {
+    "version": "21.1.18",
+    "release": 1
+  },
   "about": "X Window system server",
   "maintainer": "Tox",
   "licenses": [

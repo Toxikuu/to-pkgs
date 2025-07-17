@@ -1,6 +1,9 @@
 {
   "name": "blfs-bootscripts",
-  "version": "20250225",
+  "version": {
+    "version": "20250225",
+    "release": 1
+  },
   "about": "Bootscripts for BLFS",
   "maintainer": "Tox",
   "licenses": [

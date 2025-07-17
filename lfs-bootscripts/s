@@ -1,6 +1,9 @@
 {
   "name": "lfs-bootscripts",
-  "version": "20240825",
+  "version": {
+    "version": "20240825",
+    "release": 1
+  },
   "about": "SysVinit bootscripts for LFS",
   "maintainer": "Tox",
   "licenses": [

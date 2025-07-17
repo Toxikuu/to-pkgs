@@ -1,6 +1,9 @@
 {
   "name": "jsoncpp",
-  "version": "ca98c98457b1163cca1f7d8db62827c115fec6d1",
+  "version": {
+    "version": "ca98c98457b1163cca1f7d8db62827c115fec6d1",
+    "release": 1
+  },
   "about": "C++ library for interacting with JSON",
   "maintainer": "Tox",
   "licenses": [

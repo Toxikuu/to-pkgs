@@ -2,6 +2,7 @@
 
 n="attr"
 v="2.5.2"
+r="1"
 a="Utilities to administer filesystem object attributes"
 m="Tox"
 l="LGPL"

@@ -1,6 +1,9 @@
 {
   "name": "jbig2dec",
-  "version": "0.20",
+  "version": {
+    "version": "0.20",
+    "release": 1
+  },
   "about": "Decoder implementation of the JBIG2 image compression format",
   "maintainer": "Tox",
   "licenses": [

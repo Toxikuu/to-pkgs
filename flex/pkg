@@ -2,6 +2,7 @@
 
 n="flex"
 v="2.6.4"
+r="1"
 a="Fast lexical analyzer generator"
 m="Tox"
 l="Custom"

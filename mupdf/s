@@ -1,6 +1,9 @@
 {
   "name": "mupdf",
-  "version": "1.26.3",
+  "version": {
+    "version": "1.26.3",
+    "release": 1
+  },
   "about": "Lightweight PDF and XPS viewer",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "libxvmc",
-  "version": "1.0.14",
+  "version": {
+    "version": "1.0.14",
+    "release": 1
+  },
   "about": "X Video Motion Compensation extension library",
   "maintainer": "Tox",
   "licenses": [

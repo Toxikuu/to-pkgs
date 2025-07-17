@@ -2,6 +2,7 @@
 
 n="wget"
 v="2.2.0"
+r="1"
 an="$n${v:0:1}" # wget2
 a="Network utility to retrieve files from the web"
 m="Tox"

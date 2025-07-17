@@ -1,6 +1,9 @@
 {
   "name": "shaderc",
-  "version": "2025.3",
+  "version": {
+    "version": "2025.3",
+    "release": 1
+  },
   "about": "Shader compilation toolkit",
   "maintainer": "Tox",
   "licenses": [

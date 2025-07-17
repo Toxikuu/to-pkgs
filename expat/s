@@ -1,6 +1,9 @@
 {
   "name": "expat",
-  "version": "4b274f12575cf3e1519dc226f1d4ba799936f88c",
+  "version": {
+    "version": "4b274f12575cf3e1519dc226f1d4ba799936f88c",
+    "release": 1
+  },
   "about": "XML parser library",
   "maintainer": "Tox",
   "licenses": [

@@ -2,6 +2,7 @@
 
 n="rust"
 v="1.88.0"
+r="1"
 a="The Rust programming language"
 m="Tox"
 l=(

@@ -1,6 +1,9 @@
 {
   "name": "lz4",
-  "version": "1.10.0",
+  "version": {
+    "version": "1.10.0",
+    "release": 1
+  },
   "about": "The lz4 compression algorithm",
   "maintainer": "Tox",
   "licenses": [

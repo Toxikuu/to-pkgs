@@ -1,6 +1,9 @@
 {
   "name": "elogind",
-  "version": "255.17",
+  "version": {
+    "version": "255.17",
+    "release": 1
+  },
   "about": "Track logged-in users",
   "maintainer": "Tox",
   "licenses": [

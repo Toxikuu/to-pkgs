@@ -1,6 +1,9 @@
 {
   "name": "libbsd",
-  "version": "0.12.2",
+  "version": {
+    "version": "0.12.2",
+    "release": 1
+  },
   "about": "BSD compatibility library",
   "maintainer": "Tox",
   "licenses": [

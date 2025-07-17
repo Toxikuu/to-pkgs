@@ -1,6 +1,9 @@
 {
   "name": "iosevka",
-  "version": "3.4.0",
+  "version": {
+    "version": "3.4.0",
+    "release": 1
+  },
   "about": "Iosevka Nerd Font",
   "maintainer": "Tox",
   "licenses": [

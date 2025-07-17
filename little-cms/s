@@ -1,6 +1,9 @@
 {
   "name": "little-cms",
-  "version": "3c18c1ffb0dcff40a67de62eafc3330fbd0bc925",
+  "version": {
+    "version": "3c18c1ffb0dcff40a67de62eafc3330fbd0bc925",
+    "release": 1
+  },
   "about": "Little Color Management System",
   "maintainer": "Tox",
   "licenses": [

@@ -2,6 +2,7 @@
 
 n="pyyaml"
 v="69c141adcf805c5ebdc9ba519927642ee5c7f639"
+r="1"
 a="Python bindings for YAML"
 m="Tox"
 l="MIT"

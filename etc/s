@@ -1,6 +1,9 @@
 {
   "name": "etc",
-  "version": "bd6a57de5258ef0efb60bf1207e5deaf2d55a4df",
+  "version": {
+    "version": "bd6a57de5258ef0efb60bf1207e5deaf2d55a4df",
+    "release": 1
+  },
   "about": "/etc files",
   "maintainer": "Tox",
   "licenses": [

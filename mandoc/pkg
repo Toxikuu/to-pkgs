@@ -2,6 +2,7 @@
 
 n="mandoc"
 v="1.14.6"
+r="1"
 a="A suite of tools compiling mdoc from the OpenBSD project"
 m="Tox"
 l="ISC"

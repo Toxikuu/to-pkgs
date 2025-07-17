@@ -1,6 +1,9 @@
 {
   "name": "attr",
-  "version": "2.5.2",
+  "version": {
+    "version": "2.5.2",
+    "release": 1
+  },
   "about": "Utilities to administer filesystem object attributes",
   "maintainer": "Tox",
   "licenses": [

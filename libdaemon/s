@@ -1,6 +1,9 @@
 {
   "name": "libdaemon",
-  "version": "0.14",
+  "version": {
+    "version": "0.14",
+    "release": 1
+  },
   "about": "UNIX daemon library",
   "maintainer": "Tox",
   "licenses": [

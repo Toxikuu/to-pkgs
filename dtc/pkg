@@ -2,6 +2,7 @@
 
 n="dtc"
 v="1.7.2"
+r="1"
 tag="v$v"
 a="Device Tree Compiler"
 m="Tox"

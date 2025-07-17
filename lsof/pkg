@@ -2,6 +2,7 @@
 
 n="lsof"
 v="4.99.5"
+r="1"
 a="Lists open files for running processes"
 m="Tox"
 l="custom"

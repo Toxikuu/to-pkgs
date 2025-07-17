@@ -1,6 +1,9 @@
 {
   "name": "libsoup",
-  "version": "3.6.5",
+  "version": {
+    "version": "3.6.5",
+    "release": 1
+  },
   "about": "HTTP client/server library for GNOME",
   "maintainer": "Tox",
   "licenses": [

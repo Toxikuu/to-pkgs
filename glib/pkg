@@ -2,6 +2,7 @@
 
 n="glib"
 v="2.85.1" # Even minor parts mean stable
+r="1"
 a="Low level core library"
 m="Tox"
 l="LGPL-2.1-or-later"

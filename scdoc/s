@@ -1,6 +1,9 @@
 {
   "name": "scdoc",
-  "version": "1.11.3",
+  "version": {
+    "version": "1.11.3",
+    "release": 1
+  },
   "about": "Tiny man page generator",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "libassuan",
-  "version": "3.0.2",
+  "version": {
+    "version": "3.0.2",
+    "release": 1
+  },
   "about": "IPC library",
   "maintainer": "Tox",
   "licenses": [

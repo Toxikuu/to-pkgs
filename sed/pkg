@@ -2,6 +2,7 @@
 
 n="sed"
 v="4.9"
+r="1"
 a="Stream editor"
 m="Tox"
 l="GPL-3.0"

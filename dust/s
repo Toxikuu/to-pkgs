@@ -1,6 +1,9 @@
 {
   "name": "dust",
-  "version": "1.2.2",
+  "version": {
+    "version": "1.2.2",
+    "release": 1
+  },
   "about": "Oxidized du",
   "maintainer": "Tox",
   "licenses": [

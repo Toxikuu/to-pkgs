@@ -2,6 +2,7 @@
 
 n="glib-networking"
 v="2.80.1"
+r="1"
 a="Network extensions for GLib"
 m="Tox"
 l="LGPL-2.1-or-later"

@@ -1,6 +1,9 @@
 {
   "name": "gsettings-desktop-schemas",
-  "version": "48.0",
+  "version": {
+    "version": "48.0",
+    "release": 1
+  },
   "about": "Collection of GSettings schemas",
   "maintainer": "Tox",
   "licenses": [

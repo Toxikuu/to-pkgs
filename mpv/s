@@ -1,6 +1,9 @@
 {
   "name": "mpv",
-  "version": "0.40.0",
+  "version": {
+    "version": "0.40.0",
+    "release": 1
+  },
   "about": "Media player",
   "maintainer": "Tox",
   "licenses": [

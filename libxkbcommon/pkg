@@ -3,6 +3,7 @@
 n="libxkbcommon"
 an="${n#lib*}" # alt name
 v="1.10.0"
+r="1"
 tag="$an-$v"
 a="Keymap handling library for toolkits and window systems"
 m="Tox"

@@ -2,6 +2,7 @@
 
 n="libxft"
 v="2.3.9"
+r="1"
 a="FreeType-based font drawing library for X"
 m="Tox"
 l="MIT"

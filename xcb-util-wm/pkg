@@ -2,6 +2,7 @@
 
 n="xcb-util-wm"
 v="0.4.2"
+r="1"
 a="Client and window-manager helpers for EWMH and ICCCM"
 m="Tox"
 l="X11"

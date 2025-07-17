@@ -2,6 +2,7 @@
 
 n="libxv"
 v="1.0.13"
+r="1"
 a="X Video extension library"
 m="Tox"
 l="MIT"

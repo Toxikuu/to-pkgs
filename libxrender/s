@@ -1,6 +1,9 @@
 {
   "name": "libxrender",
-  "version": "0.9.12",
+  "version": {
+    "version": "0.9.12",
+    "release": 1
+  },
   "about": "X Rendering Extension client library",
   "maintainer": "Tox",
   "licenses": [

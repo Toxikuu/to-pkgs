@@ -2,6 +2,7 @@
 
 n="libpciaccess"
 v="0.18.1"
+r="1"
 a="X PCI access library"
 m="Tox"
 l="Custom"

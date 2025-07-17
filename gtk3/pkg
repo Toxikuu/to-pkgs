@@ -3,6 +3,7 @@
 n="gtk3"
 an="${n%3}"
 v="3.24.49"
+r="1"
 a="Multi-platform GUI toolkit"
 m="Tox"
 l="LICENSE"

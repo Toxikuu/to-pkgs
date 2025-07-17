@@ -2,6 +2,7 @@
 
 n="c-ares"
 v="1.34.5"
+r="1"
 tag="v$v"
 a="Asynchronous DNS request library"
 m="Tox"

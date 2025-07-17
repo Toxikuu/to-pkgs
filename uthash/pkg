@@ -2,6 +2,7 @@
 
 n="uthash"
 v="2.3.0"
+r="1"
 tag="v$v"
 a="Hash table and linked list library"
 m="Tox"

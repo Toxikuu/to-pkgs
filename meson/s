@@ -1,6 +1,9 @@
 {
   "name": "meson",
-  "version": "1.8.2",
+  "version": {
+    "version": "1.8.2",
+    "release": 1
+  },
   "about": "High productivity build system",
   "maintainer": "Tox",
   "licenses": [

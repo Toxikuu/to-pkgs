@@ -2,6 +2,7 @@
 
 n="libxtst"
 v="1.2.5"
+r="1"
 a="Library for XTEST & RECORD extensions"
 m="Tox"
 l=(

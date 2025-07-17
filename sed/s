@@ -1,6 +1,9 @@
 {
   "name": "sed",
-  "version": "4.9",
+  "version": {
+    "version": "4.9",
+    "release": 1
+  },
   "about": "Stream editor",
   "maintainer": "Tox",
   "licenses": [

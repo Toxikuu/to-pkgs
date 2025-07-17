@@ -1,6 +1,9 @@
 {
   "name": "dhcpcd",
-  "version": "10.2.4",
+  "version": {
+    "version": "10.2.4",
+    "release": 1
+  },
   "about": "Fully-featured lightweight DHCP client",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "libva",
-  "version": "2.22.0",
+  "version": {
+    "version": "2.22.0",
+    "release": 1
+  },
   "about": "Video Acceleration API",
   "maintainer": "Tox",
   "licenses": [

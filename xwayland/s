@@ -1,6 +1,9 @@
 {
   "name": "xwayland",
-  "version": "24.1.8",
+  "version": {
+    "version": "24.1.8",
+    "release": 1
+  },
   "about": "Allows running X clients on Wayland",
   "maintainer": "Tox",
   "licenses": [

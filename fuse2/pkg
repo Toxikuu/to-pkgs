@@ -3,6 +3,7 @@
 n="fuse2"
 an="${n::-1}" # fuse
 v="2.9.9"
+r="1"
 a="Filesystem in userspace"
 m="Tox"
 l="GPL2"

@@ -2,6 +2,7 @@
 
 n="diffutils"
 v="3.12"
+r="1"
 a="File comparison utilities"
 m="Tox"
 l="GPL-3.0-or-later"

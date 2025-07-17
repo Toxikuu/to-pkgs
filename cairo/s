@@ -1,6 +1,9 @@
 {
   "name": "cairo",
-  "version": "1.18.4",
+  "version": {
+    "version": "1.18.4",
+    "release": 1
+  },
   "about": "2D graphics library supporting multiple output devices",
   "maintainer": "Tox",
   "licenses": [

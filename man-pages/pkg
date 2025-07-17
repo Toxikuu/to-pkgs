@@ -2,6 +2,7 @@
 
 n="man-pages"
 v="6.14"
+r="1"
 a="Linux man pages"
 m="Tox"
 l=(

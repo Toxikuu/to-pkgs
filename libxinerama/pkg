@@ -2,6 +2,7 @@
 
 n="libxinerama"
 v="1.1.5"
+r="1"
 a="X11 Xinerama extension library"
 m="Tox"
 l=("MIT" "X11")

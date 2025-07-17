@@ -2,6 +2,7 @@
 
 n="xmodmap"
 v="1.0.11"
+r="1"
 a="X keymap modification utility"
 m="Tox"
 l="Custom"

@@ -1,6 +1,9 @@
 {
   "name": "wireplumber",
-  "version": "0.5.10",
+  "version": {
+    "version": "0.5.10",
+    "release": 1
+  },
   "about": "PipeWire session manager",
   "maintainer": "Tox",
   "licenses": [

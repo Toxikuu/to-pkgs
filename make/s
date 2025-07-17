@@ -1,6 +1,9 @@
 {
   "name": "make",
-  "version": "4.4.1",
+  "version": {
+    "version": "4.4.1",
+    "release": 1
+  },
   "about": "Utility for directing compilation",
   "maintainer": "Tox",
   "licenses": [

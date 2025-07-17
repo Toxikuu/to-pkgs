@@ -1,6 +1,9 @@
 {
   "name": "inih",
-  "version": "60",
+  "version": {
+    "version": "60",
+    "release": 1
+  },
   "about": "Simple ini file parser",
   "maintainer": "Tox",
   "licenses": [

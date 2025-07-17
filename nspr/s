@@ -1,6 +1,9 @@
 {
   "name": "nspr",
-  "version": "4.36",
+  "version": {
+    "version": "4.36",
+    "release": 1
+  },
   "about": "Netscape Portable Runtime",
   "maintainer": "Tox",
   "licenses": [

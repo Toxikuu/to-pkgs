@@ -2,6 +2,7 @@
 
 n="kmod"
 v="34.2"
+r="1"
 a="Kernel module loader"
 m="Tox"
 l=(

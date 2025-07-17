@@ -2,6 +2,7 @@
 
 n="make-ca"
 v="1.16.1"
+r="1"
 a="PKI setup script for LFS"
 m="Tox"
 l=(

@@ -2,6 +2,7 @@
 
 n="libdaemon"
 v="0.14"
+r="1"
 a="UNIX daemon library"
 m="Tox"
 l="LGPL"

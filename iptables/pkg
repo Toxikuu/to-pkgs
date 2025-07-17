@@ -2,6 +2,7 @@
 
 n="iptables"
 v="1.8.11"
+r="1"
 a="Utility to configure the Linux kernel's packet filtering ruleset"
 m="Tox"
 l="LICENSE"

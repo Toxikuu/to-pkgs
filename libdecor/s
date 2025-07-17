@@ -1,6 +1,9 @@
 {
   "name": "libdecor",
-  "version": "6994c9b3f5a99df27cc8e12b2170c7356205e72a",
+  "version": {
+    "version": "6994c9b3f5a99df27cc8e12b2170c7356205e72a",
+    "release": 1
+  },
   "about": "Wayland client-side decorations library",
   "maintainer": "Tox",
   "licenses": [

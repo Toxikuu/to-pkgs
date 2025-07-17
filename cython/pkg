@@ -2,6 +2,7 @@
 
 n="cython"
 v="3.1.2"
+r="1"
 a="C extensions for Python"
 m="Tox"
 l="Apache-2.0"

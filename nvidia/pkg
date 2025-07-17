@@ -4,6 +4,7 @@
 
 n="nvidia"
 v="575.64.03"
+r="1"
 a="${n^^} drivers"
 m="Tox"
 l="Custom"

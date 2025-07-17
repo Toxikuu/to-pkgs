@@ -1,6 +1,9 @@
 {
   "name": "xorgproto",
-  "version": "1914233e662d23ffb3812b80fadd0bbd064ad91c",
+  "version": {
+    "version": "1914233e662d23ffb3812b80fadd0bbd064ad91c",
+    "release": 1
+  },
   "about": "Xorg protocol headers",
   "maintainer": "Tox",
   "licenses": [

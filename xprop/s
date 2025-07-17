@@ -1,6 +1,9 @@
 {
   "name": "xprop",
-  "version": "1.2.8",
+  "version": {
+    "version": "1.2.8",
+    "release": 1
+  },
   "about": "X property viewer",
   "maintainer": "Tox",
   "licenses": [

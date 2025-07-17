@@ -2,6 +2,7 @@
 
 n="libevdev"
 v="1.13.4"
+r="1"
 a="Wrapper library for evdev devices"
 m="Tox"
 l="MIT"

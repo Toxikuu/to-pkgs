@@ -2,6 +2,7 @@
 
 n="libdisplay-info"
 v="0.2.0"
+r="1"
 a="EDID and DisplayID library"
 m="Tox"
 l="MIT"

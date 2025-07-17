@@ -1,6 +1,9 @@
 {
   "name": "xset",
-  "version": "1.2.5",
+  "version": {
+    "version": "1.2.5",
+    "release": 1
+  },
   "about": "X settings utility",
   "maintainer": "Tox",
   "licenses": [

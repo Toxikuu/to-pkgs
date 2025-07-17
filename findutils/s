@@ -1,6 +1,9 @@
 {
   "name": "findutils",
-  "version": "4.10.0",
+  "version": {
+    "version": "4.10.0",
+    "release": 1
+  },
   "about": "Programs to find and execute commands on files",
   "maintainer": "Tox",
   "licenses": [

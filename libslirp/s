@@ -1,6 +1,9 @@
 {
   "name": "libslirp",
-  "version": "4.9.1",
+  "version": {
+    "version": "4.9.1",
+    "release": 1
+  },
   "about": "General purpose TCP-IP emulator",
   "maintainer": "Tox",
   "licenses": [

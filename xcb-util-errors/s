@@ -1,6 +1,9 @@
 {
   "name": "xcb-util-errors",
-  "version": "1.0.1",
+  "version": {
+    "version": "1.0.1",
+    "release": 1
+  },
   "about": "XCB errors library",
   "maintainer": "Tox",
   "licenses": [

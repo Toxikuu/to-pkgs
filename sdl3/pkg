@@ -2,6 +2,7 @@
 
 n="sdl3"
 v="3.2.18"
+r="1"
 a="Simple Directmedia Layer"
 m="Tox"
 l="Zlib"

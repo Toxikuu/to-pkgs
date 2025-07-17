@@ -2,6 +2,7 @@
 
 n="opus"
 v="1.5.2"
+r="1"
 a="Lossy audio compression format well suited to transmission"
 m="Tox"
 l="BSD-3-Clause"

@@ -1,6 +1,9 @@
 {
   "name": "gperf",
-  "version": "3.3",
+  "version": {
+    "version": "3.3",
+    "release": 1
+  },
   "about": "Perfect hash function generator",
   "maintainer": "Tox",
   "licenses": [

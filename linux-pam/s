@@ -1,6 +1,9 @@
 {
   "name": "linux-pam",
-  "version": "1.7.1",
+  "version": {
+    "version": "1.7.1",
+    "release": 1
+  },
   "about": "Pluggable Authentication Modules",
   "maintainer": "Tox",
   "licenses": [

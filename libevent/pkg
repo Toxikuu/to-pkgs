@@ -2,6 +2,7 @@
 
 n="libevent"
 v="2.1.12"
+r="1"
 a="Asynchronous event library"
 m="Tox"
 l="BSD"

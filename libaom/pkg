@@ -2,6 +2,7 @@
 
 n="libaom"
 v="3.12.1"
+r="1"
 tag="v$v"
 a="Alliance for Open Media video codec"
 m="Tox"

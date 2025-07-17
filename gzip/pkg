@@ -2,6 +2,7 @@
 
 n="gzip"
 v="1.14"
+r="1"
 a="GNU compression utility"
 m="Tox"
 l="GPL-3.0-or-later"

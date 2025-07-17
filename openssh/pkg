@@ -2,6 +2,7 @@
 
 n="openssh"
 v="10.0p2"
+r="1"
 a="Secure shell"
 m="Tox"
 l="BSD" # or more free

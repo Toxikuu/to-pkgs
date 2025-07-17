@@ -2,6 +2,7 @@
 
 n="libidn2"
 v="2.3.8"
+r="1"
 a="International domain name library (IDNA2008, Punycode and TR46)"
 m="Tox"
 l=(

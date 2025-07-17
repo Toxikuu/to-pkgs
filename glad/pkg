@@ -2,6 +2,7 @@
 
 n="glad"
 v="2.0.8"
+r="1"
 tag="v$v"
 a="Multi-lanaguage loader generator"
 m="Tox"

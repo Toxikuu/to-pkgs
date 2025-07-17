@@ -1,6 +1,9 @@
 {
   "name": "libstemmer",
-  "version": "3.0.1",
+  "version": {
+    "version": "3.0.1",
+    "release": 1
+  },
   "about": "Stemming library supporting several languages",
   "maintainer": "Tox",
   "licenses": [

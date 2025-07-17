@@ -1,6 +1,9 @@
 {
   "name": "lsof",
-  "version": "4.99.5",
+  "version": {
+    "version": "4.99.5",
+    "release": 1
+  },
   "about": "Lists open files for running processes",
   "maintainer": "Tox",
   "licenses": [

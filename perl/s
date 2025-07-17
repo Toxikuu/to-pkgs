@@ -1,6 +1,9 @@
 {
   "name": "perl",
-  "version": "5.42.0",
+  "version": {
+    "version": "5.42.0",
+    "release": 1
+  },
   "about": "The Practical Extrarction and Report Language",
   "maintainer": "Tox",
   "licenses": [

@@ -2,6 +2,7 @@
 
 n="lfs-bootscripts"
 v="20240825"
+r="1"
 a="SysVinit bootscripts for LFS"
 m="Tox"
 l="MIT"

@@ -2,6 +2,7 @@
 
 n="lzo"
 v="2.10"
+r="1"
 a="Portable lossless data compression library"
 m="Tox"
 l="GPL"

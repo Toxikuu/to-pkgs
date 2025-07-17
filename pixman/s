@@ -1,6 +1,9 @@
 {
   "name": "pixman",
-  "version": "0.46.2",
+  "version": {
+    "version": "0.46.2",
+    "release": 1
+  },
   "about": "Pixel manipulation library",
   "maintainer": "Tox",
   "licenses": [

@@ -3,6 +3,7 @@
 n="noto-fonts"
 an="${n/-/}"
 v="2025.07.01"
+r="1"
 a="Noto TTF fonts"
 m="Tox"
 l="OFL-1.1-no-RFN"

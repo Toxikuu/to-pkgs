@@ -3,6 +3,7 @@
 n="tealdeer"
 an="tldr"
 v="1.7.2"
+r="1"
 tag="v$v"
 a="Very fast oxidized tldr implementation"
 m="Tox"

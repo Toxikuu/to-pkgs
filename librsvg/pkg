@@ -2,6 +2,7 @@
 
 n="librsvg"
 v="2.60.0"
+r="1"
 a="Rust SVG library"
 m="Tox"
 l="LGPL-2.1-or-later"

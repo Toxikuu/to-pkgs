@@ -1,6 +1,9 @@
 {
   "name": "slop",
-  "version": "b9b8c343f398ee623ee966e584ed515d8f844212",
+  "version": {
+    "version": "b9b8c343f398ee623ee966e584ed515d8f844212",
+    "release": 1
+  },
   "about": "Selection Operation utility",
   "maintainer": "Tox",
   "licenses": [

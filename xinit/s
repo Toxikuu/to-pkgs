@@ -1,6 +1,9 @@
 {
   "name": "xinit",
-  "version": "1.4.4",
+  "version": {
+    "version": "1.4.4",
+    "release": 1
+  },
   "about": "X initialization program",
   "maintainer": "Tox",
   "licenses": [

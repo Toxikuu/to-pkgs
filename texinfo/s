@@ -1,6 +1,9 @@
 {
   "name": "texinfo",
-  "version": "7.2",
+  "version": {
+    "version": "7.2",
+    "release": 1
+  },
   "about": "Info page utility",
   "maintainer": "Tox",
   "licenses": [

@@ -2,6 +2,7 @@
 
 n="polkit"
 v="126"
+r="1"
 a="Policy Toolkit"
 m="Tox"
 l="LGPL-2.0-or-later"

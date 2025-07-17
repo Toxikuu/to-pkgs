@@ -1,6 +1,9 @@
 {
   "name": "xh",
-  "version": "0.24.1",
+  "version": {
+    "version": "0.24.1",
+    "release": 1
+  },
   "about": "Fast, friendly tool for sending HTTP requests",
   "maintainer": "Tox",
   "licenses": [

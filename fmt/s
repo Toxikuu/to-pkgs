@@ -1,6 +1,9 @@
 {
   "name": "fmt",
-  "version": "11.2.0",
+  "version": {
+    "version": "11.2.0",
+    "release": 1
+  },
   "about": "Formatting library",
   "maintainer": "Tox",
   "licenses": [

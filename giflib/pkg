@@ -2,6 +2,7 @@
 
 n="giflib"
 v="5.2.2"
+r="1"
 a="GIF library"
 m="Tox"
 l="MIT"

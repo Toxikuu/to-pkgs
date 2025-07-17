@@ -2,6 +2,7 @@
 
 n="xf86-input-libinput"
 v="1.5.0"
+r="1"
 a="Libinput-based generic X input driver"
 m="Tox"
 l="MIT"

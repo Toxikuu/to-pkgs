@@ -1,6 +1,9 @@
 {
   "name": "kmod",
-  "version": "34.2",
+  "version": {
+    "version": "34.2",
+    "release": 1
+  },
   "about": "Kernel module loader",
   "maintainer": "Tox",
   "licenses": [

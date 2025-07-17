@@ -2,6 +2,7 @@
 
 n="xcb-util"
 v="0.4.1"
+r="1"
 a="Utility libraries for the X protocol C-language Binding"
 m="Tox"
 l="X11"

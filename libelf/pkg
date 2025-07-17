@@ -3,6 +3,7 @@
 bn="elfutils" # basename
 n="libelf"
 v="0.193"
+r="1"
 a="Library for handling ELF files"
 m="Tox"
 l="GPL-2.0-or-later OR LGPL-3.0-or-later"

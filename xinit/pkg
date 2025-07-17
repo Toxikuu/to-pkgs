@@ -2,6 +2,7 @@
 
 n="xinit"
 v="1.4.4"
+r="1"
 a="X initialization program"
 m="Tox"
 l=("MIT" "X11")

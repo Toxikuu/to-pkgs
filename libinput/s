@@ -1,6 +1,9 @@
 {
   "name": "libinput",
-  "version": "1.28.902",
+  "version": {
+    "version": "1.28.902",
+    "release": 1
+  },
   "about": "Input device management and event handling library",
   "maintainer": "Tox",
   "licenses": [

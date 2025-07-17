@@ -1,6 +1,9 @@
 {
   "name": "giflib",
-  "version": "5.2.2",
+  "version": {
+    "version": "5.2.2",
+    "release": 1
+  },
   "about": "GIF library",
   "maintainer": "Tox",
   "licenses": [

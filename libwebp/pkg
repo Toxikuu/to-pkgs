@@ -2,6 +2,7 @@
 
 n="libwebp"
 v="1.6.0"
+r="1"
 a="WebP library"
 m="Tox"
 l="BSD-3-Clause"

@@ -2,6 +2,7 @@
 
 n="libusb"
 v="1.0.29"
+r="1"
 a="USB access library"
 m="Tox"
 l="LGPL-2.1"

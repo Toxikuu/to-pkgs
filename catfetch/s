@@ -1,6 +1,9 @@
 {
   "name": "catfetch",
-  "version": "0638524acaad87964dc1dead8afba8a1d44d77f9",
+  "version": {
+    "version": "0638524acaad87964dc1dead8afba8a1d44d77f9",
+    "release": 1
+  },
   "about": "Cute fetch script featuring a cat",
   "maintainer": "Tox",
   "licenses": [

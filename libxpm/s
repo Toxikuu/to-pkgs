@@ -1,6 +1,9 @@
 {
   "name": "libxpm",
-  "version": "3.5.17",
+  "version": {
+    "version": "3.5.17",
+    "release": 1
+  },
   "about": "X11 pixmap library",
   "maintainer": "Tox",
   "licenses": [

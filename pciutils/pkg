@@ -2,6 +2,7 @@
 
 n="pciutils"
 v="3ec74c71c01878f92e751f15bb8febe720c3ab40" # Last release: 3.13.0
+r="1"
 _v="3.13.0"
 a="PCI utilities"
 m="Tox"

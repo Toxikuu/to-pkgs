@@ -2,6 +2,7 @@
 
 n="xdg-utils"
 v="1.2.1"
+r="1"
 tag="v$v"
 a="Desktop integration utilities"
 m="Tox"

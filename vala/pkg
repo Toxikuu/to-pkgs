@@ -2,6 +2,7 @@
 
 n="vala"
 v="0.56.18"
+r="1"
 a="Compiler for the GObject type system"
 m="Tox"
 l="LGPL-2.1-or-later"

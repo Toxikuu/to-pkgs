@@ -1,6 +1,9 @@
 {
   "name": "ufw",
-  "version": "bdb71dc636c918421d50cac647353b2be08202a0",
+  "version": {
+    "version": "bdb71dc636c918421d50cac647353b2be08202a0",
+    "release": 1
+  },
   "about": "Uncomplicated Firewall",
   "maintainer": "Tox",
   "licenses": [

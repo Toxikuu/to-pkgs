@@ -1,6 +1,9 @@
 {
   "name": "udev",
-  "version": "257.7",
+  "version": {
+    "version": "257.7",
+    "release": 1
+  },
   "about": "Programs for dynamic device node creation",
   "maintainer": "Tox",
   "licenses": [

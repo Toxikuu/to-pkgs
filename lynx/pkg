@@ -2,6 +2,7 @@
 
 n="lynx"
 v="2.9.2"
+r="1"
 a="TUI web browser"
 m="Tox"
 l="GPL-2.0-only"

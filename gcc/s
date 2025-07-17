@@ -1,6 +1,9 @@
 {
   "name": "gcc",
-  "version": "15.1.0",
+  "version": {
+    "version": "15.1.0",
+    "release": 1
+  },
   "about": "The GNU compiler collection",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "tidy",
-  "version": "5.8.0",
+  "version": {
+    "version": "5.8.0",
+    "release": 1
+  },
   "about": "HTML formatter",
   "maintainer": "Tox",
   "licenses": [

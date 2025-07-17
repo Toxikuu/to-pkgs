@@ -1,6 +1,9 @@
 {
   "name": "libdisplay-info",
-  "version": "0.2.0",
+  "version": {
+    "version": "0.2.0",
+    "release": 1
+  },
   "about": "EDID and DisplayID library",
   "maintainer": "Tox",
   "licenses": [

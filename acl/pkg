@@ -2,6 +2,7 @@
 
 n="acl"
 v="2.3.2"
+r="1"
 a="Access Control Lists"
 m="Tox"
 l="LGPL"

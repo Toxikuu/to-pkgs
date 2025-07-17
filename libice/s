@@ -1,6 +1,9 @@
 {
   "name": "libice",
-  "version": "1.1.2",
+  "version": {
+    "version": "1.1.2",
+    "release": 1
+  },
   "about": "X11 Inter-Client Exchange library",
   "maintainer": "Tox",
   "licenses": [

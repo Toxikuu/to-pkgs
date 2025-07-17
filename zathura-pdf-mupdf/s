@@ -1,6 +1,9 @@
 {
   "name": "zathura-pdf-mupdf",
-  "version": "0.4.4",
+  "version": {
+    "version": "0.4.4",
+    "release": 1
+  },
   "about": "PDF support for Zathura (MuPDF backend)",
   "maintainer": "Tox",
   "licenses": [

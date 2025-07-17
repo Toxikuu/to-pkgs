@@ -1,6 +1,9 @@
 {
   "name": "lmdb",
-  "version": "0.9.33",
+  "version": {
+    "version": "0.9.33",
+    "release": 1
+  },
   "about": "Symas Lightning Memory-Mapped Database",
   "maintainer": "Tox",
   "licenses": [

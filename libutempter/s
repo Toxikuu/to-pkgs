@@ -1,6 +1,9 @@
 {
   "name": "libutempter",
-  "version": "4caa8ab94ff8b207228fa723a89214bf5e929321",
+  "version": {
+    "version": "4caa8ab94ff8b207228fa723a89214bf5e929321",
+    "release": 1
+  },
   "about": "Library allowing non-privileged utmp writing",
   "maintainer": "Tox",
   "licenses": [

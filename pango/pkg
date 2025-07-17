@@ -2,6 +2,7 @@
 
 n="pango"
 v="1.56.4"
+r="1"
 a="Library for text layout and rendering"
 m="Tox"
 l="LGPL-2.1-or-later"

@@ -2,6 +2,7 @@
 
 n="gnutls"
 v="3.8.10"
+r="1"
 a="GNU TLS library"
 m="Tox"
 l="GPL-3.0-or-later AND LGPL-2.1-or-later"

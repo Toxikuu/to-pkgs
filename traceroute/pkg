@@ -2,6 +2,7 @@
 
 n="traceroute"
 v="2.1.6"
+r="1"
 a="Tool to trace the routes packets take over a network"
 m="Tox"
 l="GPL-2.0-only"

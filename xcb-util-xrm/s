@@ -1,6 +1,9 @@
 {
   "name": "xcb-util-xrm",
-  "version": "a17de570ab18bfd8b7b9bf23af9e0bb2249d02c9",
+  "version": {
+    "version": "a17de570ab18bfd8b7b9bf23af9e0bb2249d02c9",
+    "release": 1
+  },
   "about": "XCB utility functions for the X resource manager",
   "maintainer": "Tox",
   "licenses": [

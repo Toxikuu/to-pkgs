@@ -2,6 +2,7 @@
 
 n="libxfixes"
 v="6.0.1"
+r="1"
 a="X11 miscellaneous fixes extension library"
 m="Tox"
 l="MIT"

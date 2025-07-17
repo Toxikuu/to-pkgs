@@ -1,6 +1,9 @@
 {
   "name": "setconf",
-  "version": "e77f567307cdd89792b405570201f42a9b763650",
+  "version": {
+    "version": "e77f567307cdd89792b405570201f42a9b763650",
+    "release": 1
+  },
   "about": "Utility to change settings in configuration files",
   "maintainer": "Tox",
   "licenses": [

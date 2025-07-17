@@ -1,6 +1,9 @@
 {
   "name": "btop",
-  "version": "b3356354a4cc858c4f90ee2095a84d56b4af0eda",
+  "version": {
+    "version": "b3356354a4cc858c4f90ee2095a84d56b4af0eda",
+    "release": 1
+  },
   "about": "Resource monitor",
   "maintainer": "Tox",
   "licenses": [

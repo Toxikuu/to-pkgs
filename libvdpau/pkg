@@ -2,6 +2,7 @@
 
 n="libvdpau"
 v="2afa3f989af24a922692ac719fae23c321776cdb"
+r="1"
 a="NVIDIA's VDPAU library"
 m="Tox"
 l="MIT"

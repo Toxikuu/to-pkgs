@@ -2,6 +2,7 @@
 
 n="htop"
 v="3.4.1"
+r="1"
 a="Interactive process viewer"
 m="Tox"
 l="GPL-2.0"

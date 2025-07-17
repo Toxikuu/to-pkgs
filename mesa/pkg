@@ -3,6 +3,7 @@
 # NOTE: This pkg only installs GBM from Mesa.
 n="mesa"
 v="25.1.6"
+r="1"
 a="Graphics libraries"
 m="Tox"
 l="MIT AND BSD-3-Clause AND SGI-B-2.0"

@@ -2,6 +2,7 @@
 
 n="tar"
 v="1.35"
+r="1"
 a="Archive utility"
 m="Tox"
 l="GPL3"

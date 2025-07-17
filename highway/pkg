@@ -2,6 +2,7 @@
 
 n="highway"
 v="1.2.0"
+r="1"
 a="Performance-portable, length-agnostic SIMD with runtime dispatch"
 m="Tox"
 l="Apache-2.0"

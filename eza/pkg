@@ -2,6 +2,7 @@
 
 n="eza"
 v="0.22.1"
+r="1"
 tag="v$v"
 a="Modern ls alternative"
 m="Tox"

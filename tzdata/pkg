@@ -2,6 +2,7 @@
 
 n="tzdata"
 v="2025b"
+r="1"
 a="Timezone data"
 m="Tox"
 l="Custom"

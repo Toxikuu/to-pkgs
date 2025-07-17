@@ -1,6 +1,9 @@
 {
   "name": "xdg-utils",
-  "version": "1.2.1",
+  "version": {
+    "version": "1.2.1",
+    "release": 1
+  },
   "about": "Desktop integration utilities",
   "maintainer": "Tox",
   "licenses": [

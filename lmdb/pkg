@@ -3,6 +3,7 @@
 n="lmdb"
 an="${n^^}"
 v="0.9.33"
+r="1"
 tag="${an}_$v"
 a="Symas Lightning Memory-Mapped Database"
 m="Tox"

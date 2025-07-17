@@ -1,6 +1,9 @@
 {
   "name": "libgudev",
-  "version": "238",
+  "version": {
+    "version": "238",
+    "release": 1
+  },
   "about": "GObject bindings for libudev",
   "maintainer": "Tox",
   "licenses": [

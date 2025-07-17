@@ -2,6 +2,7 @@
 
 n="libmd"
 v="1.1.0"
+r="1"
 a="BSD Message Digest functions"
 m="Tox"
 l="BSD"

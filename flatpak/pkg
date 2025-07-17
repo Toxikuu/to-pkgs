@@ -2,6 +2,7 @@
 
 n="flatpak"
 v="1.16.1"
+r="1"
 a="Linux application sandboxing and distribution framework"
 m="Tox"
 l="LGPL-2.1"

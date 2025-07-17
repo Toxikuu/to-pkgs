@@ -2,6 +2,7 @@
 
 n="zstd"
 v="1.5.7"
+r="1"
 a="The Zstandard compression algorithm"
 m="Tox"
 l=(

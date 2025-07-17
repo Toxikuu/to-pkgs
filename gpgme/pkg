@@ -2,6 +2,7 @@
 
 n="gpgme"
 v="2.0.0"
+r="1"
 a="GPG Made Easy"
 m="Tox"
 l=("GPL-2.0-or-later" "LGPL-2.0-or-later" "LGPL-2.1-or-later" "MIT")

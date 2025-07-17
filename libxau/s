@@ -1,6 +1,9 @@
 {
   "name": "libxau",
-  "version": "1.0.12",
+  "version": {
+    "version": "1.0.12",
+    "release": 1
+  },
   "about": "The X Authorization Protocol",
   "maintainer": "Tox",
   "licenses": [

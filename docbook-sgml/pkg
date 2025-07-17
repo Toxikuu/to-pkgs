@@ -2,6 +2,7 @@
 
 n="docbook-sgml"
 v="4.5"
+r="1"
 a="Document type definitions for verification of SGML data files against the DocBook rule set"
 m="Tox"
 l="Custom"

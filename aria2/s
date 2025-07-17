@@ -1,6 +1,9 @@
 {
   "name": "aria2",
-  "version": "b519ce04e3f3a0651fcec43550bc71f09771b069",
+  "version": {
+    "version": "b519ce04e3f3a0651fcec43550bc71f09771b069",
+    "release": 1
+  },
   "about": "Lightweight multi-protocol, multi-source download utility",
   "maintainer": "Tox",
   "licenses": [

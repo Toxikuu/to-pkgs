@@ -1,6 +1,9 @@
 {
   "name": "coreutils",
-  "version": "9.7",
+  "version": {
+    "version": "9.7",
+    "release": 1
+  },
   "about": "Basic utilities needed by every OS",
   "maintainer": "Tox",
   "licenses": [

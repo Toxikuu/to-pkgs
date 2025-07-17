@@ -2,6 +2,7 @@
 
 n="xev"
 v="1.2.6"
+r="1"
 a="Print contents of X events"
 m="Tox"
 l="MIT"

@@ -2,6 +2,7 @@
 
 n="samurai"
 v="737f702fed670acb25e5e70b4b802690df7a4a8b"
+r="1"
 a="Lighter, faster rewrite of Ninja in C"
 m="Tox"
 l=("Apache-2.0" "MIT" "ISC")

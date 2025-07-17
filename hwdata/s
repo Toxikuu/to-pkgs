@@ -1,6 +1,9 @@
 {
   "name": "hwdata",
-  "version": "0.397",
+  "version": {
+    "version": "0.397",
+    "release": 1
+  },
   "about": "Hardware identification databases",
   "maintainer": "Tox",
   "licenses": [

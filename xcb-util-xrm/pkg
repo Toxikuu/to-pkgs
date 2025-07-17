@@ -2,6 +2,7 @@
 
 n="xcb-util-xrm"
 v="a17de570ab18bfd8b7b9bf23af9e0bb2249d02c9"
+r="1"
 a="XCB utility functions for the X resource manager"
 m="Tox"
 l="MIT"

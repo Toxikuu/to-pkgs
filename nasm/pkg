@@ -2,6 +2,7 @@
 
 n="nasm"
 v="2.16.03"
+r="1"
 tag="$n-$v"
 a="Netwide Assembler for x86"
 m="Tox"

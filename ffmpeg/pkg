@@ -2,6 +2,7 @@
 
 n="ffmpeg"
 v="7.1.1"
+r="1"
 a="Play, record, convert, and stream audio and video"
 m="Tox"
 l="GPL-3.0-only"

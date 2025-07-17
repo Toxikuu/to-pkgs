@@ -2,6 +2,7 @@
 
 n="xwayland"
 v="24.1.8"
+r="1"
 a="Allows running X clients on Wayland"
 m="Tox"
 l="SGI"

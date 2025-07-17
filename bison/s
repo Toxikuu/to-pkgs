@@ -1,6 +1,9 @@
 {
   "name": "bison",
-  "version": "3.8.2",
+  "version": {
+    "version": "3.8.2",
+    "release": 1
+  },
   "about": "Parser generator",
   "maintainer": "Tox",
   "licenses": [

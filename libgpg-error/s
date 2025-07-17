@@ -1,6 +1,9 @@
 {
   "name": "libgpg-error",
-  "version": "1.55",
+  "version": {
+    "version": "1.55",
+    "release": 1
+  },
   "about": "GPG error library",
   "maintainer": "Tox",
   "licenses": [

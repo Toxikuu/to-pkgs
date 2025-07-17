@@ -1,6 +1,9 @@
 {
   "name": "jasper",
-  "version": "4.2.5",
+  "version": {
+    "version": "4.2.5",
+    "release": 1
+  },
   "about": "Reference implementation of the JPEG-2000 codec",
   "maintainer": "Tox",
   "licenses": [

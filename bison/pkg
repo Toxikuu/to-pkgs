@@ -2,6 +2,7 @@
 
 n="bison"
 v="3.8.2"
+r="1"
 a="Parser generator"
 m="Tox"
 l="GPL-3.0-or-later"

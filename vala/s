@@ -1,6 +1,9 @@
 {
   "name": "vala",
-  "version": "0.56.18",
+  "version": {
+    "version": "0.56.18",
+    "release": 1
+  },
   "about": "Compiler for the GObject type system",
   "maintainer": "Tox",
   "licenses": [

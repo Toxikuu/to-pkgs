@@ -2,6 +2,7 @@
 
 n="xml-parser"
 v="2.47"
+r="1"
 a="Perl interface to Expat"
 m="Tox"
 l="Artistic-2.0"

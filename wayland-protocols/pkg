@@ -2,6 +2,7 @@
 
 n="wayland-protocols"
 v="1.45"
+r="1"
 a="Additional protocols for Wayland"
 m="Tox"
 l="MIT"

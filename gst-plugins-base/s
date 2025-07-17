@@ -1,6 +1,9 @@
 {
   "name": "gst-plugins-base",
-  "version": "1.27.1",
+  "version": {
+    "version": "1.27.1",
+    "release": 1
+  },
   "about": "Base gst plugins",
   "maintainer": "Tox",
   "licenses": [

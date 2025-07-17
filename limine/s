@@ -1,6 +1,9 @@
 {
   "name": "limine",
-  "version": "9.5.0",
+  "version": {
+    "version": "9.5.0",
+    "release": 1
+  },
   "about": "Advanced, portable, multiprotocol bootloader",
   "maintainer": "Tox",
   "licenses": [

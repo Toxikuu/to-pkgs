@@ -1,6 +1,9 @@
 {
   "name": "gettext",
-  "version": "0.25.1",
+  "version": {
+    "version": "0.25.1",
+    "release": 1
+  },
   "about": "i18n and l10n toolkit",
   "maintainer": "Tox",
   "licenses": [

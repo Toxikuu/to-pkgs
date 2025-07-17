@@ -2,6 +2,7 @@
 
 n="netcat"
 v="181eeb7308110f709f8076b842d41724444a7cf6"
+r="1"
 a="TCP/IP swiss army knife"
 m="Tox"
 l=("BSD-2-Clause" "BSD-3-Clause")

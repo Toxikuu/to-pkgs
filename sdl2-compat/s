@@ -1,6 +1,9 @@
 {
   "name": "sdl2-compat",
-  "version": "2.32.56",
+  "version": {
+    "version": "2.32.56",
+    "release": 1
+  },
   "about": "SDL2 compatibility layer using SDL3",
   "maintainer": "Tox",
   "licenses": [

@@ -2,6 +2,7 @@
 
 n="typst"
 v="0.13.1"
+r="1"
 tag="v$v"
 a="Modern typesetting system"
 m="Tox"

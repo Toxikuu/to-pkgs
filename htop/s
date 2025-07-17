@@ -1,6 +1,9 @@
 {
   "name": "htop",
-  "version": "3.4.1",
+  "version": {
+    "version": "3.4.1",
+    "release": 1
+  },
   "about": "Interactive process viewer",
   "maintainer": "Tox",
   "licenses": [

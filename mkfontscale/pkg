@@ -2,6 +2,7 @@
 
 n="mkfontscale"
 v="1.2.3"
+r="1"
 a="Create an index of scalable font files for X"
 m="Tox"
 l="X11"

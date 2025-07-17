@@ -2,6 +2,7 @@
 
 n="inxi"
 v="edfe5a62e16b8e36f40bb9a5e37af2bccdc3d001"
+r="1"
 a="Full featured CLI system information tool"
 m="Tox"
 l="GPL-3.0-or-later"

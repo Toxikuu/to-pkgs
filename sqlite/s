@@ -1,6 +1,9 @@
 {
   "name": "sqlite",
-  "version": "3.50.2",
+  "version": {
+    "version": "3.50.2",
+    "release": 1
+  },
   "about": "SQL database engine",
   "maintainer": "Tox",
   "licenses": [

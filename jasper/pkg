@@ -2,6 +2,7 @@
 
 n="jasper"
 v="4.2.5"
+r="1"
 tag="version-$v"
 a="Reference implementation of the JPEG-2000 codec"
 m="Tox"

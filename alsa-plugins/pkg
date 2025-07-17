@@ -2,6 +2,7 @@
 
 n="alsa-plugins"
 v="1.2.12"
+r="1"
 a="ALSA plugins"
 m="Tox"
 l=("LGPL-2.1" "GPL-2.0")

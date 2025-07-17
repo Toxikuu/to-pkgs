@@ -2,6 +2,7 @@
 
 n="xcb-proto"
 v="1.17.0"
+r="1"
 a="XML-XCB protocol descriptions"
 m="Tox"
 l="LICENSE"

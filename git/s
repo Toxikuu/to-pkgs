@@ -1,6 +1,9 @@
 {
   "name": "git",
-  "version": "2.50.1",
+  "version": {
+    "version": "2.50.1",
+    "release": 1
+  },
   "about": "The fast distributed version control system",
   "maintainer": "Tox",
   "licenses": [

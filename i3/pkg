@@ -2,6 +2,7 @@
 
 n="i3"
 v="9fc24064e7f9d398e4ff6e727e3098b65c07e3ca"
+r="1"
 a="A tiling window manager for X11"
 m="Tox"
 l="BSD-3-Clause"

@@ -2,6 +2,7 @@
 
 n="libxres"
 v="1.2.2"
+r="1"
 a="X11 Resource extension library"
 m="Tox"
 l="X11"
