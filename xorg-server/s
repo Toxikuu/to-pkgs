@@ -2,7 +2,7 @@
   "name": "xorg-server",
   "version": {
     "version": "21.1.18",
-    "release": 1
+    "release": 2
   },
   "about": "X Window system server",
   "maintainer": "Tox",
