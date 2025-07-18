@@ -2,7 +2,7 @@
   "name": "libelf",
   "version": {
     "version": "0.193",
-    "release": 1
+    "release": 2
   },
   "about": "Library for handling ELF files",
   "maintainer": "Tox",

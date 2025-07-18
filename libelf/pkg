@@ -3,7 +3,7 @@
 bn="elfutils" # basename
 n="libelf"
 v="0.193"
-r="1"
+r="2"
 a="Library for handling ELF files"
 m="Tox"
 l="GPL-2.0-or-later OR LGPL-3.0-or-later"
@@ -30,7 +30,8 @@ _cfg=(
     --enable-libdebuginfod=dummy
 )
 
-CFLAGS+=" -ffat-lto-objects"
+ltno
+# CFLAGS+=" -ffat-lto-objects" # can't seem to get this to work
 
 cfg
 mk
