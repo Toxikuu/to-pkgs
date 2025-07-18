@@ -2,7 +2,7 @@
   "name": "gcc",
   "version": {
     "version": "15.1.0",
-    "release": 1
+    "release": 2
   },
   "about": "The GNU compiler collection",
   "maintainer": "Tox",
