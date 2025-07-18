@@ -2,7 +2,7 @@
 
 n="icu"
 v="77.1"
-r="1"
+r="2"
 a="International Components for Unicode"
 m="Tox"
 l=(
@@ -23,6 +23,7 @@ d="glibc"
 
 b() {
 
+ltno
 cd source
 def
 
