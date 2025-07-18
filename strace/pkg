@@ -2,7 +2,7 @@
 
 n="strace"
 v="6.15"
-r="1"
+r="2"
 a="A diagnostic, debugging, and instructional userspace tracer"
 m="Tox"
 l="LGPL-2.1-or-later"
@@ -19,6 +19,8 @@ d=(
 )
 
 b() {
+
+CFLAGS+=" -Wno-error"
 
 _cfg=(
     --enable-mpers=no

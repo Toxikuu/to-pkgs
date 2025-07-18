@@ -2,7 +2,7 @@
   "name": "strace",
   "version": {
     "version": "6.15",
-    "release": 1
+    "release": 2
   },
   "about": "A diagnostic, debugging, and instructional userspace tracer",
   "maintainer": "Tox",
