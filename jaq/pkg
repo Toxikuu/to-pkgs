@@ -2,7 +2,7 @@
 
 n="jaq"
 v="2.3.0"
-r="2"
+r="3"
 tag="v$v"
 a="Command-line JSON processor"
 m="Tox"
@@ -19,13 +19,15 @@ d=(
 
 b() {
 
-RUSTFLAGS="$(echo "$RUSTFLAGS" | sed -e 's|-C lto=\w\+||g' -e 's|-C embed-bitcode=true||g')"
-CFLAGS+=" -ffat-lto-objects"
+# We're not interested in the jaq playground
+rm -rf "$n-play"
+sed -i "/$n-play/d" Cargo.toml
 
+CFLAGS+=" -ffat-lto-objects"
 cbr
 
 install -vDm755 "target/release/$n" -t "$D/usr/bin/"
-ln -sv "jaq" "$D/usr/bin/jq"
+ln -sv "$n" "$D/usr/bin/jq"
 
 }
 
