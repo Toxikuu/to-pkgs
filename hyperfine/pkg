@@ -2,7 +2,7 @@
 
 n="hyperfine"
 v="1.19.0"
-r="1"
+r="2"
 tag="v$v"
 a="CLI benchmarking tool"
 m="Tox"
@@ -18,6 +18,8 @@ d=(
 
 b() {
 
+rustup default nightly
+RUSTFLAGS+=" -Zdylib-lto"
 cbr
 
 install -vDm755 "target/release/$n" -t "$D/usr/bin/"
