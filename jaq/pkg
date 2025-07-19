@@ -2,7 +2,7 @@
 
 n="jaq"
 v="2.3.0"
-r="1"
+r="2"
 tag="v$v"
 a="Command-line JSON processor"
 m="Tox"
@@ -19,7 +19,9 @@ d=(
 
 b() {
 
-CFLAGS+=' -ffat-lto-objects'
+RUSTFLAGS="$(echo "$RUSTFLAGS" | sed -e 's|-C lto=\w\+||g' -e 's|-C embed-bitcode=true||g')"
+CFLAGS+=" -ffat-lto-objects"
+
 cbr
 
 install -vDm755 "target/release/$n" -t "$D/usr/bin/"

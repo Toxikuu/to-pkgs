@@ -2,7 +2,7 @@
   "name": "jaq",
   "version": {
     "version": "2.3.0",
-    "release": 1
+    "release": 2
   },
   "about": "Command-line JSON processor",
   "maintainer": "Tox",
