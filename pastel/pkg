@@ -2,7 +2,7 @@
 
 n="pastel"
 v="3e76053e456ea603e26181f229af2be54a3ae223"
-r="1"
+r="2"
 a="CLI color manipulation utility"
 m="Tox"
 l=("Apache-2.0" "MIT")
@@ -16,6 +16,9 @@ d=(
 )
 
 b() {
+
+rustup default nightly
+RUSTFLAGS+=" -Zdylib-lto"
 
 SHELL_COMPLETIONS_DIR="$PWD/completions" cbr
 
