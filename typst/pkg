@@ -2,7 +2,7 @@
 
 n="typst"
 v="0.13.1"
-r="1"
+r="2"
 tag="v$v"
 a="Modern typesetting system"
 m="Tox"
@@ -21,7 +21,9 @@ d=(
 
 b() {
 
-CFLAGS+=' -ffat-lto-objects'
+rustup default nightly
+RUSTFLAGS+=" -Zdylib-lto"
+CFLAGS+=" -ffat-lto-objects"
 
 export TYPST_VERSION="$v"
 export GEN_ARTIFACTS=artifacts/
