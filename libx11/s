@@ -2,7 +2,7 @@
   "name": "libx11",
   "version": {
     "version": "1.8.12",
-    "release": 1
+    "release": 2
   },
   "about": "X11 client-side library",
   "maintainer": "Tox",
