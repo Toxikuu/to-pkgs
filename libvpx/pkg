@@ -2,7 +2,7 @@
 
 n="libvpx"
 v="1.15.2"
-r="1"
+r="2"
 tag="v$v"
 a="VP8 and VP9 codecs"
 m="Tox"
@@ -27,6 +27,18 @@ _cfg=(
     --prefix=/usr
     --disable-static
     --enable-shared
+    --enable-pic
+    --enable-postproc
+    --enable-runtime-cpu-detect
+    
+    --disable-{docs,examples}
+    --disable-install-{docs,srcs}
+    --disable-unit-tests
+
+    --enable-vp{8,9}
+    --enable-vp9-{highbitdepth,temporal-denoising}
+
+    --target=x86_64-linux-gcc
 )
 
 mkdir -v "$n-build"

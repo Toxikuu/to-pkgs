@@ -2,7 +2,7 @@
   "name": "libvpx",
   "version": {
     "version": "1.15.2",
-    "release": 1
+    "release": 2
   },
   "about": "VP8 and VP9 codecs",
   "maintainer": "Tox",
