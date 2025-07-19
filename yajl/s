@@ -2,7 +2,7 @@
   "name": "yajl",
   "version": {
     "version": "5e3a7856e643b4d6410ddc3f84bc2f38174f2872",
-    "release": 1
+    "release": 2
   },
   "about": "Yet another JSON library",
   "maintainer": "Tox",
