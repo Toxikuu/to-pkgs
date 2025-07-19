@@ -2,7 +2,7 @@
 
 n="glslang"
 v="1.4.321.0"
-r="1"
+r="3"
 tag="vulkan-sdk-$v"
 a="Frontend and validator for OpenGL and Vulkan shaders"
 m="Tox"
@@ -12,7 +12,6 @@ u="https://github.com/KhronosGroup/$n.git"
 vf="gr | grep '^vulkan-sdk-' | cut -d- -f3-"
 
 s="$u"
-
 d=(
     "spirv-tools"
     "b,cmake"
@@ -22,6 +21,7 @@ d=(
 
 b() {
 
+ltno # tests hang forever with lto (???)
 _cfg=(
     -D ALLOW_EXTERNAL_SPIRV_TOOLS=ON
     -D GLSLANG_TESTS=ON
