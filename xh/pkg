@@ -2,7 +2,7 @@
 
 n="xh"
 v="0.24.1"
-r="1"
+r="2"
 tag="v$v"
 a="Fast, friendly tool for sending HTTP requests"
 m="Tox"
@@ -24,12 +24,16 @@ d=(
 b() {
 
 pat "$S/gcc15-onig.patch"
-CFLAGS+=' -ffat-lto-objects'
+
+rustup default nightly
+RUSTFLAGS+=" -Zdylib-lto"
+CFLAGS+=" -ffat-lto-objects"
+
 cbr --features native-tls
 
 install -vDm755 "target/release/$n" -t "$D/usr/bin/"
-install -vDm644 "doc/$n.1"          -t "$D/usr/share/man/man1/"
 
+install -vDm644 "doc/$n.1"          -t "$D/usr/share/man/man1/"
 install -vDm644 "completions/$n.bash" "$D/usr/share/bash-completions/completions/$n"
 
 # `xh` will default to https if the binary name is `xhs`

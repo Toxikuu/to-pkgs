@@ -2,7 +2,7 @@
   "name": "xh",
   "version": {
     "version": "0.24.1",
-    "release": 1
+    "release": 2
   },
   "about": "Fast, friendly tool for sending HTTP requests",
   "maintainer": "Tox",
