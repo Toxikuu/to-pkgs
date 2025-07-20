@@ -1,7 +1,7 @@
 {
   "name": "eza",
   "version": {
-    "version": "0.22.1",
+    "version": "0.23.0",
     "release": 1
   },
   "about": "Modern ls alternative",
