@@ -1,0 +1,39 @@
+#!/to
+
+n="nushell"
+v="0.105.1"
+r="1"
+a="A new type of shell"
+m="Tox"
+l="MIT"
+t="sh"
+u="https://github.com/$n/$n.git"
+vf="gr | sed 's,_,.,g' | sort -V"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "openssl"
+    "zlib"
+    "b,rust"
+)
+
+b() {
+
+# TODO: Build with lto
+RUSTFLAGS="$(echo "$RUSTFLAGS" | sed -e 's|-C lto=\w\+||g' -e 's|-C embed-bitcode=true||g')"
+ltno
+
+cbr
+
+find target/release \
+    -maxdepth 1     \
+    -mindepth 1     \
+    -type f         \
+    -name "nu*"     \
+    -exec install -vDm755 -t "$D/usr/bin/" {} +
+
+install -vDm644 README.md -t "$D/usr/share/doc/$n/"
+
+}
