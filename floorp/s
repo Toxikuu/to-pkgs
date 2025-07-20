@@ -2,7 +2,7 @@
   "name": "floorp",
   "version": {
     "version": "11.28.0",
-    "release": 1
+    "release": 2
   },
   "about": "Firefox fork focused on performance and customization",
   "maintainer": "Tox",
@@ -40,6 +40,10 @@
     {
       "name": "alsa-lib",
       "kind": "Required"
+    },
+    {
+      "name": "pciutils",
+      "kind": "Runtime"
     }
   ],
   "kcfg": []

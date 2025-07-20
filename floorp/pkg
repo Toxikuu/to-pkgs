@@ -2,7 +2,7 @@
 
 n="floorp"
 v="11.28.0"
-r="1"
+r="2"
 a="Firefox fork focused on performance and customization"
 m="Tox"
 l="LICENSE"
@@ -20,6 +20,8 @@ d=(
     "glibc"
     "gtk3"
     "alsa-lib"
+
+    "r,pciutils" # wanted to glxtest
 )
 
 b() {
