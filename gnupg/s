@@ -2,7 +2,7 @@
   "name": "gnupg",
   "version": {
     "version": "2.4.8",
-    "release": 1
+    "release": 2
   },
   "about": "GNU's Pretty Good Privacy",
   "maintainer": "Tox",
