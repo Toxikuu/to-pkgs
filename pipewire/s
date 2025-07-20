@@ -2,7 +2,7 @@
   "name": "pipewire",
   "version": {
     "version": "1.4.6",
-    "release": 1
+    "release": 2
   },
   "about": "Low-latency audio/video router and processor",
   "maintainer": "Tox",
