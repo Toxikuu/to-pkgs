@@ -2,7 +2,7 @@
   "name": "cargo-c",
   "version": {
     "version": "0.10.14",
-    "release": 1
+    "release": 2
   },
   "about": "Cargo subcommand to create C-ABI compatible libraries",
   "maintainer": "Tox",
