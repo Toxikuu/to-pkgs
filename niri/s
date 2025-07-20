@@ -1,0 +1,99 @@
+{
+  "name": "niri",
+  "version": {
+    "version": "25.05.1",
+    "release": 1
+  },
+  "about": "A scrolling Wayland compositor",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://github.com/YaLTeR/niri.git",
+  "version_fetch": null,
+  "tags": [
+    "wm"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/YaLTeR/niri.git",
+      "dest": "niri"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libdisplay-info",
+      "kind": "Required"
+    },
+    {
+      "name": "libinput",
+      "kind": "Required"
+    },
+    {
+      "name": "pipewire",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "pixman",
+      "kind": "Required"
+    },
+    {
+      "name": "seatd",
+      "kind": "Required"
+    },
+    {
+      "name": "udev",
+      "kind": "Required"
+    },
+    {
+      "name": "nvidia",
+      "kind": "Required"
+    },
+    {
+      "name": "xdg-desktop-portal-gtk",
+      "kind": "Required"
+    },
+    {
+      "name": "llvm",
+      "kind": "Build"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "git",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
