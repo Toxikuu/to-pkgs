@@ -3,7 +3,7 @@
 n="bottom"
 an="btm"
 v="2e6ac01f9951918f459695dd901e35329e06a635"
-r="1"
+r="2"
 a="Yet another system monitor"
 m="Tox"
 l="MIT"
@@ -14,6 +14,9 @@ s="$u"
 d="b,rust"
 
 b() {
+
+RUSTFLAGS+=" -Zdylib-lto"
+rustup default nightly
 
 BTM_GENERATE=true cbr
 
