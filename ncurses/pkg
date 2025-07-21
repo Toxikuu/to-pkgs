@@ -1,6 +1,6 @@
-ncurses@6.5.20250712-1
+ncurses@6.5.20250720-1
 
-_uv="$(sed -e 's,.,-,g' -e 's,-,.,'" # upstream's version
+_uv="${v%.*}-${v##*.}" # upstream's version
 a="Libraries for terminal-independent character screen handling"
 m="Tox"
 l="MIT"
