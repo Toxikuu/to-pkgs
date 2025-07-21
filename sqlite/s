@@ -1,7 +1,7 @@
 {
   "name": "sqlite",
   "version": {
-    "version": "3.50.2",
+    "version": "3.50.3",
     "release": 1
   },
   "about": "SQL database engine",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/sqlite/sqlite/archive/refs/tags/version-3.50.2.tar.gz",
-      "dest": "version-3.50.2.tar.gz"
+      "url": "https://github.com/sqlite/sqlite/archive/refs/tags/version-3.50.3.tar.gz",
+      "dest": "version-3.50.3.tar.gz"
     }
   ],
   "dependencies": [
