@@ -1,7 +1,7 @@
 {
   "name": "man-pages",
   "version": {
-    "version": "6.14",
+    "version": "6.15",
     "release": 1
   },
   "about": "Linux man pages",
@@ -35,8 +35,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.14.tar.xz",
-      "dest": "man-pages-6.14.tar.xz"
+      "url": "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-6.15.tar.xz",
+      "dest": "man-pages-6.15.tar.xz"
     }
   ],
   "dependencies": [],
