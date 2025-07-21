@@ -1,0 +1,23 @@
+sin@338373c136e558679ef678d771c179b07bff6aa5-1
+
+a="Simple, hackable, portable init"
+m="Tox"
+l="0BSD"
+t="init"
+u="https://github.com/Toxikuu/$n.git"
+
+s="$u"
+d=(
+    "r,e2fsprogs"
+    "r,iproute2"
+
+    "b,nasm"
+    "b,scdoc"
+)
+
+b() {
+
+mk
+mi PREFIX=/usr
+
+}

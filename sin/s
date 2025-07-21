@@ -1,0 +1,43 @@
+{
+  "name": "sin",
+  "version": {
+    "version": "338373c136e558679ef678d771c179b07bff6aa5",
+    "release": 1
+  },
+  "about": "Simple, hackable, portable init",
+  "maintainer": "Tox",
+  "licenses": [
+    "0BSD"
+  ],
+  "upstream": "https://github.com/Toxikuu/sin.git",
+  "version_fetch": null,
+  "tags": [
+    "init"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Toxikuu/sin.git",
+      "dest": "sin"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "e2fsprogs",
+      "kind": "Runtime"
+    },
+    {
+      "name": "iproute2",
+      "kind": "Runtime"
+    },
+    {
+      "name": "nasm",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
