@@ -1,7 +1,7 @@
 {
   "name": "fastfetch",
   "version": {
-    "version": "2.48.0",
+    "version": "2.48.1",
     "release": 1
   },
   "about": "Well-maintained, feature-rich, fast fetch script",
