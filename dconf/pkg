@@ -1,8 +1,5 @@
-#!/to
+dconf@0.40.0-1
 
-n="dconf"
-v="0.40.0"
-r="1"
 a="Configuration database system"
 m="Tox"
 l="LGPL"

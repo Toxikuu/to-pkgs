@@ -1,8 +1,5 @@
-#!/to
+glslang@1.4.321.0-3
 
-n="glslang"
-v="1.4.321.0"
-r="3"
 tag="vulkan-sdk-$v"
 a="Frontend and validator for OpenGL and Vulkan shaders"
 m="Tox"

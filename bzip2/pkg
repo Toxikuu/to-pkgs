@@ -1,8 +1,5 @@
-#!/to
+bzip2@1.0.8-1
 
-n="bzip2"
-v="1.0.8"
-r="1"
 a="The $n compression algorithm"
 m="Tox"
 l="BSD"

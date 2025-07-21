@@ -1,8 +1,5 @@
-#!/to
+glibc@2.41-2
 
-n="glibc"
-v="2.41"
-r="2"
 a="GNU C Library"
 m="Tox"
 l=(

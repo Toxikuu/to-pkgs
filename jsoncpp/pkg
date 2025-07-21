@@ -1,8 +1,5 @@
-#!/to
+jsoncpp@ca98c98457b1163cca1f7d8db62827c115fec6d1-1
 
-n="jsoncpp"
-v="ca98c98457b1163cca1f7d8db62827c115fec6d1"
-r="1"
 a="C++ library for interacting with JSON"
 m="Tox"
 l="MIT"

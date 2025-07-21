@@ -1,8 +1,5 @@
-#!/to
+pastel@3e76053e456ea603e26181f229af2be54a3ae223-2
 
-n="pastel"
-v="3e76053e456ea603e26181f229af2be54a3ae223"
-r="2"
 a="CLI color manipulation utility"
 m="Tox"
 l=("Apache-2.0" "MIT")

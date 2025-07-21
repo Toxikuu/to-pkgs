@@ -1,8 +1,5 @@
-#!/to
+nghttp2@1.66.0-1
 
-n="nghttp2"
-v="1.66.0"
-r="1"
 a="HTTP/2 implementation"
 m="Tox"
 l="MIT"

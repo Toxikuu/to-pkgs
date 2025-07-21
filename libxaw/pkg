@@ -1,8 +1,5 @@
-#!/to
+libxaw@1.0.16-1
 
-n="libxaw"
-v="1.0.16"
-r="1"
 a="X11 Athena Widget library"
 m="Tox"
 l="MIT"

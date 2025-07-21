@@ -1,8 +1,5 @@
-#!/to
+entr@5.7-1
 
-n="entr"
-v="5.7"
-r="1"
 a="Run arbitrary commands on file change"
 m="Tox"
 l="MIT"

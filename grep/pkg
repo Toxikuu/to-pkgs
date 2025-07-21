@@ -1,8 +1,5 @@
-#!/to
+grep@3.12-1
 
-n="grep"
-v="3.12"
-r="1"
 a="String search utility"
 m="Tox"
 l="GPL-3.0"

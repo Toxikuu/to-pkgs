@@ -1,8 +1,5 @@
-#!/to
+mailcap@2.1.54-1
 
-n="mailcap"
-v="2.1.54"
-r="1"
 a="MIME type associations for file types"
 m="Tox"
 l="MIT"

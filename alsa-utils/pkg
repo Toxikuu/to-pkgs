@@ -1,8 +1,5 @@
-#!/to
+alsa-utils@1.2.14-1
 
-n="alsa-utils"
-v="1.2.14"
-r="1"
 a="ALSA utilities"
 m="Tox"
 l="GPL-2.0"

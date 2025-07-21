@@ -1,8 +1,5 @@
-#!/to
+tidy@5.8.0-1
 
-n="tidy"
-v="5.8.0"
-r="1"
 a="HTML formatter"
 m="Tox"
 l="Custom"

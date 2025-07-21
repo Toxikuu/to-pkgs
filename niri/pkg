@@ -1,9 +1,6 @@
-#!/to
+niri@25.05.1-1
 
-n="niri"
-v="25.05.1"
 tag="v$v"
-r="1"
 a="A scrolling Wayland compositor"
 m="Tox"
 l="GPL-3.0-or-later"

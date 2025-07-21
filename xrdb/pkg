@@ -1,8 +1,5 @@
-#!/to
+xrdb@1.2.2-1
 
-n="xrdb"
-v="1.2.2"
-r="1"
 a="X resource database utility"
 m="Tox"
 l="Custom"

@@ -1,8 +1,5 @@
-#!/to
+xorg-server@21.1.18-2
 
-n="xorg-server"
-v="21.1.18"
-r="2"
 a="X Window system server"
 m="Tox"
 l="SGI"

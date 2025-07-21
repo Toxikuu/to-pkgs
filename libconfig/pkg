@@ -1,8 +1,5 @@
-#!/to
+libconfig@1.8.1-1
 
-n="libconfig"
-v="1.8.1"
-r="1"
 tag="v$v"
 a="Configuration File Library"
 m="Tox"

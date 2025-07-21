@@ -1,8 +1,5 @@
-#!/to
+libnsl@3b06568b38f0d2ba12adcd029c0f31a632cbbde7-1
 
-n="libnsl"
-v="3b06568b38f0d2ba12adcd029c0f31a632cbbde7"
-r="1"
 a="Public client interface for NIS(YP)"
 m="Tox"
 l="LGPL-2.1"

@@ -1,8 +1,5 @@
-#!/to
+udev@257.7-1
 
-n="udev"
-v="257.7"
-r="1"
 a="Programs for dynamic device node creation"
 m="Tox"
 l=("CC0-1.0" "GPL-2.0-or-later" "LGPL-2.1-or-later" "MIT-0")

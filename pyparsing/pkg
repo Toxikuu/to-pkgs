@@ -1,8 +1,5 @@
-#!/to
+pyparsing@3.2.3-1
 
-n="pyparsing"
-v="3.2.3"
-r="1"
 a="General purpose parsing module"
 m="Tox"
 l="MIT"

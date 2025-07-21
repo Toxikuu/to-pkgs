@@ -1,8 +1,5 @@
-#!/to
+xh@0.24.1-2
 
-n="xh"
-v="0.24.1"
-r="2"
 tag="v$v"
 a="Fast, friendly tool for sending HTTP requests"
 m="Tox"

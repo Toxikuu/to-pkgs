@@ -1,8 +1,5 @@
-#!/to
+sqlite@3.50.2-1
 
-n="sqlite"
-v="3.50.2"
-r="1"
 a="SQL database engine"
 m="Tox"
 l="Custom"

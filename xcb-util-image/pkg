@@ -1,8 +1,5 @@
-#!/to
+xcb-util-image@0.4.1-1
 
-n="xcb-util-image"
-v="0.4.1"
-r="1"
 a="XCB port of Xlib's XImage and XShmImage"
 m="Tox"
 l="X11"

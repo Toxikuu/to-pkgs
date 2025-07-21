@@ -1,8 +1,5 @@
-#!/to
+iputils@bce12f96948b4842487541dc090942cfe0ee2a0c-1
 
-n="iputils"
-v="bce12f96948b4842487541dc090942cfe0ee2a0c"
-r="1"
 a="The 'ping' networking utility"
 m="Tox"
 l=("BSD-3-Clause" "GPL-2.0-or-later")

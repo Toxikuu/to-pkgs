@@ -1,8 +1,5 @@
-#!/to
+libxfont2@2.0.7-1
 
-n="libxfont2"
-v="2.0.7"
-r="1"
 a="X11 font rasterisation library"
 m="Tox"
 l="MIT"

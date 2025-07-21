@@ -1,8 +1,5 @@
-#!/to
+zathura@0.5.12-1
 
-n="zathura"
-v="0.5.12"
-r="1"
 a="Minimal document viewer"
 m="Tox"
 l="Zlib"

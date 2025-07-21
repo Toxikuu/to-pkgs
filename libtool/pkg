@@ -1,8 +1,5 @@
-#!/to
+libtool@2.5.4-1
 
-n="libtool"
-v="2.5.4"
-r="1"
 a="Generic library support script"
 m="Tox"
 l="LGPL-2.0-or-later WITH Libtool-exception"

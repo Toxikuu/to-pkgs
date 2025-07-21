@@ -1,8 +1,5 @@
-#!/to
+rmpc@0.9.0-2
 
-n="rmpc"
-v="0.9.0"
-r="2"
 tag="v$v"
 a="A beautiful, configurable TUI client for MPD"
 m="Tox"

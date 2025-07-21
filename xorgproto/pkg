@@ -1,8 +1,5 @@
-#!/to
+xorgproto@1914233e662d23ffb3812b80fadd0bbd064ad91c-1
 
-n="xorgproto"
-v="1914233e662d23ffb3812b80fadd0bbd064ad91c"
-r="1"
 a="Xorg protocol headers"
 m="Tox"
 l="MIT"

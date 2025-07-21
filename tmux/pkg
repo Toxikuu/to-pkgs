@@ -1,8 +1,5 @@
-#!/to
+tmux@865117a05fa1e850da07f67b422a469ee58fe019-1
 
-n="tmux"
-v="865117a05fa1e850da07f67b422a469ee58fe019"
-r="1"
 a="Terminal multiplexer"
 m="Tox"
 l="BSD"

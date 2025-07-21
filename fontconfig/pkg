@@ -1,8 +1,5 @@
-#!/to
+fontconfig@2.17.1-1
 
-n="fontconfig"
-v="2.17.1"
-r="1"
 a="Library and utilities for configuring fonts"
 m="Tox"
 l="MIT"

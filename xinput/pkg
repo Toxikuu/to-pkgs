@@ -1,8 +1,5 @@
-#!/to
+xinput@1.6.4-1
 
-n="xinput"
-v="1.6.4"
-r="1"
 a="Device configuration utility"
 m="Tox"
 l="Custom"

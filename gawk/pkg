@@ -1,8 +1,5 @@
-#!/to
+gawk@5.3.2-1
 
-n="gawk"
-v="5.3.2"
-r="1"
 a="Programs for manipulating text"
 m="Tox"
 l="GPL-3.0-or-later"

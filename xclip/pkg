@@ -1,8 +1,5 @@
-#!/to
+xclip@2c3b811002b35d3be7f39cc1145dd06bdb32e31c-1
 
-n="xclip"
-v="2c3b811002b35d3be7f39cc1145dd06bdb32e31c"
-r="1"
 a="X11 clipboard CLI"
 m="Tox"
 l="GPL-2.0-only"

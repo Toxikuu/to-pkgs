@@ -1,9 +1,6 @@
-#!/to
+mupdf@1.26.3-2
 
 # NOTE: I only package the libraries since I don't use the other stuff
-n="mupdf"
-v="1.26.3"
-r="2"
 a="Lightweight PDF and XPS viewer"
 m="Tox"
 l="AGPL-3.0-or-later"

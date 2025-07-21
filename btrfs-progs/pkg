@@ -1,8 +1,5 @@
-#!/to
+btrfs-progs@6.15-1
 
-n="btrfs-progs"
-v="6.15"
-r="1"
 tag="v$v"
 a="Btrfs filesystem utilities"
 m="Tox"

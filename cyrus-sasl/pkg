@@ -1,8 +1,5 @@
-#!/to
+cyrus-sasl@2.1.28-1
 
-n="cyrus-sasl"
-v="2.1.28"
-r="1"
 a="Cyrus saslauthd SASL authentication daemon"
 m="Tox"
 l="BSD-3-Clause-Attribution"

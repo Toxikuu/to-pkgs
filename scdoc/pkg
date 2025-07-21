@@ -1,8 +1,5 @@
-#!/to
+scdoc@1.11.3-1
 
-n="scdoc"
-v="1.11.3"
-r="1"
 a="Tiny man page generator"
 m="Tox"
 l="MIT"

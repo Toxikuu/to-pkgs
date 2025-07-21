@@ -1,8 +1,5 @@
-#!/to
+wireplumber@0.5.10-1
 
-n="wireplumber"
-v="0.5.10"
-r="1"
 a="PipeWire session manager"
 m="Tox"
 l="MIT"

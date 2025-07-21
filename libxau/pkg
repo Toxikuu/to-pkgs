@@ -1,8 +1,5 @@
-#!/to
+libxau@1.0.12-1
 
-n="libxau"
-v="1.0.12"
-r="1"
 a="The X Authorization Protocol"
 m="Tox"
 l="MIT"

@@ -1,8 +1,5 @@
-#!/to
+libaio@0.3.113-2
 
-n="libaio"
-v="0.3.113"
-r="2"
 a="Asynchronous I/O library"
 m="Tox"
 l="LGPL-2.0-or-later"

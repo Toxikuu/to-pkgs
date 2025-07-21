@@ -1,8 +1,5 @@
-#!/to
+libretls@3.8.1-1
 
-n="libretls"
-v="3.8.1"
-r="1"
 a="Port of libtls from LibreSSL to OpenSSL"
 m="Tox"
 l=("BSD" "ISC" "MIT")

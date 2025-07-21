@@ -1,8 +1,5 @@
-#!/to
+libtree@95d8992968a18ae957fef723f103b416d0843398-1
 
-n="libtree"
-v="95d8992968a18ae957fef723f103b416d0843398"
-r="1"
 a="ldd as a tree"
 m="Tox"
 l="MIT"

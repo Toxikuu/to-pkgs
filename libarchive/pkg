@@ -1,8 +1,5 @@
-#!/to
+libarchive@3.8.1-1
 
-n="libarchive"
-v="3.8.1"
-r="1"
 a="Multi-format archive and compression library"
 m="Tox"
 l="BSD-2-Clause"

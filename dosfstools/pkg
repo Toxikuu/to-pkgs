@@ -1,8 +1,5 @@
-#!/to
+dosfstools@4.2-1
 
-n="dosfstools"
-v="4.2"
-r="1"
 a="DOS filesystem utilities"
 m="Tox"
 l="GPL-3.0"

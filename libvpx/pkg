@@ -1,8 +1,5 @@
-#!/to
+libvpx@1.15.2-2
 
-n="libvpx"
-v="1.15.2"
-r="2"
 tag="v$v"
 a="VP8 and VP9 codecs"
 m="Tox"

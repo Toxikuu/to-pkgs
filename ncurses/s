@@ -4,30 +4,13 @@
     "version": "6.5.20250712",
     "release": 1
   },
-  "about": "Libraries for terminal-independent character screen handling",
-  "maintainer": "Tox",
-  "licenses": [
-    "MIT"
-  ],
-  "upstream": "https://invisible-mirror.net/archives/ncurses/current/?C=M;O=D",
-  "version_fetch": "curl -s 'https://invisible-mirror.net/archives/ncurses/current/?C=M;O=D' | grep 'ncurses-' | head -n1 | cut -d'\"' -f4 | grep -Eo 'ncurses-[0-9]\\.[0-9]-[0-9]{8}' | cut -d- -f2- | sed s,-,.,",
-  "tags": [
-    "core",
-    "critical",
-    "lib"
-  ],
-  "sources": [
-    {
-      "kind": "Download",
-      "url": "https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250712.tgz",
-      "dest": "ncurses-6.5-20250712.tgz"
-    }
-  ],
-  "dependencies": [
-    {
-      "name": "glibc",
-      "kind": "Required"
-    }
-  ],
+  "about": "",
+  "maintainer": "",
+  "licenses": [],
+  "upstream": null,
+  "version_fetch": null,
+  "tags": [],
+  "sources": [],
+  "dependencies": [],
   "kcfg": []
 }

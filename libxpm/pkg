@@ -1,8 +1,5 @@
-#!/to
+libxpm@3.5.17-1
 
-n="libxpm"
-v="3.5.17"
-r="1"
 a="X11 pixmap library"
 m="Tox"
 l="MIT"

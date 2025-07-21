@@ -1,8 +1,5 @@
-#!/to
+sysvinit@3.14-1
 
-n="sysvinit"
-v="3.14"
-r="1"
 a="Classic init system"
 m="Tox"
 l="GPL-2.0"

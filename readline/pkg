@@ -1,8 +1,5 @@
-#!/to
+readline@8.3-1
 
-n="readline"
-v="8.3"
-r="1"
 a="Libraries for command-line editing and history"
 m="Tox"
 l="GPL-3.0-only"

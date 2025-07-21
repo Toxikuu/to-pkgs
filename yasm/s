@@ -2,7 +2,7 @@
   "name": "yasm",
   "version": {
     "version": "121ab150b3577b666c79a79f4a511798d7ad2432",
-    "release": 1
+    "release": 5
   },
   "about": "Rewrite of the Netwide Assembler",
   "maintainer": "Tox",

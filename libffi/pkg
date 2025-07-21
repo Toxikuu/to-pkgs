@@ -1,8 +1,5 @@
-#!/to
+libffi@3.5.1-1
 
-n="libffi"
-v="3.5.1"
-r="1"
 a="Foreign Function Interface library"
 m="Tox"
 l="MIT"

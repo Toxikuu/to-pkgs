@@ -1,8 +1,5 @@
-#!/to
+pigz@2.8-1
 
-n="pigz"
-v="2.8"
-r="1"
 tag="v$v"
 a="Parallel implementation of gzip"
 m="Tox"

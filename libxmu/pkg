@@ -1,8 +1,5 @@
-#!/to
+libxmu@1.2.1-1
 
-n="libxmu"
-v="1.2.1"
-r="1"
 a="X11 miscellaneous micro-utility library"
 m="Tox"
 l="MIT"

@@ -1,8 +1,5 @@
-#!/to
+alacritty@0.15.1-2
 
-n="alacritty"
-v="0.15.1"
-r="2"
 a="Minimal modern terminal emulator"
 m="Tox"
 l=("Apache-2.0" "MIT")

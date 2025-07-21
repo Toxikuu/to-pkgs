@@ -1,8 +1,5 @@
-#!/to
+mpv@0.40.0-1
 
-n="mpv"
-v="0.40.0"
-r="1"
 tag="v$v"
 a="Media player"
 m="Tox"

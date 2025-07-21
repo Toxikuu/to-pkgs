@@ -1,8 +1,5 @@
-#!/to
+p11-kit@0.25.5-1
 
-n="p11-kit"
-v="0.25.5"
-r="1"
 a="Loads and enumerates PKCS#11 modules"
 m="Tox"
 l="BSD-3-Clause"

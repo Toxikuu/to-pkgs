@@ -1,9 +1,6 @@
-#!/to
+kernel@6.15.6-1
 
-n="kernel"
 an="linux"
-v="6.15.6"
-r="1"
 a="The ${an^} $n"
 m="Tox"
 l="GPL-2.0-only"

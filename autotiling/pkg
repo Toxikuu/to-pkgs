@@ -1,8 +1,5 @@
-#!/to
+autotiling@97a36cc63f59a3a4afbbf236a404d4f3e4a9e71a-2
 
-n="autotiling"
-v="97a36cc63f59a3a4afbbf236a404d4f3e4a9e71a"
-r="2"
 a="Autotiling script for i3 and sway"
 m="Tox"
 l="MIT"

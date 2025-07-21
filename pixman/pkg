@@ -1,8 +1,5 @@
-#!/to
+pixman@0.46.2-1
 
-n="pixman"
-v="0.46.2"
-r="1"
 a="Pixel manipulation library"
 m="Tox"
 l="MIT"

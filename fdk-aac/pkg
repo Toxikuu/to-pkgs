@@ -1,8 +1,5 @@
-#!/to
+fdk-aac@2ef9a141c40bf254bde7d22c197c615db5b265ed-1
 
-n="fdk-aac"
-v="2ef9a141c40bf254bde7d22c197c615db5b265ed"
-r="1"
 a="A standalone library of Android's Fraunhofer FDK AAC code"
 m="Tox"
 l="Custom"

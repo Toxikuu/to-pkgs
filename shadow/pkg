@@ -1,8 +1,5 @@
-#!/to
+shadow@4.18.0-1
 
-n="shadow"
-v="4.18.0"
-r="1"
 a="Secure password handling"
 m="Tox"
 l="BSD-3-Clause"

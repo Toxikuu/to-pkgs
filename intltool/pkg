@@ -1,8 +1,5 @@
-#!/to
+intltool@0.51.0-1
 
-n="intltool"
-v="0.51.0"
-r="1"
 a="i18n tool for extracting translatable strings from source files"
 m="Tox"
 l="LICENSE"

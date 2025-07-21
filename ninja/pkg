@@ -1,8 +1,5 @@
-#!/to
+ninja@1.13.1-1
 
-n="ninja"
-v="1.13.1"
-r="1"
 a="Small, fast build system"
 m="Tox"
 l="Apache-2.0"

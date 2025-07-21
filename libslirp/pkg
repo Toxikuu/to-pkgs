@@ -1,8 +1,5 @@
-#!/to
+libslirp@4.9.1-1
 
-n="libslirp"
-v="4.9.1"
-r="1"
 tag="v$v"
 a="General purpose TCP-IP emulator"
 m="Tox"

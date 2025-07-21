@@ -1,9 +1,6 @@
-#!/to
+docbook-xsl@1.79.2-1
 
-n="docbook-xsl"
 _db="${n%-*}"
-v="1.79.2"
-r="1"
 a="XML stylesheets for DocBook XML transformations"
 m="Tox"
 l="Custom"

@@ -1,8 +1,5 @@
-#!/to
+liblinear@249-1
 
-n="liblinear"
-v="249"
-r="1"
 tag="v$v"
 a="Large linear classification library"
 m="Tox"

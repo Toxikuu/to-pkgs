@@ -1,8 +1,5 @@
-#!/to
+libid3tag@80a23068e0ad03a290b5332c71108770eb1b355a-1
 
-n="libid3tag"
-v="80a23068e0ad03a290b5332c71108770eb1b355a"
-r="1"
 a="ID3 tag manipulation library"
 m="Tox"
 l="GPL-2.0-or-later"

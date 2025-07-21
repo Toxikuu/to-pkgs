@@ -1,8 +1,5 @@
-#!/to
+dust@1.2.2-2
 
-n="dust"
-v="1.2.2"
-r="2"
 tag="v$v"
 a="Oxidized du"
 m="Tox"

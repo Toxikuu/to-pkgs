@@ -1,8 +1,5 @@
-#!/to
+xmlto@0.0.29-1
 
-n="xmlto"
-v="0.0.29"
-r="1"
 a="Convert XML to many other formats"
 m="Tox"
 l="GPL"

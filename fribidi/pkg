@@ -1,8 +1,5 @@
-#!/to
+fribidi@1.0.16-1
 
-n="fribidi"
-v="1.0.16"
-r="1"
 a="Unicode Bidirectional Algorithm"
 m="Tox"
 l="LGPL-2.1-or-later"

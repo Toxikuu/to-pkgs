@@ -1,8 +1,5 @@
-#!/to
+typst@0.13.1-2
 
-n="typst"
-v="0.13.1"
-r="2"
 tag="v$v"
 a="Modern typesetting system"
 m="Tox"

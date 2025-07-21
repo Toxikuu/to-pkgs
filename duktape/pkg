@@ -1,8 +1,5 @@
-#!/to
+duktape@2.7.0-1
 
-n="duktape"
-v="2.7.0"
-r="1"
 a="Embeddable Javascript engine"
 m="Tox"
 l="MIT"

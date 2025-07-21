@@ -1,8 +1,5 @@
-#!/to
+libfontenc@1.1.8-1
 
-n="libfontenc"
-v="1.1.8"
-r="1"
 a="X11 font encoding library"
 m="Tox"
 l="MIT"

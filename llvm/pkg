@@ -1,8 +1,5 @@
-#!/to
+llvm@20.1.8-1
 
-n="llvm"
-v="20.1.8"
-r="1"
 a="Low Level Virtual Machine"
 m="Tox"
 l="Apache-2.0 WITH LLVM-exception"

@@ -1,8 +1,5 @@
-#!/to
+vulkan-loader@1.4.321.0-1
 
-n="vulkan-loader"
-v="1.4.321.0"
-r="1"
 tag="vulkan-sdk-$v"
 a="Vulkan Installable Client Driver Loader"
 m="Tox"

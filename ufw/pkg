@@ -1,8 +1,5 @@
-#!/to
+ufw@bdb71dc636c918421d50cac647353b2be08202a0-1
 
-n="ufw"
-v="bdb71dc636c918421d50cac647353b2be08202a0"
-r="1"
 a="Uncomplicated Firewall"
 m="Tox"
 l="GPL3"

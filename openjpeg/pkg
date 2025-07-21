@@ -1,8 +1,5 @@
-#!/to
+openjpeg@2.5.3-1
 
-n="openjpeg"
-v="2.5.3"
-r="1"
 tag="v$v"
 a="JPEG 2000 codec"
 m="Tox"

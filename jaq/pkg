@@ -1,8 +1,5 @@
-#!/to
+jaq@2.3.0-3
 
-n="jaq"
-v="2.3.0"
-r="3"
 tag="v$v"
 a="Command-line JSON processor"
 m="Tox"

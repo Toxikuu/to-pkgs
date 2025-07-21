@@ -1,8 +1,5 @@
-#!/to
+libxxf86vm@1.1.6-1
 
-n="libxxf86vm"
-v="1.1.6"
-r="1"
 a="XFree86 video mode extension library"
 m="Tox"
 l="X11"

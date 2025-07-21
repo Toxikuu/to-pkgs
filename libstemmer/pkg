@@ -1,8 +1,5 @@
-#!/to
+libstemmer@3.0.1-1
 
-n="libstemmer"
-v="3.0.1"
-r="1"
 tag="v$v"
 a="Stemming library supporting several languages"
 m="Tox"

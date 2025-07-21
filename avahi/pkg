@@ -1,8 +1,5 @@
-#!/to
+avahi@0.8-1
 
-n="avahi"
-v="0.8"
-r="1"
 a="Service discovery system"
 m="Tox"
 l="LGPL"

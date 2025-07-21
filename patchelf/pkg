@@ -1,8 +1,5 @@
-#!/to
+patchelf@0.18.0-1
 
-n="patchelf"
-v="0.18.0"
-r="1"
 a="A small utility to modify the dynamic linker and RPATH of ELF executables"
 m="Tox"
 l="GPL-3.0-or-later"

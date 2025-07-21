@@ -1,8 +1,5 @@
-#!/to
+curl@8.15.0-1
 
-n="curl"
-v="8.15.0"
-r="1"
 a="Tool and library for transferring data with URLs"
 m="Tox"
 l="MIT"

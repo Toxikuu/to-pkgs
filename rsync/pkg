@@ -1,8 +1,5 @@
-#!/to
+rsync@9994933c8ccf7ead27c81fe4ce2eb4e08af20c7f-1
 
-n="rsync"
-v="9994933c8ccf7ead27c81fe4ce2eb4e08af20c7f"
-r="1"
 a="Fast, versatile file copying tool"
 m="Tox"
 l="GPL-3.0-or-later"

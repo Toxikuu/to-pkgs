@@ -1,8 +1,5 @@
-#!/to
+picom@9b8b0e956514779de15898475091de01d59b4394-1
 
-n="picom"
-v="9b8b0e956514779de15898475091de01d59b4394"
-r="1"
 a="Lightweight X11 compositor"
 m="Tox"
 l="MPL-2.0 AND MIT"

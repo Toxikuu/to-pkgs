@@ -1,8 +1,5 @@
-#!/to
+libgudev@238-1
 
-n="libgudev"
-v="238"
-r="1"
 a="GObject bindings for libudev"
 m="Tox"
 l="LGPL-2.1-or-later"

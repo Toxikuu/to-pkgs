@@ -1,8 +1,5 @@
-#!/to
+libxdamage@1.1.6-1
 
-n="libxdamage"
-v="1.1.6"
-r="1"
 a="X11 damaged region extension library"
 m="Tox"
 l="MIT"

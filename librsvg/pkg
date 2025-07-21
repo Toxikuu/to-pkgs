@@ -1,8 +1,5 @@
-#!/to
+librsvg@2.60.0-2
 
-n="librsvg"
-v="2.60.0"
-r="2"
 a="Rust SVG library"
 m="Tox"
 l="LGPL-2.1-or-later"

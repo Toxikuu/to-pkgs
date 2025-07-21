@@ -1,8 +1,5 @@
-#!/to
+shared-mime-info@2.4-1
 
-n="shared-mime-info"
-v="2.4"
-r="1"
 a="MIME database"
 m="Tox"
 l="GPL2"

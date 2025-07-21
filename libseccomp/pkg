@@ -1,8 +1,5 @@
-#!/to
+libseccomp@2.6.0-1
 
-n="libseccomp"
-v="2.6.0"
-r="1"
 a="Syscall API"
 m="Tox"
 l="LGPL-2.1-only"

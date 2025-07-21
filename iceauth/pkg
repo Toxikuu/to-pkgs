@@ -1,8 +1,5 @@
-#!/to
+iceauth@1.0.10-1
 
-n="iceauth"
-v="1.0.10"
-r="1"
 a="ICE authority file utility"
 m="Tox"
 l="MIT"

@@ -1,8 +1,5 @@
-#!/to
+xdpyinfo@1.3.4-1
 
-n="xdpyinfo"
-v="1.3.4"
-r="1"
 a="Display information utility for X"
 m="Tox"
 l="Custom"

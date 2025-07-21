@@ -1,8 +1,5 @@
-#!/to
+libx11@1.8.12-2
 
-n="libx11"
-v="1.8.12"
-r="2"
 a="X11 client-side library"
 m="Tox"
 l="MIT AND X11"

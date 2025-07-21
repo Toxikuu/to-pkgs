@@ -1,8 +1,5 @@
-#!/to
+shellcheck@0.10.0-1
 
-n="shellcheck"
-v="0.10.0"
-r="1"
 a="Shell script analysis tool"
 m="Tox"
 l="GPL-3.0"

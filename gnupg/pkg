@@ -1,8 +1,5 @@
-#!/to
+gnupg@2.4.8-2
 
-n="gnupg"
-v="2.4.8"
-r="2"
 a="GNU's Pretty Good Privacy"
 m="Tox"
 l="GPL-3.0-or-later"

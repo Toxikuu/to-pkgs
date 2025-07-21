@@ -1,8 +1,5 @@
-#!/to
+caddy@2.10.0-1
 
-n="caddy"
-v="2.10.0"; tag="v$v"
-r="1"
 a="Fast web server with automatic HTTPS"
 m="Tox"
 l="Apache-2.0"

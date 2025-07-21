@@ -1,8 +1,5 @@
-#!/to
+libxi@1.8.2-1
 
-n="libxi"
-v="1.8.2"
-r="1"
 a="X11 Input extension library"
 m="Tox"
 l="MIT"

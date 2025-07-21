@@ -1,8 +1,5 @@
-#!/to
+autoconf@2.72-1
 
-n="autoconf"
-v="2.72"
-r="1"
 a="Automatic configure script builder"
 m="Tox"
 l="GPL-3.0-or-later WITH ${n^}-exception-3.0"

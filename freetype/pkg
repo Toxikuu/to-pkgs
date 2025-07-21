@@ -1,8 +1,5 @@
-#!/to
+freetype@2.13.3-1
 
-n="freetype"
-v="2.13.3"
-r="1"
 a="TTF rendering library"
 m="Tox"
 l="FTL OR GPL-2.0-or-later"

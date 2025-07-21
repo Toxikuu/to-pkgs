@@ -1,8 +1,5 @@
-#!/to
+qemu@10.0.2-1
 
-n="qemu"
-v="10.0.2"
-r="1"
 a="Generic machine emulator and virtualizer"
 m="Tox"
 l="GPL-2.0-only"

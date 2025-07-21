@@ -1,8 +1,5 @@
-#!/to
+strace@6.15-2
 
-n="strace"
-v="6.15"
-r="2"
 a="A diagnostic, debugging, and instructional userspace tracer"
 m="Tox"
 l="LGPL-2.1-or-later"

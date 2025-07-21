@@ -1,8 +1,5 @@
-#!/to
+patch@2.8-1
 
-n="patch"
-v="2.8"
-r="1"
 a="Utility to patch sources"
 m="Tox"
 l="GPL"

@@ -1,10 +1,7 @@
-#!/to
+nvidia@575.64.03-1
 # Huge thanks to Zeckma for her work on:
 # https://github.com/glfs-book/glfs/blob/trunk/shareddeps/drivers/nvidia.xml
 
-n="nvidia"
-v="575.64.03"
-r="1"
 a="${n^^} drivers"
 m="Tox"
 l="Custom"

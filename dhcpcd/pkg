@@ -1,8 +1,5 @@
-#!/to
+dhcpcd@10.2.4-1
 
-n="dhcpcd"
-v="10.2.4"
-r="1"
 a="Fully-featured lightweight DHCP client"
 m="Tox"
 l="BSD-2-Clause"

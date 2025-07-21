@@ -1,8 +1,5 @@
-#!/to
+tcpdump@4.99.5-1
 
-n="tcpdump"
-v="4.99.5"
-r="1"
 tag="$n-$v"
 a="Powerful command-line packet analyzer"
 m="Tox"

@@ -1,8 +1,5 @@
-#!/to
+mako@1.3.10-1
 
-n="mako"
-v="1.3.10"
-r="1"
 a="Fast, lightweight templating library"
 m="Tox"
 l="MIT"

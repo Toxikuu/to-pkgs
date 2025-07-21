@@ -1,8 +1,5 @@
-#!/to
+e2fsprogs@1.47.3-1
 
-n="e2fsprogs"
-v="1.47.3"
-r="1"
 tag="v$v"
 a="Programs for the ext4 filesystem"
 m="Tox"

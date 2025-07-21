@@ -1,8 +1,5 @@
-#!/to
+xrandr@1.5.3-1
 
-n="xrandr"
-v="1.5.3"
-r="1"
 a="RandR CLI"
 m="Tox"
 l="HPND"

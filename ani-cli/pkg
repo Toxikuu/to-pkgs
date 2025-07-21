@@ -1,8 +1,5 @@
-#!/to
+ani-cli@4.10-1
 
-n="ani-cli"
-v="4.10"
-r="1"
 tag="v$v"
 a="Utility to browse and play anime"
 m="Tox"

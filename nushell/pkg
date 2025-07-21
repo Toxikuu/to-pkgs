@@ -1,8 +1,5 @@
-#!/to
+nushell@0.105.1-1
 
-n="nushell"
-v="0.105.1"
-r="1"
 a="A new type of shell"
 m="Tox"
 l="MIT"

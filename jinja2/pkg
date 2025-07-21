@@ -1,8 +1,5 @@
-#!/to
+jinja2@3.1.6-1
 
-n="jinja2"
-v="3.1.6"
-r="1"
 a="Simple, pythonic template language"
 m="Tox"
 l="BSD-3-Clause"

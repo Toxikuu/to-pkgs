@@ -1,8 +1,5 @@
-#!/to
+sudo@fb208d383af27a07abe9cb277a620ea34c73f5d7-1
 
-n="sudo"
-v="fb208d383af27a07abe9cb277a620ea34c73f5d7"
-r="1"
 a="Privilege escalation utility"
 m="Tox"
 l="custom"

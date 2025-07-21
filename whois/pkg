@@ -1,8 +1,5 @@
-#!/to
+whois@5.6.3-1
 
-n="whois"
-v="5.6.3"
-r="1"
 tag="v$v"
 a="Intelligent tool to query domain name information"
 m="Tox"

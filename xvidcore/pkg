@@ -1,8 +1,5 @@
-#!/to
+xvidcore@1.3.7-1
 
-n="xvidcore"
-v="1.3.7"
-r="1"
 a="XviD is an open source MPEG-4 video codec"
 m="Tox"
 l="GPL"

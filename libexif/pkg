@@ -1,8 +1,5 @@
-#!/to
+libexif@1a31f67eabcca2be32e12adaf0b5892dee71a5b7-1
 
-n="libexif"
-v="1a31f67eabcca2be32e12adaf0b5892dee71a5b7"
-r="1"
 a="EXIF data library"
 m="Tox"
 l="LGPL-2.1"

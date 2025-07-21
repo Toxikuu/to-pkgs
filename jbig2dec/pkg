@@ -1,8 +1,5 @@
-#!/to
+jbig2dec@0.20-1
 
-n="jbig2dec"
-v="0.20"
-r="1"
 a="Decoder implementation of the JBIG2 image compression format"
 m="Tox"
 l="GPL3"

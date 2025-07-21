@@ -1,8 +1,5 @@
-#!/to
+file@5.46-1
 
-n="file"
-v="5.46"
-r="1"
 a="${n^} type identification utility"
 m="Tox"
 l="custom"

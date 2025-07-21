@@ -1,8 +1,5 @@
-#!/to
+nss@3.113.1-1
 
-n="nss"
-v="3.113.1"
-r="1"
 a="Network Security Services"
 m="Tox"
 l="MPL-2.0"

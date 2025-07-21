@@ -2,7 +2,7 @@
   "name": "gst-plugins-base",
   "version": {
     "version": "1.27.1",
-    "release": 1
+    "release": 2
   },
   "about": "Base gst plugins",
   "maintainer": "Tox",
@@ -139,10 +139,6 @@
     },
     {
       "name": "opus",
-      "kind": "Build"
-    },
-    {
-      "name": "sdl2",
       "kind": "Build"
     }
   ],

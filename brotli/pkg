@@ -1,8 +1,5 @@
-#!/to
+brotli@1.1.0-1
 
-n="brotli"
-v="1.1.0"
-r="1"
 tag="v$v"
 a="${n^} compression format"
 m="Tox"

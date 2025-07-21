@@ -1,8 +1,5 @@
-#!/to
+perl@5.42.0-1
 
-n="perl"
-v="5.42.0"
-r="1"
 
 MINOR="${v%.*}"
 MAJOR="${MINOR%.*}"

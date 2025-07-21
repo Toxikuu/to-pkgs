@@ -1,8 +1,5 @@
-#!/to
+senpai@0.4.1-1
 
-n="senpai"
-v="0.4.1"
-r="1"
 tag="v$v"
 a="A modern terminal IRC client"
 m="Tox"

@@ -1,8 +1,5 @@
-#!/to
+libinput@1.28.902-1
 
-n="libinput"
-v="1.28.902"
-r="1"
 a="Input device management and event handling library"
 m="Tox"
 l="MIT"

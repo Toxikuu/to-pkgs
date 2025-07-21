@@ -1,8 +1,5 @@
-#!/to
+sgml-common@0.6.3-1
 
-n="sgml-common"
-v="0.6.3"
-r="1"
 a="Tools for maintaining centralized SGML catalogs"
 m="Tox"
 l="GPL-1.0-or-later"

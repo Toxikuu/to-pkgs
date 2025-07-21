@@ -1,8 +1,5 @@
-#!/to
+libepoxy@1.5.10-1
 
-n="libepoxy"
-v="1.5.10"
-r="1"
 a="OpenGL function pointer management library"
 m="Tox"
 l="MIT"

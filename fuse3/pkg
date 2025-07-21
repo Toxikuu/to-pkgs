@@ -1,8 +1,5 @@
-#!/to
+fuse3@3.17.2-1
 
-n="fuse3"
-v="3.17.2"
-r="1"
 a="Filesystem in userspace"
 m="Tox"
 l="GPL2"

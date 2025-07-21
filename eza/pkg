@@ -1,8 +1,5 @@
-#!/to
+eza@0.23.0-1
 
-n="eza"
-v="0.23.0"
-r="1"
 tag="v$v"
 a="Modern ls alternative"
 m="Tox"

@@ -1,8 +1,5 @@
-#!/to
+sxhkd@b0923b6b3d5d85b1ff80a5bb286934b8721a7c08-1
 
-n="sxhkd"
-v="b0923b6b3d5d85b1ff80a5bb286934b8721a7c08"
-r="1"
 a="Simple X hotkey daemon"
 m="Tox"
 l="BSD-2-Clause"
