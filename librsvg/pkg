@@ -1,4 +1,4 @@
-librsvg@2.60.0-2
+librsvg@2.60.0-3
 
 a="Rust SVG library"
 m="Tox"
@@ -29,12 +29,6 @@ d=(
 )
 
 b() {
-
-# LTO
-rustup default nightly
-RUSTFLAGS+=" -Zdylib-lto"
-CFLAGS+=" -ffat-lto-objects"
-export CARGO_PROFILE_RELEASE_LTO=true CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1
 
 def
 
