@@ -1,4 +1,4 @@
-tuun@4.1.3-2
+tuun@4.1.3-4
 
 tag="v$v"
 a="Minimal music player using MPV as a backend"
@@ -24,10 +24,6 @@ d=(
 )
 
 b() {
-
-rustup default nightly
-RUSTFLAGS+=" -Zdylib-lto"
-CFLAGS+=" -ffat-lto-objects"
 
 mk
 mi
