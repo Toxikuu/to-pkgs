@@ -2,7 +2,7 @@
   "name": "typst",
   "version": {
     "version": "0.13.1",
-    "release": 2
+    "release": 3
   },
   "about": "Modern typesetting system",
   "maintainer": "Tox",

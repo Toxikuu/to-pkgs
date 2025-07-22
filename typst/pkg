@@ -1,4 +1,4 @@
-typst@0.13.1-2
+typst@0.13.1-3
 
 tag="v$v"
 a="Modern typesetting system"
@@ -17,10 +17,6 @@ d=(
 )
 
 b() {
-
-rustup default nightly
-RUSTFLAGS+=" -Zdylib-lto"
-CFLAGS+=" -ffat-lto-objects"
 
 export TYPST_VERSION="$v"
 export GEN_ARTIFACTS=artifacts/
