@@ -1,4 +1,4 @@
-alacritty@0.15.1-2
+alacritty@0.15.1-3
 
 a="Minimal modern terminal emulator"
 m="Tox"
@@ -25,10 +25,6 @@ d=(
 )
 
 b() {
-
-RUSTFLAGS+=" -Zdylib-lto"
-CFLAGS+=" -ffat-lto-objects"
-rustup default nightly
 
 cbr --no-default-features --features=x11,wayland
 
