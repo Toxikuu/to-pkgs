@@ -1,4 +1,4 @@
-to@0b7297149bed14fbc791798a6c27a32180b4e023-1
+to@0b7297149bed14fbc791798a6c27a32180b4e023-2
 
 a="Stupid-simple, (EVENTUALLY) rock-solid package manager for LFS"
 m="Tox"
@@ -23,10 +23,6 @@ d=(
 
 b() {
 
-RUSTFLAGS+=" -Zdylib-lto"
-CFLAGS+=" -ffat-lto-objects"
-rustup default nightly
-
 _cfg=(
     --disable-docs
     --disable-comp
@@ -38,6 +34,3 @@ _cfg=(
 def
 
 }
-
-# Tests aren't run because rust's test framework lowkey sucks and can't skip
-# based on the environment they're run in.

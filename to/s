@@ -2,7 +2,7 @@
   "name": "to",
   "version": {
     "version": "0b7297149bed14fbc791798a6c27a32180b4e023",
-    "release": 1
+    "release": 2
   },
   "about": "Stupid-simple, (EVENTUALLY) rock-solid package manager for LFS",
   "maintainer": "Tox",
