@@ -1,4 +1,4 @@
-hyperfine@1.19.0-2
+hyperfine@1.19.0-5
 
 tag="v$v"
 a="CLI benchmarking tool"
@@ -15,8 +15,6 @@ d=(
 
 b() {
 
-rustup default nightly
-RUSTFLAGS+=" -Zdylib-lto"
 cbr
 
 install -vDm755 "target/release/$n" -t "$D/usr/bin/"

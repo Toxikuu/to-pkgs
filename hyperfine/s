@@ -2,7 +2,7 @@
   "name": "hyperfine",
   "version": {
     "version": "1.19.0",
-    "release": 2
+    "release": 5
   },
   "about": "CLI benchmarking tool",
   "maintainer": "Tox",
