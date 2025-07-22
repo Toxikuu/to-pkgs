@@ -1,4 +1,4 @@
-eza@0.23.0-1
+eza@0.23.0-2
 
 tag="v$v"
 a="Modern ls alternative"
@@ -24,10 +24,6 @@ for i in {1,5}; do
 done
 
 rm -vf rust-toolchain.toml
-rustup default nightly
-CFLAGS+=" -ffat-lto-objects"
-RUSTFLAGS+=" -Zdylib-lto"
-
 cbr
 install -vDm755 "target/release/$n" "$D/usr/bin/$n"
 
