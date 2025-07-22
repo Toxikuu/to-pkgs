@@ -1,4 +1,4 @@
-bottom@2e6ac01f9951918f459695dd901e35329e06a635-2
+bottom@2e6ac01f9951918f459695dd901e35329e06a635-3
 
 an="btm"
 a="Yet another system monitor"
@@ -11,9 +11,6 @@ s="$u"
 d="b,rust"
 
 b() {
-
-RUSTFLAGS+=" -Zdylib-lto"
-rustup default nightly
 
 BTM_GENERATE=true cbr
 
