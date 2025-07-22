@@ -2,7 +2,7 @@
   "name": "pastel",
   "version": {
     "version": "3e76053e456ea603e26181f229af2be54a3ae223",
-    "release": 2
+    "release": 3
   },
   "about": "CLI color manipulation utility",
   "maintainer": "Tox",

@@ -1,4 +1,4 @@
-pastel@3e76053e456ea603e26181f229af2be54a3ae223-2
+pastel@3e76053e456ea603e26181f229af2be54a3ae223-3
 
 a="CLI color manipulation utility"
 m="Tox"
@@ -13,9 +13,6 @@ d=(
 )
 
 b() {
-
-rustup default nightly
-RUSTFLAGS+=" -Zdylib-lto"
 
 SHELL_COMPLETIONS_DIR="$PWD/completions" cbr
 
