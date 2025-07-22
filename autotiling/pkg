@@ -1,4 +1,4 @@
-autotiling@97a36cc63f59a3a4afbbf236a404d4f3e4a9e71a-2
+autotiling@97a36cc63f59a3a4afbbf236a404d4f3e4a9e71a-3
 
 a="Autotiling script for i3 and sway"
 m="Tox"
@@ -10,9 +10,6 @@ s="$u"
 d="b,rust"
 
 b() {
-
-RUSTFLAGS+=" -Zdylib-lto"
-rustup default nightly
 
 cbr
 install -vDm755 "target/release/$n-rs" "$D/usr/bin/$n"
