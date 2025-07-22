@@ -1,4 +1,4 @@
-lfstage@d2bcde008e1cc1633ed1a40a1cccaa079f083e99-2
+lfstage@d2bcde008e1cc1633ed1a40a1cccaa079f083e99-3
 
 a="LFS stage file generator"
 m="Tox"
@@ -19,10 +19,6 @@ d=(
 b() {
 
 git submodule update --init --recursive
-
-RUSTFLAGS+=" -Zdylib-lto"
-CFLAGS+=" -ffat-lto-objects"
-rustup default nightly
 
 mk
 mi
