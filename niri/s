@@ -2,7 +2,7 @@
   "name": "niri",
   "version": {
     "version": "25.05.1",
-    "release": 1
+    "release": 2
   },
   "about": "A scrolling Wayland compositor",
   "maintainer": "Tox",

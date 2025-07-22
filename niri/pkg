@@ -1,4 +1,4 @@
-niri@25.05.1-1
+niri@25.05.1-2
 
 tag="v$v"
 a="A scrolling Wayland compositor"
@@ -30,10 +30,6 @@ d=(
 )
 
 b() {
-
-CFLAGS+=" -ffat-lto-objects"
-RUSTFLAGS+=" -Zdylib-lto"
-rustup default nightly
 
 cbr
 
