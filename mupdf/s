@@ -1,8 +1,8 @@
 {
   "name": "mupdf",
   "version": {
-    "version": "1.26.3",
-    "release": 2
+    "version": "1.26.4",
+    "release": 1
   },
   "about": "Lightweight PDF and XPS viewer",
   "maintainer": "Tox",
@@ -20,8 +20,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.mupdf.com/downloads/archive/mupdf-1.26.3-source.tar.gz",
-      "dest": "mupdf-1.26.3-source.tar.gz"
+      "url": "https://www.mupdf.com/downloads/archive/mupdf-1.26.4-source.tar.gz",
+      "dest": "mupdf-1.26.4-source.tar.gz"
     }
   ],
   "dependencies": [
