@@ -1,7 +1,5 @@
-#!/to
+libxslt@1.1.43-1
 
-n="libxslt"
-v="1.1.43"
 tag="v$v"
 a="XSL transformation library"
 m="Tox"

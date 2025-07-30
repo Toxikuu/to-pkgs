@@ -1,7 +1,5 @@
-#!/to
+kmod@34.2-1
 
-n="kmod"
-v="34.2"
 a="Kernel module loader"
 m="Tox"
 l=(

@@ -1,6 +1,9 @@
 {
   "name": "m4",
-  "version": "1.4.20",
+  "version": {
+    "version": "1.4.20",
+    "release": 1
+  },
   "about": "Macro processor",
   "maintainer": "Tox",
   "licenses": [

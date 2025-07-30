@@ -1,7 +1,5 @@
-#!/to
+alsa-ucm-conf@1b69ade9b6d7ee37a87c08b12d7955d0b68fa69d-1
 
-n="alsa-ucm-conf"
-v="1b69ade9b6d7ee37a87c08b12d7955d0b68fa69d"
 a="ALSA Use Case Manager configuration files"
 m="Tox"
 l="BSD-3-Clause"

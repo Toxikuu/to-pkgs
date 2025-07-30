@@ -1,6 +1,9 @@
 {
   "name": "readline",
-  "version": "8.3",
+  "version": {
+    "version": "8.3",
+    "release": 1
+  },
   "about": "Libraries for command-line editing and history",
   "maintainer": "Tox",
   "licenses": [

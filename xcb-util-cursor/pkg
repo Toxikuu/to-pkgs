@@ -1,7 +1,5 @@
-#!/to
+xcb-util-cursor@0.1.5-1
 
-n="xcb-util-cursor"
-v="0.1.5"
 a="XCB cursor library"
 m="Tox"
 l="MIT"

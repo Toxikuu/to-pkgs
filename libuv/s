@@ -1,6 +1,9 @@
 {
   "name": "libuv",
-  "version": "1.51.0",
+  "version": {
+    "version": "1.51.0",
+    "release": 1
+  },
   "about": "Multi-platform support library focusing on asyncio",
   "maintainer": "Tox",
   "licenses": [

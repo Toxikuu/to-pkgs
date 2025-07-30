@@ -1,6 +1,9 @@
 {
   "name": "util-macros",
-  "version": "1.20.2",
+  "version": {
+    "version": "1.20.2",
+    "release": 1
+  },
   "about": "Xorg autotools macros",
   "maintainer": "Tox",
   "licenses": [

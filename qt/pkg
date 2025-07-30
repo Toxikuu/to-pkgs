@@ -1,7 +1,5 @@
-#!/to
+qt@6.9.1-1
 
-n="qt"
-v="6.9.1"
 an="$n${v:0:1}" # qt6
 a="Application and UI framework"
 m="Tox"

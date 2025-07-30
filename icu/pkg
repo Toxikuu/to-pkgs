@@ -1,7 +1,5 @@
-#!/to
+icu@77.1-2
 
-n="icu"
-v="77.1"
 a="International Components for Unicode"
 m="Tox"
 l=(
@@ -22,6 +20,7 @@ d="glibc"
 
 b() {
 
+ltno
 cd source
 def
 

@@ -1,6 +1,9 @@
 {
   "name": "libxpresent",
-  "version": "1.0.1",
+  "version": {
+    "version": "1.0.1",
+    "release": 1
+  },
   "about": "X Present Extension library",
   "maintainer": "Tox",
   "licenses": [

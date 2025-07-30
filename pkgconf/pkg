@@ -1,7 +1,5 @@
-#!/to
+pkgconf@1550bf53b3bb04b68fb6a405f9627674ad3bbd55-1
 
-n="pkgconf"
-v="1550bf53b3bb04b68fb6a405f9627674ad3bbd55"
 a="Package compiler and linker metadata toolkit"
 m="Tox"
 l="ISC"

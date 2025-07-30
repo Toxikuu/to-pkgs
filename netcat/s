@@ -1,6 +1,9 @@
 {
   "name": "netcat",
-  "version": "181eeb7308110f709f8076b842d41724444a7cf6",
+  "version": {
+    "version": "181eeb7308110f709f8076b842d41724444a7cf6",
+    "release": 1
+  },
   "about": "TCP/IP swiss army knife",
   "maintainer": "Tox",
   "licenses": [

@@ -1,7 +1,5 @@
-#!/to
+libxext@1.3.6-1
 
-n="libxext"
-v="1.3.6"
 a="X11 miscellaneous extensions library"
 m="Tox"
 l="Custom"

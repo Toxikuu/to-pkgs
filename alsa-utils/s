@@ -1,6 +1,9 @@
 {
   "name": "alsa-utils",
-  "version": "1.2.14",
+  "version": {
+    "version": "1.2.14",
+    "release": 1
+  },
   "about": "ALSA utilities",
   "maintainer": "Tox",
   "licenses": [

@@ -1,8 +1,6 @@
-#!/to
+gtk3@3.24.49-1
 
-n="gtk3"
 an="${n%3}"
-v="3.24.49"
 a="Multi-platform GUI toolkit"
 m="Tox"
 l="LICENSE"

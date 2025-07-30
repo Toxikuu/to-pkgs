@@ -1,6 +1,9 @@
 {
   "name": "bspwm",
-  "version": "af3bd8b4351f4478fe0fe3cfd6c09e44cb108b4b",
+  "version": {
+    "version": "af3bd8b4351f4478fe0fe3cfd6c09e44cb108b4b",
+    "release": 1
+  },
   "about": "Tiling window manager based on binary space partitioning",
   "maintainer": "Tox",
   "licenses": [

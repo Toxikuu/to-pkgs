@@ -1,7 +1,5 @@
-#!/to
+libxcomposite@0.4.6-1
 
-n="libxcomposite"
-v="0.4.6"
 a="X11 Composite extension library"
 m="Tox"
 l="MIT"

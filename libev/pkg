@@ -1,7 +1,5 @@
-#!/to
+libev@4.33-1
 
-n="libev"
-v="4.33"
 a="Full-featured, high-performance event loop"
 m="Tox"
 l="BSD"

@@ -1,6 +1,9 @@
 {
   "name": "socat",
-  "version": "1.8.0.3",
+  "version": {
+    "version": "1.8.0.3",
+    "release": 1
+  },
   "about": "Multipurpose relay",
   "maintainer": "Tox",
   "licenses": [

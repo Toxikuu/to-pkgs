@@ -1,7 +1,5 @@
-#!/to
+sed@4.9-1
 
-n="sed"
-v="4.9"
 a="Stream editor"
 m="Tox"
 l="GPL-3.0"

@@ -1,7 +1,5 @@
-#!/to
+libsoup@3.6.5-1
 
-n="libsoup"
-v="3.6.5"
 a="HTTP client/server library for GNOME"
 m="Tox"
 l="LGPL-2.0-or-later"

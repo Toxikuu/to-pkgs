@@ -1,6 +1,9 @@
 {
   "name": "dbus",
-  "version": "1.16.2",
+  "version": {
+    "version": "1.16.2",
+    "release": 1
+  },
   "about": "Message bus system",
   "maintainer": "Tox",
   "licenses": [

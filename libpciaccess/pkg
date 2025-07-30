@@ -1,7 +1,5 @@
-#!/to
+libpciaccess@0.18.1-1
 
-n="libpciaccess"
-v="0.18.1"
 a="X PCI access library"
 m="Tox"
 l="Custom"

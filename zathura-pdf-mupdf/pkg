@@ -1,7 +1,5 @@
-#!/to
+zathura-pdf-mupdf@0.4.4-1
 
-n="zathura-pdf-mupdf"
-v="0.4.4"
 a="PDF support for Zathura (MuPDF backend)"
 m="Tox"
 l="Zlib"

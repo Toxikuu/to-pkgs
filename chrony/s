@@ -1,6 +1,9 @@
 {
   "name": "chrony",
-  "version": "4.7",
+  "version": {
+    "version": "4.7",
+    "release": 1
+  },
   "about": "Advanced NTP client and server",
   "maintainer": "Tox",
   "licenses": [

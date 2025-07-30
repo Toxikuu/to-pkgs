@@ -1,7 +1,5 @@
-#!/to
+spirv-headers@1.4.321.0-1
 
-n="spirv-headers"
-v="1.4.321.0"
 tag="vulkan-sdk-$v"
 a="SPIR-V headers"
 m="Tox"

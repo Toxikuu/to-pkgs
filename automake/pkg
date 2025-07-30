@@ -1,7 +1,5 @@
-#!/to
+automake@1.18.1-1
 
-n="automake"
-v="1.18.1"
 a="Automatic Makefile generator"
 m="Tox"
 l="GPL"

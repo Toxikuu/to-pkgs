@@ -1,7 +1,5 @@
-#!/to
+libsndfile@1.2.2-1
 
-n="libsndfile"
-v="1.2.2"
 a="Library for files containing sampled sound"
 m="Tox"
 l="LGPL-2.1"

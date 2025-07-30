@@ -1,7 +1,5 @@
-#!/to
+libxtst@1.2.5-1
 
-n="libxtst"
-v="1.2.5"
 a="Library for XTEST & RECORD extensions"
 m="Tox"
 l=(

@@ -1,7 +1,5 @@
-#!/to
+openssh@10.0p2-1
 
-n="openssh"
-v="10.0p2"
 a="Secure shell"
 m="Tox"
 l="BSD" # or more free

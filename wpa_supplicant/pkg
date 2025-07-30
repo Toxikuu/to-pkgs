@@ -1,7 +1,5 @@
-#!/to
+wpa_supplicant@2.11-1
 
-n="wpa_supplicant"
-v="2.11"
 a="A utility providing key negotiation for WPA wireless networks"
 m="Tox"
 l="BSD-3-Clause"

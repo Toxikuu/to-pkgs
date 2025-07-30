@@ -1,6 +1,9 @@
 {
   "name": "gstreamer",
-  "version": "1.27.1",
+  "version": {
+    "version": "1.27.1",
+    "release": 1
+  },
   "about": "Development framework for multimedia applications",
   "maintainer": "Tox",
   "licenses": [

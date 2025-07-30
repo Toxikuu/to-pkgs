@@ -1,7 +1,5 @@
-#!/to
+to@0b7297149bed14fbc791798a6c27a32180b4e023-2
 
-n="to"
-v="6db5c20dd049b67c768d83eeabd58d96fc544c5d"
 a="Stupid-simple, (EVENTUALLY) rock-solid package manager for LFS"
 m="Tox"
 l="GPL-3.0"
@@ -36,6 +34,3 @@ _cfg=(
 def
 
 }
-
-# Tests aren't run because rust's test framework lowkey sucks and can't skip
-# based on the environment they're run in.

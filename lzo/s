@@ -1,6 +1,9 @@
 {
   "name": "lzo",
-  "version": "2.10",
+  "version": {
+    "version": "2.10",
+    "release": 1
+  },
   "about": "Portable lossless data compression library",
   "maintainer": "Tox",
   "licenses": [

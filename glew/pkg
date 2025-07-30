@@ -1,7 +1,5 @@
-#!/to
+glew@2.2.0-1
 
-n="glew"
-v="2.2.0"
 tag="$n-$v"
 a="OpenGL Extension Wrangler Library"
 m="Tox"

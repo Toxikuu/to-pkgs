@@ -1,7 +1,5 @@
-#!/to
+hyperfine@1.19.0-5
 
-n="hyperfine"
-v="1.19.0"
 tag="v$v"
 a="CLI benchmarking tool"
 m="Tox"

@@ -1,6 +1,9 @@
 {
   "name": "isl",
-  "version": "433e17b9bccf4417725744316dff8a44caedcbcc",
+  "version": {
+    "version": "433e17b9bccf4417725744316dff8a44caedcbcc",
+    "release": 1
+  },
   "about": "Integer Set Library",
   "maintainer": "Tox",
   "licenses": [

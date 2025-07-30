@@ -1,6 +1,9 @@
 {
   "name": "rsync",
-  "version": "9994933c8ccf7ead27c81fe4ce2eb4e08af20c7f",
+  "version": {
+    "version": "9994933c8ccf7ead27c81fe4ce2eb4e08af20c7f",
+    "release": 1
+  },
   "about": "Fast, versatile file copying tool",
   "maintainer": "Tox",
   "licenses": [

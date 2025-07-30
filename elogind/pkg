@@ -1,7 +1,5 @@
-#!/to
+elogind@255.17-1
 
-n="elogind"
-v="255.17"
 a="Track logged-in users"
 m="Tox"
 l=("GPL-2.0-or-later" "LGPL-2.1-or-later")

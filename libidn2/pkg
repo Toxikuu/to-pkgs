@@ -1,7 +1,5 @@
-#!/to
+libidn2@2.3.8-1
 
-n="libidn2"
-v="2.3.8"
 a="International domain name library (IDNA2008, Punycode and TR46)"
 m="Tox"
 l=(

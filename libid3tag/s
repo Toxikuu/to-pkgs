@@ -1,6 +1,9 @@
 {
   "name": "libid3tag",
-  "version": "80a23068e0ad03a290b5332c71108770eb1b355a",
+  "version": {
+    "version": "80a23068e0ad03a290b5332c71108770eb1b355a",
+    "release": 1
+  },
   "about": "ID3 tag manipulation library",
   "maintainer": "Tox",
   "licenses": [

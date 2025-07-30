@@ -1,7 +1,5 @@
-#!/to
+xprop@1.2.8-1
 
-n="xprop"
-v="1.2.8"
 a="X property viewer"
 m="Tox"
 l="MIT"

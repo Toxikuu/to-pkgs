@@ -1,6 +1,9 @@
 {
   "name": "senpai",
-  "version": "0.4.1",
+  "version": {
+    "version": "0.4.1",
+    "release": 1
+  },
   "about": "A modern terminal IRC client",
   "maintainer": "Tox",
   "licenses": [

@@ -1,7 +1,5 @@
-#!/to
+jaq@2.3.0-3
 
-n="jaq"
-v="2.3.0"
 tag="v$v"
 a="Command-line JSON processor"
 m="Tox"
@@ -18,11 +16,15 @@ d=(
 
 b() {
 
-CFLAGS+=' -ffat-lto-objects'
+# We're not interested in the jaq playground
+rm -rf "$n-play"
+sed -i "/$n-play/d" Cargo.toml
+
+CFLAGS+=" -ffat-lto-objects"
 cbr
 
 install -vDm755 "target/release/$n" -t "$D/usr/bin/"
-ln -sv "jaq" "$D/usr/bin/jq"
+ln -sv "$n" "$D/usr/bin/jq"
 
 }
 

@@ -1,6 +1,9 @@
 {
   "name": "gtk3",
-  "version": "3.24.49",
+  "version": {
+    "version": "3.24.49",
+    "release": 1
+  },
   "about": "Multi-platform GUI toolkit",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "libxi",
-  "version": "1.8.2",
+  "version": {
+    "version": "1.8.2",
+    "release": 1
+  },
   "about": "X11 Input extension library",
   "maintainer": "Tox",
   "licenses": [

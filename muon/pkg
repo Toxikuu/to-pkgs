@@ -1,7 +1,5 @@
-#!/to
+muon@f33ef03375d4d2b38c933d30c6df410385c224eb-1
 
-n="muon"
-v="f33ef03375d4d2b38c933d30c6df410385c224eb"
 a="An implementation of the meson build system in c99"
 m="Tox"
 l="GPL-3.0"

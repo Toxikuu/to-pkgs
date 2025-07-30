@@ -1,6 +1,9 @@
 {
   "name": "libsndfile",
-  "version": "1.2.2",
+  "version": {
+    "version": "1.2.2",
+    "release": 1
+  },
   "about": "Library for files containing sampled sound",
   "maintainer": "Tox",
   "licenses": [

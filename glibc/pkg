@@ -1,7 +1,5 @@
-#!/to
+glibc@2.41-2
 
-n="glibc"
-v="2.41"
 a="GNU C Library"
 m="Tox"
 l=(
@@ -23,6 +21,7 @@ qa=(
 
 b() {
 
+ltno
 pat "$S/$n-$v-fhs-1.patch"
 
 mkdir -pv build

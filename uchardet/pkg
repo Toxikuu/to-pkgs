@@ -1,7 +1,5 @@
-#!/to
+uchardet@0.0.8-1
 
-n="uchardet"
-v="0.0.8"
 tag="v$v"
 a="Unknown character encoding detector"
 m="Tox"

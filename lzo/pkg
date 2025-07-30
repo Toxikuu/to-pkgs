@@ -1,7 +1,5 @@
-#!/to
+lzo@2.10-1
 
-n="lzo"
-v="2.10"
 a="Portable lossless data compression library"
 m="Tox"
 l="GPL"

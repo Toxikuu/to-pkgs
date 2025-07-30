@@ -1,6 +1,9 @@
 {
   "name": "zathura",
-  "version": "0.5.12",
+  "version": {
+    "version": "0.5.12",
+    "release": 1
+  },
   "about": "Minimal document viewer",
   "maintainer": "Tox",
   "licenses": [

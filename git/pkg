@@ -1,7 +1,5 @@
-#!/to
+git@2.50.1-1
 
-n="git"
-v="2.50.1"
 a="The fast distributed version control system"
 m="Tox"
 l="GPL-2.0-only"

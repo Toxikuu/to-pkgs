@@ -1,7 +1,5 @@
-#!/to
+gsettings-desktop-schemas@48.0-1
 
-n="gsettings-desktop-schemas"
-v="48.0"
 a="Collection of GSettings schemas"
 m="Tox"
 l="LGPL-2.1-or-later"

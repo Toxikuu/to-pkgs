@@ -1,6 +1,9 @@
 {
   "name": "xtrans",
-  "version": "1.6.0",
+  "version": {
+    "version": "1.6.0",
+    "release": 1
+  },
   "about": "X transport library",
   "maintainer": "Tox",
   "licenses": [

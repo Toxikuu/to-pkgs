@@ -1,6 +1,9 @@
 {
   "name": "xcb-util-keysyms",
-  "version": "0.4.1",
+  "version": {
+    "version": "0.4.1",
+    "release": 1
+  },
   "about": "Standard X constants and conversion to/from keycodes",
   "maintainer": "Tox",
   "licenses": [

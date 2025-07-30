@@ -1,5 +1,5 @@
-n="efibootmgr"
-v="18"
+efibootmgr@18-1
+
 a="User-space application to modify the EFI Boot Manager"
 t="cli utils"
 m="Tox"

@@ -1,6 +1,9 @@
 {
   "name": "flatpak",
-  "version": "1.16.1",
+  "version": {
+    "version": "1.16.1",
+    "release": 1
+  },
   "about": "Linux application sandboxing and distribution framework",
   "maintainer": "Tox",
   "licenses": [

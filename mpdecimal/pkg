@@ -1,7 +1,5 @@
-#!/to
+mpdecimal@4.0.1-1
 
-n="mpdecimal"
-v="4.0.1"
 a="Multiple-precision decimal floating point arithmetic library"
 m="Tox"
 l="BSD"

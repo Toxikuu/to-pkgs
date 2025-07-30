@@ -1,8 +1,6 @@
-#!/to
+tealdeer@1.7.2-2
 
-n="tealdeer"
 an="tldr"
-v="1.7.2"
 tag="v$v"
 a="Very fast oxidized tldr implementation"
 m="Tox"
@@ -21,6 +19,10 @@ d=(
 )
 
 b() {
+
+# proc macro freaks out with lto
+RUSTFLAGS="$(echo "$RUSTFLAGS" | sed -e 's|-C lto=\w\+||g' -e 's|-C embed-bitcode=true||g')"
+ltno
 
 cbr
 install -vDm755 "target/release/$an"    -t "$D/usr/bin/"

@@ -1,7 +1,5 @@
-#!/to
+procps-ng@4.0.5-1
 
-n="procps-ng"
-v="4.0.5"
 a="Programs for monitoring processes"
 m="Tox"
 l="GPL2"

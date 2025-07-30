@@ -1,6 +1,9 @@
 {
   "name": "curl",
-  "version": "8.15.0",
+  "version": {
+    "version": "8.15.0",
+    "release": 1
+  },
   "about": "Tool and library for transferring data with URLs",
   "maintainer": "Tox",
   "licenses": [

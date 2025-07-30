@@ -1,6 +1,9 @@
 {
   "name": "neovim",
-  "version": "0.11.3",
+  "version": {
+    "version": "0.11.3",
+    "release": 1
+  },
   "about": "Continuation and extension of Vim",
   "maintainer": "Tox",
   "licenses": [

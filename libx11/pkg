@@ -1,7 +1,5 @@
-#!/to
+libx11@1.8.12-2
 
-n="libx11"
-v="1.8.12"
 a="X11 client-side library"
 m="Tox"
 l="MIT AND X11"
@@ -24,6 +22,7 @@ _cfg=(
     --disable-xf86bigfont
 )
 
+ltno
 def
 
 }

@@ -1,7 +1,5 @@
-#!/to
+libdisplay-info@0.2.0-1
 
-n="libdisplay-info"
-v="0.2.0"
 a="EDID and DisplayID library"
 m="Tox"
 l="MIT"

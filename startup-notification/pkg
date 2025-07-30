@@ -1,7 +1,5 @@
-#!/to
+startup-notification@64eb585315cfb1fb4fe68c8f705956e9fed46545-1
 
-n="startup-notification"
-v="64eb585315cfb1fb4fe68c8f705956e9fed46545"
 a="Libary to monitor and display application startup"
 m="Tox"
 l="LGPL"

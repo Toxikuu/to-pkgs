@@ -1,6 +1,9 @@
 {
   "name": "maim",
-  "version": "803b7fd1a8c8934b64844b93023c1dc0d9cd1d29",
+  "version": {
+    "version": "803b7fd1a8c8934b64844b93023c1dc0d9cd1d29",
+    "release": 1
+  },
   "about": "Make Image utility",
   "maintainer": "Tox",
   "licenses": [

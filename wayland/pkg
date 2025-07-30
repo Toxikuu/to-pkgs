@@ -1,7 +1,5 @@
-#!/to
+wayland@cd0d1543c093d079ecf3444a16a4dcb02007a62a-1
 
-n="wayland"
-v="90187031e6ee0ab5cf2b3ec243a314babf4e8561"
 a="Display server protocol"
 m="Tox"
 l="MIT"

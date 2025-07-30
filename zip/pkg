@@ -1,7 +1,5 @@
-#!/to
+zip@3.0-1
 
-n="zip"
-v="3.0"
 a="Zip compressor"
 m="Tox"
 l="Custom"

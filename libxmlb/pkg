@@ -1,7 +1,5 @@
-#!/to
+libxmlb@0.3.22-1
 
-n="libxmlb"
-v="0.3.22"
 a="A library to help create and query binary XML blobs"
 m="Tox"
 l="LGPL-2.1"

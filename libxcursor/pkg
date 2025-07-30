@@ -1,7 +1,5 @@
-#!/to
+libxcursor@1.2.3-1
 
-n="libxcursor"
-v="1.2.3"
 a="X cursor management library"
 m="Tox"
 l="MIT"

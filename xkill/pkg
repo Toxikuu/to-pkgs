@@ -1,7 +1,5 @@
-#!/to
+xkill@1.0.6-1
 
-n="xkill"
-v="1.0.6"
 a="Kill a client by its X resource"
 m="Tox"
 l="Custom"

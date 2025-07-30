@@ -1,7 +1,5 @@
-#!/to
+xcb-util-errors@1.0.1-1
 
-n="xcb-util-errors"
-v="1.0.1"
 a="XCB errors library"
 m="Tox"
 l="MIT"

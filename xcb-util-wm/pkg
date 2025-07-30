@@ -1,7 +1,5 @@
-#!/to
+xcb-util-wm@0.4.2-1
 
-n="xcb-util-wm"
-v="0.4.2"
 a="Client and window-manager helpers for EWMH and ICCCM"
 m="Tox"
 l="X11"

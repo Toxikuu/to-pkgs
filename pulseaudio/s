@@ -1,6 +1,9 @@
 {
   "name": "pulseaudio",
-  "version": "17.0",
+  "version": {
+    "version": "17.0",
+    "release": 1
+  },
   "about": "General-purpose sound server",
   "maintainer": "Tox",
   "licenses": [

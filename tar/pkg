@@ -1,7 +1,5 @@
-#!/to
+tar@1.35-1
 
-n="tar"
-v="1.35"
 a="Archive utility"
 m="Tox"
 l="GPL3"

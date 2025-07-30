@@ -1,7 +1,5 @@
-#!/to
+mandoc@1.14.6-1
 
-n="mandoc"
-v="1.14.6"
 a="A suite of tools compiling mdoc from the OpenBSD project"
 m="Tox"
 l="ISC"

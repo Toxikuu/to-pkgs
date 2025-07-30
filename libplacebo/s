@@ -1,6 +1,9 @@
 {
   "name": "libplacebo",
-  "version": "7.351.0",
+  "version": {
+    "version": "7.351.0",
+    "release": 2
+  },
   "about": "Image and video primitives and shaders library, featuring a high-quality rendering pipeline",
   "maintainer": "Tox",
   "licenses": [

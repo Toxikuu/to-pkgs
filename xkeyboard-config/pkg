@@ -1,7 +1,5 @@
-#!/to
+xkeyboard-config@2.45-1
 
-n="xkeyboard-config"
-v="2.45"
 a="X keyboard configuration database"
 m="Tox"
 l="Custom"

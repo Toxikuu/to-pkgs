@@ -1,7 +1,5 @@
-#!/to
+iso-codes@4.18.0-1
 
-n="iso-codes"
-v="4.18.0"
 tag="v$v"
 a="Database of country, language, and currency names"
 m="Tox"

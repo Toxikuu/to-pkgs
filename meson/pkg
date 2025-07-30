@@ -1,7 +1,5 @@
-#!/to
+meson@1.8.2-1
 
-n="meson"
-v="1.8.2"
 a="High productivity build system"
 m="Tox"
 l="Apache-2.0"

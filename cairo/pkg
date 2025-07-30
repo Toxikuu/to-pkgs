@@ -1,7 +1,5 @@
-#!/to
+cairo@1.18.4-1
 
-n="cairo"
-v="1.18.4"
 a="2D graphics library supporting multiple output devices"
 m="Tox"
 l="LGPL-2.1-only OR MPL-1.1"

@@ -1,7 +1,5 @@
-#!/to
+eza@0.23.0-2
 
-n="eza"
-v="0.22.1"
 tag="v$v"
 a="Modern ls alternative"
 m="Tox"
@@ -25,8 +23,7 @@ for i in {1,5}; do
     install -vDm644 target/man-$v/*.$i -t "$D/usr/share/man/man$i/"
 done
 
-pat "$A/icons.patch"
-CFLAGS+=' -ffat-lto-objects'
+rm -vf rust-toolchain.toml
 cbr
 install -vDm755 "target/release/$n" "$D/usr/bin/$n"
 

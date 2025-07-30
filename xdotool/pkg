@@ -1,7 +1,5 @@
-#!/to
+xdotool@33092d8a74d60c9ad3ab39c4f05b90e047ea51d8-1
 
-n="xdotool"
-v="33092d8a74d60c9ad3ab39c4f05b90e047ea51d8"
 a="X11 automation tool"
 m="Tox"
 l="BSD"

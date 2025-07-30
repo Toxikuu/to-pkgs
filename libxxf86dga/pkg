@@ -1,7 +1,5 @@
-#!/to
+libxxf86dga@1.1.6-1
 
-n="libxxf86dga"
-v="1.1.6"
 a="X Direct Graphics Access extension library"
 m="Tox"
 l="Custom"

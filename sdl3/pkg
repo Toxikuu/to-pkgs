@@ -1,7 +1,5 @@
-#!/to
+sdl3@3.2.18-1
 
-n="sdl3"
-v="3.2.18"
 a="Simple Directmedia Layer"
 m="Tox"
 l="Zlib"

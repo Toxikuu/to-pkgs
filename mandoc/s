@@ -1,6 +1,9 @@
 {
   "name": "mandoc",
-  "version": "1.14.6",
+  "version": {
+    "version": "1.14.6",
+    "release": 1
+  },
   "about": "A suite of tools compiling mdoc from the OpenBSD project",
   "maintainer": "Tox",
   "licenses": [

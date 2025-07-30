@@ -1,7 +1,5 @@
-#!/to
+libbsd@0.12.2-1
 
-n="libbsd"
-v="0.12.2"
 a="BSD compatibility library"
 m="Tox"
 l="Custom"

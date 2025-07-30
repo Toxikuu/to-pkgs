@@ -1,7 +1,5 @@
-#!/to
+libxrandr@1.5.4-1
 
-n="libxrandr"
-v="1.5.4"
 a="X11 RandR extension library"
 m="Tox"
 l="Custom"

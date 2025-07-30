@@ -1,6 +1,9 @@
 {
   "name": "uchardet",
-  "version": "0.0.8",
+  "version": {
+    "version": "0.0.8",
+    "release": 1
+  },
   "about": "Unknown character encoding detector",
   "maintainer": "Tox",
   "licenses": [

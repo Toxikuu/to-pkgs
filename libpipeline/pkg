@@ -1,7 +1,5 @@
-#!/to
+libpipeline@1.5.8-1
 
-n="libpipeline"
-v="1.5.8"
 a="Library for manipulating subprocess pipelines"
 m="Tox"
 l="GPL-3.0-or-later"

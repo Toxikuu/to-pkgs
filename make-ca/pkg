@@ -1,7 +1,5 @@
-#!/to
+make-ca@1.16.1-1
 
-n="make-ca"
-v="1.16.1"
 a="PKI setup script for LFS"
 m="Tox"
 l=(

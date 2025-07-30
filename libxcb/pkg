@@ -1,7 +1,5 @@
-#!/to
+libxcb@1.17.0-1
 
-n="libxcb"
-v="1.17.0"
 a="X11 client-side library"
 m="Tox"
 l="X11"

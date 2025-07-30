@@ -1,7 +1,5 @@
-#!/to
+jasper@4.2.5-1
 
-n="jasper"
-v="4.2.5"
 tag="version-$v"
 a="Reference implementation of the JPEG-2000 codec"
 m="Tox"

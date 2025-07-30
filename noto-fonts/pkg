@@ -1,8 +1,6 @@
-#!/to
+noto-fonts@2025.07.01-1
 
-n="noto-fonts"
 an="${n/-/}"
-v="2025.07.01"
 a="Noto TTF fonts"
 m="Tox"
 l="OFL-1.1-no-RFN"

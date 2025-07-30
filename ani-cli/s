@@ -1,6 +1,9 @@
 {
   "name": "ani-cli",
-  "version": "4.10",
+  "version": {
+    "version": "4.10",
+    "release": 1
+  },
   "about": "Utility to browse and play anime",
   "maintainer": "Tox",
   "licenses": [

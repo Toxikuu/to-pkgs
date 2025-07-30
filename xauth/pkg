@@ -1,7 +1,5 @@
-#!/to
+xauth@1.1.4-1
 
-n="xauth"
-v="1.1.4"
 a="X authorization settings program"
 m="Tox"
 l="MIT"

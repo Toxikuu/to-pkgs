@@ -1,7 +1,5 @@
-#!/to
+polkit@126-1
 
-n="polkit"
-v="126"
 a="Policy Toolkit"
 m="Tox"
 l="LGPL-2.0-or-later"

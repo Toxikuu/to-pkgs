@@ -1,6 +1,9 @@
 {
   "name": "gmp",
-  "version": "6.3.0",
+  "version": {
+    "version": "6.3.0",
+    "release": 1
+  },
   "about": "Arbitrary precision math libraries",
   "maintainer": "Tox",
   "licenses": [

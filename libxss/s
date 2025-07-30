@@ -1,6 +1,9 @@
 {
   "name": "libxss",
-  "version": "1.2.4",
+  "version": {
+    "version": "1.2.4",
+    "release": 1
+  },
   "about": "X11 Screen Saver extension library",
   "maintainer": "Tox",
   "licenses": [

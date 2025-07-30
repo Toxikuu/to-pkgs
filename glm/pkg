@@ -1,7 +1,5 @@
-#!/to
+glm@1.0.1-1
 
-n="glm"
-v="1.0.1"
 a="OpenGL math library"
 m="Tox"
 l="MIT"

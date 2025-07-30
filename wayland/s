@@ -1,6 +1,9 @@
 {
   "name": "wayland",
-  "version": "90187031e6ee0ab5cf2b3ec243a314babf4e8561",
+  "version": {
+    "version": "cd0d1543c093d079ecf3444a16a4dcb02007a62a",
+    "release": 1
+  },
   "about": "Display server protocol",
   "maintainer": "Tox",
   "licenses": [

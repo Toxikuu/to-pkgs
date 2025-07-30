@@ -1,7 +1,5 @@
-#!/to
+setuptools@80.9.0-1
 
-n="setuptools"
-v="80.9.0"
 a="Tool for managing Python packages"
 m="Tox"
 l="MIT"

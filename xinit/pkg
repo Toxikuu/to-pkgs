@@ -1,7 +1,5 @@
-#!/to
+xinit@1.4.4-1
 
-n="xinit"
-v="1.4.4"
 a="X initialization program"
 m="Tox"
 l=("MIT" "X11")

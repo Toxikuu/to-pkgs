@@ -1,6 +1,9 @@
 {
   "name": "libretls",
-  "version": "3.8.1",
+  "version": {
+    "version": "3.8.1",
+    "release": 1
+  },
   "about": "Port of libtls from LibreSSL to OpenSSL",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "libtirpc",
-  "version": "240ee6c774729c9c24812aa8912f1fcf8996b162",
+  "version": {
+    "version": "240ee6c774729c9c24812aa8912f1fcf8996b162",
+    "release": 1
+  },
   "about": "Transport-Independent RPC library",
   "maintainer": "Tox",
   "licenses": [

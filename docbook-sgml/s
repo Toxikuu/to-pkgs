@@ -1,6 +1,9 @@
 {
   "name": "docbook-sgml",
-  "version": "4.5",
+  "version": {
+    "version": "4.5",
+    "release": 1
+  },
   "about": "Document type definitions for verification of SGML data files against the DocBook rule set",
   "maintainer": "Tox",
   "licenses": [

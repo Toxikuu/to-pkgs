@@ -1,6 +1,9 @@
 {
   "name": "shared-mime-info",
-  "version": "2.4",
+  "version": {
+    "version": "2.4",
+    "release": 1
+  },
   "about": "MIME database",
   "maintainer": "Tox",
   "licenses": [

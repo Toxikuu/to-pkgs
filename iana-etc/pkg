@@ -1,7 +1,5 @@
-#!/to
+iana-etc@20250717-1
 
-n="iana-etc"
-v="20250711"
 a="The Internet Assigned Numbers Authority's services and protocols"
 m="Tox"
 l="MIT"

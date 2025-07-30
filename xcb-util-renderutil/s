@@ -1,6 +1,9 @@
 {
   "name": "xcb-util-renderutil",
-  "version": "0.3.10",
+  "version": {
+    "version": "0.3.10",
+    "release": 1
+  },
   "about": "Convenience functions for the X Render extension",
   "maintainer": "Tox",
   "licenses": [

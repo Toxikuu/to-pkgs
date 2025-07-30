@@ -1,7 +1,5 @@
-#!/to
+bspwm@af3bd8b4351f4478fe0fe3cfd6c09e44cb108b4b-1
 
-n="bspwm"
-v="af3bd8b4351f4478fe0fe3cfd6c09e44cb108b4b"
 a="Tiling window manager based on binary space partitioning"
 m="Tox"
 l="BSD-2-Clause"

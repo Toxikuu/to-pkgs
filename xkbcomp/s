@@ -1,6 +1,9 @@
 {
   "name": "xkbcomp",
-  "version": "1.4.7",
+  "version": {
+    "version": "1.4.7",
+    "release": 1
+  },
   "about": "X Keyboard description compiler",
   "maintainer": "Tox",
   "licenses": [

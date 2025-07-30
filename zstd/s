@@ -1,6 +1,9 @@
 {
   "name": "zstd",
-  "version": "1.5.7",
+  "version": {
+    "version": "1.5.7",
+    "release": 1
+  },
   "about": "The Zstandard compression algorithm",
   "maintainer": "Tox",
   "licenses": [

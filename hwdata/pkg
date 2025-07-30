@@ -1,7 +1,5 @@
-#!/to
+hwdata@0.397-1
 
-n="hwdata"
-v="0.397"
 tag="v$v"
 a="Hardware identification databases"
 m="Tox"

@@ -1,7 +1,5 @@
-#!/to
+libuv@1.51.0-1
 
-n="libuv"
-v="1.51.0"
 a="Multi-platform support library focusing on asyncio"
 m="Tox"
 l="custom"

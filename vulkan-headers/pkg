@@ -1,7 +1,5 @@
-#!/to
+vulkan-headers@1.4.321.0-1
 
-n="vulkan-headers"
-v="1.4.321.0"
 tag="vulkan-sdk-$v"
 a="Vulkan API header files"
 m="Tox"

@@ -1,6 +1,9 @@
 {
   "name": "liburcu",
-  "version": "0.15.3",
+  "version": {
+    "version": "0.15.3",
+    "release": 1
+  },
   "about": "Userspace read-copy-update library",
   "maintainer": "Tox",
   "licenses": [

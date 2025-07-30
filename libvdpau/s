@@ -1,6 +1,9 @@
 {
   "name": "libvdpau",
-  "version": "2afa3f989af24a922692ac719fae23c321776cdb",
+  "version": {
+    "version": "2afa3f989af24a922692ac719fae23c321776cdb",
+    "release": 1
+  },
   "about": "NVIDIA's VDPAU library",
   "maintainer": "Tox",
   "licenses": [

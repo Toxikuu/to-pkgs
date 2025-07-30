@@ -1,6 +1,9 @@
 {
   "name": "xcb-util-image",
-  "version": "0.4.1",
+  "version": {
+    "version": "0.4.1",
+    "release": 1
+  },
   "about": "XCB port of Xlib's XImage and XShmImage",
   "maintainer": "Tox",
   "licenses": [

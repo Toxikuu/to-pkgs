@@ -1,6 +1,9 @@
 {
   "name": "xcb-proto",
-  "version": "1.17.0",
+  "version": {
+    "version": "1.17.0",
+    "release": 1
+  },
   "about": "XML-XCB protocol descriptions",
   "maintainer": "Tox",
   "licenses": [

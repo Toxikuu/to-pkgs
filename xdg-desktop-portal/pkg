@@ -1,7 +1,5 @@
-#!/to
+xdg-desktop-portal@1.20.3-1
 
-n="xdg-desktop-portal"
-v="1.20.3"
 a="Desktop integration portal"
 m="Tox"
 l="LGPL-2.1"

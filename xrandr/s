@@ -1,6 +1,9 @@
 {
   "name": "xrandr",
-  "version": "1.5.3",
+  "version": {
+    "version": "1.5.3",
+    "release": 1
+  },
   "about": "RandR CLI",
   "maintainer": "Tox",
   "licenses": [

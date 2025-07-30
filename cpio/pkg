@@ -1,7 +1,5 @@
-#!/to
+cpio@2.15-1
 
-n="cpio"
-v="2.15"
 a="Archival utility"
 m="Tox"
 l="GPL-3.0-or-later"

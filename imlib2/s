@@ -1,6 +1,9 @@
 {
   "name": "imlib2",
-  "version": "72b610076ab5cd7645d0b439f17486beffda307a",
+  "version": {
+    "version": "72b610076ab5cd7645d0b439f17486beffda307a",
+    "release": 1
+  },
   "about": "Image loading and rendering library",
   "maintainer": "Tox",
   "licenses": [

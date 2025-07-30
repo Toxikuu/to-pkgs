@@ -1,7 +1,5 @@
-#!/to
+flex@2.6.4-1
 
-n="flex"
-v="2.6.4"
 a="Fast lexical analyzer generator"
 m="Tox"
 l="Custom"

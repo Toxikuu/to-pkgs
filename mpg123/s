@@ -1,6 +1,9 @@
 {
   "name": "mpg123",
-  "version": "1.33.0",
+  "version": {
+    "version": "1.33.0",
+    "release": 1
+  },
   "about": "Fast CLI MP3 player",
   "maintainer": "Tox",
   "licenses": [

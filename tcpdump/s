@@ -1,6 +1,9 @@
 {
   "name": "tcpdump",
-  "version": "4.99.5",
+  "version": {
+    "version": "4.99.5",
+    "release": 1
+  },
   "about": "Powerful command-line packet analyzer",
   "maintainer": "Tox",
   "licenses": [

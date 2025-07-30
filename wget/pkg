@@ -1,7 +1,5 @@
-#!/to
+wget@2.2.0-1
 
-n="wget"
-v="2.2.0"
 an="$n${v:0:1}" # wget2
 a="Network utility to retrieve files from the web"
 m="Tox"

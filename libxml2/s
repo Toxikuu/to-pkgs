@@ -1,6 +1,9 @@
 {
   "name": "libxml2",
-  "version": "2.14.5",
+  "version": {
+    "version": "2.14.5",
+    "release": 1
+  },
   "about": "XML parsing libraries",
   "maintainer": "Tox",
   "licenses": [

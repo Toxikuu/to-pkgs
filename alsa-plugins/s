@@ -1,6 +1,9 @@
 {
   "name": "alsa-plugins",
-  "version": "1.2.12",
+  "version": {
+    "version": "1.2.12",
+    "release": 1
+  },
   "about": "ALSA plugins",
   "maintainer": "Tox",
   "licenses": [

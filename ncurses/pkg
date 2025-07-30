@@ -1,18 +1,14 @@
-#!/to
+ncurses@6.5.20250720-1
 
-n="ncurses"
-v="6.5-20250712"
+_uv="${v%.*}-${v##*.}" # upstream's version
 a="Libraries for terminal-independent character screen handling"
 m="Tox"
 l="MIT"
 t="core critical lib"
 u="https://invisible-mirror.net/archives/$n/current/?C=M;O=D"
-vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d'\"' -f4 | grep -Eo '$n-[0-9]\.[0-9]-[0-9]{8}'"
+vf="curl -s '$u' | grep '$n-' | head -n1 | cut -d'\"' -f4 | grep -Eo '$n-[0-9]\.[0-9]-[0-9]{8}' | cut -d- -f2- | sed s,-,.,"
 
-s=(
-    "${u%\?*}$n-$v.tgz"
-)
-
+s="${u%\?*}$n-$_uv.tgz"
 d="glibc"
 
 b() {

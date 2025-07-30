@@ -1,6 +1,9 @@
 {
   "name": "sdl3",
-  "version": "3.2.18",
+  "version": {
+    "version": "3.2.18",
+    "release": 1
+  },
   "about": "Simple Directmedia Layer",
   "maintainer": "Tox",
   "licenses": [

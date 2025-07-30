@@ -1,6 +1,9 @@
 {
   "name": "openssl",
-  "version": "3.5.1",
+  "version": {
+    "version": "3.5.1",
+    "release": 1
+  },
   "about": "Cryptography tools and libraries",
   "maintainer": "Tox",
   "licenses": [

@@ -1,7 +1,5 @@
-#!/to
+pulseaudio@17.0-1
 
-n="pulseaudio"
-v="17.0"
 a="General-purpose sound server"
 m="Tox"
 l="LGPL-2.1-or-later"

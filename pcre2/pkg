@@ -1,7 +1,5 @@
-#!/to
+pcre2@10.45-1
 
-n="pcre2"
-v="10.45"
 a="Perl-Compatible Regular Expressions"
 m="Tox"
 l=(

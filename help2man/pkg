@@ -1,7 +1,5 @@
-#!/to
+help2man@1.49.3-1
 
-n="help2man"
-v="1.49.3"
 a="Conversion tool to create man files"
 m="Tox"
 l="GPL"

@@ -1,6 +1,9 @@
 {
   "name": "groff",
-  "version": "1.23.0",
+  "version": {
+    "version": "1.23.0",
+    "release": 1
+  },
   "about": "Programs for processing and formatting text and images",
   "maintainer": "Tox",
   "licenses": [

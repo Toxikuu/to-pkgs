@@ -1,8 +1,6 @@
-#!/to
+fuse2@2.9.9-1
 
-n="fuse2"
 an="${n::-1}" # fuse
-v="2.9.9"
 a="Filesystem in userspace"
 m="Tox"
 l="GPL2"

@@ -1,7 +1,5 @@
-#!/to
+libplacebo@7.351.0-2
 
-n="libplacebo"
-v="7.351.0"
 tag="v$v"
 a="Image and video primitives and shaders library, featuring a high-quality rendering pipeline"
 m="Tox"
@@ -32,6 +30,9 @@ d=(
 )
 
 b() {
+
+ltno # tests fail
+pat "$A/glslang-linking.patch"
 
 _cfg=(
     -D tests=true

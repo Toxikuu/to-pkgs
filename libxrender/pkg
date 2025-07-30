@@ -1,7 +1,5 @@
-#!/to
+libxrender@0.9.12-1
 
-n="libxrender"
-v="0.9.12"
 a="X Rendering Extension client library"
 m="Tox"
 l="MIT"

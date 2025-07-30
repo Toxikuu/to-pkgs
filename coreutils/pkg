@@ -1,7 +1,5 @@
-#!/to
+coreutils@9.7-1
 
-n="coreutils"
-v="9.7"
 a="Basic utilities needed by every OS"
 m="Tox"
 l="GPL-3.0"

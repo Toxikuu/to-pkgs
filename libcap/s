@@ -1,6 +1,9 @@
 {
   "name": "libcap",
-  "version": "a37b30288380b7ca1e513611eb1c2a3ac5493cc5",
+  "version": {
+    "version": "a37b30288380b7ca1e513611eb1c2a3ac5493cc5",
+    "release": 1
+  },
   "about": "POSIX 1003.1e capabilities",
   "maintainer": "Tox",
   "licenses": [

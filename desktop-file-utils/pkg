@@ -1,7 +1,5 @@
-#!/to
+desktop-file-utils@0.28-1
 
-n="desktop-file-utils"
-v="0.28"
 a="Desktop entry utilities"
 m="Tox"
 l="GPL-2.0-or-later"

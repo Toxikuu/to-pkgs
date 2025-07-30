@@ -1,6 +1,9 @@
 {
   "name": "nspr",
-  "version": "4.36",
+  "version": {
+    "version": "4.37",
+    "release": 1
+  },
   "about": "Netscape Portable Runtime",
   "maintainer": "Tox",
   "licenses": [
@@ -16,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://archive.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz",
-      "dest": "nspr-4.36.tar.gz"
+      "url": "https://archive.mozilla.org/pub/nspr/releases/v4.37/src/nspr-4.37.tar.gz",
+      "dest": "nspr-4.37.tar.gz"
     }
   ],
   "dependencies": [

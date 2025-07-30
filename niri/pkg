@@ -1,0 +1,54 @@
+niri@25.05.1-2
+
+tag="v$v"
+a="A scrolling Wayland compositor"
+m="Tox"
+l="GPL-3.0-or-later"
+t="wm"
+u="https://github.com/YaLTeR/$n.git"
+
+s="$u"
+d=(
+    "cairo"
+    "gcc"
+    "glib"
+    "glibc"
+    "libdisplay-info"
+    "libinput"
+    "pipewire"
+    "libxkbcommon"
+    "mesa"
+    "pango"
+    "pixman"
+    "seatd"
+    "udev"
+    "nvidia"
+    "xdg-desktop-portal-gtk"
+    "b,llvm"
+    "b,rust"
+    "b,git"
+)
+
+b() {
+
+cbr
+
+install -vDm755 "target/release/$n"     -t "$D/usr/bin/"
+install -vDm755 "resources/$n-session"  -t "$D/usr/bin"
+
+install -vDm644 "resources/$n.desktop" -t "$D/usr/share/wayland-sessions/"
+install -vDm644 "resources/$n-portals.conf" -t "$D/usr/share/xdg-desktop-portal/"
+install -vDm644 resources/default-config.kdl README.md -t "$D/usr/share/doc/$n/"
+
+"target/release/$n" completions bash |
+    install -vDm644 /dev/stdin "$D/usr/share/bash-completion/completions/$n"
+
+}
+
+# t() {
+#
+# export XDG_RUNTIME_DIR="$(mktemp -d)"
+# export RAYON_NUM_THREADS=4
+# cargo test --all --exclude "$n-visual-tests"
+#
+# }

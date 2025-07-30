@@ -1,7 +1,5 @@
-#!/to
+shaderc@2025.3-1
 
-n="shaderc"
-v="2025.3"
 tag="v$v"
 a="Shader compilation toolkit"
 m="Tox"

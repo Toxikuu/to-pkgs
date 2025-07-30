@@ -1,7 +1,5 @@
-#!/to
+util-linux@2.41.1-1
 
-n="util-linux"
-v="2.41.1"
 a="Miscellaneous utility prorgrams"
 m="Tox"
 l=(

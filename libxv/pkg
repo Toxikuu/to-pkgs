@@ -1,7 +1,5 @@
-#!/to
+libxv@1.0.13-1
 
-n="libxv"
-v="1.0.13"
 a="X Video extension library"
 m="Tox"
 l="MIT"

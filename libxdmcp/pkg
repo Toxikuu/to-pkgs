@@ -1,7 +1,5 @@
-#!/to
+libxdmcp@1.1.5-1
 
-n="libxdmcp"
-v="1.1.5"
 a="The X Display Manager Control Protocol"
 m="Tox"
 l="MIT"

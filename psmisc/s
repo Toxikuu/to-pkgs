@@ -1,6 +1,9 @@
 {
   "name": "psmisc",
-  "version": "252db9b91d0cdbc4bbdbd8c645f7df30235dc36f",
+  "version": {
+    "version": "252db9b91d0cdbc4bbdbd8c645f7df30235dc36f",
+    "release": 1
+  },
   "about": "Process monitoring programs",
   "maintainer": "Tox",
   "licenses": [

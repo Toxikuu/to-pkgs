@@ -1,6 +1,9 @@
 {
   "name": "flit-core",
-  "version": "3.12.0",
+  "version": {
+    "version": "3.12.0",
+    "release": 1
+  },
   "about": "Tool for building distributable Python modules",
   "maintainer": "Tox",
   "licenses": [

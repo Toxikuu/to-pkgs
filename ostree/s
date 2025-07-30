@@ -1,6 +1,9 @@
 {
   "name": "ostree",
-  "version": "2025.3",
+  "version": {
+    "version": "2025.3",
+    "release": 1
+  },
   "about": "OS and container deployment utility",
   "maintainer": "Tox",
   "licenses": [

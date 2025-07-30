@@ -1,6 +1,9 @@
 {
   "name": "tzdata",
-  "version": "2025b",
+  "version": {
+    "version": "2025b",
+    "release": 1
+  },
   "about": "Timezone data",
   "maintainer": "Tox",
   "licenses": [

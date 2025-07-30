@@ -1,7 +1,5 @@
-#!/to
+at-spi2-core@2.57.0-1
 
-n="at-spi2-core"
-v="2.57.0"
 a="Comprehensive accessibility framework for GNOME's Assistive Technologies"
 m="Tox"
 l="LGPL-2.1-or-later"

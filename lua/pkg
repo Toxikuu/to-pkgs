@@ -1,7 +1,5 @@
-#!/to
+lua@5.4.8-1
 
-n="lua"
-v="5.4.8" # TODO: Add and use a variable for MINOR
 a="Roblox language"
 m="Tox"
 l="LICENSE"

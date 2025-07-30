@@ -1,6 +1,9 @@
 {
   "name": "polkit",
-  "version": "126",
+  "version": {
+    "version": "126",
+    "release": 1
+  },
   "about": "Policy Toolkit",
   "maintainer": "Tox",
   "licenses": [

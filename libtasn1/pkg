@@ -1,7 +1,5 @@
-#!/to
+libtasn1@4.20.0-1
 
-n="libtasn1"
-v="4.20.0"
 a="Highly portable ASN.1 library"
 m="Tox"
 l=(

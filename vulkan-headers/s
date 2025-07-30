@@ -1,6 +1,9 @@
 {
   "name": "vulkan-headers",
-  "version": "1.4.321.0",
+  "version": {
+    "version": "1.4.321.0",
+    "release": 1
+  },
   "about": "Vulkan API header files",
   "maintainer": "Tox",
   "licenses": [

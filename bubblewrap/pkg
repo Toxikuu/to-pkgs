@@ -1,7 +1,5 @@
-#!/to
+bubblewrap@0.11.0-1
 
-n="bubblewrap"
-v="0.11.0"
 tag="v$v"
 a="Low-level unprivileged sandboxing tool"
 m="Tox"

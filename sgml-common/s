@@ -1,6 +1,9 @@
 {
   "name": "sgml-common",
-  "version": "0.6.3",
+  "version": {
+    "version": "0.6.3",
+    "release": 1
+  },
   "about": "Tools for maintaining centralized SGML catalogs",
   "maintainer": "Tox",
   "licenses": [

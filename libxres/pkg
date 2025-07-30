@@ -1,7 +1,5 @@
-#!/to
+libxres@1.2.2-1
 
-n="libxres"
-v="1.2.2"
 a="X11 Resource extension library"
 m="Tox"
 l="X11"

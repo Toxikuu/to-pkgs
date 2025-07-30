@@ -1,7 +1,5 @@
-#!/to
+findutils@4.10.0-1
 
-n="findutils"
-v="4.10.0"
 a="Programs to find and execute commands on files"
 m="Tox"
 l="GPL-3.0-or-later"

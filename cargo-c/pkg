@@ -1,7 +1,5 @@
-#!/to
+cargo-c@0.10.14-2
 
-n="cargo-c"
-v="0.10.14"
 a="Cargo subcommand to create C-ABI compatible libraries"
 m="Tox"
 l="MIT"
@@ -21,6 +19,9 @@ d=(
 )
 
 b() {
+
+RUSTFLAGS="$(echo "$RUSTFLAGS" | sed -e 's|-C lto=\w\+||g' -e 's|-C embed-bitcode=true||g')"
+ltno
 
 export RUST_TOOLCHAIN='stable'
 export CFLAGS+=' -ffat-lto-objects'

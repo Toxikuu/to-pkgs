@@ -1,7 +1,5 @@
-#!/to
+libtirpc@240ee6c774729c9c24812aa8912f1fcf8996b162-1
 
-n="libtirpc"
-v="240ee6c774729c9c24812aa8912f1fcf8996b162"
 a="Transport-Independent RPC library"
 m="Tox"
 l=(

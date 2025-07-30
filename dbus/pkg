@@ -1,7 +1,5 @@
-#!/to
+dbus@1.16.2-1
 
-n="dbus"
-v="1.16.2"
 a="Message bus system"
 m="Tox"
 l=(

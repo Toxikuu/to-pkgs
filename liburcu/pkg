@@ -1,7 +1,5 @@
-#!/to
+liburcu@0.15.3-1
 
-n="liburcu"
-v="0.15.3"
 tag="v$v"
 a="Userspace read-copy-update library"
 m="Tox"

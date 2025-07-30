@@ -1,7 +1,5 @@
-#!/to
+xdg-user-dirs@0.18-1
 
-n="xdg-user-dirs"
-v="0.18"
 a="User directory management tool"
 m="Tox"
 l="GPL"

@@ -1,6 +1,9 @@
 {
   "name": "glu",
-  "version": "a2b96c7bba8db8fec3e02fb4227a7f7b02cabad1",
+  "version": {
+    "version": "a2b96c7bba8db8fec3e02fb4227a7f7b02cabad1",
+    "release": 1
+  },
   "about": "Mesa OpenGL Utility library",
   "maintainer": "Tox",
   "licenses": [

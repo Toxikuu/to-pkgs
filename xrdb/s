@@ -1,6 +1,9 @@
 {
   "name": "xrdb",
-  "version": "1.2.2",
+  "version": {
+    "version": "1.2.2",
+    "release": 1
+  },
   "about": "X resource database utility",
   "maintainer": "Tox",
   "licenses": [

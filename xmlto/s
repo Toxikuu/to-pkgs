@@ -1,6 +1,9 @@
 {
   "name": "xmlto",
-  "version": "0.0.29",
+  "version": {
+    "version": "0.0.29",
+    "release": 1
+  },
   "about": "Convert XML to many other formats",
   "maintainer": "Tox",
   "licenses": [

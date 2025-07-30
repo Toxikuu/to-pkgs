@@ -1,6 +1,9 @@
 {
   "name": "libaom",
-  "version": "3.12.1",
+  "version": {
+    "version": "3.12.1",
+    "release": 1
+  },
   "about": "Alliance for Open Media video codec",
   "maintainer": "Tox",
   "licenses": [

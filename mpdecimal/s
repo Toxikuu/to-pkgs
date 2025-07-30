@@ -1,6 +1,9 @@
 {
   "name": "mpdecimal",
-  "version": "4.0.1",
+  "version": {
+    "version": "4.0.1",
+    "release": 1
+  },
   "about": "Multiple-precision decimal floating point arithmetic library",
   "maintainer": "Tox",
   "licenses": [

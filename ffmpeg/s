@@ -1,6 +1,9 @@
 {
   "name": "ffmpeg",
-  "version": "7.1.1",
+  "version": {
+    "version": "7.1.1",
+    "release": 1
+  },
   "about": "Play, record, convert, and stream audio and video",
   "maintainer": "Tox",
   "licenses": [

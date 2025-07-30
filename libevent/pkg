@@ -1,7 +1,5 @@
-#!/to
+libevent@2.1.12-1
 
-n="libevent"
-v="2.1.12"
 a="Asynchronous event library"
 m="Tox"
 l="BSD"

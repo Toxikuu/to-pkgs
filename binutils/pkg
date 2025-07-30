@@ -1,7 +1,5 @@
-#!/to
+binutils@2.44-1
 
-n="binutils"
-v="2.44"
 a="Programs for working with binary and object files"
 m="Tox"
 l=(

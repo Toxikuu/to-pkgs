@@ -1,7 +1,5 @@
-#!/to
+xev@1.2.6-1
 
-n="xev"
-v="1.2.6"
 a="Print contents of X events"
 m="Tox"
 l="MIT"

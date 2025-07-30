@@ -1,7 +1,5 @@
-#!/to
+libassuan@3.0.2-1
 
-n="libassuan"
-v="3.0.2"
 a="IPC library"
 m="Tox"
 l="LGPL-2.1-or-later AND GPL-3.0-or-later AND FSFULLR"

@@ -1,6 +1,9 @@
 {
   "name": "e2fsprogs",
-  "version": "1.47.3",
+  "version": {
+    "version": "1.47.3",
+    "release": 1
+  },
   "about": "Programs for the ext4 filesystem",
   "maintainer": "Tox",
   "licenses": [

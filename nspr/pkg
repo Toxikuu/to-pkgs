@@ -1,7 +1,5 @@
-#!/to
+nspr@4.37-1
 
-n="nspr"
-v="4.36"
 a="Netscape Portable Runtime"
 m="Tox"
 l="MPL-2.0"

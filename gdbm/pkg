@@ -1,7 +1,5 @@
-#!/to
+gdbm@1.25-1
 
-n="gdbm"
-v="1.25"
 a="The GNU Database Manager"
 m="Tox"
 l="GPL-3.0-or-later"

@@ -1,7 +1,5 @@
-#!/to
+gmp@6.3.0-1
 
-n="gmp"
-v="6.3.0"
 a="Arbitrary precision math libraries"
 m="Tox"
 l=(

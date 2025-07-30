@@ -1,6 +1,9 @@
 {
   "name": "nvidia",
-  "version": "575.64.03",
+  "version": {
+    "version": "575.64.03",
+    "release": 1
+  },
   "about": "NVIDIA drivers",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "sxhkd",
-  "version": "b0923b6b3d5d85b1ff80a5bb286934b8721a7c08",
+  "version": {
+    "version": "b0923b6b3d5d85b1ff80a5bb286934b8721a7c08",
+    "release": 1
+  },
   "about": "Simple X hotkey daemon",
   "maintainer": "Tox",
   "licenses": [

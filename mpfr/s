@@ -1,6 +1,9 @@
 {
   "name": "mpfr",
-  "version": "9ee7521629dcbd2f0c744ef95554f9b2a644530c",
+  "version": {
+    "version": "ac0708cd0c390c915e87c9427f54ed542619697f",
+    "release": 1
+  },
   "about": "Multiple-precision floating-point math library",
   "maintainer": "Tox",
   "licenses": [

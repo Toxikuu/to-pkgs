@@ -1,6 +1,9 @@
 {
   "name": "cython",
-  "version": "3.1.2",
+  "version": {
+    "version": "3.1.2",
+    "release": 1
+  },
   "about": "C extensions for Python",
   "maintainer": "Tox",
   "licenses": [

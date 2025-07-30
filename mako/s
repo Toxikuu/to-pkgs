@@ -1,6 +1,9 @@
 {
   "name": "mako",
-  "version": "1.3.10",
+  "version": {
+    "version": "1.3.10",
+    "release": 1
+  },
   "about": "Fast, lightweight templating library",
   "maintainer": "Tox",
   "licenses": [

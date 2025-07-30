@@ -1,6 +1,9 @@
 {
   "name": "freeglut",
-  "version": "a7f6d3acb65181305b78386498bc27bd7d4ed731",
+  "version": {
+    "version": "a7f6d3acb65181305b78386498bc27bd7d4ed731",
+    "release": 1
+  },
   "about": "OpenGL Utility Toolkit",
   "maintainer": "Tox",
   "licenses": [

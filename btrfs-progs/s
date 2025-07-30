@@ -1,6 +1,9 @@
 {
   "name": "btrfs-progs",
-  "version": "6.15",
+  "version": {
+    "version": "6.15",
+    "release": 1
+  },
   "about": "Btrfs filesystem utilities",
   "maintainer": "Tox",
   "licenses": [

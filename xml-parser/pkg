@@ -1,7 +1,5 @@
-#!/to
+xml-parser@2.47-1
 
-n="xml-parser"
-v="2.47"
 a="Perl interface to Expat"
 m="Tox"
 l="Artistic-2.0"

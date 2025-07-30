@@ -1,7 +1,5 @@
-#!/to
+traceroute@2.1.6-1
 
-n="traceroute"
-v="2.1.6"
 a="Tool to trace the routes packets take over a network"
 m="Tox"
 l="GPL-2.0-only"

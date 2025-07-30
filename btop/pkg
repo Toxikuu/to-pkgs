@@ -1,7 +1,5 @@
-#!/to
+btop@86ec5fd06282a96ae46542e653490b7144e801f9-2
 
-n="btop"
-v="b3356354a4cc858c4f90ee2095a84d56b4af0eda"
 a="Resource monitor"
 m="Tox"
 l="Apache-2.0"
@@ -12,6 +10,9 @@ s="$u"
 d="glibc"
 
 b() {
+
+CXXFLAGS="${CXXFLAGS//-fgraphite-identity/}"
+CXXFLAGS="${CXXFLAGS//-floop-nest-optimize/}"
 
 mk
 mi PREFIX=/usr

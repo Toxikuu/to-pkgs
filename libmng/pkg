@@ -1,7 +1,5 @@
-#!/to
+libmng@2.0.3-1
 
-n="libmng"
-v="2.0.3"
 a="Multiple-image Network Graphics library"
 m="Tox"
 l="Zlib"

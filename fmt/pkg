@@ -1,7 +1,5 @@
-#!/to
+fmt@11.2.0-1
 
-n="fmt"
-v="11.2.0"
 a="Formatting library"
 m="Tox"
 l="MIT"

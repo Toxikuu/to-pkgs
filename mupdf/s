@@ -1,13 +1,16 @@
 {
   "name": "mupdf",
-  "version": "1.26.3",
+  "version": {
+    "version": "1.26.3",
+    "release": 2
+  },
   "about": "Lightweight PDF and XPS viewer",
   "maintainer": "Tox",
   "licenses": [
     "AGPL-3.0-or-later"
   ],
   "upstream": "https://github.com/ArtifexSoftware/mupdf.git",
-  "version_fetch": "gr | grep -v [a-Z] | sort -V",
+  "version_fetch": "gr | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "utils",

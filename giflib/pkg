@@ -1,7 +1,5 @@
-#!/to
+giflib@5.2.2-1
 
-n="giflib"
-v="5.2.2"
 a="GIF library"
 m="Tox"
 l="MIT"

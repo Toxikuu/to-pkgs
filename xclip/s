@@ -1,6 +1,9 @@
 {
   "name": "xclip",
-  "version": "2c3b811002b35d3be7f39cc1145dd06bdb32e31c",
+  "version": {
+    "version": "2c3b811002b35d3be7f39cc1145dd06bdb32e31c",
+    "release": 1
+  },
   "about": "X11 clipboard CLI",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "pango",
-  "version": "1.56.4",
+  "version": {
+    "version": "1.56.4",
+    "release": 1
+  },
   "about": "Library for text layout and rendering",
   "maintainer": "Tox",
   "licenses": [

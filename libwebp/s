@@ -1,6 +1,9 @@
 {
   "name": "libwebp",
-  "version": "1.6.0",
+  "version": {
+    "version": "1.6.0",
+    "release": 1
+  },
   "about": "WebP library",
   "maintainer": "Tox",
   "licenses": [

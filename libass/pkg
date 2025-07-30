@@ -1,7 +1,5 @@
-#!/to
+libass@e4215b0d175a5a340c0dbd7a990df82f07d71a34-1
 
-n="libass"
-v="e4215b0d175a5a340c0dbd7a990df82f07d71a34"
 a="Portable library for ASS subtitle rendering"
 m="Tox"
 l="BSD"

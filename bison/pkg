@@ -1,7 +1,5 @@
-#!/to
+bison@3.8.2-1
 
-n="bison"
-v="3.8.2"
 a="Parser generator"
 m="Tox"
 l="GPL-3.0-or-later"

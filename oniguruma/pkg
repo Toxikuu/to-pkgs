@@ -1,7 +1,5 @@
-#!/to
+oniguruma@6.9.10-1
 
-n="oniguruma"
-v="6.9.10"
 a="Regex library"
 m="Tox"
 l="BSD"

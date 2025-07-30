@@ -1,7 +1,5 @@
-#!/to
+mkfontscale@1.2.3-1
 
-n="mkfontscale"
-v="1.2.3"
 a="Create an index of scalable font files for X"
 m="Tox"
 l="X11"

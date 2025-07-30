@@ -1,14 +1,12 @@
-#!/to
+mupdf@1.26.3-2
 
 # NOTE: I only package the libraries since I don't use the other stuff
-n="mupdf"
-v="1.26.3"
 a="Lightweight PDF and XPS viewer"
 m="Tox"
 l="AGPL-3.0-or-later"
 t="lib utils gui cli"
 u="https://github.com/ArtifexSoftware/$n.git"
-vf="gr | grep -v [a-Z] | sort -V"
+vf="gr | grep -v '[a-zA-Z]' | sort -V"
 
 # Used instead of git because of submodule hell
 s=(
@@ -39,6 +37,10 @@ d=(
 )
 
 b() {
+
+ltno
+CFLAGS="${CFLAGS//-fgraphite-identity/}"
+CFLAGS="${CFLAGS//-floop-nest-optimize/}"
 
 _cfg=(
     "USE_SYSTEM_CURL         := yes"

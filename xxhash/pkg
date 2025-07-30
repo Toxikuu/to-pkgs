@@ -1,7 +1,5 @@
-#!/to
+xxhash@55d9c43608e39b2acd7d9a9cc3df424f812b6642-1
 
-n="xxhash"
-v="38d555879fddae7300ece2c0820b3332c1d5748f"
 a="Extremely fast non-cryptographic hash algorithm"
 m="Tox"
 l=("BSD" "GPL2")

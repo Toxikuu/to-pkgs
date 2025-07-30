@@ -1,6 +1,9 @@
 {
   "name": "liblinear",
-  "version": "249",
+  "version": {
+    "version": "249",
+    "release": 1
+  },
   "about": "Large linear classification library",
   "maintainer": "Tox",
   "licenses": [

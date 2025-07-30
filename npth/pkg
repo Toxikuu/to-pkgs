@@ -1,7 +1,5 @@
-#!/to
+npth@1.8-1
 
-n="npth"
-v="1.8"
 a="New portable threads library"
 m="Tox"
 l="LGPL-2.1-or-later"

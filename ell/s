@@ -1,6 +1,9 @@
 {
   "name": "ell",
-  "version": "0.78",
+  "version": {
+    "version": "0.78",
+    "release": 1
+  },
   "about": "Embedded Linux library",
   "maintainer": "Tox",
   "licenses": [

@@ -1,7 +1,5 @@
-#!/to
+harfbuzz@11.3.2-1
 
-n="harfbuzz"
-v="11.2.1"
 a="OpenType text shaping engine"
 m="Tox"
 l="MIT"

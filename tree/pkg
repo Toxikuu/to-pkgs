@@ -1,7 +1,5 @@
-#!/to
+tree@2.2.1-1
 
-n="tree"
-v="2.2.1"
 a="A cli utility for viewing file trees"
 m="Tox"
 l="GPL-2.0-or-later"

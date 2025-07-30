@@ -1,7 +1,5 @@
-#!/to
+wheel@0.46.1-1
 
-n="wheel"
-v="0.46.1"
 a="Python's wheel packaging standard"
 m="Tox"
 l="MIT"

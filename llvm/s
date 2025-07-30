@@ -1,6 +1,9 @@
 {
   "name": "llvm",
-  "version": "20.1.8",
+  "version": {
+    "version": "20.1.8",
+    "release": 1
+  },
   "about": "Low Level Virtual Machine",
   "maintainer": "Tox",
   "licenses": [

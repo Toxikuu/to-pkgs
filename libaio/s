@@ -1,6 +1,9 @@
 {
   "name": "libaio",
-  "version": "0.3.113",
+  "version": {
+    "version": "0.3.113",
+    "release": 2
+  },
   "about": "Asynchronous I/O library",
   "maintainer": "Tox",
   "licenses": [

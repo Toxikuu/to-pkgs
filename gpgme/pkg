@@ -1,7 +1,5 @@
-#!/to
+gpgme@2.0.0-1
 
-n="gpgme"
-v="2.0.0"
 a="GPG Made Easy"
 m="Tox"
 l=("GPL-2.0-or-later" "LGPL-2.0-or-later" "LGPL-2.1-or-later" "MIT")

@@ -1,7 +1,5 @@
-#!/to
+iptables@1.8.11-1
 
-n="iptables"
-v="1.8.11"
 a="Utility to configure the Linux kernel's packet filtering ruleset"
 m="Tox"
 l="LICENSE"

@@ -1,6 +1,9 @@
 {
   "name": "libidn2",
-  "version": "2.3.8",
+  "version": {
+    "version": "2.3.8",
+    "release": 1
+  },
   "about": "International domain name library (IDNA2008, Punycode and TR46)",
   "maintainer": "Tox",
   "licenses": [

@@ -1,7 +1,5 @@
-#!/to
+xcb-proto@1.17.0-1
 
-n="xcb-proto"
-v="1.17.0"
 a="XML-XCB protocol descriptions"
 m="Tox"
 l="LICENSE"

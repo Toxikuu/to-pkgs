@@ -1,6 +1,9 @@
 {
   "name": "mesa-utils",
-  "version": "9058ff1bc7fadf782766036a2c429fda9d20757c",
+  "version": {
+    "version": "fc8d12981b4b3e0d3415eb48b07ce55da4de0989",
+    "release": 1
+  },
   "about": "Essential Mesa utilities",
   "maintainer": "Tox",
   "licenses": [

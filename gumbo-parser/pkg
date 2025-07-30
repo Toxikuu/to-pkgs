@@ -1,7 +1,5 @@
-#!/to
+gumbo-parser@0.13.1-1
 
-n="gumbo-parser"
-v="0.13.1"
 a="HTML5 parsing library in pure C99"
 m="Tox"
 l="Apache-2.0"

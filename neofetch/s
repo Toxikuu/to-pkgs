@@ -1,6 +1,9 @@
 {
   "name": "neofetch",
-  "version": "ccd5d9f52609bbdcd5d8fa78c4fdb0f12954125f",
+  "version": {
+    "version": "ccd5d9f52609bbdcd5d8fa78c4fdb0f12954125f",
+    "release": 1
+  },
   "about": "Famous (and unmaintained) fetch script",
   "maintainer": "Tox",
   "licenses": [

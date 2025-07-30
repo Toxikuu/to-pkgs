@@ -1,7 +1,5 @@
-#!/to
+wayland-protocols@1.45-1
 
-n="wayland-protocols"
-v="1.45"
 a="Additional protocols for Wayland"
 m="Tox"
 l="MIT"

@@ -1,7 +1,5 @@
-#!/to
+itstool@2.0.7-1
 
-n="itstool"
-v="2.0.7"
 a="XML translation tool"
 m="Tox"
 l="GPL-3.0-only"

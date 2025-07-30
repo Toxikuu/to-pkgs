@@ -1,6 +1,9 @@
 {
   "name": "libpng",
-  "version": "1.6.50",
+  "version": {
+    "version": "1.6.50",
+    "release": 1
+  },
   "about": "PNG libraries",
   "maintainer": "Tox",
   "licenses": [

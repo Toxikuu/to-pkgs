@@ -1,7 +1,5 @@
-#!/to
+inih@60-1
 
-n="inih"
-v="60"
 tag="r$v"
 a="Simple ini file parser"
 m="Tox"

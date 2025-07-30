@@ -1,7 +1,5 @@
-#!/to
+libtiff@4.7.0-1
 
-n="libtiff"
-v="4.7.0"
 tag="v$v"
 a="TIFF image library"
 m="Tox"

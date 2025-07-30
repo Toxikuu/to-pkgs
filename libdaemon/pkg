@@ -1,7 +1,5 @@
-#!/to
+libdaemon@0.14-1
 
-n="libdaemon"
-v="0.14"
 a="UNIX daemon library"
 m="Tox"
 l="LGPL"

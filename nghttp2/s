@@ -1,6 +1,9 @@
 {
   "name": "nghttp2",
-  "version": "1.66.0",
+  "version": {
+    "version": "1.66.0",
+    "release": 1
+  },
   "about": "HTTP/2 implementation",
   "maintainer": "Tox",
   "licenses": [

@@ -1,7 +1,5 @@
-#!/to
+x265@4.1-1
 
-n="x265"
-v="4.1"
 a="H.265/HEVC encoder"
 m="Tox"
 l="GPL"

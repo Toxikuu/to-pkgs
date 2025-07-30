@@ -1,6 +1,9 @@
 {
   "name": "docbook-xml",
-  "version": "4.5",
+  "version": {
+    "version": "4.5",
+    "release": 1
+  },
   "about": "Widely used XML scheme for writing documentation",
   "maintainer": "Tox",
   "licenses": [

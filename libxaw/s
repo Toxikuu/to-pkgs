@@ -1,6 +1,9 @@
 {
   "name": "libxaw",
-  "version": "1.0.16",
+  "version": {
+    "version": "1.0.16",
+    "release": 1
+  },
   "about": "X11 Athena Widget library",
   "maintainer": "Tox",
   "licenses": [

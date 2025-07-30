@@ -1,6 +1,9 @@
 {
   "name": "xcb-util-wm",
-  "version": "0.4.2",
+  "version": {
+    "version": "0.4.2",
+    "release": 1
+  },
   "about": "Client and window-manager helpers for EWMH and ICCCM",
   "maintainer": "Tox",
   "licenses": [

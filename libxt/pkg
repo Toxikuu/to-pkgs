@@ -1,7 +1,5 @@
-#!/to
+libxt@1.3.1-1
 
-n="libxt"
-v="1.3.1"
 a="X11 toolkit intrinsics library"
 m="Tox"
 l=("MIT" "X11")

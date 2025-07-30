@@ -1,6 +1,9 @@
 {
   "name": "json-glib",
-  "version": "1.10.6",
+  "version": {
+    "version": "1.10.6",
+    "release": 1
+  },
   "about": "JSON library built on GLib",
   "maintainer": "Tox",
   "licenses": [

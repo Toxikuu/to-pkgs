@@ -1,6 +1,9 @@
 {
   "name": "libgcrypt",
-  "version": "1.11.1",
+  "version": {
+    "version": "1.11.1",
+    "release": 1
+  },
   "about": "General purpose cryptographic library",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "ninit",
-  "version": "631e18dae932540bea25fef07d75c875ae84bfa6",
+  "version": {
+    "version": "631e18dae932540bea25fef07d75c875ae84bfa6",
+    "release": 1
+  },
   "about": "A rather simple init",
   "maintainer": "Tox",
   "licenses": [

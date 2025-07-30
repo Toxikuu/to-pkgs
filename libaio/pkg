@@ -1,7 +1,5 @@
-#!/to
+libaio@0.3.113-2
 
-n="libaio"
-v="0.3.113"
 a="Asynchronous I/O library"
 m="Tox"
 l="LGPL-2.0-or-later"
@@ -13,6 +11,8 @@ s="${u%.git}/archive/$n-$v/$n-$n-$v.tar.gz"
 d="glibc"
 
 b() {
+
+ltno # https://pagure.io/libaio/issue/10
 
 sed -i "/install.*$n.a/s/^/#/" src/Makefile
 mk

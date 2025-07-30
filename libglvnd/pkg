@@ -1,7 +1,5 @@
-#!/to
+libglvnd@1.7.0-1
 
-n="libglvnd"
-v="1.7.0"
 tag="v$v"
 a="The GL Vendor-Neutral Dispatch library"
 m="Tox"

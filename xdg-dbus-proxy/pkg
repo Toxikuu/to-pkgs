@@ -1,7 +1,5 @@
-#!/to
+xdg-dbus-proxy@0.1.6-1
 
-n="xdg-dbus-proxy"
-v="0.1.6"
 a="Filtering proxy for D-Bus connections"
 m="Tox"
 l="LGPL-2.1"

@@ -1,6 +1,9 @@
 {
   "name": "libxcb",
-  "version": "1.17.0",
+  "version": {
+    "version": "1.17.0",
+    "release": 1
+  },
   "about": "X11 client-side library",
   "maintainer": "Tox",
   "licenses": [

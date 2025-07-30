@@ -1,7 +1,5 @@
-#!/to
+libevdev@1.13.4-1
 
-n="libevdev"
-v="1.13.4"
 a="Wrapper library for evdev devices"
 m="Tox"
 l="MIT"

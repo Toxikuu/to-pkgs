@@ -1,13 +1,11 @@
-#!/to
+librsvg@2.60.0-3
 
-n="librsvg"
-v="2.60.0"
 a="Rust SVG library"
 m="Tox"
 l="LGPL-2.1-or-later"
 t="lib img gfx"
 u="https://github.com/GNOME/$n.git"
-vf="gr | grep -v '[a-Z]'"
+vf="gr | grep -v '[a-zA-Z]'"
 
 s=(
     "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
@@ -32,8 +30,6 @@ d=(
 
 b() {
 
-# LTO
-export CARGO_PROFILE_RELEASE_LTO=true CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1
 def
 
 }

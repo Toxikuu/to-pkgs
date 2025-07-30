@@ -1,7 +1,5 @@
-#!/to
+libnl@0554543dd6a38658355be93a869cb18953a63852-1
 
-n="libnl"
-v="0554543dd6a38658355be93a869cb18953a63852"
 a="Netlink Library Suite"
 m="Tox"
 l="LGPL-2.1"

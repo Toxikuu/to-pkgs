@@ -1,7 +1,5 @@
-#!/to
+vorbis@1.3.7-1
 
-n="vorbis"
-v="1.3.7"
 a="Reference implementation of the Ogg Vorbis audio format."
 m="Tox"
 l="BSD-3-Clause"

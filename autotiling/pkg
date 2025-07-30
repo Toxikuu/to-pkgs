@@ -1,7 +1,5 @@
-#!/to
+autotiling@97a36cc63f59a3a4afbbf236a404d4f3e4a9e71a-3
 
-n="autotiling"
-v="97a36cc63f59a3a4afbbf236a404d4f3e4a9e71a"
 a="Autotiling script for i3 and sway"
 m="Tox"
 l="MIT"
@@ -9,10 +7,7 @@ t="utils"
 u="https://github.com/ammgws/$n-rs.git"
 
 s="$u"
-
-d=(
-    "b,rust"
-)
+d="b,rust"
 
 b() {
 

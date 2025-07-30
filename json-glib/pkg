@@ -1,7 +1,5 @@
-#!/to
+json-glib@1.10.6-1
 
-n="json-glib"
-v="1.10.6"
 a="JSON library built on GLib"
 m="Tox"
 l="LGPL-2.1-or-later"

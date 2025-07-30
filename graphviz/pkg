@@ -1,7 +1,5 @@
-#!/to
+graphviz@13.1.1-1
 
-n="graphviz"
-v="13.1.0"
 a="Graph visualization software"
 m="Tox"
 l="EPL"

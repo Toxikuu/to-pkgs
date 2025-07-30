@@ -1,6 +1,9 @@
 {
   "name": "xdg-desktop-portal-gtk",
-  "version": "1.15.3",
+  "version": {
+    "version": "1.15.3",
+    "release": 1
+  },
   "about": "GTK-based xdg-desktop-portal backend implementation",
   "maintainer": "Tox",
   "licenses": [

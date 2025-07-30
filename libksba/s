@@ -1,6 +1,9 @@
 {
   "name": "libksba",
-  "version": "1.6.7",
+  "version": {
+    "version": "1.6.7",
+    "release": 1
+  },
   "about": "Library for working with X.509 certificates, CMS data and related objects",
   "maintainer": "Tox",
   "licenses": [

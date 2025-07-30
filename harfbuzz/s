@@ -1,6 +1,9 @@
 {
   "name": "harfbuzz",
-  "version": "11.2.1",
+  "version": {
+    "version": "11.3.2",
+    "release": 1
+  },
   "about": "OpenType text shaping engine",
   "maintainer": "Tox",
   "licenses": [
@@ -15,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/harfbuzz/harfbuzz/releases/download/11.2.1/harfbuzz-11.2.1.tar.xz",
-      "dest": "harfbuzz-11.2.1.tar.xz"
+      "url": "https://github.com/harfbuzz/harfbuzz/releases/download/11.3.2/harfbuzz-11.3.2.tar.xz",
+      "dest": "harfbuzz-11.3.2.tar.xz"
     },
     {
       "kind": "Pkg",

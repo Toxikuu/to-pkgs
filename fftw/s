@@ -1,6 +1,9 @@
 {
   "name": "fftw",
-  "version": "3.3.10",
+  "version": {
+    "version": "3.3.10",
+    "release": 1
+  },
   "about": "The Fastest Fourier Transform in the West",
   "maintainer": "Tox",
   "licenses": [

@@ -1,6 +1,9 @@
 {
   "name": "libssh2",
-  "version": "1.11.1",
+  "version": {
+    "version": "1.11.1",
+    "release": 1
+  },
   "about": "Client-side SSH2 library",
   "maintainer": "Tox",
   "licenses": [

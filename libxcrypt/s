@@ -1,6 +1,9 @@
 {
   "name": "libxcrypt",
-  "version": "e34e0634a7192383dbb4445b6d7568e36baef675",
+  "version": {
+    "version": "e34e0634a7192383dbb4445b6d7568e36baef675",
+    "release": 1
+  },
   "about": "Modern library for password hashing",
   "maintainer": "Tox",
   "licenses": [

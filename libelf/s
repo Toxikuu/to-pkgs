@@ -1,6 +1,9 @@
 {
   "name": "libelf",
-  "version": "0.193",
+  "version": {
+    "version": "0.193",
+    "release": 2
+  },
   "about": "Library for handling ELF files",
   "maintainer": "Tox",
   "licenses": [

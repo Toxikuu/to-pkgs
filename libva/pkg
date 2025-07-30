@@ -1,7 +1,5 @@
-#!/to
+libva@2.22.0-1
 
-n="libva"
-v="2.22.0"
 a="Video Acceleration API"
 m="Tox"
 l="MIT"

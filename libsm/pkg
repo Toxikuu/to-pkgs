@@ -1,7 +1,5 @@
-#!/to
+libsm@1.2.6-1
 
-n="libsm"
-v="1.2.6"
 a="X11 Session Management library"
 m="Tox"
 l="MIT"

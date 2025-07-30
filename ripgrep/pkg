@@ -1,7 +1,5 @@
-#!/to
+ripgrep@3b7fd442a6f3aa73f650e763d7cbb902c03d700e-1
 
-n="ripgrep"
-v="3b7fd442a6f3aa73f650e763d7cbb902c03d700e"
 a="Oxidized, recursive grep"
 m="Tox"
 l="Unlicense OR MIT"

@@ -1,6 +1,9 @@
 {
   "name": "libevdev",
-  "version": "1.13.4",
+  "version": {
+    "version": "1.13.4",
+    "release": 1
+  },
   "about": "Wrapper library for evdev devices",
   "maintainer": "Tox",
   "licenses": [

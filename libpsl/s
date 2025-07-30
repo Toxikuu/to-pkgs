@@ -1,6 +1,9 @@
 {
   "name": "libpsl",
-  "version": "0.21.5",
+  "version": {
+    "version": "0.21.5",
+    "release": 1
+  },
   "about": "Public Suffix List library",
   "maintainer": "Tox",
   "licenses": [

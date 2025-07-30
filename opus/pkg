@@ -1,7 +1,5 @@
-#!/to
+opus@1.5.2-1
 
-n="opus"
-v="1.5.2"
 a="Lossy audio compression format well suited to transmission"
 m="Tox"
 l="BSD-3-Clause"

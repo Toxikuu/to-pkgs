@@ -1,6 +1,9 @@
 {
   "name": "intltool",
-  "version": "0.51.0",
+  "version": {
+    "version": "0.51.0",
+    "release": 1
+  },
   "about": "i18n tool for extracting translatable strings from source files",
   "maintainer": "Tox",
   "licenses": [

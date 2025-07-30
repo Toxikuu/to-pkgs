@@ -1,7 +1,5 @@
-#!/to
+dust@1.2.2-2
 
-n="dust"
-v="1.2.2"
 tag="v$v"
 a="Oxidized du"
 m="Tox"
@@ -17,6 +15,10 @@ d=(
 )
 
 b() {
+
+# TODO: Try to add lto via a patch targetting Cargo.toml
+RUSTFLAGS="$(echo "$RUSTFLAGS" | sed -e 's|-C lto=\w\+||g' -e 's|-C embed-bitcode=true||g')"
+ltno
 
 cbr
 install -vDm755 "target/release/$n" -t  "$D/usr/bin/"

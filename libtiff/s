@@ -1,6 +1,9 @@
 {
   "name": "libtiff",
-  "version": "4.7.0",
+  "version": {
+    "version": "4.7.0",
+    "release": 1
+  },
   "about": "TIFF image library",
   "maintainer": "Tox",
   "licenses": [

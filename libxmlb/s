@@ -1,6 +1,9 @@
 {
   "name": "libxmlb",
-  "version": "0.3.22",
+  "version": {
+    "version": "0.3.22",
+    "release": 1
+  },
   "about": "A library to help create and query binary XML blobs",
   "maintainer": "Tox",
   "licenses": [

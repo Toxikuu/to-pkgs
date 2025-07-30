@@ -1,6 +1,9 @@
 {
   "name": "eza",
-  "version": "0.22.1",
+  "version": {
+    "version": "0.23.0",
+    "release": 2
+  },
   "about": "Modern ls alternative",
   "maintainer": "Tox",
   "licenses": [

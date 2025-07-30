@@ -1,7 +1,5 @@
-#!/to
+libxpresent@1.0.1-1
 
-n="libxpresent"
-v="1.0.1"
 a="X Present Extension library"
 m="Tox"
 l="MIT"

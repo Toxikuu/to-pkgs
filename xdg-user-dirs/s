@@ -1,6 +1,9 @@
 {
   "name": "xdg-user-dirs",
-  "version": "0.18",
+  "version": {
+    "version": "0.18",
+    "release": 1
+  },
   "about": "User directory management tool",
   "maintainer": "Tox",
   "licenses": [

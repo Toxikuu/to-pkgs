@@ -1,7 +1,5 @@
-#!/to
+setconf@e77f567307cdd89792b405570201f42a9b763650-1
 
-n="setconf"
-v="e77f567307cdd89792b405570201f42a9b763650"
 a="Utility to change settings in configuration files"
 m="Tox"
 l="GPL-2.0"
