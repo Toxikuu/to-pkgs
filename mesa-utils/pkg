@@ -1,4 +1,4 @@
-mesa-utils@fc8d12981b4b3e0d3415eb48b07ce55da4de0989-1
+mesa-utils@beaff1335efbc09872b9e183fac8b985a9eb4cfc-1
 
 a="Essential Mesa utilities"
 m="Tox"
@@ -32,7 +32,6 @@ with meson # TODO: Make the `with` guess matching less shit
 
 _cfg=(
     -D gles1=disabled
-    -D osmesa=disabled
     -D glvnd=enabled
     -D libdrm=enabled
     -D x11=enabled
