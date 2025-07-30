@@ -1,7 +1,7 @@
 {
   "name": "ell",
   "version": {
-    "version": "0.78",
+    "version": "0.79",
     "release": 1
   },
   "about": "Embedded Linux library",
@@ -17,8 +17,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.78.tar.xz",
-      "dest": "ell-0.78.tar.xz"
+      "url": "https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.79.tar.xz",
+      "dest": "ell-0.79.tar.xz"
     }
   ],
   "dependencies": [
