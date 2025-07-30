@@ -1,8 +1,8 @@
 {
   "name": "tuun",
   "version": {
-    "version": "4.1.3",
-    "release": 4
+    "version": "4.2.0",
+    "release": 1
   },
   "about": "Minimal music player using MPV as a backend",
   "maintainer": "Tox",
