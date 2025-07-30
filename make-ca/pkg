@@ -1,4 +1,4 @@
-make-ca@1.16.1-1
+make-ca@1.16.1-5
 
 a="PKI setup script for LFS"
 m="Tox"
@@ -17,19 +17,24 @@ d=(
     "p11-kit"
     "libtasn1"
     "nss"
+    "b,curl"
 )
 
 b() {
 
 mi
-install -vdm755 "$D/etc/ssl/local"
 
 }
 
 i() {
 
 # Create a compatibility symlink wanted by Steam
-ln -sfv /etc/pki/tls/certs/ca-bundle.crt /etc/ssl/certs/ca-certificates.crt
-/usr/sbin/$n -g
+ln -srfv "/etc/pki/tls/certs/ca-bundle.crt" \
+         "/etc/ssl/certs/ca-certificates.crt"
+
+# For reasons beyond my comprehension this shit freaks out with destdir ONLY in
+# the chroot environment ????
+make-ca -g
+
 
 }

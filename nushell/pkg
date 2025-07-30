@@ -1,4 +1,4 @@
-nushell@0.105.1-1
+nushell@0.105.1-2
 
 a="A new type of shell"
 m="Tox"
@@ -18,10 +18,8 @@ d=(
 
 b() {
 
-# TODO: Build with lto
-RUSTFLAGS="$(echo "$RUSTFLAGS" | sed -e 's|-C lto=\w\+||g' -e 's|-C embed-bitcode=true||g')"
 ltno
-
+rm -vf rust-toolchain.toml
 cbr
 
 find target/release \

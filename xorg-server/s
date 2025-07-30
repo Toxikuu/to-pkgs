@@ -2,7 +2,7 @@
   "name": "xorg-server",
   "version": {
     "version": "21.1.18",
-    "release": 2
+    "release": 3
   },
   "about": "X Window system server",
   "maintainer": "Tox",
@@ -71,10 +71,6 @@
     },
     {
       "name": "mesa",
-      "kind": "Required"
-    },
-    {
-      "name": "nvidia",
       "kind": "Required"
     },
     {

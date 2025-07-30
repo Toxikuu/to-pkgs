@@ -1,0 +1,57 @@
+{
+  "name": "xwayland-satellite",
+  "version": {
+    "version": "0.6",
+    "release": 1
+  },
+  "about": "Xwayland outside your Wayland",
+  "maintainer": "Tox",
+  "licenses": [
+    "MPL-2.0"
+  ],
+  "upstream": "https://github.com/Supreeeme/xwayland-satellite.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "gfx",
+    "xorg"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Supreeeme/xwayland-satellite.git",
+      "dest": "xwayland-satellite"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-cursor",
+      "kind": "Required"
+    },
+    {
+      "name": "xwayland",
+      "kind": "Required"
+    },
+    {
+      "name": "llvm",
+      "kind": "Build"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

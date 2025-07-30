@@ -2,7 +2,7 @@
   "name": "mesa",
   "version": {
     "version": "25.1.6",
-    "release": 1
+    "release": 3
   },
   "about": "Graphics libraries",
   "maintainer": "Tox",
@@ -82,6 +82,18 @@
     {
       "name": "zstd",
       "kind": "Required"
+    },
+    {
+      "name": "glslang",
+      "kind": "Required"
+    },
+    {
+      "name": "libvdpau",
+      "kind": "Required"
+    },
+    {
+      "name": "llvm",
+      "kind": "Build"
     },
     {
       "name": "libpng",

@@ -1,0 +1,24 @@
+wl-clipboard@2.2.1-1
+
+tag="v$v"
+a="Copy paste utility for Wayland"
+m="Tox"
+l="GPL-3.0-or-later"
+t="cli utils"
+u="https://github.com/bugaevc/$n.git"
+
+s="$u"
+d=(
+    "glibc"
+    "wayland"
+
+    "b,meson"
+    "b,samu"
+    "b,wayland-protocols"
+)
+
+b() {
+
+def
+
+}

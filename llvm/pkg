@@ -1,4 +1,4 @@
-llvm@20.1.8-1
+llvm@20.1.8-3
 
 a="Low Level Virtual Machine"
 m="Tox"
@@ -75,7 +75,7 @@ _cfg=(
     -D LLVM_INCLUDE_BENCHMARKS=OFF
     -D LLVM_BUILD_LLVM_DYLIB=ON
     -D LLVM_LINK_LLVM_DYLIB=ON
-    -D LLVM_TARGETS_TO_BUILD="X86;host"
+    -D LLVM_TARGETS_TO_BUILD="X86;host;AMDGPU"
 
     -D CLANG_DEFAULT_PIE_ON_LINUX=ON
     -D CLANG_CONFIG_FILE_SYSTEM_DIR=/etc/clang
@@ -86,7 +86,9 @@ _cfg=(
     -D LLVM_USE_PERF=OFF # TODO: Package perf
 )
 
-export NINJAJOBS="$(nproc)"
+# This is necessary because of OOMs
+export NINJAJOBS="$(nproc --ignore=4)"
+
 def
 install -vDm755 bin/FileCheck -t "$D/usr/bin/"
 

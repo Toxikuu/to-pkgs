@@ -2,7 +2,7 @@
   "name": "nushell",
   "version": {
     "version": "0.105.1",
-    "release": 1
+    "release": 2
   },
   "about": "A new type of shell",
   "maintainer": "Tox",

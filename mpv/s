@@ -2,7 +2,7 @@
   "name": "mpv",
   "version": {
     "version": "0.40.0",
-    "release": 1
+    "release": 2
   },
   "about": "Media player",
   "maintainer": "Tox",
@@ -123,6 +123,10 @@
       "kind": "Required"
     },
     {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
       "name": "zlib",
       "kind": "Required"
     },
@@ -136,6 +140,10 @@
     },
     {
       "name": "vulkan-headers",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland-protocols",
       "kind": "Build"
     }
   ],

@@ -1,0 +1,37 @@
+swww@0.10.3-1
+
+tag="v$v"
+a="A Solution to your Wayland Wallpaper Woes"
+m="Tox"
+l="GPL-3.0-only"
+t="gfx wp"
+u="https://github.com/LGFae/$n.git"
+
+s=(
+    "$u"
+)
+
+d=(
+    "gcc"
+    "glibc"
+    "lz4"
+    "b,rust"
+    "b,scdoc"
+    "b,wayland"
+    "b,wayland-protocols"
+)
+
+b() {
+
+cbr
+
+# man
+./doc/gen.sh
+
+install -vDm755 "target/release/$n"{,-daemon}   -t "$D/usr/bin/"
+install -vDm644 "completions/$n.bash"              "$D/usr/share/bash-completion/completions/$n"
+
+install -vDm644 *.md                            -t "$D/usr/share/doc/$n"
+install -vDm644 doc/generated/*.1               -t "$D/usr/share/man/man1/"
+
+}
