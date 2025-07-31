@@ -1,0 +1,37 @@
+mbedtls@3.6.4-1
+
+tag="v$v"
+a="An open source, portable, easy to use, readable and flexible TLS library"
+m="Tox"
+l="Apache-2.0"
+t="lib sec"
+u="https://github.com/Mbed-TLS/$n.git"
+vf="gr | grep '^v[0-9]' | vfs | sort -V"
+
+s="$u"
+d=(
+    "glibc"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D USE_SHARED_${n^^}_LIBRARY=ON
+    -D USE_STATIC_${n^^}_LIBRARY=OFF
+)
+
+CFLAGS+=" -Wno-unterminated-string-initialization"
+CXXFLAGS+=" -Wno-unterminated-string-initialization"
+def
+
+# TODO: Decide if I want these at all
+# Avoid conflicts
+pushd "$D/usr/bin/"
+    for i in *; do
+        mv -vf {,${n}_}$i
+    done
+popd
+
+}
