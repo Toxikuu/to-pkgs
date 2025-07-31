@@ -1,4 +1,4 @@
-glibc@2.41-2
+glibc@2.42-1
 
 a="GNU C Library"
 m="Tox"
@@ -12,7 +12,6 @@ vf="gr | cut -d- -f2 | grep -Ev '9000|[a-z]+' | grep '\\.' | sort -V"
 
 s=(
     "https://gnu.mirror.constant.com/$n/$n-$v.tar.xz"
-    "https://www.linuxfromscratch.org/patches/lfs/development/$n-$v-fhs-1.patch"
 )
 
 qa=(
@@ -22,7 +21,6 @@ qa=(
 b() {
 
 ltno
-pat "$S/$n-$v-fhs-1.patch"
 
 mkdir -pv build
 cd        build
