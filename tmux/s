@@ -1,7 +1,7 @@
 {
   "name": "tmux",
   "version": {
-    "version": "fa5f3cef3d651b0eb9abfa77fc37ccade81679b5",
+    "version": "a6588d691856ab329772c16989172644e4c9f34e",
     "release": 1
   },
   "about": "Terminal multiplexer",
