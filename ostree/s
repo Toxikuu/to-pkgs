@@ -1,7 +1,7 @@
 {
   "name": "ostree",
   "version": {
-    "version": "2025.3",
+    "version": "2025.4",
     "release": 1
   },
   "about": "OS and container deployment utility",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/ostreedev/ostree/releases/download/v2025.3/libostree-2025.3.tar.xz",
-      "dest": "libostree-2025.3.tar.xz"
+      "url": "https://github.com/ostreedev/ostree/releases/download/v2025.4/libostree-2025.4.tar.xz",
+      "dest": "libostree-2025.4.tar.xz"
     }
   ],
   "dependencies": [
