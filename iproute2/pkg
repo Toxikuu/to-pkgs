@@ -1,4 +1,4 @@
-iproute2@6.15.0-1
+iproute2@6.16.0-1
 
 a="IP routing utilities"
 m="Tox"
@@ -7,7 +7,7 @@ t="utils net cli core"
 u="https://github.com/$n/$n.git"
 
 s=(
-    "https://www.kernel.org/pub/linux/utils/net/$n/$n-$v.tar.xz"
+    "${u%.git}/archive/refs/tags/v$v.tar.gz"
 )
 
 d=(
