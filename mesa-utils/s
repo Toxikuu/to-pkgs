@@ -1,7 +1,7 @@
 {
   "name": "mesa-utils",
   "version": {
-    "version": "beaff1335efbc09872b9e183fac8b985a9eb4cfc",
+    "version": "6f997174b7195193e7d7bd05ed123d4c65829a67",
     "release": 1
   },
   "about": "Essential Mesa utilities",
