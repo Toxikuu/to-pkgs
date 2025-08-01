@@ -2,7 +2,7 @@
   "name": "ani-cli",
   "version": {
     "version": "4.10",
-    "release": 1
+    "release": 2
   },
   "about": "Utility to browse and play anime",
   "maintainer": "Tox",
@@ -26,31 +26,31 @@
   "dependencies": [
     {
       "name": "aria2",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "curl",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "ffmpeg",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "fzf",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "grep",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "mpv",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "sed",
-      "kind": "Runtime"
+      "kind": "Required"
     }
   ],
   "kcfg": []
