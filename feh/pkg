@@ -1,4 +1,4 @@
-feh@565bc67087513d0c2bdf7256b2ad53dc69812f66-1
+feh@565bc67087513d0c2bdf7256b2ad53dc69812f66-2
 
 a="Fast, light image viewer"
 m="Tox"
@@ -16,9 +16,9 @@ d=(
     "libxinerama"
     "b,libxt"
 
-    # Optional runtime:
-    # "r,imagemagick"
-    # "r,libjpeg-turbo"
+    # Optional but useful
+    # "imagemagick" # TODO: Package imagemagick
+    "libjpeg-turbo"
 )
 
 b() {
