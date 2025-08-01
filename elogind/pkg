@@ -1,4 +1,4 @@
-elogind@255.17-1
+elogind@255.17-2
 
 a="Track logged-in users"
 m="Tox"
@@ -25,9 +25,8 @@ d=(
     "pcre2"
     "jinja2"
 
-    "r,util-linux"
-    "r,dbus"
-    "r,polkit"
+    "util-linux"
+    "dbus"
 )
 
 kcfg=(
