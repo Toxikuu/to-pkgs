@@ -1,4 +1,4 @@
-wget@2.2.0-1
+wget@2.2.0-2
 
 an="$n${v:0:1}" # wget2
 a="Network utility to retrieve files from the web"
@@ -23,7 +23,7 @@ d=(
     "libpsl"
     "nghttp2"
     "pcre2"
-    "r,make-ca"
+    "make-ca"
     "b,gperf"
 )
 
