@@ -1,7 +1,7 @@
 {
   "name": "noto-fonts",
   "version": {
-    "version": "2025.07.01",
+    "version": "2025.08.01",
     "release": 1
   },
   "about": "Noto TTF fonts",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-2025.07.01.tar.gz",
-      "dest": "noto-monthly-release-2025.07.01.tar.gz"
+      "url": "https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-2025.08.01.tar.gz",
+      "dest": "noto-monthly-release-2025.08.01.tar.gz"
     }
   ],
   "dependencies": [],
