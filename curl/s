@@ -2,7 +2,7 @@
   "name": "curl",
   "version": {
     "version": "8.15.0",
-    "release": 1
+    "release": 2
   },
   "about": "Tool and library for transferring data with URLs",
   "maintainer": "Tox",
@@ -51,7 +51,7 @@
     },
     {
       "name": "make-ca",
-      "kind": "Runtime"
+      "kind": "Required"
     }
   ],
   "kcfg": []
