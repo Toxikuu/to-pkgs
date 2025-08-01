@@ -2,7 +2,7 @@
   "name": "sin",
   "version": {
     "version": "338373c136e558679ef678d771c179b07bff6aa5",
-    "release": 1
+    "release": 2
   },
   "about": "Simple, hackable, portable init",
   "maintainer": "Tox",
@@ -24,11 +24,11 @@
   "dependencies": [
     {
       "name": "e2fsprogs",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "iproute2",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "nasm",
