@@ -1,4 +1,4 @@
-bspwm@af3bd8b4351f4478fe0fe3cfd6c09e44cb108b4b-1
+bspwm@af3bd8b4351f4478fe0fe3cfd6c09e44cb108b4b-2
 
 a="Tiling window manager based on binary space partitioning"
 m="Tox"
@@ -12,7 +12,6 @@ d=(
     "xcb-util"
     "xcb-util-wm"
     "xcb-util-keysyms"
-    "r,sxhkd"
 )
 
 b() {
