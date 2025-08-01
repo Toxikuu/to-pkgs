@@ -1,4 +1,4 @@
-tuun@4.2.0-1
+tuun@4.2.0-3
 
 tag="v$v"
 a="Minimal music player using MPV as a backend"
@@ -10,8 +10,8 @@ u="https://github.com/Toxikuu/$n.git"
 s="$u"
 d=(
     "b,rust"
-    "r,mpv"
-    "r,fzf"
+    "mpv"
+    "fzf"
     "gcc"
     "libx11"
     "libxtst"

@@ -2,7 +2,7 @@
   "name": "tuun",
   "version": {
     "version": "4.2.0",
-    "release": 1
+    "release": 3
   },
   "about": "Minimal music player using MPV as a backend",
   "maintainer": "Tox",
@@ -31,11 +31,11 @@
     },
     {
       "name": "mpv",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "fzf",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "gcc",
