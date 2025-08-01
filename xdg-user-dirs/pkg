@@ -5,7 +5,7 @@ m="Tox"
 l="GPL"
 t="utils cli"
 u="https://gitlab.freedesktop.org/xdg/$n.git"
-vf="gr | grep -v '[a-Z]'"
+vf="gr | grep -v '[a-zA-Z]'"
 
 s="http://${n#*-}.freedesktop.org/releases/$n-$v.tar.gz"
 

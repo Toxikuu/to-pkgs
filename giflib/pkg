@@ -5,7 +5,7 @@ m="Tox"
 l="MIT"
 t="lib img"
 u="https://git.code.sf.net/p/$n/code"
-vf="gr | grep -v '[a-Z]'"
+vf="gr | grep -v '[a-zA-Z]'"
 
 s=(
     "https://sourceforge.net/projects/$n/files/$n-$v.tar.gz"

@@ -1,7 +1,7 @@
 {
   "name": "fzf",
   "version": {
-    "version": "0.64.0",
+    "version": "0.65.0",
     "release": 1
   },
   "about": "Fuzzy finder",

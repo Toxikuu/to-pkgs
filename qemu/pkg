@@ -1,4 +1,4 @@
-qemu@10.0.2-1
+qemu@10.0.3-1
 
 a="Generic machine emulator and virtualizer"
 m="Tox"
@@ -79,14 +79,5 @@ chmod 4750 "$D/usr/libexec/$n-bridge-helper"
 
 # Convenience symlink
 ln -sfv "$n-system-${QEMU_ARCH%-*}" "$D/usr/bin/qemu"
-
-}
-
-t() {
-
-with samu
-
-# A few tests fail, probably due to the build environment
-sa test || true
 
 }

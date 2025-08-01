@@ -10,7 +10,7 @@
     "LICENSE"
   ],
   "upstream": "https://gitlab.gnome.org/GNOME/gtk.git",
-  "version_fetch": "gr | grep -Ev '[a-Z]|\\.[8-9][0-9]\\.' | grep '^3' | sort -V",
+  "version_fetch": "gr | grep -Ev '[a-zA-Z]|\\.[8-9][0-9]\\.' | grep '^3' | sort -V",
   "tags": [
     "gui",
     "lib"

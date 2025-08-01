@@ -10,7 +10,7 @@
     "EPL"
   ],
   "upstream": "https://gitlab.com/graphviz/graphviz.git",
-  "version_fetch": "gr | grep -Ev '[a-Z]' | sort -V",
+  "version_fetch": "gr | grep -Ev '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "gfx"

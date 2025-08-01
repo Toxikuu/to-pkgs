@@ -1,4 +1,4 @@
-floorp@11.28.0-2
+floorp@11.28.0-3
 
 a="Firefox fork focused on performance and customization"
 m="Tox"
@@ -18,7 +18,7 @@ d=(
     "gtk3"
     "alsa-lib"
 
-    "r,pciutils" # wanted to glxtest
+    "pciutils" # wanted to glxtest
 )
 
 b() {

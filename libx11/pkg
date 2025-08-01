@@ -1,4 +1,4 @@
-libx11@1.8.12-2
+libx11@1.8.12-3
 
 a="X11 client-side library"
 m="Tox"
@@ -11,7 +11,7 @@ s="https://www.x.org/pub/individual/lib/${n/x/X}-$v.tar.xz"
 d=(
     "libxcb"
     "glibc"
-    "r,xorgproto"
+    "xorgproto"
     "b,util-macros"
     "b,xtrans"
 )

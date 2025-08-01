@@ -1,4 +1,4 @@
-pipewire@1.4.6-2
+pipewire@1.4.7-2
 
 a="Low-latency audio/video router and processor"
 m="Tox"
@@ -38,7 +38,8 @@ d=(
     "b,libx11"
     "b,libxfixes"
 
-    "r,wireplumber"
+    # wireplumber highly recommended at runtime
+    # "r,wireplumber"
 
     "b,meson"
     "b,samu"

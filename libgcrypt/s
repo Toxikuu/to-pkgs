@@ -10,7 +10,7 @@
     "LGPL-2.1-or-later AND GPL-2.0-or-later"
   ],
   "upstream": "git://git.gnupg.org/libgcrypt.git",
-  "version_fetch": "gr | sed s,^libgcrypt-,, | grep -v [a-Z] | sort -V",
+  "version_fetch": "gr | sed s,^libgcrypt-,, | grep -v [a-zA-Z] | sort -V",
   "tags": [
     "lib",
     "sec"

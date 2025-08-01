@@ -1,7 +1,7 @@
 {
   "name": "iproute2",
   "version": {
-    "version": "6.15.0",
+    "version": "6.16.0",
     "release": 1
   },
   "about": "IP routing utilities",
@@ -20,8 +20,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.15.0.tar.xz",
-      "dest": "iproute2-6.15.0.tar.xz"
+      "url": "https://github.com/iproute2/iproute2/archive/refs/tags/v6.16.0.tar.gz",
+      "dest": "v6.16.0.tar.gz"
     }
   ],
   "dependencies": [

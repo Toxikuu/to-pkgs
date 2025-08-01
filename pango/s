@@ -10,7 +10,7 @@
     "LGPL-2.1-or-later"
   ],
   "upstream": "https://github.com/GNOME/pango.git",
-  "version_fetch": "gr | grep -Ev '[a-Z]|1.90|-'",
+  "version_fetch": "gr | grep -Ev '[a-zA-Z]|1.90|-'",
   "tags": [
     "lib",
     "font",

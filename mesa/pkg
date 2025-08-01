@@ -1,4 +1,4 @@
-mesa@25.1.6-1
+mesa@25.1.7-1
 
 # NOTE: This pkg only installs GBM from Mesa.
 a="Graphics libraries"

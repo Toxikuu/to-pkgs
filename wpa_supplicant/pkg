@@ -5,7 +5,7 @@ m="Tox"
 l="BSD-3-Clause"
 t="net utils cli"
 u="git://w1.fi/hostap.git"
-vf="gr | vfs | sed -e 's,^hostap_,,' -e 's,_,.,g' | grep -v '[a-Z]' | sort -V"
+vf="gr | vfs | sed -e 's,^hostap_,,' -e 's,_,.,g' | grep -v '[a-zA-Z]' | sort -V"
 
 s=(
     "https://w1.fi/releases/$n-$v.tar.gz"

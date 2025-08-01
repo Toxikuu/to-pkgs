@@ -5,7 +5,7 @@ m="Tox"
 l="MIT"
 t="lib"
 u="https://pagure.io/$n"
-vf="gr | sed -e 's,^r,,' -e 's,-,.,g' | grep -v [a-Z] | sort -V"
+vf="gr | sed -e 's,^r,,' -e 's,-,.,g' | grep -v [a-zA-Z] | sort -V"
 
 s=(
     "$u/archive/r${v//./-}/mailcap-r${v//./-}.tar.gz"

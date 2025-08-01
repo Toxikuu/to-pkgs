@@ -1,11 +1,11 @@
-nss@3.113.1-1
+nss@3.114-1
 
 a="Network Security Services"
 m="Tox"
 l="MPL-2.0"
 t="net lib sec core"
 u="https://github.com/$n-dev/$n.git"
-vf="gr | grep -E '^${n^^}.+RTM$' | sed -e 's,${n^^}_,,' -e 's,_RTM,,' -e 's,_,.,g' | grep -Ev '[a-Z]+' | sort -V"
+vf="gr | grep 'NSS_.\+_RTM$' | sed -e 's,^NSS_,,' -e 's,RTM$,,' -e 's,_,.,g' -e 's,\.$,,' | sort -V"
 
 s=(
     "https://archive.mozilla.org/pub/security/$n/releases/${n^^}_${v//./_}_RTM/src/$n-$v.tar.gz"

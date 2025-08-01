@@ -5,7 +5,7 @@ m="Tox"
 l="LGPL-2.1-or-later"
 t="lib"
 u="https://github.com/GNOME/$n.git"
-vf="gr | grep -v '[a-Z]'"
+vf="gr | grep -v '[a-zA-Z]'"
 
 s=(
     "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"

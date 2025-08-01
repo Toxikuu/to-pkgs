@@ -5,7 +5,7 @@ m="Tox"
 l="GPL-2.0-or-later"
 t="utils cli"
 u="https://gitlab.com/$n/$n.git"
-vf="gr | grep -v '[a-Z]'"
+vf="gr | grep -v '[a-zA-Z]'"
 
 s=(
     # Used instead of $u because I don't have asciidoctor

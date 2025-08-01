@@ -10,7 +10,7 @@
     "BSD-3-Clause"
   ],
   "upstream": "git://w1.fi/hostap.git",
-  "version_fetch": "gr | vfs | sed -e 's,^hostap_,,' -e 's,_,.,g' | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | vfs | sed -e 's,^hostap_,,' -e 's,_,.,g' | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "net",
     "utils",

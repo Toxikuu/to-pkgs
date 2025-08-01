@@ -6,7 +6,7 @@ m="Tox"
 l="Custom"
 t="lib img codec"
 u="https://github.com/$n-software/$n.git"
-vf="gr | sed 's,^version-,,' | grep -v '[a-Z]' | sort -V"
+vf="gr | sed 's,^version-,,' | grep -v '[a-zA-Z]' | sort -V"
 
 s="$u"
 

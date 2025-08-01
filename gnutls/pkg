@@ -4,7 +4,7 @@ a="GNU TLS library"
 m="Tox"
 l="GPL-3.0-or-later AND LGPL-2.1-or-later"
 u="https://gitlab.com/$n/$n.git"
-vf="gr | grep -v '[a-Z]' | sort -V"
+vf="gr | grep -v '[a-zA-Z]' | sort -V"
 
 s="https://www.gnupg.org/ftp/gcrypt/$n/v${v%.*}/$n-$v.tar.xz"
 

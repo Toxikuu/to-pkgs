@@ -1,7 +1,7 @@
 {
   "name": "mpd",
   "version": {
-    "version": "0.24.4",
+    "version": "0.24.5",
     "release": 1
   },
   "about": "Flexible, powerful, server-side music player",

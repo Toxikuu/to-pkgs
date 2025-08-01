@@ -1,4 +1,4 @@
-ncurses@6.5.20250720-1
+ncurses@6.5.20250726-1
 
 _uv="${v%.*}-${v##*.}" # upstream's version
 a="Libraries for terminal-independent character screen handling"

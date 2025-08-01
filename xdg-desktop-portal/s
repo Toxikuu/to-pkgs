@@ -2,7 +2,7 @@
   "name": "xdg-desktop-portal",
   "version": {
     "version": "1.20.3",
-    "release": 1
+    "release": 2
   },
   "about": "Desktop integration portal",
   "maintainer": "Tox",
@@ -60,7 +60,7 @@
     },
     {
       "name": "dbus",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "meson",

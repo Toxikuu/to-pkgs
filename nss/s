@@ -1,7 +1,7 @@
 {
   "name": "nss",
   "version": {
-    "version": "3.113.1",
+    "version": "3.114",
     "release": 1
   },
   "about": "Network Security Services",
@@ -10,7 +10,7 @@
     "MPL-2.0"
   ],
   "upstream": "https://github.com/nss-dev/nss.git",
-  "version_fetch": "gr | grep -E '^NSS.+RTM$' | sed -e 's,NSS_,,' -e 's,_RTM,,' -e 's,_,.,g' | grep -Ev '[a-Z]+' | sort -V",
+  "version_fetch": "gr | grep 'NSS_.\\+_RTM$' | sed -e 's,^NSS_,,' -e 's,RTM$,,' -e 's,_,.,g' -e 's,\\.$,,' | sort -V",
   "tags": [
     "net",
     "lib",
@@ -20,8 +20,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_113_1_RTM/src/nss-3.113.1.tar.gz",
-      "dest": "nss-3.113.1.tar.gz"
+      "url": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_114_RTM/src/nss-3.114.tar.gz",
+      "dest": "nss-3.114.tar.gz"
     },
     {
       "kind": "Download",

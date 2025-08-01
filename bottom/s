@@ -1,8 +1,8 @@
 {
   "name": "bottom",
   "version": {
-    "version": "2e6ac01f9951918f459695dd901e35329e06a635",
-    "release": 3
+    "version": "4d935bdd701086d9f1ad140add90c958c84735e9",
+    "release": 1
   },
   "about": "Yet another system monitor",
   "maintainer": "Tox",

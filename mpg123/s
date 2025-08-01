@@ -1,7 +1,7 @@
 {
   "name": "mpg123",
   "version": {
-    "version": "1.33.0",
+    "version": "1.33.1",
     "release": 1
   },
   "about": "Fast CLI MP3 player",
@@ -20,8 +20,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://downloads.sourceforge.net/mpg123/mpg123-1.33.0.tar.bz2",
-      "dest": "mpg123-1.33.0.tar.bz2"
+      "url": "https://downloads.sourceforge.net/mpg123/mpg123-1.33.1.tar.bz2",
+      "dest": "mpg123-1.33.1.tar.bz2"
     }
   ],
   "dependencies": [

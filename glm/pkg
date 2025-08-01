@@ -5,7 +5,7 @@ m="Tox"
 l="MIT"
 t="math lib gfx"
 u="https://github.com/g-truc/$n.git"
-vf="gr | grep -v '[a-Z]'"
+vf="gr | grep -v '[a-zA-Z]'"
 
 s="$u"
 

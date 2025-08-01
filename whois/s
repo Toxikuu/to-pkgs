@@ -10,7 +10,7 @@
     "GPL-2.0"
   ],
   "upstream": "https://github.com/rfc1036/whois.git",
-  "version_fetch": "gr | sed 's,^v,,' | grep -v '[a-Z]'",
+  "version_fetch": "gr | sed 's,^v,,' | grep -v '[a-zA-Z]'",
   "tags": [
     "net",
     "utils",

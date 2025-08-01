@@ -5,7 +5,7 @@ m="Tox"
 l="FTL OR GPL-2.0-or-later"
 t="lib font"
 u="https://gitlab.freedesktop.org/$n/$n.git"
-vf="gr | grep '^VER-' | cut -d- -f2- | sed 's,-,.,g' | grep -v '[a-Z]' | sort -V"
+vf="gr | grep '^VER-' | cut -d- -f2- | sed 's,-,.,g' | grep -v '[a-zA-Z]' | sort -V"
 
 s=(
     "https://download-mirror.savannah.gnu.org/releases/$n/$n-$v.tar.xz"

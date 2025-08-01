@@ -1,7 +1,7 @@
 {
   "name": "ripgrep",
   "version": {
-    "version": "3b7fd442a6f3aa73f650e763d7cbb902c03d700e",
+    "version": "119a58a400ea948c2d2b0cd4ec58361e74478641",
     "release": 1
   },
   "about": "Oxidized, recursive grep",

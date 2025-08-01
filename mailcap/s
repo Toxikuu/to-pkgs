@@ -10,7 +10,7 @@
     "MIT"
   ],
   "upstream": "https://pagure.io/mailcap",
-  "version_fetch": "gr | sed -e 's,^r,,' -e 's,-,.,g' | grep -v [a-Z] | sort -V",
+  "version_fetch": "gr | sed -e 's,^r,,' -e 's,-,.,g' | grep -v [a-zA-Z] | sort -V",
   "tags": [
     "lib"
   ],

@@ -10,7 +10,7 @@
     "LGPL-2.1"
   ],
   "upstream": "https://github.com/rhboot/efivar.git",
-  "version_fetch": "gr | grep -Ev '[a-Z]|\\.' | sort -V",
+  "version_fetch": "gr | grep -Ev '[a-zA-Z]|\\.' | sort -V",
   "tags": [
     "lib"
   ],
