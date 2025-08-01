@@ -10,7 +10,7 @@
     "GPL-2.0-or-later"
   ],
   "upstream": "https://gitlab.com/chrony/chrony.git",
-  "version_fetch": "gr | grep -v '[a-Z]'",
+  "version_fetch": "gr | grep -v '[a-zA-Z]'",
   "tags": [
     "utils",
     "cli"

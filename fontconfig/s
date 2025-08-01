@@ -10,7 +10,7 @@
     "MIT"
   ],
   "upstream": "https://gitlab.freedesktop.org/fontconfig/fontconfig.git",
-  "version_fetch": "gr | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "font",

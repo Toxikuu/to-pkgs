@@ -5,7 +5,7 @@ m="Tox"
 l=("GPL-2.0-or-later" "LGPL-2.0-or-later" "LGPL-2.1-or-later" "MIT")
 t="lib sec"
 u="https://github.com/gpg/$n.git"
-vf="gr | cut -d- -f2- | grep -Ev '[a-Z]|-|@' | sort -V"
+vf="gr | cut -d- -f2- | grep -Ev '[a-zA-Z]|-|@' | sort -V"
 
 s=(
     "https://www.gnupg.org/ftp/gcrypt/$n/$n-$v.tar.bz2"

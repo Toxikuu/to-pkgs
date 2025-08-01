@@ -5,7 +5,7 @@ m="Tox"
 l="GPL-3.0-only"
 t="lib cli utils video audio codec"
 u="https://git.$n.org/$n.git"
-vf="gr | tr -d nv | grep -v '[a-Z]' | sort -V"
+vf="gr | tr -d nv | grep -v '[a-zA-Z]' | sort -V"
 
 s=(
     "https://$n.org/releases/$n-$v.tar.xz"

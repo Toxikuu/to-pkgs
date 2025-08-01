@@ -10,7 +10,7 @@
     "MIT"
   ],
   "upstream": "https://github.com/google/brotli.git",
-  "version_fetch": "gr | tr -d v | grep -v [a-Z] | sort -V",
+  "version_fetch": "gr | tr -d v | grep -v [a-zA-Z] | sort -V",
   "tags": [
     "lib",
     "z",

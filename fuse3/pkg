@@ -5,7 +5,7 @@ m="Tox"
 l="GPL2"
 t="fs lib utils"
 u="https://github.com/libfuse/libfuse.git"
-vf="gr | sed 's,^fuse[-_],,' | grep -v '[a-Z]' | sed 's,_,.,g' | sort -V"
+vf="gr | sed 's,^fuse[-_],,' | grep -v '[a-zA-Z]' | sed 's,_,.,g' | sort -V"
 
 s=(
     "${u%.git}/releases/download/fuse-$v/fuse-$v.tar.gz"

@@ -10,7 +10,7 @@
     "BSD-3-Clause"
   ],
   "upstream": "https://chromium.googlesource.com/webm/libwebp",
-  "version_fetch": "gr | tr -d v | grep -v [a-Z]",
+  "version_fetch": "gr | tr -d v | grep -v [a-zA-Z]",
   "tags": [
     "lib",
     "img"

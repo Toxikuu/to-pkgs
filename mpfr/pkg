@@ -8,7 +8,7 @@ l=(
 )
 t="core lib math"
 u="https://gitlab.inria.fr/$n/$n.git"
-# vf="gr | grep -v '[a-Z]' | sort -V"
+# vf="gr | grep -v '[a-zA-Z]' | sort -V"
 
 s=(
     "$u"

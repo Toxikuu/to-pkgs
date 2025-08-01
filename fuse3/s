@@ -10,7 +10,7 @@
     "GPL2"
   ],
   "upstream": "https://github.com/libfuse/libfuse.git",
-  "version_fetch": "gr | sed 's,^fuse[-_],,' | grep -v '[a-Z]' | sed 's,_,.,g' | sort -V",
+  "version_fetch": "gr | sed 's,^fuse[-_],,' | grep -v '[a-zA-Z]' | sed 's,_,.,g' | sort -V",
   "tags": [
     "fs",
     "lib",

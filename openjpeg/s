@@ -11,7 +11,7 @@
     "MIT"
   ],
   "upstream": "https://github.com/uclouvain/openjpeg.git",
-  "version_fetch": "gr | sed -e 's,^version.,,' -e 's,^v,,' | grep -v [a-Z] | sort -V",
+  "version_fetch": "gr | sed -e 's,^version.,,' -e 's,^v,,' | grep -v [a-zA-Z] | sort -V",
   "tags": [
     "codec",
     "lib",

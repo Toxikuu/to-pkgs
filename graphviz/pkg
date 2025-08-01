@@ -5,7 +5,7 @@ m="Tox"
 l="EPL"
 t="lib gfx"
 u="https://gitlab.com/$n/$n.git"
-vf="gr | grep -Ev '[a-Z]' | sort -V"
+vf="gr | grep -Ev '[a-zA-Z]' | sort -V"
 
 s="$u"
 d="glibc"

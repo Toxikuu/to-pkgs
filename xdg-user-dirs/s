@@ -10,7 +10,7 @@
     "GPL"
   ],
   "upstream": "https://gitlab.freedesktop.org/xdg/xdg-user-dirs.git",
-  "version_fetch": "gr | grep -v '[a-Z]'",
+  "version_fetch": "gr | grep -v '[a-zA-Z]'",
   "tags": [
     "utils",
     "cli"

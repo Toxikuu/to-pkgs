@@ -10,7 +10,7 @@
     "Custom"
   ],
   "upstream": "https://github.com/jasper-software/jasper.git",
-  "version_fetch": "gr | sed 's,^version-,,' | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | sed 's,^version-,,' | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "img",

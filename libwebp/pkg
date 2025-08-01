@@ -5,7 +5,7 @@ m="Tox"
 l="BSD-3-Clause"
 t="lib img"
 u="https://chromium.googlesource.com/webm/$n"
-vf="gr | tr -d v | grep -v [a-Z]"
+vf="gr | tr -d v | grep -v [a-zA-Z]"
 
 s=(
     "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/$n-$v.tar.gz"

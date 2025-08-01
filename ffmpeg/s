@@ -10,7 +10,7 @@
     "GPL-3.0-only"
   ],
   "upstream": "https://git.ffmpeg.org/ffmpeg.git",
-  "version_fetch": "gr | tr -d nv | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | tr -d nv | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "cli",

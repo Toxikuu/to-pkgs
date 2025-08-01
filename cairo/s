@@ -10,7 +10,7 @@
     "LGPL-2.1-only OR MPL-1.1"
   ],
   "upstream": "https://gitlab.freedesktop.org/cairo/cairo.git",
-  "version_fetch": "gr | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "gfx"

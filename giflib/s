@@ -10,7 +10,7 @@
     "MIT"
   ],
   "upstream": "https://git.code.sf.net/p/giflib/code",
-  "version_fetch": "gr | grep -v '[a-Z]'",
+  "version_fetch": "gr | grep -v '[a-zA-Z]'",
   "tags": [
     "lib",
     "img"

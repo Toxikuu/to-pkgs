@@ -6,7 +6,7 @@ m="Tox"
 l="GPL-2.0"
 t="net utils cli"
 u="https://github.com/rfc1036/$n.git"
-vf="gr | sed 's,^v,,' | grep -v '[a-Z]'"
+vf="gr | sed 's,^v,,' | grep -v '[a-zA-Z]'"
 
 s="$u"
 

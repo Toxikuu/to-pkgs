@@ -10,7 +10,7 @@
     "LGPL-2.1-or-later"
   ],
   "upstream": "https://gitlab.gnome.org/GNOME/json-glib.git",
-  "version_fetch": "gr | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib"
   ],
