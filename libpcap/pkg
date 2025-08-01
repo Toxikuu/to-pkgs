@@ -1,11 +1,11 @@
-libpcap@1.10.5-1
+libpcap@1.10.5-2
 
 a="Packet capture library"
 m="Tox"
 l="BSD-3-Clause"
 t="lib net"
 u="https://github.com/the-tcpdump-group/libpcap"
-vf="gr | cut -d- -f2- | grep -v '[a-Z]' | sort -V"
+vf="gr | cut -d- -f2- | grep -v '[a-zA-Z]' | sort -V"
 
 s=(
     "https://www.tcpdump.org/release/$n-$v.tar.gz"

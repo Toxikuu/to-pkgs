@@ -2,7 +2,7 @@
   "name": "libpcap",
   "version": {
     "version": "1.10.5",
-    "release": 1
+    "release": 2
   },
   "about": "Packet capture library",
   "maintainer": "Tox",
@@ -10,7 +10,7 @@
     "BSD-3-Clause"
   ],
   "upstream": "https://github.com/the-tcpdump-group/libpcap",
-  "version_fetch": "gr | cut -d- -f2- | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | cut -d- -f2- | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "net"
