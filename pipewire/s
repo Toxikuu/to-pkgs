@@ -2,7 +2,7 @@
   "name": "pipewire",
   "version": {
     "version": "1.4.7",
-    "release": 1
+    "release": 2
   },
   "about": "Low-latency audio/video router and processor",
   "maintainer": "Tox",
@@ -97,10 +97,6 @@
     {
       "name": "libxfixes",
       "kind": "Build"
-    },
-    {
-      "name": "wireplumber",
-      "kind": "Runtime"
     },
     {
       "name": "meson",
