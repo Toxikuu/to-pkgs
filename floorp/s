@@ -2,7 +2,7 @@
   "name": "floorp",
   "version": {
     "version": "11.28.0",
-    "release": 2
+    "release": 3
   },
   "about": "Firefox fork focused on performance and customization",
   "maintainer": "Tox",
@@ -43,7 +43,7 @@
     },
     {
       "name": "pciutils",
-      "kind": "Runtime"
+      "kind": "Required"
     }
   ],
   "kcfg": []
