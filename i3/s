@@ -2,7 +2,7 @@
   "name": "i3",
   "version": {
     "version": "9fc24064e7f9d398e4ff6e727e3098b65c07e3ca",
-    "release": 1
+    "release": 2
   },
   "about": "A tiling window manager for X11",
   "maintainer": "Tox",
@@ -65,10 +65,6 @@
     {
       "name": "samu",
       "kind": "Build"
-    },
-    {
-      "name": "autotiling",
-      "kind": "Runtime"
     }
   ],
   "kcfg": []
