@@ -1,4 +1,4 @@
-to@0b7297149bed14fbc791798a6c27a32180b4e023-2
+to@0b7297149bed14fbc791798a6c27a32180b4e023-3
 
 a="Stupid-simple, (EVENTUALLY) rock-solid package manager for LFS"
 m="Tox"
@@ -12,13 +12,13 @@ d=(
     "glibc"
     "b,rust"
 
-    # Runtime, sufficient builds are included in the stagefile
-    # "r,tar"
-    # "r,zstd"
+    # For building distfiles
+    "git"
+    "curl"
 
-    # Runtime, if building distfiles
-    # "r,git"   # for syncing and pulling sources
-    # "r,curl"  # for pulling sources
+    # Sufficient builds are included in the stagefile
+    # "tar"
+    # "zstd"
 )
 
 b() {
