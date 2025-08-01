@@ -2,7 +2,7 @@
   "name": "yt-dlp",
   "version": {
     "version": "2025.07.21",
-    "release": 1
+    "release": 2
   },
   "about": "Feature-rich CLI media downloader",
   "maintainer": "Tox",
@@ -25,7 +25,7 @@
   "dependencies": [
     {
       "name": "ffmpeg",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "zip",

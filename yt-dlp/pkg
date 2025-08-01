@@ -1,4 +1,4 @@
-yt-dlp@2025.07.21-1
+yt-dlp@2025.07.21-2
 
 a="Feature-rich CLI media downloader"
 m="Tox"
@@ -8,8 +8,7 @@ u="https://github.com/$n/$n.git"
 
 s="$u"
 d=(
-    "r,ffmpeg"
-
+    "ffmpeg"
     "zip"
     "python"
     "curl"
