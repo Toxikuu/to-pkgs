@@ -1,0 +1,23 @@
+tomlplusplus@3.4.0-1
+
+tag="v$v"
+a="Header-only TOML config file parser and serializer for C++17"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://github.com/marzer/$n.git"
+vf="gr | grep '^v[0-9]' | sort -V"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}
