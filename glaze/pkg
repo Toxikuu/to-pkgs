@@ -1,0 +1,24 @@
+glaze@5.5.4-1
+
+tag="v$v"
+a="Fast, in-memory JSON and interface library for C++"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://github.com/stephenberry/$n.git"
+
+s="$u"
+d=(
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D BUILD_TESTING=OFF
+)
+
+def
+
+}
