@@ -1,0 +1,96 @@
+{
+  "name": "aquamarine",
+  "version": {
+    "version": "0.9.2",
+    "release": 1
+  },
+  "about": "Lightweight rendering backend library",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/hyprwm/aquamarine.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/hyprwm/aquamarine.git",
+      "dest": "aquamarine"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprutils",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprwayland-scanner",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libdisplay-info",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libinput",
+      "kind": "Required"
+    },
+    {
+      "name": "seatd",
+      "kind": "Required"
+    },
+    {
+      "name": "udev",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "pixman",
+      "kind": "Required"
+    },
+    {
+      "name": "pugixml",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
