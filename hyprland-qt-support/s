@@ -2,7 +2,7 @@
   "name": "hyprland-qt-support",
   "version": {
     "version": "0.1.0",
-    "release": 1
+    "release": 2
   },
   "about": "QML style provider for Hypr QT apps",
   "maintainer": "Tox",
