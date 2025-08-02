@@ -1,7 +1,7 @@
 {
   "name": "at-spi2-core",
   "version": {
-    "version": "2.57.0",
+    "version": "2.57.1",
     "release": 1
   },
   "about": "Comprehensive accessibility framework for GNOME's Assistive Technologies",
@@ -17,8 +17,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://download.gnome.org/sources/at-spi2-core/2.57/at-spi2-core-2.57.0.tar.xz",
-      "dest": "at-spi2-core-2.57.0.tar.xz"
+      "url": "https://download.gnome.org/sources/at-spi2-core/2.57/at-spi2-core-2.57.1.tar.xz",
+      "dest": "at-spi2-core-2.57.1.tar.xz"
     }
   ],
   "dependencies": [
