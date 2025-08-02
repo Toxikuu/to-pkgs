@@ -1,0 +1,52 @@
+{
+  "name": "hyprland-qt-support",
+  "version": {
+    "version": "0.1.0",
+    "release": 1
+  },
+  "about": "QML style provider for Hypr QT apps",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/hyprwm/hyprland-qt-support.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gui"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/hyprwm/hyprland-qt-support.git",
+      "dest": "hyprland-qt-support"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprlang",
+      "kind": "Required"
+    },
+    {
+      "name": "qt",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
