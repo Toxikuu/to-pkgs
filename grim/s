@@ -1,0 +1,60 @@
+{
+  "name": "grim",
+  "version": {
+    "version": "1.5.0",
+    "release": 1
+  },
+  "about": "Screenshot utility for Wayland",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/emersion/grim.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/emersion/grim.git",
+      "dest": "grim"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "pango",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
