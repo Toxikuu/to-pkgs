@@ -1,0 +1,44 @@
+{
+  "name": "libspng",
+  "version": {
+    "version": "0.7.4",
+    "release": 1
+  },
+  "about": "Simple, modern libpng alternative",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://github.com/randy408/libspng.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "img"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/randy408/libspng.git",
+      "dest": "libspng"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
