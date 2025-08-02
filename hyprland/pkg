@@ -1,0 +1,68 @@
+hyprland@0.50.1-1
+
+a="Customizable dynamic tiling Wayland compositor"
+m="Tox"
+l="BSD-3-Clause"
+t="wm"
+u="https://github.com/hyprwm/${n^}.git"
+
+# Avoid submodule shenanigans
+s="${u%.git}/releases/download/v$v/source-v$v.tar.gz"
+d=(
+    "aquamarine"
+    "cairo"
+    "gcc"
+    "glib"
+    "glibc"
+    "glslang"
+    "hyprcursor"
+    "hyprgraphics"
+    "hyprland-qtutils"
+    "hyprlang"
+    "hyprutils"
+    "hyprwayland-scanner"
+    "libglvnd"
+    "libdisplay-info"
+    "libinput"
+    "libliftoff"
+    "pango"
+    "pixman"
+    "re2"
+    "seatd"
+    "tomlplusplus"
+    "udev"
+    "util-linux"
+    "wayland"
+    "libx11"
+    "libxcb"
+    "libxcomposite"
+    "libxcursor"
+    "libxfixes"
+    "libxkbcommon"
+    "libxrender"
+    "mesa"
+
+    "xcb-proto"
+    xcb-util{,-errors,-image,-keysyms,-renderutil,-wm}
+    "xwayland"
+
+    "b,wayland-protocols"
+    "b,hyprland-protocols"
+    "b,xorgproto"
+
+    "b,glaze"
+    "b,cmake"
+    "b,samu"
+    "b,meson"
+)
+
+b() {
+
+make release PREFIX=/usr
+mi
+
+# Upstream uses an absolute symlink here for literally no reason. Overwrite it
+# with our own relative one.
+ln -sfv "${n^}" "$D/usr/bin/$n"
+
+}

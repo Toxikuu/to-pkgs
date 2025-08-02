@@ -1,0 +1,215 @@
+{
+  "name": "hyprland",
+  "version": {
+    "version": "0.50.1",
+    "release": 1
+  },
+  "about": "Customizable dynamic tiling Wayland compositor",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/hyprwm/Hyprland.git",
+  "version_fetch": null,
+  "tags": [
+    "wm"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/hyprwm/Hyprland/releases/download/v0.50.1/source-v0.50.1.tar.gz",
+      "dest": "source-v0.50.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "aquamarine",
+      "kind": "Required"
+    },
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "glslang",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprcursor",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprgraphics",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprland-qtutils",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprlang",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprutils",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprwayland-scanner",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "libdisplay-info",
+      "kind": "Required"
+    },
+    {
+      "name": "libinput",
+      "kind": "Required"
+    },
+    {
+      "name": "libliftoff",
+      "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "pixman",
+      "kind": "Required"
+    },
+    {
+      "name": "re2",
+      "kind": "Required"
+    },
+    {
+      "name": "seatd",
+      "kind": "Required"
+    },
+    {
+      "name": "tomlplusplus",
+      "kind": "Required"
+    },
+    {
+      "name": "udev",
+      "kind": "Required"
+    },
+    {
+      "name": "util-linux",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcomposite",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcursor",
+      "kind": "Required"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-proto",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-errors",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-image",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-keysyms",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-renderutil",
+      "kind": "Required"
+    },
+    {
+      "name": "xcb-util-wm",
+      "kind": "Required"
+    },
+    {
+      "name": "xwayland",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "hyprland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "xorgproto",
+      "kind": "Build"
+    },
+    {
+      "name": "glaze",
+      "kind": "Build"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
