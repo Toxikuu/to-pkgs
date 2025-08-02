@@ -1,0 +1,64 @@
+{
+  "name": "hyprcursor",
+  "version": {
+    "version": "0.1.13",
+    "release": 1
+  },
+  "about": "The hyprland cursor format, library and utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/hyprwm/hyprcursor.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/hyprwm/hyprcursor.git",
+      "dest": "hyprcursor"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprlang",
+      "kind": "Required"
+    },
+    {
+      "name": "librsvg",
+      "kind": "Required"
+    },
+    {
+      "name": "tomlplusplus",
+      "kind": "Required"
+    },
+    {
+      "name": "libzip",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
