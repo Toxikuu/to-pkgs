@@ -1,0 +1,31 @@
+hyprland-qtutils@0.1.4-1
+
+tag="v$v"
+a="Qt/QML utility apps for Hyprland"
+m="Tox"
+l="BSD-3-Clause"
+t="lib utils gui"
+u="https://github.com/hyprwm/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "hyprland-qt-support"
+    "hyprutils"
+    "qt"
+
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+export QT6DIR="/usr/lib/qt6"
+export PKG_CONFIG_PATH+=":$QT6DIR/pkgconfig"
+export LD_LIBRARY_PATH+=":$QT6DIR"
+export CMAKE_PREFIX_PATH+=":$QT6DIR/cmake"
+
+def
+
+}
