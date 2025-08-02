@@ -2,7 +2,7 @@
   "name": "libspng",
   "version": {
     "version": "0.7.4",
-    "release": 1
+    "release": 2
   },
   "about": "Simple, modern libpng alternative",
   "maintainer": "Tox",
@@ -30,6 +30,10 @@
     {
       "name": "zlib",
       "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
     },
     {
       "name": "meson",
