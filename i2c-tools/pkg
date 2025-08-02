@@ -1,0 +1,22 @@
+i2c-tools@ea51da725b743da00b894dfdc4ab189f5a51e90e-1
+
+a="Heterogeneous set of I2C tools"
+m="Tox"
+l="GPL"
+t="utils hw"
+u="https://git.kernel.org/pub/scm/utils/$n/$n.git"
+
+s="$u"
+d=(
+    "perl"
+    "b,wheel"
+    "b,setuptools"
+)
+
+b() {
+
+make EXTRA=eeprog
+make EXTRA=eeprog PREFIX="$D/usr" sbindir="$D/usr/sbin" install
+rma
+
+}
