@@ -1,4 +1,4 @@
-tomlplusplus@3.4.0-2
+tomlplusplus@3.4.0-3
 
 tag="v$v"
 a="Header-only TOML config file parser and serializer for C++17"
@@ -13,11 +13,14 @@ d=(
     "gcc"
     "glibc"
     "b,meson"
-    "b,cmake"
     "b,samu"
 )
 
 b() {
+
+_cfg=(
+    -D generate_cmake_config=false
+)
 
 def
 
