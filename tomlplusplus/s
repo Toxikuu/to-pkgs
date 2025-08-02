@@ -2,7 +2,7 @@
   "name": "tomlplusplus",
   "version": {
     "version": "3.4.0",
-    "release": 1
+    "release": 2
   },
   "about": "Header-only TOML config file parser and serializer for C++17",
   "maintainer": "Tox",
@@ -29,6 +29,10 @@
     {
       "name": "glibc",
       "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
     },
     {
       "name": "cmake",
