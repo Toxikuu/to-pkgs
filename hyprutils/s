@@ -1,0 +1,40 @@
+{
+  "name": "hyprutils",
+  "version": {
+    "version": "0.8.2",
+    "release": 1
+  },
+  "about": "Hyprland utilities library used across the ecosystem",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/hyprwm/hyprutils.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/hyprwm/hyprutils.git",
+      "dest": "hyprutils"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "pixman",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
