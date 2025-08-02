@@ -1,4 +1,4 @@
-libspng@0.7.4-2
+libspng@0.7.4-3
 
 tag="v$v"
 a="Simple, modern libpng alternative"
@@ -13,17 +13,18 @@ d=(
     "zlib"
 
     "b,cmake"
-    "b,meson"
     "b,samu"
 )
 
+qa=(!static)
+
 b() {
 
-with meson
 _cfg=(
     -D build_examples=false
 )
 
 def
+ln -sfv "$n.pc" "$D/usr/lib/pkgconfig/spng.pc"
 
 }
