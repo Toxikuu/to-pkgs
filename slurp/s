@@ -1,0 +1,56 @@
+{
+  "name": "slurp",
+  "version": {
+    "version": "1.5.0",
+    "release": 1
+  },
+  "about": "Select a region in a Wayland compositor",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/emersion/slurp.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/emersion/slurp.git",
+      "dest": "slurp"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
