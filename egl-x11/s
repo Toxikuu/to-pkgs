@@ -1,0 +1,60 @@
+{
+  "name": "egl-x11",
+  "version": {
+    "version": "1.0.2",
+    "release": 1
+  },
+  "about": "NVIDIA XLib and XCB EGL Platform Library",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "upstream": "https://github.com/NVIDIA/egl-x11.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/NVIDIA/egl-x11.git",
+      "dest": "egl-x11"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "eglexternalplatform",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcb",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

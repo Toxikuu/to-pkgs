@@ -1,0 +1,27 @@
+egl-x11@1.0.2-1
+
+tag=v$v
+a="NVIDIA XLib and XCB EGL Platform Library"
+m="Tox"
+l="Apache-2.0"
+t="lib gfx"
+u="https://github.com/NVIDIA/$n.git"
+
+s="$u"
+d=(
+    eglexternalplatform
+    glibc
+    libdrm
+    libx11
+    libxcb
+    mesa
+
+    b,meson
+    b,samu
+)
+
+b() {
+
+def
+
+}
