@@ -2,7 +2,7 @@
   "name": "nvidia",
   "version": {
     "version": "575.64.05",
-    "release": 1
+    "release": 3
   },
   "about": "NVIDIA drivers",
   "maintainer": "Tox",
@@ -41,6 +41,18 @@
     {
       "name": "libelf",
       "kind": "Build"
+    },
+    {
+      "name": "egl-gbm",
+      "kind": "Required"
+    },
+    {
+      "name": "egl-x11",
+      "kind": "Required"
+    },
+    {
+      "name": "egl-wayland",
+      "kind": "Required"
     }
   ],
   "kcfg": []
