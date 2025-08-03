@@ -1,0 +1,43 @@
+{
+  "name": "sdbus-cpp",
+  "version": {
+    "version": "2.1.0",
+    "release": 1
+  },
+  "about": "High-level C++ D-Bus library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://github.com/Kistler-Group/sdbus-cpp.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Kistler-Group/sdbus-cpp.git",
+      "dest": "sdbus-cpp"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "elogind",
+      "kind": "Required"
+    },
+    {
+      "name": "expat",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

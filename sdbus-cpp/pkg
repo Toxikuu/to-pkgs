@@ -1,0 +1,26 @@
+sdbus-cpp@2.1.0-1
+
+tag=v$v
+a="High-level C++ D-Bus library"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="lib"
+u="https://github.com/Kistler-Group/$n.git"
+
+s="$u"
+d=(
+    "b,cmake"
+    "b,samu"
+    "elogind"
+    "expat"
+)
+
+b() {
+
+_cfg=(
+    -D SDBUSCPP_BUILD_CODEGEN=True
+)
+
+def
+
+}
