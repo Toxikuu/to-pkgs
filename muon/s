@@ -2,7 +2,7 @@
   "name": "muon",
   "version": {
     "version": "225cc5ff1a8788f7502d168da766a69678d9f50e",
-    "release": 1
+    "release": 2
   },
   "about": "An implementation of the meson build system in c99",
   "maintainer": "Tox",
@@ -30,6 +30,10 @@
     },
     {
       "name": "samurai",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
       "kind": "Build"
     }
   ],
