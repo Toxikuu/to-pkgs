@@ -1,0 +1,24 @@
+jemalloc@5.3.0-1
+
+a="General-purpose scalable concurrent malloc implementation"
+m="Tox"
+l="BSD"
+t="lib"
+u="https://github.com/$n/$n.git"
+
+s=(
+    "${u%.git}/releases/download/$v/$n-$v.tar.bz2"
+)
+
+d=(
+    "gcc"
+    "glibc"
+    "b,bzip2"
+)
+
+b() {
+
+./autogen.sh
+def
+
+}
