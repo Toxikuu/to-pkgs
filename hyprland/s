@@ -2,7 +2,7 @@
   "name": "hyprland",
   "version": {
     "version": "0.50.1",
-    "release": 1
+    "release": 2
   },
   "about": "Customizable dynamic tiling Wayland compositor",
   "maintainer": "Tox",
@@ -184,11 +184,11 @@
     },
     {
       "name": "wayland-protocols",
-      "kind": "Build"
+      "kind": "Required"
     },
     {
       "name": "hyprland-protocols",
-      "kind": "Build"
+      "kind": "Required"
     },
     {
       "name": "xorgproto",
@@ -209,6 +209,18 @@
     {
       "name": "meson",
       "kind": "Build"
+    },
+    {
+      "name": "elogind",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "vulkan-loader",
+      "kind": "Required"
     }
   ],
   "kcfg": []

@@ -1,4 +1,4 @@
-hyprland@0.50.1-1
+hyprland@0.50.1-2
 
 a="Customizable dynamic tiling Wayland compositor"
 m="Tox"
@@ -46,14 +46,18 @@ d=(
     xcb-util{,-errors,-image,-keysyms,-renderutil,-wm}
     "xwayland"
 
-    "b,wayland-protocols"
-    "b,hyprland-protocols"
+    "wayland-protocols"
+    "hyprland-protocols"
     "b,xorgproto"
 
     "b,glaze"
     "b,cmake"
     "b,samu"
     "b,meson"
+
+    "elogind"
+    "libdrm"
+    "vulkan-loader"
 )
 
 b() {
