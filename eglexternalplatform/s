@@ -1,0 +1,40 @@
+{
+  "name": "eglexternalplatform",
+  "version": {
+    "version": "1.2.1",
+    "release": 1
+  },
+  "about": "The EGL External Platform interface",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/NVIDIA/eglexternalplatform.git",
+  "version_fetch": null,
+  "tags": [
+    "gfx",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/NVIDIA/eglexternalplatform.git",
+      "dest": "eglexternalplatform"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
