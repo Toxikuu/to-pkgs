@@ -1,0 +1,48 @@
+{
+  "name": "wl-clipboard",
+  "version": {
+    "version": "2.2.1",
+    "release": 1
+  },
+  "about": "Copy paste utility for Wayland",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-or-later"
+  ],
+  "upstream": "https://github.com/bugaevc/wl-clipboard.git",
+  "version_fetch": null,
+  "tags": [
+    "cli",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/bugaevc/wl-clipboard.git",
+      "dest": "wl-clipboard"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
