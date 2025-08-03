@@ -1,0 +1,25 @@
+egl-wayland@1.1.19-1
+
+a="EGLStream-based Wayland external platform"
+m="Tox"
+l="MIT"
+t="lib gfx"
+u="https://github.com/NVIDIA/$n.git"
+
+s="$u"
+d=(
+    eglexternalplatform
+    glibc
+    libdrm
+    wayland
+    b,wayland-protocols
+    b,libglvnd
+    b,meson
+    b,samu
+)
+
+b() {
+
+def
+
+}

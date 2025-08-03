@@ -1,0 +1,60 @@
+{
+  "name": "egl-wayland",
+  "version": {
+    "version": "1.1.19",
+    "release": 1
+  },
+  "about": "EGLStream-based Wayland external platform",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/NVIDIA/egl-wayland.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/NVIDIA/egl-wayland.git",
+      "dest": "egl-wayland"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "eglexternalplatform",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Build"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
