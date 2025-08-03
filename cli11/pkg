@@ -1,0 +1,25 @@
+cli11@2.5.0-1
+
+tag="v$v"
+a="Command line parser for C++11"
+m="Tox"
+l="BSD-3-Clause"
+t="lib"
+u="https://github.com/CLIUtils/${n^^}.git"
+
+s="$u"
+d=(
+    b,cmake
+    b,samu
+)
+
+b() {
+
+_cfg=(
+    -D ${n^^}_BUILD_TESTS=OFF
+    -D ${n^^}_BUILD_EXAMPLES=OFF
+)
+
+def
+
+}
