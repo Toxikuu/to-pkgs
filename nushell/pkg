@@ -1,4 +1,4 @@
-nushell@0.106.1-2
+nushell@0.106.1-3
 
 a="A new type of shell"
 m="Tox"
@@ -19,10 +19,7 @@ d=(
 b() {
 
 rm -vf rust-toolchain.toml
-
-# TODO: Build with lto
-RUSTFLAGS="$(echo "$RUSTFLAGS" | sed -e 's|-C lto=\w\+||g' -e 's|-C embed-bitcode=true||g')"
-ltno
+export CFLAGS+=" -ffat-lto-objects"
 
 cbr
 
