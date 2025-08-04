@@ -1,4 +1,4 @@
-niri@25.05.1-2
+niri@25.05.1-3
 
 tag="v$v"
 a="A scrolling Wayland compositor"
@@ -31,6 +31,7 @@ d=(
 
 b() {
 
+ltno
 cbr
 
 install -vDm755 "target/release/$n"     -t "$D/usr/bin/"
@@ -44,11 +45,3 @@ install -vDm644 resources/default-config.kdl README.md -t "$D/usr/share/doc/$n/"
     install -vDm644 /dev/stdin "$D/usr/share/bash-completion/completions/$n"
 
 }
-
-# t() {
-#
-# export XDG_RUNTIME_DIR="$(mktemp -d)"
-# export RAYON_NUM_THREADS=4
-# cargo test --all --exclude "$n-visual-tests"
-#
-# }
