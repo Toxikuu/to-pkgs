@@ -1,0 +1,44 @@
+xdg-desktop-portal-hyprland@1.3.10-1
+
+a="Hyprland's xdg-desktop-portal backend"
+m="Tox"
+l="MIT"
+t="lib utils gfx"
+u="https://github.com/hyprwm/$n.git"
+
+# Submodule shenanigans
+s="${u%.git}/archive/refs/tags/v$v.tar.gz"
+d=(
+    glibc
+    gcc
+    hyprlang
+    hyprutils
+    hyprwayland-scanner
+    inih
+    sdbus-cpp
+    util-linux
+    pipewire
+    qt
+    xdg-desktop-portal
+    grim
+    slurp
+    wayland
+
+    b,cmake
+    b,samu
+    b,hyprland-protocols
+    b,wayland-protocols
+)
+
+b() {
+
+rm -rf sdbus-cpp
+
+export QT6DIR="/usr/lib/qt6"
+export PKG_CONFIG_PATH+=":$QT6DIR/pkgconfig"
+export LD_LIBRARY_PATH+=":$QT6DIR"
+export CMAKE_PREFIX_PATH+=":$QT6DIR/cmake"
+
+def
+
+}
