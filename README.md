@@ -16,5 +16,7 @@ unstable mirror like `https://https.git.savannah.gnu.org/git/gettext.git/`
 - [ ] Switch to sudo-rs as the default sudo
     - [ ] Testing required
 - [x] Add xvidcore as an ffmpeg dependency
+- [ ] Add wev
+- [ ] Refactor qt6 handling
 
 <!-- TODO: See if `git config commit.cleanup strip` helps -->
