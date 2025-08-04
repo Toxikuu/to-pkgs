@@ -1,4 +1,4 @@
-ripgrep@119a58a400ea948c2d2b0cd4ec58361e74478641-1
+ripgrep@119a58a400ea948c2d2b0cd4ec58361e74478641-2
 
 a="Oxidized, recursive grep"
 m="Tox"
@@ -7,7 +7,6 @@ t="utils cli"
 u="https://github.com/BurntSushi/$n.git"
 
 s="$u"
-
 d=(
     "b,rust"
     "b,llvm"
@@ -25,10 +24,10 @@ export RUSTFLAGS+=" -Cprofile-generate=$PGO_PROFILE_DIR"
 
 # Profile
 cbr --features=pcre2
-hyperfine --warmup 2 --min-runs 32 --max-runs 64 'target/release/rg -i /bin/sh /usr'
+hyperfine --warmup 2 --min-runs 64 --max-runs 128 'target/release/rg -i /bin/sh /usr'
 
 # Rebuild with profile data
-export RUSTFLAGS="$(echo $RUSTFLAGS | sed "s|-Cprofile-generate=$PGO_PROFILE_DIR||g")"
+export RUSTFLAGS="${RUSTFLAGS//-Cprofile-generate=$PGO_PROFILE_DIR/}"
 llvm-profdata merge -o "$PGO_PROFILE_DIR/merged.profdata" "$PGO_PROFILE_DIR"
 export RUSTFLAGS+=" -Cprofile-use=${PGO_PROFILE_DIR}/merged.profdata"
 cbr --features=pcre2
