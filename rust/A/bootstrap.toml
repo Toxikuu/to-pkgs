@@ -1,0 +1,55 @@
+profile = "dist"
+
+# Tell x.py the editors have reviewed the content of this file
+# and updated it to follow the major changes of the building system,
+# so x.py will not warn us to do such a review.
+change-id = 140732
+
+[llvm]
+download-ci-llvm = false
+link-shared = true
+
+[build]
+description = "For LFS Tox-9999"
+docs = false
+locked-deps = true
+tools = [
+    "cargo",
+    "clippy",
+    "rustdoc",
+    "rustfmt",
+    "rust-analyzer-proc-macro-srv",
+    "analysis",
+    "src",
+]
+target = [
+    "x86_64-unknown-linux-gnu"
+]
+sanitizers = true
+profiler = true
+
+[install]
+prefix = "/usr"
+
+[rust]
+channel = "stable"
+rpath = false
+frame-pointers = true
+deny-warnings = false
+lto = "fat"
+codegen-units = 1
+codegen-units-std = 1
+
+# Don't build lld which does not belong to this package.
+lld = false
+
+# Don't build llvm-bitcode-linker which is only useful for the NVPTX
+# backend that we don't enable.
+llvm-bitcode-linker = false
+
+[target.x86_64-unknown-linux-gnu]
+ar = "/usr/bin/ar"
+cc = "/usr/bin/gcc"
+cxx = "/usr/bin/g++"
+ranlib = "/usr/bin/gcc-ranlib"
+llvm-config = "/usr/bin/llvm-config"
