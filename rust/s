@@ -2,7 +2,7 @@
   "name": "rust",
   "version": {
     "version": "1.88.0",
-    "release": 3
+    "release": 4
   },
   "about": "The Rust programming language",
   "maintainer": "Tox",

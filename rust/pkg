@@ -1,4 +1,4 @@
-rust@1.88.0-3
+rust@1.88.0-4
 
 a="The Rust programming language"
 m="Tox"
@@ -44,9 +44,13 @@ mkdir -pv "$CARGO_HOME" "$RUSTUP_HOME"
 _cfg=(
     -y
     --no-modify-path
+    --no-update-default-toolchain
+
+    --profile=minimal
+    --component cargo,clippy,rustfmt
+
     --default-toolchain="$v"
     --default-host="x86_64-unknown-linux-gnu"
-    --component cargo,clippy,rustfmt
 )
 
 sh rustup-init.sh "${_cfg[@]}"
