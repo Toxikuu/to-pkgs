@@ -1,0 +1,19 @@
+diff --git a/Cargo.toml b/Cargo2.toml
+index efe3cc3..45c2a7d 100644
+--- a/Cargo.toml
++++ b/Cargo2.toml
+@@ -8,6 +8,12 @@ members = [
+ resolver = "2"
+ 
+ [profile.release]
+-lto = "thin"
+-debug = 1
++codegen-units = 1
++opt-level = 3
++debug-assertions = false
++overflow-checks = false
+ incremental = false
++lto = "fat"
++debug = "none"
++panic = "abort"
++strip = "symbols"
