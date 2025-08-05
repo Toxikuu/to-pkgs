@@ -1,0 +1,16 @@
+libmnl@1.0.5-1
+
+a="Minimal Netlink helper library"
+m="Tox"
+l="LGPL2.1"
+t=""
+u="https://git.netfilter.org/$n.git"
+
+s="https://netfilter.org/projects/$n/files/$n-$v.tar.bz2"
+d=(b,bzip2 glibc)
+
+b() {
+
+def
+
+}
