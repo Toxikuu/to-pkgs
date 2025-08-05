@@ -1,0 +1,84 @@
+{
+  "name": "bind-utils",
+  "version": {
+    "version": "9.21.10",
+    "release": 1
+  },
+  "about": "DNS utilities",
+  "maintainer": "Tox",
+  "licenses": [
+    "MPL2"
+  ],
+  "upstream": "https://gitlab.isc.org/isc-projects/bind9.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.isc.org/isc-projects/bind9.git",
+      "dest": "bind9"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "liburcu",
+      "kind": "Required"
+    },
+    {
+      "name": "libuv",
+      "kind": "Required"
+    },
+    {
+      "name": "nghttp2",
+      "kind": "Required"
+    },
+    {
+      "name": "json-c",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "libidn2",
+      "kind": "Required"
+    },
+    {
+      "name": "jemalloc",
+      "kind": "Required"
+    },
+    {
+      "name": "muon",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
