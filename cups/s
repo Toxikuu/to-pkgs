@@ -1,0 +1,48 @@
+{
+  "name": "cups",
+  "version": {
+    "version": "2.4.12",
+    "release": 1
+  },
+  "about": "Common UNIX Printing System",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0 WITH LLVM-exception AND BSD-3-Clause AND Zlib AND BSD-2-Clause"
+  ],
+  "upstream": "https://github.com/OpenPrinting/cups.git",
+  "version_fetch": null,
+  "tags": [
+    "hw",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/OpenPrinting/cups/releases/download/v2.4.12/cups-2.4.12-source.tar.gz",
+      "dest": "cups-2.4.12.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gnutls",
+      "kind": "Required"
+    },
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "libusb",
+      "kind": "Required"
+    },
+    {
+      "name": "pam",
+      "kind": "Required"
+    },
+    {
+      "name": "xdg-utils",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
