@@ -1,0 +1,36 @@
+{
+  "name": "libnftnl",
+  "version": {
+    "version": "1.2.9",
+    "release": 1
+  },
+  "about": "Netfilter library for the nf_tables subsystem",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL2"
+  ],
+  "upstream": "https://git.netfilter.org/libnftnl",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.netfilter.org/libnftnl",
+      "dest": "libnftnl"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    },
+    {
+      "name": "libmnl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
