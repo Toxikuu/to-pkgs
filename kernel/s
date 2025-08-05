@@ -2,7 +2,7 @@
   "name": "kernel",
   "version": {
     "version": "6.16",
-    "release": 3
+    "release": 4
   },
   "about": "The Linux kernel",
   "maintainer": "Tox",
