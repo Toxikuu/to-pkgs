@@ -1,7 +1,7 @@
 {
   "name": "udev",
   "version": {
-    "version": "257.7",
+    "version": "257.8",
     "release": 1
   },
   "about": "Programs for dynamic device node creation",
@@ -22,8 +22,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/systemd/systemd/archive/v257.7/systemd-257.7.tar.gz",
-      "dest": "systemd-257.7.tar.gz"
+      "url": "https://github.com/systemd/systemd/archive/v257.8/systemd-257.8.tar.gz",
+      "dest": "systemd-257.8.tar.gz"
     }
   ],
   "dependencies": [
