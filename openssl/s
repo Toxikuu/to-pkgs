@@ -2,7 +2,7 @@
   "name": "openssl",
   "version": {
     "version": "3.5.2",
-    "release": 1
+    "release": 2
   },
   "about": "Cryptography tools and libraries",
   "maintainer": "Tox",
@@ -32,6 +32,10 @@
     },
     {
       "name": "perl",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
       "kind": "Required"
     }
   ],

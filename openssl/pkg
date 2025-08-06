@@ -1,4 +1,4 @@
-openssl@3.5.2-1
+openssl@3.5.2-2
 
 a="Cryptography tools and libraries"
 m="Tox"
@@ -14,17 +14,23 @@ s=(
 d=(
     "glibc"
     "perl"
+    "zlib"
 )
 
 b() {
 
 NO_DEFAULT=1
 _cfg=(
+    linux-x86_64
     --prefix=/usr
     --${n}dir=/etc/ssl
     --libdir=lib
     shared
     zlib-dynamic
+
+    no-tests
+    no-unit-test
+    no-external-tests
 )
 
 # Abstraction workaround
