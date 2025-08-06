@@ -1,7 +1,7 @@
 {
   "name": "libqalculate",
   "version": {
-    "version": "5.6.0",
+    "version": "5.7.0",
     "release": 1
   },
   "about": "Multi-purpose calculator",
