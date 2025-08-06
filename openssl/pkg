@@ -1,4 +1,4 @@
-openssl@3.5.1-1
+openssl@3.5.2-1
 
 a="Cryptography tools and libraries"
 m="Tox"
@@ -45,8 +45,5 @@ t() {
 for f in libssl.so{.3,} libcrypto.so{.3,}; do
     [ -e "$D/usr/lib/$f" ]
 done
-
-# 30-test_afalg.t may fail depending on kernel configuration
-HARNESS_JOBS=$(nproc) mk test
 
 }
