@@ -1,8 +1,8 @@
 {
   "name": "strace",
   "version": {
-    "version": "6.15",
-    "release": 2
+    "version": "6.16",
+    "release": 1
   },
   "about": "A diagnostic, debugging, and instructional userspace tracer",
   "maintainer": "Tox",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/strace/strace/releases/download/v6.15/strace-6.15.tar.xz",
-      "dest": "strace-6.15.tar.xz"
+      "url": "https://github.com/strace/strace/releases/download/v6.16/strace-6.16.tar.xz",
+      "dest": "strace-6.16.tar.xz"
     }
   ],
   "dependencies": [
