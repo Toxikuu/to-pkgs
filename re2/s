@@ -1,7 +1,7 @@
 {
   "name": "re2",
   "version": {
-    "version": "20250722",
+    "version": "20250805",
     "release": 1
   },
   "about": "Fast, safe, thread-friendly regular expression engine",
@@ -10,7 +10,7 @@
     "BSD-3-Clause"
   ],
   "upstream": "https://github.com/google/re2.git",
-  "version_fetch": "gr | vfs | sort -V | sed 's,-,,g'",
+  "version_fetch": "gr | grep -v '[a-zA-Z]' | vfs | sort -V | sed 's,-,,g'",
   "tags": [
     "lib"
   ],
