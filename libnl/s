@@ -1,7 +1,7 @@
 {
   "name": "libnl",
   "version": {
-    "version": "6ddf23d84fbe081ec71eda8f65008e7fa63b464c",
+    "version": "92cc31a6ad61fe61834042d6172c632aa53e6d81",
     "release": 1
   },
   "about": "Netlink Library Suite",
