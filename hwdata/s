@@ -1,7 +1,7 @@
 {
   "name": "hwdata",
   "version": {
-    "version": "0.397",
+    "version": "0.398",
     "release": 1
   },
   "about": "Hardware identification databases",
