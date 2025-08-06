@@ -1,4 +1,4 @@
-glaze@5.5.4-1
+glaze@5.5.5-1
 
 tag="v$v"
 a="Fast, in-memory JSON and interface library for C++"
