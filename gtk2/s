@@ -1,0 +1,112 @@
+{
+  "name": "gtk2",
+  "version": {
+    "version": "2.24.33",
+    "release": 1
+  },
+  "about": "Multi-platform GUI toolkit (legacy)",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-2.1-or-later"
+  ],
+  "upstream": "https://gitlab.gnome.org/GNOME/gtk.git",
+  "version_fetch": "gr | grep '^2\\.' | grep -Ev '\\.9|\\.32|\\.28' | vfs | sort -V",
+  "tags": [
+    "gui,",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "http://ftp.gnome.org/pub/gnome/sources/gtk+/2.24/gtk+-2.24.33.tar.xz",
+      "dest": "gtk+-2.24.33.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "at-spi2-core",
+      "kind": "Required"
+    },
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "desktop-file-utils",
+      "kind": "Required"
+    },
+    {
+      "name": "fontconfig",
+      "kind": "Required"
+    },
+    {
+      "name": "gdk-pixbuf",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "librsvg",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcomposite",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcursor",
+      "kind": "Required"
+    },
+    {
+      "name": "libxdamage",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Required"
+    },
+    {
+      "name": "libxi",
+      "kind": "Required"
+    },
+    {
+      "name": "libxinerama",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "shared-mime-info",
+      "kind": "Required"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
