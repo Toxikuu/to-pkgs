@@ -1,0 +1,41 @@
+swftools@0.9.2-1
+
+a="Utilities for working with shockwave flash files"
+m="Tox"
+l="GPL"
+t="utils cli"
+u="http://www.$n.org"
+vf="no"
+
+s=(
+    "$u/$n-$v.tar.gz"
+)
+
+d=(
+    giflib
+    freeglut
+    lame
+    libjpeg-turbo
+    fontconfig
+    t1lib
+)
+
+b() {
+
+patch -Np0 -i "$A/giflib-5.patch"
+patch -Np0 -i "$A/extern.patch"
+patch -Np0 -i "$A/ptr.patch"
+
+CFLAGS+=" -std=gnu17 -Wno-error=incompatible-pointer-types"
+
+cfg
+mk
+
+patch -Np0 -i "$A/rm-o.patch"
+mk prefix="$D/usr" install
+
+rm -vf "$D/usr/share/$n/swfs/"default_{loader,viewer}.swf
+ln -sv tessel_loader.swf "$D/usr/share/$n/swfs/default_loader.swf"
+ln -sv simple_viewer.swf "$D/usr/share/$n/swfs/default_viewer.swf"
+
+}
