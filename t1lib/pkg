@@ -1,0 +1,35 @@
+t1lib@5.1.2-1
+
+a="Library for generating glyphs from Adobe Type 1 fonts"
+m="Tox"
+l="GPL-2.0-only"
+t="lib"
+u="https://www.ibiblio.org/pub/Linux/libs/graphics/"
+vf=no
+
+s=(
+    "$u/$n-$v.tar.gz"
+)
+
+d=(
+    glibc
+    libx11
+    libxaw
+    libxt
+)
+
+b() {
+
+pat "$A/libs.patch"
+pat "$A/format-sec.patch"
+pat "$A/CVE-2011-0764.patch"
+pat "$A/CVE-2011-1552_1553_1554.patch"
+pat "$A/CVE-2010-2642.patch"
+pat "$A/c99.patch"
+
+CFLAGS+=" -std=gnu17"
+cfg
+mk without_doc -j1
+mi
+
+}

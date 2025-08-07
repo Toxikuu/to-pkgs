@@ -1,0 +1,43 @@
+{
+  "name": "t1lib",
+  "version": {
+    "version": "5.1.2",
+    "release": 1
+  },
+  "about": "Library for generating glyphs from Adobe Type 1 fonts",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://www.ibiblio.org/pub/Linux/libs/graphics/",
+  "version_fetch": "no",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://www.ibiblio.org/pub/Linux/libs/graphics//t1lib-5.1.2.tar.gz",
+      "dest": "t1lib-5.1.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxaw",
+      "kind": "Required"
+    },
+    {
+      "name": "libxt",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
