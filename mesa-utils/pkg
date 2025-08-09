@@ -1,4 +1,4 @@
-mesa-utils@6f997174b7195193e7d7bd05ed123d4c65829a67-1
+mesa-utils@d5d06d4c573a65230229831cb7d35e1d563f1829-1
 
 a="Essential Mesa utilities"
 m="Tox"
@@ -6,8 +6,7 @@ l="MIT"
 t="gfx utils lib gui cli"
 u="https://gitlab.freedesktop.org/mesa/demos.git"
 
-s="$u"
-
+s="${u%.git}/-/archive/main/demos-main.tar.gz"
 d=(
     "libdrm"
     "libx11"
@@ -28,8 +27,6 @@ d=(
 
 b() {
 
-with meson # TODO: Make the `with` guess matching less shit
-
 _cfg=(
     -D gles1=disabled
     -D glvnd=enabled
@@ -38,7 +35,6 @@ _cfg=(
     -D wayland=enabled
     -D vulkan=enabled
     -D with-system-data-files=true
-    --wrap-mode=nofallback
 )
 
 def

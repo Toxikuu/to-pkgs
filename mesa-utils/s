@@ -1,7 +1,7 @@
 {
   "name": "mesa-utils",
   "version": {
-    "version": "6f997174b7195193e7d7bd05ed123d4c65829a67",
+    "version": "d5d06d4c573a65230229831cb7d35e1d563f1829",
     "release": 1
   },
   "about": "Essential Mesa utilities",
@@ -20,9 +20,9 @@
   ],
   "sources": [
     {
-      "kind": "Git",
-      "url": "https://gitlab.freedesktop.org/mesa/demos.git",
-      "dest": "demos"
+      "kind": "Download",
+      "url": "https://gitlab.freedesktop.org/mesa/demos/-/archive/main/demos-main.tar.gz",
+      "dest": "demos-main.tar.gz"
     }
   ],
   "dependencies": [
