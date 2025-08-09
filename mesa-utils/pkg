@@ -6,7 +6,7 @@ l="MIT"
 t="gfx utils lib gui cli"
 u="https://gitlab.freedesktop.org/mesa/demos.git"
 
-s="${u%.git}/-/archive/main/demos-main.tar.gz"
+s="$u"
 d=(
     "libdrm"
     "libx11"
@@ -27,8 +27,15 @@ d=(
 
 b() {
 
+# TODO: Figure out why this doesn't autodetect(?)
+with meson
+
 _cfg=(
+    -D gl=enabled
+    -D egl=enabled
     -D gles1=disabled
+    -D gles2=enabled
+    -D glut=enabled
     -D glvnd=enabled
     -D libdrm=enabled
     -D x11=enabled

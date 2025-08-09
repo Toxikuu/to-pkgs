@@ -20,9 +20,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://gitlab.freedesktop.org/mesa/demos/-/archive/main/demos-main.tar.gz",
-      "dest": "demos-main.tar.gz"
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/mesa/demos.git",
+      "dest": "demos"
     }
   ],
   "dependencies": [
