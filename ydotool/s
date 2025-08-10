@@ -1,0 +1,44 @@
+{
+  "name": "ydotool",
+  "version": {
+    "version": "1.0.4",
+    "release": 1
+  },
+  "about": "Generic command-line automation tool",
+  "maintainer": "Tox",
+  "licenses": [
+    "AGPL3"
+  ],
+  "upstream": "https://github.com/ReimuNotMoe/ydotool.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/ReimuNotMoe/ydotool.git",
+      "dest": "ydotool"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}
