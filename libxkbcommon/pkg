@@ -1,4 +1,4 @@
-libxkbcommon@1.10.0-2
+libxkbcommon@1.11.0-1
 
 an="${n#lib*}" # alt name
 tag="$an-$v"
