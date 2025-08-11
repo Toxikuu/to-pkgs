@@ -2,7 +2,7 @@
   "name": "nvidia",
   "version": {
     "version": "580.65.06",
-    "release": 1
+    "release": 2
   },
   "about": "NVIDIA drivers",
   "maintainer": "Tox",

@@ -1,4 +1,4 @@
-nvidia@580.65.06-1
+nvidia@580.65.06-2
 # Huge thanks to Zeckma for her work on:
 # https://github.com/glfs-book/glfs/blob/trunk/shareddeps/drivers/nvidia.xml
 
@@ -69,8 +69,9 @@ _cfg=(
     KERNEL_UNAME="$kver"
     KERNEL_MODLIB="$D/usr/lib/modules/$kver" # TODO: NVIDIA's Makefile appears to ignore this ??
     KERNEL_SOURCES="/usr/src/linux"
-    NV_EXCLUDE_KERNEL_MODULES="$n-peermem $n-uvm"
+    NV_EXCLUDE_KERNEL_MODULES="$n-peermem"
 )
+
 mk "${_cfg[@]}"
 mk "${_cfg[@]}" modules_install
 [ -e "$D/usr/lib/modules/$kver/kernel/drivers/video/$n.ko" ] ||
