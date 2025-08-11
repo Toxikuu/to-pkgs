@@ -1,0 +1,93 @@
+{
+  "name": "gpu-screen-recorder",
+  "version": {
+    "version": "5.6.5",
+    "release": 1
+  },
+  "about": "Screen recorder for Linux",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-only"
+  ],
+  "upstream": "https://repo.dec05eba.com/gpu-screen-recorder",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "gui",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://repo.dec05eba.com/gpu-screen-recorder",
+      "dest": "gpu-screen-recorder"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "dbus",
+      "kind": "Required"
+    },
+    {
+      "name": "ffmpeg",
+      "kind": "Required"
+    },
+    {
+      "name": "libcap",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "pipewire",
+      "kind": "Required"
+    },
+    {
+      "name": "libva",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxcomposite",
+      "kind": "Required"
+    },
+    {
+      "name": "libxdamage",
+      "kind": "Required"
+    },
+    {
+      "name": "libxfixes",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "vulkan-headers",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

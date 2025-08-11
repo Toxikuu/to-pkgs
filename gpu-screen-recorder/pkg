@@ -1,0 +1,48 @@
+gpu-screen-recorder@5.6.5-1
+
+a="Screen recorder for Linux"
+m="Tox"
+l="GPL-3.0-only"
+t="utils gui gfx"
+u="https://repo.dec05eba.com/$n"
+
+s=(
+    "$u"
+)
+
+d=(
+    dbus
+    ffmpeg
+    libcap
+    libdrm
+    libglvnd
+    pipewire
+    libva
+    libx11
+    libxcomposite
+    libxdamage
+    libxfixes
+    libxrandr
+    wayland
+
+    b,meson
+    b,samu
+    b,vulkan-headers
+)
+
+b() {
+
+_cfg=(
+    -D systemd=false
+    -D strip=false
+    -D capabilities=true
+    -D nvidia_suspend_fix=false
+
+    # pipewire stuff
+    -D portal=true
+    -D app_audio=true
+)
+
+def
+
+}
