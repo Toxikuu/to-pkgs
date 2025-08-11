@@ -1,4 +1,4 @@
-gpu-screen-recorder@5.6.5-1
+gpu-screen-recorder@5.6.5-2
 
 a="Screen recorder for Linux"
 m="Tox"
@@ -24,6 +24,10 @@ d=(
     libxfixes
     libxrandr
     wayland
+
+    # TEST: Not sure if these are needed
+    cuda
+    nvidia
 
     b,meson
     b,samu

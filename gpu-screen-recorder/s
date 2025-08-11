@@ -2,7 +2,7 @@
   "name": "gpu-screen-recorder",
   "version": {
     "version": "5.6.5",
-    "release": 1
+    "release": 2
   },
   "about": "Screen recorder for Linux",
   "maintainer": "Tox",
@@ -74,6 +74,14 @@
     },
     {
       "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "cuda",
+      "kind": "Required"
+    },
+    {
+      "name": "nvidia",
       "kind": "Required"
     },
     {
