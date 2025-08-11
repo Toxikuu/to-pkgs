@@ -1,4 +1,4 @@
-cargo-c@0.10.14-3
+cargo-c@0.10.15-1
 
 a="Cargo subcommand to create C-ABI compatible libraries"
 m="Tox"
