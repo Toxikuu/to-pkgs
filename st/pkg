@@ -1,4 +1,4 @@
-st@9328548866e94ac9df043651a25dd1704fa9b454-1
+st@bdb21ddb8bdffa372b2870407a2869d5c5a822f3-1
 # TODO: Patch stuff, and apply those patches here, and also don't copy sources
 # to /usr/src, but rather just do the configuring here. After all, this is my
 # package repo.
