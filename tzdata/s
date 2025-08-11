@@ -2,15 +2,15 @@
   "name": "tzdata",
   "version": {
     "version": "2025b",
-    "release": 1
+    "release": 2
   },
   "about": "Timezone data",
   "maintainer": "Tox",
   "licenses": [
     "Custom"
   ],
-  "upstream": "https://www.iana.org/time-zones",
-  "version_fetch": "curl -s 'https://www.iana.org/time-zones' | grep 'Released ' | grep -o '[2-9][0-9][0-9][0-9][a-z]'",
+  "upstream": "https://github.com/eggert/tz.git",
+  "version_fetch": null,
   "tags": [
     "lib",
     "utils",
