@@ -1,4 +1,4 @@
-mesa@25.1.7-1
+mesa@25.2.0-1
 
 # NOTE: This pkg only installs GBM from Mesa.
 a="Graphics libraries"
@@ -45,7 +45,6 @@ b() {
 
 _cfg=(
     -D gbm=enabled
-    -D osmesa=false
     -D platforms=x11,wayland
     -D gallium-drivers=
     -D vulkan-drivers=
