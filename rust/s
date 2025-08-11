@@ -1,8 +1,8 @@
 {
   "name": "rust",
   "version": {
-    "version": "1.88.0",
-    "release": 4
+    "version": "1.89.0",
+    "release": 1
   },
   "about": "The Rust programming language",
   "maintainer": "Tox",
