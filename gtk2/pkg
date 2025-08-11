@@ -1,11 +1,11 @@
-gtk2@2.24.33-1
+gtk2@2.24.33-2
 
 a="Multi-platform GUI toolkit (legacy)"
 m="Tox"
 l="LGPL-2.1-or-later"
 t="gui, lib"
 u="https://gitlab.gnome.org/GNOME/${n/2/}.git"
-vf="gr | grep '^2\.' | grep -Ev '\.9|\.32|\.28' | vfs | sort -V"
+vf="gr | grep '^2\.' | grep -Ev '\.(9|32|28)' | vfs | sort -V"
 
 s=(
     "http://ftp.gnome.org/pub/gnome/sources/gtk+/${v%.*}/gtk+-$v.tar.xz"
