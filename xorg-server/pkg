@@ -1,4 +1,4 @@
-xorg-server@21.1.18-3
+xorg-server@21.1.18-4
 
 a="X Window system server"
 m="Tox"
@@ -24,7 +24,7 @@ d=(
     "libdrm"
     "libepoxy"
     "mesa"
-    "nvidia" # Needed for dri.pc
+    # "nvidia" # Needed for dri.pc
 
     "b,meson"
     "b,samu"
