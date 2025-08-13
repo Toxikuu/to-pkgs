@@ -1,0 +1,23 @@
+hyprlang@0.6.4-1
+
+tag="v$v"
+a="The hypr config language"
+m="Tox"
+l="BSD-3-Clause"
+t="lib"
+u="https://github.com/hyprwm/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "hyprutils"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}

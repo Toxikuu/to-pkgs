@@ -1,0 +1,41 @@
+{
+  "name": "pugixml",
+  "version": {
+    "version": "1.15",
+    "release": 1
+  },
+  "about": "Light-weight, simple and fast XML parser for C++ with XPath support",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/zeux/pugixml.git",
+  "version_fetch": null,
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/zeux/pugixml.git",
+      "dest": "pugixml"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

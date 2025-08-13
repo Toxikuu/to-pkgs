@@ -1,4 +1,4 @@
-tuun@4.2.0-3
+tuun@5.4.0-1
 
 tag="v$v"
 a="Minimal music player using MPV as a backend"
@@ -25,6 +25,7 @@ d=(
 
 b() {
 
+CFLAGS+=" -ffat-lto-objects"
 mk
 mi
 

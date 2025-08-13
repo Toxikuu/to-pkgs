@@ -1,0 +1,65 @@
+{
+  "name": "libqalculate",
+  "version": {
+    "version": "5.7.0",
+    "release": 1
+  },
+  "about": "Multi-purpose calculator",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://github.com/Qalculate/libqalculate.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils",
+    "math"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Qalculate/libqalculate.git",
+      "dest": "libqalculate"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "curl",
+      "kind": "Required"
+    },
+    {
+      "name": "icu",
+      "kind": "Required"
+    },
+    {
+      "name": "libxml2",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gmp",
+      "kind": "Required"
+    },
+    {
+      "name": "mpfr",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    },
+    {
+      "name": "intltool",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

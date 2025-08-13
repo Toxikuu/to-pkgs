@@ -1,0 +1,33 @@
+{
+  "name": "libmnl",
+  "version": {
+    "version": "1.0.5",
+    "release": 1
+  },
+  "about": "Minimal Netlink helper library",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL2.1"
+  ],
+  "upstream": "https://git.netfilter.org/libmnl.git",
+  "version_fetch": null,
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://netfilter.org/projects/libmnl/files/libmnl-1.0.5.tar.bz2",
+      "dest": "libmnl-1.0.5.tar.bz2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

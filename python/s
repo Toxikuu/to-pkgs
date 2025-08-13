@@ -1,7 +1,7 @@
 {
   "name": "python",
   "version": {
-    "version": "3.13.5",
+    "version": "3.13.6",
     "release": 1
   },
   "about": "The Python programming language",
@@ -21,8 +21,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.python.org/ftp/python/3.13.5/Python-3.13.5.tar.xz",
-      "dest": "Python-3.13.5.tar.xz"
+      "url": "https://www.python.org/ftp/python/3.13.6/Python-3.13.6.tar.xz",
+      "dest": "Python-3.13.6.tar.xz"
     }
   ],
   "dependencies": [

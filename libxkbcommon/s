@@ -1,8 +1,8 @@
 {
   "name": "libxkbcommon",
   "version": {
-    "version": "1.10.0",
-    "release": 2
+    "version": "1.11.0",
+    "release": 1
   },
   "about": "Keymap handling library for toolkits and window systems",
   "maintainer": "Tox",

@@ -1,0 +1,21 @@
+hyprutils@0.8.2-1
+
+tag="v$v"
+a="Hyprland utilities library used across the ecosystem"
+m="Tox"
+l="BSD-3-Clause"
+t="lib utils"
+u="https://github.com/hyprwm/$n.git"
+
+s="$u"
+d=(
+    "pixman"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}

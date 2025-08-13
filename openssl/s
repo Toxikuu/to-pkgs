@@ -1,8 +1,8 @@
 {
   "name": "openssl",
   "version": {
-    "version": "3.5.1",
-    "release": 1
+    "version": "3.5.2",
+    "release": 2
   },
   "about": "Cryptography tools and libraries",
   "maintainer": "Tox",
@@ -21,8 +21,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.1/openssl-3.5.1.tar.gz",
-      "dest": "openssl-3.5.1.tar.gz"
+      "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.2/openssl-3.5.2.tar.gz",
+      "dest": "openssl-3.5.2.tar.gz"
     }
   ],
   "dependencies": [
@@ -32,6 +32,10 @@
     },
     {
       "name": "perl",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
       "kind": "Required"
     }
   ],

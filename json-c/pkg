@@ -1,0 +1,28 @@
+json-c@0.18-1
+
+a="JSON implementation in C"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://github.com/$n/$n.git"
+vf="gr | sed -E 's,-[0-9]{8}$,,' | vfs | sort -V"
+
+s="https://s3.amazonaws.com/${n}_releases/releases/$n-$v.tar.gz"
+d=(
+    glibc
+    b,cmake
+    b,samu
+)
+
+b() {
+
+_cfg=(
+    -D CMAKE_POLICY_VERSION_MINIMUM=3.5
+    -D ENABLE_RDRAND=OFF
+    -D ENABLE_THREADING=ON
+    -D BUILD_STATIC_LIBS=OFF
+)
+
+def
+
+}

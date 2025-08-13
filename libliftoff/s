@@ -1,0 +1,43 @@
+{
+  "name": "libliftoff",
+  "version": {
+    "version": "0.5.0",
+    "release": 1
+  },
+  "about": "Lightweight KMS plane library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://gitlab.freedesktop.org/emersion/libliftoff.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://gitlab.freedesktop.org/emersion/libliftoff.git",
+      "dest": "libliftoff"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

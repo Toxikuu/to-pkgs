@@ -1,0 +1,43 @@
+{
+  "name": "abseil-cpp",
+  "version": {
+    "version": "20250512.1",
+    "release": 1
+  },
+  "about": "Collection of C++ library code designed to augment the C++ standard library",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "upstream": "https://github.com/abseil/abseil-cpp.git",
+  "version_fetch": null,
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/abseil/abseil-cpp.git",
+      "dest": "abseil-cpp"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

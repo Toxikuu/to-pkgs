@@ -1,0 +1,23 @@
+cbindgen@0.29.0-1
+
+tag="v$v"
+a="Tool to generate C bindings to Rust code"
+m="Tox"
+l="MPL-2.0"
+t="lib utils"
+u="https://github.com/mozilla/$n.git"
+vf="gr | grep '^v[0-9]' | vfs | sort -V"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "b,rust"
+)
+
+b() {
+
+cbr
+install -vDm755 "target/release/$n" -t "$D/usr/bin/"
+
+}

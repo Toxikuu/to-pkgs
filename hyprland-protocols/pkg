@@ -1,0 +1,20 @@
+hyprland-protocols@0.6.4-1
+
+tag="v$v"
+a="Wayland protocol extensions for Hyprland"
+m="Tox"
+l="BSD-3-Clause"
+t=""
+u="https://github.com/hyprwm/$n.git"
+
+s="$u"
+d=(
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}

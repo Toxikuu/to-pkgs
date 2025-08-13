@@ -1,7 +1,7 @@
 {
   "name": "ncurses",
   "version": {
-    "version": "6.5.20250726",
+    "version": "6.5.20250809",
     "release": 1
   },
   "about": "Libraries for terminal-independent character screen handling",
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250726.tgz",
-      "dest": "ncurses-6.5-20250726.tgz"
+      "url": "https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250809.tgz",
+      "dest": "ncurses-6.5-20250809.tgz"
     }
   ],
   "dependencies": [

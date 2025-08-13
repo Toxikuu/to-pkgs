@@ -1,0 +1,20 @@
+eglexternalplatform@1.2.1-1
+
+a="The EGL External Platform interface"
+m="Tox"
+l="MIT"
+t="gfx lib"
+u="https://github.com/NVIDIA/$n.git"
+
+s="$u"
+d=(
+    libglvnd
+    b,meson
+    b,samu
+)
+
+b() {
+
+def
+
+}

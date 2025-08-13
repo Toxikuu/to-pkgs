@@ -1,0 +1,52 @@
+{
+  "name": "nftables",
+  "version": {
+    "version": "1.1.4",
+    "release": 1
+  },
+  "about": "Netfilter tables userspace tools",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-only"
+  ],
+  "upstream": "https://git.netfilter.org/nftables",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "net"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.netfilter.org/nftables",
+      "dest": "nftables"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gmp",
+      "kind": "Required"
+    },
+    {
+      "name": "jansson",
+      "kind": "Required"
+    },
+    {
+      "name": "libmnl",
+      "kind": "Required"
+    },
+    {
+      "name": "libnftnl",
+      "kind": "Required"
+    },
+    {
+      "name": "ncurses",
+      "kind": "Required"
+    },
+    {
+      "name": "readline",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

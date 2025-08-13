@@ -1,0 +1,104 @@
+{
+  "name": "hyprlock",
+  "version": {
+    "version": "0.9.1",
+    "release": 1
+  },
+  "about": "Hyprland's screen locking utility",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/hyprwm/hyprlock.git",
+  "version_fetch": null,
+  "tags": [
+    "gfx",
+    "utils"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/hyprwm/hyprlock.git",
+      "dest": "hyprlock"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprgraphics",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprlang",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprutils",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprwayland-scanner",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libglvnd",
+      "kind": "Required"
+    },
+    {
+      "name": "pam",
+      "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "sdbus-cpp",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

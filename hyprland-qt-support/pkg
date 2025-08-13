@@ -1,0 +1,34 @@
+hyprland-qt-support@0.1.0-2
+
+tag="v$v"
+a="QML style provider for Hypr QT apps"
+m="Tox"
+l="BSD-3-Clause"
+t="lib gui"
+u="https://github.com/hyprwm/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "hyprlang"
+    "qt"
+
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+export QT6DIR="/usr/lib/qt6"
+export PKG_CONFIG_PATH+=":$QT6DIR/pkgconfig"
+export LD_LIBRARY_PATH+=":$QT6DIR"
+export CMAKE_PREFIX_PATH+=":$QT6DIR/cmake"
+
+_cfg=(
+    -D INSTALL_QML_PREFIX="$QT6DIR/qml"
+)
+
+def
+
+}

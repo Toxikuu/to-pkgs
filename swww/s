@@ -1,0 +1,56 @@
+{
+  "name": "swww",
+  "version": {
+    "version": "0.10.3",
+    "release": 1
+  },
+  "about": "A Solution to your Wayland Wallpaper Woes",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-3.0-only"
+  ],
+  "upstream": "https://github.com/LGFae/swww.git",
+  "version_fetch": null,
+  "tags": [
+    "gfx",
+    "wp"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/LGFae/swww.git",
+      "dest": "swww"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "lz4",
+      "kind": "Required"
+    },
+    {
+      "name": "rust",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

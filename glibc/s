@@ -2,7 +2,7 @@
   "name": "glibc",
   "version": {
     "version": "2.42",
-    "release": 1
+    "release": 2
   },
   "about": "GNU C Library",
   "maintainer": "Tox",

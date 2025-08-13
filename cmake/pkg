@@ -1,4 +1,4 @@
-cmake@4.0.3-1
+cmake@4.1.0-1
 
 a="Build system succeeding configure scripts"
 m="Tox"

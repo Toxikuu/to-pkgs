@@ -2,7 +2,7 @@
   "name": "alacritty",
   "version": {
     "version": "0.15.1",
-    "release": 3
+    "release": 4
   },
   "about": "Minimal modern terminal emulator",
   "maintainer": "Tox",

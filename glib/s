@@ -1,7 +1,7 @@
 {
   "name": "glib",
   "version": {
-    "version": "2.85.2",
+    "version": "2.85.3",
     "release": 1
   },
   "about": "Low level core library",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://download.gnome.org/sources/glib/2.85/glib-2.85.2.tar.xz",
-      "dest": "glib-2.85.2.tar.xz"
+      "url": "https://download.gnome.org/sources/glib/2.85/glib-2.85.3.tar.xz",
+      "dest": "glib-2.85.3.tar.xz"
     },
     {
       "kind": "Download",

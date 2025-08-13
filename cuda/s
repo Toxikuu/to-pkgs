@@ -1,0 +1,42 @@
+{
+  "name": "cuda",
+  "version": {
+    "version": "13.0.0",
+    "release": 1
+  },
+  "about": "NVIDIA's GPU programming toolkit",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://developer.nvidia.com/cuda-zone",
+  "version_fetch": "no",
+  "tags": [
+    "gfx",
+    "hw",
+    "lang",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://developer.download.nvidia.com/compute/cuda/13.0.0/local_installers/cuda_13.0.0_580.65.06_linux.run",
+      "dest": "cuda_13.0.0_580.65.06_linux.run"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "nvidia",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "python",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

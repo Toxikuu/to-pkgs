@@ -1,4 +1,4 @@
-limine@9.5.2-1
+limine@9.6.0-1
 
 a="Advanced, portable, multiprotocol bootloader"
 m="Tox"
@@ -12,13 +12,17 @@ s=(
 )
 
 d=(
-    "binutils"
-    "gcc"
-    "glibc"
-    "b,nasm"
+    glibc
+    b,nasm
 )
 
 b() {
+
+export CC_FOR_TARGET=gcc
+export LD_FOR_TARGET=ld
+export OBJCOPY_FOR_TARGET=objcopy
+export OBJDUMP_FOR_TARGET=objdump
+export READELF_FOR_TARGET=readelf
 
 _cfg=(
     --enable-uefi-x86-64

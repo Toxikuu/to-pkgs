@@ -1,0 +1,57 @@
+{
+  "name": "squashfs-tools",
+  "version": {
+    "version": "4.7",
+    "release": 1
+  },
+  "about": "Tools for squashfs, a highly compressed read-only filesystem for Linux",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL-2.0-or-later"
+  ],
+  "upstream": "https://github.com/plougher/squashfs-tools.git",
+  "version_fetch": "gr | sed -e 's,^squashfs-tools-,,' -e 's,^v,,' | grep -v '[a-zA-Z]' | sort -V",
+  "tags": [
+    "utils",
+    "fs",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/plougher/squashfs-tools.git",
+      "dest": "squashfs-tools"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gzip",
+      "kind": "Required"
+    },
+    {
+      "name": "lzo",
+      "kind": "Required"
+    },
+    {
+      "name": "lz4",
+      "kind": "Required"
+    },
+    {
+      "name": "xz",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

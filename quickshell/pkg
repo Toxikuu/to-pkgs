@@ -1,0 +1,63 @@
+quickshell@0.2.0-1
+
+tag="v$v"
+a="Desktop shell toolkit"
+m="Tox"
+l="LGPL-3.0-only"
+t="eyecandy"
+u="https://git.outfoxxed.me/$n/$n.git"
+
+s="$u"
+d=(
+    jemalloc
+    libdrm
+    pipewire
+    mesa
+    qt
+    wayland
+
+    b,cmake
+    b,samu
+    b,wayland-protocols
+    b,cli11
+    b,spirv-tools
+)
+
+b() {
+
+export QT6DIR="/usr/lib/qt6"
+export PKG_CONFIG_PATH+=":$QT6DIR/pkgconfig"
+export LD_LIBRARY_PATH+=":$QT6DIR"
+export CMAKE_PREFIX_PATH+=":$QT6DIR/cmake"
+
+_cfg=(
+    -D DISTRIBUTOR="Tox"
+    -D DISTRIBUTOR_DEBUGINFO_AVAILABLE=NO
+    -D INSTALL_QML_PREFIX="$QT6DIR/qml"
+
+    -D CRASH_REPORTER=OFF # Depends on breakpad
+    -D USE_JEMALLOC=ON
+    -D SOCKETS=ON
+    -D WAYLAND=ON
+    -D WAYLAND_WLR_LAYERSHELL=ON        # Support bars
+    -D WAYLAND_WLR_LOCK=ON              # Support lock screens
+    -D WAYLAND_TOPLEVEL_MANAGEMENT=ON   # Support lock screens
+    -D SCREENCOPY=ON                    # Support screen capture
+
+    -D X11=OFF
+    -D I3=OFF
+    -D I3_IPC=OFF
+
+    -D SERVICE_PIPEWIRE=ON # TODO: Decide if I want this
+    -D SERVICE_STATUS_NOTIFIER=ON       # Support notifications/trays
+    -D SERVICE_MPRIS=ON                 # Support mpris
+    -D SERVICE_PAM=ON                   # Support PAM
+    -D HYPRLAND=ON                      # Support hyprland-specific integrations
+)
+
+def
+
+# Replace upstream's stupid absolute symlink with a relative one
+ln -sfv "$n" "$D/usr/bin/qs"
+
+}

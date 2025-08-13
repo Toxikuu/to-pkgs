@@ -1,0 +1,25 @@
+swappy@1.5.1-1
+
+tag="v$v"
+a="Wayland-native snapshot editing tool"
+m="Tox"
+l="MIT"
+t="utils gfx"
+u="https://github.com/jtheoof/$n.git"
+
+s="$u"
+d=(
+    cairo
+    gtk3
+    pango
+
+    b,meson
+    b,samu
+    b,scdoc
+)
+
+b() {
+
+def
+
+}

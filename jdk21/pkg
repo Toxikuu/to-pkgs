@@ -1,0 +1,47 @@
+jdk21@21.0.2-1
+
+a="Java Development Kit version 21"
+m="Tox"
+l="Custom"
+t="lib lang"
+u="https://anduin.linuxfromscratch.org/BLFS/OpenJDK/"
+vf="no"
+
+s=(
+    "https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-$v/OpenJDK-$v+13-x86_64-bin.tar.xz -> $n-$v.tar.xz"
+)
+
+d=(
+    alsa-lib
+    bash
+    cpio
+    freetype
+    gcc
+    giflib
+    glibc
+    harfbuzz
+    lcms
+    libelf
+    libjpeg-turbo
+    libpng
+    libx11
+    libxext
+    libxrandr
+    libxrender
+    libxt
+    libxtst
+    libarchive
+    zip
+
+    # why the fuck does java want to print
+    cups
+    wget
+)
+
+b() {
+
+install -vdm755    "$D/opt/$n"
+mv -vf *           "$D/opt/$n"
+chown -R root:root "$D/opt/$n"
+
+}

@@ -1,0 +1,27 @@
+{
+  "name": "nv-codec-headers",
+  "version": {
+    "version": "13.0.19.0",
+    "release": 1
+  },
+  "about": "Headers for interacting with NVIDIA codec APIs",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://code.ffmpeg.org/FFmpeg/nv-codec-headers.git",
+  "version_fetch": "gr | sed 's,^n,,' | vfs | sort -V",
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://code.ffmpeg.org/FFmpeg/nv-codec-headers.git",
+      "dest": "nv-codec-headers"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

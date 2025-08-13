@@ -1,0 +1,101 @@
+{
+  "name": "xdg-desktop-portal-hyprland",
+  "version": {
+    "version": "1.3.10",
+    "release": 1
+  },
+  "about": "Hyprland's xdg-desktop-portal backend",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/hyprwm/xdg-desktop-portal-hyprland.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "utils",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/hyprwm/xdg-desktop-portal-hyprland/archive/refs/tags/v1.3.10.tar.gz",
+      "dest": "v1.3.10.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprlang",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprutils",
+      "kind": "Required"
+    },
+    {
+      "name": "hyprwayland-scanner",
+      "kind": "Required"
+    },
+    {
+      "name": "inih",
+      "kind": "Required"
+    },
+    {
+      "name": "sdbus-cpp",
+      "kind": "Required"
+    },
+    {
+      "name": "util-linux",
+      "kind": "Required"
+    },
+    {
+      "name": "pipewire",
+      "kind": "Required"
+    },
+    {
+      "name": "qt",
+      "kind": "Required"
+    },
+    {
+      "name": "xdg-desktop-portal",
+      "kind": "Required"
+    },
+    {
+      "name": "grim",
+      "kind": "Required"
+    },
+    {
+      "name": "slurp",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "hyprland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

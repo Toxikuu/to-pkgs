@@ -1,0 +1,116 @@
+{
+  "name": "jdk21",
+  "version": {
+    "version": "21.0.2",
+    "release": 1
+  },
+  "about": "Java Development Kit version 21",
+  "maintainer": "Tox",
+  "licenses": [
+    "Custom"
+  ],
+  "upstream": "https://anduin.linuxfromscratch.org/BLFS/OpenJDK/",
+  "version_fetch": "no",
+  "tags": [
+    "lib",
+    "lang"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://anduin.linuxfromscratch.org/BLFS/OpenJDK/OpenJDK-21.0.2/OpenJDK-21.0.2+13-x86_64-bin.tar.xz",
+      "dest": "jdk21-21.0.2.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "alsa-lib",
+      "kind": "Required"
+    },
+    {
+      "name": "bash",
+      "kind": "Required"
+    },
+    {
+      "name": "cpio",
+      "kind": "Required"
+    },
+    {
+      "name": "freetype",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "giflib",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "harfbuzz",
+      "kind": "Required"
+    },
+    {
+      "name": "lcms",
+      "kind": "Required"
+    },
+    {
+      "name": "libelf",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrender",
+      "kind": "Required"
+    },
+    {
+      "name": "libxt",
+      "kind": "Required"
+    },
+    {
+      "name": "libxtst",
+      "kind": "Required"
+    },
+    {
+      "name": "libarchive",
+      "kind": "Required"
+    },
+    {
+      "name": "zip",
+      "kind": "Required"
+    },
+    {
+      "name": "cups",
+      "kind": "Required"
+    },
+    {
+      "name": "wget",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

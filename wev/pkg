@@ -1,0 +1,22 @@
+wev@1.1.0-1
+
+a="Wayland xev equivalent"
+m="Tox"
+l="MIT"
+t="utils gfx"
+u="https://git.sr.ht/~sircmpwn/$n"
+
+s=$u
+d=(
+    libxkbcommon
+    wayland
+    b,scdoc
+    b,wayland-protocols
+)
+
+b() {
+
+mk CFLAGS="$CFLAGS $LDFLAGS" # LDFLAGS are ignored
+mi PREFIX=/usr MANDIR=/usr/share/man install
+
+}

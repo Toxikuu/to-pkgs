@@ -1,0 +1,24 @@
+brightnessctl@0.5.1-1
+
+a="Lightweight brightness control tool"
+m="Tox"
+l="MIT"
+t="utils hw"
+u="https://github.com/Hummer12007/$n.git"
+s="$u"
+
+b() {
+
+make INSTALL_UDEV_RULES=1
+mi   INSTALL_UDEV_RULES=1 UDEVDIR=/usr/lib/udev/rules.d
+
+}
+
+i() {
+
+if [ -S /run/udev/control ]; then
+    udevadm control --reload-rules
+    udevadm trigger -s leds -s backlight -c add
+fi
+
+}

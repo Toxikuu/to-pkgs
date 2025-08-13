@@ -1,7 +1,7 @@
 {
   "name": "libjpeg-turbo",
   "version": {
-    "version": "f158143ec0caceb7fd3c073205ded90f4e2b98eb",
+    "version": "f2d1f1cbd431b5b5e3c0c354bddbf8360cdcabd1",
     "release": 1
   },
   "about": "Fast JPEG library",

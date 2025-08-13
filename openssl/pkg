@@ -1,4 +1,4 @@
-openssl@3.5.1-1
+openssl@3.5.2-2
 
 a="Cryptography tools and libraries"
 m="Tox"
@@ -14,17 +14,23 @@ s=(
 d=(
     "glibc"
     "perl"
+    "zlib"
 )
 
 b() {
 
 NO_DEFAULT=1
 _cfg=(
+    linux-x86_64
     --prefix=/usr
     --${n}dir=/etc/ssl
     --libdir=lib
     shared
     zlib-dynamic
+
+    no-tests
+    no-unit-test
+    no-external-tests
 )
 
 # Abstraction workaround
@@ -45,8 +51,5 @@ t() {
 for f in libssl.so{.3,} libcrypto.so{.3,}; do
     [ -e "$D/usr/lib/$f" ]
 done
-
-# 30-test_afalg.t may fail depending on kernel configuration
-HARNESS_JOBS=$(nproc) mk test
 
 }

@@ -1,8 +1,8 @@
 {
   "name": "gcc",
   "version": {
-    "version": "15.1.0",
-    "release": 2
+    "version": "15.2.0",
+    "release": 1
   },
   "about": "The GNU compiler collection",
   "maintainer": "Tox",
@@ -21,8 +21,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://ftp.gnu.org/gnu/gcc/gcc-15.1.0/gcc-15.1.0.tar.xz",
-      "dest": "gcc-15.1.0.tar.xz"
+      "url": "https://ftp.gnu.org/gnu/gcc/gcc-15.2.0/gcc-15.2.0.tar.xz",
+      "dest": "gcc-15.2.0.tar.xz"
     }
   ],
   "dependencies": [

@@ -1,4 +1,4 @@
-ffmpeg@7.1.1-1
+ffmpeg@7.1.1-2
 
 a="Play, record, convert, and stream audio and video"
 m="Tox"
@@ -37,7 +37,6 @@ d=(
     "libx11"
     "libxcb"
     "libxext"
-    "libxml2"
     "libxv"
     "fdk-aac"
     "openssl"
@@ -53,6 +52,7 @@ d=(
 
     "b,nasm"
     "b,vulkan-headers"
+    "b,nv-codec-headers"
 )
 
 b() {
@@ -79,6 +79,12 @@ _cfg=(
     --disable-static
     --disable-stripping # handled by to
 
+    # NVIDIA
+    # --enable-cuda-nvcc # for filters, conversions, and such; not needed just to record
+    # --enable-libnpp
+    --enable-nvenc
+    --enable-nvdec
+
     --enable-libaom
     --enable-libass
     --enable-fontconfig
@@ -86,19 +92,21 @@ _cfg=(
     --enable-libfreetype
     --enable-libharfbuzz
     --enable-libpulse
-    # TODO: Consider adding --enable-nv{enc,dec}
     --enable-libfdk-aac
     --enable-libfreetype
     --enable-libmp3lame
     --enable-libopus
     --enable-libplacebo
     --enable-libvorbis
+    --enable-librsvg
     --enable-libvpx
+    --enable-libxcb
     --enable-libx26{4,5}
     --enable-openssl
     --enable-opengl
     --enable-vulkan
     --enable-libdrm
+    --enable-libxvid
 
     --disable-doc
     --disable-large-tests

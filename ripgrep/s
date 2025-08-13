@@ -2,7 +2,7 @@
   "name": "ripgrep",
   "version": {
     "version": "119a58a400ea948c2d2b0cd4ec58361e74478641",
-    "release": 1
+    "release": 2
   },
   "about": "Oxidized, recursive grep",
   "maintainer": "Tox",

@@ -1,0 +1,27 @@
+{
+  "name": "brightnessctl",
+  "version": {
+    "version": "0.5.1",
+    "release": 1
+  },
+  "about": "Lightweight brightness control tool",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/Hummer12007/brightnessctl.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "hw"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Hummer12007/brightnessctl.git",
+      "dest": "brightnessctl"
+    }
+  ],
+  "dependencies": [],
+  "kcfg": []
+}

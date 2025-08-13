@@ -1,0 +1,28 @@
+libqalculate@5.7.0-1
+
+tag="v$v"
+a="Multi-purpose calculator"
+m="Tox"
+l="GPL-2.0-only"
+t="lib utils math"
+u="https://github.com/Qalculate/$n.git"
+
+s="$u"
+d=(
+    "curl"
+    "icu"
+    "libxml2"
+    "gcc"
+    "glibc"
+    "gmp"
+    "mpfr"
+    "readline"
+    "b,intltool" # required for some reason :sob:
+)
+
+b() {
+
+./autogen.sh
+def
+
+}

@@ -1,0 +1,55 @@
+cups@2.4.12-1
+
+a="Common UNIX Printing System"
+m="Tox"
+l="Apache-2.0 WITH LLVM-exception AND BSD-3-Clause AND Zlib AND BSD-2-Clause"
+t="hw lib"
+u="https://github.com/OpenPrinting/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v-source.tar.gz -> $n-$v.tar.gz"
+)
+
+d=(
+    gnutls
+    dbus
+    libusb
+    pam
+    xdg-utils
+)
+
+b() {
+
+NO_DEFAULT=1
+_cfg=(
+    --libdir=/usr/lib
+    --with-rcdir=/tmp/${n}init
+    --with-rundir=/run/$n
+    --with-system-groups=lpadmin
+)
+
+def
+rm -rf "$D/tmp/cupsinit"
+
+install -vDm644 /dev/stdin "$D/etc/cups/client.conf" << .
+ServerName /run/cups/cups.sock
+.
+
+install -vDm644 /dev/stdin /etc/pam.d/cups << .
+# /etc/pam.d/cups
+
+auth    include system-auth
+account include system-account
+session include system-session
+.
+
+}
+
+i() {
+
+groupadd -fg 19 lpadmin
+id lp || useradd -c "Print Service User" \
+    -d /var/spool/cups -u 9 \
+    -g lp -s /bin/false lp
+
+}

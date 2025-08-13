@@ -1,0 +1,16 @@
+nv-codec-headers@13.0.19.0-1
+
+tag=n$v
+a="Headers for interacting with NVIDIA codec APIs"
+m="Tox"
+l="MIT"
+t="lib gfx"
+u="https://code.ffmpeg.org/FFmpeg/$n.git"
+s="$u"
+vf="gr | sed 's,^n,,' | vfs | sort -V"
+
+b() {
+
+mi PREFIX=/usr
+
+}

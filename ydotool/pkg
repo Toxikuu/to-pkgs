@@ -1,0 +1,29 @@
+ydotool@1.0.4-1
+
+tag="v$v"
+a="Generic command-line automation tool"
+m="Tox"
+l="AGPL3"
+t="utils cli"
+u="https://github.com/ReimuNotMoe/$n.git"
+
+s="$u"
+d=(
+    glibc
+    b,cmake
+    b,samu
+    b,scdoc
+)
+
+b() {
+
+_cfg=( -DCMAKE_POLICY_VERSION_MINIMUM=3.5 )
+def
+
+install -vDm644 /dev/stdin "$D/usr/lib/udev/rules.d/80-uinput.rules" << .
+## ydotoold fix
+##     https://github.com/ReimuNotMoe/ydotool/issues/25#issuecomment-535842993
+KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"
+.
+
+}

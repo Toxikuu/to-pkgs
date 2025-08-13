@@ -1,7 +1,7 @@
 {
   "name": "mesa",
   "version": {
-    "version": "25.1.7",
+    "version": "25.2.0",
     "release": 1
   },
   "about": "Graphics libraries",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://mesa.freedesktop.org/archive/mesa-25.1.7.tar.xz",
-      "dest": "mesa-25.1.7.tar.xz"
+      "url": "https://mesa.freedesktop.org/archive/mesa-25.2.0.tar.xz",
+      "dest": "mesa-25.2.0.tar.xz"
     }
   ],
   "dependencies": [

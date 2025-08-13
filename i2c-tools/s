@@ -1,0 +1,40 @@
+{
+  "name": "i2c-tools",
+  "version": {
+    "version": "ea51da725b743da00b894dfdc4ab189f5a51e90e",
+    "release": 1
+  },
+  "about": "Heterogeneous set of I2C tools",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "https://git.kernel.org/pub/scm/utils/i2c-tools/i2c-tools.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "hw"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.kernel.org/pub/scm/utils/i2c-tools/i2c-tools.git",
+      "dest": "i2c-tools"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "perl",
+      "kind": "Required"
+    },
+    {
+      "name": "wheel",
+      "kind": "Build"
+    },
+    {
+      "name": "setuptools",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

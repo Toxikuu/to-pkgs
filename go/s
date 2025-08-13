@@ -1,7 +1,7 @@
 {
   "name": "go",
   "version": {
-    "version": "1.24.5",
+    "version": "1.24.6",
     "release": 1
   },
   "about": "The Go programming language",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://go.dev/dl/go1.24.5.linux-amd64.tar.gz",
-      "dest": "go1.24.5.linux-amd64.tar.gz"
+      "url": "https://go.dev/dl/go1.24.6.linux-amd64.tar.gz",
+      "dest": "go1.24.6.linux-amd64.tar.gz"
     }
   ],
   "dependencies": [

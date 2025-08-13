@@ -1,7 +1,7 @@
 {
   "name": "xorgproto",
   "version": {
-    "version": "ce7786ebb90f70897f8038d02ae187ab22766ab2",
+    "version": "03551e1d648412cad1af643beee3a7f87bdcb8bb",
     "release": 1
   },
   "about": "Xorg protocol headers",
