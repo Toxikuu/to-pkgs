@@ -1,4 +1,4 @@
-qemu@10.0.3-1
+qemu@10.0.3-2
 
 a="Generic machine emulator and virtualizer"
 m="Tox"
@@ -8,7 +8,9 @@ u="https://github.com/$n/$n.git"
 
 s=(
     "https://download.$n.org/$n-$v.tar.xz"
+    "https://gitlab.com/-/project/11167699/uploads/0bc3ef428137940e7cdc31beae0d7594/$n-$v-pip-25.2-compat.patch -> pip.patch"
 )
+
 d=(
     "glibc"
     "glib"
@@ -51,6 +53,8 @@ kcfg=(
 
 b() {
 
+ltno
+pat "$S/pip.patch"
 QEMU_ARCH="x86_64-softmmu"
 
 mkdir -pv build
@@ -65,6 +69,7 @@ _cfg=(
     --audio-drv-list=alsa
     --disable-pa
     --enable-slirp
+    --enable-lto
 )
 
 cfg

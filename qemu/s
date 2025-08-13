@@ -2,7 +2,7 @@
   "name": "qemu",
   "version": {
     "version": "10.0.3",
-    "release": 1
+    "release": 2
   },
   "about": "Generic machine emulator and virtualizer",
   "maintainer": "Tox",
@@ -21,6 +21,11 @@
       "kind": "Download",
       "url": "https://download.qemu.org/qemu-10.0.3.tar.xz",
       "dest": "qemu-10.0.3.tar.xz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://gitlab.com/-/project/11167699/uploads/0bc3ef428137940e7cdc31beae0d7594/qemu-10.0.3-pip-25.2-compat.patch",
+      "dest": "pip.patch"
     }
   ],
   "dependencies": [
