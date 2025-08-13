@@ -1,4 +1,4 @@
-xorg-server@21.1.18-4
+xorg-server@21.1.18-5
 
 a="X Window system server"
 m="Tox"
@@ -55,7 +55,6 @@ d=(
 
     "xkbcomp"
     "xkeyboard-config"
-    "xf86-input-libinput"
 )
 
 b() {
