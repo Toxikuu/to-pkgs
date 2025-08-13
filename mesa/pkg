@@ -1,6 +1,6 @@
-mesa@25.2.0-1
+mesa@25.2.0-2
 
-# NOTE: This pkg only installs GBM from Mesa.
+# NOTE: This pkg is for AMD radeonsi
 a="Graphics libraries"
 m="Tox"
 l="MIT AND BSD-3-Clause AND SGI-B-2.0"
@@ -29,7 +29,10 @@ d=(
     "wayland-protocols"
     "zlib"
     "zstd"
+    "glslang"
+    "libvdpau"
 
+    "b,llvm"
     "b,libpng"
     "b,libxrandr"
     "b,libxrender"
@@ -44,13 +47,11 @@ d=(
 b() {
 
 _cfg=(
-    -D gbm=enabled
     -D platforms=x11,wayland
-    -D gallium-drivers=
-    -D vulkan-drivers=
-    -D video-codecs=
+    -D gallium-drivers=radeonsi
+    -D vulkan-drivers=amd
+    -D video-codecs=all
     -D valgrind=disabled
-    -D llvm=disabled
     -D glx=disabled
     -D libunwind=disabled
     -D shader-cache-max-size="4G"
