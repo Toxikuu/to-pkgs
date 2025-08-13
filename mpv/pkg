@@ -1,4 +1,4 @@
-mpv@0.40.0-1
+mpv@0.40.0-2
 
 tag="v$v"
 a="Media player"
@@ -34,10 +34,12 @@ d=(
     "uchardet"
     "vulkan-loader"
     "zlib"
+    "wayland"
 
     "b,meson"
     "b,samu"
     "b,vulkan-headers"
+    "b,wayland-protocols"
 )
 
 b() {
@@ -47,7 +49,7 @@ sed -i 's/AV_OPT_TYPE_CHANNEL_LAYOUT/AV_OPT_TYPE_CHLAYOUT/' filters/f_lavfi.c
 
 _cfg=(
     -D x11=enabled
-    -D wayland=disabled
+    -D wayland=enabled
     -D gl-x11=enabled
     -D drm=enabled
 
