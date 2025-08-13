@@ -2,7 +2,7 @@
   "name": "xwayland",
   "version": {
     "version": "24.1.8",
-    "release": 2
+    "release": 3
   },
   "about": "Allows running X clients on Wayland",
   "maintainer": "Tox",
@@ -61,7 +61,7 @@
       "kind": "Required"
     },
     {
-      "name": "nvidia",
+      "name": "mesa",
       "kind": "Required"
     },
     {

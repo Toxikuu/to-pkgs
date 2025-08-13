@@ -1,4 +1,4 @@
-xwayland@24.1.8-2
+xwayland@24.1.8-3
 
 a="Allows running X clients on Wayland"
 m="Tox"
@@ -21,7 +21,7 @@ d=(
     "libxau"
     "libxfont2"
     "libxshmfence"
-    "nvidia"
+    "mesa"
     "b,libxkbfile"
     "b,xorgproto"
     "b,xtrans"
