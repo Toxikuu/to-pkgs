@@ -2,7 +2,7 @@
   "name": "grep",
   "version": {
     "version": "3.12",
-    "release": 1
+    "release": 2
   },
   "about": "String search utility",
   "maintainer": "Tox",
