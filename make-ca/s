@@ -2,7 +2,7 @@
   "name": "make-ca",
   "version": {
     "version": "1.16.1",
-    "release": 1
+    "release": 5
   },
   "about": "PKI setup script for LFS",
   "maintainer": "Tox",
@@ -38,6 +38,10 @@
     {
       "name": "nss",
       "kind": "Required"
+    },
+    {
+      "name": "curl",
+      "kind": "Build"
     }
   ],
   "kcfg": []

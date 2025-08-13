@@ -123,6 +123,10 @@
       "kind": "Required"
     },
     {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
       "name": "zlib",
       "kind": "Required"
     },

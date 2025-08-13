@@ -33,6 +33,7 @@ d=(
     "pipewire"
     "uchardet"
     "vulkan-loader"
+    "wayland"
     "zlib"
     "wayland"
 

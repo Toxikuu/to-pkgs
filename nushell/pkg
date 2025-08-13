@@ -20,7 +20,6 @@ b() {
 
 rm -vf rust-toolchain.toml
 export CFLAGS+=" -ffat-lto-objects"
-
 cbr
 
 find target/release \

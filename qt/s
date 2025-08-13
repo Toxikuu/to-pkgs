@@ -2,7 +2,7 @@
   "name": "qt",
   "version": {
     "version": "6.9.1",
-    "release": 1
+    "release": 2
   },
   "about": "Application and UI framework",
   "maintainer": "Tox",
@@ -190,10 +190,6 @@
     },
     {
       "name": "wayland",
-      "kind": "Required"
-    },
-    {
-      "name": "nvidia",
       "kind": "Required"
     },
     {

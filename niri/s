@@ -75,6 +75,10 @@
       "kind": "Required"
     },
     {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
       "name": "xdg-desktop-portal-gtk",
       "kind": "Required"
     },
