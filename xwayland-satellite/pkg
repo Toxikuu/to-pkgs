@@ -1,0 +1,27 @@
+xwayland-satellite@0.6-1
+
+tag="v$v"
+a="Xwayland outside your Wayland"
+m="Tox"
+l="MPL-2.0"
+t="utils gfx xorg"
+u="https://github.com/Supreeeme/$n.git"
+
+s="$u"
+d=(
+    "glibc"
+    "gcc"
+    "libxcb"
+    "xcb-util-cursor"
+    "xwayland"
+
+    "b,llvm"
+    "b,rust"
+)
+
+b() {
+
+cbr
+install -vDm755 "target/release/$n" -t "$D/usr/bin/"
+
+}
