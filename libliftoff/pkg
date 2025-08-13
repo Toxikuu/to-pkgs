@@ -1,0 +1,22 @@
+libliftoff@0.5.0-1
+
+tag="v$v"
+a="Lightweight KMS plane library"
+m="Tox"
+l="MIT"
+t="lib"
+u="https://gitlab.freedesktop.org/emersion/$n.git"
+
+s="$u"
+d=(
+    "glibc"
+    "libdrm"
+    "b,meson"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}

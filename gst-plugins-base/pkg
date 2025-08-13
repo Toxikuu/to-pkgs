@@ -5,7 +5,7 @@ m="Tox"
 l="LGPL-2.1-or-later"
 t="lib audio video codec"
 u="https://github.com/gstreamer/gstreamer.git"
-vf="gr | grep -Ev '[a-Z]|-' | sort -V"
+vf="gr | grep -Ev '[a-zA-Z]|-' | sort -V"
 
 s=(
     "https://gstreamer.freedesktop.org/src/$n/$n-$v.tar.xz"

@@ -1,4 +1,4 @@
-sqlite@3.50.3-1
+sqlite@3.50.4-1
 
 a="SQL database engine"
 m="Tox"
@@ -6,7 +6,7 @@ l="Custom"
 t="lib db"
 u="https://github.com/$n/$n.git"
 # The 'vesion' and 'relase' tags are really funny
-vf="gr | sed -e 's,^vesion-,,' -e 's,^version-,,' | grep -v '[a-Z]' | sort -V"
+vf="gr | sed -e 's,^vesion-,,' -e 's,^version-,,' | grep -v '[a-zA-Z]' | sort -V"
 
 s=(
     "${u%.git}/archive/refs/tags/version-$v.tar.gz"

@@ -2,7 +2,7 @@
   "name": "git",
   "version": {
     "version": "2.50.1",
-    "release": 1
+    "release": 2
   },
   "about": "The fast distributed version control system",
   "maintainer": "Tox",
@@ -60,7 +60,7 @@
     },
     {
       "name": "openssh",
-      "kind": "Runtime"
+      "kind": "Required"
     }
   ],
   "kcfg": []

@@ -1,4 +1,4 @@
-mpfr@ac0708cd0c390c915e87c9427f54ed542619697f-1
+mpfr@9c9fd0e7c2231644cc7938c5b4bb505ebe32e798-1
 
 a="Multiple-precision floating-point math library"
 m="Tox"
@@ -8,7 +8,7 @@ l=(
 )
 t="core lib math"
 u="https://gitlab.inria.fr/$n/$n.git"
-# vf="gr | grep -v '[a-Z]' | sort -V"
+# vf="gr | grep -v '[a-zA-Z]' | sort -V"
 
 s=(
     "$u"

@@ -1,0 +1,22 @@
+pugixml@1.15-1
+
+tag="v$v"
+a="Light-weight, simple and fast XML parser for C++ with XPath support"
+m="Tox"
+l="MIT"
+t=""
+u="https://github.com/zeux/$n.git"
+
+s="$u"
+d=(
+    "b,cmake"
+    "b,samu"
+    "gcc"
+    "glibc"
+)
+
+b() {
+
+def
+
+}

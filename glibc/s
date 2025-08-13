@@ -1,7 +1,7 @@
 {
   "name": "glibc",
   "version": {
-    "version": "2.41",
+    "version": "2.42",
     "release": 2
   },
   "about": "GNU C Library",
@@ -20,13 +20,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://gnu.mirror.constant.com/glibc/glibc-2.41.tar.xz",
-      "dest": "glibc-2.41.tar.xz"
-    },
-    {
-      "kind": "Download",
-      "url": "https://www.linuxfromscratch.org/patches/lfs/development/glibc-2.41-fhs-1.patch",
-      "dest": "glibc-2.41-fhs-1.patch"
+      "url": "https://gnu.mirror.constant.com/glibc/glibc-2.42.tar.xz",
+      "dest": "glibc-2.42.tar.xz"
     }
   ],
   "dependencies": [],

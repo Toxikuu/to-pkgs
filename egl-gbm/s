@@ -1,0 +1,52 @@
+{
+  "name": "egl-gbm",
+  "version": {
+    "version": "1.1.2.1",
+    "release": 1
+  },
+  "about": "The GBM EGL external platform library",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/NVIDIA/egl-gbm.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/NVIDIA/egl-gbm.git",
+      "dest": "egl-gbm"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "eglexternalplatform",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

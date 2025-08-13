@@ -1,4 +1,4 @@
-rust@1.88.0-1
+rust@1.89.0-1
 
 a="The Rust programming language"
 m="Tox"
@@ -10,7 +10,13 @@ t="lang utils cli lib core"
 u="https://github.com/$n-lang/$n.git"
 vf="gr | vfs | grep -v 'release-' | sort -V"
 
-s="https://raw.githubusercontent.com/rust-lang/rustup/refs/heads/master/rustup-init.sh"
+s=(
+    "https://raw.githubusercontent.com/$n-lang/${n}up/refs/heads/master/${n}up-init.sh"
+
+    # For building against system LLVM
+    # "https://static.$n-lang.org/dist/${n}c-$v-src.tar.gz"
+    # "https://gitlab.archlinux.org/archlinux/packaging/packages/rust/-/raw/main/0002-bootstrap-Change-bash-completion-dir.patch -> bash-completion.patch"
+)
 
 d=(
     "curl"
@@ -18,6 +24,11 @@ d=(
     "glibc"
     "openssl"
     "zlib"
+
+    # For building against system LLVM
+    # "libssh2"
+    # "llvm"
+    # "sqlite"
 )
 
 qa=("!static")
@@ -33,9 +44,13 @@ mkdir -pv "$CARGO_HOME" "$RUSTUP_HOME"
 _cfg=(
     -y
     --no-modify-path
+    --no-update-default-toolchain
+
+    --profile=minimal
+    --component cargo,clippy,rustfmt
+
     --default-toolchain="$v"
     --default-host="x86_64-unknown-linux-gnu"
-    --component cargo,clippy,rustfmt
 )
 
 sh rustup-init.sh "${_cfg[@]}"
@@ -54,3 +69,23 @@ find "$CARGO_HOME" "$RUSTUP_HOME" -type f -exec chmod -v g+rw,o+r    {} +
 install -vDm644 "$A/rust-profile" "$D/etc/profile.d/15-rust.sh"
 
 }
+
+# # Compile rust, building against system LLVM
+# b() {
+# 
+#     cp -vf "$A/bootstrap.toml" .
+#     export LIBSSH2_SYS_USE_PKG_CONFIG=1
+#     export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
+#     export RUST_BACKTRACE=1
+# 
+#     # Prefer bootstrap.toml specifications
+#     unset {C,CXX,LD,RUST}FLAGS
+# 
+#     ./x.py build
+#     DESTDIR="$D" ./x.py install -j "$(nproc)"
+# 
+#     # Remove unneeded components
+#     rm -vf "$D"/usr/lib/rustlib/{components,install.log,rust-installer-version,uninstall.sh}
+#     rm -vf "$D"/usr/lib/rustlib/manifest-*
+# 
+# }

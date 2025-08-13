@@ -1,7 +1,7 @@
 {
   "name": "sqlite",
   "version": {
-    "version": "3.50.3",
+    "version": "3.50.4",
     "release": 1
   },
   "about": "SQL database engine",
@@ -10,7 +10,7 @@
     "Custom"
   ],
   "upstream": "https://github.com/sqlite/sqlite.git",
-  "version_fetch": "gr | sed -e 's,^vesion-,,' -e 's,^version-,,' | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | sed -e 's,^vesion-,,' -e 's,^version-,,' | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "db"
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/sqlite/sqlite/archive/refs/tags/version-3.50.3.tar.gz",
-      "dest": "version-3.50.3.tar.gz"
+      "url": "https://github.com/sqlite/sqlite/archive/refs/tags/version-3.50.4.tar.gz",
+      "dest": "version-3.50.4.tar.gz"
     }
   ],
   "dependencies": [

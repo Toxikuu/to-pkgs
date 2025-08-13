@@ -5,7 +5,7 @@ m="Tox"
 l="LGPL-2.1-or-later"
 t="lang"
 u="https://github.com/GNOME/$n.git"
-vf="gr | sed 's,_,.,g' | cut -d. -f1- | grep -Ev '[a-Z]|0.57.0' | sort -V"
+vf="gr | sed 's,_,.,g' | cut -d. -f1- | grep -Ev '[a-zA-Z]|0.57.0' | sort -V"
 
 s=(
     "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"

@@ -1,7 +1,7 @@
 {
   "name": "libxmlb",
   "version": {
-    "version": "0.3.22",
+    "version": "0.3.23",
     "release": 1
   },
   "about": "A library to help create and query binary XML blobs",

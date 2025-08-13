@@ -1,7 +1,7 @@
 {
   "name": "limine",
   "version": {
-    "version": "9.5.0",
+    "version": "9.6.0",
     "release": 1
   },
   "about": "Advanced, portable, multiprotocol bootloader",
@@ -18,19 +18,11 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/limine-bootloader/limine/releases/download/v9.5.0/limine-9.5.0.tar.xz",
-      "dest": "limine-9.5.0.tar.xz"
+      "url": "https://github.com/limine-bootloader/limine/releases/download/v9.6.0/limine-9.6.0.tar.xz",
+      "dest": "limine-9.6.0.tar.xz"
     }
   ],
   "dependencies": [
-    {
-      "name": "binutils",
-      "kind": "Required"
-    },
-    {
-      "name": "gcc",
-      "kind": "Required"
-    },
     {
       "name": "glibc",
       "kind": "Required"

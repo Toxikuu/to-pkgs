@@ -5,7 +5,7 @@ m="Tox"
 l="LGPL-2.0-or-later"
 t="lib net"
 u="https://gitlab.gnome.org/GNOME/$n.git"
-vf="gr | grep -v '[a-Z]'"
+vf="gr | grep -v '[a-zA-Z]'"
 
 s="$u"
 

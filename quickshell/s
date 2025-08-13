@@ -1,0 +1,71 @@
+{
+  "name": "quickshell",
+  "version": {
+    "version": "0.2.0",
+    "release": 1
+  },
+  "about": "Desktop shell toolkit",
+  "maintainer": "Tox",
+  "licenses": [
+    "LGPL-3.0-only"
+  ],
+  "upstream": "https://git.outfoxxed.me/quickshell/quickshell.git",
+  "version_fetch": null,
+  "tags": [
+    "eyecandy"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.outfoxxed.me/quickshell/quickshell.git",
+      "dest": "quickshell"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "jemalloc",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "pipewire",
+      "kind": "Required"
+    },
+    {
+      "name": "mesa",
+      "kind": "Required"
+    },
+    {
+      "name": "qt",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    },
+    {
+      "name": "cli11",
+      "kind": "Build"
+    },
+    {
+      "name": "spirv-tools",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

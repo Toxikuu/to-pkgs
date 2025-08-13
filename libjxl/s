@@ -1,0 +1,80 @@
+{
+  "name": "libjxl",
+  "version": {
+    "version": "0.11.1",
+    "release": 1
+  },
+  "about": "JPEG XL image format reference implementation",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/libjxl/libjxl.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "img"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/libjxl/libjxl/archive/refs/tags/v0.11.1.tar.gz",
+      "dest": "v0.11.1.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "brotli",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "giflib",
+      "kind": "Required"
+    },
+    {
+      "name": "highway",
+      "kind": "Required"
+    },
+    {
+      "name": "lcms",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "libpng",
+      "kind": "Required"
+    },
+    {
+      "name": "libwebp",
+      "kind": "Required"
+    },
+    {
+      "name": "gdk-pixbuf",
+      "kind": "Required"
+    },
+    {
+      "name": "gperf",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

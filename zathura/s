@@ -2,7 +2,7 @@
   "name": "zathura",
   "version": {
     "version": "0.5.12",
-    "release": 1
+    "release": 2
   },
   "about": "Minimal document viewer",
   "maintainer": "Tox",
@@ -66,10 +66,6 @@
     {
       "name": "samu",
       "kind": "Build"
-    },
-    {
-      "name": "zathura-pdf-mupdf",
-      "kind": "Runtime"
     }
   ],
   "kcfg": []

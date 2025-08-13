@@ -2,7 +2,7 @@
   "name": "eza",
   "version": {
     "version": "0.23.0",
-    "release": 2
+    "release": 3
   },
   "about": "Modern ls alternative",
   "maintainer": "Tox",

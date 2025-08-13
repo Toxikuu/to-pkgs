@@ -1,4 +1,4 @@
-libxkbcommon@1.10.0-1
+libxkbcommon@1.11.0-1
 
 an="${n#lib*}" # alt name
 tag="$an-$v"
@@ -20,7 +20,7 @@ d=(
     "b,meson"
     "b,samu"
     "b,libxcb"
-    "r,xkeyboard-config"
+    "xkeyboard-config"
 )
 
 b() {

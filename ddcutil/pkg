@@ -1,0 +1,27 @@
+ddcutil@2.2.1-1
+
+tag="v$v"
+a="Query and change monitor settings"
+m="Tox"
+l="GPL2"
+t="utils hw"
+u="https://github.com/rockowitz/$n.git"
+
+s="$u"
+d=(
+    "glib"
+    "i2c-tools"
+    "jansson"
+    "libdrm"
+    "libusb"
+    "libx11"
+    "libxext"
+    "libxrandr"
+)
+
+b() {
+
+NOCONFIGURE=1 ./autogen.sh
+def
+
+}

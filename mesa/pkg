@@ -1,4 +1,4 @@
-mesa@25.1.6-4
+mesa@25.2.0-2
 
 # NOTE: This pkg is for AMD radeonsi
 a="Graphics libraries"
@@ -47,7 +47,6 @@ d=(
 b() {
 
 _cfg=(
-    -D osmesa=false
     -D platforms=x11,wayland
     -D gallium-drivers=radeonsi
     -D vulkan-drivers=amd

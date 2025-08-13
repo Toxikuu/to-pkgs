@@ -1,0 +1,104 @@
+cuda@13.0.0-1
+
+nv_ver=580.65.06
+
+a="NVIDIA's GPU programming toolkit"
+m="Tox"
+l="Custom"
+t="gfx hw lang lib"
+u="https://developer.nvidia.com/cuda-zone"
+vf="no" # TODO: <-
+
+runfile="${n}_${v}_${nv_ver}_linux.run"
+s=(
+    "https://developer.download.nvidia.com/compute/$n/$v/local_installers/$runfile"
+)
+
+d=(
+    nvidia
+    gcc
+    python
+)
+
+qa=(!static)
+
+b() {
+
+# Set up install directories
+mkdir -pv "$D/opt/$n-$v/bin"
+ln -sfv "$n-$v" "$D/opt/$n"
+
+# Extract the runfile
+sh "$runfile" \
+    --target "${runfile%.run}" \
+    --noexec
+
+# Manually install components
+pushd "${runfile%.run}/builds"
+    rm -rvf bin integration NVIDIA*.run
+    mv -vf version.json "$D/opt/$n-$v/"
+
+    cuda_components=(
+        cuda_nsight/{bin,nsightee_plugins}
+        cuda_sanitizer_api/compute-sanitizer
+        nsight_compute
+        nsight_systems
+    )
+
+    for i in "${cuda_components[@]}"; do
+        cp -vR "$i" "$D/opt/$n-$v/"
+    done
+
+    rm -rf cuda_nsight cuda_sanitizer_api
+    ln -sfv ../compute-sanitizer/compute-sanitizer \
+        "$D/opt/$n-$v/bin/compute-sanitizer"
+
+    for lib in */; do
+        echo "Copying lib '$lib'"
+        cp -vR "$lib"/* "$D/opt/$n-$v/"
+        rm -rf "$lib"
+    done
+
+    ln -sfv lib "$D/opt/$n-$v/lib64"
+
+    for mf in $(find "$D/opt/$n-$v" -name Makefile); do
+        sed -i "s,/usr/local/cuda,/opt/$n-$v,g" "$mf"
+    done
+popd
+
+rm -rf "${runfile%.run}"
+
+# HACK: Remove compiler version checks so we don't have to install older
+# compilers just for cuda
+sed -e "/.*unsupported GNU version.*/d" \
+    -e "/.*unsupported clang version.*/d" \
+    -i "$D/opt/$n-$v/targets/x86_64-linux/include/crt/host_config.h"
+
+install -vDm644 /dev/stdin "$D/etc/ld.so.conf.d/cuda.conf" << .
+/opt/cuda/lib64
+/opt/cuda/nvvm/lib64
+/opt/cuda/extras/CUPTI/lib64
+.
+
+install -vDm644 /dev/stdin "$D/etc/profile.d/cuda.sh" << .
+# /etc/profile.d/cuda.sh
+
+pathprepend /opt/cuda/bin
+.
+
+# Fix building against glibc-2.42
+patch -Np1 -i "$A/cuda-glibc-2.42-1.patch" \
+    "$D/opt/$n-$v/targets/x86_64-linux/include/crt/math_functions.h"
+
+# TODO: Figure out why these are created?
+# Remove random ass broken symlinks
+rm -vf "$D/opt/$n-$v/targets/x86_64-linux/include/include"
+rm -vf "$D/opt/$n-$v/targets/x86_64-linux/lib/lib"{,64}
+
+}
+
+i() {
+
+ldconfig
+
+}

@@ -1,0 +1,39 @@
+{
+  "name": "json-c",
+  "version": {
+    "version": "0.18",
+    "release": 1
+  },
+  "about": "JSON implementation in C",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/json-c/json-c.git",
+  "version_fetch": "gr | sed -E 's,-[0-9]{8}$,,' | vfs | sort -V",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz",
+      "dest": "json-c-0.18.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

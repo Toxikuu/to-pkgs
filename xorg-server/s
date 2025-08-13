@@ -2,7 +2,7 @@
   "name": "xorg-server",
   "version": {
     "version": "21.1.18",
-    "release": 3
+    "release": 4
   },
   "about": "X Window system server",
   "maintainer": "Tox",
@@ -171,15 +171,15 @@
     },
     {
       "name": "xkbcomp",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "xkeyboard-config",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "xf86-input-libinput",
-      "kind": "Runtime"
+      "kind": "Required"
     }
   ],
   "kcfg": []

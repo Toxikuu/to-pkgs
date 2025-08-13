@@ -6,7 +6,7 @@ m="Tox"
 l="Custom"
 t="lib"
 u="https://git.$n.org/$n/$n.git"
-vf="gr | grep ^${n^^}_REL_ENG_ | cut -d_ -f4- | grep -v [a-Z] | sort -V | sed s,_,.,g"
+vf="gr | grep ^${n^^}_REL_ENG_ | cut -d_ -f4- | grep -v [a-zA-Z] | sort -V | sed s,_,.,g"
 
 s=(
     "$u"

@@ -1,0 +1,25 @@
+abseil-cpp@20250512.1-1
+
+a="Collection of C++ library code designed to augment the C++ standard library"
+m="Tox"
+l="Apache-2.0"
+t="lib"
+u="https://github.com/${n%-*}/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D ABSL_PROPAGATE_CXX_STD=ON
+)
+
+def
+
+}

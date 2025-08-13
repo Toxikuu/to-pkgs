@@ -1,0 +1,40 @@
+{
+  "name": "mbedtls",
+  "version": {
+    "version": "3.6.4",
+    "release": 1
+  },
+  "about": "An open source, portable, easy to use, readable and flexible TLS library",
+  "maintainer": "Tox",
+  "licenses": [
+    "Apache-2.0"
+  ],
+  "upstream": "https://github.com/Mbed-TLS/mbedtls.git",
+  "version_fetch": "gr | grep '^v[0-9]' | vfs | sort -V",
+  "tags": [
+    "lib",
+    "sec"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/Mbed-TLS/mbedtls.git",
+      "dest": "mbedtls"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

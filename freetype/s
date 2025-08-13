@@ -10,7 +10,7 @@
     "FTL OR GPL-2.0-or-later"
   ],
   "upstream": "https://gitlab.freedesktop.org/freetype/freetype.git",
-  "version_fetch": "gr | grep '^VER-' | cut -d- -f2- | sed 's,-,.,g' | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | grep '^VER-' | cut -d- -f2- | sed 's,-,.,g' | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "font"

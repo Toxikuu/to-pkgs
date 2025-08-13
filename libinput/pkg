@@ -1,4 +1,4 @@
-libinput@1.28.903-1
+libinput@1.29.0-1
 
 a="Input device management and event handling library"
 m="Tox"

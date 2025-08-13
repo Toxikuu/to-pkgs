@@ -1,4 +1,4 @@
-jasper@4.2.5-1
+jasper@4.2.8-1
 
 tag="version-$v"
 a="Reference implementation of the JPEG-2000 codec"
@@ -6,7 +6,7 @@ m="Tox"
 l="Custom"
 t="lib img codec"
 u="https://github.com/$n-software/$n.git"
-vf="gr | sed 's,^version-,,' | grep -v '[a-Z]' | sort -V"
+vf="gr | sed 's,^version-,,' | grep -v '[a-zA-Z]' | sort -V"
 
 s="$u"
 

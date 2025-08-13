@@ -6,7 +6,7 @@ m="Tox"
 l="MIT"
 t="lib z utils"
 u="https://github.com/google/$n.git"
-vf="gr | tr -d v | grep -v [a-Z] | sort -V" # there are two tags called 'v1.1.0' ??
+vf="gr | tr -d v | grep -v [a-zA-Z] | sort -V" # there are two tags called 'v1.1.0' ??
 
 s="$u"
 d=(

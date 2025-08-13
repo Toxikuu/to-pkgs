@@ -5,7 +5,7 @@ m="Tox"
 l="MIT"
 t="lib font utils"
 u="https://gitlab.freedesktop.org/$n/$n.git"
-vf="gr | grep -v '[a-Z]' | sort -V"
+vf="gr | grep -v '[a-zA-Z]' | sort -V"
 
 s="$u"
 

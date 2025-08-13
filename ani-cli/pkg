@@ -1,4 +1,4 @@
-ani-cli@4.10-1
+ani-cli@4.10-2
 
 tag="v$v"
 a="Utility to browse and play anime"
@@ -9,13 +9,13 @@ u="https://github.com/pystardust/$n.git"
 
 s="$u"
 d=(
-    "r,aria2"
-    "r,curl"
-    "r,ffmpeg"
-    "r,fzf"
-    "r,grep"
-    "r,mpv"
-    "r,sed"
+    "aria2"
+    "curl"
+    "ffmpeg"
+    "fzf"
+    "grep"
+    "mpv"
+    "sed"
 )
 
 b() {

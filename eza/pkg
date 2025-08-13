@@ -1,4 +1,4 @@
-eza@0.23.0-2
+eza@0.23.0-3
 
 tag="v$v"
 a="Modern ls alternative"
@@ -8,7 +8,6 @@ t="cli utils qol"
 u="https://github.com/$n-community/$n.git"
 
 s="$u"
-
 d=(
     "b,curl"
     "b,rust"
@@ -23,7 +22,9 @@ for i in {1,5}; do
     install -vDm644 target/man-$v/*.$i -t "$D/usr/share/man/man$i/"
 done
 
+export CFLAGS+=" -ffat-lto-objects"
 rm -vf rust-toolchain.toml
+
 cbr
 install -vDm755 "target/release/$n" "$D/usr/bin/$n"
 
@@ -37,7 +38,7 @@ install -vDm644 "$A/22-eza.sh" -t "$D/etc/profile.d/"
 
 t() {
 
-cargo test
+cargo test --release
 target/release/eza -al
 
 }

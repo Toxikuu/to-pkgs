@@ -1,0 +1,22 @@
+typos@1.35.3-1
+
+tag=v$v
+a="Source code spell checker"
+m="Tox"
+l="MIT OR Apache-2.0"
+t="utils cli"
+u="https://github.com/crate-ci/$n.git"
+vf="gr | sed 's,^v,,' | grep -v '[a-zA-Z]' | sort -V"
+
+s="$u"
+d=(
+    "gcc"
+    "b,rust"
+)
+
+b() {
+
+cbr
+install -vDm755 "target/release/$n" -t "$D/usr/bin/"
+
+}

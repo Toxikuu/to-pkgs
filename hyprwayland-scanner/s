@@ -1,0 +1,41 @@
+{
+  "name": "hyprwayland-scanner",
+  "version": {
+    "version": "0.4.5",
+    "release": 1
+  },
+  "about": "A Hyprland implementation of wayland-scanner, in and for C++",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/hyprwm/hyprwayland-scanner",
+  "version_fetch": null,
+  "tags": [],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/hyprwm/hyprwayland-scanner",
+      "dest": "hyprwayland-scanner"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "pugixml",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "gcc",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

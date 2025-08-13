@@ -1,4 +1,4 @@
-tealdeer@1.7.2-2
+tealdeer@1.7.2-3
 
 an="tldr"
 tag="v$v"
@@ -12,7 +12,6 @@ t="doc utils cli"
 u="https://github.com/$n-rs/$n.git"
 
 s="$u"
-
 d=(
     "gcc"
     "b,rust"
@@ -20,10 +19,7 @@ d=(
 
 b() {
 
-# proc macro freaks out with lto
-RUSTFLAGS="$(echo "$RUSTFLAGS" | sed -e 's|-C lto=\w\+||g' -e 's|-C embed-bitcode=true||g')"
-ltno
-
+export CFLAGS+=" -ffat-lto-objects"
 cbr
 install -vDm755 "target/release/$an"    -t "$D/usr/bin/"
 
@@ -40,11 +36,5 @@ i() {
 
 . "/etc/profile.d/95-$an.sh"
 tldr --show-paths
-
-}
-
-t() {
-
-cargo test
 
 }

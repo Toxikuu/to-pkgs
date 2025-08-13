@@ -2,7 +2,7 @@
   "name": "feh",
   "version": {
     "version": "565bc67087513d0c2bdf7256b2ad53dc69812f66",
-    "release": 1
+    "release": 2
   },
   "about": "Fast, light image viewer",
   "maintainer": "Tox",
@@ -47,6 +47,10 @@
     {
       "name": "libxt",
       "kind": "Build"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
     }
   ],
   "kcfg": []

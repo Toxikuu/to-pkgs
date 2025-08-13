@@ -2,7 +2,7 @@
   "name": "elogind",
   "version": {
     "version": "255.17",
-    "release": 1
+    "release": 2
   },
   "about": "Track logged-in users",
   "maintainer": "Tox",
@@ -75,15 +75,11 @@
     },
     {
       "name": "util-linux",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "dbus",
-      "kind": "Runtime"
-    },
-    {
-      "name": "polkit",
-      "kind": "Runtime"
+      "kind": "Required"
     }
   ],
   "kcfg": [

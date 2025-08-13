@@ -7,10 +7,7 @@ l="GPL-3.0-only"
 t="gfx wp"
 u="https://github.com/LGFae/$n.git"
 
-s=(
-    "$u"
-)
-
+s="$u"
 d=(
     "gcc"
     "glibc"

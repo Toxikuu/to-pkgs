@@ -5,7 +5,7 @@ m="Tox"
 l="LGPL-2.1-only OR MPL-1.1"
 t="lib gfx"
 u="https://gitlab.freedesktop.org/$n/$n.git"
-vf="gr | grep -v '[a-Z]' | sort -V"
+vf="gr | grep -v '[a-zA-Z]' | sort -V"
 
 s="https://www.${n}graphics.org/releases/$n-$v.tar.xz"
 

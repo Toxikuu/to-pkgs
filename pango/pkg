@@ -5,7 +5,7 @@ m="Tox"
 l="LGPL-2.1-or-later"
 t="lib font gfx"
 u="https://github.com/GNOME/$n.git"
-vf="gr | grep -Ev '[a-Z]|1.90|-'"
+vf="gr | grep -Ev '[a-zA-Z]|1.90|-'"
 
 s="https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"
 

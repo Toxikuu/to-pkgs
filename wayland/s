@@ -1,7 +1,7 @@
 {
   "name": "wayland",
   "version": {
-    "version": "cd0d1543c093d079ecf3444a16a4dcb02007a62a",
+    "version": "264da6a92b48ef41661021236c5d51ca52722309",
     "release": 1
   },
   "about": "Display server protocol",

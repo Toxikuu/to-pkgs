@@ -10,7 +10,7 @@
     "LGPL-2.1-or-later"
   ],
   "upstream": "https://github.com/GNOME/vala.git",
-  "version_fetch": "gr | sed 's,_,.,g' | cut -d. -f1- | grep -Ev '[a-Z]|0.57.0' | sort -V",
+  "version_fetch": "gr | sed 's,_,.,g' | cut -d. -f1- | grep -Ev '[a-zA-Z]|0.57.0' | sort -V",
   "tags": [
     "lang"
   ],

@@ -131,6 +131,10 @@
       "kind": "Required"
     },
     {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
       "name": "meson",
       "kind": "Build"
     },

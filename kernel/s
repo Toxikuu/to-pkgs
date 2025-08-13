@@ -1,8 +1,8 @@
 {
   "name": "kernel",
   "version": {
-    "version": "6.15.6",
-    "release": 2
+    "version": "6.16",
+    "release": 6
   },
   "about": "The Linux kernel",
   "maintainer": "Tox",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.15.6.tar.gz",
-      "dest": "linux-6.15.6.tar.gz"
+      "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.16.tar.gz",
+      "dest": "linux-6.16.tar.gz"
     }
   ],
   "dependencies": [

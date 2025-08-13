@@ -35,6 +35,7 @@ d=(
     "vulkan-loader"
     "wayland"
     "zlib"
+    "wayland"
 
     "b,meson"
     "b,samu"
@@ -49,7 +50,7 @@ sed -i 's/AV_OPT_TYPE_CHANNEL_LAYOUT/AV_OPT_TYPE_CHLAYOUT/' filters/f_lavfi.c
 
 _cfg=(
     -D x11=enabled
-    -D wayland=disabled
+    -D wayland=enabled
     -D gl-x11=enabled
     -D drm=enabled
 

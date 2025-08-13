@@ -1,7 +1,7 @@
 {
   "name": "jasper",
   "version": {
-    "version": "4.2.5",
+    "version": "4.2.8",
     "release": 1
   },
   "about": "Reference implementation of the JPEG-2000 codec",
@@ -10,7 +10,7 @@
     "Custom"
   ],
   "upstream": "https://github.com/jasper-software/jasper.git",
-  "version_fetch": "gr | sed 's,^version-,,' | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | sed 's,^version-,,' | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "img",

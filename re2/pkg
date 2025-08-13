@@ -1,0 +1,23 @@
+re2@20250805-1
+
+tag="${v:0:4}-${v:4:2}-${v: -2}"
+a="Fast, safe, thread-friendly regular expression engine"
+m="Tox"
+l="BSD-3-Clause"
+t="lib"
+u="https://github.com/google/$n.git"
+vf="gr | grep -v '[a-zA-Z]' | vfs | sort -V | sed 's,-,,g'"
+
+s="$u"
+d=(
+    "abseil-cpp"
+    "gcc"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}

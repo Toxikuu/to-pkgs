@@ -1,0 +1,43 @@
+{
+  "name": "re2",
+  "version": {
+    "version": "20250805",
+    "release": 1
+  },
+  "about": "Fast, safe, thread-friendly regular expression engine",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD-3-Clause"
+  ],
+  "upstream": "https://github.com/google/re2.git",
+  "version_fetch": "gr | grep -v '[a-zA-Z]' | vfs | sort -V | sed 's,-,,g'",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/google/re2.git",
+      "dest": "re2"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "abseil-cpp",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

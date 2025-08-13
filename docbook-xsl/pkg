@@ -1,4 +1,4 @@
-docbook-xsl@1.79.2-1
+docbook-xsl@1.79.2-2
 
 _db="${n%-*}"
 a="XML stylesheets for DocBook XML transformations"
@@ -6,7 +6,7 @@ m="Tox"
 l="Custom"
 t=""
 u="https://github.com/$_db/xslt10-stylesheets.git"
-vf="gr | grep -Ev '[a-Z]|-' | sort -V"
+vf="gr | grep -Ev '[a-zA-Z]|-' | sort -V"
 
 s=(
     "${u%.git}/releases/download/release/$v/$n"{,-nons}"-$v.tar.bz2"
@@ -14,7 +14,7 @@ s=(
 
 d=(
     "docbook-xml" # depend on docbook's catalog
-    "r,libxml2"
+    "libxml2"
     "b,bzip2"
 )
 

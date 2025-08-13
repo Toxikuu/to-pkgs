@@ -1,0 +1,39 @@
+squashfs-tools@4.7-1
+
+a="Tools for squashfs, a highly compressed read-only filesystem for Linux"
+m="Tox"
+l="GPL-2.0-or-later"
+t="utils fs cli"
+u="https://github.com/plougher/$n.git"
+vf="gr | sed -e 's,^$n-,,' -e 's,^v,,' | grep -v '[a-zA-Z]' | sort -V"
+
+s="$u"
+d=(
+    gcc
+    glibc
+    gzip
+    lzo
+    lz4
+    xz
+    zstd
+)
+
+b() {
+
+_cfg=(
+    ZSTD_SUPPORT=1
+    GZIP_SUPPORT=1
+    LZO_SUPPORT=1
+    LZ4_SUPPORT=1
+    LZMA_XZ_SUPPORT=0
+    XZ_SUPPORT=1
+    XATTR_SUPPORT=0
+    -C $n
+)
+
+mk "${_cfg[@]}"
+mi INSTALL_PREFIX="$D/usr" INSTALL_MANPAGES_DIR="$D/usr/share/man/man1" -C $n
+
+install -vDm644 Documentation/$v/* -t "$D/usr/share/doc/$n/"
+
+}

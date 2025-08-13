@@ -2,7 +2,7 @@
   "name": "ffmpeg",
   "version": {
     "version": "7.1.1",
-    "release": 1
+    "release": 2
   },
   "about": "Play, record, convert, and stream audio and video",
   "maintainer": "Tox",
@@ -10,7 +10,7 @@
     "GPL-3.0-only"
   ],
   "upstream": "https://git.ffmpeg.org/ffmpeg.git",
-  "version_fetch": "gr | tr -d nv | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | tr -d nv | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "cli",
@@ -129,10 +129,6 @@
       "kind": "Required"
     },
     {
-      "name": "libxml2",
-      "kind": "Required"
-    },
-    {
       "name": "libxv",
       "kind": "Required"
     },
@@ -186,6 +182,10 @@
     },
     {
       "name": "vulkan-headers",
+      "kind": "Build"
+    },
+    {
+      "name": "nv-codec-headers",
       "kind": "Build"
     }
   ],

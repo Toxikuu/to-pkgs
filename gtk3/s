@@ -1,7 +1,7 @@
 {
   "name": "gtk3",
   "version": {
-    "version": "3.24.49",
+    "version": "3.24.50",
     "release": 1
   },
   "about": "Multi-platform GUI toolkit",
@@ -10,7 +10,7 @@
     "LICENSE"
   ],
   "upstream": "https://gitlab.gnome.org/GNOME/gtk.git",
-  "version_fetch": "gr | grep -Ev '[a-Z]|\\.[8-9][0-9]\\.' | grep '^3' | sort -V",
+  "version_fetch": "gr | grep -Ev '[a-zA-Z]|\\.[8-9][0-9]\\.' | grep '^3' | sort -V",
   "tags": [
     "gui",
     "lib"
@@ -18,13 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://download.gnome.org/sources/gtk/3.24/gtk-3.24.49.tar.xz",
-      "dest": "gtk-3.24.49.tar.xz"
-    },
-    {
-      "kind": "Download",
-      "url": "https://www.linuxfromscratch.org/patches/blfs/svn/gtk-3.24.49-upstream_fix-1.patch",
-      "dest": "gtk-3.24.49-upstream_fix-1.patch"
+      "url": "https://download.gnome.org/sources/gtk/3.24/gtk-3.24.50.tar.xz",
+      "dest": "gtk-3.24.50.tar.xz"
     }
   ],
   "dependencies": [

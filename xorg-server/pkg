@@ -1,4 +1,4 @@
-xorg-server@21.1.18-3
+xorg-server@21.1.18-4
 
 a="X Window system server"
 m="Tox"
@@ -53,9 +53,9 @@ d=(
     "b,xcb-util-renderutil"
     "b,xcb-util-wm"
 
-    "r,xkbcomp"
-    "r,xkeyboard-config"
-    "r,xf86-input-libinput"
+    "xkbcomp"
+    "xkeyboard-config"
+    "xf86-input-libinput"
 )
 
 b() {

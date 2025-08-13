@@ -1,17 +1,15 @@
-tzdata@2025b-1
+tzdata@2025b-2
 
 a="Timezone data"
 m="Tox"
 l="Custom"
 t="lib utils cli"
-u="https://www.iana.org/time-zones"
-vf="curl -s 'https://www.iana.org/time-zones' | grep 'Released ' | grep -o '[2-9][0-9][0-9][0-9][a-z]'"
+u="https://github.com/eggert/tz.git"
 
+d="glibc"
 s=(
     "https://www.iana.org/time-zones/repository/releases/$n$v.tar.gz"
 )
-
-d="glibc"
 
 xt() {
 
@@ -23,7 +21,7 @@ tar xvf "$S/$n$v.tar.gz" -C "$n"
 b() {
 
 ZONEINFO="$D/usr/share/zoneinfo"
-mkdir -pv "$ZONEINFO/"{posix,right}
+mkdir -pv "$ZONEINFO"/{posix,right}
 
 timezones=(
     etcetera

@@ -1,4 +1,4 @@
-curl@8.15.0-1
+curl@8.15.0-2
 
 a="Tool and library for transferring data with URLs"
 m="Tox"
@@ -18,7 +18,7 @@ d=(
     "libpsl"
     "zlib"
     "zstd"
-    "r,make-ca"
+    "make-ca"
 )
 
 b() {

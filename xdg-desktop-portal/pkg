@@ -1,4 +1,4 @@
-xdg-desktop-portal@1.20.3-1
+xdg-desktop-portal@1.20.3-2
 
 a="Desktop integration portal"
 m="Tox"
@@ -7,7 +7,6 @@ t="lib"
 u="https://github.com/flatpak/$n.git"
 
 s="$u"
-
 d=(
     "gcc"
     "glib"
@@ -18,7 +17,9 @@ d=(
     "gdk-pixbuf"
     "json-glib"
     "pipewire"
-    "r,dbus"
+    "dbus"
+
+    # Recommended implementation needed at runtime
     # "r,xdg-desktop-portal-gtk"
 
     "b,meson"

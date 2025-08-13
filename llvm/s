@@ -2,7 +2,7 @@
   "name": "llvm",
   "version": {
     "version": "20.1.8",
-    "release": 3
+    "release": 2
   },
   "about": "Low Level Virtual Machine",
   "maintainer": "Tox",

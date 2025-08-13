@@ -1,7 +1,7 @@
 {
   "name": "iana-etc",
   "version": {
-    "version": "20250717",
+    "version": "20250807",
     "release": 1
   },
   "about": "The Internet Assigned Numbers Authority's services and protocols",
@@ -17,8 +17,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/Mic92/iana-etc/releases/download/20250717/iana-etc-20250717.tar.gz",
-      "dest": "iana-etc-20250717.tar.gz"
+      "url": "https://github.com/Mic92/iana-etc/releases/download/20250807/iana-etc-20250807.tar.gz",
+      "dest": "iana-etc-20250807.tar.gz"
     }
   ],
   "dependencies": [],

@@ -1,4 +1,4 @@
-lfs-bootscripts@20240825-1
+lfs-bootscripts@20240825-2
 
 a="SysVinit bootscripts for LFS"
 m="Tox"
@@ -10,10 +10,10 @@ s=(
 )
 
 d=(
-    "r,sysvinit"
-    "r,coreutils"
-    "r,util-linux"
-    "r,e2fsprogs"
+    "sysvinit"
+    "coreutils"
+    "util-linux"
+    "e2fsprogs"
 )
 
 b() {

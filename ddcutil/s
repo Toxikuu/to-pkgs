@@ -1,0 +1,60 @@
+{
+  "name": "ddcutil",
+  "version": {
+    "version": "2.2.1",
+    "release": 1
+  },
+  "about": "Query and change monitor settings",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL2"
+  ],
+  "upstream": "https://github.com/rockowitz/ddcutil.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "hw"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/rockowitz/ddcutil.git",
+      "dest": "ddcutil"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "glib",
+      "kind": "Required"
+    },
+    {
+      "name": "i2c-tools",
+      "kind": "Required"
+    },
+    {
+      "name": "jansson",
+      "kind": "Required"
+    },
+    {
+      "name": "libdrm",
+      "kind": "Required"
+    },
+    {
+      "name": "libusb",
+      "kind": "Required"
+    },
+    {
+      "name": "libx11",
+      "kind": "Required"
+    },
+    {
+      "name": "libxext",
+      "kind": "Required"
+    },
+    {
+      "name": "libxrandr",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

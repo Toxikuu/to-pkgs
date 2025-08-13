@@ -1,7 +1,7 @@
 {
   "name": "gdbm",
   "version": {
-    "version": "1.25",
+    "version": "1.26",
     "release": 1
   },
   "about": "The GNU Database Manager",
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "http://mirror.rit.edu/gnu/gdbm/gdbm-1.25.tar.gz",
-      "dest": "gdbm-1.25.tar.gz"
+      "url": "http://mirror.rit.edu/gnu/gdbm/gdbm-1.26.tar.gz",
+      "dest": "gdbm-1.26.tar.gz"
     }
   ],
   "dependencies": [

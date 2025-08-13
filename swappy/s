@@ -1,0 +1,52 @@
+{
+  "name": "swappy",
+  "version": {
+    "version": "1.5.1",
+    "release": 1
+  },
+  "about": "Wayland-native snapshot editing tool",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/jtheoof/swappy.git",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/jtheoof/swappy.git",
+      "dest": "swappy"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cairo",
+      "kind": "Required"
+    },
+    {
+      "name": "gtk3",
+      "kind": "Required"
+    },
+    {
+      "name": "pango",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

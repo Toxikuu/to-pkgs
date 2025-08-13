@@ -2,7 +2,7 @@
   "name": "pciutils",
   "version": {
     "version": "3ec74c71c01878f92e751f15bb8febe720c3ab40",
-    "release": 1
+    "release": 2
   },
   "about": "PCI utilities",
   "maintainer": "Tox",
@@ -37,7 +37,7 @@
     },
     {
       "name": "hwdata",
-      "kind": "Runtime"
+      "kind": "Required"
     }
   ],
   "kcfg": []

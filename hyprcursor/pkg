@@ -1,0 +1,27 @@
+hyprcursor@0.1.13-1
+
+tag="v$v"
+a="The hyprland cursor format, library and utilities"
+m="Tox"
+l="BSD-3-Clause"
+t="lib utils"
+u="https://github.com/hyprwm/$n.git"
+
+s="$u"
+d=(
+    "cairo"
+    "gcc"
+    "glibc"
+    "hyprlang"
+    "librsvg"
+    "tomlplusplus"
+    "libzip"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}

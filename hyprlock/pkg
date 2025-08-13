@@ -1,0 +1,38 @@
+hyprlock@0.9.1-1
+
+tag=v$v
+a="Hyprland's screen locking utility"
+m="Tox"
+l="BSD-3-Clause"
+t="gfx utils"
+u="https://github.com/hyprwm/$n.git"
+
+s="$u"
+d=(
+    cairo
+    gcc
+    glib
+    glibc
+    hyprgraphics
+    hyprlang
+    hyprutils
+    hyprwayland-scanner
+    libdrm
+    libglvnd
+    pam
+    pango
+    sdbus-cpp
+    wayland
+    libxkbcommon
+    mesa
+    wayland-protocols
+
+    b,cmake
+    b,samu
+)
+
+b() {
+
+def
+
+}

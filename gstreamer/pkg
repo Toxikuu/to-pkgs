@@ -5,7 +5,7 @@ t="lib audio video"
 l="LGPL-2.1-or-later"
 m="Tox"
 u="https://github.com/$n/$n.git"
-vf="gr | grep -Ev '[a-Z]|-' | sort -V"
+vf="gr | grep -Ev '[a-zA-Z]|-' | sort -V"
 
 d=(
     "glibc"

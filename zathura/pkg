@@ -1,4 +1,4 @@
-zathura@0.5.12-1
+zathura@0.5.12-2
 
 a="Minimal document viewer"
 m="Tox"
@@ -7,7 +7,6 @@ t="utils gui"
 u="https://github.com/pwmt/$n.git"
 
 s="$u"
-
 d=(
     "libseccomp"
     "desktop-file-utils"
@@ -22,7 +21,6 @@ d=(
 
     "b,meson"
     "b,samu"
-    "r,zathura-pdf-mupdf"
 )
 
 b() {

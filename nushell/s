@@ -1,8 +1,8 @@
 {
   "name": "nushell",
   "version": {
-    "version": "0.105.1",
-    "release": 2
+    "version": "0.106.1",
+    "release": 3
   },
   "about": "A new type of shell",
   "maintainer": "Tox",

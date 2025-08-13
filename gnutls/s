@@ -10,7 +10,7 @@
     "GPL-3.0-or-later AND LGPL-2.1-or-later"
   ],
   "upstream": "https://gitlab.com/gnutls/gnutls.git",
-  "version_fetch": "gr | grep -v '[a-Z]' | sort -V",
+  "version_fetch": "gr | grep -v '[a-zA-Z]' | sort -V",
   "tags": [],
   "sources": [
     {

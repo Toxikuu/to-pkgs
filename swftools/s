@@ -1,0 +1,52 @@
+{
+  "name": "swftools",
+  "version": {
+    "version": "0.9.2",
+    "release": 1
+  },
+  "about": "Utilities for working with shockwave flash files",
+  "maintainer": "Tox",
+  "licenses": [
+    "GPL"
+  ],
+  "upstream": "http://www.swftools.org",
+  "version_fetch": "no",
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "http://www.swftools.org/swftools-0.9.2.tar.gz",
+      "dest": "swftools-0.9.2.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "giflib",
+      "kind": "Required"
+    },
+    {
+      "name": "freeglut",
+      "kind": "Required"
+    },
+    {
+      "name": "lame",
+      "kind": "Required"
+    },
+    {
+      "name": "libjpeg-turbo",
+      "kind": "Required"
+    },
+    {
+      "name": "fontconfig",
+      "kind": "Required"
+    },
+    {
+      "name": "t1lib",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

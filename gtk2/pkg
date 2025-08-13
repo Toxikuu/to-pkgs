@@ -1,0 +1,68 @@
+gtk2@2.24.33-2
+
+a="Multi-platform GUI toolkit (legacy)"
+m="Tox"
+l="LGPL-2.1-or-later"
+t="gui, lib"
+u="https://gitlab.gnome.org/GNOME/${n/2/}.git"
+vf="gr | grep '^2\.' | grep -Ev '\.(9|32|28)' | vfs | sort -V"
+
+s=(
+    "http://ftp.gnome.org/pub/gnome/sources/gtk+/${v%.*}/gtk+-$v.tar.xz"
+)
+
+d=(
+    at-spi2-core
+    cairo
+    desktop-file-utils
+    fontconfig
+    gdk-pixbuf
+    glib
+    glibc
+    librsvg
+    libx11
+    libxcomposite
+    libxcursor
+    libxdamage
+    libxext
+    libxfixes
+    libxi
+    libxinerama
+    libxrandr
+    libxrender
+    pango
+    shared-mime-info
+    b,setuptools
+)
+
+b() {
+
+pat "$A/0001-severity.patch"
+pat "$A/0002-CVE-2024-6655.patch"
+
+CFLAGS+=" -Wno-error=implicit-int -Wno-error=incompatible-pointer-types"
+
+sed -e 's#l \(gtk-.*\).sgml#& -o \1#' \
+    -i docs/{faq,tutorial}/Makefile.in
+
+_cfg=(
+    --with-xinput=yes
+    --disable-gtk-doc
+    --disable-cups
+    --disable-papi
+    --disable-man
+    --disable-glibtest
+    --enable-year2038
+)
+
+def
+
+install -vDm644 /dev/stdin "$D/usr/share/gtk-2.0/gtkrc" << .
+gtk-icon-theme-name = "Adwaita"
+gtk-theme-name = "Adwaita"
+gtk-font-name = "Cantarell 11"
+.
+
+rm -vf "$D/usr/bin/gtk-update-icon-cache"
+
+}

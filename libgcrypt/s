@@ -1,8 +1,8 @@
 {
   "name": "libgcrypt",
   "version": {
-    "version": "1.11.1",
-    "release": 1
+    "version": "1.11.2",
+    "release": 2
   },
   "about": "General purpose cryptographic library",
   "maintainer": "Tox",
@@ -10,7 +10,7 @@
     "LGPL-2.1-or-later AND GPL-2.0-or-later"
   ],
   "upstream": "git://git.gnupg.org/libgcrypt.git",
-  "version_fetch": "gr | sed s,^libgcrypt-,, | grep -v [a-Z] | sort -V",
+  "version_fetch": "gr | sed s,^libgcrypt-,, | grep -v '[a-zA-Z]' | sort -V",
   "tags": [
     "lib",
     "sec"
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.1.tar.bz2",
-      "dest": "libgcrypt-1.11.1.tar.bz2"
+      "url": "https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.2.tar.bz2",
+      "dest": "libgcrypt-1.11.2.tar.bz2"
     }
   ],
   "dependencies": [

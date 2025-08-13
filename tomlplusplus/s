@@ -1,0 +1,43 @@
+{
+  "name": "tomlplusplus",
+  "version": {
+    "version": "3.4.0",
+    "release": 3
+  },
+  "about": "Header-only TOML config file parser and serializer for C++17",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/marzer/tomlplusplus.git",
+  "version_fetch": "gr | grep '^v[0-9]' | sort -V",
+  "tags": [
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/marzer/tomlplusplus.git",
+      "dest": "tomlplusplus"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "gcc",
+      "kind": "Required"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "meson",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

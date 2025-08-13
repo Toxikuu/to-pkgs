@@ -1,0 +1,56 @@
+{
+  "name": "libzip",
+  "version": {
+    "version": "1.11.4",
+    "release": 1
+  },
+  "about": "C library for reading, creating, and modifying zip archives",
+  "maintainer": "Tox",
+  "licenses": [
+    "BSD"
+  ],
+  "upstream": "https://github.com/nih-at/libzip.git",
+  "version_fetch": null,
+  "tags": [
+    "z",
+    "lib"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://github.com/nih-at/libzip/releases/download/v1.11.4/libzip-1.11.4.tar.xz",
+      "dest": "libzip-1.11.4.tar.xz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "bzip2",
+      "kind": "Required"
+    },
+    {
+      "name": "gnutls",
+      "kind": "Required"
+    },
+    {
+      "name": "openssl",
+      "kind": "Required"
+    },
+    {
+      "name": "zlib",
+      "kind": "Required"
+    },
+    {
+      "name": "zstd",
+      "kind": "Required"
+    },
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

@@ -1,0 +1,36 @@
+aquamarine@0.9.2-1
+
+tag="v$v"
+a="Lightweight rendering backend library"
+m="Tox"
+l="BSD-3-Clause"
+t="lib gfx"
+u="https://github.com/hyprwm/$n.git"
+
+s="$u"
+d=(
+    "gcc"
+    "glibc"
+    "hyprutils"
+    "hyprwayland-scanner"
+    "libglvnd"
+    "libdisplay-info"
+    "libdrm"
+    "libinput"
+    "seatd"
+    "udev"
+    "wayland"
+    "mesa"
+    "pixman"
+    "pugixml"
+
+    "b,wayland-protocols"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}

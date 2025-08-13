@@ -5,7 +5,7 @@ m="Tox"
 l="LGPL-2.0-or-later"
 t="img lib"
 u="https://github.com/GNOME/$n.git"
-vf="gr | grep -v '[a-Z]' | grep -v '[0-9]\\.9[0-9]' | vfem | sort -V"
+vf="gr | grep -v '[a-zA-Z]' | grep -v '[0-9]\\.9[0-9]' | vfem | sort -V"
 
 s=(
     "https://download.gnome.org/sources/$n/${v%.*}/$n-$v.tar.xz"

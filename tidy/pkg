@@ -5,7 +5,7 @@ m="Tox"
 l="Custom"
 t="doc utils"
 u="https://github.com/htacg/$n-html5.git"
-vf="gr | grep -v '[a-Z]'"
+vf="gr | grep -v '[a-zA-Z]'"
 
 s=(
     "$u"

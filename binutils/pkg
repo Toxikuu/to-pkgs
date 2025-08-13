@@ -1,4 +1,4 @@
-binutils@2.44-1
+binutils@2.45-1
 
 a="Programs for working with binary and object files"
 m="Tox"

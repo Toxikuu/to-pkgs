@@ -1,0 +1,59 @@
+bind-utils@9.21.10-1
+
+tag=v$v
+a="DNS utilities"
+m="Tox"
+l="MPL2"
+t="utils net"
+u="https://gitlab.isc.org/isc-projects/${n%-*}9.git"
+
+s="$u"
+d=(
+    liburcu
+    libuv
+    nghttp2
+    json-c
+    glibc
+    libcap
+    openssl
+    readline
+    xz
+    zlib
+    libidn2
+    jemalloc
+
+    b,muon
+    b,samu
+)
+
+b() {
+
+_cfg=(
+    -Ddoc=disabled
+    -Dcap=disabled
+    -Ddnstap=disabled
+    -Dfips=disabled
+    -Dgeoip=disabled
+    -Dgssapi=disabled
+    -Dline=disabled
+    -Dlmdb=disabled
+    -Dtracing=disabled
+    -Ddeveloper=disabled
+    -Dcmocka=disabled
+    -Dfuzzing=["none"]
+    -Dstats-xml=disabled
+    -Dleak-detection=disabled
+
+    -Ddoh=enabled
+    -Didn=enabled
+    -Dzlib=enabled
+    -Dstats-json=enabled
+)
+
+def
+
+# Remove random shit I don't care about
+rm -rf "$D"/usr/{include,bind}
+rm -vf "$D"/usr/bin/{arpaname,ddns-confgen,delv,dnssec-*,host,mdig,named*,nsec3hash,rndc-confgen,tsig-keygen}
+
+}

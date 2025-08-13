@@ -1,0 +1,22 @@
+hyprwayland-scanner@0.4.5-1
+
+tag="v$v"
+a="A Hyprland implementation of wayland-scanner, in and for C++"
+m="Tox"
+l="BSD-3-Clause"
+t=""
+u="https://github.com/hyprwm/hyprwayland-scanner"
+
+s="$u"
+d=(
+    "pugixml"
+    "b,cmake"
+    "b,samu"
+    "b,gcc"
+)
+
+b() {
+
+def
+
+}

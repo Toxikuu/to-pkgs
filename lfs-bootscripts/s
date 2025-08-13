@@ -2,7 +2,7 @@
   "name": "lfs-bootscripts",
   "version": {
     "version": "20240825",
-    "release": 1
+    "release": 2
   },
   "about": "SysVinit bootscripts for LFS",
   "maintainer": "Tox",
@@ -25,19 +25,19 @@
   "dependencies": [
     {
       "name": "sysvinit",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "coreutils",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "util-linux",
-      "kind": "Runtime"
+      "kind": "Required"
     },
     {
       "name": "e2fsprogs",
-      "kind": "Runtime"
+      "kind": "Required"
     }
   ],
   "kcfg": []

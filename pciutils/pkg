@@ -1,4 +1,4 @@
-pciutils@3ec74c71c01878f92e751f15bb8febe720c3ab40-1
+pciutils@3ec74c71c01878f92e751f15bb8febe720c3ab40-2
 
 _v="3.13.0"
 a="PCI utilities"
@@ -8,12 +8,11 @@ t="utils cli"
 u="https://github.com/$n/$n.git"
 
 s="$u"
-
 d=(
     "zlib"
     "kmod"
     "glibc"
-    "r,hwdata"
+    "hwdata"
 )
 
 b() {

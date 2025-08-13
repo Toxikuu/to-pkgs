@@ -10,7 +10,7 @@
     "GPL-2.0-only"
   ],
   "upstream": "https://repo.or.cz/socat.git",
-  "version_fetch": "gr | cut -d- -f2- | grep -v '[a-Z]'",
+  "version_fetch": "gr | cut -d- -f2- | grep -v '[a-zA-Z]'",
   "tags": [
     "utils",
     "cli"

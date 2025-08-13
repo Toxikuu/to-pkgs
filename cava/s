@@ -1,7 +1,7 @@
 {
   "name": "cava",
   "version": {
-    "version": "a6cd68e26447770a1526021d709f27b26d08df80",
+    "version": "2b72d281cc7d4345a0d786ff189ddcff0c0816a1",
     "release": 1
   },
   "about": "Terminal audio visualizer",

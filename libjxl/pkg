@@ -1,0 +1,46 @@
+libjxl@0.11.1-1
+
+a="JPEG XL image format reference implementation"
+m="Tox"
+l="BSD-3-Clause"
+t="lib img"
+u="https://github.com/$n/$n.git"
+
+# Tarball is used because of submodule shenanigans
+s="${u%.git}/archive/refs/tags/v$v.tar.gz"
+d=(
+    "brotli"
+    "gcc"
+    "glibc"
+    "giflib"
+    "highway"
+    "lcms"
+    "libjpeg-turbo"
+    "libpng"
+    "libwebp"
+    "gdk-pixbuf"
+    "gperf"
+
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+_cfg=(
+    -D BUILD_TESTING=OFF
+    -D JPEGXL_ENABLE_SKCMS=OFF
+    -D JPEGXL_ENABLE_SJPEG=OFF
+    -D JPEGXL_ENABLE_PLUGINS=ON
+)
+
+def
+rma
+
+}
+
+i() {
+
+gdk-pixbuf-query-loaders --update-cache || true
+
+}

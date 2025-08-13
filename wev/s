@@ -1,0 +1,44 @@
+{
+  "name": "wev",
+  "version": {
+    "version": "1.1.0",
+    "release": 1
+  },
+  "about": "Wayland xev equivalent",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://git.sr.ht/~sircmpwn/wev",
+  "version_fetch": null,
+  "tags": [
+    "utils",
+    "gfx"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://git.sr.ht/~sircmpwn/wev",
+      "dest": "wev"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "libxkbcommon",
+      "kind": "Required"
+    },
+    {
+      "name": "wayland",
+      "kind": "Required"
+    },
+    {
+      "name": "scdoc",
+      "kind": "Build"
+    },
+    {
+      "name": "wayland-protocols",
+      "kind": "Build"
+    }
+  ],
+  "kcfg": []
+}

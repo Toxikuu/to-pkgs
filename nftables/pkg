@@ -1,0 +1,37 @@
+nftables@1.1.4-1
+
+tag=v$v
+a="Netfilter tables userspace tools"
+m="Tox"
+l="GPL-2.0-only"
+t="utils net"
+u="https://git.netfilter.org/$n"
+
+s="$u"
+d=(
+    gmp
+    jansson
+    libmnl
+    libnftnl
+    ncurses
+    readline
+)
+
+b() {
+
+_cfg=(
+    --with-json
+    --with-cli=readline
+    --disable-python
+    --disable-readline
+    --disable-man-doc
+    --sysconfdir=/usr/share
+)
+
+autoreconf -fiv
+def
+
+# Install a sane config
+install -vDm644 "$A/nftables.conf" "$D/etc/nftables.conf"
+
+}

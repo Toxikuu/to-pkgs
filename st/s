@@ -1,7 +1,7 @@
 {
   "name": "st",
   "version": {
-    "version": "fba8d104172d988f1fd67874c4e4231d7b9fe914",
+    "version": "bdb21ddb8bdffa372b2870407a2869d5c5a822f3",
     "release": 1
   },
   "about": "Suckless terminal",

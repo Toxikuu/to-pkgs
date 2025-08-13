@@ -1,0 +1,24 @@
+egl-gbm@1.1.2.1-1
+
+a="The GBM EGL external platform library"
+m="Tox"
+l="MIT"
+t="lib gfx"
+u="https://github.com/NVIDIA/$n.git"
+
+s="$u"
+d=(
+    b,meson
+    b,samu
+
+    mesa
+    libdrm
+    glibc
+    eglexternalplatform
+)
+
+b() {
+
+def
+
+}

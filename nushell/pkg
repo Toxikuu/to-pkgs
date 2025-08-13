@@ -1,4 +1,4 @@
-nushell@0.105.1-2
+nushell@0.106.1-3
 
 a="A new type of shell"
 m="Tox"
@@ -18,8 +18,8 @@ d=(
 
 b() {
 
-ltno
 rm -vf rust-toolchain.toml
+export CFLAGS+=" -ffat-lto-objects"
 cbr
 
 find target/release \

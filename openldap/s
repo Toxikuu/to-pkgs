@@ -10,7 +10,7 @@
     "Custom"
   ],
   "upstream": "https://git.openldap.org/openldap/openldap.git",
-  "version_fetch": "gr | grep ^OPENLDAP_REL_ENG_ | cut -d_ -f4- | grep -v [a-Z] | sort -V | sed s,_,.,g",
+  "version_fetch": "gr | grep ^OPENLDAP_REL_ENG_ | cut -d_ -f4- | grep -v [a-zA-Z] | sort -V | sed s,_,.,g",
   "tags": [
     "lib"
   ],

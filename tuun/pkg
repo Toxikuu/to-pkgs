@@ -1,4 +1,4 @@
-tuun@4.1.3-4
+tuun@5.4.0-1
 
 tag="v$v"
 a="Minimal music player using MPV as a backend"
@@ -10,8 +10,8 @@ u="https://github.com/Toxikuu/$n.git"
 s="$u"
 d=(
     "b,rust"
-    "r,mpv"
-    "r,fzf"
+    "mpv"
+    "fzf"
     "gcc"
     "libx11"
     "libxtst"
@@ -25,6 +25,7 @@ d=(
 
 b() {
 
+CFLAGS+=" -ffat-lto-objects"
 mk
 mi
 

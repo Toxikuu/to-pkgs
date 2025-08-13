@@ -1,4 +1,4 @@
-mupdf@1.26.3-2
+mupdf@1.26.4-1
 
 # NOTE: I only package the libraries since I don't use the other stuff
 a="Lightweight PDF and XPS viewer"

@@ -6,7 +6,7 @@ m="Tox"
 l=("BSD-2-Clause" "MIT")
 t="codec lib utils"
 u="https://github.com/uclouvain/$n.git"
-vf="gr | sed -e 's,^version.,,' -e 's,^v,,' | grep -v [a-Z] | sort -V"
+vf="gr | sed -e 's,^version.,,' -e 's,^v,,' | grep -v [a-zA-Z] | sort -V"
 
 s="$u"
 d=(

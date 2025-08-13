@@ -1,4 +1,4 @@
-muon@f33ef03375d4d2b38c933d30c6df410385c224eb-1
+muon@f543a594f864eb8cbc5af2e00f282f6fdad53789-1
 
 a="An implementation of the meson build system in c99"
 m="Tox"
@@ -7,21 +7,20 @@ t="core utils lang"
 u="https://github.com/$n-build/$n.git"
 
 s="$u"
-
 d=(
     "pkgconf"
     "b,samurai"
-    # "b,scdoc" # docs
+    "b,scdoc"
 )
 
 b() {
 
 _cfg=(
     # Runtime dependencies
-    -D libcurl=disabled
-    -D libarchive=disabled
+    -D libcurl=disabled     # wrapfile support
+    -D libarchive=disabled  # wrapfile support
     -D libpkgconf=enabled
-    -D samurai=disabled
+    -D samurai=disabled     # embeds samu into the executable
     -D tracy=disabled
     -D ui=disabled
     -D readline=builtin
@@ -30,7 +29,7 @@ _cfg=(
     -D static=false
 
     # Docs and tests
-    -D man-pages=disabled
+    -D man-pages=enabled
     -D meson-docs=disabled
     -D meson-tests=disabled
     -D website=disabled
@@ -39,7 +38,6 @@ _cfg=(
 # Bootstrap
 CFLAGS+=" -D BOOTSTRAP_NO_SAMU"
 ./bootstrap.sh bootstrap
-install -vDm755 "bootstrap/$n-bootstrap" "/usr/bin/$n"
 
 # Rebuild and install
 with meson

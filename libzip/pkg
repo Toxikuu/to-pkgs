@@ -1,0 +1,27 @@
+libzip@1.11.4-1
+
+a="C library for reading, creating, and modifying zip archives"
+m="Tox"
+l="BSD"
+t="z lib"
+u="https://github.com/nih-at/$n.git"
+
+s=(
+    "${u%.git}/releases/download/v$v/$n-$v.tar.xz"
+)
+
+d=(
+    "bzip2"
+    "gnutls"
+    "openssl"
+    "zlib"
+    "zstd"
+    "b,cmake"
+    "b,samu"
+)
+
+b() {
+
+def
+
+}

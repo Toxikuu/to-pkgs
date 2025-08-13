@@ -1,4 +1,4 @@
-gtk3@3.24.49-1
+gtk3@3.24.50-1
 
 an="${n%3}"
 a="Multi-platform GUI toolkit"
@@ -7,11 +7,10 @@ l="LICENSE"
 t="gui lib"
 u="https://gitlab.gnome.org/GNOME/$an.git"
 # search for latest versions of gtk3 that aren't 3.{8,9}x
-vf="gr | grep -Ev '[a-Z]|\\.[8-9][0-9]\\.' | grep '^3' | sort -V"
+vf="gr | grep -Ev '[a-zA-Z]|\\.[8-9][0-9]\\.' | grep '^3' | sort -V"
 
 s=(
     "https://download.gnome.org/sources/$an/${v%.*}/$an-$v.tar.xz"
-    "https://www.linuxfromscratch.org/patches/blfs/svn/$an-$v-upstream_fix-1.patch"
 )
 
 d=(
@@ -46,8 +45,6 @@ d=(
 
 
 b() {
-
-pat "../$an-$v-upstream_fix-1.patch"
 
 _cfg=(
     -D broadway_backend=true
