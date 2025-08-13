@@ -1,4 +1,4 @@
-glibc@2.42-1
+glibc@2.42-2
 
 a="GNU C Library"
 m="Tox"
@@ -21,6 +21,8 @@ qa=(
 b() {
 
 ltno
+
+pat "$A/0000-fhs.patch"
 
 mkdir -pv build
 cd        build
@@ -53,6 +55,7 @@ sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 touch /etc/ld.so.conf
 
 mi
+
 # Fix a hardcoded path in `ldd`
 sed '/RTLDLIST=/s@/usr@@g' -i "$D/usr/bin/ldd"
 
