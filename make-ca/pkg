@@ -1,4 +1,4 @@
-make-ca@1.16.1-5
+make-ca@1.16.1-6
 
 a="PKI setup script for LFS"
 m="Tox"
@@ -17,7 +17,6 @@ d=(
     "p11-kit"
     "libtasn1"
     "nss"
-    "b,curl"
 )
 
 b() {
