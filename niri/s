@@ -2,7 +2,7 @@
   "name": "niri",
   "version": {
     "version": "25.05.1",
-    "release": 3
+    "release": 4
   },
   "about": "A scrolling Wayland compositor",
   "maintainer": "Tox",
@@ -72,10 +72,6 @@
     },
     {
       "name": "udev",
-      "kind": "Required"
-    },
-    {
-      "name": "nvidia",
       "kind": "Required"
     },
     {

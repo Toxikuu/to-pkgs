@@ -1,4 +1,4 @@
-niri@25.05.1-3
+niri@25.05.1-4
 
 tag="v$v"
 a="A scrolling Wayland compositor"
@@ -22,7 +22,6 @@ d=(
     "pixman"
     "seatd"
     "udev"
-    "nvidia"
     "xdg-desktop-portal-gtk"
     "b,llvm"
     "b,rust"
