@@ -2,7 +2,7 @@
   "name": "libplacebo",
   "version": {
     "version": "7.351.0",
-    "release": 2
+    "release": 3
   },
   "about": "Image and video primitives and shaders library, featuring a high-quality rendering pipeline",
   "maintainer": "Tox",
@@ -19,9 +19,14 @@
   ],
   "sources": [
     {
-      "kind": "Git",
-      "url": "https://github.com/haasn/libplacebo.git",
-      "dest": "libplacebo"
+      "kind": "Download",
+      "url": "https://github.com/haasn/libplacebo/archive/refs/tags/v7.351.0.tar.gz",
+      "dest": "v7.351.0.tar.gz"
+    },
+    {
+      "kind": "Download",
+      "url": "https://github.com/haasn/libplacebo/commit/12509c0f1ee8c22ae163017f0a5e7b8a9d983a17.patch",
+      "dest": "python-fix.patch"
     }
   ],
   "dependencies": [
