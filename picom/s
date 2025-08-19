@@ -1,7 +1,7 @@
 {
   "name": "picom",
   "version": {
-    "version": "9b8b0e956514779de15898475091de01d59b4394",
+    "version": "1b78521bac5c2a959b62690a912973943593cb23",
     "release": 1
   },
   "about": "Lightweight X11 compositor",
