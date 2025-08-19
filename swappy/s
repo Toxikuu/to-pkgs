@@ -1,7 +1,7 @@
 {
   "name": "swappy",
   "version": {
-    "version": "1.5.1",
+    "version": "1.7.1",
     "release": 1
   },
   "about": "Wayland-native snapshot editing tool",
