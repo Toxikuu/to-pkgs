@@ -1,8 +1,8 @@
 {
   "name": "git",
   "version": {
-    "version": "2.50.1",
-    "release": 2
+    "version": "2.51.0",
+    "release": 1
   },
   "about": "The fast distributed version control system",
   "maintainer": "Tox",
@@ -20,13 +20,13 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.kernel.org/pub/software/scm/git/git-2.50.1.tar.xz",
-      "dest": "git-2.50.1.tar.xz"
+      "url": "https://www.kernel.org/pub/software/scm/git/git-2.51.0.tar.xz",
+      "dest": "git-2.51.0.tar.xz"
     },
     {
       "kind": "Download",
-      "url": "https://www.kernel.org/pub/software/scm/git/git-manpages-2.50.1.tar.xz",
-      "dest": "git-manpages-2.50.1.tar.xz"
+      "url": "https://www.kernel.org/pub/software/scm/git/git-manpages-2.51.0.tar.xz",
+      "dest": "git-manpages-2.51.0.tar.xz"
     }
   ],
   "dependencies": [
