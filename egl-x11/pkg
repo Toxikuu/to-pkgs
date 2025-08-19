@@ -1,4 +1,4 @@
-egl-x11@1.0.2-1
+egl-x11@1.0.3-1
 
 tag=v$v
 a="NVIDIA XLib and XCB EGL Platform Library"

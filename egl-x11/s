@@ -1,7 +1,7 @@
 {
   "name": "egl-x11",
   "version": {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "release": 1
   },
   "about": "NVIDIA XLib and XCB EGL Platform Library",
