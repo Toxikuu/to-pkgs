@@ -1,4 +1,4 @@
-re2@20250805-1
+re2@20250812-1
 
 tag="${v:0:4}-${v:4:2}-${v: -2}"
 a="Fast, safe, thread-friendly regular expression engine"
