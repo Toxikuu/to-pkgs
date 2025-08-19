@@ -1,7 +1,7 @@
 {
   "name": "sudo-rs",
   "version": {
-    "version": "963167ea557b1df512e1585faaf3a6a0e04a5bbf",
+    "version": "6c85a21e84e3e5975224bf66def340bd0b824b86",
     "release": 1
   },
   "about": "Privilege escalation utility",
