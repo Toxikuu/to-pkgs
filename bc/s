@@ -1,7 +1,7 @@
 {
   "name": "bc",
   "version": {
-    "version": "692c350a5912328125570e1245e08291915b951c",
+    "version": "94dec4dd96adc02abff4f5cf351f0204f05dbb40",
     "release": 1
   },
   "about": "Arbitrary precision numeric processing language",
