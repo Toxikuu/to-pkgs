@@ -1,7 +1,7 @@
 {
   "name": "rhash",
   "version": {
-    "version": "cce6c628f93d9ed332921656aa5e1750d12b8d3e",
+    "version": "ba02242622240b30f97f021620fcbba64d19c5e1",
     "release": 1
   },
   "about": "Utility for computing hash sums",
