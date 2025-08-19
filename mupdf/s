@@ -1,7 +1,7 @@
 {
   "name": "mupdf",
   "version": {
-    "version": "1.26.4",
+    "version": "1.26.5",
     "release": 1
   },
   "about": "Lightweight PDF and XPS viewer",
@@ -20,8 +20,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.mupdf.com/downloads/archive/mupdf-1.26.4-source.tar.gz",
-      "dest": "mupdf-1.26.4-source.tar.gz"
+      "url": "https://www.mupdf.com/downloads/archive/mupdf-1.26.5-source.tar.gz",
+      "dest": "mupdf-1.26.5-source.tar.gz"
     }
   ],
   "dependencies": [
