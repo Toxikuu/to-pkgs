@@ -1,7 +1,7 @@
 {
   "name": "appstream",
   "version": {
-    "version": "1.0.5",
+    "version": "1.0.6",
     "release": 1
   },
   "about": "Provides a standard for creating app stores across distributions",
@@ -17,8 +17,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.5.tar.xz",
-      "dest": "AppStream-1.0.5.tar.xz"
+      "url": "https://www.freedesktop.org/software/appstream/releases/AppStream-1.0.6.tar.xz",
+      "dest": "AppStream-1.0.6.tar.xz"
     }
   ],
   "dependencies": [
