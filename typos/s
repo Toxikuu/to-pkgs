@@ -1,7 +1,7 @@
 {
   "name": "typos",
   "version": {
-    "version": "1.35.3",
+    "version": "1.35.5",
     "release": 1
   },
   "about": "Source code spell checker",
