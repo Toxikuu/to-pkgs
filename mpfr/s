@@ -1,7 +1,7 @@
 {
   "name": "mpfr",
   "version": {
-    "version": "9c9fd0e7c2231644cc7938c5b4bb505ebe32e798",
+    "version": "60054505342ab490052aab3cd3c8985c15ef89cb",
     "release": 1
   },
   "about": "Multiple-precision floating-point math library",
