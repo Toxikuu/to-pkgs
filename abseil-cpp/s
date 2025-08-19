@@ -1,7 +1,7 @@
 {
   "name": "abseil-cpp",
   "version": {
-    "version": "20250512.1",
+    "version": "20250814.0",
     "release": 1
   },
   "about": "Collection of C++ library code designed to augment the C++ standard library",
