@@ -1,4 +1,4 @@
-squashfs-tools@4.7-1
+squashfs-tools@4.7.2-1
 
 a="Tools for squashfs, a highly compressed read-only filesystem for Linux"
 m="Tox"

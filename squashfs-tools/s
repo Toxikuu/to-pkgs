@@ -1,7 +1,7 @@
 {
   "name": "squashfs-tools",
   "version": {
-    "version": "4.7",
+    "version": "4.7.2",
     "release": 1
   },
   "about": "Tools for squashfs, a highly compressed read-only filesystem for Linux",
