@@ -1,7 +1,7 @@
 {
   "name": "bind-utils",
   "version": {
-    "version": "9.21.10",
+    "version": "9.21.11",
     "release": 1
   },
   "about": "DNS utilities",
