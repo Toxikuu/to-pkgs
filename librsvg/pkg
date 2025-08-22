@@ -1,4 +1,4 @@
-librsvg@2.60.0-4
+librsvg@2.61.0-1
 
 a="Rust SVG library"
 m="Tox"

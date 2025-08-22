@@ -1,8 +1,8 @@
 {
   "name": "librsvg",
   "version": {
-    "version": "2.60.0",
-    "release": 4
+    "version": "2.61.0",
+    "release": 1
   },
   "about": "Rust SVG library",
   "maintainer": "Tox",
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://download.gnome.org/sources/librsvg/2.60/librsvg-2.60.0.tar.xz",
-      "dest": "librsvg-2.60.0.tar.xz"
+      "url": "https://download.gnome.org/sources/librsvg/2.61/librsvg-2.61.0.tar.xz",
+      "dest": "librsvg-2.61.0.tar.xz"
     }
   ],
   "dependencies": [
