@@ -1,7 +1,7 @@
 {
   "name": "meson",
   "version": {
-    "version": "1.8.3",
+    "version": "1.8.4",
     "release": 1
   },
   "about": "High productivity build system",
@@ -21,8 +21,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/mesonbuild/meson/releases/download/1.8.3/meson-1.8.3.tar.gz",
-      "dest": "meson-1.8.3.tar.gz"
+      "url": "https://github.com/mesonbuild/meson/releases/download/1.8.4/meson-1.8.4.tar.gz",
+      "dest": "meson-1.8.4.tar.gz"
     }
   ],
   "dependencies": [
