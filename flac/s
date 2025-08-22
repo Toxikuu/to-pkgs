@@ -1,7 +1,7 @@
 {
   "name": "flac",
   "version": {
-    "version": "b2c46b5c470c3e54c7bf80df1de1b3f09af688c9",
+    "version": "9547dbc2ddfca06a70ea937dbb605bbe78ea5f90",
     "release": 1
   },
   "about": "Free Lossless Audio Codec",
