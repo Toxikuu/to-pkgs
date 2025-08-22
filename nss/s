@@ -1,7 +1,7 @@
 {
   "name": "nss",
   "version": {
-    "version": "3.115",
+    "version": "3.115.1",
     "release": 1
   },
   "about": "Network Security Services",
@@ -20,8 +20,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_115_RTM/src/nss-3.115.tar.gz",
-      "dest": "nss-3.115.tar.gz"
+      "url": "https://archive.mozilla.org/pub/security/nss/releases/NSS_3_115_1_RTM/src/nss-3.115.1.tar.gz",
+      "dest": "nss-3.115.1.tar.gz"
     },
     {
       "kind": "Download",
