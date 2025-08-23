@@ -1,7 +1,7 @@
 {
   "name": "muon",
   "version": {
-    "version": "54869735ec403e0bc1a3ec892e656bb9ec63953a",
+    "version": "f12d9df0e91077f265dc81627452005d7474399b",
     "release": 1
   },
   "about": "An implementation of the meson build system in c99",
