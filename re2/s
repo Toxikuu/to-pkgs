@@ -2,7 +2,7 @@
   "name": "re2",
   "version": {
     "version": "20250812",
-    "release": 1
+    "release": 2
   },
   "about": "Fast, safe, thread-friendly regular expression engine",
   "maintainer": "Tox",
