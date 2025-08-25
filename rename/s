@@ -1,0 +1,33 @@
+{
+  "name": "rename",
+  "version": {
+    "version": "1.16",
+    "release": 1
+  },
+  "about": "Rename multiple files using Perl regular expressions",
+  "maintainer": "Tox",
+  "licenses": [
+    "Artistic-1.0-Perl",
+    "GPL-1.0-or-later"
+  ],
+  "upstream": "https://search.cpan.org/~pederst/rename/",
+  "version_fetch": "no",
+  "tags": [
+    "utils",
+    "cli"
+  ],
+  "sources": [
+    {
+      "kind": "Download",
+      "url": "https://cpan.metacpan.org/authors/id/P/PE/PEDERST/rename-1.16.tar.gz",
+      "dest": "rename-1.16.tar.gz"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "perl",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}

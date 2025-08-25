@@ -1,0 +1,19 @@
+rename@1.16-1
+
+a="Rename multiple files using Perl regular expressions"
+m="Tox"
+l=("Artistic-1.0-Perl" "GPL-1.0-or-later")
+t="utils cli"
+u="https://search.cpan.org/~pederst/$n/"
+vf="no" # pain in the ass
+
+s="https://cpan.metacpan.org/authors/id/P/PE/PEDERST/$n-$v.tar.gz"
+d="perl"
+
+b() {
+
+perl Makefile.PL PREFIX=/usr
+mk
+mi
+
+}
