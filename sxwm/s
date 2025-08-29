@@ -1,7 +1,7 @@
 {
   "name": "sxwm",
   "version": {
-    "version": "6cbfafb9f25719bfe0a06e30af4224d728b9ddb5",
+    "version": "6962146b747e449e7281b6c6acda0a32fb1ff453",
     "release": 1
   },
   "about": "Simple X Window Manager",
