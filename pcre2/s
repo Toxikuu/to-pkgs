@@ -1,7 +1,7 @@
 {
   "name": "pcre2",
   "version": {
-    "version": "10.45",
+    "version": "10.46",
     "release": 1
   },
   "about": "Perl-Compatible Regular Expressions",
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2",
-      "dest": "pcre2-10.45.tar.bz2"
+      "url": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.46/pcre2-10.46.tar.bz2",
+      "dest": "pcre2-10.46.tar.bz2"
     }
   ],
   "dependencies": [
