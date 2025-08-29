@@ -1,8 +1,8 @@
 {
   "name": "feh",
   "version": {
-    "version": "565bc67087513d0c2bdf7256b2ad53dc69812f66",
-    "release": 2
+    "version": "f987977dffaf10850b17532ad224b5bf643fb591",
+    "release": 1
   },
   "about": "Fast, light image viewer",
   "maintainer": "Tox",
