@@ -1,7 +1,7 @@
 {
   "name": "gumbo-parser",
   "version": {
-    "version": "0.13.1",
+    "version": "0.13.2",
     "release": 1
   },
   "about": "HTML5 parsing library in pure C99",
