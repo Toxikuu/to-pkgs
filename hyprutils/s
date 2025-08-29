@@ -1,7 +1,7 @@
 {
   "name": "hyprutils",
   "version": {
-    "version": "0.8.3",
+    "version": "0.8.4",
     "release": 1
   },
   "about": "Hyprland utilities library used across the ecosystem",
