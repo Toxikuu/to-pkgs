@@ -1,7 +1,7 @@
 {
   "name": "nftables",
   "version": {
-    "version": "1.1.4",
+    "version": "1.1.5",
     "release": 1
   },
   "about": "Netfilter tables userspace tools",
