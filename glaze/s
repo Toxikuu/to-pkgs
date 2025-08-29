@@ -1,7 +1,7 @@
 {
   "name": "glaze",
   "version": {
-    "version": "5.6.0",
+    "version": "5.6.1",
     "release": 1
   },
   "about": "Fast, in-memory JSON and interface library for C++",
