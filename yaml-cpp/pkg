@@ -1,0 +1,30 @@
+yaml-cpp@2f86d13775d119edbb69af52e5f566fd65c6953b-1
+
+a="YAML parser and emitter in C++"
+m="Tox"
+l="MIT"
+t="lib lang"
+u="https://github.com/jbeder/$n.git"
+
+s=$u
+d=(
+    b,cmake
+    b,samu
+    glibc
+    gcc
+)
+
+b() {
+
+_cfg=(
+    -D YAML_CPP_BUILD_TESTS=OFF
+    -D YAML_BUILD_SHARED_LIBS=ON
+    -D CMAKE_POLICY_VERSION_MINIMUM=3.5
+)
+
+def
+
+rm -rf "$D/usr/{lib,lib/pkgconfig,include}/*{gtest,gmock}*
+rm -rf "$D/usr/lib/cmake/GTest
+
+}

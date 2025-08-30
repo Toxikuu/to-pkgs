@@ -1,0 +1,44 @@
+{
+  "name": "yaml-cpp",
+  "version": {
+    "version": "2f86d13775d119edbb69af52e5f566fd65c6953b",
+    "release": 1
+  },
+  "about": "YAML parser and emitter in C++",
+  "maintainer": "Tox",
+  "licenses": [
+    "MIT"
+  ],
+  "upstream": "https://github.com/jbeder/yaml-cpp.git",
+  "version_fetch": null,
+  "tags": [
+    "lib",
+    "lang"
+  ],
+  "sources": [
+    {
+      "kind": "Git",
+      "url": "https://github.com/jbeder/yaml-cpp.git",
+      "dest": "yaml-cpp"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "cmake",
+      "kind": "Build"
+    },
+    {
+      "name": "samu",
+      "kind": "Build"
+    },
+    {
+      "name": "glibc",
+      "kind": "Required"
+    },
+    {
+      "name": "gcc",
+      "kind": "Required"
+    }
+  ],
+  "kcfg": []
+}
