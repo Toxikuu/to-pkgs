@@ -1,7 +1,7 @@
 {
   "name": "inxi",
   "version": {
-    "version": "edfe5a62e16b8e36f40bb9a5e37af2bccdc3d001",
+    "version": "c37b4018019e3c138ee0c3bcdb917a3953481411",
     "release": 1
   },
   "about": "Full featured CLI system information tool",
