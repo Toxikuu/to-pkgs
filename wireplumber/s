@@ -1,7 +1,7 @@
 {
   "name": "wireplumber",
   "version": {
-    "version": "0.5.10",
+    "version": "0.5.11",
     "release": 1
   },
   "about": "PipeWire session manager",
