@@ -1,7 +1,7 @@
 {
   "name": "qt",
   "version": {
-    "version": "6.9.1",
+    "version": "6.9.2",
     "release": 1
   },
   "about": "Application and UI framework",
@@ -21,8 +21,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://download.qt.io/archive/qt/6.9/6.9.1/single/qt-everywhere-src-6.9.1.tar.xz",
-      "dest": "qt-everywhere-src-6.9.1.tar.xz"
+      "url": "https://download.qt.io/archive/qt/6.9/6.9.2/single/qt-everywhere-src-6.9.2.tar.xz",
+      "dest": "qt-everywhere-src-6.9.2.tar.xz"
     },
     {
       "kind": "Download",
