@@ -1,4 +1,4 @@
-llvm@20.1.8-1
+llvm@21.1.0-1
 
 a="Low Level Virtual Machine"
 m="Tox"
