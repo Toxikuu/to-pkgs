@@ -1,7 +1,7 @@
 {
   "name": "iputils",
   "version": {
-    "version": "012c807245e8c399a51bd701b17583a0bd702272",
+    "version": "7038705159e888f2362aa9ce778213acfe7f2b9b",
     "release": 1
   },
   "about": "The 'ping' networking utility",
