@@ -1,7 +1,7 @@
 {
   "name": "libexif",
   "version": {
-    "version": "be9e04ae6556d891beb86878922a410089d9580d",
+    "version": "f718e0e3e88e6156b89590b3ddbd926af0326625",
     "release": 1
   },
   "about": "EXIF data library",
