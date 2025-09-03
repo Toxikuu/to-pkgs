@@ -1,7 +1,7 @@
 {
   "name": "nghttp2",
   "version": {
-    "version": "1.66.0",
+    "version": "1.67.0",
     "release": 1
   },
   "about": "HTTP/2 implementation",
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.66.0/nghttp2-1.66.0.tar.xz",
-      "dest": "nghttp2-1.66.0.tar.xz"
+      "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.67.0/nghttp2-1.67.0.tar.xz",
+      "dest": "nghttp2-1.67.0.tar.xz"
     }
   ],
   "dependencies": [
