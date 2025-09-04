@@ -1,4 +1,4 @@
-rsync@9994933c8ccf7ead27c81fe4ce2eb4e08af20c7f-1
+rsync@797e17fc4a6f15e3b1756538a9f812b63942686f-1
 
 a="Fast, versatile file copying tool"
 m="Tox"
@@ -6,25 +6,19 @@ l="GPL-3.0-or-later"
 t="utils cli"
 u="https://github.com/${n/r/R}Project/$n.git"
 
-s=(
-    "$u"
-    "${u%.git}/commit/026ef4cd09660c0a096e285e668b4ba7cd396509.patch -> bool.patch"
-)
-
+s="$u"
 d=(
-    "acl"
-    "lz4"
-    "openssl"
-    "popt"
-    "xxhash"
-    "zlib"
-    "zstd"
-    "python"
+    acl
+    lz4
+    openssl
+    popt
+    xxhash
+    zlib
+    zstd
+    python
 )
 
 b() {
-
-pat "$S/bool.patch"
 
 _cfg=(
     --enable-ipv6
