@@ -1,7 +1,7 @@
 {
   "name": "yaml-cpp",
   "version": {
-    "version": "2f86d13775d119edbb69af52e5f566fd65c6953b",
+    "version": "aa8d4e4750ec9fe9f8cc680eb90f1b15955c817e",
     "release": 1
   },
   "about": "YAML parser and emitter in C++",
