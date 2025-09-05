@@ -1,7 +1,7 @@
 {
   "name": "pkgconf",
   "version": {
-    "version": "e6e945835ad1fee1eee66360b1ebeecb36f6623b",
+    "version": "88ef76a600356a8952a9570cf0c7384d1e093fc6",
     "release": 1
   },
   "about": "Package compiler and linker metadata toolkit",
