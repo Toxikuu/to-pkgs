@@ -1,7 +1,7 @@
 {
   "name": "expat",
   "version": {
-    "version": "ca2821c43c3c2a6bbf42e0b2431107bcd747574a",
+    "version": "881d38418b3e93c363996761e9fad16baded5398",
     "release": 1
   },
   "about": "XML parser library",
