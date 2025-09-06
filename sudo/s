@@ -1,7 +1,7 @@
 {
   "name": "sudo",
   "version": {
-    "version": "f4998eadb050a0f4049b8c7db491bd420e17f8fc",
+    "version": "95973ef72b765ff10097fada06e2f265fa22c357",
     "release": 1
   },
   "about": "Privilege escalation utility",
