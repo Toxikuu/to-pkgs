@@ -1,7 +1,7 @@
 {
   "name": "pastel",
   "version": {
-    "version": "f83148c42102804d93721af0146b1a834b78b25e",
+    "version": "a92c58367c4d25493bf0d4ef86a96e52746a3386",
     "release": 1
   },
   "about": "CLI color manipulation utility",
