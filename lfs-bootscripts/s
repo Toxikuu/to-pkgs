@@ -1,8 +1,8 @@
 {
   "name": "lfs-bootscripts",
   "version": {
-    "version": "20240825",
-    "release": 2
+    "version": "20250827",
+    "release": 1
   },
   "about": "SysVinit bootscripts for LFS",
   "maintainer": "Tox",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.linuxfromscratch.org/lfs/downloads/development/lfs-bootscripts-20240825.tar.xz",
-      "dest": "lfs-bootscripts-20240825.tar.xz"
+      "url": "https://www.linuxfromscratch.org/lfs/downloads/development/lfs-bootscripts-20250827.tar.xz",
+      "dest": "lfs-bootscripts-20250827.tar.xz"
     }
   ],
   "dependencies": [
