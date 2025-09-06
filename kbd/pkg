@@ -1,4 +1,4 @@
-kbd@2.8.0-1
+kbd@2.9.0-1
 
 a="Keytable files, console fonts, and keyboard utilities"
 m="Tox"
@@ -8,12 +8,11 @@ u="https://git.kernel.org/pub/scm/linux/kernel/git/legion/$n.git"
 
 s=(
     "https://www.kernel.org/pub/linux/utils/$n/$n-$v.tar.xz"
-    "https://www.linuxfromscratch.org/patches/lfs/development/$n-$v-backspace-1.patch"
 )
 
 d=(
-    "glibc"
-    "gzip"
+    glibc
+    gzip
 )
 
 b() {
@@ -25,8 +24,6 @@ mv -v data/keymaps/i386/olpc/pt{,-olpc}.map
 mv -v data/keymaps/i386/fgGIod/trf{,-fgGIod}.map
 mv -v data/keymaps/i386/colemak/{en-latin9,colemak}.map
 autoreconf -fiv
-
-pat "$S/$n-$v-backspace-1.patch"
 
 sed -i '/RESIZECONS_PROGS=/s/yes/no/' configure
 sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in
