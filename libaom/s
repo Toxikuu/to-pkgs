@@ -1,7 +1,7 @@
 {
   "name": "libaom",
   "version": {
-    "version": "3.12.1",
+    "version": "3.13.1",
     "release": 1
   },
   "about": "Alliance for Open Media video codec",
