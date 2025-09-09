@@ -1,7 +1,7 @@
 {
   "name": "libxres",
   "version": {
-    "version": "1.2.2",
+    "version": "1.2.3",
     "release": 1
   },
   "about": "X11 Resource extension library",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.x.org/pub/individual/lib/libXres-1.2.2.tar.xz",
-      "dest": "libXres-1.2.2.tar.xz"
+      "url": "https://www.x.org/pub/individual/lib/libXres-1.2.3.tar.xz",
+      "dest": "libXres-1.2.3.tar.xz"
     }
   ],
   "dependencies": [
