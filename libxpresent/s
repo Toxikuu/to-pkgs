@@ -1,7 +1,7 @@
 {
   "name": "libxpresent",
   "version": {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "release": 1
   },
   "about": "X Present Extension library",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.x.org/pub/individual/lib/libXpresent-1.0.1.tar.xz",
-      "dest": "libXpresent-1.0.1.tar.xz"
+      "url": "https://www.x.org/pub/individual/lib/libXpresent-1.0.2.tar.xz",
+      "dest": "libXpresent-1.0.2.tar.xz"
     }
   ],
   "dependencies": [
