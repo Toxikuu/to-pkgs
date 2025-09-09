@@ -1,7 +1,7 @@
 {
   "name": "xxhash",
   "version": {
-    "version": "bab7e27f4c6ae4efbb83dd99ae8a554423571635",
+    "version": "d8820c9fd39b033a6ef6741e1d3fcf7228e50143",
     "release": 1
   },
   "about": "Extremely fast non-cryptographic hash algorithm",
