@@ -1,7 +1,7 @@
 {
   "name": "double-conversion",
   "version": {
-    "version": "8f124309aaa4fcaaefc2d28af56edebf0c92be9d",
+    "version": "11bbdb58fb10858bb546ca445481199faff2f585",
     "release": 1
   },
   "about": "Binary-decimal and decimal-binary routines for IEEE doubles",
