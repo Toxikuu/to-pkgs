@@ -1,7 +1,7 @@
 {
   "name": "libxss",
   "version": {
-    "version": "1.2.4",
+    "version": "1.2.5",
     "release": 1
   },
   "about": "X11 Screen Saver extension library",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://www.x.org/pub/individual/lib/libXScrnSaver-1.2.4.tar.xz",
-      "dest": "libXScrnSaver-1.2.4.tar.xz"
+      "url": "https://www.x.org/pub/individual/lib/libXScrnSaver-1.2.5.tar.xz",
+      "dest": "libXScrnSaver-1.2.5.tar.xz"
     }
   ],
   "dependencies": [
