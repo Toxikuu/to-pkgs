@@ -1,4 +1,4 @@
-p11-kit@0.25.5-1
+p11-kit@0.25.6-1
 
 a="Loads and enumerates PKCS#11 modules"
 m="Tox"
@@ -6,10 +6,7 @@ l="BSD-3-Clause"
 t="sec lib net core"
 u="https://github.com/p11-glue/$n.git"
 
-s=(
-    "${u%.git}/releases/download/$v/$n-$v.tar.xz"
-)
-
+s="$u"
 d=(
     "coreutils"
     "glibc"

@@ -1,7 +1,7 @@
 {
   "name": "p11-kit",
   "version": {
-    "version": "0.25.5",
+    "version": "0.25.6",
     "release": 1
   },
   "about": "Loads and enumerates PKCS#11 modules",
@@ -19,9 +19,9 @@
   ],
   "sources": [
     {
-      "kind": "Download",
-      "url": "https://github.com/p11-glue/p11-kit/releases/download/0.25.5/p11-kit-0.25.5.tar.xz",
-      "dest": "p11-kit-0.25.5.tar.xz"
+      "kind": "Git",
+      "url": "https://github.com/p11-glue/p11-kit.git",
+      "dest": "p11-kit"
     }
   ],
   "dependencies": [
