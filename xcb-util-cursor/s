@@ -1,7 +1,7 @@
 {
   "name": "xcb-util-cursor",
   "version": {
-    "version": "0.1.5",
+    "version": "0.1.6",
     "release": 1
   },
   "about": "XCB cursor library",
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.5.tar.xz",
-      "dest": "xcb-util-cursor-0.1.5.tar.xz"
+      "url": "https://xorg.freedesktop.org/archive/individual/lib/xcb-util-cursor-0.1.6.tar.xz",
+      "dest": "xcb-util-cursor-0.1.6.tar.xz"
     }
   ],
   "dependencies": [

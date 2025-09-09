@@ -1,4 +1,4 @@
-xcb-util-cursor@0.1.5-1
+xcb-util-cursor@0.1.6-1
 
 a="XCB cursor library"
 m="Tox"
@@ -15,7 +15,7 @@ d=(
     "b,xorgproto"
 )
 
-s="https://xcb.freedesktop.org/dist/$n-$v.tar.xz"
+s="https://xorg.freedesktop.org/archive/individual/lib/$n-$v.tar.xz"
 
 b() {
 
