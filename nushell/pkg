@@ -1,11 +1,11 @@
-nushell@0.106.1-3
+nushell@0.107.0-1
 
 a="A new type of shell"
 m="Tox"
 l="MIT"
 t="sh"
 u="https://github.com/$n/$n.git"
-vf="gr | sed 's,_,.,g' | sort -V"
+vf="gr | sed -e 's,_,.,g' -e 's,^v,,' | sort -V"
 
 s="$u"
 d=(
