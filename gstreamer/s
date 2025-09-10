@@ -1,7 +1,7 @@
 {
   "name": "gstreamer",
   "version": {
-    "version": "1.27.1",
+    "version": "1.27.2",
     "release": 1
   },
   "about": "Development framework for multimedia applications",
@@ -19,8 +19,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.27.1.tar.xz",
-      "dest": "gstreamer-1.27.1.tar.xz"
+      "url": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.27.2.tar.xz",
+      "dest": "gstreamer-1.27.2.tar.xz"
     }
   ],
   "dependencies": [
