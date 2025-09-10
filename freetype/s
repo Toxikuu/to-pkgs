@@ -1,7 +1,7 @@
 {
   "name": "freetype",
   "version": {
-    "version": "2.13.3",
+    "version": "2.14.0",
     "release": 1
   },
   "about": "TTF rendering library",
@@ -18,8 +18,8 @@
   "sources": [
     {
       "kind": "Download",
-      "url": "https://download-mirror.savannah.gnu.org/releases/freetype/freetype-2.13.3.tar.xz",
-      "dest": "freetype-2.13.3.tar.xz"
+      "url": "https://download-mirror.savannah.gnu.org/releases/freetype/freetype-2.14.0.tar.xz",
+      "dest": "freetype-2.14.0.tar.xz"
     }
   ],
   "dependencies": [
